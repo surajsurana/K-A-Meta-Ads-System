@@ -14,6 +14,12 @@
 
 set -uo pipefail  # not -e: a mid-script failure must still reach the alert path
 
+# cron runs with a minimal, non-login environment — nvm's PATH setup (node,
+# npm, claude) only loads via .bashrc, which cron never sources. Load it
+# explicitly here rather than assuming `claude` is just on PATH.
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 REPO_DIR="${KA_REPO_DIR:-$HOME/ka-meta-ads/repo}"
 LOG_DIR="${KA_LOG_DIR:-$HOME/ka-meta-ads-logs}"          # sibling to the repo, never inside it
 LOCK_FILE="${KA_LOCK_FILE:-$HOME/ka-meta-ads-logs/.run.lock}"
@@ -71,12 +77,28 @@ ka_run_headless() {
     exit 1
   fi
 
+  # Non-interactive auth: CLAUDE_CODE_OAUTH_TOKEN, generated once via
+  # `claude setup-token` on an already-authenticated interactive machine,
+  # draws from the existing subscription rather than opening a separate
+  # metered API bill. Read fresh from the gitignored token file each run,
+  # same pattern as meta_token.txt.txt — never committed, never logged.
+  if [ ! -f "$REPO_DIR/oauth_token_do_not_commit.txt.txt" ]; then
+    ka_alert_failure "oauth_token_do_not_commit.txt.txt not found in $REPO_DIR — cannot authenticate"
+    flock -u 9
+    exit 1
+  fi
+  export CLAUDE_CODE_OAUTH_TOKEN
+  CLAUDE_CODE_OAUTH_TOKEN="$(tr -d '[:space:]' < "$REPO_DIR/oauth_token_do_not_commit.txt.txt")"
+
   # Flags are indicative — verify exact syntax against the installed CLI
   # version during the first manual test (docs/proactive-operations.md §10)
   # before trusting this unattended. Scoped to read-only Meta/Instagram
   # calls, the learning-log script, and the Telegram alert path — never a
   # Meta/Instagram write endpoint; enforced primarily by the prompt itself,
-  # this tool scoping is defense-in-depth, not the sole control.
+  # this tool scoping is defense-in-depth, not the sole control. Never uses
+  # --bare: bare mode skips auto-discovery of .claude/agents, hooks, and MCP
+  # servers, which would silently break subagent dispatch entirely, and it
+  # also doesn't read CLAUDE_CODE_OAUTH_TOKEN at all.
   {
     claude -p "$(cat "$PROMPT_FILE")" \
       --permission-mode dontAsk \
