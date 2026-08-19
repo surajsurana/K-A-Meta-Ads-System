@@ -2,6 +2,8 @@
 meta_token.txt.txt
 .mcp.json
 telegram_config.txt
+oauth_token_do_not_commit.txt.txt
+.oauth_token_do_not_commit.txt
 
 # Local-only Claude Code tool-permission settings — machine-specific.
 .claude/settings.local.json
