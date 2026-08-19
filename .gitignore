@@ -1,0 +1,16 @@
+# Secrets — never committed, ever. See docs/proactive-operations.md §3.
+meta_token.txt.txt
+.mcp.json
+telegram_config.txt
+
+# Local-only Claude Code tool-permission settings — machine-specific.
+.claude/settings.local.json
+
+# Run logs live in a sibling directory outside the repo entirely on the
+# droplet (see docs/proactive-operations.md §7) — this entry is a safety
+# net only, in case a local test run ever writes one inside the repo dir.
+logs/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

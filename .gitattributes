@@ -1,0 +1,7 @@
+# Force LF line endings for anything that runs as a script on the Linux
+# droplet — a CRLF shebang line breaks execution outright ("bad interpreter").
+*.sh text eol=lf
+
+# Keep the learning log's line-based append/diff/merge behavior predictable
+# across the Windows (VS Code) and Linux (droplet) checkouts.
+*.jsonl text eol=lf

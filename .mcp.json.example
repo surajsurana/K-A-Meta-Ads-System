@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "stitchflow": {
+      "type": "http",
+      "url": "https://stitchflow.in/api/mcp",
+      "headers": {
+        "Authorization": "Bearer <STITCHFLOW_API_TOKEN — get the real value from the offline secret copy, see docs/proactive-operations.md §3. Never commit the real token.>"
+      }
+    }
+  }
+}

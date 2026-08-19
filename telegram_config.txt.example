@@ -1,0 +1,14 @@
+# Notification config for scheduled/headless runs (docs/proactive-operations.md §8).
+# Copy this to telegram_config.txt (gitignored, never committed) and fill in real
+# values. Used both by the in-session agent (to notify when a plan is ready) and
+# by the wrapper scripts' own failure-alert path (works even if the agent never
+# got to run at all).
+#
+# Real values needed — not yet supplied as of this file's creation:
+#   TELEGRAM_BOT_TOKEN — either a new dedicated bot for this system, or the
+#     existing Petty Cash bot's token reused with a different chat/channel.
+#     Your call; either works mechanically.
+#   TELEGRAM_CHAT_ID   — the chat/channel id to send notifications to.
+
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
