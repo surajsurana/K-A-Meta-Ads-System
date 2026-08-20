@@ -98,14 +98,30 @@ ka_run_headless() {
   # itself (never dispatch marketing-lead's execution protocol, never call
   # a Meta/Instagram write endpoint) — the same test run proved that
   # instruction holds even when the agent is completely blocked and
-  # confused, which is the real evidence this approach is sound. Never uses
-  # --bare: bare mode skips auto-discovery of .claude/agents, hooks, and MCP
+  # confused, which is the real evidence this approach is sound.
+  #
+  # Corrected again 2026-08-20 after two consecutive real weekly-review
+  # runs: every Stitchflow MCP tool call was denied with "Claude Code is
+  # running in do not ask mode" because mcp__stitchflow__* was never in
+  # --allowedTools at all — same root cause as the Bash issue, different
+  # tool category. dontAsk mode auto-denies anything not explicitly
+  # listed; it doesn't fail open. Fixed and verified directly against the
+  # live MCP server (real data returned) before committing this.
+  #
+  # Known remaining gap, not fixed here: the Shopify MCP server creative-
+  # copywriter uses is registered at a broader claude.ai-account level,
+  # not in this project's .mcp.json, and isn't available on the droplet at
+  # all. Only matters if a headless run's plan needs new ad copy — if that
+  # happens, creative-copywriter will hit the same class of denial and
+  # should report it plainly, same as Stitchflow did, rather than guessing.
+  #
+  # Never uses --bare: bare mode skips auto-discovery of .claude/agents, hooks, and MCP
   # servers, which would silently break subagent dispatch entirely, and it
   # also doesn't read CLAUDE_CODE_OAUTH_TOKEN at all.
   {
     claude -p "$(cat "$PROMPT_FILE")" \
       --permission-mode dontAsk \
-      --allowedTools "Read,Grep,Glob,Bash" \
+      --allowedTools "Read,Grep,Glob,Bash,mcp__stitchflow__*" \
       2>&1
     CLAUDE_EXIT=$?
     echo "[run-${JOB_NAME}] claude exited $CLAUDE_EXIT"
