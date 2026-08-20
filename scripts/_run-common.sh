@@ -108,6 +108,18 @@ ka_run_headless() {
   # listed; it doesn't fail open. Fixed and verified directly against the
   # live MCP server (real data returned) before committing this.
   #
+  # Added 2026-08-20, before the first monthly-review test rather than
+  # after a failure: campaign-strategist's strategic-intelligence duty
+  # (competitor research via Meta Ad Library, platform-change research)
+  # requires WebSearch, per its own tool grant in .claude/agents/
+  # campaign-strategist.md. Same class of gap as the Bash/Stitchflow fixes
+  # — caught by inspection this time, not by a real run failing first.
+  #
+  # Write is deliberately NOT in this list. Every learning-log write goes
+  # through scripts/append-learning-log.sh (a Bash call, already allowed);
+  # leaving plain Write off headless runs reinforces that discipline at
+  # the tool-permission layer too, not just as a written instruction.
+  #
   # Known remaining gap, not fixed here: the Shopify MCP server creative-
   # copywriter uses is registered at a broader claude.ai-account level,
   # not in this project's .mcp.json, and isn't available on the droplet at
@@ -121,7 +133,7 @@ ka_run_headless() {
   {
     claude -p "$(cat "$PROMPT_FILE")" \
       --permission-mode dontAsk \
-      --allowedTools "Read,Grep,Glob,Bash,mcp__stitchflow__*" \
+      --allowedTools "Read,Grep,Glob,Bash,WebSearch,mcp__stitchflow__*" \
       2>&1
     CLAUDE_EXIT=$?
     echo "[run-${JOB_NAME}] claude exited $CLAUDE_EXIT"
