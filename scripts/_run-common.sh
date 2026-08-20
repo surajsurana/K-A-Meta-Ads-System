@@ -42,9 +42,14 @@ ka_alert_failure() {
     # shellcheck disable=SC1090
     source "$REPO_DIR/telegram_config.txt"
     if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+      # --data-urlencode, not -d: plain -d treats a literal & in the value as
+      # a field separator (application/x-www-form-urlencoded semantics) -
+      # confirmed live 2026-08-20, "K&A Meta Ads..." was silently truncated
+      # to just "K" because of the & in the brand name itself. This isn't a
+      # cosmetic bug — it would silently mangle every real notification.
       curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-        -d chat_id="${TELEGRAM_CHAT_ID}" \
-        -d text="K&A Meta Ads ${JOB_NAME}: infrastructure failure — ${reason}. Check ${LOG_FILE} on the droplet." \
+        --data-urlencode chat_id="${TELEGRAM_CHAT_ID}" \
+        --data-urlencode text="K&A Meta Ads ${JOB_NAME}: infrastructure failure — ${reason}. Check ${LOG_FILE} on the droplet." \
         >> "$LOG_FILE" 2>&1
     fi
   fi
