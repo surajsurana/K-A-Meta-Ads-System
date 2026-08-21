@@ -59,15 +59,23 @@ if [ "$TYPE" != "decision" ]; then
 fi
 SUMMARY_SNIPPET="$(printf '%s' "$PLAN_LINE" | jq -r '.summary' | head -c 500)"
 
-CAPTION="🔔 *K&A Meta Ads — plan awaiting your approval*
+# Plain text, deliberately no parse_mode: SUBJECT/SUMMARY_SNIPPET are
+# free-form content from a plan's own fields (real plans are full of
+# underscored API field names like app_destination/video_id/adset_id) and
+# Telegram's legacy Markdown parser throws a hard 400 on unescaped/unpaired
+# _, *, `, [ characters - confirmed live 2026-08-21 (a single "sent_at" in a
+# test summary broke the send outright with "can't find end of the entity").
+# Not worth a MarkdownV2 escaping scheme for a caption whose only job is to
+# be skimmable; correctness beats bold text here.
+CAPTION="🔔 K&A Meta Ads — plan awaiting your approval
 
-*${SUBJECT}*
+${SUBJECT}
 (validated by ${ACTOR})
 
 ${SUMMARY_SNIPPET}...
 
-Full detail: \`grep ${PLAN_ID} knowledge/learning-log.jsonl\`
-Plan id: \`${PLAN_ID}\`"
+Full detail: grep ${PLAN_ID} knowledge/learning-log.jsonl
+Plan id: ${PLAN_ID}"
 
 # Inline keyboard. callback_data stays well under Telegram's 64-byte cap
 # (short prefix + plan id). Single source of truth for the prefix scheme -
@@ -83,7 +91,6 @@ REPLY_MARKUP=$(jq -n --arg pid "$PLAN_ID" '{
 RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
   --data-urlencode chat_id="${TELEGRAM_CHAT_ID}" \
   --data-urlencode text="${CAPTION}" \
-  --data-urlencode parse_mode="Markdown" \
   --data-urlencode reply_markup="${REPLY_MARKUP}")
 
 OK=$(printf '%s' "$RESPONSE" | jq -r '.ok')

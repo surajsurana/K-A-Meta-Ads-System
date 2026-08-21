@@ -338,8 +338,7 @@ def handle_callback_query(token, cq):
         tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "This request expired - please re-validate before approving."})
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"⌛ *Expired* — {plan_id} was pending too long ({STALE_AFTER_HOURS}h) and was not executed. Re-check the plan is still valid before approving manually.",
-            "parse_mode": "Markdown",
+            "text": f"⌛ Expired — {plan_id} was pending too long ({STALE_AFTER_HOURS}h) and was not executed. Re-check the plan is still valid before approving manually.",
         })
         return
 
@@ -358,8 +357,7 @@ def handle_callback_query(token, cq):
         finalize_status(plan_id, "rejected")
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"❌ *Rejected* — {plan_id}. No Meta/Instagram changes made.",
-            "parse_mode": "Markdown",
+            "text": f"❌ Rejected — {plan_id}. No Meta/Instagram changes made.",
         })
         return
 
@@ -374,16 +372,14 @@ def handle_callback_query(token, cq):
         finalize_status(plan_id, "held")
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"🕒 *On hold* — {plan_id}. Preserved for later review, no Meta/Instagram changes made.",
-            "parse_mode": "Markdown",
+            "text": f"🕒 On hold — {plan_id}. Preserved for later review, no Meta/Instagram changes made.",
         })
         return
 
     # action == "approve"
     tg_api(token, "editMessageText", {
         "chat_id": chat_id, "message_id": message_id,
-        "text": f"⏳ *Approved, processing* — {plan_id}...",
-        "parse_mode": "Markdown",
+        "text": f"⏳ Approved, processing — {plan_id}...",
     })
     success, detail = dispatch_execution(plan_id)
     if not success and detail.startswith("GATED:"):
@@ -405,11 +401,15 @@ def handle_callback_query(token, cq):
     else:
         icon, label = "❗", "Execution FAILED"
 
+    # Plain text, no parse_mode: first_line comes from a real claude session's
+    # own output (ad IDs, field names like adset_id) or the GATED message,
+    # either of which can contain _ / * / ` that break Telegram's Markdown
+    # parser outright - same class of bug fixed in send-telegram-approval.sh
+    # after a live 400 during testing (2026-08-21).
     first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
     tg_api(token, "sendMessage", {
         "chat_id": chat_id,
-        "text": f"{icon} *{label}* — {plan_id}\n{first_line}\n\nFull detail in ~/ka-meta-ads-logs/telegram-listener.log on the droplet, and in the learning log if executed.",
-        "parse_mode": "Markdown",
+        "text": f"{icon} {label} — {plan_id}\n{first_line}\n\nFull detail in ~/ka-meta-ads-logs/telegram-listener.log on the droplet, and in the learning log if executed.",
     })
 
 
