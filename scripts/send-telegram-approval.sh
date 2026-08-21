@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+# Sends an interactive Telegram approval request (inline APPROVE/REJECT/HOLD
+# buttons) for one specific, already-validated learning-log `decision` plan.
+#
+# Usage: scripts/send-telegram-approval.sh <plan-id>
+#   e.g. scripts/send-telegram-approval.sh KL-2026-08-21-093000
+#
+# Called by an agent (headless or interactive) once media-buyer/social-
+# community-manager has finished a validated plan that's genuinely ready for
+# the user's approval. Does NOT execute anything itself — it only sends the
+# message and records that a request is now pending. The actual execution
+# happens in scripts/telegram_approval_listener.py, triggered only by a
+# verified button tap, never by this script.
+#
+# Design note: the plan's own `summary` field in the learning log is long,
+# technical prose (by design, for a human reading it in a learning-log grep)
+# - not fit for a Telegram message (4096 char cap, and unreadable on a phone
+# regardless of the cap). This sends a short, human-scannable caption plus
+# the plan id, not the full plan text. Full detail is one grep away.
+
+set -euo pipefail
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <plan-id>" >&2
+  exit 2
+fi
+
+PLAN_ID="$1"
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPO_DIR"
+
+if [ ! -f telegram_config.txt ]; then
+  echo "ERROR: telegram_config.txt not found — cannot send approval request." >&2
+  exit 1
+fi
+# shellcheck disable=SC1091
+source telegram_config.txt
+if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+  echo "ERROR: telegram_config.txt is missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID." >&2
+  exit 1
+fi
+
+# Pull the plan's subject + a short lead-in from its own summary for the
+# caption. Keep it short and skimmable — the point is "what is this", not
+# "here is the full plan", which is what the buttons + a follow-up grep are
+# for.
+PLAN_LINE="$(grep "\"id\":\"${PLAN_ID}\"" knowledge/learning-log.jsonl | tail -1)"
+if [ -z "$PLAN_LINE" ]; then
+  echo "ERROR: plan id ${PLAN_ID} not found in knowledge/learning-log.jsonl — refusing to send an approval request for a plan that doesn't exist." >&2
+  exit 1
+fi
+
+SUBJECT="$(printf '%s' "$PLAN_LINE" | jq -r '.subject // "(no subject)"')"
+ACTOR="$(printf '%s' "$PLAN_LINE" | jq -r '.actor // "?"')"
+TYPE="$(printf '%s' "$PLAN_LINE" | jq -r '.type // "?"')"
+if [ "$TYPE" != "decision" ]; then
+  echo "ERROR: ${PLAN_ID} is type=${TYPE}, not type=decision — refusing to send an approval request for a non-plan entry." >&2
+  exit 1
+fi
+SUMMARY_SNIPPET="$(printf '%s' "$PLAN_LINE" | jq -r '.summary' | head -c 500)"
+
+CAPTION="🔔 *K&A Meta Ads — plan awaiting your approval*
+
+*${SUBJECT}*
+(validated by ${ACTOR})
+
+${SUMMARY_SNIPPET}...
+
+Full detail: \`grep ${PLAN_ID} knowledge/learning-log.jsonl\`
+Plan id: \`${PLAN_ID}\`"
+
+# Inline keyboard. callback_data stays well under Telegram's 64-byte cap
+# (short prefix + plan id). Single source of truth for the prefix scheme -
+# telegram_approval_listener.py must use the exact same prefixes.
+REPLY_MARKUP=$(jq -n --arg pid "$PLAN_ID" '{
+  inline_keyboard: [[
+    {text: "✅ APPROVE", callback_data: ("A:" + $pid)},
+    {text: "❌ REJECT",  callback_data: ("R:" + $pid)},
+    {text: "🕒 HOLD",    callback_data: ("H:" + $pid)}
+  ]]
+}')
+
+RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+  --data-urlencode chat_id="${TELEGRAM_CHAT_ID}" \
+  --data-urlencode text="${CAPTION}" \
+  --data-urlencode parse_mode="Markdown" \
+  --data-urlencode reply_markup="${REPLY_MARKUP}")
+
+OK=$(printf '%s' "$RESPONSE" | jq -r '.ok')
+if [ "$OK" != "true" ]; then
+  echo "ERROR: Telegram sendMessage failed: $RESPONSE" >&2
+  exit 1
+fi
+MESSAGE_ID=$(printf '%s' "$RESPONSE" | jq -r '.result.message_id')
+
+# Record the pending approval request. State lives OUTSIDE the git repo,
+# same reasoning as run logs - it's runtime state, not project code, and
+# must never be lost to a `git reset --hard`. The listener claims/updates
+# entries here under a file lock; this initial write uses the same locked
+# helper (via python) for consistency, not a second ad-hoc mechanism.
+python3 "$REPO_DIR/scripts/telegram_approval_listener.py" --record-sent \
+  --plan-id "$PLAN_ID" \
+  --chat-id "$TELEGRAM_CHAT_ID" \
+  --message-id "$MESSAGE_ID"
+
+echo "Sent approval request for ${PLAN_ID} (Telegram message_id ${MESSAGE_ID})."

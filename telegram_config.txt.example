@@ -9,6 +9,17 @@
 #     existing Petty Cash bot's token reused with a different chat/channel.
 #     Your call; either works mechanically.
 #   TELEGRAM_CHAT_ID   — the chat/channel id to send notifications to.
+#
+# TELEGRAM_APPROVAL_REAL_EXECUTION (added 2026-08-21, see docs/proactive-
+#   operations.md §8a and docs/architecture.md §3 guardrail 1's open-question
+#   note) — code-level kill switch for scripts/telegram_approval_listener.py.
+#   Leave unset/false until Suraj has explicitly decided whether a verified
+#   Telegram button tap counts as direct approval for guardrail 1's purposes.
+#   While unset/false, APPROVE taps are recorded and reported but no claude
+#   session is dispatched and no Meta/Instagram call is made. Set to "true"
+#   only after that decision is made — no redeploy needed, re-read fresh on
+#   every tap.
 
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
+TELEGRAM_APPROVAL_REAL_EXECUTION=false

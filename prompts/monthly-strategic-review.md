@@ -19,4 +19,4 @@ Where a finding does clear the bar and implies a concrete next move (e.g., a new
 
 - **Never dispatch marketing-lead's execution protocol. Never call any Meta/Instagram write endpoint.** Any live-account `GET` calls made in service of this review (e.g., checking whether a targeting change affects a specific live ad set) are fine; nothing is ever written.
 - All learning-log writes go through `scripts/append-learning-log.sh`.
-- Notify only if something actually warrants your attention — a "nothing significant this month" outcome does not need a notification, though it's fine to log a brief `observation` noting the review ran, so a future review isn't guessing whether this month was covered.
+- Notify only if something actually warrants your attention — a "nothing significant this month" outcome does not need a notification, though it's fine to log a brief `observation` noting the review ran, so a future review isn't guessing whether this month was covered. If the finding reached a ready `type: decision` plan, use `scripts/send-telegram-approval.sh <plan-id>` (§8a) rather than a plain notification, so it can be approved/rejected/held directly from Telegram.

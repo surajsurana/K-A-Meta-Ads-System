@@ -19,4 +19,4 @@ Where a finding genuinely implies a next move, continue through creative-copywri
 
 - **Never dispatch marketing-lead's execution protocol. Never call any Meta/Instagram write endpoint.** Every Meta/Instagram call this run makes must be `GET` only.
 - All learning-log writes go through `scripts/append-learning-log.sh`, never a raw write.
-- Send one consolidated notification at the end covering the week's findings and any plan(s) awaiting approval, with their learning-log entry id(s) — not one notification per finding.
+- Send one consolidated notification (§8) at the end covering the week's findings. For each `type: decision` plan actually ready for approval, additionally call `scripts/send-telegram-approval.sh <plan-id>` (§8a) so it can be approved/rejected/held directly from Telegram — one call per plan, not folded into the digest notification.
