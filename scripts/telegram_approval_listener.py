@@ -384,12 +384,30 @@ def handle_callback_query(token, cq):
     success, detail = dispatch_execution(plan_id)
     if not success and detail.startswith("GATED:"):
         final_status = "gated"
-    elif success and "EXECUTED" in detail.upper().split("\n")[0]:
-        final_status = "executed"
-    elif not success:
-        final_status = "failed"
     else:
-        final_status = "not_executed"
+        # Check the compound keywords FIRST: "ALREADY_EXECUTED" and
+        # "STALE_NOT_EXECUTED" both contain "EXECUTED" as a raw substring,
+        # so a naive `"EXECUTED" in detail` check (even restricted to the
+        # first line) mislabels a correctly-declined stale/already-done
+        # plan as a genuine execution - confirmed live 2026-08-21 during
+        # real-dispatch testing: the model's ALREADY_EXECUTED response
+        # didn't even lead with the bare keyword on line 1 as instructed,
+        # it explained first - so this also can't assume strict first-line
+        # compliance and checks the whole output. False-labeling something
+        # "Executed" when it wasn't is the dangerous direction to get
+        # wrong; false-labeling a real execution as "not_executed" is only
+        # cosmetic (the learning-log type:change entry is the real record
+        # either way), so ambiguous/non-compliant output resolves to the
+        # safe (non-executed) label, never the reverse.
+        detail_upper = detail.upper()
+        if "ALREADY_EXECUTED" in detail_upper or "STALE_NOT_EXECUTED" in detail_upper:
+            final_status = "not_executed"
+        elif success and "EXECUTED" in detail_upper:
+            final_status = "executed"
+        elif not success:
+            final_status = "failed"
+        else:
+            final_status = "not_executed"
     finalize_status(plan_id, final_status, detail[:500])
 
     if final_status == "executed":
