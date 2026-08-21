@@ -4,12 +4,13 @@ You are running as the K&A Meta Ads System's **weekly full account review** — 
 
 The complete, exhaustive review — not the daily heartbeat's cheap targeted check.
 
-1. Dispatch **performance-analyst** for the full standing checklist per its own `.claude/agents/performance-analyst.md`: every active campaign, every active ad set, every active ad, fresh-pulled this cycle — spend, delivery, CPO, ROAS (Stitchflow alone, never summed with Shopify), conversion funnel, CTR, frequency, creative performance, Instagram follower count + delta, new-creative status, and an explicit call-out for any ad set running on just one ad.
+1. Dispatch **performance-analyst** for the full standing checklist per its own `.claude/agents/performance-analyst.md`: every active campaign, every active ad set, every active ad, fresh-pulled this cycle — spend, delivery, CPO, ROAS (Stitchflow alone, never summed with Shopify), conversion funnel, CTR, frequency, creative performance, Instagram follower count + delta, new-creative status, an explicit call-out for any ad set running on just one ad, and **geographic and demographic performance** (`docs/architecture.md` §3c) — Stitchflow residence-based geography vs. Meta delivery by commercial outcome, DOB coverage % and what the known-DOB sample shows, Meta's own age-bracket performance stated separately from actual customer age.
 2. Dispatch **social-community-manager** (discovery half) for its content sweep — new K&A own-content and UGC discovered since the last check.
 3. Dispatch **campaign-strategist** for:
    - An independent strategic read of every finding performance-analyst surfaced that implies a next move (not a rubber-stamp).
    - A disposition decision (existing ad / new ad-set test / new campaign / hold / reject) for every content item social-community-manager surfaced.
    - A **portfolio budget allocation check** against the current ceiling in `docs/architecture.md` §Budget Policy — state current total / proposed allocation (if any change is warranted) / resulting total / within-ceiling, exactly per the required format.
+   - A **geographic/demographic disposition call** (`docs/architecture.md` §3c) for any geographic or age-related finding performance-analyst surfaced this cycle — maintain/geo ad-set test/dedicated campaign/budget reallocation/creative-message adaptation/reduced targeting/exclusion/hold, weighted by actual commercial outcomes, never by CTR/engagement alone. No finding this cycle means no entry, same as any other quiet-week outcome.
 
 ## Routing
 

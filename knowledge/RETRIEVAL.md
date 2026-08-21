@@ -1,8 +1,8 @@
 # Learning Log — Retrieval Recipes
 
-Eight named queries against `knowledge/learning-log.jsonl`. Use these verbatim instead of inventing a search each time — full design/rationale in `docs/learning-layer-design.md` §3/§3a.
+Nine named queries against `knowledge/learning-log.jsonl`. Use these verbatim instead of inventing a search each time — full design/rationale in `docs/learning-layer-design.md` §3/§3a.
 
-Every recipe assumes you're in the project root (`C:\Users\ADMIN\Desktop\Claude AI Projects\K&A Marketing`).
+Every recipe assumes you're in the project root (`C:\Users\ADMIN\Desktop\Claude AI Projects\K&A Meta Ads System`).
 
 ## 1. Recent
 General context on what's happened lately. Use for any task where you just want the latest state of things.
@@ -53,6 +53,15 @@ Generalizes recipe 7 beyond just experiments: any entry carrying a `follow_up` f
 grep '"follow_up"' knowledge/learning-log.jsonl
 ```
 For each match, read the `follow_up` text and judge whether its condition/date has been reached, then check (same two-step pattern as recipe 7) whether a later entry already resolved it via `linked_to`. This is the check marketing-lead runs first in every scheduled/heartbeat run, before deciding which specialist(s) to actually dispatch — if nothing is due and nothing else is flagged by the daily anomaly pull, that's a silent no-op, not a forced escalation.
+
+## 9. Geography & demographic (added 2026-08-21)
+Reviewing or proposing anything geography- or age-targeting-related (§3c in `docs/architecture.md`). Same tag-grep pattern as recipes 3/4, named explicitly for discoverability since this is its own decision domain (eight geography dispositions, DOB-coverage-aware age analysis), not because the mechanism differs.
+```bash
+grep '"geo-<city-or-state-or-country>"' knowledge/learning-log.jsonl
+grep '"age-bracket-<range>"' knowledge/learning-log.jsonl
+grep '"dob-coverage"' knowledge/learning-log.jsonl
+```
+Check all three that apply before proposing a geographic or age-informed change — a geography exclusion or age-bracket-driven creative call already tried and declined (`type: override`) shouldn't be re-proposed, same as any other subject.
 
 ---
 

@@ -84,7 +84,7 @@ Why JSONL over a Markdown table or a database:
 
 **Decision: no physical secondary index (no tag→id map, no rebuilt cache file).** At realistic volume for this system (dozens to low hundreds of entries for years, per the Phase 2 threshold in §9), a `grep` over the entire log is already sub-millisecond. A real index would be a *second data structure that has to stay in sync with the source of truth* — that's a new failure mode (index drifts from the log, someone trusts the stale index) for zero measurable performance benefit. Building it now would repeat the exact mistake already ruled out elsewhere in this design (knowledge graphs, embeddings) — solving a scale problem that doesn't exist yet.
 
-What actually stops an agent from linearly re-reasoning over the whole log isn't an index, it's **not having to invent a query from scratch every time.** So the retrieval layer is six named, pre-defined recipes — documented once in `knowledge/RETRIEVAL.md`, used verbatim by every agent instead of ad-hoc searching:
+What actually stops an agent from linearly re-reasoning over the whole log isn't an index, it's **not having to invent a query from scratch every time.** So the retrieval layer is a set of named, pre-defined recipes — documented once in `knowledge/RETRIEVAL.md` (nine as of 2026-08-21; this table shows the original six, with the three added since described in prose below it rather than the table being kept in lockstep — `knowledge/RETRIEVAL.md` is the current source of truth for the exact count and wording, not this table), used verbatim by every agent instead of ad-hoc searching:
 
 | Recipe | When to use | Query pattern |
 |---|---|---|
@@ -96,6 +96,10 @@ What actually stops an agent from linearly re-reasoning over the whole log isn't
 | **Best practices** | Start of any planning task, before proposing anything | `grep '"type":"best_practice"' knowledge/learning-log.jsonl` |
 
 A seventh, composite recipe worth naming explicitly because `performance-analyst` needs it every check-in: **open experiments due for review** — `grep '"type":"experiment"' knowledge/learning-log.jsonl`, then for each id check whether any entry's `linked_to` array contains it (a two-grep pattern, still no index, still trivial at this volume).
+
+An eighth, added 2026-08-19 for the daily heartbeat: **due-now sweep** — generalizes the seventh beyond just experiments to any entry carrying a `follow_up` field due today or earlier with no later resolving entry (`grep '"follow_up"'`).
+
+A ninth, added 2026-08-21 for Geographic & Customer Demographic Intelligence (`docs/architecture.md` §3c): **geography & demographic** — the same tag-grep pattern as the audience/creative-specific recipes above, against a consistent tagging convention: `geo-<city|state|country>` for geography (e.g. `geo-mumbai`), `age-bracket-<range>` for Meta's platform age-bracket findings (e.g. `age-bracket-25-34`), and `dob-coverage` specifically for entries tracking known-DOB coverage over time. No new entry type — these are ordinary `observation`/`experiment`/`decision`/`outcome` entries, distinguished by tag alone, same as any other subject area.
 
 These aren't enforced by tooling — they're a documented convention every agent's instructions point to, the same way the blended-metrics rule or the confirm-before-write rule are conventions, not code. That's consistent with how every other guardrail in this system already works, and it's the right amount of structure for the actual problem (consistency and low friction), not the problem this design deliberately isn't solving (large-scale search).
 
@@ -160,10 +164,10 @@ Lightweight, built entirely from the schema above — no separate system:
 
 | Agent | Reads | When | Writes | When |
 |---|---|---|---|---|
-| **campaign-strategist** | `human_knowledge`, `best_practice`, past `experiment`/`outcome` entries for the relevant subject/tags | Start of any planning/strategy task, before proposing anything | `type: experiment` (hypothesis + stop-rule) | Once the human agrees a specific test should run |
-| | | | `type: decision` | For approved strategic calls that aren't formal tests (e.g., a targeting change made on judgment, not an experiment) |
+| **campaign-strategist** | `human_knowledge`, `best_practice`, past `experiment`/`outcome` entries for the relevant subject/tags — including recipe 9 (`geo-`/`age-bracket-`/`dob-coverage` tags) for geographic/demographic decisions | Start of any planning/strategy task, before proposing anything | `type: experiment` (hypothesis + stop-rule) | Once the human agrees a specific test should run |
+| | | | `type: decision` | For approved strategic calls that aren't formal tests (e.g., a targeting change made on judgment, not an experiment); includes geography-disposition and age-informed decisions (`docs/architecture.md` §3c) |
 | **performance-analyst** | Open `experiment` entries with a due `follow_up`; recent `observation`/`change`/`outcome` entries for campaigns under review | Start of every check-in | `type: outcome` (resolving open experiments, against their stated stop-rule) | Whenever a check-in resolves something open |
-| | | | `type: observation` | When something genuinely new/unexpected turns up |
+| | | | `type: observation` | When something genuinely new/unexpected turns up — including geographic/demographic shifts, tagged `geo-`/`age-bracket-`/`dob-coverage` (§3c), always with stated data coverage |
 | **media-buyer** *(execution agent — validates & plans, never executes; see `docs/architecture.md` §1/§3 guardrail 1)* | Recent `override`/`decision` entries for the object being validated (has the human already said no to something like this?) | Briefly, before finalizing a plan | `type: decision` (the validated execution plan — old/new values, rollback criteria, verification steps) | Once the plan is finalized, **before** the user approves it |
 | **creative-copywriter** | `best_practice`, `outcome` entries tagged with the relevant product/theme | Before writing a new brief/copy | (rarely writes; optional low-frequency `observation` if it notices a copy-specific pattern) | — |
 | **social-community-manager** *(discovery/drafting half is a normal analysis agent; publish/reply half is an execution agent with the same constraint as media-buyer)* | Prior `override`/`decision` entries about specific vendors/accounts (avoid re-asking, avoid re-surfacing declined content) | Before proposing a repost/reply action | `type: decision` (the validated post/reply plan) | Once the plan is finalized, before the user approves it |
