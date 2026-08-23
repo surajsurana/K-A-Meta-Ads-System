@@ -9,6 +9,8 @@ Dispatch **campaign-strategist** for its standing strategic-intelligence duty, p
 
 Separately, dispatch **performance-analyst** for a **DOB-coverage trend check** (`docs/architecture.md` §3c) — compare current known-DOB coverage % against the last logged `dob-coverage` entry (recipe 9, `knowledge/RETRIEVAL.md`). Log a fresh `dob-coverage` observation only if coverage has moved meaningfully since last month; a near-identical figure isn't worth a new entry (same "don't log what confirms nothing changed" principle as everywhere else). If coverage has grown enough to materially change the confidence of any standing actual-age conclusion, hand that to campaign-strategist to reassess — otherwise no action needed.
 
+Also dispatch **performance-analyst** for a **monthly spend/orders/returns recap** (added 2026-08-23, user request — same numbers as the weekly report, monthly total instead): total Meta ad spend, number of orders, total order value, blended cost-per-order, and blended ROAS, all Stitchflow-alone per the usual blended-metrics rule (`docs/architecture.md` guardrail 5), for the **previous full calendar month** (this run is on the 2nd, so "previous calendar month" is unambiguous — e.g. a review running 2026-09-02 reports August 2026). Stitchflow's `get_monthly_summary` tool is built for exactly this. This is a standing recap, not conditional on finding something noteworthy — see the notification rule below.
+
 ## The test for every single finding, no exceptions
 
 **Does this actually matter for K&A's account and strategy, and if so, what should we do about it?** This is explicitly not a news-digest job — a finding that doesn't clear that bar gets at most a low-key `observation` if worth remembering, not a recommendation. Most months, this review may surface nothing worth escalating — that's a correct, expected outcome, not a failure to find something.
@@ -21,4 +23,20 @@ Where a finding does clear the bar and implies a concrete next move (e.g., a new
 
 - **Never dispatch marketing-lead's execution protocol. Never call any Meta/Instagram write endpoint.** Any live-account `GET` calls made in service of this review (e.g., checking whether a targeting change affects a specific live ad set) are fine; nothing is ever written.
 - All learning-log writes go through `scripts/append-learning-log.sh`.
-- Notify only if something actually warrants your attention — a "nothing significant this month" outcome does not need a notification, though it's fine to log a brief `observation` noting the review ran, so a future review isn't guessing whether this month was covered. If the finding reached a ready `type: decision` plan, use `scripts/send-telegram-approval.sh <plan-id>` (§8a) rather than a plain notification, so it can be approved/rejected/held directly from Telegram.
+- **The monthly spend/orders/returns recap always gets a notification, every month, regardless of whether the strategic-intelligence side found anything (added 2026-08-23, user request)** — same "never silent about the numbers" standard as the weekly report. Use this exact structure (simple English, real line breaks, no jargon):
+  ```
+  📊 Monthly Ads Report
+  <Month Year, e.g. August 2026>
+
+  Spent: ₹<X>
+  Orders: <N>
+  Order value: ₹<Y>
+  Cost per order: ₹<Z>
+  ROAS: <W>x
+
+  <then, only if there's something to say - each on its own short paragraph, blank line between:>
+  <competitor/platform intelligence findings, plain English>
+  <DOB-coverage note, if it changed meaningfully>
+  <plan(s) awaiting approval - name what's changing in plain English, not just an id>
+  ```
+  If Stitchflow access failed and a number genuinely couldn't be computed, say so plainly in its place ("unavailable this month - Stitchflow access failed") rather than dropping the line. Plain text, no Markdown formatting relied on for structure (same reason as the weekly report — see §8). If a finding reached a ready `type: decision` plan, additionally use `scripts/send-telegram-approval.sh <plan-id>` (§8a) so it can be approved/rejected/held directly from Telegram — separate from the recap notification, not folded into it.

@@ -20,4 +20,19 @@ Where a finding genuinely implies a next move, continue through creative-copywri
 
 - **Never dispatch marketing-lead's execution protocol. Never call any Meta/Instagram write endpoint.** Every Meta/Instagram call this run makes must be `GET` only.
 - All learning-log writes go through `scripts/append-learning-log.sh`, never a raw write.
-- Send one consolidated notification (§8) at the end covering the week's findings. **This notification's first lines must always state, explicitly, every week regardless of what else is or isn't noteworthy (added 2026-08-23, user request): total ad spend for the period, blended cost-per-order, and blended ROAS** (all from performance-analyst's standing checklist, §1 above) — e.g. "Spend: ₹X this week. Blended cost per order: ₹Y. Blended ROAS: Zx." If Stitchflow access failed and these genuinely couldn't be computed, say that plainly instead of omitting the lines silently ("Blended CPO/ROAS unavailable this week — Stitchflow access failed, see KL-... for details") — never just leave them out without saying why. Everything else in the notification (other findings, plans awaiting approval) follows after these lines. For each `type: decision` plan actually ready for approval, additionally call `scripts/send-telegram-approval.sh <plan-id>` (§8a) so it can be approved/rejected/held directly from Telegram — one call per plan, not folded into the digest notification.
+- Send one consolidated notification (§8) at the end covering the week's findings, **using this exact structure every week, regardless of what else is or isn't noteworthy (added 2026-08-23, user request — simple English, real line breaks, no jargon, no wall of text):**
+  ```
+  📊 Weekly Ads Report
+  <date range, e.g. 17-23 Aug>
+
+  Spent: ₹<X>
+  Orders: <N>
+  Order value: ₹<Y>
+  Cost per order: ₹<Z>
+  ROAS: <W>x
+
+  <then, only if there's something to say - each on its own short paragraph, blank line between:>
+  <other notable findings, plain English, no Meta object IDs/jargon>
+  <plan(s) awaiting approval - name what's changing in plain English, not just an id>
+  ```
+  Spend/orders/order value/cost-per-order/ROAS come straight from performance-analyst's standing checklist (§1 above — blended, Stitchflow-alone) and are **never omitted silently**: if Stitchflow access failed and a number genuinely couldn't be computed, write "unavailable this week - Stitchflow access failed, see KL-... for details" in its place, don't just drop the line. Plain text, no Markdown formatting characters relied on for structure (asterisks/underscores can break Telegram's parser on real plan text containing underscored field names - use line breaks and plain words instead, per §8). For each `type: decision` plan actually ready for approval, additionally call `scripts/send-telegram-approval.sh <plan-id>` (§8a) so it can be approved/rejected/held directly from Telegram — one call per plan, not folded into the digest notification.
