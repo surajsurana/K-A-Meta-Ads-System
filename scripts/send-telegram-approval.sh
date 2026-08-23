@@ -44,7 +44,12 @@ fi
 # caption. Keep it short and skimmable — the point is "what is this", not
 # "here is the full plan", which is what the buttons + a follow-up grep are
 # for.
-PLAN_LINE="$(grep "\"id\":\"${PLAN_ID}\"" knowledge/learning-log.jsonl | tail -1)"
+# -E with an optional-whitespace class after the colon: most entries are
+# written as compact JSON ("id":"...") but not all of them are - confirmed
+# 2026-08-23 on a real production entry (KL-2026-08-20-170700) written with
+# a space ("id": "...") by whatever tool produced it. A rigid no-space-only
+# grep silently failed to find a genuine plan and refused to send it.
+PLAN_LINE="$(grep -E "\"id\":[[:space:]]*\"${PLAN_ID}\"" knowledge/learning-log.jsonl | tail -1)"
 if [ -z "$PLAN_LINE" ]; then
   echo "ERROR: plan id ${PLAN_ID} not found in knowledge/learning-log.jsonl — refusing to send an approval request for a plan that doesn't exist." >&2
   exit 1
