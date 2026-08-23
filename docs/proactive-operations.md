@@ -112,6 +112,8 @@ Reusing the bot infrastructure already proven on this droplet for Petty Cash (a 
 
 A quiet day (nothing due, nothing anomalous) produces no notification and no log entry from the plain-FYI path — consistent with the learning log's existing "don't log what confirms nothing changed" principle, now extended to notifications. The failure-alert path is separate and unconditional — it fires on genuine infrastructure failure regardless of what the agent found or didn't find.
 
+**The weekly review's notification is the one exception to "quiet = silent" (added 2026-08-23, user request):** it always fires, every week, and its first lines always state total spend, blended cost-per-order, and blended ROAS explicitly — never silently omitted, even on an otherwise-quiet week with nothing else to report. See `prompts/weekly-review.md`'s notification instruction for the exact requirement. This is deliberately different from the daily heartbeat (which stays silent on a quiet day) — the user wants a standing weekly spend/returns snapshot regardless of whether anything else happened.
+
 ---
 
 ## 8a. Interactive Telegram approval (inline APPROVE / REJECT / HOLD buttons)
