@@ -256,7 +256,9 @@ If everything checks out:
 7. Log a type=change entry via scripts/append-learning-log.sh, actor=marketing-lead, linked_to this plan id, matching the pattern used for every other execution in this system's history.
 8. Report EXECUTED with a plain before/after summary.
 
-Never call any Meta/Instagram write endpoint other than the exact one this specific plan specifies. Report exactly one of: EXECUTED, STALE_NOT_EXECUTED, ALREADY_EXECUTED, or FAILED (with reason), as the first line of your response."""
+Never call any Meta/Instagram write endpoint other than the exact one this specific plan specifies.
+
+Report format - this matters, your response's first line is shown directly to the user on their phone via Telegram: the FIRST LINE of your entire response must be exactly one of EXECUTED / STALE_NOT_EXECUTED / ALREADY_EXECUTED / FAILED, immediately followed on the same line by a colon and one short plain-English sentence naming what was actually done or why not (no Meta object IDs, no jargon) - e.g. "EXECUTED: Added the Sage Green Lehenga ad to the India Insta Engaged ad set, built paused." Print nothing before that line - no "log entry committed" notices, no preamble. Elaborate with technical detail (before/after, verification) below it if useful, but that first line is what the user actually reads."""
 
     env = os.environ.copy()
     nvm_dir = os.path.expanduser("~/.nvm")
@@ -338,7 +340,7 @@ def handle_callback_query(token, cq):
         tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "This request expired - please re-validate before approving."})
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"⌛ Expired — {plan_id} was pending too long ({STALE_AFTER_HOURS}h) and was not executed. Re-check the plan is still valid before approving manually.",
+            "text": f"⌛ Expired\n\nThis was pending too long ({STALE_AFTER_HOURS}h+) so nothing was done.\n\nPlease re-check it's still valid before approving manually.\n\nPlan ID: {plan_id}",
         })
         return
 
@@ -357,7 +359,7 @@ def handle_callback_query(token, cq):
         finalize_status(plan_id, "rejected")
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"❌ Rejected — {plan_id}. No Meta/Instagram changes made.",
+            "text": f"❌ Rejected\n\nNo changes were made.\n\nPlan ID: {plan_id}",
         })
         return
 
@@ -372,14 +374,14 @@ def handle_callback_query(token, cq):
         finalize_status(plan_id, "held")
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"🕒 On hold — {plan_id}. Preserved for later review, no Meta/Instagram changes made.",
+            "text": f"🕒 On hold\n\nSaved for later review. No changes were made.\n\nPlan ID: {plan_id}",
         })
         return
 
     # action == "approve"
     tg_api(token, "editMessageText", {
         "chat_id": chat_id, "message_id": message_id,
-        "text": f"⏳ Approved, processing — {plan_id}...",
+        "text": f"⏳ Approved — working on it now...\n\nPlan ID: {plan_id}",
     })
     success, detail = dispatch_execution(plan_id)
     if not success and detail.startswith("GATED:"):
@@ -425,9 +427,18 @@ def handle_callback_query(token, cq):
     # parser outright - same class of bug fixed in send-telegram-approval.sh
     # after a live 400 during testing (2026-08-21).
     first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
+    # The dispatch prompt asks for "KEYWORD: plain sentence" as line 1 - strip
+    # the keyword prefix for display since the icon/label above already says
+    # whether it executed (added 2026-08-23, user feedback: keep messages
+    # short and plain, don't repeat the same status twice).
+    display_line = first_line
+    for kw in ("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:"):
+        if display_line.upper().startswith(kw):
+            display_line = display_line[len(kw):].strip()
+            break
     tg_api(token, "sendMessage", {
         "chat_id": chat_id,
-        "text": f"{icon} {label} — {plan_id}\n{first_line}\n\nFull detail in ~/ka-meta-ads-logs/telegram-listener.log on the droplet, and in the learning log if executed.",
+        "text": f"{icon} {label}\n\n{display_line}\n\nPlan ID: {plan_id}",
     })
 
 

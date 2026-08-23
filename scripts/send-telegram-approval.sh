@@ -62,17 +62,35 @@ if [ "$TYPE" != "decision" ]; then
   echo "ERROR: ${PLAN_ID} is type=${TYPE}, not type=decision — refusing to send an approval request for a non-plan entry." >&2
   exit 1
 fi
-SUMMARY_SNIPPET="$(printf '%s' "$PLAN_LINE" | jq -r '.summary' | head -c 500)"
+TELEGRAM_SUMMARY="$(printf '%s' "$PLAN_LINE" | jq -r '.telegram_summary // empty')"
 
-# Plain text, deliberately no parse_mode: SUBJECT/SUMMARY_SNIPPET are
-# free-form content from a plan's own fields (real plans are full of
-# underscored API field names like app_destination/video_id/adset_id) and
-# Telegram's legacy Markdown parser throws a hard 400 on unescaped/unpaired
-# _, *, `, [ characters - confirmed live 2026-08-21 (a single "sent_at" in a
-# test summary broke the send outright with "can't find end of the entity").
-# Not worth a MarkdownV2 escaping scheme for a caption whose only job is to
-# be skimmable; correctness beats bold text here.
-CAPTION="🔔 K&A Meta Ads — plan awaiting your approval
+# Plain text, deliberately no parse_mode: plan content is free-form (real
+# plans are full of underscored API field names like app_destination/
+# video_id/adset_id) and Telegram's legacy Markdown parser throws a hard 400
+# on unescaped/unpaired _, *, `, [ characters - confirmed live 2026-08-21 (a
+# single "sent_at" in a test summary broke the send outright with "can't
+# find end of the entity"). Not worth a MarkdownV2 escaping scheme for a
+# caption whose only job is to be skimmable.
+if [ -n "$TELEGRAM_SUMMARY" ]; then
+  # Preferred path (added 2026-08-23, user feedback - the raw technical
+  # summary is unreadable on a phone, one big paragraph, no object names).
+  # telegram_summary is written by the plan's own agent specifically for
+  # this message - plain English, real line breaks, names the actual
+  # campaign/ad set/ad. Used verbatim; the template below only adds a
+  # header/footer, it never touches the agent's own formatting.
+  CAPTION="🔔 Approval needed
+
+${TELEGRAM_SUMMARY}
+
+Plan ID: ${PLAN_ID}"
+else
+  # Fallback for entries written before this convention existed (or
+  # anything that skipped it) - the old truncated-technical-summary
+  # approach, worse but still functional, so an older plan can still be
+  # sent rather than blocking on a missing field.
+  SUMMARY_SNIPPET="$(printf '%s' "$PLAN_LINE" | jq -r '.summary' | head -c 500)"
+  CAPTION="🔔 K&A Meta Ads — plan awaiting your approval
+(no plain-English summary was written for this one - showing the raw technical plan instead)
 
 ${SUBJECT}
 (validated by ${ACTOR})
@@ -81,6 +99,7 @@ ${SUMMARY_SNIPPET}...
 
 Full detail: grep ${PLAN_ID} knowledge/learning-log.jsonl
 Plan id: ${PLAN_ID}"
+fi
 
 # Inline keyboard. callback_data stays well under Telegram's 64-byte cap
 # (short prefix + plan id). Single source of truth for the prefix scheme -
