@@ -317,7 +317,7 @@ Numbered exactly as in `docs/architecture.md` §3. Mostly prompt-based (agents f
       "stitchflow": {
         "type": "http",
         "url": "https://stitchflow.in/api/mcp",
-        "headers": { "Authorization": "Bearer sfp_LYsR6uP25t0O3zjKkn7i-rSswCIZg-Tln7PpcdB7tig" }
+        "headers": { "Authorization": "Bearer <redacted 2026-08-23 - see .mcp.json.example; the real value lives only in the gitignored .mcp.json, never in this doc>" }
       }
     }
   }
@@ -352,7 +352,7 @@ None of the agents have a dedicated Meta Ads MCP tool — all Meta access for al
 
 ### 8.7 Credentials / secrets inventory (for migration — handle deliberately, don't just copy-paste into a new repo casually)
 - `meta_token.txt.txt` (project root) — Meta Graph API System User token, plaintext.
-- Stitchflow bearer token — currently inline in `.mcp.json` (`sfp_LYsR6uP25t0O3zjKkn7i-rSswCIZg-Tln7PpcdB7tig`), not in a separate secrets file.
+- Stitchflow bearer token — inline in `.mcp.json` (gitignored, not in a separate secrets file). Redacted from this doc 2026-08-23 after being found committed here in plaintext — the token was rotated the same day, so the old value is invalid regardless, but the actual value should never appear in a tracked file again.
 - No `.env` file exists in this project; no environment-variable-based secret loading is currently used — both secrets above are read directly from files.
 
 ---
