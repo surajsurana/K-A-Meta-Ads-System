@@ -389,17 +389,29 @@ def handle_callback_query(token, cq):
         return
 
     if action == "hold":
+        # Carries a `follow_up` (added 2026-08-24, user request) so the
+        # weekly review's due-now sweep picks this back up automatically -
+        # re-asks every week, with fresh buttons, until the user actually
+        # approves or rejects it, rather than a hold silently sitting
+        # forever with a dead button. Each re-hold creates its own new
+        # observation entry with a fresh 7-day follow_up, so the cycle
+        # naturally repeats without needing separate "still held" tracking -
+        # the due-now sweep's own two-step check (is there a LATER
+        # override/change entry for this plan_id?) is what recognizes an
+        # approve/reject as the thing that finally stops the cycle.
+        follow_up_date = (datetime.now(timezone.utc) + timedelta(days=7)).strftime("%Y-%m-%d")
         append_learning_log({
             "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             "actor": "human", "type": "observation", "subject": plan_id,
             "summary": f"Held via Telegram button for later review. Plan {plan_id} preserved, unresolved, no Meta/Instagram changes made.",
             "source": "human_told", "confidence": "high",
             "tags": ["telegram-approval", "held"], "linked_to": [plan_id],
+            "follow_up": f"re-check {follow_up_date}: if plan {plan_id} is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section",
         })
         finalize_status(plan_id, "held")
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"🕒 On hold\n\nSaved for later review. No changes were made.\n\nPlan ID: {plan_id}",
+            "text": f"🕒 On hold\n\nSaved for later review. No changes were made.\n\nYou'll be asked again in next week's report.\n\nPlan ID: {plan_id}",
         })
         return
 
