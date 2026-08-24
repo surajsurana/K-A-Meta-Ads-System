@@ -135,8 +135,24 @@ ka_run_headless() {
   # Never uses --bare: bare mode skips auto-discovery of .claude/agents, hooks, and MCP
   # servers, which would silently break subagent dispatch entirely, and it
   # also doesn't read CLAUDE_CODE_OAUTH_TOKEN at all.
+  #
+  # CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS: found live 2026-08-24 - the CLI's
+  # default 600s (10min) background-task wait ceiling terminated a weekly
+  # review mid-run, right after media-buyer finished validating 6 real plans
+  # but before the session reached the notification step - no digest, no
+  # approval buttons were sent, and the wrapper's own exit-code check didn't
+  # catch it either (claude still exited 0, since "background tasks
+  # terminated" isn't itself a process failure). Reviews now do meaningfully
+  # more work (geo/demographic analysis, more dispatches, Telegram sends)
+  # than when this was first built, so 600s is no longer enough headroom.
+  # Raised generously but NOT to 0/unlimited - an actually-stuck run holding
+  # the flock lock forever would silently starve every future scheduled run
+  # (heartbeat, weekly, monthly) with no automatic recovery, which is worse
+  # than one run finishing late. The outer `timeout` is the hard backstop in
+  # case this ceiling doesn't cleanly stop everything on its own.
+  export CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=1800000
   {
-    claude -p "$(cat "$PROMPT_FILE")" \
+    timeout 2400 claude -p "$(cat "$PROMPT_FILE")" \
       --permission-mode dontAsk \
       --allowedTools "Read,Grep,Glob,Bash,WebSearch,mcp__stitchflow__*" \
       2>&1
@@ -146,6 +162,15 @@ ka_run_headless() {
 
   if [ "${CLAUDE_EXIT:-1}" -ne 0 ]; then
     ka_alert_failure "headless claude run exited non-zero ($CLAUDE_EXIT)"
+  elif grep -q "Background tasks still running after" "$LOG_FILE" 2>/dev/null; then
+    # Belt-and-suspenders for the exact 2026-08-24 failure mode: the CLI can
+    # still exit 0 after force-terminating unfinished background dispatches
+    # mid-run (e.g. media-buyer validating plans) - that is NOT a successful
+    # run even though the exit code alone says otherwise, and the run's own
+    # final printed text can easily look plausible enough that a human
+    # skimming the log wouldn't catch it. Alert explicitly rather than
+    # trusting exit 0.
+    ka_alert_failure "run was cut off mid-task (hit the background-task wait ceiling) - it may have exited 0 but did NOT necessarily finish or notify. Check $LOG_FILE."
   fi
 
   find "$LOG_DIR" -name "${JOB_NAME}-*.log" -mtime +30 -delete 2>/dev/null
