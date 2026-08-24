@@ -23,9 +23,12 @@ Usage:
 import fcntl
 import json
 import os
+import queue
 import subprocess
 import sys
+import threading
 import time
+import traceback
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -43,6 +46,20 @@ TELEGRAM_CONFIG = os.path.join(REPO_DIR, "telegram_config.txt")
 STALE_AFTER_HOURS = 48  # a plan pending this long is treated as needing fresh eyes, not a stale rubber-stamp
 POLL_TIMEOUT_S = 30     # Telegram long-poll timeout
 EXEC_TIMEOUT_S = 300    # generous ceiling for a single-plan headless execution; a real one should be far faster
+
+# Approve dispatches run on a background worker thread, never inline in the
+# poll loop - found live 2026-08-24: with dispatch running synchronously, a
+# SECOND button tap arriving while the first plan's ~60s dispatch was still
+# in flight sat queued until the poll loop got back around to it, by which
+# point Telegram had already invalidated that callback_query as too old.
+# answerCallbackQuery then threw an uncaught HTTP 400, aborting the handler
+# mid-flight and leaving state stuck at "claimed_approve" forever (claimed,
+# but never finalized, never dispatched, never reported). One worker thread
+# (not unlimited concurrency) - this droplet has 458MB RAM shared with
+# StockTradingBot and Petty Cash, so dispatches still run one at a time,
+# just off the poll loop's critical path so new taps get acknowledged
+# immediately regardless of how long a previous dispatch takes.
+DISPATCH_QUEUE = queue.Queue()
 
 CALLBACK_PREFIXES = {"A": "approve", "R": "reject", "H": "hold"}
 
@@ -344,8 +361,16 @@ def handle_callback_query(token, cq):
         })
         return
 
-    # outcome == "claimed" - genuinely our first, valid, authorized touch on this plan.
-    tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Got it, processing..."})
+    # outcome == "claimed" - genuinely our first, valid, authorized touch on
+    # this plan. Non-fatal: claim_for_action already committed the state
+    # transition above, so a failure acking the tap (e.g. a stale
+    # callback_query_id) must not prevent the actual reject/hold/approve
+    # logic below from running - that was the exact 2026-08-24 failure mode
+    # for the approve path, and reject/hold deserve the same protection.
+    try:
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Got it, processing..."})
+    except Exception as e:
+        log(f"non-fatal: failed to ack callback for {plan_id}: {e}")
 
     if action == "reject":
         append_learning_log({
@@ -378,68 +403,116 @@ def handle_callback_query(token, cq):
         })
         return
 
-    # action == "approve"
-    tg_api(token, "editMessageText", {
-        "chat_id": chat_id, "message_id": message_id,
-        "text": f"⏳ Approved — working on it now...\n\nPlan ID: {plan_id}",
-    })
-    success, detail = dispatch_execution(plan_id)
-    if not success and detail.startswith("GATED:"):
-        final_status = "gated"
-    else:
-        # Check the compound keywords FIRST: "ALREADY_EXECUTED" and
-        # "STALE_NOT_EXECUTED" both contain "EXECUTED" as a raw substring,
-        # so a naive `"EXECUTED" in detail` check (even restricted to the
-        # first line) mislabels a correctly-declined stale/already-done
-        # plan as a genuine execution - confirmed live 2026-08-21 during
-        # real-dispatch testing: the model's ALREADY_EXECUTED response
-        # didn't even lead with the bare keyword on line 1 as instructed,
-        # it explained first - so this also can't assume strict first-line
-        # compliance and checks the whole output. False-labeling something
-        # "Executed" when it wasn't is the dangerous direction to get
-        # wrong; false-labeling a real execution as "not_executed" is only
-        # cosmetic (the learning-log type:change entry is the real record
-        # either way), so ambiguous/non-compliant output resolves to the
-        # safe (non-executed) label, never the reverse.
-        detail_upper = detail.upper()
-        if "ALREADY_EXECUTED" in detail_upper or "STALE_NOT_EXECUTED" in detail_upper:
-            final_status = "not_executed"
-        elif success and "EXECUTED" in detail_upper:
-            final_status = "executed"
-        elif not success:
-            final_status = "failed"
+    # action == "approve" - enqueue for the background worker FIRST, before
+    # any further Telegram API calls, and unconditionally. claim_for_action
+    # already committed "claimed_approve" above; if the ack/edit calls below
+    # were allowed to run first and one of them threw (the exact stale-
+    # callback scenario that caused the 2026-08-24 incident), the plan would
+    # never reach the queue at all and would be stuck exactly like before -
+    # enqueueing first guarantees the dispatch always happens once claimed,
+    # regardless of what the UI-feedback calls below do.
+    DISPATCH_QUEUE.put((token, plan_id, chat_id, message_id))
+    try:
+        tg_api(token, "editMessageText", {
+            "chat_id": chat_id, "message_id": message_id,
+            "text": f"⏳ Approved — queued, working on it...\n\nPlan ID: {plan_id}",
+        })
+    except Exception as e:
+        log(f"non-fatal: failed to edit 'queued' message for {plan_id}: {e}")
+
+
+def process_approve_dispatch(token, plan_id, chat_id, message_id):
+    """Runs on the background worker thread. Wrapped end-to-end in try/except
+    so that ANY failure - including a Telegram API error, not just a
+    dispatch_execution() problem - still reaches finalize_status() and
+    notifies the user, rather than leaving state stuck at "claimed_approve"
+    forever (the exact 2026-08-24 failure mode this function replaces)."""
+    try:
+        success, detail = dispatch_execution(plan_id)
+        if not success and detail.startswith("GATED:"):
+            final_status = "gated"
         else:
-            final_status = "not_executed"
-    finalize_status(plan_id, final_status, detail[:500])
+            # Check the compound keywords FIRST: "ALREADY_EXECUTED" and
+            # "STALE_NOT_EXECUTED" both contain "EXECUTED" as a raw substring,
+            # so a naive `"EXECUTED" in detail` check (even restricted to the
+            # first line) mislabels a correctly-declined stale/already-done
+            # plan as a genuine execution - confirmed live 2026-08-21 during
+            # real-dispatch testing: the model's ALREADY_EXECUTED response
+            # didn't even lead with the bare keyword on line 1 as instructed,
+            # it explained first - so this also can't assume strict first-line
+            # compliance and checks the whole output. False-labeling something
+            # "Executed" when it wasn't is the dangerous direction to get
+            # wrong; false-labeling a real execution as "not_executed" is only
+            # cosmetic (the learning-log type:change entry is the real record
+            # either way), so ambiguous/non-compliant output resolves to the
+            # safe (non-executed) label, never the reverse.
+            detail_upper = detail.upper()
+            if "ALREADY_EXECUTED" in detail_upper or "STALE_NOT_EXECUTED" in detail_upper:
+                final_status = "not_executed"
+            elif success and "EXECUTED" in detail_upper:
+                final_status = "executed"
+            elif not success:
+                final_status = "failed"
+            else:
+                final_status = "not_executed"
+        finalize_status(plan_id, final_status, detail[:500])
 
-    if final_status == "executed":
-        icon, label = "✅", "Executed"
-    elif final_status == "gated":
-        icon, label = "🔒", "Approved, but live execution is currently disabled (see detail)"
-    elif final_status == "not_executed":
-        icon, label = "⚠️", "Approved but NOT executed (stale/already-done - see detail)"
-    else:
-        icon, label = "❗", "Execution FAILED"
+        if final_status == "executed":
+            icon, label = "✅", "Executed"
+        elif final_status == "gated":
+            icon, label = "🔒", "Approved, but live execution is currently disabled (see detail)"
+        elif final_status == "not_executed":
+            icon, label = "⚠️", "Approved but NOT executed (stale/already-done - see detail)"
+        else:
+            icon, label = "❗", "Execution FAILED"
 
-    # Plain text, no parse_mode: first_line comes from a real claude session's
-    # own output (ad IDs, field names like adset_id) or the GATED message,
-    # either of which can contain _ / * / ` that break Telegram's Markdown
-    # parser outright - same class of bug fixed in send-telegram-approval.sh
-    # after a live 400 during testing (2026-08-21).
-    first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
-    # The dispatch prompt asks for "KEYWORD: plain sentence" as line 1 - strip
-    # the keyword prefix for display since the icon/label above already says
-    # whether it executed (added 2026-08-23, user feedback: keep messages
-    # short and plain, don't repeat the same status twice).
-    display_line = first_line
-    for kw in ("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:"):
-        if display_line.upper().startswith(kw):
-            display_line = display_line[len(kw):].strip()
-            break
-    tg_api(token, "sendMessage", {
-        "chat_id": chat_id,
-        "text": f"{icon} {label}\n\n{display_line}\n\nPlan ID: {plan_id}",
-    })
+        # Plain text, no parse_mode: first_line comes from a real claude
+        # session's own output (ad IDs, field names like adset_id) or the
+        # GATED message, either of which can contain _ / * / ` that break
+        # Telegram's Markdown parser outright - same class of bug fixed in
+        # send-telegram-approval.sh after a live 400 during testing (2026-08-21).
+        first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
+        # The dispatch prompt asks for "KEYWORD: plain sentence" as line 1 -
+        # strip the keyword prefix for display since the icon/label above
+        # already says whether it executed (added 2026-08-23, user feedback:
+        # keep messages short and plain, don't repeat the same status twice).
+        display_line = first_line
+        for kw in ("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:"):
+            if display_line.upper().startswith(kw):
+                display_line = display_line[len(kw):].strip()
+                break
+        tg_api(token, "sendMessage", {
+            "chat_id": chat_id,
+            "text": f"{icon} {label}\n\n{display_line}\n\nPlan ID: {plan_id}",
+        })
+    except Exception:
+        err = traceback.format_exc()
+        log(f"ERROR in process_approve_dispatch for {plan_id}:\n{err}")
+        # finalize_status must fire regardless of what failed above (a
+        # dispatch_execution bug, a Telegram API error mid-flow, anything) -
+        # this is the specific guarantee that prevents the plan from being
+        # stuck at "claimed_approve" forever with no way for a later tap to
+        # even see a clear "already ..." message explaining what happened.
+        finalize_status(plan_id, "failed", f"Unhandled error in dispatch worker: {err[-400:]}")
+        try:
+            tg_api(token, "sendMessage", {
+                "chat_id": chat_id,
+                "text": f"❗ Something went wrong processing this\n\nNo confirmation of what happened - please check with the operator before assuming anything did or didn't execute.\n\nPlan ID: {plan_id}",
+            })
+        except Exception:
+            pass  # best-effort notification; state is already finalized above regardless
+
+
+def dispatch_worker_loop():
+    """Runs forever on a background thread, processing approved plans one at
+    a time (bounded concurrency - see DISPATCH_QUEUE comment) so the main
+    poll loop is never blocked waiting for a dispatch to finish."""
+    while True:
+        token, plan_id, chat_id, message_id = DISPATCH_QUEUE.get()
+        try:
+            process_approve_dispatch(token, plan_id, chat_id, message_id)
+        finally:
+            DISPATCH_QUEUE.task_done()
 
 
 # --- Main poll loop, with single-instance locking so @reboot + the
@@ -461,6 +534,7 @@ def acquire_singleton_lock():
 def main_loop():
     _lock_handle = acquire_singleton_lock()  # noqa: F841 - held for process lifetime
     token, _ = load_telegram_config()
+    threading.Thread(target=dispatch_worker_loop, daemon=True, name="dispatch-worker").start()
     log(f"listener started, pid={os.getpid()}")
     offset = None
     while True:
