@@ -136,23 +136,53 @@ ka_run_headless() {
   # servers, which would silently break subagent dispatch entirely, and it
   # also doesn't read CLAUDE_CODE_OAUTH_TOKEN at all.
   #
-  # CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS: found live 2026-08-24 - the CLI's
-  # default 600s (10min) background-task wait ceiling terminated a weekly
-  # review mid-run, right after media-buyer finished validating 6 real plans
-  # but before the session reached the notification step - no digest, no
-  # approval buttons were sent, and the wrapper's own exit-code check didn't
-  # catch it either (claude still exited 0, since "background tasks
-  # terminated" isn't itself a process failure). Reviews now do meaningfully
-  # more work (geo/demographic analysis, more dispatches, Telegram sends)
-  # than when this was first built, so 600s is no longer enough headroom.
-  # Raised generously but NOT to 0/unlimited - an actually-stuck run holding
-  # the flock lock forever would silently starve every future scheduled run
-  # (heartbeat, weekly, monthly) with no automatic recovery, which is worse
-  # than one run finishing late. The outer `timeout` is the hard backstop in
-  # case this ceiling doesn't cleanly stop everything on its own.
-  export CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=1800000
+  # CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS + outer `timeout`: found live
+  # 2026-08-24 - the CLI's default 600s (10min) background-task wait ceiling
+  # terminated a weekly review mid-run, right after media-buyer finished
+  # validating 6 real plans but before the session reached the notification
+  # step - no digest, no approval buttons were sent, and the wrapper's own
+  # exit-code check didn't catch it either (claude still exited 0, since
+  # "background tasks terminated" isn't itself a process failure). Raised
+  # to 1800000/2400s that day. Found live AGAIN 2026-08-31: the 2400s outer
+  # timeout itself was now too short - a real weekly review with the current
+  # scope (geo/demographic analysis, the held-plan light-recheck sweep,
+  # UGC/content review, campaign-strategist's full disposition pass) did
+  # ~45 minutes of genuine, valuable work (23 real learning-log entries,
+  # including 2 live executions) before being killed mid-stream, almost
+  # certainly before it reached the guaranteed weekly-digest notification -
+  # not a hang, just legitimately more work than the cap allowed for.
+  #
+  # Split per job rather than one shared number: heartbeat is deliberately
+  # meant to stay cheap (daily, narrow scope) so keeps a modest ceiling: a
+  # heartbeat that's actually taking 20+ minutes is more likely stuck than
+  # doing real proportionate work, and daily cadence means a stuck one
+  # would otherwise hold the shared lock 24x longer than intended. Weekly/
+  # monthly get generous headroom given how much real work they now do,
+  # and their low frequency (weekly/monthly, not daily) means a longer cap
+  # doesn't compound into meaningfully more total blocked-time risk.
+  case "$JOB_NAME" in
+    heartbeat)
+      BG_WAIT_CEILING_MS=600000    # 10 min - back to the CLI's own default; heartbeat should never need the raised ceiling
+      OUTER_TIMEOUT_S=1200         # 20 min hard cap
+      ;;
+    *)
+      BG_WAIT_CEILING_MS=3000000   # 50 min
+      OUTER_TIMEOUT_S=4200         # 70 min hard cap - NOT unlimited, so an actually-stuck run still eventually releases
+                                    # the shared flock lock rather than silently starving every other scheduled run forever
+      ;;
+  esac
+  export CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS="$BG_WAIT_CEILING_MS"
   {
-    timeout 2400 claude -p "$(cat "$PROMPT_FILE")" \
+    # stdbuf -oL -eL: force line-buffered stdout/stderr instead of the fully-
+    # buffered default when output isn't a TTY. Found live 2026-08-31 - the
+    # log file for a run that got killed by the outer `timeout` showed
+    # nothing at all between the sync and the failure line, even though real
+    # work (23 learning-log entries, 2 live executions) had genuinely
+    # happened - the session's own narrative output was sitting in an
+    # unflushed buffer when it got killed, so a human reading the log had no
+    # way to see how far it actually got. Doesn't change what work happens,
+    # only makes a future killed run's partial log actually readable.
+    stdbuf -oL -eL timeout "$OUTER_TIMEOUT_S" claude -p "$(cat "$PROMPT_FILE")" \
       --permission-mode dontAsk \
       --allowedTools "Read,Grep,Glob,Bash,WebSearch,mcp__stitchflow__*" \
       2>&1
