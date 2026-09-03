@@ -45,7 +45,15 @@ TELEGRAM_CONFIG = os.path.join(REPO_DIR, "telegram_config.txt")
 
 STALE_AFTER_HOURS = 48  # a plan pending this long is treated as needing fresh eyes, not a stale rubber-stamp
 POLL_TIMEOUT_S = 30     # Telegram long-poll timeout
-EXEC_TIMEOUT_S = 300    # generous ceiling for a single-plan headless execution; a real one should be far faster
+EXEC_TIMEOUT_S = 600    # raised from 300s 2026-09-03 (real incident): a legitimate 2-ad build (2 creatives + 2 ads
+                        # + ~2.5min polling Meta's review-status transition + the learning-log write/push) ran past
+                        # 300s and got reported "Execution FAILED - dispatch timed out" to the user even though the
+                        # underlying work completed correctly - confirmed live on Meta after the fact. No auto-retry
+                        # exists on a timeout (by design, to avoid double-executing), so a false timeout here means a
+                        # real human has to notice and re-approve. 600s matches the daily heartbeat's own background-
+                        # task wait ceiling (BG_WAIT_CEILING_MS, scripts/_run-common.sh) as a comparable, already-
+                        # proven budget for one unit of real work - not unlimited, so a genuinely stuck dispatch still
+                        # eventually reports failure rather than hanging the listener forever.
 
 # Approve dispatches run on a background worker thread, never inline in the
 # poll loop - found live 2026-08-24: with dispatch running synchronously, a
