@@ -251,6 +251,44 @@ def new_id():
 # script never constructs or sends a Meta API call itself. See the module
 # docstring / docs/proactive-operations.md SS9 for why.
 
+def _plan_confirmed_executed(plan_id):
+    """Read-only check: did plan_id actually get a type=change entry linked to
+    it, per the real, current remote state? Uses `git show origin/<branch>:...`
+    rather than touching the working tree - safe to call concurrently with a
+    dispatch subprocess that might still be mid-way through its own
+    fetch/rebase/commit/push in this same REPO_DIR (append-learning-log.sh),
+    since this never mutates local git state at all. Added 2026-09-03 (real
+    incident): a dispatch that hit EXEC_TIMEOUT_S got reported "Execution
+    FAILED" to the user even though the underlying build had genuinely
+    succeeded - this is what lets a timeout be verified against reality
+    before ever being reported as a failure."""
+    try:
+        branch = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            cwd=REPO_DIR, capture_output=True, text=True, timeout=15,
+        ).stdout.strip() or "main"
+        subprocess.run(["git", "fetch", "origin", branch], cwd=REPO_DIR, capture_output=True, text=True, timeout=30)
+        result = subprocess.run(
+            ["git", "show", f"origin/{branch}:knowledge/learning-log.jsonl"],
+            cwd=REPO_DIR, capture_output=True, text=True, timeout=15,
+        )
+        if result.returncode != 0:
+            return False
+        for line in result.stdout.splitlines():
+            if f'"{plan_id}"' not in line:
+                continue
+            try:
+                entry = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if entry.get("type") == "change" and plan_id in (entry.get("linked_to") or []):
+                return True
+        return False
+    except Exception as e:
+        log(f"_plan_confirmed_executed check failed for {plan_id} (treating as unconfirmed, not a false positive): {e}")
+        return False
+
+
 def dispatch_execution(plan_id):
     if plan_id.startswith("TEST-"):
         log(f"TEST MODE: simulating execution for {plan_id}, no real dispatch")
@@ -308,7 +346,27 @@ Report format - this matters, your response's first line is shown directly to th
             cwd=REPO_DIR, env=env, capture_output=True, text=True, timeout=EXEC_TIMEOUT_S,
         )
     except subprocess.TimeoutExpired:
-        return False, f"execution dispatch timed out after {EXEC_TIMEOUT_S}s"
+        # The local subprocess didn't return in time, but that alone doesn't
+        # mean the work failed - the underlying claude session may have
+        # already made the real Meta writes and just been mid-way through
+        # its own verification/logging tail when it got killed (real
+        # incident, 2026-09-03: a 2-ad build reported "FAILED" here even
+        # though both ads existed correctly on Meta, confirmed after the
+        # fact). Give it a bounded grace period to finish writing its own
+        # type=change entry before concluding it genuinely failed - checked
+        # read-only, never trusts the timeout signal alone.
+        grace_period_s = 300  # 5 more minutes, on top of EXEC_TIMEOUT_S already spent
+        grace_start = time.time()
+        while time.time() - grace_start < grace_period_s:
+            time.sleep(20)
+            if _plan_confirmed_executed(plan_id):
+                return True, (f"EXECUTED: the dispatch process ran past its {EXEC_TIMEOUT_S}s timeout, but the "
+                               f"underlying build/change completed and is confirmed in the learning log - not a "
+                               f"real failure, just a slow one.")
+        return False, (f"execution dispatch did not return within {EXEC_TIMEOUT_S}s, and no confirming type=change "
+                        f"entry appeared within a further {grace_period_s}s of waiting - status is genuinely "
+                        f"uncertain, not a confirmed failure. Check knowledge/learning-log.jsonl for plan {plan_id} "
+                        f"directly, and re-verify the target object(s) live on Meta, before assuming nothing happened.")
 
     output = (result.stdout or "") + (result.stderr or "")
     log(f"execution dispatch for {plan_id} exited {result.returncode}. Output (first 2000 chars): {output[:2000]}")
@@ -471,6 +529,15 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
                 final_status = "not_executed"
             elif success and "EXECUTED" in detail_upper:
                 final_status = "executed"
+            elif not success and "STATUS IS GENUINELY UNCERTAIN" in detail_upper:
+                # Added 2026-09-03: distinct from a confirmed failure - the
+                # timeout handler above already checked reality (via
+                # _plan_confirmed_executed) and found no proof either way.
+                # Never collapse this into "failed" - a real incident showed
+                # the underlying work can and does still succeed even when
+                # this branch is hit, so telling the user "FAILED" here would
+                # be a false alarm, not a safe default.
+                final_status = "uncertain"
             elif not success:
                 final_status = "failed"
             else:
@@ -483,6 +550,8 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
             icon, label = "🔒", "Approved, but live execution is currently disabled (see detail)"
         elif final_status == "not_executed":
             icon, label = "⚠️", "Approved but NOT executed (stale/already-done - see detail)"
+        elif final_status == "uncertain":
+            icon, label = "⏳", "Status uncertain (NOT a confirmed failure - dispatch ran long, checked and couldn't yet prove it either way - see detail, verify manually)"
         else:
             icon, label = "❗", "Execution FAILED"
 
