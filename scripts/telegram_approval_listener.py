@@ -306,6 +306,21 @@ def find_pending_correction_by_message(chat_id, reply_to_message_id):
     return with_state_lock(op)
 
 
+def update_check_message_id(check_id, new_message_id):
+    """After a rejection, the question moves to a fresh ForceReply message
+    (Telegram can't attach ForceReply to an edit, only to a new outgoing
+    message - see the reject branch of handle_product_check_callback) - this
+    repoints message_id so find_pending_correction_by_message matches the
+    reply against the NEW prompt, not the original photo message."""
+    def op(state):
+        entry = state.get(check_id)
+        if entry is not None:
+            entry["message_id"] = new_message_id
+            state[check_id] = entry
+        return state, None
+    with_state_lock(op)
+
+
 def finalize_product_check(check_id, final_status, resolved_products=None):
     def op(state):
         entry = state.get(check_id)
@@ -669,15 +684,34 @@ def handle_product_check_callback(token, cq):
         return
 
     # action == "reject" - we don't yet know the right answer. Leave the
-    # check "awaiting_correction" (claim_product_check already set that) and
-    # ask for a plain-text reply, matched later by handle_text_reply() via
-    # reply_to_message.message_id - never by "assume the next message is it",
-    # which would misattribute a reply to the wrong pending check if more
-    # than one is open at once.
+    # check "awaiting_correction" (claim_product_check already set that).
+    # Close out the original photo message, then send a FRESH message with
+    # ForceReply (added 2026-09-04, user feedback after the first real test:
+    # relying on the user to manually swipe/long-press "Reply" on an edited
+    # message was too easy to miss or get wrong). ForceReply only works on a
+    # new outgoing message, never on an edit - Telegram's client opens the
+    # text input already attached to whichever message carries it, so the
+    # user just types and sends, no gesture to remember. The prompt's own
+    # message_id (not the original photo message's) is what
+    # find_pending_correction_by_message matches the reply against - see
+    # update_check_message_id.
     tg_api(token, "editMessageText", {
         "chat_id": chat_id, "message_id": message_id,
-        "text": f"❌ Not {entry.get('candidate_name')}\n\nReply to THIS message with the correct product name (or SKU if you know it).",
+        "text": f"❌ Not {entry.get('candidate_name')}\n\nAsking below what it actually is.",
     })
+    prompt_resp = tg_api(token, "sendMessage", {
+        "chat_id": chat_id,
+        "text": f"What product is this actually (video {entry.get('video_id')})?\n\nType the name below and hit send - your reply goes straight into the product map.",
+        "reply_markup": json.dumps({
+            "force_reply": True,
+            "input_field_placeholder": "Product name or SKU",
+        }),
+    })
+    prompt_message_id = prompt_resp.get("result", {}).get("message_id")
+    if prompt_message_id is not None:
+        update_check_message_id(check_id, prompt_message_id)
+    else:
+        log(f"WARNING: could not get message_id from ForceReply prompt for {check_id} - reply matching may fail: {prompt_resp}")
 
 
 def handle_text_reply(token, message):
