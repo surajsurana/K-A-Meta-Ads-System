@@ -320,7 +320,7 @@ def find_pending_correction_by_message(chat_id, reply_to_message_id):
             if (entry.get("kind") == "product_check"
                     and entry.get("status") == "awaiting_correction"
                     and str(entry.get("chat_id")) == str(chat_id)
-                    and entry.get("message_id") == reply_to_message_id):
+                    and str(entry.get("message_id")) == str(reply_to_message_id)):
                 return None, (check_id, entry)
         return None, None
     return with_state_lock(op)
