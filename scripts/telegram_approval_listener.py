@@ -71,6 +71,16 @@ DISPATCH_QUEUE = queue.Queue()
 
 CALLBACK_PREFIXES = {"A": "approve", "R": "reject", "H": "hold"}
 
+# Product-identification confirmation (added 2026-09-04, docs/architecture.md
+# SS3d) - a second, structurally distinct callback family. These never
+# dispatch an execution, they only ever record a product-identity decision
+# to knowledge/creative-product-map.jsonl. Kept as separate prefixes (not
+# reusing A/R/H) so the two families can never be confused by a stale/
+# mis-copied callback_data value - "PY:<check_id>" / "PN:<check_id>" only
+# ever mean "yes/no, this photo pairing shows the same product", nothing else.
+PRODUCT_CALLBACK_PREFIXES = {"PY": "confirm", "PN": "reject"}
+PRODUCT_CHECK_STALE_AFTER_HOURS = 168  # a week - these aren't time-sensitive live actions like an execution plan, no reason to expire fast
+
 
 def log(msg):
     os.makedirs(LOG_DIR, exist_ok=True)
@@ -227,6 +237,87 @@ def get_entry(plan_id):
     return with_state_lock(lambda state: (None, state.get(plan_id)))
 
 
+# --- Product-identification confirmation state. Shares the same STATE_FILE
+# and locking as execution-plan approvals (one file, one lock, simplest safe
+# option at this scale - see the state-store comment above) but keyed under
+# check_id values that are always prefixed "PID-" so they can never collide
+# with a plan_id (plan_ids are always "KL-..."), and carry their own
+# "kind": "product_check" field so any code iterating the state dict can
+# tell the two families apart without guessing from the key format alone.
+
+def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku, candidate_name):
+    def op(state):
+        state[check_id] = {
+            "kind": "product_check",
+            "status": "pending",
+            "chat_id": str(chat_id),
+            "message_id": message_id,
+            "video_id": video_id,
+            "candidate_sku": candidate_sku,
+            "candidate_name": candidate_name,
+            "sent_at": datetime.now(timezone.utc).isoformat(),
+        }
+        return state, None
+    with_state_lock(op)
+    log(f"recorded pending product check: {check_id} (video_id={video_id}, candidate={candidate_name!r})")
+
+
+def claim_product_check(check_id, action, chat_id):
+    """Same claim-before-act shape as claim_for_action, sized for this
+    lower-stakes use case (nothing here ever touches Meta/Instagram, so a
+    week-long staleness window is fine - see PRODUCT_CHECK_STALE_AFTER_HOURS)."""
+    def op(state):
+        entry = state.get(check_id)
+        if entry is None or entry.get("kind") != "product_check":
+            return None, "unknown"
+        if str(entry["chat_id"]) != str(chat_id):
+            return None, "unauthorized"
+        if entry["status"] != "pending":
+            return None, f"already:{entry['status']}"
+        sent_at = datetime.fromisoformat(entry["sent_at"])
+        age_h = (datetime.now(timezone.utc) - sent_at).total_seconds() / 3600
+        if age_h > PRODUCT_CHECK_STALE_AFTER_HOURS:
+            entry["status"] = "expired"
+            entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
+            state[check_id] = entry
+            return state, "stale"
+        claimed_status = {"confirm": "confirmed", "reject": "awaiting_correction"}[action]
+        entry["status"] = claimed_status
+        entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
+        state[check_id] = entry
+        return state, "claimed"
+    return with_state_lock(op)
+
+
+def find_pending_correction_by_message(chat_id, reply_to_message_id):
+    """Look up a product_check entry that's sitting in 'awaiting_correction',
+    waiting for the user's free-text reply naming the right product. Matched
+    by which message the user's reply was actually a Telegram reply-to -
+    never by "the most recent one", since a second question could easily be
+    sent before the first is answered."""
+    def op(state):
+        for check_id, entry in state.items():
+            if (entry.get("kind") == "product_check"
+                    and entry.get("status") == "awaiting_correction"
+                    and str(entry.get("chat_id")) == str(chat_id)
+                    and entry.get("message_id") == reply_to_message_id):
+                return None, (check_id, entry)
+        return None, None
+    return with_state_lock(op)
+
+
+def finalize_product_check(check_id, final_status, resolved_products=None):
+    def op(state):
+        entry = state.get(check_id)
+        if entry is not None:
+            entry["status"] = final_status
+            if resolved_products is not None:
+                entry["resolved_products"] = resolved_products
+            state[check_id] = entry
+        return state, None
+    with_state_lock(op)
+
+
 # --- Learning log helpers (read-only checks here; writes always go through
 # scripts/append-learning-log.sh, never direct file edits, same discipline
 # as every agent in this system).
@@ -244,6 +335,21 @@ def append_learning_log(entry_dict):
 
 def new_id():
     return "KL-" + datetime.now(timezone.utc).strftime("%Y-%m-%d-%H%M%S")
+
+
+def append_product_map(entry_dict):
+    """Writes to knowledge/creative-product-map.jsonl via
+    scripts/append-product-map.sh - same append-only safety discipline as
+    the learning log, deliberately a separate file/script (docs/architecture.md
+    SS3d) since this is a lookup table, not narrative history."""
+    line = json.dumps(entry_dict, ensure_ascii=False)
+    result = subprocess.run(
+        [os.path.join(REPO_DIR, "scripts", "append-product-map.sh"), line],
+        cwd=REPO_DIR, capture_output=True, text=True, timeout=60,
+    )
+    if result.returncode != 0:
+        log(f"WARNING: append-product-map.sh failed for video_id={entry_dict.get('video_id')}: {result.stdout} {result.stderr}")
+    return result.returncode == 0
 
 
 # --- The actual execution dispatch. Reuses marketing-lead's existing,
@@ -499,6 +605,128 @@ def handle_callback_query(token, cq):
         log(f"non-fatal: failed to edit 'queued' message for {plan_id}: {e}")
 
 
+def handle_product_check_callback(token, cq):
+    """PY:<check_id> / PN:<check_id> - confirm or reject a candidate product
+    match. Never touches Meta/Instagram/Shopify - only ever writes an
+    identity decision to knowledge/creative-product-map.jsonl. Structurally
+    separate from handle_callback_query (execution plans) even though the
+    shape looks similar, on purpose - see the PRODUCT_CALLBACK_PREFIXES
+    comment above for why the prefixes are kept distinct."""
+    cq_id = cq["id"]
+    data = cq.get("data", "")
+    from_id = cq["from"]["id"]
+    message = cq.get("message", {})
+    chat_id = message.get("chat", {}).get("id")
+    message_id = message.get("message_id")
+
+    prefix, check_id = data.split(":", 1)
+    action = PRODUCT_CALLBACK_PREFIXES[prefix]
+
+    _, configured_chat_id = load_telegram_config()
+    if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        log(f"UNAUTHORIZED product-check callback attempt on {check_id} from user {from_id} / chat {chat_id}")
+        return
+
+    outcome = claim_product_check(check_id, action, chat_id)
+
+    if outcome == "unknown":
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Unknown check - not sent by this system."})
+        return
+    if outcome == "unauthorized":
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        return
+    if outcome.startswith("already:"):
+        prior = outcome.split(":", 1)[1]
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": f"Already {prior} - no action taken.", "show_alert": True})
+        return
+    if outcome == "stale":
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "This expired unanswered - it'll be re-asked in a future review sweep."})
+        return
+
+    try:
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Got it"})
+    except Exception as e:
+        log(f"non-fatal: failed to ack product-check callback for {check_id}: {e}")
+
+    entry = get_entry(check_id)  # re-read post-claim for the fields recorded when it was sent
+
+    if action == "confirm":
+        resolved = [{"sku": entry.get("candidate_sku"), "name": entry.get("candidate_name"), "confidence": "telegram_user_confirmed"}]
+        append_product_map({
+            "video_id": entry.get("video_id"),
+            "products": resolved,
+            "status": "confirmed",
+            "matched_by": "telegram_user_confirmed",
+            "matched_at": datetime.now(timezone.utc).isoformat(),
+            "notes": f"User confirmed via Telegram photo check {check_id}.",
+        })
+        finalize_product_check(check_id, "confirmed", resolved)
+        tg_api(token, "editMessageText", {
+            "chat_id": chat_id, "message_id": message_id,
+            "text": f"✅ Confirmed: {entry.get('candidate_name')}\n\nSaved to the product map.",
+        })
+        return
+
+    # action == "reject" - we don't yet know the right answer. Leave the
+    # check "awaiting_correction" (claim_product_check already set that) and
+    # ask for a plain-text reply, matched later by handle_text_reply() via
+    # reply_to_message.message_id - never by "assume the next message is it",
+    # which would misattribute a reply to the wrong pending check if more
+    # than one is open at once.
+    tg_api(token, "editMessageText", {
+        "chat_id": chat_id, "message_id": message_id,
+        "text": f"❌ Not {entry.get('candidate_name')}\n\nReply to THIS message with the correct product name (or SKU if you know it).",
+    })
+
+
+def handle_text_reply(token, message):
+    """Handles a plain-text message that's a Telegram reply to a pending
+    product-check question - the only kind of free-text input this listener
+    ever interprets as meaningful (added 2026-09-04). Everything else about
+    this listener is still button-only; this is a narrow, specific exception
+    scoped to exactly one use case, not a general "parse arbitrary text"
+    capability - see docs/architecture.md SS3d for why this is safe (no
+    Meta/Instagram/Shopify write ever results from it, only a product-map
+    entry)."""
+    chat_id = message.get("chat", {}).get("id")
+    from_id = message.get("from", {}).get("id")
+    text = (message.get("text") or "").strip()
+    reply_to = message.get("reply_to_message", {})
+    reply_to_id = reply_to.get("message_id")
+
+    if not text or reply_to_id is None:
+        return  # not a reply to anything - not our concern, ignore silently
+
+    _, configured_chat_id = load_telegram_config()
+    if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
+        return  # silently ignore - same authorization boundary as callbacks, no need to announce it to a stranger
+
+    found = find_pending_correction_by_message(chat_id, reply_to_id)
+    if found is None:
+        return  # a reply to some other message - not a pending product check, ignore
+
+    check_id, entry = found
+    resolved = [{"sku": None, "name": text, "confidence": "telegram_user_corrected_freetext"}]
+    append_product_map({
+        "video_id": entry.get("video_id"),
+        "products": resolved,
+        "status": "confirmed",
+        "matched_by": "telegram_user_corrected",
+        "matched_at": datetime.now(timezone.utc).isoformat(),
+        "notes": f"User corrected via free-text reply to Telegram check {check_id}. Original candidate was {entry.get('candidate_name')!r}. "
+                 f"Recorded as free text, not yet resolved to a SKU - whoever next reads this mapping should confirm/attach the real SKU.",
+    })
+    finalize_product_check(check_id, "corrected", resolved)
+    try:
+        tg_api(token, "sendMessage", {
+            "chat_id": chat_id,
+            "text": f"Got it - saved \"{text}\" as the correct product.\n\n(Noted as a name, not yet linked to an exact SKU - that'll get tidied up on the next product review.)",
+        })
+    except Exception as e:
+        log(f"non-fatal: failed to ack text-reply correction for {check_id}: {e}")
+
+
 def process_approve_dispatch(token, plan_id, chat_id, message_id):
     """Runs on the background worker thread. Wrapped end-to-end in try/except
     so that ANY failure - including a Telegram API error, not just a
@@ -636,10 +864,28 @@ def main_loop():
                 offset = update["update_id"] + 1
                 cq = update.get("callback_query")
                 if cq:
+                    data = cq.get("data", "")
+                    prefix = data.split(":", 1)[0] if ":" in data else ""
                     try:
-                        handle_callback_query(token, cq)
+                        if prefix in CALLBACK_PREFIXES:
+                            handle_callback_query(token, cq)
+                        elif prefix in PRODUCT_CALLBACK_PREFIXES:
+                            handle_product_check_callback(token, cq)
+                        else:
+                            # Unrecognized data - same "ack quietly, do nothing"
+                            # boundary handle_callback_query already documents,
+                            # just centralized here now that there are two
+                            # recognized families instead of one.
+                            tg_api(token, "answerCallbackQuery", {"callback_query_id": cq["id"], "text": "Unrecognized action."})
                     except Exception as e:
                         log(f"ERROR handling callback: {e}")
+                    continue
+                msg = update.get("message")
+                if msg and "text" in msg:
+                    try:
+                        handle_text_reply(token, msg)
+                    except Exception as e:
+                        log(f"ERROR handling text reply: {e}")
         except (urllib.error.URLError, TimeoutError) as e:
             log(f"poll error (will retry): {e}")
             time.sleep(5)
@@ -654,5 +900,13 @@ if __name__ == "__main__":
             i = sys.argv.index(name)
             return sys.argv[i + 1]
         record_sent(arg("--plan-id"), arg("--chat-id"), arg("--message-id"))
+    elif "--record-product-check" in sys.argv:
+        def arg(name):
+            i = sys.argv.index(name)
+            return sys.argv[i + 1]
+        record_product_check(
+            arg("--check-id"), arg("--chat-id"), arg("--message-id"),
+            arg("--video-id"), arg("--candidate-sku"), arg("--candidate-name"),
+        )
     else:
         main_loop()
