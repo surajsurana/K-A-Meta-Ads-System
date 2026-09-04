@@ -14,17 +14,23 @@
 # sending the already-resolved images to Telegram and recording state.
 #
 # Usage:
-#   scripts/send-product-id-check.sh <video_id> <ad_frame_image_path> <candidate_image_path_or_NONE> <candidate_sku_or_NONE> <candidate_name>
+#   scripts/send-product-id-check.sh <video_id> <ad_frame_image_path> <candidate_image_path_or_NONE> <candidate_sku_or_NONE> <candidate_name> [comma_separated_ad_ids]
 #
 # If no Shopify/Stitchflow candidate photo could be found at all (checked
 # both sources, neither had one), pass NONE for candidate_image_path - the
 # message still goes out with just the ad frame and a text-only question
 # asking Suraj to identify it from the name/description alone.
+#
+# ad_ids (added 2026-09-04, real gap - earlier confirmations recorded
+# ad_ids: [] because this was never threaded through at all, which breaks
+# the per-product spend rollup, SS3d, since it needs to know which ads'
+# spend belongs to which product) - pass every ad_id currently using this
+# video_id, comma-separated, no spaces. Optional; omit if genuinely unknown.
 
 set -euo pipefail
 
-if [ $# -ne 5 ]; then
-  echo "Usage: $0 <video_id> <ad_frame_image_path> <candidate_image_path_or_NONE> <candidate_sku_or_NONE> <candidate_name>" >&2
+if [ $# -lt 5 ] || [ $# -gt 6 ]; then
+  echo "Usage: $0 <video_id> <ad_frame_image_path> <candidate_image_path_or_NONE> <candidate_sku_or_NONE> <candidate_name> [comma_separated_ad_ids]" >&2
   exit 2
 fi
 
@@ -33,6 +39,7 @@ AD_FRAME_PATH="$2"
 CANDIDATE_IMAGE_PATH="$3"
 CANDIDATE_SKU="$4"
 CANDIDATE_NAME="$5"
+AD_IDS="${6:-}"
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_DIR"
@@ -128,9 +135,9 @@ fi
 
 python3 "$REPO_DIR/scripts/telegram_approval_listener.py" --record-product-check \
   --check-id "$CHECK_ID" --chat-id "$TELEGRAM_CHAT_ID" --message-id "$MESSAGE_ID" \
-  --video-id "$VIDEO_ID" --candidate-sku "${CANDIDATE_SKU:-NONE}" --candidate-name "$CANDIDATE_NAME" \
+  --video-id "$VIDEO_ID" --candidate-sku "${CANDIDATE_SKU:-NONE}" --candidate-name "$CANDIDATE_NAME" --ad-ids "$AD_IDS" \
   || py "$REPO_DIR/scripts/telegram_approval_listener.py" --record-product-check \
      --check-id "$CHECK_ID" --chat-id "$TELEGRAM_CHAT_ID" --message-id "$MESSAGE_ID" \
-     --video-id "$VIDEO_ID" --candidate-sku "${CANDIDATE_SKU:-NONE}" --candidate-name "$CANDIDATE_NAME"
+     --video-id "$VIDEO_ID" --candidate-sku "${CANDIDATE_SKU:-NONE}" --candidate-name "$CANDIDATE_NAME" --ad-ids "$AD_IDS"
 
 echo "Sent product-id check $CHECK_ID for video $VIDEO_ID (message_id=$MESSAGE_ID)"

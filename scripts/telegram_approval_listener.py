@@ -245,7 +245,7 @@ def get_entry(plan_id):
 # "kind": "product_check" field so any code iterating the state dict can
 # tell the two families apart without guessing from the key format alone.
 
-def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku, candidate_name):
+def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku, candidate_name, ad_ids=""):
     def op(state):
         state[check_id] = {
             "kind": "product_check",
@@ -255,6 +255,13 @@ def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku,
             "video_id": video_id,
             "candidate_sku": candidate_sku,
             "candidate_name": candidate_name,
+            # Comma-separated in transit (plain CLI arg), split back to a
+            # real list here - fixed 2026-09-04, real gap: earlier
+            # confirmations/corrections wrote ad_ids: [] to the product map
+            # because this was never threaded through from send-product-id-
+            # check.sh at all, which breaks the per-product spend rollup
+            # (SS3d) - it needs to know which ads' spend belongs to a product.
+            "ad_ids": [a for a in ad_ids.split(",") if a] if ad_ids else [],
             "sent_at": datetime.now(timezone.utc).isoformat(),
         }
         return state, None
@@ -670,6 +677,7 @@ def handle_product_check_callback(token, cq):
         resolved = [{"sku": entry.get("candidate_sku"), "name": entry.get("candidate_name"), "confidence": "telegram_user_confirmed"}]
         append_product_map({
             "video_id": entry.get("video_id"),
+            "ad_ids": entry.get("ad_ids", []),
             "products": resolved,
             "status": "confirmed",
             "matched_by": "telegram_user_confirmed",
@@ -744,6 +752,7 @@ def handle_text_reply(token, message):
     resolved = [{"sku": None, "name": text, "confidence": "telegram_user_corrected_freetext"}]
     append_product_map({
         "video_id": entry.get("video_id"),
+        "ad_ids": entry.get("ad_ids", []),
         "products": resolved,
         "status": "confirmed",
         "matched_by": "telegram_user_corrected",
@@ -938,9 +947,12 @@ if __name__ == "__main__":
         def arg(name):
             i = sys.argv.index(name)
             return sys.argv[i + 1]
+        def arg_opt(name, default=""):
+            return arg(name) if name in sys.argv else default
         record_product_check(
             arg("--check-id"), arg("--chat-id"), arg("--message-id"),
             arg("--video-id"), arg("--candidate-sku"), arg("--candidate-name"),
+            ad_ids=arg_opt("--ad-ids"),
         )
     else:
         main_loop()
