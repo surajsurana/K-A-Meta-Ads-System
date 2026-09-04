@@ -38,6 +38,15 @@ REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_DIR = os.path.expanduser("~/ka-meta-ads")  # sibling to the repo, never inside it - runtime state, not project code
 STATE_FILE = os.path.join(STATE_DIR, "telegram_approvals_state.json")
 STATE_LOCK_FILE = os.path.join(STATE_DIR, ".telegram_approvals_state.lock")
+# Product-check send queue (added 2026-09-04, user request - explicitly one
+# outstanding product-identification question at a time, never a batch of
+# several unanswered ones sitting in the chat at once). Deliberately its own
+# file, not folded into telegram_approvals_state.json - that file is one
+# object per plan/check, this one is an ordered FIFO list of not-yet-sent
+# items, a different shape/access pattern (append at the back, pop from the
+# front) that would be awkward to express as extra keys on the same dict.
+PRODUCT_CHECK_QUEUE_FILE = os.path.join(STATE_DIR, "product_check_queue.json")
+PRODUCT_CHECK_QUEUE_LOCK_FILE = os.path.join(STATE_DIR, ".product_check_queue.lock")
 LISTENER_LOCK_FILE = os.path.join(STATE_DIR, ".telegram_listener.lock")
 LOG_DIR = os.path.expanduser("~/ka-meta-ads-logs")
 LOG_FILE = os.path.join(LOG_DIR, "telegram-listener.log")
@@ -338,6 +347,110 @@ def finalize_product_check(check_id, final_status, resolved_products=None):
             state[check_id] = entry
         return state, None
     with_state_lock(op)
+
+
+# --- Product-check send queue: strictly one outstanding, unanswered product-
+# ID question at a time (added 2026-09-04, explicit user request - a backfill
+# batch had queued up to 10 at once, which is too many to answer as a burst).
+# Enqueue as many candidates as you like ahead of time (e.g. during a large
+# backfill) - they sit here until it's actually their turn. The next one only
+# ever goes out once nothing is currently pending/awaiting_correction.
+
+def _load_queue_locked():
+    if not os.path.exists(PRODUCT_CHECK_QUEUE_FILE):
+        return []
+    with open(PRODUCT_CHECK_QUEUE_FILE) as f:
+        content = f.read().strip()
+        return json.loads(content) if content else []
+
+
+def _save_queue_locked(queue):
+    tmp = PRODUCT_CHECK_QUEUE_FILE + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(queue, f, indent=2)
+    os.replace(tmp, PRODUCT_CHECK_QUEUE_FILE)
+
+
+def _with_queue_lock(fn):
+    os.makedirs(STATE_DIR, exist_ok=True)
+    with open(PRODUCT_CHECK_QUEUE_LOCK_FILE, "w") as lockf:
+        fcntl.flock(lockf, fcntl.LOCK_EX)
+        try:
+            queue = _load_queue_locked()
+            new_queue, result = fn(queue)
+            if new_queue is not None:
+                _save_queue_locked(new_queue)
+            return result
+        finally:
+            fcntl.flock(lockf, fcntl.LOCK_UN)
+
+
+def enqueue_product_check(item):
+    """item: {video_id, ad_ids (list), ad_frame_path, candidate_image_path
+    (or None), candidate_sku (or None), candidate_name} - image paths must
+    already exist on THIS machine (the droplet) at send time; staging them
+    there is the caller's job (e.g. scp ahead of enqueueing), same as a
+    direct send always required."""
+    def op(queue):
+        queue.append(item)
+        return queue, None
+    _with_queue_lock(op)
+    log(f"enqueued product check for video_id={item.get('video_id')} (queue length now {queue_length()})")
+
+
+def queue_length():
+    return _with_queue_lock(lambda q: (None, len(q)))
+
+
+def _any_product_check_in_flight():
+    """True if some product check is currently pending an answer (either
+    awaiting the initial Yes/No tap, or awaiting a correction reply) - the
+    queue must never advance while this is true."""
+    def op(state):
+        for entry in state.values():
+            if entry.get("kind") == "product_check" and entry.get("status") in ("pending", "awaiting_correction"):
+                return None, True
+        return None, False
+    return with_state_lock(op)
+
+
+def maybe_send_next_queued_check(token):
+    """Call this after startup and after every product-check resolution
+    (confirmed or corrected - NOT after a bare reject, which only moves a
+    check to awaiting_correction, still in flight). Sends at most one.
+
+    The whole check-then-pop-then-send sequence runs inside the queue's own
+    lock (not just the pop) - if two callers raced here (e.g. two
+    --enqueue-product-check invocations firing close together), both could
+    otherwise see "nothing in flight" before either one's send has actually
+    been recorded as pending, and both would fire a message. Holding the
+    queue lock for the full duration serializes every caller of this
+    function against every other one, which is what actually closes that
+    gap - the in-flight check itself uses a different lock (state, not
+    queue), but nesting is fine since it's a distinct lock file."""
+    def op(queue):
+        if _any_product_check_in_flight():
+            return None, None
+        if not queue:
+            return None, None
+        item = queue[0]
+        log(f"advancing queue: sending next product check for video_id={item.get('video_id')}")
+        ad_ids_csv = ",".join(item.get("ad_ids") or [])
+        args = [
+            "bash", os.path.join(REPO_DIR, "scripts", "send-product-id-check.sh"),
+            item["video_id"], item["ad_frame_path"], item.get("candidate_image_path") or "NONE",
+            item.get("candidate_sku") or "NONE", item["candidate_name"], ad_ids_csv,
+        ]
+        result = subprocess.run(args, cwd=REPO_DIR, capture_output=True, text=True, timeout=60)
+        if result.returncode != 0:
+            log(f"ERROR: send-product-id-check.sh failed advancing the queue for video_id={item.get('video_id')}: {result.stdout} {result.stderr}")
+            # Left in place (queue NOT popped) - a send failure here almost
+            # always means something needs a human look (bad image path,
+            # Telegram API issue), not a transient blip worth silently
+            # dropping the item over.
+            return None, None
+        return queue[1:], None
+    _with_queue_lock(op)
 
 
 # --- Learning log helpers (read-only checks here; writes always go through
@@ -689,6 +802,7 @@ def handle_product_check_callback(token, cq):
             "chat_id": chat_id, "message_id": message_id,
             "text": f"✅ Confirmed: {entry.get('candidate_name')}\n\nSaved to the product map.",
         })
+        maybe_send_next_queued_check(token)  # this one's genuinely resolved now - safe to advance the queue
         return
 
     # action == "reject" - we don't yet know the right answer. Leave the
@@ -768,6 +882,7 @@ def handle_text_reply(token, message):
         })
     except Exception as e:
         log(f"non-fatal: failed to ack text-reply correction for {check_id}: {e}")
+    maybe_send_next_queued_check(token)  # this one's genuinely resolved now - safe to advance the queue
 
 
 def process_approve_dispatch(token, plan_id, chat_id, message_id):
@@ -896,6 +1011,7 @@ def main_loop():
     token, _ = load_telegram_config()
     threading.Thread(target=dispatch_worker_loop, daemon=True, name="dispatch-worker").start()
     log(f"listener started, pid={os.getpid()}")
+    maybe_send_next_queued_check(token)  # in case something was queued while the listener was down/restarting
     offset = None
     while True:
         try:
@@ -954,5 +1070,27 @@ if __name__ == "__main__":
             arg("--video-id"), arg("--candidate-sku"), arg("--candidate-name"),
             ad_ids=arg_opt("--ad-ids"),
         )
+    elif "--enqueue-product-check" in sys.argv:
+        # Adds one item to the send queue and, if nothing is currently in
+        # flight, sends it right away (so enqueueing the very first item of
+        # a batch doesn't sit waiting for some unrelated trigger). Everything
+        # after the first stays queued until each prior one is actually
+        # resolved - see maybe_send_next_queued_check.
+        def arg(name):
+            i = sys.argv.index(name)
+            return sys.argv[i + 1]
+        def arg_opt(name, default=None):
+            return arg(name) if name in sys.argv else default
+        item = {
+            "video_id": arg("--video-id"),
+            "ad_ids": [a for a in arg_opt("--ad-ids", "").split(",") if a],
+            "ad_frame_path": arg("--ad-frame-path"),
+            "candidate_image_path": arg_opt("--candidate-image-path"),
+            "candidate_sku": arg_opt("--candidate-sku"),
+            "candidate_name": arg("--candidate-name"),
+        }
+        enqueue_product_check(item)
+        token, _ = load_telegram_config()
+        maybe_send_next_queued_check(token)
     else:
         main_loop()
