@@ -405,12 +405,50 @@ def queue_length():
 def _any_product_check_in_flight():
     """True if some product check is currently pending an answer (either
     awaiting the initial Yes/No tap, or awaiting a correction reply) - the
-    queue must never advance while this is true."""
+    queue must never advance while this is true.
+
+    Real incident, 2026-09-04: three test check_ids from early manual
+    testing were left in awaiting_correction (superseded by later retests
+    rather than ever being properly resolved) and silently blocked the
+    queue from ever advancing - nothing logged, nothing visibly wrong, the
+    queue just never moved. Deliberately NOT fixed with a short auto-skip
+    timeout - that would risk silently skipping past a real question the
+    user just hasn't gotten to yet, which directly violates "wait for my
+    answer, don't move on without me." Instead: respect the same
+    PRODUCT_CHECK_STALE_AFTER_HOURS (a week) already used for claiming, as
+    a slow backstop against a genuinely forgotten one, plus
+    scripts/telegram_approval_listener.py --abandon-product-check for a
+    deliberate, explicit, immediate cleanup when a human confirms one really
+    is dead (not the case here - the fix for these three was direct
+    intervention, not an automatic timer)."""
     def op(state):
+        now = datetime.now(timezone.utc)
         for entry in state.values():
-            if entry.get("kind") == "product_check" and entry.get("status") in ("pending", "awaiting_correction"):
-                return None, True
+            if entry.get("kind") != "product_check" or entry.get("status") not in ("pending", "awaiting_correction"):
+                continue
+            sent_at = entry.get("sent_at")
+            if sent_at:
+                age_h = (now - datetime.fromisoformat(sent_at)).total_seconds() / 3600
+                if age_h > PRODUCT_CHECK_STALE_AFTER_HOURS:
+                    continue  # old enough to no longer block - still sits in state as a record, just doesn't gate the queue
+            return None, True
         return None, False
+    return with_state_lock(op)
+
+
+def abandon_product_check(check_id):
+    """Explicit, deliberate cleanup for a check that a human has confirmed
+    is genuinely dead (e.g. superseded by a later retest) - marks it
+    resolved so it stops blocking the queue, without pretending it was
+    actually answered. Never called automatically."""
+    def op(state):
+        entry = state.get(check_id)
+        if entry is None:
+            return None, "unknown"
+        entry["status"] = "abandoned"
+        entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
+        state[check_id] = entry
+        return state, "abandoned"
     return with_state_lock(op)
 
 
@@ -1109,5 +1147,19 @@ if __name__ == "__main__":
         enqueue_product_check(item)
         token, _ = load_telegram_config()
         maybe_send_next_queued_check(token)
+    elif "--abandon-product-check" in sys.argv:
+        # Deliberate, explicit, one-off cleanup for a check confirmed dead
+        # (e.g. superseded by a later retest) - never called automatically.
+        # See _any_product_check_in_flight's docstring for the real incident
+        # this exists to let a human fix immediately, without waiting on the
+        # slow staleness backstop.
+        def arg(name):
+            i = sys.argv.index(name)
+            return sys.argv[i + 1]
+        result = abandon_product_check(arg("--check-id"))
+        print(f"abandon result: {result}")
+        if result == "abandoned":
+            token, _ = load_telegram_config()
+            maybe_send_next_queued_check(token)
     else:
         main_loop()
