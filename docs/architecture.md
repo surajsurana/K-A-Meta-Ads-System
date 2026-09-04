@@ -20,7 +20,7 @@ These read, reason, plan, and report. They never call a write/POST endpoint. The
 |---|---|
 | **campaign-strategist** | Campaign structure, audience/targeting plans, funnel mapping. **Total portfolio budget allocation within the daily ceiling** (§Budget Policy), **standing strategic-intelligence owner** — internal performance, content discoveries, competitor ad activity (Meta Ad Library), and Meta platform/algorithm changes, each tested against "does this matter for K&A" before becoming a recommendation (§Strategic Intelligence) — and **standing Geographic & Customer Demographic Intelligence owner** (§3c): decides whether geography/age findings justify a strategic change. Produces plans/recommendations. |
 | **performance-analyst** | Pulls Meta Ads performance data, cross-references with Stitchflow (true order source) and Shopify (online-only slice) for real attribution, flags anomalies, produces reporting digests. **Also measures geographic and customer-age performance** (§3c) — Stitchflow residence-based geography vs. Meta delivery, and actual customer age from optional DOB vs. Meta's own age-bracket performance, always reporting data coverage alongside any conclusion. |
-| **creative-copywriter** | Ad copy, headlines, CTAs, creative briefs consistent with brand voice. |
+| **creative-copywriter** | Ad copy, headlines, CTAs, creative briefs consistent with brand voice. **Identifies which real product(s) a new creative shows** (§3d) as part of every brief — the one-time product-mapping decision, made once at build time. |
 | **social-community-manager** *(analysis/planning half)* | Scans Instagram for UGC/tags, triages what's worth reposting, drafts comment-reply suggestions, flags strong UGC to the ads team. This half is pure analysis and always self-executes. |
 
 ### Execution agents — validate and prepare, never execute themselves
@@ -29,7 +29,7 @@ These agents' domains involve live, real-money or real-public writes (Meta Ads c
 
 | Agent | Role |
 |---|---|
-| **media-buyer** | Validates and prepares execution plans for live Meta Ads changes — create/pause/enable campaigns, ad sets, ads; set budgets. Read-only access to Meta (GET calls for validation); never calls a write endpoint. |
+| **media-buyer** | Validates and prepares execution plans for live Meta Ads changes — create/pause/enable campaigns, ad sets, ads; set budgets. Read-only access to Meta (GET calls for validation); never calls a write endpoint. **Records the product-creative mapping** (§3d) once a new ad's real `video_id` exists at build time, using creative-copywriter's identification. |
 | **social-community-manager** *(execution half)* | Prepares the exact post/repost/reply plan (caption or reply text, target id) once UGC/comment work has been triaged. Never calls the Instagram publish/reply endpoint itself. |
 
 ### Orchestrator
@@ -149,6 +149,41 @@ The system is expected to build demographic/geographic intelligence incrementall
 **Cadence:** folded into the existing weekly full review and monthly strategic review (§3b) as a standing checklist item, not a new scheduled job — geographic/demographic shifts worth noting don't typically move day to day, so the daily heartbeat's cheap targeted pull is deliberately not extended to cover this (avoids exactly the "noise on quiet days" problem the learning log's own logging discipline already guards against, §Learning layer). A genuinely significant shift found outside the normal cadence (e.g. during an ad-hoc interactive review) is handled the same as any other finding — handed to campaign-strategist when it implies a next move, regardless of which review surfaced it.
 
 **Learning log:** no new entry type. Geographic/demographic findings use the existing types exactly as any other finding would — `observation` for a new shift, `experiment`/`decision` for a resulting strategic test or call, `outcome` for resolving one. Tag consistently: geography tags as `geo-<city|state|country>` (e.g. `geo-mumbai`, `geo-maharashtra`, `geo-india`), demographic tags as `age-bracket-<range>` (e.g. `age-bracket-25-34`) and `dob-coverage` for coverage-tracking entries specifically — see `knowledge/RETRIEVAL.md` recipe 9.
+
+## 3d. Product-Creative Mapping & Per-Product ROI (added 2026-09-04)
+
+The product-level counterpart to §3c's geography check: it's not enough to know a creative is performing well on ad metrics (CTR, clicks, messages) or that it's reaching the right geography — the actual product it shows also has to be selling, or the spend isn't justified regardless of how healthy those other numbers look. User's own framing: "a certain product may perform well in ads, but what's the point if we don't get orders for it."
+
+### The core idea
+
+1. **Every ad creative gets matched to its real product(s), once, at the moment it's built — never re-decided automatically afterward.** Not a recurring audit; a one-time identification that becomes a permanent fact, the same way an ad's targeting or budget is decided once at build time.
+2. **A creative can map to more than one product.** If an ad shows several products, all of them get mapped — success is judged per product, not per ad, so one converting product inside a multi-product ad doesn't get dragged down by a sibling that isn't, and vice versa.
+3. **Matching is never guessed when uncertain — it's confirmed with a real person, visually.** An ad's own name/label is not trusted on its own (a real account example: an ad literally named "Payalia Frozen Blue" turned out, once checked against Stitchflow, to belong to a completely different, older collection). When automatic matching isn't confident, the system sends two photos to Telegram — a frame from the actual ad video, and the best-candidate product photo — so Suraj can confirm, reject, or just type back the correct product name.
+4. **Once matched, spend vs. real Stitchflow orders is tracked per product, on an ongoing basis** — a product with sustained ad spend and no real orders to show for it becomes a standing finding, same severity as a geography or creative-currency finding, routed to campaign-strategist for a real decision (refresh the creative, cut its spend share, or leave it).
+
+### The mapping store
+
+`knowledge/creative-product-map.jsonl` — one line per creative (keyed by Meta `video_id`), written only via `scripts/append-product-map.sh` (same append-only, fetch/rebase/commit/push, never-force-push safety discipline as `scripts/append-learning-log.sh`, kept as its own file/script rather than merged into the learning log — this is a lookup table, not narrative history, and kept as its own script rather than refactoring the learning-log script into a shared generic helper, since that script is live cron-depended infrastructure not worth touching for a DRY cleanup). Each entry: `video_id`, `ad_ids` (informational, an ad or a video can be reused across more than one ad), `products` (array of `{sku, name, confidence}` — supports multiple), `status` (`confirmed` / `pending_telegram_confirmation` / `not_product_specific`), `matched_by` (`creative-copywriter` / `telegram_user_confirmed` / `telegram_user_corrected` / a dated manual-session tag for the initial backfill), `matched_at`, `notes`.
+
+### Where identification actually happens (and where it can't)
+
+**creative-copywriter identifies the product**, using its existing Shopify tool access (`search_products`/`get-product`) — confirmed live 2026-09-04 that Shopify SKUs match Stitchflow SKUs directly (e.g. `KAFL002` appears in both), so a confident Shopify match is a confident Stitchflow match too, and Shopify's product photos (which exist for nearly everything, being the customer-facing storefront) solve the "no photo in Stitchflow" gap the user specifically asked about — Shopify is checked first, and only if it genuinely has nothing does the flow fall back to asking with no comparison image at all. This step is stated in the creative-copywriter's brief handoff, and **only works when run interactively** — Shopify tool access is not available to the droplet's headless runs (same already-documented gap as Stitchflow access for headless work, see `scripts/_run-common.sh`'s own comments), which is also exactly why this matches the user's own stated intent: matching happens "when the media buyer or creative designer picks up new content" — an interactive, human-present moment, not something the unattended daily/weekly/monthly cron jobs are expected to do.
+
+**media-buyer records the mapping** once the real `video_id` is assigned at build time, using creative-copywriter's identification (media-buyer has no Shopify/Stitchflow tool access itself and doesn't try to identify anything) — via `scripts/append-product-map.sh`, as a required step in the build plan, not something left to happen "later."
+
+**When creative-copywriter is uncertain**, it sends the two-photo Telegram check itself (`scripts/send-product-id-check.sh`) — the ad build isn't blocked waiting for an answer; the mapping is recorded as `pending_telegram_confirmation` and the ad launches normally, resolved asynchronously once Suraj answers (same non-blocking pattern as a `held` execution plan).
+
+### The Telegram mechanism
+
+A genuinely new capability for `telegram_approval_listener.py` (added 2026-09-04): it has only ever sent text with buttons before this — now it can send two photos plus buttons (`PY:<check_id>` confirm / `PN:<check_id>` reject, kept as a distinct callback family from the execution-plan `A:`/`R:`/`H:` prefixes so the two can never be confused), and it can interpret a plain-text message for the first time — narrowly scoped to "is this a reply to a pending product-check question" (matched via Telegram's own `reply_to_message.message_id`, never by assuming the next message is the answer, since more than one check could be open at once). Neither path ever results in a Meta/Instagram/Shopify write — confirming or correcting a product match only ever writes to `creative-product-map.jsonl`. **As with every other change to this listener, it won't take effect until the long-running process on the droplet is actually restarted** — committed and code-reviewed, not yet proven live (this listener needs `fcntl`, Unix-only, so it also can't be functionally tested from a local Windows dev machine — only syntax-checked and reviewed against the already-proven execution-plan pattern it mirrors).
+
+### Ongoing tracking
+
+Once a product has a `confirmed` mapping, performance-analyst's weekly checklist (`.claude/agents/performance-analyst.md`) sums its spend across every mapped ad/video and compares against real Stitchflow orders for that SKU over a rolling 60-day window — same cadence and same "campaign-strategist decides, performance-analyst measures" split as §3c. `not_product_specific` and `pending_telegram_confirmation` entries are excluded from this check until they have a real answer, never guessed into a bucket.
+
+### Backfill for already-running ads
+
+The product-matching work already done ad hoc on 2026-09-03/04 (the factory-spend table, the Rafaey Master build, the WhatsApp creative-currency check) is the seed data for this store, not thrown away — confident matches get written directly with `matched_by` dated to that manual session; the ones that were left "unclear" get run through the same Telegram photo-confirmation flow as a one-time cleanup pass, once the listener restart above has happened.
 
 ## 4. Persistent memory (preferences & context)
 
