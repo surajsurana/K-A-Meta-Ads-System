@@ -787,20 +787,37 @@ def handle_product_check_callback(token, cq):
     entry = get_entry(check_id)  # re-read post-claim for the fields recorded when it was sent
 
     if action == "confirm":
-        resolved = [{"sku": entry.get("candidate_sku"), "name": entry.get("candidate_name"), "confidence": "telegram_user_confirmed"}]
+        candidate_sku = entry.get("candidate_sku")
+        has_real_sku = bool(candidate_sku) and candidate_sku.upper() != "NONE"
+        resolved = [{"sku": candidate_sku if has_real_sku else None, "name": entry.get("candidate_name"), "confidence": "telegram_user_confirmed"}]
+        if has_real_sku:
+            map_status, ack_text = "confirmed", f"✅ Confirmed: {entry.get('candidate_name')}\n\nSaved to the product map."
+        else:
+            # Added 2026-09-04, real gap the user caught before it happened:
+            # a "yes that's the right product" tap on a candidate with no
+            # real Stitchflow SKU must NOT be saved as an ordinary
+            # "confirmed" entry - the per-product spend-vs-orders check
+            # (SS3d) would read that as "zero orders" and flag it as a
+            # failing product, when the true story is "not trackable yet,
+            # no Stitchflow record exists for it at all" - two entirely
+            # different findings that would otherwise look identical.
+            map_status = "no_stitchflow_record"
+            ack_text = (f"✅ Noted: {entry.get('candidate_name')}\n\nSaved, but flagged as having no Stitchflow SKU - "
+                        f"spend on this won't be compared against orders until it's actually added to Stitchflow.")
         append_product_map({
             "video_id": entry.get("video_id"),
             "ad_ids": entry.get("ad_ids", []),
             "products": resolved,
-            "status": "confirmed",
+            "status": map_status,
             "matched_by": "telegram_user_confirmed",
             "matched_at": datetime.now(timezone.utc).isoformat(),
-            "notes": f"User confirmed via Telegram photo check {check_id}.",
+            "notes": f"User confirmed via Telegram photo check {check_id}."
+                     + ("" if has_real_sku else " No real Stitchflow SKU was ever offered as a candidate - confirmed as the right PRODUCT, but it has no Stitchflow record to track orders against."),
         })
-        finalize_product_check(check_id, "confirmed", resolved)
+        finalize_product_check(check_id, map_status, resolved)
         tg_api(token, "editMessageText", {
             "chat_id": chat_id, "message_id": message_id,
-            "text": f"✅ Confirmed: {entry.get('candidate_name')}\n\nSaved to the product map.",
+            "text": ack_text,
         })
         maybe_send_next_queued_check(token)  # this one's genuinely resolved now - safe to advance the queue
         return
