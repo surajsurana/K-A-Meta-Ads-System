@@ -62,8 +62,8 @@ CHECK_ID="PID-$(date -u +%Y%m%d-%H%M%S)"
 if [ "$CANDIDATE_IMAGE_PATH" != "NONE" ] && [ -f "$CANDIDATE_IMAGE_PATH" ]; then
   MEDIA_JSON=$(cat <<EOF
 [
-  {"type":"photo","media":"attach://ad_frame","caption":"From the ad video"},
-  {"type":"photo","media":"attach://candidate","caption":"Best-guess match: ${CANDIDATE_NAME}"}
+  {"type":"photo","media":"attach://ad_frame","caption":"📱 META - what the ad actually shows"},
+  {"type":"photo","media":"attach://candidate","caption":"🗂️ OUR CATALOG - best guess: ${CANDIDATE_NAME}"}
 ]
 EOF
 )
