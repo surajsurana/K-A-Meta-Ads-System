@@ -254,11 +254,15 @@ def get_entry(plan_id):
 # "kind": "product_check" field so any code iterating the state dict can
 # tell the two families apart without guessing from the key format alone.
 
-def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku, candidate_name, ad_ids=""):
+def record_product_check(check_id, chat_id, message_id, video_id, candidate_sku, candidate_name, ad_ids="", initial_status="pending"):
     def op(state):
         state[check_id] = {
             "kind": "product_check",
-            "status": "pending",
+            # "pending" = the normal Correct/Wrong-button case. "awaiting_correction"
+            # (added 2026-09-04) = the no-candidate case, which skips straight to a
+            # forced-reply name prompt with no buttons at all - there's nothing to
+            # confirm/reject when no guess was ever offered.
+            "status": initial_status,
             "chat_id": str(chat_id),
             "message_id": message_id,
             "video_id": video_id,
@@ -1123,7 +1127,7 @@ if __name__ == "__main__":
         record_product_check(
             arg("--check-id"), arg("--chat-id"), arg("--message-id"),
             arg("--video-id"), arg("--candidate-sku"), arg("--candidate-name"),
-            ad_ids=arg_opt("--ad-ids"),
+            ad_ids=arg_opt("--ad-ids"), initial_status=arg_opt("--initial-status", "pending"),
         )
     elif "--enqueue-product-check" in sys.argv:
         # Adds one item to the send queue and, if nothing is currently in
