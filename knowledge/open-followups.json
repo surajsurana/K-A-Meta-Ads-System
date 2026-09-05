@@ -1,0 +1,142 @@
+{
+  "KL-2026-08-18-27": {
+    "id": "KL-2026-08-18-27",
+    "date": "2026-08-18",
+    "type": "observation",
+    "subject": "Learning log ID scheme - collision found and fixed",
+    "follow_up": "ID generation instructions updated in all agent files to use date+time (to the second) instead of a small manually-tracked sequence number, to make collisions structurally unlikely without requiring cross-agent coordination."
+  },
+  "KL-2026-08-24-010632": {
+    "id": "KL-2026-08-24-010632",
+    "date": "2026-08-24",
+    "type": "decision",
+    "subject": "Portfolio budget allocation - weekly review 2026-08-24 (media-buyer independent re-verification)",
+    "follow_up": "None - this is a verification record. Each of the 5 underlying plans carries its own execution follow_up."
+  },
+  "KL-2026-08-25-015500": {
+    "id": "KL-2026-08-25-015500",
+    "date": "2026-08-25",
+    "type": "observation",
+    "subject": "append-learning-log.sh - subagent falsely reported a successful push",
+    "follow_up": "Before trusting any agent's claim that a learning-log write succeeded - especially one that gates sending a Telegram approval or any downstream action - independently verify via a fresh `git fetch origin main` and grep/show against origin's copy, not the agent's self-report alone. If this false-success pattern recurs, escalate to the user as a possible sandboxing/tool-isolation issue affecting subagent Bash calls, not just a one-off fluke."
+  },
+  "KL-2026-08-31-005500": {
+    "id": "KL-2026-08-31-005500",
+    "date": "2026-08-31",
+    "type": "observation",
+    "subject": "Stitchflow order entries show a 0-2 day lag - most-recent 1-2 days of any weekly window may be undercounted at review time",
+    "follow_up": "Next weekly review: re-pull orders for the 2026-08-24 to 2026-08-30 window and check whether the count/value has grown from this cycle's reported 11 orders / Rs1,114,700 - if so, treat this cycle's reported blended CPO/ROAS as provisional and note the corrected figures. Consider this pattern (0-2 day entry lag) as a standing caveat on the most recent 1-2 days of every future weekly window, not just this one."
+  },
+  "KL-2026-08-31-020600": {
+    "id": "KL-2026-08-31-020600",
+    "date": "2026-08-31",
+    "type": "decision",
+    "subject": "DOB coverage (0/533) and Meta age-bracket delivery -- 2026-08-31 weekly review",
+    "follow_up": "Continue the standing monthly DOB-coverage trend check (architecture.md section 3b); worth flagging to Suraj as a low-priority Stitchflow data-collection idea (optional DOB prompt at consult booking), not an ad-targeting question."
+  },
+  "KL-2026-08-31-020720-EXEC": {
+    "id": "KL-2026-08-31-020720-EXEC",
+    "date": "2026-08-31",
+    "type": "change",
+    "subject": "First Love | Maharashtra-Mumbai Geo Test | India (ad set 52548730319980, ad 52548730353580) - ACTIVATED",
+    "follow_up": "per KL-2026-08-31-010720 stop-rule: performance-analyst to compare cost per messaging_conversation_started and cost per lead against sibling ad set 52535906903180 (Broad Advantage+) at the 2-week mark (~2026-09-14) before any reallocation/hold conclusion. Watch effective_status on both objects in the meantime; re-pause immediately if WITH_ISSUES/DISAPPROVED appears at any point, independent of the 2-week mark."
+  },
+  "KL-2026-08-31-040210": {
+    "id": "KL-2026-08-31-040210",
+    "date": "2026-08-31",
+    "type": "observation",
+    "subject": "KL-2026-08-31-comment-batch",
+    "follow_up": "re-check 2026-09-07: if plan KL-2026-08-31-comment-batch is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
+  "KL-2026-08-31-155601": {
+    "id": "KL-2026-08-31-155601",
+    "date": "2026-08-31",
+    "type": "observation",
+    "subject": "Ad account disabled by repeated payment failures (act_686170454752172, Peekay International Ltd.)",
+    "follow_up": "none - resolved by user payment; the actual process fix is the new daily-heartbeat billing-health check (prompts/daily-heartbeat.md, added 2026-08-31) which now checks account_status/balance every day going forward so a repeat of this doesn't go unnoticed for days again"
+  },
+  "KL-2026-09-01-071953-EXEC": {
+    "id": "KL-2026-09-01-071953-EXEC",
+    "date": "2026-09-01",
+    "type": "change",
+    "subject": "First Love | A Saree With a Corset's Structure | Interest Stack (Midnight Blue Drape Saree, ad 52548730709180) - PAUSED (24h early-pacing checkpoint)",
+    "follow_up": "Do not re-activate this ad informally - any future re-test requires a fresh dated plan per rollback criteria in KL-2026-09-01-071953. Continue monitoring Three Expressions (52535907844980) as the ad set's sole remaining active ad. Blush Pink Lehenga (52548730700780) remains separately gated per KL-2026-08-30-015101 and is unaffected."
+  },
+  "KL-2026-09-02-005600": {
+    "id": "KL-2026-09-02-005600",
+    "date": "2026-09-02",
+    "type": "observation",
+    "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle",
+    "follow_up": "Same as last cycle: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). Do not retry the same blocked curl/WebSearch approach expecting a different result - only re-attempt if the toolset actually changes."
+  },
+  "KL-2026-09-02-005700": {
+    "id": "KL-2026-09-02-005700",
+    "date": "2026-09-02",
+    "type": "observation",
+    "subject": "Meta platform intelligence - ad-set placement exclusion controls being removed, replaced by capped value rules",
+    "follow_up": "Next time media-buyer builds or reviews any ad set config, do a quick check for placement exclusions/limited placements on active ad sets - if none are found (expected, given no prior log entry describes any), this can be closed as not applicable to K&A; if one is found, escalate to campaign-strategist for a disposition before assuming it still works as configured."
+  },
+  "KL-2026-09-02-005800": {
+    "id": "KL-2026-09-02-005800",
+    "date": "2026-09-02",
+    "type": "decision",
+    "subject": "WhatsApp Business service-message pricing change effective 2026-10-01 - verification needed against K&A's WhatsApp click-to-message setup",
+    "follow_up": "Before 2026-09-30: confirm whether K&A's WhatsApp click-to-message flow is routed through the WhatsApp Business Platform API/a BSP (in which case a valid payment method must be on file before charging begins 2026-10-01, or service messages stop being delivered) or the standard free WhatsApp Business App (in which case this change does not apply). This is an account-configuration/billing fact-check, not a Meta Ads targeting or budget change, so it does not require media-buyer's execution-plan validation - it needs direct confirmation from whoever manages the WhatsApp Business account (likely the user directly)."
+  },
+  "KL-2026-09-02-015700": {
+    "id": "KL-2026-09-02-015700",
+    "date": "2026-09-02",
+    "type": "observation",
+    "subject": "Add to Cart 90D | WhatsApp Consult Test (ad set 52547119740980) - Stitchflow consult-to-order attribution check",
+    "follow_up": "No clean attribution key exists in Stitchflow to isolate this specific ad sets consult-to-order conversions from the accounts other WhatsApp order flow. Route to campaign-strategist as context (not a new action trigger by itself) for the ongoing Rs150/day-pacing re-check due ~2026-09-07/08: any future decision on this ad set will continue to rely on Meta-side conversation metrics only unless the operator adds an order-level tag/note distinguishing this ad sets audience (e.g. asking sales agents to note which WhatsApp number/campaign a consult originated from), which is an operational process change outside performance-analyst scope to implement."
+  },
+  "KL-2026-09-02-015800": {
+    "id": "KL-2026-09-02-015800",
+    "date": "2026-09-02",
+    "type": "outcome",
+    "subject": "Profile Visits | Follower Growth | Test",
+    "follow_up": "None required - rollback confirmed working at Rs100/day across 3 consecutive readings. Resume normal-cadence follower tracking on the accounts standard review schedule rather than the tighter 3-reading rollback-verification cadence."
+  },
+  "KL-2026-09-03-015600": {
+    "id": "KL-2026-09-03-015600",
+    "date": "2026-09-03",
+    "type": "decision",
+    "subject": "_happybrar UGC ad-set test (18125126245694535) - media-buyer validation: budget/structure/copy ready, BLOCKED on media asset acquisition",
+    "follow_up": "Ask Suraj/team whether they can obtain the raw video file directly from _happybrar or via manual save from the Instagram app. Once a usable local file or working media_url exists, media-buyer can finalize the actual build plan (create ad set + ad, status PAUSED, verify, then a separate activation plan) using the structure/copy/budget already validated in this entry - no need to redo that work."
+  },
+  "KL-2026-09-03-071920": {
+    "id": "KL-2026-09-03-071920",
+    "date": "2026-09-03",
+    "type": "outcome",
+    "subject": "Rafaey Master ad set 52551343010580 - 24-48h delivery-health check PASSED",
+    "follow_up": "Per KL-2026-09-01-133059 second-stage follow_up: track actual Stitchflow order attribution to Rafaey Master over the next 1-2 weeks as the real success signal (separate check, not due yet)."
+  },
+  "KL-2026-09-03-151324": {
+    "id": "KL-2026-09-03-151324",
+    "date": "2026-09-03",
+    "type": "observation",
+    "subject": "Follow-up check: did this week's weekly review actually self-surface a geo-conversion finding (Delhi/USA/Canada-style), proving the 2026-09-03 fixes work",
+    "follow_up": "2026-09-08 (Monday, the weekday after the next scheduled Sunday weekly review on 2026-09-06) - whichever run's due-now sweep picks this up: grep knowledge/learning-log.jsonl for any entry dated 2026-09-04 through the check date tagged with a 'geo-' prefix or referencing a geographic zero-order/conversion finding, from the 2026-09-06 weekly review specifically. If found: report to the user (plain Telegram notification either way, this is a real informational item worth surfacing regardless of outcome, not a quiet resolution) that the fix worked, naming what it found. If NOT found: do not assume the fix failed silently - first check plainly whether that week's review genuinely found nothing to flag (a legitimately quiet week is possible and fine) versus whether the check itself didn't run at all (e.g. an error, or the weekly review didn't complete) - state clearly which of those it was, don't guess. Either way, log a resolving type=outcome entry linked to this one and this KL-2026-09-03-123233, and notify the user plainly. This follow_up resolves once that verification and notification happen, regardless of which outcome it turns out to be."
+  },
+  "KL-2026-09-04-020000": {
+    "id": "KL-2026-09-04-020000",
+    "date": "2026-09-04",
+    "type": "decision",
+    "subject": "Midnight Blue Drape Saree ad (52547120416180) - final disposition on batch-comparison pull KL-2026-09-04-015500",
+    "follow_up": "No creative-copywriter or media-buyer action needed - this closes out the KL-2026-09-02-020500 HOLD as confirmed, not escalated. Next re-review trigger for Midnight Blue Saree specifically: spend reaching roughly Rs740-800 (the original doubling threshold), whichever comes first alongside the normal standing review cadence. Separately, ask performance-analyst to keep an eye on Gun Metal Grey Corset cold (52547120436780) and Peach Corset+Lehenga (52547120479980) and Blush Pink Lehenga (52547120474380) in the next standing review of this ad set - these three, not the Saree, are the more plausible creative-quality-review candidates if their cost/conversation gap versus the old-pool baseline does not close as spend accumulates. This is a flag for the next standing check, not a disposition opened today."
+  },
+  "KL-2026-09-04-155612": {
+    "id": "KL-2026-09-04-155612",
+    "date": "2026-09-04",
+    "type": "change",
+    "subject": "Profile Visits | India (52538161512180) - activated Ad A (52551760703580)",
+    "follow_up": "24h post-activation checkpoint due ~2026-09-05 15:56 UTC per rollback criterion (2) in KL-2026-09-04-153000: fresh GET ad-level insights for 52551760703580, time_increment=1 covering the first 24h; if cumulative impressions are below 500, re-pause Ad A and route to performance-analyst for root-cause review rather than silently re-activating later."
+  },
+  "KL-2026-09-05-015801": {
+    "id": "KL-2026-09-05-015801",
+    "date": "2026-09-05",
+    "type": "decision",
+    "subject": "Own-content disposition - Rich Maroon Raw Silk Corset and Cutout Corset plus Floral-Jaal Lehenga (companion video now confirmed)",
+    "follow_up": "Once creative-copywriter briefs and media-buyer validates a build plan for these 2 ads, this becomes a ready-to-approve decision - check for that linked build plan before treating this as still-open."
+  }
+}

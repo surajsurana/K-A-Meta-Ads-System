@@ -154,16 +154,28 @@ ka_run_headless() {
   #
   # Split per job rather than one shared number: heartbeat is deliberately
   # meant to stay cheap (daily, narrow scope) so keeps a modest ceiling: a
-  # heartbeat that's actually taking 20+ minutes is more likely stuck than
+  # heartbeat that's actually taking too long is more likely stuck than
   # doing real proportionate work, and daily cadence means a stuck one
   # would otherwise hold the shared lock 24x longer than intended. Weekly/
   # monthly get generous headroom given how much real work they now do,
   # and their low frequency (weekly/monthly, not daily) means a longer cap
   # doesn't compound into meaningfully more total blocked-time risk.
+  #
+  # Heartbeat's own cap raised 20min -> 30min 2026-09-05, same class of
+  # finding as the two above, not a hang: the account's learning log has
+  # grown enough (253 entries at the time) that the due-now sweep alone was
+  # taking real time, pushing a genuinely-completing, legitimate run right
+  # up against 20 minutes - it got killed by this exact timeout twice in
+  # one week (2026-09-02, 2026-09-05) despite finishing cleanly in ~14min
+  # when given room to run. The due-now sweep itself was also fixed same
+  # day (knowledge/open-followups.json - see scripts/update-open-
+  # followups.py) to stop re-scanning the whole growing log every day, so
+  # this raise is a margin-of-safety on top of that fix, not a substitute
+  # for it - the two together are what actually keep this cheap long-term.
   case "$JOB_NAME" in
     heartbeat)
       BG_WAIT_CEILING_MS=600000    # 10 min - back to the CLI's own default; heartbeat should never need the raised ceiling
-      OUTER_TIMEOUT_S=1200         # 20 min hard cap
+      OUTER_TIMEOUT_S=1800         # 30 min hard cap (was 20min - see note above)
       ;;
     *)
       BG_WAIT_CEILING_MS=3000000   # 50 min

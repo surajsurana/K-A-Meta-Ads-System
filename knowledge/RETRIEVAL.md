@@ -47,12 +47,12 @@ grep '"type":"experiment"' knowledge/learning-log.jsonl
 ```
 Then, for each `id` returned, check whether it appears in any other entry's `linked_to` array — if not, it's still open. This is a two-step grep, not an index; see the design doc for why that's sufficient at current scale.
 
-## 8. Due-now sweep (added 2026-08-19 — the daily heartbeat's standing first step)
+## 8. Due-now sweep (added 2026-08-19 — the daily heartbeat's standing first step; rewritten 2026-09-05)
 Generalizes recipe 7 beyond just experiments: any entry carrying a `follow_up` field — a staggered-activation date, a re-check condition, a standing review cadence note — that's due today or earlier and has no later entry resolving it.
 ```bash
-grep '"follow_up"' knowledge/learning-log.jsonl
+cat knowledge/open-followups.json
 ```
-For each match, read the `follow_up` text and judge whether its condition/date has been reached, then check (same two-step pattern as recipe 7) whether a later entry already resolved it via `linked_to`. This is the check marketing-lead runs first in every scheduled/heartbeat run, before deciding which specialist(s) to actually dispatch — if nothing is due and nothing else is flagged by the daily anomaly pull, that's a silent no-op, not a forced escalation.
+**Read the small index, never `grep` the full log for this.** `knowledge/open-followups.json` is a maintained-on-every-write index of exactly the still-open `follow_up` entries (kept in sync by `scripts/update-open-followups.py`, called automatically from `scripts/append-learning-log.sh` — never hand-edited). At 253+ log entries, grepping the whole file for this sweep was producing several hundred KB of output and real, measurable time cost — re-derived from scratch every single day regardless of the log's size — which contributed directly to the daily heartbeat blowing past its own timeout twice in one week (2026-09-02, 2026-09-05). The index makes this a small, constant-time read no matter how large the log grows. For each entry in the index, judge whether its `follow_up` condition/date has been reached — the "already resolved?" half of the old two-step check is now unnecessary work the index already did at write time (an entry leaves the index the moment something links back to it), so there's nothing left to cross-reference. This is the check marketing-lead runs first in every scheduled/heartbeat run, before deciding which specialist(s) to actually dispatch — if nothing is due and nothing else is flagged by the daily anomaly pull, that's a silent no-op, not a forced escalation. If the index ever looks wrong or missing, `python scripts/update-open-followups.py --rebuild` regenerates it from a full scan of the log — the log itself remains the only source of truth, this index is purely a derived cache.
 
 ## 9. Geography & demographic (added 2026-08-21)
 Reviewing or proposing anything geography- or age-targeting-related (§3c in `docs/architecture.md`). Same tag-grep pattern as recipes 3/4, named explicitly for discoverability since this is its own decision domain (eight geography dispositions, DOB-coverage-aware age analysis), not because the mechanism differs.
