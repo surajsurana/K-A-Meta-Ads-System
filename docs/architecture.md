@@ -57,6 +57,7 @@ No dedicated Meta Ads MCP server is used. Instead:
 - **Shopify** (MCP server) — read-only order/product tools. The online-storefront slice only, not the full revenue picture.
 - **Google Drive/Sheets** (MCP server) — used for one-off historical data extraction (a legacy pre-Stitchflow order ledger), not a live integration.
 - **Windsor.ai is fully retired.** All agents call Meta directly. If a Windsor tool ever appears available, it should not be used for this account unless explicitly requested.
+- **`knowledge/performance-summaries.jsonl`** (added 2026-09-05) — structured weekly/monthly/quarterly/half-yearly/yearly spend-orders-ROAS records, written by `scripts/append-performance-summary.sh` and rolled up (finer periods aggregated then discarded, calendar-boundary-driven) by `scripts/run-performance-rollup.sh`. Full design in `docs/learning-layer-design.md` §8. Numeric-only, plain-aggregate rollup-and-discard — a fundamentally different retention rule from the narrative learning log below, which is never rolled up or deleted.
 
 **Integration-change discipline:** after any account-wide tooling change (like the Windsor retirement was), grep every agent definition file for references to the old integration before considering the migration complete — this caught a real, live-for-weeks bug once already (see change log). Each agent file also carries a `**Last verified working:**` line, updated whenever it's confirmed working, as a cheap staleness signal.
 
