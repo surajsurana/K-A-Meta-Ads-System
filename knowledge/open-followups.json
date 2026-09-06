@@ -125,18 +125,18 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - final disposition on batch-comparison pull KL-2026-09-04-015500",
     "follow_up": "No creative-copywriter or media-buyer action needed - this closes out the KL-2026-09-02-020500 HOLD as confirmed, not escalated. Next re-review trigger for Midnight Blue Saree specifically: spend reaching roughly Rs740-800 (the original doubling threshold), whichever comes first alongside the normal standing review cadence. Separately, ask performance-analyst to keep an eye on Gun Metal Grey Corset cold (52547120436780) and Peach Corset+Lehenga (52547120479980) and Blush Pink Lehenga (52547120474380) in the next standing review of this ad set - these three, not the Saree, are the more plausible creative-quality-review candidates if their cost/conversation gap versus the old-pool baseline does not close as spend accumulates. This is a flag for the next standing check, not a disposition opened today."
   },
-  "KL-2026-09-04-155612": {
-    "id": "KL-2026-09-04-155612",
-    "date": "2026-09-04",
-    "type": "change",
-    "subject": "Profile Visits | India (52538161512180) - activated Ad A (52551760703580)",
-    "follow_up": "24h post-activation checkpoint due ~2026-09-05 15:56 UTC per rollback criterion (2) in KL-2026-09-04-153000: fresh GET ad-level insights for 52551760703580, time_increment=1 covering the first 24h; if cumulative impressions are below 500, re-pause Ad A and route to performance-analyst for root-cause review rather than silently re-activating later."
-  },
   "KL-2026-09-05-015801": {
     "id": "KL-2026-09-05-015801",
     "date": "2026-09-05",
     "type": "decision",
     "subject": "Own-content disposition - Rich Maroon Raw Silk Corset and Cutout Corset plus Floral-Jaal Lehenga (companion video now confirmed)",
     "follow_up": "Once creative-copywriter briefs and media-buyer validates a build plan for these 2 ads, this becomes a ready-to-approve decision - check for that linked build plan before treating this as still-open."
+  },
+  "KL-2026-09-06-014741": {
+    "id": "KL-2026-09-06-014741",
+    "date": "2026-09-06",
+    "type": "outcome",
+    "subject": "Profile Visits | India (52538161512180) - activated Ad A (52551760703580)",
+    "follow_up": "No new dated checkpoint - this closes the 24h-checkpoint chain. Ongoing monitoring continues per the original build plans cost-per-follower criterion (3) in KL-2026-09-04-153000, not a new dated follow_up."
   }
 }
