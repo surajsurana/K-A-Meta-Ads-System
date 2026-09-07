@@ -159,5 +159,12 @@
     "type": "decision",
     "subject": "Portfolio budget allocation check - weekly review 2026-09-07",
     "follow_up": "No budget action pending. Re-verify fresh again next weekly review, as always - never reuse this figure without a fresh GET."
+  },
+  "KL-2026-09-07-020700": {
+    "id": "KL-2026-09-07-020700",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) — WhatsApp copy for 4 First Love reels replacing the 3 stale/off-collection ads, per KL-2026-09-07-020000",
+    "follow_up": "media-buyer: build 4 ads in adset 6862975169176 replacing the 3 stale ads named in KL-2026-09-07-020000, using this copy; confirm exact WHATSAPP_MESSAGE object_story_spec shape (app_destination, link, page_welcome_message template) against live ad 6869005929376 before build, per KL-2026-08-18-15's own build mechanism; record all 4 product mappings via scripts/append-product-map.sh with status=pending_telegram_confirmation (not confirmed) given the visual-match step was not completed this session. Next interactive session: creative-copywriter to complete the Shopify-photo or Telegram two-photo visual confirmation for these 4 SKUs and upgrade the map entries to confirmed if they check out."
   }
 }
