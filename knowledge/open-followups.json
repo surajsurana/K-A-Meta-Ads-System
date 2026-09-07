@@ -160,6 +160,13 @@
     "subject": "Per-product spend-vs-orders check (first full run, architecture.md SS3d) - 15 of 18 confirmed SKUs show zero orders in trailing 60 days, CHMK030 the standout",
     "follow_up": "Hand to campaign-strategist: CHMK030 (Rs115,337/60d, 0 orders, ~34% of this week's entire account spend concentrated in its single largest ad) is the priority disposition call - refresh creative, cut its spend share, or hold pending a longer window given orders can lag by weeks on high-ticket items. KA-040326-03 is the secondary call, already linked to the Delhi creative-currency finding. The 3 null-SKU entries (Rs48,494 combined) need a real SKU attached before they can be judged at all - flag to whoever next resolves creative-product-map.jsonl entries, not a performance-analyst action."
   },
+  "KL-2026-09-07-010200": {
+    "id": "KL-2026-09-07-010200",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "Ad 52510022528580 (16th June 26 | Sargun Mehta Purple Corset) has no creative-product-map.jsonl entry at all",
+    "follow_up": "Needs creative-copywriter's normal identification pass (Shopify/Stitchflow cross-check, Telegram photo confirmation if uncertain) and media-buyer to record the result via scripts/append-product-map.sh - not a performance-analyst action, just flagging so it isn't silently missed a second time."
+  },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
     "date": "2026-09-07",
