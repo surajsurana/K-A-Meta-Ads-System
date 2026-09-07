@@ -160,6 +160,13 @@
     "subject": "Texas (USA) zero-order-in-window - disposition: maintain, standing watch only, not yet a confirmed incident",
     "follow_up": "Repeat this check next weekly review (2026-09-14ish). If Texas is still at zero orders with continued spend by then, treat with the same severity as a confirmed geography finding per architecture.md SS3c and revisit disposition. If an order lands, close as normal timing variance - no further action needed."
   },
+  "KL-2026-09-07-020200": {
+    "id": "KL-2026-09-07-020200",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "CHMK030 (Chatak Neela Corset & Draped Saree, blue) - disposition: cut this ad's spend share now, refresh or repoint creative, not a hold",
+    "follow_up": "Live Meta Ads change (pause/throttle one ad, build replacement creative) - route to creative-copywriter for a fresh treatment (same blue SKU with a different angle, or a colourway pivot to Maroon/bottle green backed by real Stitchflow demand) then to media-buyer for a validated execution plan (old ad's status/budget share -> new value, verification, rollback criteria). Not executed in this unattended run per guardrail 13. Re-check CHMK030 spend concentration and order count at next weekly review."
+  },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
     "date": "2026-09-07",
