@@ -955,26 +955,31 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
         if not success and detail.startswith("GATED:"):
             final_status = "gated"
         else:
-            # Check the compound keywords FIRST: "ALREADY_EXECUTED" and
-            # "STALE_NOT_EXECUTED" both contain "EXECUTED" as a raw substring,
-            # so a naive `"EXECUTED" in detail` check (even restricted to the
-            # first line) mislabels a correctly-declined stale/already-done
-            # plan as a genuine execution - confirmed live 2026-08-21 during
-            # real-dispatch testing: the model's ALREADY_EXECUTED response
-            # didn't even lead with the bare keyword on line 1 as instructed,
-            # it explained first - so this also can't assume strict first-line
-            # compliance and checks the whole output. False-labeling something
-            # "Executed" when it wasn't is the dangerous direction to get
-            # wrong; false-labeling a real execution as "not_executed" is only
-            # cosmetic (the learning-log type:change entry is the real record
-            # either way), so ambiguous/non-compliant output resolves to the
-            # safe (non-executed) label, never the reverse.
-            detail_upper = detail.upper()
-            if "ALREADY_EXECUTED" in detail_upper or "STALE_NOT_EXECUTED" in detail_upper:
+            # Classify from the FIRST LINE's leading keyword first, never
+            # the whole body (fixed 2026-09-07, real incident - a comment-
+            # reply batch whose first line was genuinely "FAILED: I can't
+            # post the Instagram replies..." still got recorded as
+            # "executed", because the *old* logic scanned the entire
+            # response for the raw substring "EXECUTED" - and later in that
+            # same response, ordinary prose like "not a duplicate/already-
+            # executed run" contains exactly that substring. A whole-body
+            # scan can never fully avoid this: any explanatory sentence that
+            # happens to use the word "executed" collides with it, not just
+            # the two compound keywords the 2026-08-21 fix accounted for.
+            # The model is explicitly instructed (see dispatch_execution's
+            # own prompt) to always lead with one of the five exact
+            # keywords - checking the first line's actual prefix is a
+            # strictly more reliable signal than searching for the word
+            # anywhere in a few hundred words of narrative, so it's checked
+            # first and, if it matches, is trusted on its own.
+            first_line_upper = detail.strip().splitlines()[0].upper() if detail.strip() else ""
+            if first_line_upper.startswith("ALREADY_EXECUTED:") or first_line_upper.startswith("STALE_NOT_EXECUTED:"):
                 final_status = "not_executed"
-            elif success and "EXECUTED" in detail_upper:
+            elif first_line_upper.startswith("EXECUTED:"):
                 final_status = "executed"
-            elif not success and "STATUS IS GENUINELY UNCERTAIN" in detail_upper:
+            elif first_line_upper.startswith("FAILED:"):
+                final_status = "failed"
+            elif not success and "STATUS IS GENUINELY UNCERTAIN" in detail.upper():
                 # Added 2026-09-03: distinct from a confirmed failure - the
                 # timeout handler above already checked reality (via
                 # _plan_confirmed_executed) and found no proof either way.
@@ -983,10 +988,24 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
                 # this branch is hit, so telling the user "FAILED" here would
                 # be a false alarm, not a safe default.
                 final_status = "uncertain"
-            elif not success:
-                final_status = "failed"
             else:
-                final_status = "not_executed"
+                # First line didn't comply with the required keyword format
+                # (confirmed live 2026-08-21: this does happen) - fall back
+                # to the old whole-body heuristic, compound keywords first,
+                # as a last resort only. False-labeling something "Executed"
+                # when it wasn't is the dangerous direction to get wrong;
+                # false-labeling a real execution as "not_executed" is only
+                # cosmetic (the learning-log type:change entry is the real
+                # record either way), so ambiguous/non-compliant output
+                # resolves to the safe (non-executed) label, never the
+                # reverse.
+                detail_upper = detail.upper()
+                if "ALREADY_EXECUTED" in detail_upper or "STALE_NOT_EXECUTED" in detail_upper:
+                    final_status = "not_executed"
+                elif not success:
+                    final_status = "failed"
+                else:
+                    final_status = "not_executed"
         finalize_status(plan_id, final_status, detail[:500])
 
         if final_status == "executed":
