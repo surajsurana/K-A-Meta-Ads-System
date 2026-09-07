@@ -20,13 +20,6 @@
     "subject": "append-learning-log.sh - subagent falsely reported a successful push",
     "follow_up": "Before trusting any agent's claim that a learning-log write succeeded - especially one that gates sending a Telegram approval or any downstream action - independently verify via a fresh `git fetch origin main` and grep/show against origin's copy, not the agent's self-report alone. If this false-success pattern recurs, escalate to the user as a possible sandboxing/tool-isolation issue affecting subagent Bash calls, not just a one-off fluke."
   },
-  "KL-2026-08-31-005500": {
-    "id": "KL-2026-08-31-005500",
-    "date": "2026-08-31",
-    "type": "observation",
-    "subject": "Stitchflow order entries show a 0-2 day lag - most-recent 1-2 days of any weekly window may be undercounted at review time",
-    "follow_up": "Next weekly review: re-pull orders for the 2026-08-24 to 2026-08-30 window and check whether the count/value has grown from this cycle's reported 11 orders / Rs1,114,700 - if so, treat this cycle's reported blended CPO/ROAS as provisional and note the corrected figures. Consider this pattern (0-2 day entry lag) as a standing caveat on the most recent 1-2 days of every future weekly window, not just this one."
-  },
   "KL-2026-08-31-020600": {
     "id": "KL-2026-08-31-020600",
     "date": "2026-08-31",
@@ -145,6 +138,13 @@
     "type": "observation",
     "subject": "Daily heartbeat spend-pacing check 2026-09-05 - 5-ad-set underspend cluster (44-61% of daily budget)",
     "follow_up": "Re-check spend pacing for these same 5 ad sets on the next weekday reading (Monday 2026-09-07 or the next daily heartbeat, whichever is later) - if the underspend pattern persists on a weekday (when it cannot be attributed to weekend auction softness), escalate to campaign-strategist for a disposition; if it clears, this closes as normal weekly cyclicality, log a resolving outcome entry either way."
+  },
+  "KL-2026-09-07-005700": {
+    "id": "KL-2026-09-07-005700",
+    "date": "2026-09-07",
+    "type": "outcome",
+    "subject": "Stitchflow 0-2 day order-entry lag re-check (KL-2026-08-31-005500) - 2026-08-24 to 2026-08-30 window",
+    "follow_up": "Apply the same 2-day provisional caveat to every future weekly review's most recent 2 days as standing practice - no new dated check needed, this is now a confirmed recurring pattern rather than an open question."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
