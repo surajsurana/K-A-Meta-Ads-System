@@ -139,13 +139,6 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-010200": {
-    "id": "KL-2026-09-07-010200",
-    "date": "2026-09-07",
-    "type": "observation",
-    "subject": "Ad 52510022528580 (16th June 26 | Sargun Mehta Purple Corset) has no creative-product-map.jsonl entry at all",
-    "follow_up": "Needs creative-copywriter's normal identification pass (Shopify/Stitchflow cross-check, Telegram photo confirmation if uncertain) and media-buyer to record the result via scripts/append-product-map.sh - not a performance-analyst action, just flagging so it isn't silently missed a second time."
-  },
   "KL-2026-09-07-020000": {
     "id": "KL-2026-09-07-020000",
     "date": "2026-09-07",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "CHMK030 (Chatak Neela Corset & Draped Saree, blue) - disposition: cut this ad's spend share now, refresh or repoint creative, not a hold",
     "follow_up": "Live Meta Ads change (pause/throttle one ad, build replacement creative) - route to creative-copywriter for a fresh treatment (same blue SKU with a different angle, or a colourway pivot to Maroon/bottle green backed by real Stitchflow demand) then to media-buyer for a validated execution plan (old ad's status/budget share -> new value, verification, rollback criteria). Not executed in this unattended run per guardrail 13. Re-check CHMK030 spend concentration and order count at next weekly review."
+  },
+  "KL-2026-09-07-020300": {
+    "id": "KL-2026-09-07-020300",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "Ad 52510022528580 missing creative-product-map.jsonl entry - routing confirmed, cannot be actioned in this unattended run",
+    "follow_up": "Next interactive session: creative-copywriter to identify the product for ad 52510022528580 (Shopify search + Stitchflow SKU cross-check per SS3d), then media-buyer to record via scripts/append-product-map.sh."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
