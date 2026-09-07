@@ -125,12 +125,12 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-014531": {
-    "id": "KL-2026-09-07-014531",
+  "KL-2026-09-07-015200": {
+    "id": "KL-2026-09-07-015200",
     "date": "2026-09-07",
-    "type": "observation",
-    "subject": "Add to Cart 90D | WhatsApp Consult Test (ad set 52547119740980) - Rs150/day re-check due per KL-2026-09-01-152300/153000 - cost/conversation still climbing, ESCALATION NEEDED",
-    "follow_up": "ESCALATE to campaign-strategist: cost/conversation at reduced Rs150/day pacing (Rs45.34 this week) is higher, not lower, than the Rs23-41 range that triggered the 2026-09-01 decrease, ruling out pacing alone. Needs a fresh strategist read on whether this small (~20-person) custom audience is genuinely exhausted (hold/kill/audience-expansion options) plus a new media-buyer validation before any further budget action - not an automatic reversion to Rs250/day."
+    "type": "decision",
+    "subject": "Add to Cart 90D | WhatsApp Consult Test (ad set 52547119740980) - independent read on KL-2026-09-07-014531 escalation: PAUSE, do not hold at Rs150/day, do not widen to 180D yet",
+    "follow_up": "Route to media-buyer: independently re-verify ad set 52547119740980s current live state (status, effective_status, daily_budget) and the account-wide budget total fresh against the Rs6,500/day ceiling per guardrail 12, then prepare an execution plan changing status ACTIVE to PAUSED (no other field changes - targeting, creative, and the ad itself untouched so it can be resumed cleanly later). This is a plan/recommendation only, no live Meta write made here; marketing-lead executes only after the users direct approval. Reactivation trigger for a future cycle, not before either condition is met: (a) an operational attribution fix is put in place per KL-2026-09-02-015700s follow_up (e.g. sales agents tagging which WhatsApp source a consult came from), so a real revenue signal becomes available, or (b) a meaningful dormancy period (recommend at least 30 days) has passed, allowing the 90-day add-to-cart pool to refresh with new cart-adds, after which a fresh one-week test at Rs150/day (not a jump back to Rs250) would be the appropriate re-entry step. Do not treat the 180D audience widen as a standing open option to revisit casually - it needs either a genuine confirmed-larger real audience size (not just a matching display-floor number) or a working attribution path before it is worth proposing as a funded test."
   },
   "KL-2026-09-07-020300": {
     "id": "KL-2026-09-07-020300",
