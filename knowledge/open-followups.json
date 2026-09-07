@@ -90,13 +90,6 @@
     "subject": "Profile Visits | Follower Growth | Test",
     "follow_up": "None required - rollback confirmed working at Rs100/day across 3 consecutive readings. Resume normal-cadence follower tracking on the accounts standard review schedule rather than the tighter 3-reading rollback-verification cadence."
   },
-  "KL-2026-09-03-015600": {
-    "id": "KL-2026-09-03-015600",
-    "date": "2026-09-03",
-    "type": "decision",
-    "subject": "_happybrar UGC ad-set test (18125126245694535) - media-buyer validation: budget/structure/copy ready, BLOCKED on media asset acquisition",
-    "follow_up": "Ask Suraj/team whether they can obtain the raw video file directly from _happybrar or via manual save from the Instagram app. Once a usable local file or working media_url exists, media-buyer can finalize the actual build plan (create ad set + ad, status PAUSED, verify, then a separate activation plan) using the structure/copy/budget already validated in this entry - no need to redo that work."
-  },
   "KL-2026-09-03-071920": {
     "id": "KL-2026-09-03-071920",
     "date": "2026-09-03",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "Ad 52510022528580 missing creative-product-map.jsonl entry - routing confirmed, cannot be actioned in this unattended run",
     "follow_up": "Next interactive session: creative-copywriter to identify the product for ad 52510022528580 (Shopify search + Stitchflow SKU cross-check per SS3d), then media-buyer to record via scripts/append-product-map.sh."
+  },
+  "KL-2026-09-07-020400": {
+    "id": "KL-2026-09-07-020400",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "UGC tags sweep dispositions (2026-09-07 weekly review) - the.aniqa.alam, lavishdhaka, nidhi_dugar, adaabangkok, kinjalshuklabhanushali, _happybrar 4th reel",
+    "follow_up": "_happybrar: escalate the still-unresolved media-acquisition blocker (KL-2026-09-03-015600) to Suraj directly rather than letting it sit passively for a further cycle - ask whether the raw video file can be obtained from the creator or manually saved, now grouped with the 4th reel. kinjalshuklabhanushali: needs an actual screening of the new reel by whoever made the prior 3 calls, before a use/reject decision - not something this review can resolve from metrics alone."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
