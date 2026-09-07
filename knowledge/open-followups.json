@@ -139,13 +139,6 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-005900": {
-    "id": "KL-2026-09-07-005900",
-    "date": "2026-09-07",
-    "type": "observation",
-    "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - re-verified, now a 3rd consecutive month, creative mix unchanged",
-    "follow_up": "This is a standing, unresolved finding now in its 3rd month with no creative rotation since the first case study - hand to campaign-strategist for an explicit disposition (one of the 8 geography dispositions in architecture.md SS3c, e.g. rotate the 3 stale/off-collection ads out of this ad set, or a Delhi-specific budget/targeting call) rather than continuing to re-observe it monthly without a decision being made."
-  },
   "KL-2026-09-07-010000": {
     "id": "KL-2026-09-07-010000",
     "date": "2026-09-07",
@@ -153,19 +146,19 @@
     "subject": "Texas (USA) - new zero-order-in-window candidate found during account-wide region sweep",
     "follow_up": "Smaller-scale, lower-confidence than Delhi (intermittent historical conversion, mostly-current creative) - worth a repeat check next weekly review before treating as a standing incident. If Texas is still at zero orders next cycle despite continued spend, escalate to campaign-strategist with the same severity as a confirmed geography finding; if a Texas order appears, this closes as normal order-timing variance."
   },
-  "KL-2026-09-07-010100": {
-    "id": "KL-2026-09-07-010100",
-    "date": "2026-09-07",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders check (first full run, architecture.md SS3d) - 15 of 18 confirmed SKUs show zero orders in trailing 60 days, CHMK030 the standout",
-    "follow_up": "Hand to campaign-strategist: CHMK030 (Rs115,337/60d, 0 orders, ~34% of this week's entire account spend concentrated in its single largest ad) is the priority disposition call - refresh creative, cut its spend share, or hold pending a longer window given orders can lag by weeks on high-ticket items. KA-040326-03 is the secondary call, already linked to the Delhi creative-currency finding. The 3 null-SKU entries (Rs48,494 combined) need a real SKU attached before they can be judged at all - flag to whoever next resolves creative-product-map.jsonl entries, not a performance-analyst action."
-  },
   "KL-2026-09-07-010200": {
     "id": "KL-2026-09-07-010200",
     "date": "2026-09-07",
     "type": "observation",
     "subject": "Ad 52510022528580 (16th June 26 | Sargun Mehta Purple Corset) has no creative-product-map.jsonl entry at all",
     "follow_up": "Needs creative-copywriter's normal identification pass (Shopify/Stitchflow cross-check, Telegram photo confirmation if uncertain) and media-buyer to record the result via scripts/append-product-map.sh - not a performance-analyst action, just flagging so it isn't silently missed a second time."
+  },
+  "KL-2026-09-07-020000": {
+    "id": "KL-2026-09-07-020000",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - disposition: creative/message adaptation, 3rd-month re-observation ends here",
+    "follow_up": "This is a live Meta Ads change (pause 3 ads, build+add up to 4 new video ads from existing reels, verify PAUSED-then-activate) - route to creative-copywriter for WhatsApp-destination copy/CTA on the 4 reels (reusing the account's established cold/warm WhatsApp copy pattern per KL-2026-08-18-15 as a template), then to media-buyer for a validated, ready-to-approve execution plan. Not executed in this unattended run per guardrail 13. Re-check Delhi orders at the next 2 weekly reviews post-swap per the stop-rule above."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
