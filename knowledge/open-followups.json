@@ -139,18 +139,18 @@
     "subject": "UGC tags sweep dispositions (2026-09-07 weekly review) - the.aniqa.alam, lavishdhaka, nidhi_dugar, adaabangkok, kinjalshuklabhanushali, _happybrar 4th reel",
     "follow_up": "_happybrar: escalate the still-unresolved media-acquisition blocker (KL-2026-09-03-015600) to Suraj directly rather than letting it sit passively for a further cycle - ask whether the raw video file can be obtained from the creator or manually saved, now grouped with the 4th reel. kinjalshuklabhanushali: needs an actual screening of the new reel by whoever made the prior 3 calls, before a use/reject decision - not something this review can resolve from metrics alone."
   },
-  "KL-2026-09-07-021000": {
-    "id": "KL-2026-09-07-021000",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "CHMK030 blue - ad '2nd Jult 26' (ad set 6538717752176) - validated execution plan: pause now, Maroon pivot remains blocked, per KL-2026-09-07-020200/020800",
-    "follow_up": "Awaiting user's direct approval via Telegram (scripts/send-telegram-approval.sh KL-2026-09-07-021000). Not executed in this unattended run per guardrail 13. Once approved, marketing-lead executes verbatim and logs a linked type:change entry. Maroon pivot (Component 2) has no follow_up action here - it remains blocked until an asset exists; re-check at next weekly review alongside the video-content drought (KL-2026-09-07-020500)."
-  },
   "KL-2026-09-07-022500-EXEC": {
     "id": "KL-2026-09-07-022500-EXEC",
     "date": "2026-09-07",
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - Step 1 executed: paused 3 stale ads; Step 2 (4 new First Love ads) not built this session",
     "follow_up": "Step 2 of KL-2026-09-07-020900 (build 4 new PAUSED First Love ads: KAFL015, KAFL013, KAFL016, KAFL010) remains outstanding - requires an interactive session with Instagram video-sourcing access to pull the 4 reel videos before upload; Step 2a product-map entries (status pending_telegram_confirmation) get appended only once those ads are actually built with real video_ids, per the original plan. Step 3 staggered activation guidance does not apply yet since no new ads exist. Rollback criteria from KL-2026-09-07-020900 (reactivate Payalia Frozen Blue only, as interim bridge, if messaging-conversation volume drops >30% within 7 days) remain in force and unaffected by this partial execution."
+  },
+  "KL-2026-09-07-030500-EXEC": {
+    "id": "KL-2026-09-07-030500-EXEC",
+    "date": "2026-09-07",
+    "type": "change",
+    "subject": "Insta Engaged & Followers Remarketing Insta DM - ad '2nd Jult 26' (52529893329380) - PAUSED",
+    "follow_up": "Per KL-2026-09-07-021000's rollback criteria: if the ad set's qualified messaging/DM conversation volume drops materially within 7 days (by ~2026-09-14) with no offsetting pickup on the 3 remaining active ads (52536086349180, 52536048529180, 52510022528576/52510022528580), reactivate 52529893329380 as a temporary bridge - that reactivation itself requires its own fresh, direct approval. Component 2 (Maroon pivot, SKU KA-160326-62M) stays blocked until a usable photo/video asset exists, per the video-content drought already logged at KL-2026-09-07-020500."
   }
 }
