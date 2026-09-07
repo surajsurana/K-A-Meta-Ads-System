@@ -146,13 +146,6 @@
     "subject": "UGC tags sweep dispositions (2026-09-07 weekly review) - the.aniqa.alam, lavishdhaka, nidhi_dugar, adaabangkok, kinjalshuklabhanushali, _happybrar 4th reel",
     "follow_up": "_happybrar: escalate the still-unresolved media-acquisition blocker (KL-2026-09-03-015600) to Suraj directly rather than letting it sit passively for a further cycle - ask whether the raw video file can be obtained from the creator or manually saved, now grouped with the 4th reel. kinjalshuklabhanushali: needs an actual screening of the new reel by whoever made the prior 3 calls, before a use/reject decision - not something this review can resolve from metrics alone."
   },
-  "KL-2026-09-07-020500": {
-    "id": "KL-2026-09-07-020500",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "Own-content sweep (2026-09-07) - HOLD confirmed for all 3 new posts; escalating the 25-day video gap a second time",
-    "follow_up": "Escalate directly to Suraj this cycle (2nd escalation, first was KL-2026-08-31-020700, unresolved 25 days later): the video/Reel drought is now a stated blocker on two live paid-media decisions this week, not just an organic-format preference - ask plainly whether a shoot is scheduled and when. If a 5th consecutive sweep still finds zero video, treat as a standing operational gap needing a structural fix (e.g. a recurring shoot cadence), not a further re-escalation of the same message."
-  },
   "KL-2026-09-07-020600": {
     "id": "KL-2026-09-07-020600",
     "date": "2026-09-07",
@@ -166,5 +159,12 @@
     "type": "decision",
     "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) — WhatsApp copy for 4 First Love reels replacing the 3 stale/off-collection ads, per KL-2026-09-07-020000",
     "follow_up": "media-buyer: build 4 ads in adset 6862975169176 replacing the 3 stale ads named in KL-2026-09-07-020000, using this copy; confirm exact WHATSAPP_MESSAGE object_story_spec shape (app_destination, link, page_welcome_message template) against live ad 6869005929376 before build, per KL-2026-08-18-15's own build mechanism; record all 4 product mappings via scripts/append-product-map.sh with status=pending_telegram_confirmation (not confirmed) given the visual-match step was not completed this session. Next interactive session: creative-copywriter to complete the Shopify-photo or Telegram two-photo visual confirmation for these 4 SKUs and upgrade the map entries to confirmed if they check out."
+  },
+  "KL-2026-09-07-020800": {
+    "id": "KL-2026-09-07-020800",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "CHMK030 (Chatak Neela Corset & Draped Saree, blue) - ad 'India Insta Engaged 365D | 2nd Jult 26' (adset 6538717752176) - recommend colourway pivot to Maroon (KA-160326-62M), full brief; fresh-blue-copy fallback also provided",
+    "follow_up": "campaign-strategist/media-buyer to decide sequencing given this ad is currently ~34% of a week's account spend: either throttle/pause it now on Option A copy as an immediate stop-gap while Maroon asset production catches up, or hold live as-is briefly pending the Maroon asset. Next interactive session: pull a Shopify product photo for KA-160326-62M (Stitchflow photo_path is empty) and assess whether new video footage is feasible given the already-escalated video-content drought (KL-2026-09-07-020500); once an asset exists, creative-copywriter to run the full SS3d Stitchflow+Shopify+visual product-mapping check on it before media-buyer builds. media-buyer: if Option A is built, confirm exact call_to_action type/value against this ad set's 4 live ads before build, matching the account's standing practice (KL-2026-08-20-170700 precedent)."
   }
 }
