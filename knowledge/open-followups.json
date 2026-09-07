@@ -104,13 +104,6 @@
     "subject": "Rafaey Master ad set 52551343010580 - 24-48h delivery-health check PASSED",
     "follow_up": "Per KL-2026-09-01-133059 second-stage follow_up: track actual Stitchflow order attribution to Rafaey Master over the next 1-2 weeks as the real success signal (separate check, not due yet)."
   },
-  "KL-2026-09-03-151324": {
-    "id": "KL-2026-09-03-151324",
-    "date": "2026-09-03",
-    "type": "observation",
-    "subject": "Follow-up check: did this week's weekly review actually self-surface a geo-conversion finding (Delhi/USA/Canada-style), proving the 2026-09-03 fixes work",
-    "follow_up": "2026-09-08 (Monday, the weekday after the next scheduled Sunday weekly review on 2026-09-06) - whichever run's due-now sweep picks this up: grep knowledge/learning-log.jsonl for any entry dated 2026-09-04 through the check date tagged with a 'geo-' prefix or referencing a geographic zero-order/conversion finding, from the 2026-09-06 weekly review specifically. If found: report to the user (plain Telegram notification either way, this is a real informational item worth surfacing regardless of outcome, not a quiet resolution) that the fix worked, naming what it found. If NOT found: do not assume the fix failed silently - first check plainly whether that week's review genuinely found nothing to flag (a legitimately quiet week is possible and fine) versus whether the check itself didn't run at all (e.g. an error, or the weekly review didn't complete) - state clearly which of those it was, don't guess. Either way, log a resolving type=outcome entry linked to this one and this KL-2026-09-03-123233, and notify the user plainly. This follow_up resolves once that verification and notification happen, regardless of which outcome it turns out to be."
-  },
   "KL-2026-09-04-020000": {
     "id": "KL-2026-09-04-020000",
     "date": "2026-09-04",
@@ -145,6 +138,13 @@
     "type": "outcome",
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
+  },
+  "KL-2026-09-07-005900": {
+    "id": "KL-2026-09-07-005900",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - re-verified, now a 3rd consecutive month, creative mix unchanged",
+    "follow_up": "This is a standing, unresolved finding now in its 3rd month with no creative rotation since the first case study - hand to campaign-strategist for an explicit disposition (one of the 8 geography dispositions in architecture.md SS3c, e.g. rotate the 3 stale/off-collection ads out of this ad set, or a Delhi-specific budget/targeting call) rather than continuing to re-observe it monthly without a decision being made."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
