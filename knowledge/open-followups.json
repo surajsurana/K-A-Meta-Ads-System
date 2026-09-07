@@ -153,6 +153,13 @@
     "subject": "Texas (USA) - new zero-order-in-window candidate found during account-wide region sweep",
     "follow_up": "Smaller-scale, lower-confidence than Delhi (intermittent historical conversion, mostly-current creative) - worth a repeat check next weekly review before treating as a standing incident. If Texas is still at zero orders next cycle despite continued spend, escalate to campaign-strategist with the same severity as a confirmed geography finding; if a Texas order appears, this closes as normal order-timing variance."
   },
+  "KL-2026-09-07-010100": {
+    "id": "KL-2026-09-07-010100",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "Per-product spend-vs-orders check (first full run, architecture.md SS3d) - 15 of 18 confirmed SKUs show zero orders in trailing 60 days, CHMK030 the standout",
+    "follow_up": "Hand to campaign-strategist: CHMK030 (Rs115,337/60d, 0 orders, ~34% of this week's entire account spend concentrated in its single largest ad) is the priority disposition call - refresh creative, cut its spend share, or hold pending a longer window given orders can lag by weeks on high-ticket items. KA-040326-03 is the secondary call, already linked to the Delhi creative-currency finding. The 3 null-SKU entries (Rs48,494 combined) need a real SKU attached before they can be judged at all - flag to whoever next resolves creative-product-map.jsonl entries, not a performance-analyst action."
+  },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
     "date": "2026-09-07",
