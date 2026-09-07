@@ -132,26 +132,12 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-020000": {
-    "id": "KL-2026-09-07-020000",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - disposition: creative/message adaptation, 3rd-month re-observation ends here",
-    "follow_up": "This is a live Meta Ads change (pause 3 ads, build+add up to 4 new video ads from existing reels, verify PAUSED-then-activate) - route to creative-copywriter for WhatsApp-destination copy/CTA on the 4 reels (reusing the account's established cold/warm WhatsApp copy pattern per KL-2026-08-18-15 as a template), then to media-buyer for a validated, ready-to-approve execution plan. Not executed in this unattended run per guardrail 13. Re-check Delhi orders at the next 2 weekly reviews post-swap per the stop-rule above."
-  },
   "KL-2026-09-07-020100": {
     "id": "KL-2026-09-07-020100",
     "date": "2026-09-07",
     "type": "decision",
     "subject": "Texas (USA) zero-order-in-window - disposition: maintain, standing watch only, not yet a confirmed incident",
     "follow_up": "Repeat this check next weekly review (2026-09-14ish). If Texas is still at zero orders with continued spend by then, treat with the same severity as a confirmed geography finding per architecture.md SS3c and revisit disposition. If an order lands, close as normal timing variance - no further action needed."
-  },
-  "KL-2026-09-07-020200": {
-    "id": "KL-2026-09-07-020200",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "CHMK030 (Chatak Neela Corset & Draped Saree, blue) - disposition: cut this ad's spend share now, refresh or repoint creative, not a hold",
-    "follow_up": "Live Meta Ads change (pause/throttle one ad, build replacement creative) - route to creative-copywriter for a fresh treatment (same blue SKU with a different angle, or a colourway pivot to Maroon/bottle green backed by real Stitchflow demand) then to media-buyer for a validated execution plan (old ad's status/budget share -> new value, verification, rollback criteria). Not executed in this unattended run per guardrail 13. Re-check CHMK030 spend concentration and order count at next weekly review."
   },
   "KL-2026-09-07-020300": {
     "id": "KL-2026-09-07-020300",
@@ -167,11 +153,11 @@
     "subject": "UGC tags sweep dispositions (2026-09-07 weekly review) - the.aniqa.alam, lavishdhaka, nidhi_dugar, adaabangkok, kinjalshuklabhanushali, _happybrar 4th reel",
     "follow_up": "_happybrar: escalate the still-unresolved media-acquisition blocker (KL-2026-09-03-015600) to Suraj directly rather than letting it sit passively for a further cycle - ask whether the raw video file can be obtained from the creator or manually saved, now grouped with the 4th reel. kinjalshuklabhanushali: needs an actual screening of the new reel by whoever made the prior 3 calls, before a use/reject decision - not something this review can resolve from metrics alone."
   },
-  "KL-2026-09-07-own-content": {
-    "id": "KL-2026-09-07-own-content",
+  "KL-2026-09-07-020500": {
+    "id": "KL-2026-09-07-020500",
     "date": "2026-09-07",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-09-07, weekly review) - 4th consecutive image-only week, gap now 25 days since last Reel",
-    "follow_up": "If a 5th consecutive sweep still finds zero new video, worth a direct check-in on whether the escalation (KL-2026-08-31-020700) has been actioned rather than continuing to log the pattern as a passive observation."
+    "type": "decision",
+    "subject": "Own-content sweep (2026-09-07) - HOLD confirmed for all 3 new posts; escalating the 25-day video gap a second time",
+    "follow_up": "Escalate directly to Suraj this cycle (2nd escalation, first was KL-2026-08-31-020700, unresolved 25 days later): the video/Reel drought is now a stated blocker on two live paid-media decisions this week, not just an organic-format preference - ask plainly whether a shoot is scheduled and when. If a 5th consecutive sweep still finds zero video, treat as a standing operational gap needing a structural fix (e.g. a recurring shoot cadence), not a further re-escalation of the same message."
   }
 }
