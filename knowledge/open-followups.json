@@ -132,19 +132,19 @@
     "subject": "Profile Visits | India (52538161512180) - activated Ad A (52551760703580)",
     "follow_up": "No new dated checkpoint - this closes the 24h-checkpoint chain. Ongoing monitoring continues per the original build plans cost-per-follower criterion (3) in KL-2026-09-04-153000, not a new dated follow_up."
   },
-  "KL-2026-09-06-014900": {
-    "id": "KL-2026-09-06-014900",
-    "date": "2026-09-06",
-    "type": "observation",
-    "subject": "Daily heartbeat spend-pacing check 2026-09-05 - 5-ad-set underspend cluster (44-61% of daily budget)",
-    "follow_up": "Re-check spend pacing for these same 5 ad sets on the next weekday reading (Monday 2026-09-07 or the next daily heartbeat, whichever is later) - if the underspend pattern persists on a weekday (when it cannot be attributed to weekend auction softness), escalate to campaign-strategist for a disposition; if it clears, this closes as normal weekly cyclicality, log a resolving outcome entry either way."
-  },
   "KL-2026-09-07-005700": {
     "id": "KL-2026-09-07-005700",
     "date": "2026-09-07",
     "type": "outcome",
     "subject": "Stitchflow 0-2 day order-entry lag re-check (KL-2026-08-31-005500) - 2026-08-24 to 2026-08-30 window",
     "follow_up": "Apply the same 2-day provisional caveat to every future weekly review's most recent 2 days as standing practice - no new dated check needed, this is now a confirmed recurring pattern rather than an open question."
+  },
+  "KL-2026-09-07-005800": {
+    "id": "KL-2026-09-07-005800",
+    "date": "2026-09-07",
+    "type": "outcome",
+    "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
+    "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
