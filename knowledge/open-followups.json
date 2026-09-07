@@ -146,6 +146,13 @@
     "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - re-verified, now a 3rd consecutive month, creative mix unchanged",
     "follow_up": "This is a standing, unresolved finding now in its 3rd month with no creative rotation since the first case study - hand to campaign-strategist for an explicit disposition (one of the 8 geography dispositions in architecture.md SS3c, e.g. rotate the 3 stale/off-collection ads out of this ad set, or a Delhi-specific budget/targeting call) rather than continuing to re-observe it monthly without a decision being made."
   },
+  "KL-2026-09-07-010000": {
+    "id": "KL-2026-09-07-010000",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "Texas (USA) - new zero-order-in-window candidate found during account-wide region sweep",
+    "follow_up": "Smaller-scale, lower-confidence than Delhi (intermittent historical conversion, mostly-current creative) - worth a repeat check next weekly review before treating as a standing incident. If Texas is still at zero orders next cycle despite continued spend, escalate to campaign-strategist with the same severity as a confirmed geography finding; if a Texas order appears, this closes as normal order-timing variance."
+  },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
     "date": "2026-09-07",
