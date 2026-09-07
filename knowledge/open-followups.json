@@ -145,5 +145,12 @@
     "type": "observation",
     "subject": "Daily heartbeat spend-pacing check 2026-09-05 - 5-ad-set underspend cluster (44-61% of daily budget)",
     "follow_up": "Re-check spend pacing for these same 5 ad sets on the next weekday reading (Monday 2026-09-07 or the next daily heartbeat, whichever is later) - if the underspend pattern persists on a weekday (when it cannot be attributed to weekend auction softness), escalate to campaign-strategist for a disposition; if it clears, this closes as normal weekly cyclicality, log a resolving outcome entry either way."
+  },
+  "KL-2026-09-07-own-content": {
+    "id": "KL-2026-09-07-own-content",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-09-07, weekly review) - 4th consecutive image-only week, gap now 25 days since last Reel",
+    "follow_up": "If a 5th consecutive sweep still finds zero new video, worth a direct check-in on whether the escalation (KL-2026-08-31-020700) has been actioned rather than continuing to log the pattern as a passive observation."
   }
 }
