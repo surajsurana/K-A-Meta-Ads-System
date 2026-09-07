@@ -76,13 +76,6 @@
     "subject": "WhatsApp Business service-message pricing change effective 2026-10-01 - verification needed against K&A's WhatsApp click-to-message setup",
     "follow_up": "Before 2026-09-30: confirm whether K&A's WhatsApp click-to-message flow is routed through the WhatsApp Business Platform API/a BSP (in which case a valid payment method must be on file before charging begins 2026-10-01, or service messages stop being delivered) or the standard free WhatsApp Business App (in which case this change does not apply). This is an account-configuration/billing fact-check, not a Meta Ads targeting or budget change, so it does not require media-buyer's execution-plan validation - it needs direct confirmation from whoever manages the WhatsApp Business account (likely the user directly)."
   },
-  "KL-2026-09-02-015700": {
-    "id": "KL-2026-09-02-015700",
-    "date": "2026-09-02",
-    "type": "observation",
-    "subject": "Add to Cart 90D | WhatsApp Consult Test (ad set 52547119740980) - Stitchflow consult-to-order attribution check",
-    "follow_up": "No clean attribution key exists in Stitchflow to isolate this specific ad sets consult-to-order conversions from the accounts other WhatsApp order flow. Route to campaign-strategist as context (not a new action trigger by itself) for the ongoing Rs150/day-pacing re-check due ~2026-09-07/08: any future decision on this ad set will continue to rely on Meta-side conversation metrics only unless the operator adds an order-level tag/note distinguishing this ad sets audience (e.g. asking sales agents to note which WhatsApp number/campaign a consult originated from), which is an operational process change outside performance-analyst scope to implement."
-  },
   "KL-2026-09-02-015800": {
     "id": "KL-2026-09-02-015800",
     "date": "2026-09-02",
@@ -131,6 +124,13 @@
     "type": "outcome",
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
+  },
+  "KL-2026-09-07-014531": {
+    "id": "KL-2026-09-07-014531",
+    "date": "2026-09-07",
+    "type": "observation",
+    "subject": "Add to Cart 90D | WhatsApp Consult Test (ad set 52547119740980) - Rs150/day re-check due per KL-2026-09-01-152300/153000 - cost/conversation still climbing, ESCALATION NEEDED",
+    "follow_up": "ESCALATE to campaign-strategist: cost/conversation at reduced Rs150/day pacing (Rs45.34 this week) is higher, not lower, than the Rs23-41 range that triggered the 2026-09-01 decrease, ruling out pacing alone. Needs a fresh strategist read on whether this small (~20-person) custom audience is genuinely exhausted (hold/kill/audience-expansion options) plus a new media-buyer validation before any further budget action - not an automatic reversion to Rs250/day."
   },
   "KL-2026-09-07-020300": {
     "id": "KL-2026-09-07-020300",
