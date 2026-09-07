@@ -139,13 +139,6 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-010000": {
-    "id": "KL-2026-09-07-010000",
-    "date": "2026-09-07",
-    "type": "observation",
-    "subject": "Texas (USA) - new zero-order-in-window candidate found during account-wide region sweep",
-    "follow_up": "Smaller-scale, lower-confidence than Delhi (intermittent historical conversion, mostly-current creative) - worth a repeat check next weekly review before treating as a standing incident. If Texas is still at zero orders next cycle despite continued spend, escalate to campaign-strategist with the same severity as a confirmed geography finding; if a Texas order appears, this closes as normal order-timing variance."
-  },
   "KL-2026-09-07-010200": {
     "id": "KL-2026-09-07-010200",
     "date": "2026-09-07",
@@ -159,6 +152,13 @@
     "type": "decision",
     "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - disposition: creative/message adaptation, 3rd-month re-observation ends here",
     "follow_up": "This is a live Meta Ads change (pause 3 ads, build+add up to 4 new video ads from existing reels, verify PAUSED-then-activate) - route to creative-copywriter for WhatsApp-destination copy/CTA on the 4 reels (reusing the account's established cold/warm WhatsApp copy pattern per KL-2026-08-18-15 as a template), then to media-buyer for a validated, ready-to-approve execution plan. Not executed in this unattended run per guardrail 13. Re-check Delhi orders at the next 2 weekly reviews post-swap per the stop-rule above."
+  },
+  "KL-2026-09-07-020100": {
+    "id": "KL-2026-09-07-020100",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "Texas (USA) zero-order-in-window - disposition: maintain, standing watch only, not yet a confirmed incident",
+    "follow_up": "Repeat this check next weekly review (2026-09-14ish). If Texas is still at zero orders with continued spend by then, treat with the same severity as a confirmed geography finding per architecture.md SS3c and revisit disposition. If an order lands, close as normal timing variance - no further action needed."
   },
   "KL-2026-09-07-own-content": {
     "id": "KL-2026-09-07-own-content",
