@@ -132,13 +132,6 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-020100": {
-    "id": "KL-2026-09-07-020100",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "Texas (USA) zero-order-in-window - disposition: maintain, standing watch only, not yet a confirmed incident",
-    "follow_up": "Repeat this check next weekly review (2026-09-14ish). If Texas is still at zero orders with continued spend by then, treat with the same severity as a confirmed geography finding per architecture.md SS3c and revisit disposition. If an order lands, close as normal timing variance - no further action needed."
-  },
   "KL-2026-09-07-020300": {
     "id": "KL-2026-09-07-020300",
     "date": "2026-09-07",
@@ -159,5 +152,12 @@
     "type": "decision",
     "subject": "Own-content sweep (2026-09-07) - HOLD confirmed for all 3 new posts; escalating the 25-day video gap a second time",
     "follow_up": "Escalate directly to Suraj this cycle (2nd escalation, first was KL-2026-08-31-020700, unresolved 25 days later): the video/Reel drought is now a stated blocker on two live paid-media decisions this week, not just an organic-format preference - ask plainly whether a shoot is scheduled and when. If a 5th consecutive sweep still finds zero video, treat as a standing operational gap needing a structural fix (e.g. a recurring shoot cadence), not a further re-escalation of the same message."
+  },
+  "KL-2026-09-07-020600": {
+    "id": "KL-2026-09-07-020600",
+    "date": "2026-09-07",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - weekly review 2026-09-07",
+    "follow_up": "No budget action pending. Re-verify fresh again next weekly review, as always - never reuse this figure without a fresh GET."
   }
 }
