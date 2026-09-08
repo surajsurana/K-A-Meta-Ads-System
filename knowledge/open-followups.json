@@ -146,11 +146,11 @@
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   },
-  "KL-2026-09-08-014740": {
-    "id": "KL-2026-09-08-014740",
+  "KL-2026-09-08-EXEC-014740": {
+    "id": "KL-2026-09-08-EXEC-014740",
     "date": "2026-09-08",
-    "type": "decision",
-    "subject": "WhatsApp India | Deep Wine Corset+Lehenga (ad 52552969618380, ad set 6862975169176 India | Whatsapp | 9th Dec 25, campaign 6858349204776 Whatsapp Message | 29th Nov 2025) - validated activation plan: 1st of 4-ad staggered sequence",
-    "follow_up": "Awaiting the user's own direct approval via Telegram (scripts/send-telegram-approval.sh KL-2026-09-08-014740). Not executed in this unattended run per guardrail 13. Once approved, marketing-lead executes verbatim (flip status PAUSED->ACTIVE on ad 52552969618380 only), verifies per the Verification section above, and logs a linked type:change entry. The next 3 ads in the sequence (Champagne Gold, Metallic Coffee Brown, Burnt Orange) each require their own separate future follow-up, logged only after this ad has had at least 3-4 days of live delivery per the rollback-criteria section - do not propose any of them yet."
+    "type": "change",
+    "subject": "Whatsapp Message | 29th Nov 2025 - ad set India | Whatsapp | 9th Dec 25 - ad 'WhatsApp India | Deep Wine Corset+Lehenga' (52552969618380) - PAUSED -> ACTIVE",
+    "follow_up": "Per KL-2026-09-08-014740's rollback criteria: (a) 24-hour checkpoint - re-pull fresh insights (impressions, spend, WhatsApp conversation/message-connection count) on ad 52552969618380 by 2026-09-09; if impressions exceed ~300 with materially worse messaging-conversation cost than the ad set's 2 other active ads' trailing average, flag back early. (b) 3-4 day performance read before proposing activation of the next ad in the sequence (Champagne Gold, 52552969624980); if messaging-conversation cost is materially worse or issues_info shows a policy/disapproval flag, re-pause this ad instead of proceeding. (c) If total ad set messaging-connection volume drops materially with this ad live, treat as an anomaly requiring investigation."
   }
 }
