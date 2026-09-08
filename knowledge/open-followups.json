@@ -34,13 +34,6 @@
     "subject": "First Love | Maharashtra-Mumbai Geo Test | India (ad set 52548730319980, ad 52548730353580) - ACTIVATED",
     "follow_up": "per KL-2026-08-31-010720 stop-rule: performance-analyst to compare cost per messaging_conversation_started and cost per lead against sibling ad set 52535906903180 (Broad Advantage+) at the 2-week mark (~2026-09-14) before any reallocation/hold conclusion. Watch effective_status on both objects in the meantime; re-pause immediately if WITH_ISSUES/DISAPPROVED appears at any point, independent of the 2-week mark."
   },
-  "KL-2026-08-31-040210": {
-    "id": "KL-2026-08-31-040210",
-    "date": "2026-08-31",
-    "type": "observation",
-    "subject": "KL-2026-08-31-comment-batch",
-    "follow_up": "re-check 2026-09-07: if plan KL-2026-08-31-comment-batch is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-08-31-155601": {
     "id": "KL-2026-08-31-155601",
     "date": "2026-08-31",
@@ -152,5 +145,12 @@
     "type": "observation",
     "subject": "Delhi 4-ad staggered activation sequence (guardrail 11) - concrete follow-up added, the earlier build entry only stated the intent verbally",
     "follow_up": "Due 2026-09-08 or the next scheduled review, whichever comes first: propose activating ad 52552969618380 (KAFL015, Deep Wine Corset+Lehenga) to Suraj for his own direct approval - the first of the 4-ad staggered sequence. Do NOT propose activating any of the other 3 (Champagne Gold 52552969624980, Metallic Coffee Brown 52552969628580, Burnt Orange 52552969630380) yet - each waits for its own separate follow-up, logged only once the prior one in the sequence is actually activated and has had at least 3-4 days of delivery to read (per guardrail 11 and KL-2026-09-07-020900 Step 3) - this prevents the whole sequence from silently collapsing into one bulk activation."
+  },
+  "KL-2026-09-08-014400": {
+    "id": "KL-2026-09-08-014400",
+    "date": "2026-09-08",
+    "type": "observation",
+    "subject": "KL-2026-08-31-comment-batch",
+    "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   }
 }
