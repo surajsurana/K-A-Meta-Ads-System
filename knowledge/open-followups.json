@@ -146,11 +146,11 @@
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   },
-  "KL-2026-09-08-EXEC-014740": {
-    "id": "KL-2026-09-08-EXEC-014740",
-    "date": "2026-09-08",
-    "type": "change",
-    "subject": "Whatsapp Message | 29th Nov 2025 - ad set India | Whatsapp | 9th Dec 25 - ad 'WhatsApp India | Deep Wine Corset+Lehenga' (52552969618380) - PAUSED -> ACTIVE",
-    "follow_up": "Per KL-2026-09-08-014740's rollback criteria: (a) 24-hour checkpoint - re-pull fresh insights (impressions, spend, WhatsApp conversation/message-connection count) on ad 52552969618380 by 2026-09-09; if impressions exceed ~300 with materially worse messaging-conversation cost than the ad set's 2 other active ads' trailing average, flag back early. (b) 3-4 day performance read before proposing activation of the next ad in the sequence (Champagne Gold, 52552969624980); if messaging-conversation cost is materially worse or issues_info shows a policy/disapproval flag, re-pause this ad instead of proceeding. (c) If total ad set messaging-connection volume drops materially with this ad live, treat as an anomaly requiring investigation."
+  "KL-2026-09-09-CHECKPOINT-014740": {
+    "id": "KL-2026-09-09-CHECKPOINT-014740",
+    "date": "2026-09-09",
+    "type": "outcome",
+    "subject": "24-hour checkpoint on ad 52552969618380 (WhatsApp India Deep Wine Corset+Lehenga) - PASSED, no re-pause",
+    "follow_up": "Next check per the original plan is the 3-4 day performance read (due around 2026-09-11/12) before proposing activation of the next ad in the sequence (Champagne Gold, 52552969624980). No action needed before then unless issues_info changes or messaging-connection volume drops materially in the meantime."
   }
 }
