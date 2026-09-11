@@ -146,13 +146,6 @@
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   },
-  "KL-2026-09-10-014900": {
-    "id": "KL-2026-09-10-014900",
-    "date": "2026-09-10",
-    "type": "observation",
-    "subject": "First Love | Bridal Collection - same-day CTR dip (09-09) across Broad Advantage+, Interest Stack, and Maharashtra-Mumbai Geo Test ad sets - likely single-day auction noise, not yet confirmed",
-    "follow_up": "Re-check these three ad sets' CTR over 2026-09-10 through 2026-09-12 - if the dip persists across multiple days rather than reverting, escalate to campaign-strategist as a real signal; if CTR reverts to the prior 1.6%-3.9% range, this closes as normal single-day auction variance, no further action."
-  },
   "KL-2026-09-10-023500": {
     "id": "KL-2026-09-10-023500",
     "date": "2026-09-10",
