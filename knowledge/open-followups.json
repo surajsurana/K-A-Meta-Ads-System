@@ -145,12 +145,5 @@
     "type": "observation",
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
-  },
-  "KL-2026-09-10-023500": {
-    "id": "KL-2026-09-10-023500",
-    "date": "2026-09-10",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) CTR decline - independent read: hold, no live change; two follow-up data requests to performance-analyst; do not act before the already-scheduled 09-11/12 checkpoint",
-    "follow_up": "No live change proposed now. Two data requests to performance-analyst before or alongside the already-scheduled checkpoint: (1) pull Rafaey Master | First Love (52551343010580) own CTR/frequency trend for 2026-09-03 through 09-09, to properly evaluate the full-overlap hypothesis. (2) pull ad-set-level (6862975169176) messaging-conversation volume/cost trend day-by-day for the same window, since that - not CTR - is the commercially decisive KPI for a WhatsApp click-to-message ad set. Re-evaluate this ad set at the already-scheduled 3-4 day performance-read checkpoint (~2026-09-11/12, per KL-2026-09-08-EXEC-014740 rollback criteria b) - if the messaging-conversation-cost trend has genuinely degraded alongside CTR by then, escalate to media-buyer for a concrete plan (candidates: re-pause the new ad, or pause the older of the two pre-existing ads if ad-level breakdown shows one is dragging the set down) rather than acting before that checkpoint on CTR alone."
   }
 }
