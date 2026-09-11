@@ -125,13 +125,6 @@
     "subject": "Ad 52510022528580 missing creative-product-map.jsonl entry - routing confirmed, cannot be actioned in this unattended run",
     "follow_up": "Next interactive session: creative-copywriter to identify the product for ad 52510022528580 (Shopify search + Stitchflow SKU cross-check per SS3d), then media-buyer to record via scripts/append-product-map.sh."
   },
-  "KL-2026-09-07-020400": {
-    "id": "KL-2026-09-07-020400",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "UGC tags sweep dispositions (2026-09-07 weekly review) - the.aniqa.alam, lavishdhaka, nidhi_dugar, adaabangkok, kinjalshuklabhanushali, _happybrar 4th reel",
-    "follow_up": "_happybrar: escalate the still-unresolved media-acquisition blocker (KL-2026-09-03-015600) to Suraj directly rather than letting it sit passively for a further cycle - ask whether the raw video file can be obtained from the creator or manually saved, now grouped with the 4th reel. kinjalshuklabhanushali: needs an actual screening of the new reel by whoever made the prior 3 calls, before a use/reject decision - not something this review can resolve from metrics alone."
-  },
   "KL-2026-09-07-030500-EXEC": {
     "id": "KL-2026-09-07-030500-EXEC",
     "date": "2026-09-07",
@@ -145,5 +138,12 @@
     "type": "observation",
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
+  },
+  "KL-2026-09-11-014900": {
+    "id": "KL-2026-09-11-014900",
+    "date": "2026-09-11",
+    "type": "observation",
+    "subject": "UGC escalation (KL-2026-09-07-020400) - happybrar media-acquisition blocker and kinjalshuklabhanushali screening ask - sent to Suraj via Telegram",
+    "follow_up": "If no reply from Suraj by the next weekly review, re-escalate rather than letting it sit for another cycle. Once a reply arrives (raw video obtained, or a screening verdict on kinjalshuklabhanushali), log the outcome and route to the already-identified next step (media-buyer and creative-copywriter for happybrar per KL-2026-09-03-015600 validated plan; campaign-strategist disposition update for kinjalshuklabhanushali)."
   }
 }
