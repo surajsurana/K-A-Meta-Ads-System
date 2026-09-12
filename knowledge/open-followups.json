@@ -76,13 +76,6 @@
     "subject": "Profile Visits | Follower Growth | Test",
     "follow_up": "None required - rollback confirmed working at Rs100/day across 3 consecutive readings. Resume normal-cadence follower tracking on the accounts standard review schedule rather than the tighter 3-reading rollback-verification cadence."
   },
-  "KL-2026-09-03-071920": {
-    "id": "KL-2026-09-03-071920",
-    "date": "2026-09-03",
-    "type": "outcome",
-    "subject": "Rafaey Master ad set 52551343010580 - 24-48h delivery-health check PASSED",
-    "follow_up": "Per KL-2026-09-01-133059 second-stage follow_up: track actual Stitchflow order attribution to Rafaey Master over the next 1-2 weeks as the real success signal (separate check, not due yet)."
-  },
   "KL-2026-09-04-020000": {
     "id": "KL-2026-09-04-020000",
     "date": "2026-09-04",
@@ -138,5 +131,12 @@
     "type": "observation",
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
+  },
+  "KL-2026-09-12-071900": {
+    "id": "KL-2026-09-12-071900",
+    "date": "2026-09-12",
+    "type": "observation",
+    "subject": "Rafaey Master ad set 52551343010580 - interim Stitchflow order-attribution check, day 11 of 1-2 week window",
+    "follow_up": "2026-09-15 (window close): performance-analyst to run the final Rafaey Master order-attribution check. Before treating a continued zero as conclusive, either (a) ask Suraj/production directly whether any order since 2026-09-01 was verbally/manually assigned to Rafaey Master even if not yet reflected in stitching_factory_name, or (b) re-pull list_orders fresh at that date and recheck factory-name population rate to see if it has caught up. If a real order-attribution signal still cannot be established from Stitchflow data alone by 2026-09-15, say so plainly to campaign-strategist as a measurement-gap finding, not a false-negative performance verdict on the ad set itself."
   }
 }
