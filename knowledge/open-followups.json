@@ -132,11 +132,11 @@
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   },
-  "KL-2026-09-13-PA-RAFAEY-DATAPULL": {
-    "id": "KL-2026-09-13-PA-RAFAEY-DATAPULL",
+  "KL-2026-09-13-CS-RAFAEY-DISPOSITION": {
+    "id": "KL-2026-09-13-CS-RAFAEY-DISPOSITION",
     "date": "2026-09-13",
-    "type": "observation",
-    "subject": "Rafaey Master | First Love | WhatsApp (52551343010580) - three data requests from KL-2026-09-13-CS-RAFAEY-CTR delivered: real mid-week conversation-cost degradation (recovering), new ad-delivery-imbalance finding, overlap divergence confirmed but complicated by reach data - not closing, needs campaign-strategist disposition",
-    "follow_up": "Route back to campaign-strategist for final disposition: (1) does the 09-12/09-13 recovery in conversation cost (Rs30.06, Rs33.79, both low-volume) reduce urgency enough to hold through the already-scheduled 2026-09-15 order-attribution window close, or does the literal OR-trigger (cost degraded + orders still unclear) already justify escalating to media-buyer now; (2) how the new Midnight Blue+Black delivery-collapse finding should factor into any diagnosis or remedy (e.g. whether uneven ad delivery itself is worth a fix, separate from the CTR/overlap/creative-currency questions already raised); (3) whether the sibling's own reach/frequency pattern (impressions falling, not rising, during Rafaey's decline) changes how much weight the audience-overlap hypothesis should carry relative to a shared, account-wide soft patch around 09-10. Still combine with the already-scheduled 2026-09-15 Stitchflow order-attribution window close (KL-2026-09-12-071900) into one composite disposition, per the original plan."
+    "type": "decision",
+    "subject": "Rafaey Master | First Love | WhatsApp (52551343010580) - final disposition on CTR/cost anomaly: reframed as single-ad delivery concentration + transient recovering cost dip, not overlap-driven; propose pausing dead ad + creative-refresh brief, hold on any budget/pause action against the ad set itself pending 09-15 composite checkpoint",
+    "follow_up": "2026-09-15: re-evaluate composite (Stitchflow order-attribution window KL-2026-09-12-071900 + conversation-cost stability check for 09-14/09-15) and close CTR/cost thread if both look acceptable. Separately and immediately: media-buyer to validate and prepare a plan to pause Midnight Blue+Black Corset (52551343684780) and queue a creative-refresh brief for a replacement ad in ad set 52551343010580, pending Surajs direct approval."
   }
 }
