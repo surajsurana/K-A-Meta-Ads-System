@@ -131,5 +131,12 @@
     "type": "observation",
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
+  },
+  "KL-2026-09-13-EXEC-020000": {
+    "id": "KL-2026-09-13-EXEC-020000",
+    "date": "2026-09-13",
+    "type": "change",
+    "subject": "Whatsapp Message | 29th Nov 2025 - ad set 'Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue' (52551343010580) - ad 'Rafaey Master | Midnight Blue + Black Corset | WhatsApp' (52551343684780) - ACTIVE -> PAUSED",
+    "follow_up": "Per the plan's rollback criteria: reactivate only if a genuine root cause is identified and fixed first - do not reactivate on a hunch. Separately (out of scope for this action): briefing creative-copywriter for a replacement ad for this ad set requires a human-present interactive session (product-matching tool access is interactive-only)."
   }
 }
