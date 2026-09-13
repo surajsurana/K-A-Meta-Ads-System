@@ -132,11 +132,11 @@
     "subject": "KL-2026-08-31-comment-batch",
     "follow_up": "none - resend complete; next check is whether a button tap resolves either held comment-batch plan (v2-comment-batch-31 or KL-2026-09-07-comment-batch) before the next weekly review"
   },
-  "KL-2026-09-12-071900": {
-    "id": "KL-2026-09-12-071900",
-    "date": "2026-09-12",
-    "type": "observation",
-    "subject": "Rafaey Master ad set 52551343010580 - interim Stitchflow order-attribution check, day 11 of 1-2 week window",
-    "follow_up": "2026-09-15 (window close): performance-analyst to run the final Rafaey Master order-attribution check. Before treating a continued zero as conclusive, either (a) ask Suraj/production directly whether any order since 2026-09-01 was verbally/manually assigned to Rafaey Master even if not yet reflected in stitching_factory_name, or (b) re-pull list_orders fresh at that date and recheck factory-name population rate to see if it has caught up. If a real order-attribution signal still cannot be established from Stitchflow data alone by 2026-09-15, say so plainly to campaign-strategist as a measurement-gap finding, not a false-negative performance verdict on the ad set itself."
+  "KL-2026-09-13-CS-RAFAEY-CTR": {
+    "id": "KL-2026-09-13-CS-RAFAEY-CTR",
+    "date": "2026-09-13",
+    "type": "decision",
+    "subject": "Rafaey Master | First Love | WhatsApp (52551343010580) steepening CTR decline (0.99%->0.46%, 09-06 to 09-12) - independent read: hold, three targeted data requests to performance-analyst, do not act before 2026-09-15 order-attribution window",
+    "follow_up": "2026-09-15 or earlier if (a)/(b)/(c) below come back first: performance-analyst to report (a) Rafaey Masters own messaging-conversation volume/cost trend 2026-09-06 to 09-12/13, (b) per-ad CTR/frequency/spend + issues_info check for both ads in 52551343010580, (c) an extended audience-overlap recheck against 6862975169176 for 2026-09-08 onward. Combine with the already-scheduled 2026-09-15 order-attribution window close (KL-2026-09-12-071900) into one composite disposition - if conversation cost has also degraded and/or orders remain zero/unclear by then, escalate to media-buyer for a concrete plan (candidates: pause/refresh the underperforming ad, reduce this ad sets budget share, or hold as a legitimate slow-build test); if conversation cost and orders both look acceptable despite the CTR softness, treat this as a benign top-of-funnel mix-shift and close without a live change."
   }
 }
