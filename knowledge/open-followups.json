@@ -132,6 +132,13 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSE, extending the 2026-09-07 India pause - validated execution plan",
     "follow_up": "Awaiting the user's direct approval before marketing-lead executes. Not executed in this validation pass."
   },
+  "KL-2026-09-14-011349": {
+    "id": "KL-2026-09-14-011349",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - optional hygiene pause of dormant container - validated execution plan",
+    "follow_up": "Awaiting the user's direct approval before marketing-lead executes (no urgency - campaign-strategist flagged this as optional and can be batched into any future approval round)."
+  },
   "KL-2026-09-14-060003": {
     "id": "KL-2026-09-14-060003",
     "date": "2026-09-14",
@@ -152,13 +159,6 @@
     "type": "decision",
     "subject": "Rafaey Master | Frozen Blue Corset (52551343972380) - frequency 6.58x, HOLD budget, prioritize interactive creative refresh; cost-per-conversation still reasonable this week",
     "follow_up": "Next interactive session: creative-copywriter to source/brief a replacement ad for this ad set (top priority, already queued). performance-analyst: track cost-per-conversation (not just frequency) on this ad at next weekly review; if it degrades materially, revisit for a budget cut as an interim measure pending the refresh."
-  },
-  "KL-2026-09-14-060007": {
-    "id": "KL-2026-09-14-060007",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - re-flagged dormant-campaign hygiene item; closing as already-resolved, optional container pause only",
-    "follow_up": "Optional, no urgency: media-buyer may include a campaign-level status pause on 52542179696580 in any future build session for hygiene - zero budget/spend impact. Do not re-flag this as an anomaly in future reviews unless the ad set itself is reactivated without a new logged decision."
   },
   "KL-2026-09-14-060008": {
     "id": "KL-2026-09-14-060008",
