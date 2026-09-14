@@ -111,6 +111,13 @@
     "subject": "Comment-reply sweep (2026-09-14, weekly review) - quiet cycle, no new batch needed; recurring staff DM-redirect pattern flagged again",
     "follow_up": "If this staff DM-wording pattern appears again next cycle (a 4th consecutive occurrence), escalate directly to Suraj as a standing process gap rather than logging it a fourth time as a passive observation."
   },
+  "KL-2026-09-14-011116": {
+    "id": "KL-2026-09-14-011116",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "First Love | Maharashtra-Mumbai Geo Test (ad set 52548730319980) - PAUSE, reallocate Rs150/day to Broad Advantage+ (ad set 52535906903180) - validated execution plan",
+    "follow_up": "Awaiting the user's direct approval (Telegram or in-conversation) before marketing-lead executes. Not executed in this validation pass."
+  },
   "KL-2026-09-14-060002": {
     "id": "KL-2026-09-14-060002",
     "date": "2026-09-14",
@@ -166,13 +173,6 @@
     "type": "decision",
     "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
     "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
-  },
-  "KL-2026-09-14-060010": {
-    "id": "KL-2026-09-14-060010",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - weekly review 2026-09-14",
-    "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of the Mumbai-geo-test-pause/Broad-Advantage+-increase pair."
   },
   "KL-2026-09-14-060011": {
     "id": "KL-2026-09-14-060011",
