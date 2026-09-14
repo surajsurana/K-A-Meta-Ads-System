@@ -125,12 +125,12 @@
     "subject": "First Love | Maharashtra-Mumbai Geo Test (52548730319980) vs Broad Advantage+ - 2-week stop-rule verdict: PAUSE geo test, reallocate Rs150/day to Broad Advantage+",
     "follow_up": "Route to media-buyer: prepare execution plan - (1) pause ad set 52548730319980 (Maharashtra-Mumbai Geo Test) and its ad 52548730353580, status ACTIVE->PAUSED; (2) increase First Love | Broad Advantage+ (ad set 52535906903180) daily_budget from Rs850/day to Rs1,000/day (+Rs150/day) - net-zero portfolio change. Independently re-verify current total fresh before finalizing. No new creative needed for either step."
   },
-  "KL-2026-09-14-WEEKLY-02": {
-    "id": "KL-2026-09-14-WEEKLY-02",
+  "KL-2026-09-14-060002": {
+    "id": "KL-2026-09-14-060002",
     "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Zero-order-despite-spend-and-leads pattern extends beyond Delhi - Uttar Pradesh, Rajasthan, Madhya Pradesh (weekly review, mandatory geo check)",
-    "follow_up": "campaign-strategist disposition needed (one of the eight geography dispositions, section 3c) for UP/Rajasthan/MP specifically - genuine funnel/conversion-process question, not a creative-currency one, since Delhi (the one dedicated ad set checked) came back creative-clean this cycle."
+    "type": "decision",
+    "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - creative-currency clean today, but the 4-ad staggered refresh is only 1-of-4 live and the sequence stalled; continuing current plan, not escalating yet",
+    "follow_up": "Route to media-buyer: check current cost-per-conversation on ad 52552969618380 (Deep Wine, live since 09-08, now past its 3-4 day checkpoint) and, if clean, propose activating the next ad in the sequence (Champagne Gold, KAFL013, ad 52552969624980) now - overdue per KL-2026-09-07-020900 Step 3's own stagger interval. Re-set the Delhi zero-order stop-rule check to trigger 2 full weekly reviews after all 4 ads are live, not from 2026-09-07."
   },
   "KL-2026-09-14-WEEKLY-03": {
     "id": "KL-2026-09-14-WEEKLY-03",
