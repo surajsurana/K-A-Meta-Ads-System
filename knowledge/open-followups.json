@@ -153,6 +153,13 @@
     "subject": "Per-product zero-order pattern (18 of 19 First Love/CHMK030 SKUs, ex-CHMK030/KA-040326-03) - MAINTAIN, best explained by made-to-order customization/cross-SKU conversion plus thin per-SKU samples, not a standing problem requiring action",
     "follow_up": "No action this cycle. Continue the standing weekly section-3d sweep; revisit only if a specific SKU's spend concentrates heavily (per the CHMK030 threshold) or shows a corroborating fatigue/frequency signal."
   },
+  "KL-2026-09-14-060006": {
+    "id": "KL-2026-09-14-060006",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "Rafaey Master | Frozen Blue Corset (52551343972380) - frequency 6.58x, HOLD budget, prioritize interactive creative refresh; cost-per-conversation still reasonable this week",
+    "follow_up": "Next interactive session: creative-copywriter to source/brief a replacement ad for this ad set (top priority, already queued). performance-analyst: track cost-per-conversation (not just frequency) on this ad at next weekly review; if it degrades materially, revisit for a budget cut as an interim measure pending the refresh."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
@@ -166,12 +173,5 @@
     "type": "observation",
     "subject": "DOB coverage moves off zero for the first time (0.52%, 3/578) - one entry appears to be a data-entry error, not a real birth date",
     "follow_up": "Flag the Nikita Jain birth_date=2026-09-11 record to Suraj/Stitchflow team as a likely data-entry error worth correcting (should probably be blank, not a fabricated correction from this system). Continue standing monthly DOB-coverage trend check; still far too small a sample for any age-informed targeting call - HOLD continues per KL-2026-08-24-161800/KL-2026-08-31-020600."
-  },
-  "KL-2026-09-14-WEEKLY-06": {
-    "id": "KL-2026-09-14-WEEKLY-06",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Rafaey Master | Frozen Blue Corset (52551343972380) - frequency 6.58x this week, now the ad sets sole active ad after sibling pause",
-    "follow_up": "campaign-strategist to assess whether this ad sets remaining active ad needs a creative refresh or the audience needs expanding before frequency climbs further - especially since it is now carrying the ad sets entire delivery alone."
   }
 }
