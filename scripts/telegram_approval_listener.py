@@ -587,6 +587,40 @@ def _plan_confirmed_executed(plan_id):
         return False
 
 
+def find_paired_plan_id(plan_id):
+    """Read-only lookup of a plan's own "paired_plan_id" field (the
+    Feed-vs-Story sibling - see PAIRED_CALLBACK_PREFIXES above), against the
+    real current remote state, same git-show-not-local-file approach as
+    _plan_confirmed_executed for the same reason (never race a concurrent
+    dispatch's own commit/push in this REPO_DIR). Returns None if the plan
+    has no pairing (an ordinary single-destination plan) or can't be found."""
+    try:
+        branch = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            cwd=REPO_DIR, capture_output=True, text=True, timeout=15,
+        ).stdout.strip() or "main"
+        subprocess.run(["git", "fetch", "origin", branch], cwd=REPO_DIR, capture_output=True, text=True, timeout=30)
+        result = subprocess.run(
+            ["git", "show", f"origin/{branch}:knowledge/learning-log.jsonl"],
+            cwd=REPO_DIR, capture_output=True, text=True, timeout=15,
+        )
+        if result.returncode != 0:
+            return None
+        for line in result.stdout.splitlines():
+            if f'"{plan_id}"' not in line:
+                continue
+            try:
+                entry = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if entry.get("id") == plan_id:
+                return entry.get("paired_plan_id")
+        return None
+    except Exception as e:
+        log(f"find_paired_plan_id check failed for {plan_id}: {e}")
+        return None
+
+
 def dispatch_execution(plan_id):
     if plan_id.startswith("TEST-"):
         log(f"TEST MODE: simulating execution for {plan_id}, no real dispatch")
@@ -1119,6 +1153,24 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
                 else:
                     final_status = "not_executed"
         finalize_status(plan_id, final_status, detail[:500])
+
+        # If this plan just executed and has a Feed/Story sibling
+        # (paired_plan_id) that's still sitting "pending", close it out too
+        # - real gap found live 2026-09-14: approving Story executed fine,
+        # but Feed's own state entry just kept showing "pending" forever
+        # since nothing had ever touched it specifically (dispatch_execution's
+        # ALREADY_EXECUTED check only fires if someone later taps the
+        # sibling's button - it doesn't proactively resolve the untapped
+        # one). No Telegram message edit needed here - both buttons live on
+        # the same message, which is already showing the real outcome.
+        if final_status == "executed":
+            paired_id = find_paired_plan_id(plan_id)
+            if paired_id:
+                sibling = get_entry(paired_id)
+                if sibling and sibling.get("status") == "pending":
+                    finalize_status(paired_id, "resolved_via_sibling",
+                                     "Not posted - the paired Feed/Story plan ({}) was approved and executed instead.".format(plan_id))
+                    log("auto-resolved paired plan {} (sibling {} was executed)".format(paired_id, plan_id))
 
         if final_status == "executed":
             icon, label = "✅", "Executed"
