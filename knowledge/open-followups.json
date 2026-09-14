@@ -181,6 +181,13 @@
     "subject": "Portfolio budget allocation check - weekly review 2026-09-14",
     "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of the Mumbai-geo-test-pause/Broad-Advantage+-increase pair."
   },
+  "KL-2026-09-14-060011": {
+    "id": "KL-2026-09-14-060011",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "UGC content disposition - @whatpdoes carousel (18119854747916175, instagram.com/p/Dc-tYaoIx6_/) - partial read only (headless run, no vision access this session); HOLD on paid use pending an interactive visual check and Suraj's own look",
+    "follow_up": "Next interactive session: pull the actual carousel frames and look directly against brand-brief.md before any paid disposition is finalized - do not skip straight to a build brief on the text read alone. Route the telegram_summary above via scripts/send-telegram-approval.sh with the permalink included, per the standing content-disposition rule."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
