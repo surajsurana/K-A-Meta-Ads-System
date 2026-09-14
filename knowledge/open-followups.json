@@ -118,13 +118,6 @@
     "subject": "K&A own-content ad-sourcing sweep (2026-09-14, weekly review) - 5th consecutive image-only week, gap now 32 days since last Reel",
     "follow_up": "Structural fix decision (recurring shoot cadence or similar) needed at the next appropriate human-in-the-loop checkpoint rather than another passive weekly observation - flag to Suraj directly if the drought continues past a 6th sweep with still no resolution in sight."
   },
-  "KL-2026-09-14-060001": {
-    "id": "KL-2026-09-14-060001",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "First Love | Maharashtra-Mumbai Geo Test (52548730319980) vs Broad Advantage+ - 2-week stop-rule verdict: PAUSE geo test, reallocate Rs150/day to Broad Advantage+",
-    "follow_up": "Route to media-buyer: prepare execution plan - (1) pause ad set 52548730319980 (Maharashtra-Mumbai Geo Test) and its ad 52548730353580, status ACTIVE->PAUSED; (2) increase First Love | Broad Advantage+ (ad set 52535906903180) daily_budget from Rs850/day to Rs1,000/day (+Rs150/day) - net-zero portfolio change. Independently re-verify current total fresh before finalizing. No new creative needed for either step."
-  },
   "KL-2026-09-14-060002": {
     "id": "KL-2026-09-14-060002",
     "date": "2026-09-14",
@@ -180,6 +173,13 @@
     "type": "decision",
     "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
     "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
+  },
+  "KL-2026-09-14-060010": {
+    "id": "KL-2026-09-14-060010",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - weekly review 2026-09-14",
+    "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of the Mumbai-geo-test-pause/Broad-Advantage+-increase pair."
   },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
