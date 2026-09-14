@@ -160,13 +160,6 @@
     "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
     "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
   },
-  "KL-2026-09-14-060011": {
-    "id": "KL-2026-09-14-060011",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "UGC content disposition - @whatpdoes carousel (18119854747916175, instagram.com/p/Dc-tYaoIx6_/) - partial read only (headless run, no vision access this session); HOLD on paid use pending an interactive visual check and Suraj's own look",
-    "follow_up": "Next interactive session: pull the actual carousel frames and look directly against brand-brief.md before any paid disposition is finalized - do not skip straight to a build brief on the text read alone. Route the telegram_summary above via scripts/send-telegram-approval.sh with the permalink included, per the standing content-disposition rule."
-  },
   "KL-2026-09-14-060012": {
     "id": "KL-2026-09-14-060012",
     "date": "2026-09-14",
