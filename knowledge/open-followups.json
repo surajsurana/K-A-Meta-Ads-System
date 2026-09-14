@@ -125,19 +125,19 @@
     "subject": "Delhi staggered-activation sequence - Champagne Gold (ad 52552969624980) activation - HELD; Deep Wine (ad 52552969618380) checkpoint does not clearly clear the cost bar",
     "follow_up": "performance-analyst: pull one more cost-per-conversation read on Deep Wine in 3-4 days (around 2026-09-17/18). If it improves to within a small, clearly-not-material gap of the sibling baseline, media-buyer can then propose Champagne Gold's activation. If it stays materially worse or worsens further, propose re-pausing Deep Wine (status ACTIVE -> PAUSED) instead, per the original plan's rollback criterion (b) - either way requires a fresh plan and the user's direct approval, this entry authorizes neither action now."
   },
+  "KL-2026-09-14-011305": {
+    "id": "KL-2026-09-14-011305",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSE, extending the 2026-09-07 India pause - validated execution plan",
+    "follow_up": "Awaiting the user's direct approval before marketing-lead executes. Not executed in this validation pass."
+  },
   "KL-2026-09-14-060003": {
     "id": "KL-2026-09-14-060003",
     "date": "2026-09-14",
     "type": "observation",
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern (first occurrence) - HOLD, confirm at next weekly review before any disposition; West Bengal below meaningful-spend floor",
     "follow_up": "performance-analyst: re-run this exact state-level check at next weekly review; additionally pull lifetime (not just 60-day) Stitchflow order counts for UP/Rajasthan/MP to establish whether these states have ever converted via this channel, before any disposition beyond hold is considered."
-  },
-  "KL-2026-09-14-060004": {
-    "id": "KL-2026-09-14-060004",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (52530526191380, 52530526191780) - extend the 2026-09-07 pause disposition; zero orders ever recorded for this SKU, geography-independent",
-    "follow_up": "Route to media-buyer: prepare pause plan for ads 52530526191380 (3rd July 26 | Canada) and 52530526191780 (3rd July 26 | USA), status ACTIVE->PAUSED, no budget field change; verify sibling ads in each ad set remain active and absorb freed delivery."
   },
   "KL-2026-09-14-060005": {
     "id": "KL-2026-09-14-060005",
