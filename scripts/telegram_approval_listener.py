@@ -80,6 +80,21 @@ DISPATCH_QUEUE = queue.Queue()
 
 CALLBACK_PREFIXES = {"A": "approve", "R": "reject", "H": "hold"}
 
+# Paired-plan callbacks (added 2026-09-14, real user request - "I want an
+# option to post on story or feed for such things") - used only for a
+# repost with a genuine Feed-vs-Story destination choice, where
+# social-community-manager prepares TWO sibling `type: decision` plans (same
+# content, different destination), each carrying the other's id in its own
+# "paired_plan_id" field. scripts/send-telegram-approval-repost-choice.sh
+# sends ONE message with four buttons: "A:<feed_id>" / "A:<story_id>" (the
+# two plans' own ordinary approve callbacks - handled by the completely
+# unmodified single-plan path in handle_callback_query, no changes needed
+# there) plus one shared reject and one shared hold, using these two new
+# prefixes so a single tap resolves BOTH sibling plans at once rather than
+# leaving the untapped one dangling pending forever. callback_data shape:
+# "RB:<id_a>|<id_b>" / "HB:<id_a>|<id_b>".
+PAIRED_CALLBACK_PREFIXES = {"RB": "reject", "HB": "hold"}
+
 # Product-identification confirmation (added 2026-09-04, docs/architecture.md
 # SS3d) - a second, structurally distinct callback family. These never
 # dispatch an execution, they only ever record a product-identity decision
@@ -593,6 +608,7 @@ Plan id: {plan_id}
 Before executing:
 1. Read this exact entry from knowledge/learning-log.jsonl (grep for the id).
 2. Confirm it is a type=decision entry that hasn't already been executed (grep for any type=change entry with linked_to containing this id - if one exists, STOP, do not execute again, report ALREADY_EXECUTED).
+2a. If this entry has a "paired_plan_id" field (a Feed-vs-Story repost choice - the two sibling plans post the identical content to different destinations, only one should ever actually post), check whether THAT id has already been executed (same grep, against the paired id). If it has, STOP - do not post again, report ALREADY_EXECUTED with a one-line note that the alternate destination (Feed or Story, name which) was already posted instead. This is the real safety net for a race where both buttons get tapped before either confirmation message updates - the plan text alone can't prevent that, this check is what does.
 3. Follow the plan's own stated execution steps exactly, including any fresh pre-check it specifies (e.g. re-GET the object immediately before writing, to confirm current live state still matches what the plan assumed).
 4. If the fresh pre-check shows the plan's assumptions no longer hold (object state changed, already in the target state, a conflicting change happened since), STOP and do not execute - report STALE_NOT_EXECUTED with the specific reason.
 
@@ -782,6 +798,80 @@ def handle_callback_query(token, cq):
         log(f"non-fatal: failed to edit 'queued' message for {plan_id}: {e}")
 
 
+def handle_paired_callback_query(token, cq):
+    """RB:<id_a>|<id_b> / HB:<id_a>|<id_b> - a shared reject/hold across both
+    sibling plans of a Feed-vs-Story repost choice (see PAIRED_CALLBACK_PREFIXES
+    above). Deliberately does NOT touch the "A:" approve path for either
+    sibling - each destination's own approve button is just its plan's
+    ordinary single-plan callback, unchanged. This function only exists for
+    the "neither" case, so tapping Reject/Hold once resolves both instead of
+    leaving the other destination's plan dangling pending forever."""
+    cq_id = cq["id"]
+    data = cq.get("data", "")
+    from_id = cq["from"]["id"]
+    message = cq.get("message", {})
+    chat_id = message.get("chat", {}).get("id")
+    message_id = message.get("message_id")
+
+    prefix, rest = data.split(":", 1)
+    action = PAIRED_CALLBACK_PREFIXES[prefix]
+    plan_ids = rest.split("|")
+    if len(plan_ids) != 2 or not all(plan_ids):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Malformed paired action."})
+        log(f"ERROR: malformed paired callback_data: {data!r}")
+        return
+
+    _, configured_chat_id = load_telegram_config()
+    if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        log(f"UNAUTHORIZED paired callback attempt on {plan_ids} from user {from_id} / chat {chat_id}")
+        return
+
+    outcomes = {pid: claim_for_action(pid, action, chat_id) for pid in plan_ids}
+    if all(o == "unknown" for o in outcomes.values()):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Unknown plans - not sent by this system."})
+        return
+    if any(o == "unauthorized" for o in outcomes.values()):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        return
+
+    try:
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Got it, processing..."})
+    except Exception as e:
+        log(f"non-fatal: failed to ack paired callback for {plan_ids}: {e}")
+
+    claimed = [pid for pid, o in outcomes.items() if o == "claimed"]
+    for pid in claimed:
+        if action == "reject":
+            append_learning_log({
+                "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                "actor": "human", "type": "override", "subject": pid,
+                "summary": f"Declined via Telegram button (repost destination choice - neither Feed nor Story). Plan {pid} rejected, no Meta/Instagram changes made.",
+                "reasoning": "User tapped REJECT on the paired Feed/Story approval request.",
+                "source": "human_told", "confidence": "high",
+                "tags": ["telegram-approval", "rejected", "repost-choice"], "linked_to": [pid],
+            })
+            finalize_status(pid, "rejected")
+        else:  # hold
+            follow_up_date = (datetime.now(timezone.utc) + timedelta(days=7)).strftime("%Y-%m-%d")
+            append_learning_log({
+                "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                "actor": "human", "type": "observation", "subject": pid,
+                "summary": f"Held via Telegram button for later review (repost destination choice). Plan {pid} preserved, unresolved, no Meta/Instagram changes made.",
+                "source": "human_told", "confidence": "high",
+                "tags": ["telegram-approval", "held", "repost-choice"], "linked_to": [pid],
+                "follow_up": f"re-check {follow_up_date}: if plan {pid} (a paired Feed/Story repost choice) is still not approved/rejected, resend via scripts/send-telegram-approval-repost-choice.sh with its sibling at that week's review",
+            })
+            finalize_status(pid, "held")
+
+    icon, label = ("❌", "Rejected") if action == "reject" else ("🕒", "On hold")
+    note = "No changes were made." if action == "reject" else "Saved for later review. No changes were made.\n\nYou'll be asked again in next week's report."
+    tg_api(token, "editMessageText", {
+        "chat_id": chat_id, "message_id": message_id,
+        "text": f"{icon} {label} (both Feed and Story)\n\n{note}\n\nPlan IDs: {plan_ids[0]} / {plan_ids[1]}",
+    })
+
+
 def handle_product_check_callback(token, cq):
     """PY:<check_id> / PN:<check_id> - confirm or reject a candidate product
     match. Never touches Meta/Instagram/Shopify - only ever writes an
@@ -952,6 +1042,7 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
     forever (the exact 2026-08-24 failure mode this function replaces)."""
     try:
         success, detail = dispatch_execution(plan_id)
+        matched_keyword_line = None  # original-case keyword line, if found - reused below for the display message
         if not success and detail.startswith("GATED:"):
             final_status = "gated"
         else:
@@ -972,7 +1063,28 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
             # strictly more reliable signal than searching for the word
             # anywhere in a few hundred words of narrative, so it's checked
             # first and, if it matches, is trusted on its own.
-            first_line_upper = detail.strip().splitlines()[0].upper() if detail.strip() else ""
+            # Find the keyword line within the first few lines, not strictly
+            # line 0 (fixed 2026-09-14, real false alarm - a genuinely
+            # successful execution got reported to the user as "Approved but
+            # NOT executed (stale/already-done)" because the dispatched
+            # session opened with one harmless preamble sentence of its own
+            # narration - "Log entry committed and pushed successfully
+            # (exit 0)." - before its required "EXECUTED: ..." line, despite
+            # the prompt explicitly saying not to. Requiring literally line 0
+            # is too brittle against that kind of minor instruction drift.
+            # Still bounded to a small early window (not the whole body) so
+            # this doesn't reopen the 2026-09-07 substring-collision bug the
+            # line-0-only check was originally built to fix - a keyword
+            # showing up on line 15 of a long narrative is exactly the
+            # false-positive risk that fix exists to prevent.
+            keyword_line_upper = ""
+            for line in detail.strip().splitlines()[:8]:
+                lu = line.strip().upper()
+                if lu.startswith(("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:")):
+                    keyword_line_upper = lu
+                    matched_keyword_line = line.strip()
+                    break
+            first_line_upper = keyword_line_upper
             if first_line_upper.startswith("ALREADY_EXECUTED:") or first_line_upper.startswith("STALE_NOT_EXECUTED:"):
                 final_status = "not_executed"
             elif first_line_upper.startswith("EXECUTED:"):
@@ -1024,7 +1136,13 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
         # GATED message, either of which can contain _ / * / ` that break
         # Telegram's Markdown parser outright - same class of bug fixed in
         # send-telegram-approval.sh after a live 400 during testing (2026-08-21).
-        first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
+        # Prefer the matched keyword line (found up to 8 lines in) over a
+        # literal line 0, so a harmless preamble sentence before it doesn't
+        # end up as the only thing Suraj sees on his phone (2026-09-14 fix).
+        if matched_keyword_line:
+            first_line = matched_keyword_line
+        else:
+            first_line = detail.strip().splitlines()[0] if detail.strip() else "(no output)"
         # The dispatch prompt asks for "KEYWORD: plain sentence" as line 1 -
         # strip the keyword prefix for display since the icon/label above
         # already says whether it executed (added 2026-08-23, user feedback:
@@ -1106,6 +1224,8 @@ def main_loop():
                     try:
                         if prefix in CALLBACK_PREFIXES:
                             handle_callback_query(token, cq)
+                        elif prefix in PAIRED_CALLBACK_PREFIXES:
+                            handle_paired_callback_query(token, cq)
                         elif prefix in PRODUCT_CALLBACK_PREFIXES:
                             handle_product_check_callback(token, cq)
                         else:
