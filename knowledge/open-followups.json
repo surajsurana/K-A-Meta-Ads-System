@@ -104,12 +104,12 @@
     "subject": "Delhi staggered-activation sequence - Champagne Gold (ad 52552969624980) activation - HELD; Deep Wine (ad 52552969618380) checkpoint does not clearly clear the cost bar",
     "follow_up": "performance-analyst: pull one more cost-per-conversation read on Deep Wine in 3-4 days (around 2026-09-17/18). If it improves to within a small, clearly-not-material gap of the sibling baseline, media-buyer can then propose Champagne Gold's activation. If it stays materially worse or worsens further, propose re-pausing Deep Wine (status ACTIVE -> PAUSED) instead, per the original plan's rollback criterion (b) - either way requires a fresh plan and the user's direct approval, this entry authorizes neither action now."
   },
-  "KL-2026-09-14-011305": {
-    "id": "KL-2026-09-14-011305",
+  "KL-2026-09-14-011305-EXEC": {
+    "id": "KL-2026-09-14-011305-EXEC",
     "date": "2026-09-14",
-    "type": "decision",
-    "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSE, extending the 2026-09-07 India pause - validated execution plan",
-    "follow_up": "Awaiting the user's direct approval before marketing-lead executes. Not executed in this validation pass."
+    "type": "change",
+    "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSED",
+    "follow_up": "Per KL-2026-09-14-011305's rollback criteria: if either ad set's qualified messaging/DM conversation volume drops materially within 7 days (by ~2026-09-21) with no offsetting pickup on that ad set's other active ads, reactivate the specific paused ad as a temporary bridge - that reactivation itself requires its own fresh, direct approval."
   },
   "KL-2026-09-14-014621": {
     "id": "KL-2026-09-14-014621",
