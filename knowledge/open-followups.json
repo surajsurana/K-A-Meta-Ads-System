@@ -132,6 +132,13 @@
     "subject": "Delhi zero-order-despite-spend-and-leads (ad set 6862975169176) - creative-currency clean today, but the 4-ad staggered refresh is only 1-of-4 live and the sequence stalled; continuing current plan, not escalating yet",
     "follow_up": "Route to media-buyer: check current cost-per-conversation on ad 52552969618380 (Deep Wine, live since 09-08, now past its 3-4 day checkpoint) and, if clean, propose activating the next ad in the sequence (Champagne Gold, KAFL013, ad 52552969624980) now - overdue per KL-2026-09-07-020900 Step 3's own stagger interval. Re-set the Delhi zero-order stop-rule check to trigger 2 full weekly reviews after all 4 ads are live, not from 2026-09-07."
   },
+  "KL-2026-09-14-060003": {
+    "id": "KL-2026-09-14-060003",
+    "date": "2026-09-14",
+    "type": "observation",
+    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern (first occurrence) - HOLD, confirm at next weekly review before any disposition; West Bengal below meaningful-spend floor",
+    "follow_up": "performance-analyst: re-run this exact state-level check at next weekly review; additionally pull lifetime (not just 60-day) Stitchflow order counts for UP/Rajasthan/MP to establish whether these states have ever converted via this channel, before any disposition beyond hold is considered."
+  },
   "KL-2026-09-14-WEEKLY-03": {
     "id": "KL-2026-09-14-WEEKLY-03",
     "date": "2026-09-14",
