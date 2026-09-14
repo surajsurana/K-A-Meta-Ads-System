@@ -167,18 +167,18 @@
     "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - re-flagged dormant-campaign hygiene item; closing as already-resolved, optional container pause only",
     "follow_up": "Optional, no urgency: media-buyer may include a campaign-level status pause on 52542179696580 in any future build session for hygiene - zero budget/spend impact. Do not re-flag this as an anomaly in future reviews unless the ad set itself is reactivated without a new logged decision."
   },
+  "KL-2026-09-14-060008": {
+    "id": "KL-2026-09-14-060008",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "DOB coverage (2/578 real, 0.52% raw incl. one data-entry error) - HOLD continues, n=2 still nowhere near sufficient for any age-targeting call",
+    "follow_up": "Flag Nikita Jain birth_date=2026-09-11 to Suraj as a likely Stitchflow data-entry correction (should probably be blank). Continue the standing monthly DOB-coverage trend check; revisit only once coverage grows meaningfully with a consistent trend."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
     "type": "observation",
     "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
     "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
-  },
-  "KL-2026-09-14-WEEKLY-05": {
-    "id": "KL-2026-09-14-WEEKLY-05",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "DOB coverage moves off zero for the first time (0.52%, 3/578) - one entry appears to be a data-entry error, not a real birth date",
-    "follow_up": "Flag the Nikita Jain birth_date=2026-09-11 record to Suraj/Stitchflow team as a likely data-entry error worth correcting (should probably be blank, not a fabricated correction from this system). Continue standing monthly DOB-coverage trend check; still far too small a sample for any age-informed targeting call - HOLD continues per KL-2026-08-24-161800/KL-2026-08-31-020600."
   }
 }
