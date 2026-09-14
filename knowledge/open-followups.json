@@ -139,6 +139,13 @@
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
   },
+  "KL-2026-09-14-004212-comment-batch": {
+    "id": "KL-2026-09-14-004212-comment-batch",
+    "date": "2026-09-14",
+    "type": "observation",
+    "subject": "Comment-reply sweep (2026-09-14, weekly review) - quiet cycle, no new batch needed; recurring staff DM-redirect pattern flagged again",
+    "follow_up": "If this staff DM-wording pattern appears again next cycle (a 4th consecutive occurrence), escalate directly to Suraj as a standing process gap rather than logging it a fourth time as a passive observation."
+  },
   "KL-2026-09-14-004212-own-content": {
     "id": "KL-2026-09-14-004212-own-content",
     "date": "2026-09-14",
