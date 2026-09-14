@@ -20,13 +20,6 @@
     "subject": "append-learning-log.sh - subagent falsely reported a successful push",
     "follow_up": "Before trusting any agent's claim that a learning-log write succeeded - especially one that gates sending a Telegram approval or any downstream action - independently verify via a fresh `git fetch origin main` and grep/show against origin's copy, not the agent's self-report alone. If this false-success pattern recurs, escalate to the user as a possible sandboxing/tool-isolation issue affecting subagent Bash calls, not just a one-off fluke."
   },
-  "KL-2026-08-31-155601": {
-    "id": "KL-2026-08-31-155601",
-    "date": "2026-08-31",
-    "type": "observation",
-    "subject": "Ad account disabled by repeated payment failures (act_686170454752172, Peekay International Ltd.)",
-    "follow_up": "none - resolved by user payment; the actual process fix is the new daily-heartbeat billing-health check (prompts/daily-heartbeat.md, added 2026-08-31) which now checks account_status/balance every day going forward so a repeat of this doesn't go unnoticed for days again"
-  },
   "KL-2026-09-01-071953-EXEC": {
     "id": "KL-2026-09-01-071953-EXEC",
     "date": "2026-09-01",
@@ -90,13 +83,6 @@
     "subject": "Stitchflow 0-2 day order-entry lag re-check (KL-2026-08-31-005500) - 2026-08-24 to 2026-08-30 window",
     "follow_up": "Apply the same 2-day provisional caveat to every future weekly review's most recent 2 days as standing practice - no new dated check needed, this is now a confirmed recurring pattern rather than an open question."
   },
-  "KL-2026-09-07-005800": {
-    "id": "KL-2026-09-07-005800",
-    "date": "2026-09-07",
-    "type": "outcome",
-    "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
-    "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
-  },
   "KL-2026-09-14-003600": {
     "id": "KL-2026-09-14-003600",
     "date": "2026-09-14",
@@ -132,12 +118,12 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSE, extending the 2026-09-07 India pause - validated execution plan",
     "follow_up": "Awaiting the user's direct approval before marketing-lead executes. Not executed in this validation pass."
   },
-  "KL-2026-09-14-011349": {
-    "id": "KL-2026-09-14-011349",
+  "KL-2026-09-14-014621": {
+    "id": "KL-2026-09-14-014621",
     "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - optional hygiene pause of dormant container - validated execution plan",
-    "follow_up": "Awaiting the user's direct approval before marketing-lead executes (no urgency - campaign-strategist flagged this as optional and can be batched into any future approval round)."
+    "type": "observation",
+    "subject": "Daily heartbeat anomaly pull (2026-09-14) - 3 long-dormant ad sets carry stale WITH_ISSUES/CAMPAIGN_PAUSED flags, zero live impact",
+    "follow_up": "campaign-strategist: whenever convenient (no urgency), review whether these 3 dormant ad sets (6537385051176, 6530639093176, 6365849752776) warrant a hygiene pause at the campaign level, same tier as KL-2026-09-14-011349."
   },
   "KL-2026-09-14-060003": {
     "id": "KL-2026-09-14-060003",
