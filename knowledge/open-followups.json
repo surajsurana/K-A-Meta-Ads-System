@@ -146,6 +146,13 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (52530526191380, 52530526191780) - extend the 2026-09-07 pause disposition; zero orders ever recorded for this SKU, geography-independent",
     "follow_up": "Route to media-buyer: prepare pause plan for ads 52530526191380 (3rd July 26 | Canada) and 52530526191780 (3rd July 26 | USA), status ACTIVE->PAUSED, no budget field change; verify sibling ads in each ad set remain active and absorb freed delivery."
   },
+  "KL-2026-09-14-060005": {
+    "id": "KL-2026-09-14-060005",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "Per-product zero-order pattern (18 of 19 First Love/CHMK030 SKUs, ex-CHMK030/KA-040326-03) - MAINTAIN, best explained by made-to-order customization/cross-SKU conversion plus thin per-SKU samples, not a standing problem requiring action",
+    "follow_up": "No action this cycle. Continue the standing weekly section-3d sweep; revisit only if a specific SKU's spend concentrates heavily (per the CHMK030 threshold) or shows a corroborating fatigue/frequency signal."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
