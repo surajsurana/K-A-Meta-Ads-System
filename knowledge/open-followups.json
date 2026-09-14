@@ -174,6 +174,13 @@
     "subject": "DOB coverage (2/578 real, 0.52% raw incl. one data-entry error) - HOLD continues, n=2 still nowhere near sufficient for any age-targeting call",
     "follow_up": "Flag Nikita Jain birth_date=2026-09-11 to Suraj as a likely Stitchflow data-entry correction (should probably be blank). Continue the standing monthly DOB-coverage trend check; revisit only once coverage grows meaningfully with a consistent trend."
   },
+  "KL-2026-09-14-060009": {
+    "id": "KL-2026-09-14-060009",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
+    "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
