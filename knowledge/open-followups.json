@@ -104,13 +104,6 @@
     "subject": "5-ad-set underspend cluster (KL-2026-09-06-014900) - weekday re-check",
     "follow_up": "None required - closes as normal weekly cyclicality. If a future weekday (a genuinely complete one, not an early-morning partial read) shows the same 5 ad sets underspending again, treat that as a fresh occurrence requiring its own weekday confirmation, not a reopening of this one."
   },
-  "KL-2026-09-07-020300": {
-    "id": "KL-2026-09-07-020300",
-    "date": "2026-09-07",
-    "type": "decision",
-    "subject": "Ad 52510022528580 missing creative-product-map.jsonl entry - routing confirmed, cannot be actioned in this unattended run",
-    "follow_up": "Next interactive session: creative-copywriter to identify the product for ad 52510022528580 (Shopify search + Stitchflow SKU cross-check per SS3d), then media-buyer to record via scripts/append-product-map.sh."
-  },
   "KL-2026-09-13-EXEC-020000": {
     "id": "KL-2026-09-13-EXEC-020000",
     "date": "2026-09-13",
@@ -159,5 +152,12 @@
     "type": "observation",
     "subject": "Per-product spend-vs-orders sweep (section 3d) - 18 of 19 tracked First Love/CHMK030 SKUs show zero real Stitchflow orders in trailing 60 days despite Rs169,630 combined spend; CHMK030 disposition only partially executed",
     "follow_up": "campaign-strategist to decide: (1) whether the CHMK030 Canada/USA siblings should also be paused/reduced to complete the 2026-09-07 disposition, (2) a real disposition for the much larger pattern - 16 other First Love SKUs with meaningful spend and zero recent orders, not yet individually reviewed at this depth before."
+  },
+  "KL-2026-09-14-WEEKLY-04": {
+    "id": "KL-2026-09-14-WEEKLY-04",
+    "date": "2026-09-14",
+    "type": "observation",
+    "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
+    "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
   }
 }
