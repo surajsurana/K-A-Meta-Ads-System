@@ -139,12 +139,12 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern (first occurrence) - HOLD, confirm at next weekly review before any disposition; West Bengal below meaningful-spend floor",
     "follow_up": "performance-analyst: re-run this exact state-level check at next weekly review; additionally pull lifetime (not just 60-day) Stitchflow order counts for UP/Rajasthan/MP to establish whether these states have ever converted via this channel, before any disposition beyond hold is considered."
   },
-  "KL-2026-09-14-WEEKLY-03": {
-    "id": "KL-2026-09-14-WEEKLY-03",
+  "KL-2026-09-14-060004": {
+    "id": "KL-2026-09-14-060004",
     "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders sweep (section 3d) - 18 of 19 tracked First Love/CHMK030 SKUs show zero real Stitchflow orders in trailing 60 days despite Rs169,630 combined spend; CHMK030 disposition only partially executed",
-    "follow_up": "campaign-strategist to decide: (1) whether the CHMK030 Canada/USA siblings should also be paused/reduced to complete the 2026-09-07 disposition, (2) a real disposition for the much larger pattern - 16 other First Love SKUs with meaningful spend and zero recent orders, not yet individually reviewed at this depth before."
+    "type": "decision",
+    "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (52530526191380, 52530526191780) - extend the 2026-09-07 pause disposition; zero orders ever recorded for this SKU, geography-independent",
+    "follow_up": "Route to media-buyer: prepare pause plan for ads 52530526191380 (3rd July 26 | Canada) and 52530526191780 (3rd July 26 | USA), status ACTIVE->PAUSED, no budget field change; verify sibling ads in each ad set remain active and absorb freed delivery."
   },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
