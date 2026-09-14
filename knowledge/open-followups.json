@@ -138,5 +138,12 @@
     "type": "outcome",
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
+  },
+  "KL-2026-09-14-004212-own-content": {
+    "id": "KL-2026-09-14-004212-own-content",
+    "date": "2026-09-14",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-09-14, weekly review) - 5th consecutive image-only week, gap now 32 days since last Reel",
+    "follow_up": "Structural fix decision (recurring shoot cadence or similar) needed at the next appropriate human-in-the-loop checkpoint rather than another passive weekly observation - flag to Suraj directly if the drought continues past a 6th sweep with still no resolution in sight."
   }
 }
