@@ -111,13 +111,6 @@
     "subject": "Comment-reply sweep (2026-09-14, weekly review) - quiet cycle, no new batch needed; recurring staff DM-redirect pattern flagged again",
     "follow_up": "If this staff DM-wording pattern appears again next cycle (a 4th consecutive occurrence), escalate directly to Suraj as a standing process gap rather than logging it a fourth time as a passive observation."
   },
-  "KL-2026-09-14-004212-own-content": {
-    "id": "KL-2026-09-14-004212-own-content",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-09-14, weekly review) - 5th consecutive image-only week, gap now 32 days since last Reel",
-    "follow_up": "Structural fix decision (recurring shoot cadence or similar) needed at the next appropriate human-in-the-loop checkpoint rather than another passive weekly observation - flag to Suraj directly if the drought continues past a 6th sweep with still no resolution in sight."
-  },
   "KL-2026-09-14-060002": {
     "id": "KL-2026-09-14-060002",
     "date": "2026-09-14",
@@ -187,6 +180,13 @@
     "type": "decision",
     "subject": "UGC content disposition - @whatpdoes carousel (18119854747916175, instagram.com/p/Dc-tYaoIx6_/) - partial read only (headless run, no vision access this session); HOLD on paid use pending an interactive visual check and Suraj's own look",
     "follow_up": "Next interactive session: pull the actual carousel frames and look directly against brand-brief.md before any paid disposition is finalized - do not skip straight to a build brief on the text read alone. Route the telegram_summary above via scripts/send-telegram-approval.sh with the permalink included, per the standing content-disposition rule."
+  },
+  "KL-2026-09-14-060012": {
+    "id": "KL-2026-09-14-060012",
+    "date": "2026-09-14",
+    "type": "decision",
+    "subject": "K&A own-content ad-sourcing sweep (4 new image carousels, 09-08 to 09-12) - HOLD on paid use for all 4 (video-default policy), organic-only for now; video-content drought now demonstrably constraining live ad-refresh work",
+    "follow_up": "No paid action this cycle for any of the 4. If a 6th consecutive image-only week occurs, this entry's concrete ad-refresh cost (CHMK030 Maroon pivot blocked) should be cited as supporting evidence when social-community-manager escalates the video drought to Suraj directly, per its own standing follow_up."
   },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
