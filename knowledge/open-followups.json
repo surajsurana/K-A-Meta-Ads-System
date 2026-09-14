@@ -27,13 +27,6 @@
     "subject": "DOB coverage (0/533) and Meta age-bracket delivery -- 2026-08-31 weekly review",
     "follow_up": "Continue the standing monthly DOB-coverage trend check (architecture.md section 3b); worth flagging to Suraj as a low-priority Stitchflow data-collection idea (optional DOB prompt at consult booking), not an ad-targeting question."
   },
-  "KL-2026-08-31-020720-EXEC": {
-    "id": "KL-2026-08-31-020720-EXEC",
-    "date": "2026-08-31",
-    "type": "change",
-    "subject": "First Love | Maharashtra-Mumbai Geo Test | India (ad set 52548730319980, ad 52548730353580) - ACTIVATED",
-    "follow_up": "per KL-2026-08-31-010720 stop-rule: performance-analyst to compare cost per messaging_conversation_started and cost per lead against sibling ad set 52535906903180 (Broad Advantage+) at the 2-week mark (~2026-09-14) before any reallocation/hold conclusion. Watch effective_status on both objects in the meantime; re-pause immediately if WITH_ISSUES/DISAPPROVED appears at any point, independent of the 2-week mark."
-  },
   "KL-2026-08-31-155601": {
     "id": "KL-2026-08-31-155601",
     "date": "2026-08-31",
@@ -152,5 +145,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-09-14, weekly review) - 5th consecutive image-only week, gap now 32 days since last Reel",
     "follow_up": "Structural fix decision (recurring shoot cadence or similar) needed at the next appropriate human-in-the-loop checkpoint rather than another passive weekly observation - flag to Suraj directly if the drought continues past a 6th sweep with still no resolution in sight."
+  },
+  "KL-2026-09-14-WEEKLY-01": {
+    "id": "KL-2026-09-14-WEEKLY-01",
+    "date": "2026-09-14",
+    "type": "outcome",
+    "subject": "First Love | Maharashtra-Mumbai Geo Test (52548730319980) vs Broad Advantage+ (52535906903180) - 2-week stop-rule comparison",
+    "follow_up": "none - measurement delivered to campaign-strategist for the reallocation/hold call"
   }
 }
