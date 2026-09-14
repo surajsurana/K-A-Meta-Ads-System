@@ -167,6 +167,13 @@
     "subject": "First Love | Maharashtra-Mumbai Geo Test (ad set 52548730319980) - PAUSED, reallocated Rs150/day to Broad Advantage+ (ad set 52535906903180)",
     "follow_up": "Per the plan's rollback criteria: if Broad Advantage+ shows a saturation signal within 1-2 weeks post-increase (frequency climbing materially above its current 1.14-1.32x range, or CPM rising materially above its current Rs56-139 range), reduce daily_budget back to 85000 (Rs850/day). Re-testing an isolated Maharashtra geo ad set would require a fresh campaign-strategist proposal with new evidence, not an automatic revert."
   },
+  "KL-2026-09-14-EXEC-045625": {
+    "id": "KL-2026-09-14-EXEC-045625",
+    "date": "2026-09-14",
+    "type": "change",
+    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - ACTIVE -> PAUSED (dormant container hygiene)",
+    "follow_up": "None meaningful - per the plan's own rollback criteria, if this audience ever needs to run through this specific campaign structure again that would be a fresh build decision, not a revert of this pause."
+  },
   "KL-2026-09-14-WEEKLY-04": {
     "id": "KL-2026-09-14-WEEKLY-04",
     "date": "2026-09-14",
