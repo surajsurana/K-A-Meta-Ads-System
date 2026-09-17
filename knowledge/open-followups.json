@@ -111,13 +111,6 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSED",
     "follow_up": "Per KL-2026-09-14-011305's rollback criteria: if either ad set's qualified messaging/DM conversation volume drops materially within 7 days (by ~2026-09-21) with no offsetting pickup on that ad set's other active ads, reactivate the specific paused ad as a temporary bridge - that reactivation itself requires its own fresh, direct approval."
   },
-  "KL-2026-09-14-014621": {
-    "id": "KL-2026-09-14-014621",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Daily heartbeat anomaly pull (2026-09-14) - 3 long-dormant ad sets carry stale WITH_ISSUES/CAMPAIGN_PAUSED flags, zero live impact",
-    "follow_up": "campaign-strategist: whenever convenient (no urgency), review whether these 3 dormant ad sets (6537385051176, 6530639093176, 6365849752776) warrant a hygiene pause at the campaign level, same tier as KL-2026-09-14-011349."
-  },
   "KL-2026-09-14-060003": {
     "id": "KL-2026-09-14-060003",
     "date": "2026-09-14",
