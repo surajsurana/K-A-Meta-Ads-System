@@ -167,11 +167,11 @@
     "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
     "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
   },
-  "KL-2026-09-17-020018": {
-    "id": "KL-2026-09-17-020018",
+  "KL-2026-09-17-EXEC-020018": {
+    "id": "KL-2026-09-17-EXEC-020018",
     "date": "2026-09-17",
-    "type": "decision",
-    "subject": "WhatsApp India | Deep Wine Corset+Lehenga (ad 52552969618380, ad set 6862975169176 India | Whatsapp | 9th Dec 25, campaign 6858349204776 Whatsapp Message | 29th Nov 2025) - validated re-pause plan per stop-rule rollback criterion (b)",
-    "follow_up": "Awaiting the user's own direct approval via Telegram (scripts/send-telegram-approval.sh KL-2026-09-17-020018). Not executed in this unattended run per guardrail 13. Once approved, marketing-lead executes verbatim (flip status ACTIVE->PAUSED on ad 52552969618380 only), verifies per the Verification section above, and logs a linked type:change entry. Activating Champagne Gold (52552969624980), the next ad in the original 4-ad sequence, is a separate future decision for a later cycle - do not propose it as part of executing this plan."
+    "type": "change",
+    "subject": "Whatsapp Message | 29th Nov 2025 - ad set India | Whatsapp | 9th Dec 25 - ad 'WhatsApp India | Deep Wine Corset+Lehenga' (52552969618380) - ACTIVE -> PAUSED",
+    "follow_up": "None automatic - this ad is now OFF and there is no forward-looking performance threshold to monitor on it per the plan. A future reactivation, if ever considered, requires a fresh, separately-dated re-test plan, not reference to this pause's data."
   }
 }
