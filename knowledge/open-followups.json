@@ -167,11 +167,11 @@
     "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
     "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
   },
-  "KL-2026-09-17-093000": {
-    "id": "KL-2026-09-17-093000",
+  "KL-2026-09-17-020018": {
+    "id": "KL-2026-09-17-020018",
     "date": "2026-09-17",
     "type": "decision",
-    "subject": "Delhi staggered-activation sequence - Deep Wine (ad 52552969618380, ad set 6862975169176) FINAL DISPOSITION: re-pause per stop-rule (KL-2026-09-14-011225) rollback criterion (b) - diagnostic round (KL-2026-09-17-090000) found no confound and, on closer read, evidence pointing the other way",
-    "follow_up": "Handoff to media-buyer: validate and prepare an exact execution plan for ad 52552969618380 (WhatsApp India | Deep Wine Corset+Lehenga), field status, OLD VALUE=ACTIVE -> NEW VALUE=PAUSED, in ad set 6862975169176 (India | Whatsapp | 9th Dec 25). No other ad, ad set, budget, or campaign field should be touched by this plan - Champagne Gold (52552969624980) stays PAUSED as-is, no change; Gun Metal Grey (52547120592180) and Cutout Corset (52547120579980) stay ACTIVE as-is, no change. Fresh pre-execution GET should reconfirm ad 52552969618380 is still ACTIVE with no issues_info before flipping it, per standard guardrail 3 drift-check. Rollback criteria: none needed going forward for this ad (it is being turned off, not on) - standard post-execution verification only (GET confirms status=PAUSED, effective_status settles to PAUSED, ad set daily_budget unchanged at 72000/Rs720). Separately, and NOT part of this plan: whether to next propose activating Champagne Gold (the next ad in the original 4-ad sequence) to keep testing is a distinct future decision for a later cycle - do not bundle it into this execution plan. This still requires the users own direct approval before any write, same as any other live change."
+    "subject": "WhatsApp India | Deep Wine Corset+Lehenga (ad 52552969618380, ad set 6862975169176 India | Whatsapp | 9th Dec 25, campaign 6858349204776 Whatsapp Message | 29th Nov 2025) - validated re-pause plan per stop-rule rollback criterion (b)",
+    "follow_up": "Awaiting the user's own direct approval via Telegram (scripts/send-telegram-approval.sh KL-2026-09-17-020018). Not executed in this unattended run per guardrail 13. Once approved, marketing-lead executes verbatim (flip status ACTIVE->PAUSED on ad 52552969618380 only), verifies per the Verification section above, and logs a linked type:change entry. Activating Champagne Gold (52552969624980), the next ad in the original 4-ad sequence, is a separate future decision for a later cycle - do not propose it as part of executing this plan."
   }
 }
