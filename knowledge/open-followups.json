@@ -97,13 +97,6 @@
     "subject": "Comment-reply sweep (2026-09-14, weekly review) - quiet cycle, no new batch needed; recurring staff DM-redirect pattern flagged again",
     "follow_up": "If this staff DM-wording pattern appears again next cycle (a 4th consecutive occurrence), escalate directly to Suraj as a standing process gap rather than logging it a fourth time as a passive observation."
   },
-  "KL-2026-09-14-011225": {
-    "id": "KL-2026-09-14-011225",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Delhi staggered-activation sequence - Champagne Gold (ad 52552969624980) activation - HELD; Deep Wine (ad 52552969618380) checkpoint does not clearly clear the cost bar",
-    "follow_up": "performance-analyst: pull one more cost-per-conversation read on Deep Wine in 3-4 days (around 2026-09-17/18). If it improves to within a small, clearly-not-material gap of the sibling baseline, media-buyer can then propose Champagne Gold's activation. If it stays materially worse or worsens further, propose re-pausing Deep Wine (status ACTIVE -> PAUSED) instead, per the original plan's rollback criterion (b) - either way requires a fresh plan and the user's direct approval, this entry authorizes neither action now."
-  },
   "KL-2026-09-14-011305-EXEC": {
     "id": "KL-2026-09-14-011305-EXEC",
     "date": "2026-09-14",
@@ -173,5 +166,12 @@
     "type": "observation",
     "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
     "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
+  },
+  "KL-2026-09-17-090000": {
+    "id": "KL-2026-09-17-090000",
+    "date": "2026-09-17",
+    "type": "decision",
+    "subject": "Delhi staggered-activation sequence - Deep Wine (ad 52552969618380, ad set 6862975169176) 3-4 day re-check vs stop-rule (KL-2026-09-14-011225): independent read is HOLD, not re-pause - the widened gap is baseline movement, not Deep Wine degrading, and needs an overlap/skew check before either verdict is finalized",
+    "follow_up": "performance-analyst: three specific checks against the already-elapsed 2026-09-08 to 2026-09-17 window (no further calendar wait needed): (1) audience-overlap/confound check - did Rafaey Master | First Love (52551343010580) or India Insta Engaged 365D & Followers (6538717752176), or any other active ad set sharing overlapping custom audiences with 6862975169176, have a budget/status/creative change in this window that could explain Gun Metal Grey and Cutout Corset getting cheaper; (2) ad-set-level CPM trend for 6862975169176 over the same window - general rising-tide improvement across all three ads, or concentrated in the two siblings only; (3) day-by-day (not aggregate) cost/conversation for all three ads across 09-08 to 09-17, to rule out the sibling improvement being a one/two-day skew. Once those come back, route the resulting read back to campaign-strategist for a final verdict (re-pause Deep Wine per the stop-rules stays materially worse clause, or clear as a fair stays worse but explained by a moved bar, not a Deep Wine problem case) - this entry authorizes neither re-pausing Deep Wine nor activating Champagne Gold now."
   }
 }
