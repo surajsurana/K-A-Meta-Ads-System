@@ -167,11 +167,11 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN": {
-    "id": "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN",
+  "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXEC": {
+    "id": "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXEC",
     "date": "2026-09-18",
-    "type": "decision",
-    "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - validated execution plan for Rs250->Rs100/day interim cut",
-    "follow_up": "Route to Suraj for direct approval (interactive session or Telegram approval mechanism) before marketing-lead executes. Plan found ready with no discrepancies or holds - all campaign-strategist figures independently confirmed via fresh GET."
+    "type": "change",
+    "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - daily_budget cut Rs250/day -> Rs100/day",
+    "follow_up": "Per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLANs rollback criteria: (a) RESTORE to Rs250/day if the queued creative refresh lands AND cost-per-conversation/cost-per-connection normalize; (b) ESCALATE to a full pause if metrics degrade further even at the reduced rate, before the refresh lands. Neither condition met yet."
   }
 }
