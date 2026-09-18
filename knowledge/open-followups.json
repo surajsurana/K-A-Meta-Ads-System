@@ -167,11 +167,11 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-18-CS-RAFAEY-BUDGETCUT": {
-    "id": "KL-2026-09-18-CS-RAFAEY-BUDGETCUT",
+  "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN": {
+    "id": "KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN",
     "date": "2026-09-18",
     "type": "decision",
-    "subject": "Rafaey Master | Frozen Blue Corset (ad 52551343972380, ad set 52551343010580) - pre-set trigger MET, budget cut Rs250->Rs100/day as interim measure pending still-undelivered creative refresh",
-    "follow_up": "media-buyer: fresh live GET on ad set 52551343010580 to confirm current daily_budget=25000 (Rs250) before validating the cut to daily_budget=10000 (Rs100); route for Suraj's direct approval before executing, same as any live budget change. creative-copywriter: the 2026-09-14 refresh brief for this ad set is still outstanding a week later and should be prioritized at the next interactive session - it remains the actual fix, this budget cut is only the interim lever. performance-analyst: continue tracking cost-per-conversation/connection on this ad set at least weekly; if the refresh lands and metrics normalize, propose restoring budget toward Rs250/day; if cost keeps degrading even at Rs100/day before the refresh lands, escalate for a full pause instead of a further partial cut."
+    "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - validated execution plan for Rs250->Rs100/day interim cut",
+    "follow_up": "Route to Suraj for direct approval (interactive session or Telegram approval mechanism) before marketing-lead executes. Plan found ready with no discrepancies or holds - all campaign-strategist figures independently confirmed via fresh GET."
   }
 }
