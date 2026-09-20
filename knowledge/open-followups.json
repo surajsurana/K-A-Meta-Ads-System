@@ -111,13 +111,6 @@
     "subject": "Per-product zero-order pattern (18 of 19 First Love/CHMK030 SKUs, ex-CHMK030/KA-040326-03) - MAINTAIN, best explained by made-to-order customization/cross-SKU conversion plus thin per-SKU samples, not a standing problem requiring action",
     "follow_up": "No action this cycle. Continue the standing weekly section-3d sweep; revisit only if a specific SKU's spend concentrates heavily (per the CHMK030 threshold) or shows a corroborating fatigue/frequency signal."
   },
-  "KL-2026-09-14-060008": {
-    "id": "KL-2026-09-14-060008",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "DOB coverage (2/578 real, 0.52% raw incl. one data-entry error) - HOLD continues, n=2 still nowhere near sufficient for any age-targeting call",
-    "follow_up": "Flag Nikita Jain birth_date=2026-09-11 to Suraj as a likely Stitchflow data-entry correction (should probably be blank). Continue the standing monthly DOB-coverage trend check; revisit only once coverage grows meaningfully with a consistent trend."
-  },
   "KL-2026-09-14-060009": {
     "id": "KL-2026-09-14-060009",
     "date": "2026-09-14",
@@ -173,5 +166,12 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut interim check (daily heartbeat) - pre-cut spend was normal, post-cut spend converging toward Rs100 cap, cost-per-conversation improved on thin data",
     "follow_up": "No action today. Revisit per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXECs own rollback criteria (restore to Rs250 if refresh lands + costs normalize; escalate to pause if costs degrade further before refresh lands) once 3-4 more full days of post-cut data exist (~2026-09-23/24) - campaign-strategist to make that call then, not before."
+  },
+  "KL-2026-09-20-015300-DOB-FLAG": {
+    "id": "KL-2026-09-20-015300-DOB-FLAG",
+    "date": "2026-09-20",
+    "type": "outcome",
+    "subject": "Nikita Jain birth_date=2026-09-11 data-entry error - flagged to Suraj via Telegram (daily heartbeat)",
+    "follow_up": "None further from this system - correction (or confirmation its intentional) is Suraj/the Stitchflow teams call. Continue the standing monthly DOB-coverage trend check as before."
   }
 }
