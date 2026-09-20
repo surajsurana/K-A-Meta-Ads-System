@@ -166,12 +166,5 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut interim check (daily heartbeat) - pre-cut spend was normal, post-cut spend converging toward Rs100 cap, cost-per-conversation improved on thin data",
     "follow_up": "No action today. Revisit per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXECs own rollback criteria (restore to Rs250 if refresh lands + costs normalize; escalate to pause if costs degrade further before refresh lands) once 3-4 more full days of post-cut data exist (~2026-09-23/24) - campaign-strategist to make that call then, not before."
-  },
-  "KL-2026-09-20-015300-DOB-FLAG": {
-    "id": "KL-2026-09-20-015300-DOB-FLAG",
-    "date": "2026-09-20",
-    "type": "outcome",
-    "subject": "Nikita Jain birth_date=2026-09-11 data-entry error - flagged to Suraj via Telegram (daily heartbeat)",
-    "follow_up": "None further from this system - correction (or confirmation its intentional) is Suraj/the Stitchflow teams call. Continue the standing monthly DOB-coverage trend check as before."
   }
 }
