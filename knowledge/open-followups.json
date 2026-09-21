@@ -111,13 +111,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-005500-rafaey-rollback": {
-    "id": "KL-2026-09-21-005500-rafaey-rollback",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "Rafaey Master budget-cut (Rs250->Rs100/day, 2026-09-18) - 3 days of post-cut data pulled per this cycle's ask; data is genuinely too thin/mixed to cross either the restore or escalate-to-pause threshold yet, exactly as anticipated",
-    "follow_up": "campaign-strategist: neither the restore-to-Rs250 nor the escalate-to-pause threshold from KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXEC's rollback criteria is clearly crossed yet - continue holding at Rs100/day and make the real call around 2026-09-23/24 as originally planned, once a few more days of data exist. If total_messaging_connection stays at zero for multiple additional days running (not just the 2 seen so far), that itself would be worth treating as an early escalate-to-pause signal even before the full 3-4 day window some may expect - flagging this specific metric (not just cost-per-conversation) as worth watching directly."
-  },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
     "date": "2026-09-21",
@@ -152,6 +145,13 @@
     "type": "decision",
     "subject": "2 new own-brand image carousels (09-17, 09-19) - HOLD on paid use, same video-default reasoning as the prior 4; concur with social-community-manager's direct escalation of the underlying video drought",
     "follow_up": "No paid action this cycle for either carousel. Revisit if Suraj's response to the escalation changes the video-default policy or produces new video content."
+  },
+  "KL-2026-09-21-CS-RAFAEY-DEFER": {
+    "id": "KL-2026-09-21-CS-RAFAEY-DEFER",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Rafaey Master budget-cut (ad set 52551343010580) - confirming performance-analyst's judgment: defer the restore/pause call to ~2026-09-23/24, data is genuinely too thin this cycle to decide either way",
+    "follow_up": "Revisit the restore/pause call 2026-09-23/24 with fresh data, watching total_messaging_connection specifically (not just cost-per-conversation) per performance-analyst's own flag. creative-copywriter to deliver the outstanding creative-refresh brief for this ad set independent of that date."
   },
   "KL-2026-09-21-CS-SCALE-READINESS": {
     "id": "KL-2026-09-21-CS-SCALE-READINESS",
