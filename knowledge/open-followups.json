@@ -83,13 +83,6 @@
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
   },
-  "KL-2026-09-14-004212-comment-batch": {
-    "id": "KL-2026-09-14-004212-comment-batch",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Comment-reply sweep (2026-09-14, weekly review) - quiet cycle, no new batch needed; recurring staff DM-redirect pattern flagged again",
-    "follow_up": "If this staff DM-wording pattern appears again next cycle (a 4th consecutive occurrence), escalate directly to Suraj as a standing process gap rather than logging it a fourth time as a passive observation."
-  },
   "KL-2026-09-14-011305-EXEC": {
     "id": "KL-2026-09-14-011305-EXEC",
     "date": "2026-09-14",
@@ -159,6 +152,13 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut interim check (daily heartbeat) - pre-cut spend was normal, post-cut spend converging toward Rs100 cap, cost-per-conversation improved on thin data",
     "follow_up": "No action today. Revisit per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXECs own rollback criteria (restore to Rs250 if refresh lands + costs normalize; escalate to pause if costs degrade further before refresh lands) once 3-4 more full days of post-cut data exist (~2026-09-23/24) - campaign-strategist to make that call then, not before."
+  },
+  "KL-2026-09-21-comment-batch": {
+    "id": "KL-2026-09-21-comment-batch",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
+    "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
   },
   "KL-2026-09-21-own-content": {
     "id": "KL-2026-09-21-own-content",
