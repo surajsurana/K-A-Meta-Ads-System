@@ -118,6 +118,13 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - activate Champagne Gold (ad 52552969624980), 2nd of 4 staggered Delhi creative-refresh candidates",
     "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then execute status PAUSED -> ACTIVE on ad 52552969624980 only, run the verification GETs listed above, and log a linked type:change entry. Continue the staggered checkpoint cadence (3-4 day, ~7-10 day) before any decision on Metallic Coffee Brown (52552969628580) or Burnt Orange (52552969630380) - those remain separate future decisions, not bundled here."
   },
+  "KL-2026-09-21-010603": {
+    "id": "KL-2026-09-21-010603",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (52535906794980) - build new PAUSED ad reusing the proven KAFL003 Peach Muted Gold creative alongside Three Expressions",
+    "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then build the new ad exactly as specified (PAUSED), run the verification GETs, call scripts/append-product-map.sh with the ad_ids-completeness correction once the real ad_id is known, and log a linked type:change entry. Activation is a SEPARATE future decision, not included in or authorized by this plan - stagger it per guardrail 11 and route through its own approval/verification cycle once the build is confirmed clean."
+  },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
     "date": "2026-09-21",
@@ -131,13 +138,6 @@
     "type": "decision",
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
-  },
-  "KL-2026-09-21-CS-INTERESTSTACK": {
-    "id": "KL-2026-09-21-CS-INTERESTSTACK",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (52535906794980), single-ad ad set running only 'Three Expressions' - worth one more staggered test, using an already-proven First Love creative rather than another blind new variant",
-    "follow_up": "media-buyer: identify an existing ad already featuring KAFL002 or KAFL003 and prepare a PAUSED duplicate-build plan into ad set 52535906794980; stagger activation per guardrail 11 once live."
   },
   "KL-2026-09-21-CS-OWNCONTENT-HOLD": {
     "id": "KL-2026-09-21-CS-OWNCONTENT-HOLD",
