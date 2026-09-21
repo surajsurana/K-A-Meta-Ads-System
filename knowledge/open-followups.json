@@ -146,6 +146,13 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
+  "KL-2026-09-21-CS-OWNCONTENT-HOLD": {
+    "id": "KL-2026-09-21-CS-OWNCONTENT-HOLD",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "2 new own-brand image carousels (09-17, 09-19) - HOLD on paid use, same video-default reasoning as the prior 4; concur with social-community-manager's direct escalation of the underlying video drought",
+    "follow_up": "No paid action this cycle for either carousel. Revisit if Suraj's response to the escalation changes the video-default policy or produces new video content."
+  },
   "KL-2026-09-21-CS-SCALE-READINESS": {
     "id": "KL-2026-09-21-CS-SCALE-READINESS",
     "date": "2026-09-21",
@@ -166,12 +173,5 @@
     "type": "decision",
     "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
     "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
-  },
-  "KL-2026-09-21-own-content": {
-    "id": "KL-2026-09-21-own-content",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-09-21, weekly review) - 6th consecutive image-only week, escalation trigger MET per standing follow_up",
-    "follow_up": "Escalated to Suraj directly in this cycle's report (2026-09-21) per the standing trigger. Needs a real structural decision (recurring shoot cadence, or an explicit accepted exception to the video-default ad policy) rather than a further passive weekly note."
   }
 }
