@@ -111,19 +111,19 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
+  "KL-2026-09-21-010602": {
+    "id": "KL-2026-09-21-010602",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - activate Champagne Gold (ad 52552969624980), 2nd of 4 staggered Delhi creative-refresh candidates",
+    "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then execute status PAUSED -> ACTIVE on ad 52552969624980 only, run the verification GETs listed above, and log a linked type:change entry. Continue the staggered checkpoint cadence (3-4 day, ~7-10 day) before any decision on Metallic Coffee Brown (52552969628580) or Burnt Orange (52552969630380) - those remain separate future decisions, not bundled here."
+  },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
     "date": "2026-09-21",
     "type": "decision",
     "subject": "Portfolio budget allocation check - weekly review 2026-09-21",
     "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of any of this cycle's resulting ad-level plans (Champagne Gold activation, Interest Stack candidate build)."
-  },
-  "KL-2026-09-21-CS-GEO-DELHI": {
-    "id": "KL-2026-09-21-CS-GEO-DELHI",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "Delhi (ad set 6862975169176) - DISPOSITION: resume the staggered creative-refresh sequence (activate the next candidate), not yet 'exhausted' - but set an explicit, dated stop-rule this time",
-    "follow_up": "media-buyer: prepare an activation plan for Champagne Gold (ad 52552969624980, ad set 6862975169176) per the existing guardrail-11 staggered process (same mechanism already used for Deep Wine). creative-copywriter: resolve the Cutout Corset (52547120579980) null-SKU mapping - second priority behind the Sargun Mehta gap. campaign-strategist: re-assess with a real disposition call (not a further hold) once the remaining 3 candidates have each had their own staggered trial, or by roughly mid-to-late October, whichever comes first."
   },
   "KL-2026-09-21-CS-GEO-UPDR": {
     "id": "KL-2026-09-21-CS-GEO-UPDR",
