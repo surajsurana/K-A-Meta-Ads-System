@@ -104,13 +104,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-010603": {
-    "id": "KL-2026-09-21-010603",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (52535906794980) - build new PAUSED ad reusing the proven KAFL003 Peach Muted Gold creative alongside Three Expressions",
-    "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then build the new ad exactly as specified (PAUSED), run the verification GETs, call scripts/append-product-map.sh with the ad_ids-completeness correction once the real ad_id is known, and log a linked type:change entry. Activation is a SEPARATE future decision, not included in or authorized by this plan - stagger it per guardrail 11 and route through its own approval/verification cycle once the build is confirmed clean."
-  },
   "KL-2026-09-21-015233": {
     "id": "KL-2026-09-21-015233",
     "date": "2026-09-21",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "UGC disposition - @styled_bytan reel (18114297670947213, instagram.com/reel/DdbcaT4t0M1/) - my read: strong ad-test candidate on brand-fit merits, but not actionable this cycle due to the media_url asset-retrieval blocker",
     "follow_up": "If Suraj approves pursuing the raw file: once obtained, hand to creative-copywriter to identify/confirm product mapping and prep a repost + ad-test plan (new ad/ad-set test disposition, First Love or relevant collection depending on the actual product shown), then media-buyer for a build plan. If rejected or held, no further action pending a status change."
+  },
+  "KL-2026-09-21-EXEC-010603": {
+    "id": "KL-2026-09-21-EXEC-010603",
+    "date": "2026-09-21",
+    "type": "change",
+    "subject": "Built new PAUSED ad in First Love | Interest Stack reusing KAFL003 (Peach Muted Gold) creative",
+    "follow_up": "Activation of ad 52556519208180 is a separate future decision, not authorized by this execution - requires its own approval/verification cycle per guardrail 11 staggering discipline before any spend is turned on."
   },
   "KL-2026-09-21-EXEC-CHAMPAGNEGOLD": {
     "id": "KL-2026-09-21-EXEC-CHAMPAGNEGOLD",
