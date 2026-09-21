@@ -90,13 +90,6 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSED",
     "follow_up": "Per KL-2026-09-14-011305's rollback criteria: if either ad set's qualified messaging/DM conversation volume drops materially within 7 days (by ~2026-09-21) with no offsetting pickup on that ad set's other active ads, reactivate the specific paused ad as a temporary bridge - that reactivation itself requires its own fresh, direct approval."
   },
-  "KL-2026-09-14-060003": {
-    "id": "KL-2026-09-14-060003",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern (first occurrence) - HOLD, confirm at next weekly review before any disposition; West Bengal below meaningful-spend floor",
-    "follow_up": "performance-analyst: re-run this exact state-level check at next weekly review; additionally pull lifetime (not just 60-day) Stitchflow order counts for UP/Rajasthan/MP to establish whether these states have ever converted via this channel, before any disposition beyond hold is considered."
-  },
   "KL-2026-09-14-060005": {
     "id": "KL-2026-09-14-060005",
     "date": "2026-09-14",
@@ -152,6 +145,13 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut interim check (daily heartbeat) - pre-cut spend was normal, post-cut spend converging toward Rs100 cap, cost-per-conversation improved on thin data",
     "follow_up": "No action today. Revisit per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXECs own rollback criteria (restore to Rs250 if refresh lands + costs normalize; escalate to pause if costs degrade further before refresh lands) once 3-4 more full days of post-cut data exist (~2026-09-23/24) - campaign-strategist to make that call then, not before."
+  },
+  "KL-2026-09-21-004830-geo-updr": {
+    "id": "KL-2026-09-21-004830-geo-updr",
+    "date": "2026-09-21",
+    "type": "observation",
+    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern - re-run per KL-2026-09-14-060003 follow_up, NOW WITH LIFETIME BASELINE: all three states DID convert historically, current zero-order streak is a regression not an absence-of-baseline case",
+    "follow_up": "campaign-strategist: now that lifetime baseline data confirms UP/Rajasthan/MP are proven-then-dropped markets (not never-converted markets), issue one of the eight geography dispositions this cycle rather than holding a third time. These three states are served entirely by broad-targeting ad sets (no dedicated ad set exists, unlike Delhi), so a creative-currency check on one specific ad set does not cleanly apply - worth deciding whether that changes which disposition is appropriate."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
