@@ -118,13 +118,6 @@
     "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
     "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
   },
-  "KL-2026-09-14-060012": {
-    "id": "KL-2026-09-14-060012",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "K&A own-content ad-sourcing sweep (4 new image carousels, 09-08 to 09-12) - HOLD on paid use for all 4 (video-default policy), organic-only for now; video-content drought now demonstrably constraining live ad-refresh work",
-    "follow_up": "No paid action this cycle for any of the 4. If a 6th consecutive image-only week occurs, this entry's concrete ad-refresh cost (CHMK030 Maroon pivot blocked) should be cited as supporting evidence when social-community-manager escalates the video drought to Suraj directly, per its own standing follow_up."
-  },
   "KL-2026-09-14-EXEC-045234": {
     "id": "KL-2026-09-14-EXEC-045234",
     "date": "2026-09-14",
@@ -166,5 +159,12 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut interim check (daily heartbeat) - pre-cut spend was normal, post-cut spend converging toward Rs100 cap, cost-per-conversation improved on thin data",
     "follow_up": "No action today. Revisit per KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXECs own rollback criteria (restore to Rs250 if refresh lands + costs normalize; escalate to pause if costs degrade further before refresh lands) once 3-4 more full days of post-cut data exist (~2026-09-23/24) - campaign-strategist to make that call then, not before."
+  },
+  "KL-2026-09-21-own-content": {
+    "id": "KL-2026-09-21-own-content",
+    "date": "2026-09-21",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-09-21, weekly review) - 6th consecutive image-only week, escalation trigger MET per standing follow_up",
+    "follow_up": "Escalated to Suraj directly in this cycle's report (2026-09-21) per the standing trigger. Needs a real structural decision (recurring shoot cadence, or an explicit accepted exception to the video-default ad policy) rather than a further passive weekly note."
   }
 }
