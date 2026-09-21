@@ -97,13 +97,6 @@
     "subject": "Per-product zero-order pattern (18 of 19 First Love/CHMK030 SKUs, ex-CHMK030/KA-040326-03) - MAINTAIN, best explained by made-to-order customization/cross-SKU conversion plus thin per-SKU samples, not a standing problem requiring action",
     "follow_up": "No action this cycle. Continue the standing weekly section-3d sweep; revisit only if a specific SKU's spend concentrates heavily (per the CHMK030 threshold) or shows a corroborating fatigue/frequency signal."
   },
-  "KL-2026-09-14-060009": {
-    "id": "KL-2026-09-14-060009",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Should the Rs6,500/day ceiling step up? First formal weekly check under section 3e (added 2026-09-10) - NOT YET; logging this as the baseline reading, revisit next week",
-    "follow_up": "Re-ask this standing question at next weekly review (2026-09-21) with fresh frequency/CPM data and September's closing order count. If the same flat/stable pattern holds for a 2nd consecutive weekly check, propose a <=20% ceiling step at that point."
-  },
   "KL-2026-09-14-EXEC-045234": {
     "id": "KL-2026-09-14-EXEC-045234",
     "date": "2026-09-14",
@@ -152,6 +145,13 @@
     "type": "observation",
     "subject": "Delhi (ad set 6862975169176) - staggered creative-refresh sequence has concluded (1 of 4 tested and failed, 3 of 4 never activated), ad set reverted to its pre-experiment 2-ad state, and Stitchflow orders remain zero throughout",
     "follow_up": "campaign-strategist: decide whether to (a) resume the stalled sequence by activating Champagne Gold/Metallic Coffee Brown/Burnt Orange now that Deep Wine's own failure has been isolated as ad-specific rather than a sequence-wide problem, (b) treat the creative-adaptation lever as exhausted given 1 real failure and move to a harder disposition (budget reallocation/exclusion), or (c) hold pending the 4-6 week stop-rule window from KL-2026-09-07-020000 - that window's own clock was never cleanly started since the sequence never reached fully-live. Separately, creative-copywriter: resolve the null-SKU product mapping on ad 52547120579980 (Cutout Corset) - this is currently the Delhi ad set's largest spender with no per-product tracking possible."
+  },
+  "KL-2026-09-21-005300-scale-readiness": {
+    "id": "KL-2026-09-21-005300-scale-readiness",
+    "date": "2026-09-21",
+    "type": "observation",
+    "subject": "Should the Rs6,500/day ceiling step up - 2nd formal weekly check under section 3e: this week's data does NOT confirm the sustained flat/stable pattern KL-2026-09-14-060009 was watching for; Broad Advantage+ frequency and CPM both broke out of their prior 4-week range",
+    "follow_up": "campaign-strategist: this week's data argues against a ceiling step this cycle - frequency and CPM both moved adversely on the exact ad set being evaluated for headroom, and September's order count is a partial-month pace, not a closing figure. Recommend continuing to hold and re-reading next week with a clean, single-week trend before revisiting the <=20% step question; if the 1.42x/Rs147.89 reading proves to be one noisy week rather than a genuine turn, that should show up as a reversion next week."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
