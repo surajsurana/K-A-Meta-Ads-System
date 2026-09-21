@@ -90,13 +90,6 @@
     "subject": "CHMK030 (Chatak Neela, blue) Canada/USA siblings (ads 52530526191380, 52530526191780) - PAUSED",
     "follow_up": "Per KL-2026-09-14-011305's rollback criteria: if either ad set's qualified messaging/DM conversation volume drops materially within 7 days (by ~2026-09-21) with no offsetting pickup on that ad set's other active ads, reactivate the specific paused ad as a temporary bridge - that reactivation itself requires its own fresh, direct approval."
   },
-  "KL-2026-09-14-060005": {
-    "id": "KL-2026-09-14-060005",
-    "date": "2026-09-14",
-    "type": "decision",
-    "subject": "Per-product zero-order pattern (18 of 19 First Love/CHMK030 SKUs, ex-CHMK030/KA-040326-03) - MAINTAIN, best explained by made-to-order customization/cross-SKU conversion plus thin per-SKU samples, not a standing problem requiring action",
-    "follow_up": "No action this cycle. Continue the standing weekly section-3d sweep; revisit only if a specific SKU's spend concentrates heavily (per the CHMK030 threshold) or shows a corroborating fatigue/frequency signal."
-  },
   "KL-2026-09-14-EXEC-045234": {
     "id": "KL-2026-09-14-EXEC-045234",
     "date": "2026-09-14",
@@ -110,13 +103,6 @@
     "type": "change",
     "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - ACTIVE -> PAUSED (dormant container hygiene)",
     "follow_up": "None meaningful - per the plan's own rollback criteria, if this audience ever needs to run through this specific campaign structure again that would be a fresh build decision, not a revert of this pause."
-  },
-  "KL-2026-09-14-WEEKLY-04": {
-    "id": "KL-2026-09-14-WEEKLY-04",
-    "date": "2026-09-14",
-    "type": "observation",
-    "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
-    "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
   },
   "KL-2026-09-18-014634": {
     "id": "KL-2026-09-18-014634",
@@ -152,6 +138,13 @@
     "type": "observation",
     "subject": "Rafaey Master budget-cut (Rs250->Rs100/day, 2026-09-18) - 3 days of post-cut data pulled per this cycle's ask; data is genuinely too thin/mixed to cross either the restore or escalate-to-pause threshold yet, exactly as anticipated",
     "follow_up": "campaign-strategist: neither the restore-to-Rs250 nor the escalate-to-pause threshold from KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXEC's rollback criteria is clearly crossed yet - continue holding at Rs100/day and make the real call around 2026-09-23/24 as originally planned, once a few more days of data exist. If total_messaging_connection stays at zero for multiple additional days running (not just the 2 seen so far), that itself would be worth treating as an early escalate-to-pause signal even before the full 3-4 day window some may expect - flagging this specific metric (not just cost-per-conversation) as worth watching directly."
+  },
+  "KL-2026-09-21-005700-product-map": {
+    "id": "KL-2026-09-21-005700-product-map",
+    "date": "2026-09-21",
+    "type": "observation",
+    "subject": "Per-product spend-vs-orders sweep (60-day window, confirmed map entries) - CHMK030's zero-order Rs1,01,838 spend is already resolved via existing pause; the account's single biggest weekly-spend ad (Sargun Mehta Purple Corset, 52510022528580) remains unmapped a 2nd consecutive cycle, now spending Rs11,879.96 in a single week with zero per-product tracking possible",
+    "follow_up": "creative-copywriter: identify the product shown in ad 52510022528580 (Sargun Mehta Purple Corset) at the next interactive session and record via scripts/append-product-map.sh - this is now overdue given the ad's spend has grown materially since first flagged, not a new ask, but the growing spend raises the cost of leaving it unmapped another cycle."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
