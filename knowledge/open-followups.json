@@ -111,13 +111,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-005300-scale-readiness": {
-    "id": "KL-2026-09-21-005300-scale-readiness",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "Should the Rs6,500/day ceiling step up - 2nd formal weekly check under section 3e: this week's data does NOT confirm the sustained flat/stable pattern KL-2026-09-14-060009 was watching for; Broad Advantage+ frequency and CPM both broke out of their prior 4-week range",
-    "follow_up": "campaign-strategist: this week's data argues against a ceiling step this cycle - frequency and CPM both moved adversely on the exact ad set being evaluated for headroom, and September's order count is a partial-month pace, not a closing figure. Recommend continuing to hold and re-reading next week with a clean, single-week trend before revisiting the <=20% step question; if the 1.42x/Rs147.89 reading proves to be one noisy week rather than a genuine turn, that should show up as a reversion next week."
-  },
   "KL-2026-09-21-005500-rafaey-rollback": {
     "id": "KL-2026-09-21-005500-rafaey-rollback",
     "date": "2026-09-21",
@@ -145,6 +138,13 @@
     "type": "decision",
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
+  },
+  "KL-2026-09-21-CS-SCALE-READINESS": {
+    "id": "KL-2026-09-21-CS-SCALE-READINESS",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Should the Rs6,500/day ceiling step up - 2nd formal weekly check under section 3e - VERDICT: NOT YET, concur with performance-analyst; the sustained-trend clock resets, it does not advance",
+    "follow_up": "Re-ask this standing question next weekly review with fresh frequency/CPM data. If the 1.42x/Rs147.89 reading was one noisy week, next week should show reversion toward the prior 1.13x-1.30x/Rs56-134 range - that reversion, sustained across a further week or two after it, is what would restart a genuine 'consecutive confirming checks' count toward a <=20% step."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
