@@ -111,13 +111,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-005100-geo-delhi": {
-    "id": "KL-2026-09-21-005100-geo-delhi",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "Delhi (ad set 6862975169176) - staggered creative-refresh sequence has concluded (1 of 4 tested and failed, 3 of 4 never activated), ad set reverted to its pre-experiment 2-ad state, and Stitchflow orders remain zero throughout",
-    "follow_up": "campaign-strategist: decide whether to (a) resume the stalled sequence by activating Champagne Gold/Metallic Coffee Brown/Burnt Orange now that Deep Wine's own failure has been isolated as ad-specific rather than a sequence-wide problem, (b) treat the creative-adaptation lever as exhausted given 1 real failure and move to a harder disposition (budget reallocation/exclusion), or (c) hold pending the 4-6 week stop-rule window from KL-2026-09-07-020000 - that window's own clock was never cleanly started since the sequence never reached fully-live. Separately, creative-copywriter: resolve the null-SKU product mapping on ad 52547120579980 (Cutout Corset) - this is currently the Delhi ad set's largest spender with no per-product tracking possible."
-  },
   "KL-2026-09-21-005300-scale-readiness": {
     "id": "KL-2026-09-21-005300-scale-readiness",
     "date": "2026-09-21",
@@ -138,6 +131,13 @@
     "type": "observation",
     "subject": "Per-product spend-vs-orders sweep (60-day window, confirmed map entries) - CHMK030's zero-order Rs1,01,838 spend is already resolved via existing pause; the account's single biggest weekly-spend ad (Sargun Mehta Purple Corset, 52510022528580) remains unmapped a 2nd consecutive cycle, now spending Rs11,879.96 in a single week with zero per-product tracking possible",
     "follow_up": "creative-copywriter: identify the product shown in ad 52510022528580 (Sargun Mehta Purple Corset) at the next interactive session and record via scripts/append-product-map.sh - this is now overdue given the ad's spend has grown materially since first flagged, not a new ask, but the growing spend raises the cost of leaving it unmapped another cycle."
+  },
+  "KL-2026-09-21-CS-GEO-DELHI": {
+    "id": "KL-2026-09-21-CS-GEO-DELHI",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Delhi (ad set 6862975169176) - DISPOSITION: resume the staggered creative-refresh sequence (activate the next candidate), not yet 'exhausted' - but set an explicit, dated stop-rule this time",
+    "follow_up": "media-buyer: prepare an activation plan for Champagne Gold (ad 52552969624980, ad set 6862975169176) per the existing guardrail-11 staggered process (same mechanism already used for Deep Wine). creative-copywriter: resolve the Cutout Corset (52547120579980) null-SKU mapping - second priority behind the Sargun Mehta gap. campaign-strategist: re-assess with a real disposition call (not a further hold) once the remaining 3 candidates have each had their own staggered trial, or by roughly mid-to-late October, whichever comes first."
   },
   "KL-2026-09-21-CS-GEO-UPDR": {
     "id": "KL-2026-09-21-CS-GEO-UPDR",
