@@ -1,2 +1,3 @@
 {"id":"PERF-2026-W36","granularity":"weekly","period_start":"2026-08-31","period_end":"2026-09-06","spend":42046.74,"orders":14,"order_value":1133800,"blended_cpo":3003.34,"blended_roas":26.97,"generated_at":"2026-09-07T01:34:00Z","source":"weekly-review"}
 {"id":"PERF-2026-W37","granularity":"weekly","period_start":"2026-09-07","period_end":"2026-09-13","spend":41332.31,"orders":20,"order_value":2035000,"blended_cpo":2066.62,"blended_roas":49.24,"generated_at":"2026-09-14T01:15:47Z","source":"weekly-review"}
+{"id":"PERF-2026-W38","granularity":"weekly","period_start":"2026-09-14","period_end":"2026-09-20","spend":41765.39,"orders":24,"order_value":2162822,"blended_cpo":1740.22,"blended_roas":51.79,"generated_at":"2026-09-21T01:10:00Z","source":"weekly-review"}
