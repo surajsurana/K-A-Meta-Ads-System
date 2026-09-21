@@ -118,12 +118,12 @@
     "subject": "First Love | Interest Stack (52535906794980) - build new PAUSED ad reusing the proven KAFL003 Peach Muted Gold creative alongside Three Expressions",
     "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then build the new ad exactly as specified (PAUSED), run the verification GETs, call scripts/append-product-map.sh with the ad_ids-completeness correction once the real ad_id is known, and log a linked type:change entry. Activation is a SEPARATE future decision, not included in or authorized by this plan - stagger it per guardrail 11 and route through its own approval/verification cycle once the build is confirmed clean."
   },
-  "KL-2026-09-21-015048": {
-    "id": "KL-2026-09-21-015048",
+  "KL-2026-09-21-015233": {
+    "id": "KL-2026-09-21-015233",
     "date": "2026-09-21",
-    "type": "observation",
-    "subject": "CHMK030 Canada/USA pause - 7-day rollback check (due 2026-09-21)",
-    "follow_up": "campaign-strategist to make the disposition call on the USA ad set: whether to reactivate CHMK030 as a literal bridge per the original rollback criteria despite the causal mismatch, treat the decline as a separate finding about Every Crystal Placed by Hand needing its own investigation, or hold/maintain and continue monitoring - Canada side is closed, no action needed there."
+    "type": "decision",
+    "subject": "CHMK030 USA rollback check (KL-2026-09-21-015048) - DISPOSITION: HOLD, causal analysis overrides the literal trigger",
+    "follow_up": "No live action this cycle. Re-check 'Every Crystal Placed by Hand' (ad set 6529679555376) as part of next week's normal weekly review, not a new standalone dated check - if its softening continues or worsens, that's the point to actually diagnose it (fatigue, creative refresh, overlap)."
   },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
