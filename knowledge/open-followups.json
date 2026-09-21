@@ -118,13 +118,6 @@
     "subject": "Rafaey Master budget-cut (Rs250->Rs100/day, 2026-09-18) - 3 days of post-cut data pulled per this cycle's ask; data is genuinely too thin/mixed to cross either the restore or escalate-to-pause threshold yet, exactly as anticipated",
     "follow_up": "campaign-strategist: neither the restore-to-Rs250 nor the escalate-to-pause threshold from KL-2026-09-18-MB-RAFAEY-BUDGETCUT-PLAN-EXEC's rollback criteria is clearly crossed yet - continue holding at Rs100/day and make the real call around 2026-09-23/24 as originally planned, once a few more days of data exist. If total_messaging_connection stays at zero for multiple additional days running (not just the 2 seen so far), that itself would be worth treating as an early escalate-to-pause signal even before the full 3-4 day window some may expect - flagging this specific metric (not just cost-per-conversation) as worth watching directly."
   },
-  "KL-2026-09-21-005700-product-map": {
-    "id": "KL-2026-09-21-005700-product-map",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders sweep (60-day window, confirmed map entries) - CHMK030's zero-order Rs1,01,838 spend is already resolved via existing pause; the account's single biggest weekly-spend ad (Sargun Mehta Purple Corset, 52510022528580) remains unmapped a 2nd consecutive cycle, now spending Rs11,879.96 in a single week with zero per-product tracking possible",
-    "follow_up": "creative-copywriter: identify the product shown in ad 52510022528580 (Sargun Mehta Purple Corset) at the next interactive session and record via scripts/append-product-map.sh - this is now overdue given the ad's spend has grown materially since first flagged, not a new ask, but the growing spend raises the cost of leaving it unmapped another cycle."
-  },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
     "date": "2026-09-21",
@@ -145,6 +138,13 @@
     "type": "decision",
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
+  },
+  "KL-2026-09-21-CS-INTERESTSTACK": {
+    "id": "KL-2026-09-21-CS-INTERESTSTACK",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (52535906794980), single-ad ad set running only 'Three Expressions' - worth one more staggered test, using an already-proven First Love creative rather than another blind new variant",
+    "follow_up": "media-buyer: identify an existing ad already featuring KAFL002 or KAFL003 and prepare a PAUSED duplicate-build plan into ad set 52535906794980; stagger activation per guardrail 11 once live."
   },
   "KL-2026-09-21-CS-OWNCONTENT-HOLD": {
     "id": "KL-2026-09-21-CS-OWNCONTENT-HOLD",
