@@ -125,6 +125,13 @@
     "subject": "Per-product spend-vs-orders sweep (60-day window, confirmed map entries) - CHMK030's zero-order Rs1,01,838 spend is already resolved via existing pause; the account's single biggest weekly-spend ad (Sargun Mehta Purple Corset, 52510022528580) remains unmapped a 2nd consecutive cycle, now spending Rs11,879.96 in a single week with zero per-product tracking possible",
     "follow_up": "creative-copywriter: identify the product shown in ad 52510022528580 (Sargun Mehta Purple Corset) at the next interactive session and record via scripts/append-product-map.sh - this is now overdue given the ad's spend has grown materially since first flagged, not a new ask, but the growing spend raises the cost of leaving it unmapped another cycle."
   },
+  "KL-2026-09-21-CS-BUDGET-CHECK": {
+    "id": "KL-2026-09-21-CS-BUDGET-CHECK",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - weekly review 2026-09-21",
+    "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of any of this cycle's resulting ad-level plans (Champagne Gold activation, Interest Stack candidate build)."
+  },
   "KL-2026-09-21-CS-GEO-DELHI": {
     "id": "KL-2026-09-21-CS-GEO-DELHI",
     "date": "2026-09-21",
