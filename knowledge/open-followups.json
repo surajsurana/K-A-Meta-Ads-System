@@ -111,13 +111,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-004830-geo-updr": {
-    "id": "KL-2026-09-21-004830-geo-updr",
-    "date": "2026-09-21",
-    "type": "observation",
-    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern - re-run per KL-2026-09-14-060003 follow_up, NOW WITH LIFETIME BASELINE: all three states DID convert historically, current zero-order streak is a regression not an absence-of-baseline case",
-    "follow_up": "campaign-strategist: now that lifetime baseline data confirms UP/Rajasthan/MP are proven-then-dropped markets (not never-converted markets), issue one of the eight geography dispositions this cycle rather than holding a third time. These three states are served entirely by broad-targeting ad sets (no dedicated ad set exists, unlike Delhi), so a creative-currency check on one specific ad set does not cleanly apply - worth deciding whether that changes which disposition is appropriate."
-  },
   "KL-2026-09-21-005100-geo-delhi": {
     "id": "KL-2026-09-21-005100-geo-delhi",
     "date": "2026-09-21",
@@ -145,6 +138,13 @@
     "type": "observation",
     "subject": "Per-product spend-vs-orders sweep (60-day window, confirmed map entries) - CHMK030's zero-order Rs1,01,838 spend is already resolved via existing pause; the account's single biggest weekly-spend ad (Sargun Mehta Purple Corset, 52510022528580) remains unmapped a 2nd consecutive cycle, now spending Rs11,879.96 in a single week with zero per-product tracking possible",
     "follow_up": "creative-copywriter: identify the product shown in ad 52510022528580 (Sargun Mehta Purple Corset) at the next interactive session and record via scripts/append-product-map.sh - this is now overdue given the ad's spend has grown materially since first flagged, not a new ask, but the growing spend raises the cost of leaving it unmapped another cycle."
+  },
+  "KL-2026-09-21-CS-GEO-UPDR": {
+    "id": "KL-2026-09-21-CS-GEO-UPDR",
+    "date": "2026-09-21",
+    "type": "decision",
+    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
+    "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
