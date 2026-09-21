@@ -104,13 +104,6 @@
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
   },
-  "KL-2026-09-21-010602": {
-    "id": "KL-2026-09-21-010602",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - activate Champagne Gold (ad 52552969624980), 2nd of 4 staggered Delhi creative-refresh candidates",
-    "follow_up": "marketing-lead: seek Suraj's approval via scripts/send-telegram-approval.sh, then execute status PAUSED -> ACTIVE on ad 52552969624980 only, run the verification GETs listed above, and log a linked type:change entry. Continue the staggered checkpoint cadence (3-4 day, ~7-10 day) before any decision on Metallic Coffee Brown (52552969628580) or Burnt Orange (52552969630380) - those remain separate future decisions, not bundled here."
-  },
   "KL-2026-09-21-010603": {
     "id": "KL-2026-09-21-010603",
     "date": "2026-09-21",
@@ -173,6 +166,13 @@
     "type": "decision",
     "subject": "UGC disposition - @styled_bytan reel (18114297670947213, instagram.com/reel/DdbcaT4t0M1/) - my read: strong ad-test candidate on brand-fit merits, but not actionable this cycle due to the media_url asset-retrieval blocker",
     "follow_up": "If Suraj approves pursuing the raw file: once obtained, hand to creative-copywriter to identify/confirm product mapping and prep a repost + ad-test plan (new ad/ad-set test disposition, First Love or relevant collection depending on the actual product shown), then media-buyer for a build plan. If rejected or held, no further action pending a status change."
+  },
+  "KL-2026-09-21-EXEC-CHAMPAGNEGOLD": {
+    "id": "KL-2026-09-21-EXEC-CHAMPAGNEGOLD",
+    "date": "2026-09-21",
+    "type": "change",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - ad 52552969624980 (WhatsApp India | Champagne Gold Corset+Lehenga) status PAUSED -> ACTIVE, 2nd of 4 staggered Delhi creative-refresh candidates",
+    "follow_up": "Per KL-2026-09-21-010602s rollback criteria: (a) if a policy/disapproval flag appears, re-pause immediately and flag back; (b) 24h early pacing check against sibling delivery rates; (c) 3-4 day and ~7-10 day performance checkpoints comparing Champagne Golds cost-per-conversation against trailing average of Gun Metal Grey + Cutout Corset; (d) watch for material drop in ad set total messaging-connection volume. Metallic Coffee Brown and Burnt Orange remain separate future staggered-activation decisions, not bundled here."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
