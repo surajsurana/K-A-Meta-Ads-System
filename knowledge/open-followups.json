@@ -125,13 +125,6 @@
     "subject": "creative-product-map.jsonl video_id staleness - Ice Blue (KAFL026), Silver Stone (KAFL012), Crimson Red/Ruby (KAFL022) recorded video_ids no longer match any live ad; ad 52510022528580 (now accounts single biggest weekly spender) still has no map entry",
     "follow_up": "Next interactive session: creative-copywriter to (1) re-verify Ice Blue/Silver Stone/Crimson Red Bustiers 6 regional ads still show the recorded SKUs and refresh the map entries video_id/ad_ids, (2) identify the product for ad 52510022528580 and record via append-product-map.sh."
   },
-  "KL-2026-09-17-EXEC-020018": {
-    "id": "KL-2026-09-17-EXEC-020018",
-    "date": "2026-09-17",
-    "type": "change",
-    "subject": "Whatsapp Message | 29th Nov 2025 - ad set India | Whatsapp | 9th Dec 25 - ad 'WhatsApp India | Deep Wine Corset+Lehenga' (52552969618380) - ACTIVE -> PAUSED",
-    "follow_up": "None automatic - this ad is now OFF and there is no forward-looking performance threshold to monitor on it per the plan. A future reactivation, if ever considered, requires a fresh, separately-dated re-test plan, not reference to this pause's data."
-  },
   "KL-2026-09-18-014634": {
     "id": "KL-2026-09-18-014634",
     "date": "2026-09-18",
@@ -152,6 +145,13 @@
     "type": "observation",
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend pattern - re-run per KL-2026-09-14-060003 follow_up, NOW WITH LIFETIME BASELINE: all three states DID convert historically, current zero-order streak is a regression not an absence-of-baseline case",
     "follow_up": "campaign-strategist: now that lifetime baseline data confirms UP/Rajasthan/MP are proven-then-dropped markets (not never-converted markets), issue one of the eight geography dispositions this cycle rather than holding a third time. These three states are served entirely by broad-targeting ad sets (no dedicated ad set exists, unlike Delhi), so a creative-currency check on one specific ad set does not cleanly apply - worth deciding whether that changes which disposition is appropriate."
+  },
+  "KL-2026-09-21-005100-geo-delhi": {
+    "id": "KL-2026-09-21-005100-geo-delhi",
+    "date": "2026-09-21",
+    "type": "observation",
+    "subject": "Delhi (ad set 6862975169176) - staggered creative-refresh sequence has concluded (1 of 4 tested and failed, 3 of 4 never activated), ad set reverted to its pre-experiment 2-ad state, and Stitchflow orders remain zero throughout",
+    "follow_up": "campaign-strategist: decide whether to (a) resume the stalled sequence by activating Champagne Gold/Metallic Coffee Brown/Burnt Orange now that Deep Wine's own failure has been isolated as ad-specific rather than a sequence-wide problem, (b) treat the creative-adaptation lever as exhausted given 1 real failure and move to a harder disposition (budget reallocation/exclusion), or (c) hold pending the 4-6 week stop-rule window from KL-2026-09-07-020000 - that window's own clock was never cleanly started since the sequence never reached fully-live. Separately, creative-copywriter: resolve the null-SKU product mapping on ad 52547120579980 (Cutout Corset) - this is currently the Delhi ad set's largest spender with no per-product tracking possible."
   },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
