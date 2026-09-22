@@ -160,18 +160,18 @@
     "subject": "Built new PAUSED ad in First Love | Interest Stack reusing KAFL003 (Peach Muted Gold) creative",
     "follow_up": "Activation of ad 52556519208180 is a separate future decision, not authorized by this execution - requires its own approval/verification cycle per guardrail 11 staggering discipline before any spend is turned on."
   },
-  "KL-2026-09-21-EXEC-CHAMPAGNEGOLD": {
-    "id": "KL-2026-09-21-EXEC-CHAMPAGNEGOLD",
-    "date": "2026-09-21",
-    "type": "change",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - ad 52552969624980 (WhatsApp India | Champagne Gold Corset+Lehenga) status PAUSED -> ACTIVE, 2nd of 4 staggered Delhi creative-refresh candidates",
-    "follow_up": "Per KL-2026-09-21-010602s rollback criteria: (a) if a policy/disapproval flag appears, re-pause immediately and flag back; (b) 24h early pacing check against sibling delivery rates; (c) 3-4 day and ~7-10 day performance checkpoints comparing Champagne Golds cost-per-conversation against trailing average of Gun Metal Grey + Cutout Corset; (d) watch for material drop in ad set total messaging-connection volume. Metallic Coffee Brown and Burnt Orange remain separate future staggered-activation decisions, not bundled here."
-  },
   "KL-2026-09-21-comment-batch": {
     "id": "KL-2026-09-21-comment-batch",
     "date": "2026-09-21",
     "type": "decision",
     "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
     "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
+  },
+  "KL-2026-09-22-014500": {
+    "id": "KL-2026-09-22-014500",
+    "date": "2026-09-22",
+    "type": "outcome",
+    "subject": "Champagne Gold (ad 52552969624980) 24h early-pacing checkpoint - RESULT: NOT CLEAN, anomaly found, escalation needed",
+    "follow_up": "Escalate to campaign-strategist: Gun Metal Grey (52547120592180) has had zero delivery for 2 consecutive days since Champagne Gold activated, and ad-set CTR has more than halved over the same window - decide whether this is expected/acceptable auction reallocation within the ad set, or whether it warrants an early intervention (e.g. checking Champagne Golds own conversation-quality/cost-per-conversation now rather than waiting for the 3-4 day checkpoint). Do not treat this entry as authorizing any change - performance-analyst has no write access."
   }
 }
