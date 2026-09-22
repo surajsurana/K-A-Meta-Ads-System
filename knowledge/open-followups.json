@@ -167,11 +167,11 @@
     "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
     "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
   },
-  "KL-2026-09-22-014500": {
-    "id": "KL-2026-09-22-014500",
+  "KL-2026-09-22-014600": {
+    "id": "KL-2026-09-22-014600",
     "date": "2026-09-22",
-    "type": "outcome",
-    "subject": "Champagne Gold (ad 52552969624980) 24h early-pacing checkpoint - RESULT: NOT CLEAN, anomaly found, escalation needed",
-    "follow_up": "Escalate to campaign-strategist: Gun Metal Grey (52547120592180) has had zero delivery for 2 consecutive days since Champagne Gold activated, and ad-set CTR has more than halved over the same window - decide whether this is expected/acceptable auction reallocation within the ad set, or whether it warrants an early intervention (e.g. checking Champagne Golds own conversation-quality/cost-per-conversation now rather than waiting for the 3-4 day checkpoint). Do not treat this entry as authorizing any change - performance-analyst has no write access."
+    "type": "observation",
+    "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25) - complete same-ad-set delivery cutoff for one sibling ad, not just proportional share-shift, on new-ad activation",
+    "follow_up": "campaign-strategist to decide whether this within-ad-set cutoff pattern changes anything about the remaining staggered activations (Metallic Coffee Brown, Burnt Orange) or the 3-4 day Champagne Gold checkpoint timing - no action taken by performance-analyst, read-only finding only."
   }
 }
