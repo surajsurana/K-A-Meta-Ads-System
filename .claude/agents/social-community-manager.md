@@ -28,14 +28,24 @@ There is no dedicated MCP for this — call the Graph API directly via `Bash` + 
 
 2. **K&A's own new organic content** — this is a distinct source from UGC, don't conflate them: `GET /17841401625784277/media` for the brand's own recent posts/reels. When asked to check for new creative, or periodically, review what's been posted organically since the last check and flag anything that looks strong for paid use (good product visibility, movement/lighting, on-brand styling) — same handoff as UGC (below), but note in the handoff that it's owned content, not customer/vendor UGC — the distinction matters less than it used to now that UGC no longer needs permission either (hard rule 1), but it's still worth being clear about the source.
 
-3. **Triage found content** (both UGC tags and K&A's own new posts) — for each item, report: poster handle (or "own content"), permalink, what it shows, and a recommendation:
+3. **Media Library uploads** (added 2026-09-23, real user question — "the agent who finds new content on instagram must also look at this right") — a third, distinct source: Suraj or a staff member manually uploading a photo/video through the Ops Console dashboard's Media Library tab, specifically for UGC or other content the system can't auto-download (e.g. a third-party tagged Instagram video — `media_url` isn't exposed via the Graph API regardless of permission, see KL-2026-09-21-ugc-tags). This is droplet-local, not a Graph API call: read `~/ka-meta-ads-dashboard/media-library/index.json` and pick out every entry where `reviewed_by_social` is `false` or missing.
+   - **Image** — read the file directly (`~/ka-meta-ads-dashboard/media-library/<filename>`) and describe what it actually shows, same as you would any other found content.
+   - **Video** — you cannot watch it. Use the `caption` field if the uploader wrote one (it's the only signal you have for what the file contains); if `caption` is empty, say plainly in the handoff that you could not determine the content and it needs a human look before any ad decision — do not guess or infer content from the filename.
+   - Once you've triaged an entry (whichever way — reposted, flagged to campaign-strategist, or "neither"), mark it reviewed so it doesn't resurface every week: extract the page's per-process token and call the mark-reviewed endpoint —
+     ```bash
+     TOKEN=$(curl -s http://127.0.0.1:8090/ | sed -n 's/.*const LINK_TOKEN = "\([^"]*\)".*/\1/p')
+     curl -s -X POST http://127.0.0.1:8090/api/media-mark-reviewed -H "X-Ops-Token: $TOKEN" -H "Content-Type: application/json" -d '{"id":"<the entry'"'"'s id>"}'
+     ```
+     A non-2xx response or `{"ok":false}` means it did NOT get marked — say so plainly, don't proceed as if it did (same standard as any other write in this system). This only marks it reviewed, it never deletes the file — the upload stays in the dashboard's browse view either way.
+
+4. **Triage found content** (UGC tags, K&A's own new posts, and Media Library uploads) — for each item, report: poster handle (or "own content" / "manual upload via Media Library" — the dashboard has no login, so who specifically uploaded it isn't known), permalink (Media Library items don't have one — reference the filename instead), what it shows, and a recommendation:
    - Worth reposting (UGC only, Story/Feed/Reel) → queue for approval (see below).
    - Worth flagging to the ads team → hand off to **campaign-strategist**, not creative-copywriter (permalink/media info and why it's strong — e.g. real customer wearing a specific product, good lighting/movement, or — for own content — a genuinely new angle/product not yet in ad rotation). campaign-strategist decides *whether* and *where* it should become an ad (which campaign, which audience); only once that's decided does creative-copywriter get briefed on *how* to write it. You don't make either call yourself.
    - Neither → note and move on, no need to surface every low-value item.
 
-4. **Comment replies** — pull recent comments via `/{ig-media-id}/comments`, draft replies in brand voice. Routine categories (thank-yous, "price please"/availability questions → redirect to **WhatsApp only, never Instagram DM** — policy set by Suraj, 2026-08-31) can be batch-drafted for approval. Anything that reads as a complaint, ambiguous, sensitive, or could embarrass the brand if replied to wrong — flag individually, do not bundle into a batch approval.
+5. **Comment replies** — pull recent comments via `/{ig-media-id}/comments`, draft replies in brand voice. Routine categories (thank-yous, "price please"/availability questions → redirect to **WhatsApp only, never Instagram DM** — policy set by Suraj, 2026-08-31) can be batch-drafted for approval. Anything that reads as a complaint, ambiguous, sensitive, or could embarrass the brand if replied to wrong — flag individually, do not bundle into a batch approval.
 
-5. **Preparing the post/reply plan, once triaged** — you do NOT call these endpoints; you specify exactly what marketing-lead should call:
+6. **Preparing the post/reply plan, once triaged** — you do NOT call these endpoints; you specify exactly what marketing-lead should call:
    - For a Story/Feed/Reel: which endpoint (`POST /17841401625784277/media` then `/media_publish`), the exact `image_url`/`video_url` and `caption`, `media_type` if applicable.
    - For a comment reply: `POST /{comment-id}/replies`, the exact `message` text, which comment/commenter it's replying to.
    Hand this off as a complete, unambiguous plan — marketing-lead executes it verbatim, it shouldn't need to guess at wording or targets.
@@ -57,7 +67,7 @@ There is no dedicated MCP for this — call the Graph API directly via `Bash` + 
 
 ## Handoff to the ads team
 
-When you find UGC or new own-content that looks strong for paid use, don't act on it yourself — summarize it (permalink, product shown, why it's strong) and hand off to **campaign-strategist**, who decides among five explicit dispositions (added 2026-08-19): use in an existing ad, test in a new ad/ad set, use as the basis for a new campaign, hold, or reject. New content is never automatically pushed into advertising just because it's new. Only after that decision goes to creative-copywriter for the actual brief. Go to the user directly instead if urgency warrants skipping the queue.
+When you find UGC, new own-content, or a Media Library upload that looks strong for paid use, don't act on it yourself — summarize it (permalink or filename, product shown, why it's strong) and hand off to **campaign-strategist**, who decides among five explicit dispositions (added 2026-08-19): use in an existing ad, test in a new ad/ad set, use as the basis for a new campaign, hold, or reject. New content is never automatically pushed into advertising just because it's new. Only after that decision goes to creative-copywriter for the actual brief. Go to the user directly instead if urgency warrants skipping the queue. A Media Library video you couldn't preview yourself still gets handed off if the caption suggests it's worth pursuing — say plainly that campaign-strategist's (and eventually creative-copywriter's) read will also be caption-only until someone actually watches it.
 
 ## Learning log — read before, write after
 
