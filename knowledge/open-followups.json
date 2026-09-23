@@ -139,13 +139,6 @@
     "subject": "Ad 52510022528580 ('Sargun Mehta Purple Corset') - unmapped and now the account's single biggest weekly ad-level spend line (Rs11,879.96) - flagging as top priority for creative-copywriter's next interactive session",
     "follow_up": "creative-copywriter resolves both mapping gaps at next interactive session, Sargun Mehta first, then Cutout Corset."
   },
-  "KL-2026-09-21-CS-RAFAEY-DEFER": {
-    "id": "KL-2026-09-21-CS-RAFAEY-DEFER",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "Rafaey Master budget-cut (ad set 52551343010580) - confirming performance-analyst's judgment: defer the restore/pause call to ~2026-09-23/24, data is genuinely too thin this cycle to decide either way",
-    "follow_up": "Revisit the restore/pause call 2026-09-23/24 with fresh data, watching total_messaging_connection specifically (not just cost-per-conversation) per performance-analyst's own flag. creative-copywriter to deliver the outstanding creative-refresh brief for this ad set independent of that date."
-  },
   "KL-2026-09-21-CS-SCALE-READINESS": {
     "id": "KL-2026-09-21-CS-SCALE-READINESS",
     "date": "2026-09-21",
@@ -166,5 +159,12 @@
     "type": "decision",
     "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
     "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
+  },
+  "KL-2026-09-23-015103": {
+    "id": "KL-2026-09-23-015103",
+    "date": "2026-09-23",
+    "type": "decision",
+    "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - validated execution plan: PAUSE, escalate-to-pause trigger MET",
+    "follow_up": "Awaiting Surajs direct approval via scripts/send-telegram-approval.sh KL-2026-09-23-015103. Not executed in this unattended run per guardrail 13/hard rule 2 - media-buyer never calls a write endpoint. Once approved, marketing-lead executes verbatim (status PAUSED only, daily_budget untouched) and logs a linked type:change entry with the verification GET results."
   }
 }
