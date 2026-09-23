@@ -132,13 +132,6 @@
     "subject": "2 new own-brand image carousels (09-17, 09-19) - HOLD on paid use, same video-default reasoning as the prior 4; concur with social-community-manager's direct escalation of the underlying video drought",
     "follow_up": "No paid action this cycle for either carousel. Revisit if Suraj's response to the escalation changes the video-default policy or produces new video content."
   },
-  "KL-2026-09-21-CS-PRODUCTMAP-PRIORITY": {
-    "id": "KL-2026-09-21-CS-PRODUCTMAP-PRIORITY",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "Ad 52510022528580 ('Sargun Mehta Purple Corset') - unmapped and now the account's single biggest weekly ad-level spend line (Rs11,879.96) - flagging as top priority for creative-copywriter's next interactive session",
-    "follow_up": "creative-copywriter resolves both mapping gaps at next interactive session, Sargun Mehta first, then Cutout Corset."
-  },
   "KL-2026-09-21-CS-SCALE-READINESS": {
     "id": "KL-2026-09-21-CS-SCALE-READINESS",
     "date": "2026-09-21",
@@ -166,5 +159,12 @@
     "type": "change",
     "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - status ACTIVE -> PAUSED",
     "follow_up": "Per KL-2026-09-23-015103s rollback criteria: (a) reactivate only if a genuinely new creative refresh lands AND campaign-strategist explicitly proposes a fresh trial; (b) leave permanently retired if no refresh materializes within the next 1-2 weekly reviews or a fresh trial repeats the same zero-connection pattern; (c) do not reactivate on cost-per-conversation alone without total_messaging_connection also recovering."
+  },
+  "KL-2026-09-23-020815-PRODMAP-BESPOKE": {
+    "id": "KL-2026-09-23-020815-PRODMAP-BESPOKE",
+    "date": "2026-09-23",
+    "type": "observation",
+    "subject": "Per-product spend-vs-orders check (section 3d) - exact catalog-name/SKU matching against Stitchflow list_orders structurally undercounts real orders for this bespoke made-to-order business",
+    "follow_up": "Before treating any single SKU's 0-matched-order result as a real 'spend without orders' finding, do a secondary manual check (customer-name/phone/timing correlation against Stitchflow, per this agent's existing standing practice for campaign-level attribution) rather than relying on the exact-text match alone - especially for the highest-spend 0-match SKUs (CHMK030 ~Rs99,044/60d, KAFL004 ~Rs51,752/60d, KAFL006 ~Rs17,481/60d). A structural fix (asking Stitchflow's team whether order items could carry a real SKU field, or improving product_id linkage reliability) would benefit every future run of this check, not just this one - worth raising to whoever owns the Stitchflow integration relationship."
   }
 }
