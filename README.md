@@ -12,14 +12,14 @@ Six Claude Code subagents (`.claude/agents/*.md`) — `marketing-lead` (orchestr
 
 ## How to work with this project
 
-- **Interactive work:** open this folder directly as its own VS Code workspace root (not nested under another folder) — that's what lets Claude Code discover and dispatch the six agents by name via the Agent/Task tool.
+- **Interactive work:** open this folder directly as its own VS Code workspace root (not nested under another folder) — that's what lets Claude Code discover and dispatch the seven agents by name via the Agent/Task tool.
 - **Scheduled/unattended work:** three cadences (daily heartbeat, weekly full review, monthly Strategic Intelligence Review) run headlessly on the existing DigitalOcean droplet, triggered by cron, via `scripts/run-*.sh`. Full design in [`docs/proactive-operations.md`](docs/proactive-operations.md).
 - **GitHub is the only path** project changes travel between VS Code and the droplet — the droplet hard-syncs to `origin`'s exact state before every scheduled run. Secrets and operational logs never touch GitHub; see `.gitignore` and `docs/proactive-operations.md` §3/§7.
 
 ## Repo layout
 
 ```
-.claude/agents/     the 6 agent definitions
+.claude/agents/     the 7 agent definitions
 docs/                architecture.md (source of truth), brand-brief.md, learning-layer-design.md,
                       proactive-operations.md, current-architecture-migration-handover.md (history)
 knowledge/           learning-log.jsonl (append-only memory), RETRIEVAL.md (query recipes)
