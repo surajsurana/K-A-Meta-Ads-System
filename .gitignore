@@ -17,3 +17,7 @@ logs/
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Google Ads / Merchant Center OAuth credentials (refresh token = full account control)
+google_ads_credentials.json
+client_secret*.json
