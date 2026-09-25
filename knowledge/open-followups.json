@@ -83,13 +83,6 @@
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
   },
-  "KL-2026-09-14-EXEC-045234": {
-    "id": "KL-2026-09-14-EXEC-045234",
-    "date": "2026-09-14",
-    "type": "change",
-    "subject": "First Love | Maharashtra-Mumbai Geo Test (ad set 52548730319980) - PAUSED, reallocated Rs150/day to Broad Advantage+ (ad set 52535906903180)",
-    "follow_up": "Per the plan's rollback criteria: if Broad Advantage+ shows a saturation signal within 1-2 weeks post-increase (frequency climbing materially above its current 1.14-1.32x range, or CPM rising materially above its current Rs56-139 range), reduce daily_budget back to 85000 (Rs850/day). Re-testing an isolated Maharashtra geo ad set would require a fresh campaign-strategist proposal with new evidence, not an automatic revert."
-  },
   "KL-2026-09-14-EXEC-045625": {
     "id": "KL-2026-09-14-EXEC-045625",
     "date": "2026-09-14",
@@ -103,13 +96,6 @@
     "type": "observation",
     "subject": "Midnight Blue Drape Saree ad (52547120416180) - naming discrepancy found during daily heartbeat spend-threshold check",
     "follow_up": "Next interactive session: creative-copywriter to check whether the creative under this ad ID was swapped without the learning-log/product-map being updated, or whether this is a mapping mix-up between two different ad IDs, before any real disposition review of the Saree ad spend threshold happens."
-  },
-  "KL-2026-09-21-015233": {
-    "id": "KL-2026-09-21-015233",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "CHMK030 USA rollback check (KL-2026-09-21-015048) - DISPOSITION: HOLD, causal analysis overrides the literal trigger",
-    "follow_up": "No live action this cycle. Re-check 'Every Crystal Placed by Hand' (ad set 6529679555376) as part of next week's normal weekly review, not a new standalone dated check - if its softening continues or worsens, that's the point to actually diagnose it (fatigue, creative refresh, overlap)."
   },
   "KL-2026-09-21-CS-BUDGET-CHECK": {
     "id": "KL-2026-09-21-CS-BUDGET-CHECK",
@@ -131,13 +117,6 @@
     "type": "decision",
     "subject": "2 new own-brand image carousels (09-17, 09-19) - HOLD on paid use, same video-default reasoning as the prior 4; concur with social-community-manager's direct escalation of the underlying video drought",
     "follow_up": "No paid action this cycle for either carousel. Revisit if Suraj's response to the escalation changes the video-default policy or produces new video content."
-  },
-  "KL-2026-09-21-CS-SCALE-READINESS": {
-    "id": "KL-2026-09-21-CS-SCALE-READINESS",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "Should the Rs6,500/day ceiling step up - 2nd formal weekly check under section 3e - VERDICT: NOT YET, concur with performance-analyst; the sustained-trend clock resets, it does not advance",
-    "follow_up": "Re-ask this standing question next weekly review with fresh frequency/CPM data. If the 1.42x/Rs147.89 reading was one noisy week, next week should show reversion toward the prior 1.13x-1.30x/Rs56-134 range - that reversion, sustained across a further week or two after it, is what would restart a genuine 'consecutive confirming checks' count toward a <=20% step."
   },
   "KL-2026-09-21-EXEC-010603": {
     "id": "KL-2026-09-21-EXEC-010603",
@@ -166,5 +145,12 @@
     "type": "observation",
     "subject": "Per-product spend-vs-orders check (section 3d) - exact catalog-name/SKU matching against Stitchflow list_orders structurally undercounts real orders for this bespoke made-to-order business",
     "follow_up": "Before treating any single SKU's 0-matched-order result as a real 'spend without orders' finding, do a secondary manual check (customer-name/phone/timing correlation against Stitchflow, per this agent's existing standing practice for campaign-level attribution) rather than relying on the exact-text match alone - especially for the highest-spend 0-match SKUs (CHMK030 ~Rs99,044/60d, KAFL004 ~Rs51,752/60d, KAFL006 ~Rs17,481/60d). A structural fix (asking Stitchflow's team whether order items could carry a real SKU field, or improving product_id linkage reliability) would benefit every future run of this check, not just this one - worth raising to whoever owns the Stitchflow integration relationship."
+  },
+  "KL-2026-09-25-CS-BROADADVPLUS-ROLLBACKCHECK": {
+    "id": "KL-2026-09-25-CS-BROADADVPLUS-ROLLBACKCHECK",
+    "date": "2026-09-25",
+    "type": "decision",
+    "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase (KL-2026-09-14-EXEC-045234) - day-11 rollback check - VERDICT: HOLD at Rs1,000/day, do not revert",
+    "follow_up": "Re-check once more around 2026-09-27/28 (completes the full 2-week rollback window). If frequency/CPM stay inside 1.14-1.32x / Rs56-139 (or only touch it briefly as seen this cycle) through the close of the window, close this out permanently as 'no action needed, hold at Rs1,000/day' per the original disposition's own language - no further re-proposal needed to keep the current budget. If instead a NEW, sustained (3+ consecutive day) breach appears with no same-window reversion, that would be the first genuine confirming instance of the stated saturation signal - revert ad set 52535906903180 daily_budget 100000 -> 85000 (Rs1,000/day -> Rs850/day) at that point, routed to media-buyer for independent re-verification and Suraj's direct approval like any other budget change."
   }
 }
