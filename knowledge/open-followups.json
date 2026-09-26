@@ -152,5 +152,12 @@
     "type": "decision",
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase (KL-2026-09-14-EXEC-045234) - day-11 rollback check - VERDICT: HOLD at Rs1,000/day, do not revert",
     "follow_up": "Re-check once more around 2026-09-27/28 (completes the full 2-week rollback window). If frequency/CPM stay inside 1.14-1.32x / Rs56-139 (or only touch it briefly as seen this cycle) through the close of the window, close this out permanently as 'no action needed, hold at Rs1,000/day' per the original disposition's own language - no further re-proposal needed to keep the current budget. If instead a NEW, sustained (3+ consecutive day) breach appears with no same-window reversion, that would be the first genuine confirming instance of the stated saturation signal - revert ad set 52535906903180 daily_budget 100000 -> 85000 (Rs1,000/day -> Rs850/day) at that point, routed to media-buyer for independent re-verification and Suraj's direct approval like any other budget change."
+  },
+  "KL-2026-09-26-CS-CANADA-CTR-NOISE": {
+    "id": "KL-2026-09-26-CS-CANADA-CTR-NOISE",
+    "date": "2026-09-26",
+    "type": "decision",
+    "subject": "Canada Engaged 365D & Followers (ad set 6737602550176) CTR decline flag - VERDICT: noise, maintain, no live change",
+    "follow_up": "Re-check at next weekly review using week-over-week aggregate CTR for this ad set (not single-day endpoints); no other action needed unless a future weekly aggregate shows a real multi-week decline."
   }
 }
