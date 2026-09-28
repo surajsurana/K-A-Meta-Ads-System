@@ -125,13 +125,6 @@
     "subject": "Comment-reply batch plan (weekly review, 2026-09-21) - 1 routine word-based compliment; DM-redirect staff-wording pattern did NOT recur this cycle (no new price/availability comments came in to check against)",
     "follow_up": "Continue checking every cycle for a 4th consecutive occurrence of the staff DM-redirect wording on newly-arriving price/availability comments; escalate directly to Suraj the first time it recurs, per the prior cycle's standing instruction. The underlying process gap (staff replies happening outside this pipeline) remains unconfirmed as fixed either way."
   },
-  "KL-2026-09-23-016xxx-RAFAEY-PAUSE-EXEC": {
-    "id": "KL-2026-09-23-016xxx-RAFAEY-PAUSE-EXEC",
-    "date": "2026-09-23",
-    "type": "change",
-    "subject": "Rafaey Master | First Love | Midnight Blue, Black, Frozen Blue (ad set 52551343010580, campaign 6858349204776) - status ACTIVE -> PAUSED",
-    "follow_up": "Per KL-2026-09-23-015103s rollback criteria: (a) reactivate only if a genuinely new creative refresh lands AND campaign-strategist explicitly proposes a fresh trial; (b) leave permanently retired if no refresh materializes within the next 1-2 weekly reviews or a fresh trial repeats the same zero-connection pattern; (c) do not reactivate on cost-per-conversation alone without total_messaging_connection also recovering."
-  },
   "KL-2026-09-23-020815-PRODMAP-BESPOKE": {
     "id": "KL-2026-09-23-020815-PRODMAP-BESPOKE",
     "date": "2026-09-23",
@@ -152,6 +145,13 @@
     "type": "outcome",
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase - rollback window CLOSED, VERDICT: hold at Rs1,000/day permanently, no reversion",
     "follow_up": "none - closed. Daily-heartbeat targeted anomaly pull run same cycle (account health, spend pacing, ad delivery status, frequency/CTR sanity) found nothing else anomalous or due - all pure reconfirmations of already-known state, no further logging or routing."
+  },
+  "KL-2026-09-28-media-library": {
+    "id": "KL-2026-09-28-media-library",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Media Library sweep (2026-09-28, first sweep of this source) - 2 unreviewed uploads, both video-with-still-frame reads; 1 likely UGC, 1 likely own-content and potentially the missing creative refresh for the paused Rafaey Master Frozen Blue Corset ad set",
+    "follow_up": "Handing both to campaign-strategist next: item 1 as a possible ad-test candidate pending SKU/source confirmation, item 2 as a likely direct answer to the still-open Rafaey Master Frozen Blue Corset creative-refresh need."
   },
   "KL-2026-09-28-own-content": {
     "id": "KL-2026-09-28-own-content",
