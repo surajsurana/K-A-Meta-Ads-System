@@ -159,5 +159,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-09-28, weekly review) - 3 new carousels; 1 contains the first VIDEO child since the 39-day Reel drought (partial, not full, resolution)",
     "follow_up": "Continue tracking the standalone-Reel drought (still 0 native Reels since 2026-08-13) even though item 2 partially eases it with a carousel-embedded video child; campaign-strategist to independently assess whether that video child changes the paid-use disposition for item 2 specifically."
+  },
+  "KL-2026-09-28-ugc-tags": {
+    "id": "KL-2026-09-28-ugc-tags",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
+    "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   }
 }
