@@ -146,6 +146,13 @@
     "subject": "creative-product-map.jsonl - SKU mismatch found for Deep Wine and Metallic Coffee Brown - mapped SKUs (KAFL015, KAFL016) do not exist in Stitchflow real product catalog",
     "follow_up": "creative-copywriter: append a corrective creative-product-map.jsonl entry for video_ids 28090057323986782 (Deep Wine) and 1079643321138542 (Metallic Coffee Brown) with the real Stitchflow SKUs (KA-160326-92M, KA-160326-91M respectively) so future spend-vs-orders checks compare against the real codes, not the non-existent KAFL015/KAFL016. campaign-strategist: factor the confirmed real demand for the Metallic Coffee Brown garment (1 genuine Rs265,000 sale, non-Meta channel) into the upcoming staggered-activation decision for that ad."
   },
+  "KL-2026-09-28-004720": {
+    "id": "KL-2026-09-28-004720",
+    "date": "2026-09-28",
+    "type": "outcome",
+    "subject": "Ad 52510022528580 (Sargun Mehta Purple Corset / KA-250326-04) product-map gap RESOLVED - and the real product is the account's single best-selling SKU this FY",
+    "follow_up": "None required - closed. The remaining open product-mapping gap from the same priority list (Cutout Corset / Barbie Pink ad 52547120579980, null-SKU, video_id 2042429149806766) is still unresolved and remains creative-copywriter's next priority per the original list."
+  },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
     "date": "2026-09-28",
