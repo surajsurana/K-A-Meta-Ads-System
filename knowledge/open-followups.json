@@ -118,13 +118,6 @@
     "subject": "Canada Engaged 365D & Followers (ad set 6737602550176) CTR decline flag - VERDICT: noise, maintain, no live change",
     "follow_up": "Re-check at next weekly review using week-over-week aggregate CTR for this ad set (not single-day endpoints); no other action needed unless a future weekly aggregate shows a real multi-week decline."
   },
-  "KL-2026-09-28-004706": {
-    "id": "KL-2026-09-28-004706",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "Netherlands (Tilburg) - real Rs380,000 order with zero acquisition spend behind it - reverse-direction geo finding",
-    "follow_up": "campaign-strategist: weigh alongside the already-declined UK test and the broader diffuse-international-revenue picture whether any renewed international disposition is warranted this cycle - n=1 order, low confidence, not itself a recommendation to test Netherlands specifically."
-  },
   "KL-2026-09-28-004715": {
     "id": "KL-2026-09-28-004715",
     "date": "2026-09-28",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "Champagne Gold (ad 52552969624980, ad set 6862975169176) 7-10 day checkpoint disposition - KEEP RUNNING, do not pause",
     "follow_up": "Next checkpoint 2026-10-01 (day 10 of the original 7-10 day window): confirm the last-2-day competitive trend held through the intervening days, and re-check Stitchflow for any Delhi-residence orders landing in that window (2 orders total in the trailing 60 days as of this review, none in this specific 7-day window - a low base rate historically, not itself alarming for one week). If the trend reverses back toward the day-1-level numbers with no clean explanation, that would be the first genuine confirming instance of persistent underperformance - revisit pause at that point."
+  },
+  "KL-2026-09-28-CS-005905": {
+    "id": "KL-2026-09-28-CS-005905",
+    "date": "2026-09-28",
+    "type": "decision",
+    "subject": "Netherlands (Tilburg) reverse-geo finding (KL-2026-09-28-004706) - disposition: HOLD, no test proposed",
+    "follow_up": "None required this cycle. Re-evaluate if a second real Netherlands order appears, or as part of any future holistic diffuse-international-revenue review."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
