@@ -139,13 +139,6 @@
     "subject": "DOB coverage trend continues to grow (0.0% -> 2.0%) - known-age sample still tiny but keeps converging with Meta's dominant delivery bracket",
     "follow_up": "Continue tracking DOB coverage % at each weekly/monthly review per the standing cadence - no action implied until coverage is large enough to be more than directional."
   },
-  "KL-2026-09-28-CS-005915": {
-    "id": "KL-2026-09-28-CS-005915",
-    "date": "2026-09-28",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - weekly review 2026-09-28 - no change proposed, well within ceiling",
-    "follow_up": "Re-verify current total fresh at next weekly review rather than reusing this figure, per standing discipline (guardrail 12 - a reallocation/allocation source figure is never assumed to carry forward without a fresh check)."
-  },
   "KL-2026-09-28-CS-005920": {
     "id": "KL-2026-09-28-CS-005920",
     "date": "2026-09-28",
@@ -181,12 +174,12 @@
     "subject": "UGC batch (3 items) - independent visual read confirms REJECT/HOLD, agrees with and extends social-community-managers unclear reads",
     "follow_up": "nikatita carousel 18134349844637432: if this recurs on a genuinely promising future UGC item, escalate the tooling gap (Graph API permission/existence error on a tagged-content object) rather than silently holding indefinitely - not urgent this cycle since neither whatpdoes nor vaariedit needed it resolved to reach a confident call."
   },
-  "KL-2026-09-28-USACANADA-REVERSE-GEO": {
-    "id": "KL-2026-09-28-USACANADA-REVERSE-GEO",
+  "KL-2026-09-28-CS-USACANADA-DISPOSITION": {
+    "id": "KL-2026-09-28-CS-USACANADA-DISPOSITION",
     "date": "2026-09-28",
-    "type": "observation",
-    "subject": "USA/Canada - real, repeat international revenue with only remarketing spend behind it, no acquisition campaign - retroactive log of a 2026-09-25 interactive finding that was never written to the learning log",
-    "follow_up": "campaign-strategist: give an explicit disposition (test/hold/reject) on USA and Canada, weighing this against the already-declined UK case (KL-2026-08-24-010513, rejected KL-2026-08-31-040202) and the fact Suraj is separately pursuing a Google Shopping test aimed at these exact two countries (a different channel, so not necessarily the same call). Re-examine at the next weekly review regardless of whether a new order lands, since this finding predates the check that would normally catch fresh data points here."
+    "type": "decision",
+    "subject": "USA/Canada reverse-geo finding (KL-2026-09-28-USACANADA-REVERSE-GEO) - disposition: TEST (geographic ad-set test, disposition 2 of 8) - proposal awaiting media-buyer validation and Suraj's direct approval",
+    "follow_up": "Route to media-buyer: build a validated PAUSED execution plan per the spec above (two ad sets, US/CA, lookalike-or-interest cold targeting, Rs150/day each, CONVERSATIONS/WhatsApp-DM optimization) and independently re-verify the Rs5,770/day current-total figure fresh against the live account before finalizing. Do not activate anything until Suraj approves via the Telegram approval mechanism. If approved and built, apply the 2-week stop-rule and new-customer-signal check above before any scale decision."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
