@@ -139,12 +139,12 @@
     "subject": "DOB coverage trend continues to grow (0.0% -> 2.0%) - known-age sample still tiny but keeps converging with Meta's dominant delivery bracket",
     "follow_up": "Continue tracking DOB coverage % at each weekly/monthly review per the standing cadence - no action implied until coverage is large enough to be more than directional."
   },
-  "KL-2026-09-28-121707": {
-    "id": "KL-2026-09-28-121707",
+  "KL-2026-09-28-073242": {
+    "id": "KL-2026-09-28-073242",
     "date": "2026-09-28",
-    "type": "decision",
-    "subject": "USA/Canada cold-prospecting test build - PAUSED execution plan for KL-2026-09-28-CS-USACANADA-DISPOSITION - awaiting Suraj Telegram approval",
-    "follow_up": "Awaiting Suraj's Telegram approval (button being sent now via scripts/send-telegram-approval.sh). If APPROVED: marketing-lead builds exactly this plan (campaign + both ad sets + both ads, all PAUSED first), runs the verification steps above, then requests a SEPARATE activation go-ahead before turning anything ACTIVE - this plan's approval covers the build only, not activation. If REJECTED: no build happens. If HOLD: revisit later, no action now."
+    "type": "observation",
+    "subject": "KL-2026-09-28-121707",
+    "follow_up": "re-check 2026-10-05: if plan KL-2026-09-28-121707 is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
   "KL-2026-09-28-CS-005920": {
     "id": "KL-2026-09-28-CS-005920",
