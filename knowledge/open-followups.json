@@ -48,13 +48,6 @@
     "subject": "WhatsApp Business service-message pricing change effective 2026-10-01 - verification needed against K&A's WhatsApp click-to-message setup",
     "follow_up": "Before 2026-09-30: confirm whether K&A's WhatsApp click-to-message flow is routed through the WhatsApp Business Platform API/a BSP (in which case a valid payment method must be on file before charging begins 2026-10-01, or service messages stop being delivered) or the standard free WhatsApp Business App (in which case this change does not apply). This is an account-configuration/billing fact-check, not a Meta Ads targeting or budget change, so it does not require media-buyer's execution-plan validation - it needs direct confirmation from whoever manages the WhatsApp Business account (likely the user directly)."
   },
-  "KL-2026-09-02-015800": {
-    "id": "KL-2026-09-02-015800",
-    "date": "2026-09-02",
-    "type": "outcome",
-    "subject": "Profile Visits | Follower Growth | Test",
-    "follow_up": "None required - rollback confirmed working at Rs100/day across 3 consecutive readings. Resume normal-cadence follower tracking on the accounts standard review schedule rather than the tighter 3-reading rollback-verification cadence."
-  },
   "KL-2026-09-05-015801": {
     "id": "KL-2026-09-05-015801",
     "date": "2026-09-05",
@@ -166,6 +159,13 @@
     "type": "observation",
     "subject": "DOB coverage trend continues to grow (0.0% -> 2.0%) - known-age sample still tiny but keeps converging with Meta's dominant delivery bracket",
     "follow_up": "Continue tracking DOB coverage % at each weekly/monthly review per the standing cadence - no action implied until coverage is large enough to be more than directional."
+  },
+  "KL-2026-09-28-004735": {
+    "id": "KL-2026-09-28-004735",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Instagram follower count - fresh anchor reading, 113,195 (+894 since last logged baseline)",
+    "follow_up": "Compare against this reading (113,195, 2026-09-28) at the next weekly review."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
