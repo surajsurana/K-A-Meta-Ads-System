@@ -153,6 +153,13 @@
     "subject": "Ad 52510022528580 (Sargun Mehta Purple Corset / KA-250326-04) product-map gap RESOLVED - and the real product is the account's single best-selling SKU this FY",
     "follow_up": "None required - closed. The remaining open product-mapping gap from the same priority list (Cutout Corset / Barbie Pink ad 52547120579980, null-SKU, video_id 2042429149806766) is still unresolved and remains creative-copywriter's next priority per the original list."
   },
+  "KL-2026-09-28-004725": {
+    "id": "KL-2026-09-28-004725",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Champagne Gold (ad 52552969624980, ad set 6862975169176) 7-10 day checkpoint - full-week aggregate worse than siblings but day-by-day trend shows real convergence, not persistent underperformance",
+    "follow_up": "campaign-strategist: form the disposition call on Champagne Gold - continue as-is (day-level trend argues this is converging, not persistently worse), or take the full-week aggregate at face value and consider an earlier intervention. Either way, per the existing stop-rule, Metallic Coffee Brown and Burnt Orange remain separate future staggered-activation decisions regardless of this call. Also check Stitchflow for any actual Delhi orders in this 7-day window specifically (residence_city Delhi/New Delhi) as the real commercial signal this whole staggered sequence exists to move - none found in the trailing 60-day window as of this review (2 orders total, both outside this specific 7-day window)."
+  },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
     "date": "2026-09-28",
