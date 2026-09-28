@@ -118,13 +118,6 @@
     "subject": "Canada Engaged 365D & Followers (ad set 6737602550176) CTR decline flag - VERDICT: noise, maintain, no live change",
     "follow_up": "Re-check at next weekly review using week-over-week aggregate CTR for this ad set (not single-day endpoints); no other action needed unless a future weekly aggregate shows a real multi-week decline."
   },
-  "KL-2026-09-27-014617": {
-    "id": "KL-2026-09-27-014617",
-    "date": "2026-09-27",
-    "type": "outcome",
-    "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase - rollback window CLOSED, VERDICT: hold at Rs1,000/day permanently, no reversion",
-    "follow_up": "none - closed. Daily-heartbeat targeted anomaly pull run same cycle (account health, spend pacing, ad delivery status, frequency/CTR sanity) found nothing else anomalous or due - all pure reconfirmations of already-known state, no further logging or routing."
-  },
   "KL-2026-09-28-004706": {
     "id": "KL-2026-09-28-004706",
     "date": "2026-09-28",
@@ -166,6 +159,13 @@
     "type": "observation",
     "subject": "Instagram follower count - fresh anchor reading, 113,195 (+894 since last logged baseline)",
     "follow_up": "Compare against this reading (113,195, 2026-09-28) at the next weekly review."
+  },
+  "KL-2026-09-28-004740": {
+    "id": "KL-2026-09-28-004740",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Scale-readiness signals, weekly review 2026-09-28 - Broad Advantage+ headroom looks favorable and adds a 2nd clean week post-close-out; India Insta Engaged (the account's single biggest spender) shows materially less headroom",
+    "follow_up": "campaign-strategist: this is now a 2nd data point (this week, clean) following the close-out of the prior adverse-week question on Broad Advantage+ - assess whether this restarts a genuine consecutive-confirming-weeks count toward a <=20% ceiling step, per section 3e's own framing, or whether the September seasonality (already running above average) argues for a step now rather than waiting further. Separately: India Insta Engaged's own elevated, non-improving frequency/CPM suggests it is NOT the ad set to route any such step's budget toward, even though it is the account's current single biggest spender by revenue-adjacent volume."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
