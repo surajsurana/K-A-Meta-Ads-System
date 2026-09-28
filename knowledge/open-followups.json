@@ -139,6 +139,13 @@
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase - rollback window CLOSED, VERDICT: hold at Rs1,000/day permanently, no reversion",
     "follow_up": "none - closed. Daily-heartbeat targeted anomaly pull run same cycle (account health, spend pacing, ad delivery status, frequency/CTR sanity) found nothing else anomalous or due - all pure reconfirmations of already-known state, no further logging or routing."
   },
+  "KL-2026-09-28-004706": {
+    "id": "KL-2026-09-28-004706",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Netherlands (Tilburg) - real Rs380,000 order with zero acquisition spend behind it - reverse-direction geo finding",
+    "follow_up": "campaign-strategist: weigh alongside the already-declined UK test and the broader diffuse-international-revenue picture whether any renewed international disposition is warranted this cycle - n=1 order, low confidence, not itself a recommendation to test Netherlands specifically."
+  },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
     "date": "2026-09-28",
