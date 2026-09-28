@@ -139,13 +139,6 @@
     "subject": "DOB coverage trend continues to grow (0.0% -> 2.0%) - known-age sample still tiny but keeps converging with Meta's dominant delivery bracket",
     "follow_up": "Continue tracking DOB coverage % at each weekly/monthly review per the standing cadence - no action implied until coverage is large enough to be more than directional."
   },
-  "KL-2026-09-28-004735": {
-    "id": "KL-2026-09-28-004735",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "Instagram follower count - fresh anchor reading, 113,195 (+894 since last logged baseline)",
-    "follow_up": "Compare against this reading (113,195, 2026-09-28) at the next weekly review."
-  },
   "KL-2026-09-28-CS-005915": {
     "id": "KL-2026-09-28-CS-005915",
     "date": "2026-09-28",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "Media Library upload 20260922T133501Z (gold sequined gown, night walkway) - HOLD, source/SKU unconfirmed, but my own visual read upgrades this above social-community-managers unclear read",
     "follow_up": "creative-copywriter: at next interactive session, check whether this video can be cross-referenced against Golden Muse tagged content or Shopify/Stitchflow product photos for a visual match before treating it as generic/unusable - if confirmed as a K&A garment (Golden Muse or a sibling design), bring back to campaign-strategist for a real use/test/hold disposition on its own merits."
+  },
+  "KL-2026-09-28-CS-005930": {
+    "id": "KL-2026-09-28-CS-005930",
+    "date": "2026-09-28",
+    "type": "decision",
+    "subject": "Own-content post 18130443986495310 (Golden Muse ruched corset, 90 likes/3 comments, credits @mehakk.jain) - disposition: NEW AD-SET TEST (video), pending Suraj approval - breaks the video drought",
+    "follow_up": "Awaiting Suraj approval via scripts/send-telegram-approval.sh KL-2026-09-28-CS-005930. Not dispatched to creative-copywriter until approved, per the standing content-routing discipline (a paid-ad USE/TEST disposition needs direct approval like any other plan)."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
