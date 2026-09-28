@@ -139,6 +139,13 @@
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase - rollback window CLOSED, VERDICT: hold at Rs1,000/day permanently, no reversion",
     "follow_up": "none - closed. Daily-heartbeat targeted anomaly pull run same cycle (account health, spend pacing, ad delivery status, frequency/CTR sanity) found nothing else anomalous or due - all pure reconfirmations of already-known state, no further logging or routing."
   },
+  "KL-2026-09-28-dmredirect-escalation": {
+    "id": "KL-2026-09-28-dmredirect-escalation",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "Staff DM-redirect wording pattern RECURRED this cycle - 4th consecutive occurrence, escalating directly to Suraj per the standing follow_up from KL-2026-09-14-004212-comment-batch",
+    "follow_up": "Escalated to Suraj directly in this cycles report (2026-09-28). Needs an actual fix at the source (retrain whoever replies live, or move all replies through this pipeline) rather than a 5th passive note next cycle."
+  },
   "KL-2026-09-28-media-library": {
     "id": "KL-2026-09-28-media-library",
     "date": "2026-09-28",
