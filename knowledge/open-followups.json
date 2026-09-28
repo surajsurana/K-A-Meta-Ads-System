@@ -139,13 +139,6 @@
     "subject": "Ad 52510022528580 (Sargun Mehta Purple Corset / KA-250326-04) product-map gap RESOLVED - and the real product is the account's single best-selling SKU this FY",
     "follow_up": "None required - closed. The remaining open product-mapping gap from the same priority list (Cutout Corset / Barbie Pink ad 52547120579980, null-SKU, video_id 2042429149806766) is still unresolved and remains creative-copywriter's next priority per the original list."
   },
-  "KL-2026-09-28-004725": {
-    "id": "KL-2026-09-28-004725",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "Champagne Gold (ad 52552969624980, ad set 6862975169176) 7-10 day checkpoint - full-week aggregate worse than siblings but day-by-day trend shows real convergence, not persistent underperformance",
-    "follow_up": "campaign-strategist: form the disposition call on Champagne Gold - continue as-is (day-level trend argues this is converging, not persistently worse), or take the full-week aggregate at face value and consider an earlier intervention. Either way, per the existing stop-rule, Metallic Coffee Brown and Burnt Orange remain separate future staggered-activation decisions regardless of this call. Also check Stitchflow for any actual Delhi orders in this 7-day window specifically (residence_city Delhi/New Delhi) as the real commercial signal this whole staggered sequence exists to move - none found in the trailing 60-day window as of this review (2 orders total, both outside this specific 7-day window)."
-  },
   "KL-2026-09-28-004730": {
     "id": "KL-2026-09-28-004730",
     "date": "2026-09-28",
@@ -166,6 +159,13 @@
     "type": "observation",
     "subject": "Scale-readiness signals, weekly review 2026-09-28 - Broad Advantage+ headroom looks favorable and adds a 2nd clean week post-close-out; India Insta Engaged (the account's single biggest spender) shows materially less headroom",
     "follow_up": "campaign-strategist: this is now a 2nd data point (this week, clean) following the close-out of the prior adverse-week question on Broad Advantage+ - assess whether this restarts a genuine consecutive-confirming-weeks count toward a <=20% ceiling step, per section 3e's own framing, or whether the September seasonality (already running above average) argues for a step now rather than waiting further. Separately: India Insta Engaged's own elevated, non-improving frequency/CPM suggests it is NOT the ad set to route any such step's budget toward, even though it is the account's current single biggest spender by revenue-adjacent volume."
+  },
+  "KL-2026-09-28-CS-005900": {
+    "id": "KL-2026-09-28-CS-005900",
+    "date": "2026-09-28",
+    "type": "decision",
+    "subject": "Champagne Gold (ad 52552969624980, ad set 6862975169176) 7-10 day checkpoint disposition - KEEP RUNNING, do not pause",
+    "follow_up": "Next checkpoint 2026-10-01 (day 10 of the original 7-10 day window): confirm the last-2-day competitive trend held through the intervening days, and re-check Stitchflow for any Delhi-residence orders landing in that window (2 orders total in the trailing 60 days as of this review, none in this specific 7-day window - a low base rate historically, not itself alarming for one week). If the trend reverses back toward the day-1-level numbers with no clean explanation, that would be the first genuine confirming instance of persistent underperformance - revisit pause at that point."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
