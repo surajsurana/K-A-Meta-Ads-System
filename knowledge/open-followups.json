@@ -111,13 +111,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-21-CS-OWNCONTENT-HOLD": {
-    "id": "KL-2026-09-21-CS-OWNCONTENT-HOLD",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "2 new own-brand image carousels (09-17, 09-19) - HOLD on paid use, same video-default reasoning as the prior 4; concur with social-community-manager's direct escalation of the underlying video drought",
-    "follow_up": "No paid action this cycle for either carousel. Revisit if Suraj's response to the escalation changes the video-default policy or produces new video content."
-  },
   "KL-2026-09-21-EXEC-010603": {
     "id": "KL-2026-09-21-EXEC-010603",
     "date": "2026-09-21",
@@ -159,5 +152,12 @@
     "type": "outcome",
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) Rs850->Rs1,000/day increase - rollback window CLOSED, VERDICT: hold at Rs1,000/day permanently, no reversion",
     "follow_up": "none - closed. Daily-heartbeat targeted anomaly pull run same cycle (account health, spend pacing, ad delivery status, frequency/CTR sanity) found nothing else anomalous or due - all pure reconfirmations of already-known state, no further logging or routing."
+  },
+  "KL-2026-09-28-own-content": {
+    "id": "KL-2026-09-28-own-content",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-09-28, weekly review) - 3 new carousels; 1 contains the first VIDEO child since the 39-day Reel drought (partial, not full, resolution)",
+    "follow_up": "Continue tracking the standalone-Reel drought (still 0 native Reels since 2026-08-13) even though item 2 partially eases it with a carousel-embedded video child; campaign-strategist to independently assess whether that video child changes the paid-use disposition for item 2 specifically."
   }
 }
