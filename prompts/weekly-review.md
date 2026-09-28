@@ -30,10 +30,11 @@ Where a finding genuinely implies a next move, continue through creative-copywri
 
 - **Never dispatch marketing-lead's execution protocol. Never call any Meta/Instagram write endpoint.** Every Meta/Instagram call this run makes must be `GET` only.
 - All learning-log writes go through `scripts/append-learning-log.sh`, never a raw write.
-- Send one consolidated notification (§8) at the end covering the week's findings, **using this exact structure every week, regardless of what else is or isn't noteworthy (added 2026-08-23, user request — simple English, real line breaks, no jargon, no wall of text):**
+- **This review now runs twice a week — Monday and Thursday (added 2026-09-28, user request, "can we do it twice infact. monday and thursday") — so the reporting window is NOT a fixed 7 days.** Compute it from which day this run actually is: a **Monday** run covers since the last **Thursday** run (4 days); a **Thursday** run covers since the last **Monday** run (3 days). Get every number (spend, orders, order value, etc.) fresh for that actual window, not a hardcoded week, or Monday's and Thursday's reports will double-count the overlap. If a run is ever missed (the previous Monday or Thursday didn't happen), widen the window back to the last run that actually completed rather than guessing - check `knowledge/learning-log.jsonl` for the most recent weekly-review-tagged entry if there's any doubt. The **scale-readiness "should the ceiling go up" check (§Strategic Intelligence step 3) also now runs at this doubled cadence** - still within Meta's own safe learning-phase-reset spacing (3-4 days), a deliberate choice Suraj confirmed explicitly, not an accidental side effect of the schedule change - so don't throttle or skip that question just because it was already asked a few days ago at the last run, unless nothing has changed since then (same "don't log what confirms nothing changed" principle as always).
+- Send one consolidated notification (§8) at the end covering the period's findings, **using this exact structure every run, regardless of what else is or isn't noteworthy (added 2026-08-23, user request — simple English, real line breaks, no jargon, no wall of text):**
   ```
   📊 Weekly Ads Report
-  <date range, e.g. 17-23 Aug>
+  <date range for the actual window this run covers, e.g. 25-28 Sep for a Thursday run, or 22-25 Sep for a Monday run>
 
   Spent: ₹<X>
   Orders: <N>
