@@ -167,6 +167,13 @@
     "subject": "Own-content post 18130443986495310 (Golden Muse ruched corset, 90 likes/3 comments, credits @mehakk.jain) - disposition: NEW AD-SET TEST (video), pending Suraj approval - breaks the video drought",
     "follow_up": "Awaiting Suraj approval via scripts/send-telegram-approval.sh KL-2026-09-28-CS-005930. Not dispatched to creative-copywriter until approved, per the standing content-routing discipline (a paid-ad USE/TEST disposition needs direct approval like any other plan)."
   },
+  "KL-2026-09-28-CS-005935": {
+    "id": "KL-2026-09-28-CS-005935",
+    "date": "2026-09-28",
+    "type": "decision",
+    "subject": "Own-content posts 18098579495289372 (olive gold draped saree) and 18556771219075385 (pencil skirt, crystal/cutdana/dupatta) - disposition: HOLD, both all-image, format not brand-fit",
+    "follow_up": "No action needed unless a video companion shoot for either the olive-gold saree or the pencil-skirt set becomes available - re-review at that point."
+  },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
     "date": "2026-09-28",
