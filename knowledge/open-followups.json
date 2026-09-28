@@ -146,13 +146,6 @@
     "subject": "Instagram follower count - fresh anchor reading, 113,195 (+894 since last logged baseline)",
     "follow_up": "Compare against this reading (113,195, 2026-09-28) at the next weekly review."
   },
-  "KL-2026-09-28-004740": {
-    "id": "KL-2026-09-28-004740",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "Scale-readiness signals, weekly review 2026-09-28 - Broad Advantage+ headroom looks favorable and adds a 2nd clean week post-close-out; India Insta Engaged (the account's single biggest spender) shows materially less headroom",
-    "follow_up": "campaign-strategist: this is now a 2nd data point (this week, clean) following the close-out of the prior adverse-week question on Broad Advantage+ - assess whether this restarts a genuine consecutive-confirming-weeks count toward a <=20% ceiling step, per section 3e's own framing, or whether the September seasonality (already running above average) argues for a step now rather than waiting further. Separately: India Insta Engaged's own elevated, non-improving frequency/CPM suggests it is NOT the ad set to route any such step's budget toward, even though it is the account's current single biggest spender by revenue-adjacent volume."
-  },
   "KL-2026-09-28-CS-005900": {
     "id": "KL-2026-09-28-CS-005900",
     "date": "2026-09-28",
@@ -166,6 +159,13 @@
     "type": "decision",
     "subject": "Netherlands (Tilburg) reverse-geo finding (KL-2026-09-28-004706) - disposition: HOLD, no test proposed",
     "follow_up": "None required this cycle. Re-evaluate if a second real Netherlands order appears, or as part of any future holistic diffuse-international-revenue review."
+  },
+  "KL-2026-09-28-CS-005910": {
+    "id": "KL-2026-09-28-CS-005910",
+    "date": "2026-09-28",
+    "type": "decision",
+    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET: hold off proposing a ceiling step or geo-test this cycle",
+    "follow_up": "Re-check next weekly review (on or about 2026-10-05): if Broad Advantage+ posts a SECOND consecutive clean week (frequency 1.14-1.32x, CPM Rs56-139) with no confounding changes elsewhere, that is the genuine several-consecutive-weeks signal - propose a <=20% step at that point (e.g. Rs1,000 -> Rs1,150-1,200/day), current total/proposed/resulting/within-ceiling stated explicitly, and route to media-buyer for independent re-verification before Suraj approval. Do not route any step to India Insta Engaged while its frequency/CPM remain elevated and non-improving."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
