@@ -118,13 +118,6 @@
     "subject": "Built new PAUSED ad in First Love | Interest Stack reusing KAFL003 (Peach Muted Gold) creative",
     "follow_up": "Activation of ad 52556519208180 is a separate future decision, not authorized by this execution - requires its own approval/verification cycle per guardrail 11 staggering discipline before any spend is turned on."
   },
-  "KL-2026-09-23-020815-PRODMAP-BESPOKE": {
-    "id": "KL-2026-09-23-020815-PRODMAP-BESPOKE",
-    "date": "2026-09-23",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders check (section 3d) - exact catalog-name/SKU matching against Stitchflow list_orders structurally undercounts real orders for this bespoke made-to-order business",
-    "follow_up": "Before treating any single SKU's 0-matched-order result as a real 'spend without orders' finding, do a secondary manual check (customer-name/phone/timing correlation against Stitchflow, per this agent's existing standing practice for campaign-level attribution) rather than relying on the exact-text match alone - especially for the highest-spend 0-match SKUs (CHMK030 ~Rs99,044/60d, KAFL004 ~Rs51,752/60d, KAFL006 ~Rs17,481/60d). A structural fix (asking Stitchflow's team whether order items could carry a real SKU field, or improving product_id linkage reliability) would benefit every future run of this check, not just this one - worth raising to whoever owns the Stitchflow integration relationship."
-  },
   "KL-2026-09-26-CS-CANADA-CTR-NOISE": {
     "id": "KL-2026-09-26-CS-CANADA-CTR-NOISE",
     "date": "2026-09-26",
@@ -145,6 +138,13 @@
     "type": "observation",
     "subject": "Netherlands (Tilburg) - real Rs380,000 order with zero acquisition spend behind it - reverse-direction geo finding",
     "follow_up": "campaign-strategist: weigh alongside the already-declined UK test and the broader diffuse-international-revenue picture whether any renewed international disposition is warranted this cycle - n=1 order, low confidence, not itself a recommendation to test Netherlands specifically."
+  },
+  "KL-2026-09-28-004715": {
+    "id": "KL-2026-09-28-004715",
+    "date": "2026-09-28",
+    "type": "observation",
+    "subject": "creative-product-map.jsonl - SKU mismatch found for Deep Wine and Metallic Coffee Brown - mapped SKUs (KAFL015, KAFL016) do not exist in Stitchflow real product catalog",
+    "follow_up": "creative-copywriter: append a corrective creative-product-map.jsonl entry for video_ids 28090057323986782 (Deep Wine) and 1079643321138542 (Metallic Coffee Brown) with the real Stitchflow SKUs (KA-160326-92M, KA-160326-91M respectively) so future spend-vs-orders checks compare against the real codes, not the non-existent KAFL015/KAFL016. campaign-strategist: factor the confirmed real demand for the Metallic Coffee Brown garment (1 genuine Rs265,000 sale, non-Meta channel) into the upcoming staggered-activation decision for that ad."
   },
   "KL-2026-09-28-dmredirect-escalation": {
     "id": "KL-2026-09-28-dmredirect-escalation",
