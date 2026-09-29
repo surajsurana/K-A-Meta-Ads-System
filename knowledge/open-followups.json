@@ -111,13 +111,6 @@
     "subject": "Built new PAUSED ad in First Love | Interest Stack reusing KAFL003 (Peach Muted Gold) creative",
     "follow_up": "Activation of ad 52556519208180 is a separate future decision, not authorized by this execution - requires its own approval/verification cycle per guardrail 11 staggering discipline before any spend is turned on."
   },
-  "KL-2026-09-26-CS-CANADA-CTR-NOISE": {
-    "id": "KL-2026-09-26-CS-CANADA-CTR-NOISE",
-    "date": "2026-09-26",
-    "type": "decision",
-    "subject": "Canada Engaged 365D & Followers (ad set 6737602550176) CTR decline flag - VERDICT: noise, maintain, no live change",
-    "follow_up": "Re-check at next weekly review using week-over-week aggregate CTR for this ad set (not single-day endpoints); no other action needed unless a future weekly aggregate shows a real multi-week decline."
-  },
   "KL-2026-09-28-004715": {
     "id": "KL-2026-09-28-004715",
     "date": "2026-09-28",
@@ -201,5 +194,12 @@
     "type": "observation",
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
+  },
+  "KL-2026-09-29-CS-USACANADA-PACING": {
+    "id": "KL-2026-09-29-CS-USACANADA-PACING",
+    "date": "2026-09-29",
+    "type": "decision",
+    "subject": "Canada Engaged 365D & Followers (6737602550176) and USA Engaged 365D & Followers (6529679555376) - daily-budget overpacing flag from today's heartbeat pull - VERDICT: likely benign, no live change today, diagnostic follow-up requested",
+    "follow_up": "performance-analyst (or media-buyer): (1) pull daily-level spend-pacing (spend at ~30%/60%/90% of ad day) for both 6737602550176 and 6529679555376 over the next 7-14 days to confirm whether today's ~2x front-loading ratio is a consistent daily feature (supports no-action) or a new departure; (2) live GET pacing_type on both ad sets to confirm standard vs accelerated delivery - if accelerated, route back to campaign-strategist as a genuine reason to propose switching to standard pacing. Re-open this decision if either check comes back showing something other than benign/expected."
   }
 }
