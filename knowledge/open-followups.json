@@ -181,12 +181,12 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-09-30-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN": {
-    "id": "KL-2026-09-30-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN",
+  "KL-2026-09-30-025000": {
+    "id": "KL-2026-09-30-025000",
     "date": "2026-09-30",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - VALIDATED PLAN: exclude Instagram Feed placement via targeting.instagram_positions edit, pending Suraj's approval (guardrail 13, no live write today)",
-    "follow_up": "marketing-lead: this is a validated plan awaiting Suraj's direct approval (guardrail 1/2/13) - do not execute from this entry alone. Before executing, re-pull a fresh publisher_platform/platform_position breakdown on both ad sets (a few days will have passed) and confirm no platform/position delivering real volume is missing from the NEW VALUE lists in this entry; add it if so, don't silently narrow delivery further than intended. After executing, run the immediate verification steps listed above, log a linked type:change entry, and schedule the day 3-4 and day 7-10 rollback checks explicitly (due-now sweep, RETRIEVAL.md recipe 8)."
+    "type": "observation",
+    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - execution attempt of KL-2026-09-30-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN FAILED, not executed, no live change made",
+    "follow_up": "media-buyer: re-validate the facebook_positions value list for this plan against Meta Graph API v21.0's currently accepted enum values (the value \"facebook_stories\" is rejected; the correct value name needs to be confirmed live, e.g. via a delivery_estimate probe or Meta's current API reference, not assumed) and produce a corrected plan for the same two ad sets before this can be re-approved. No live change has been made to either ad set; both remain exactly as they were before this attempt."
   },
   "KL-2026-09-30-PACINGTYPE-RESOLVED": {
     "id": "KL-2026-09-30-PACINGTYPE-RESOLVED",
