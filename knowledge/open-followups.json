@@ -104,13 +104,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-21-EXEC-010603": {
-    "id": "KL-2026-09-21-EXEC-010603",
-    "date": "2026-09-21",
-    "type": "change",
-    "subject": "Built new PAUSED ad in First Love | Interest Stack reusing KAFL003 (Peach Muted Gold) creative",
-    "follow_up": "Activation of ad 52556519208180 is a separate future decision, not authorized by this execution - requires its own approval/verification cycle per guardrail 11 staggering discipline before any spend is turned on."
-  },
   "KL-2026-09-28-004715": {
     "id": "KL-2026-09-28-004715",
     "date": "2026-09-28",
@@ -194,6 +187,13 @@
     "type": "observation",
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
+  },
+  "KL-2026-09-30-CS-FIRSTLOVE-CTRHALVING": {
+    "id": "KL-2026-09-30-CS-FIRSTLOVE-CTRHALVING",
+    "date": "2026-09-30",
+    "type": "decision",
+    "subject": "First Love | Interest Stack and First Love | Broad Advantage+ CTR roughly halved (last 7d vs prior 14d baseline) - independent read: HOLD, not creative fatigue, three targeted data requests to performance-analyst before any action",
+    "follow_up": "Dispatch performance-analyst for three targeted pulls before any creative-copywriter or media-buyer action: (1) Interest Stack (52535906794980) daily CPM + frequency series, 2026-09-09 to 2026-09-29, plus a fresh live GET confirming targeting_automation.advantage_audience is still 0 (has not silently drifted since 2026-08-20) - to check whether it independently shows the same cheaper-delivery/volume-surge signature as Broad Advantage+ despite no budget change of its own. (2) Cost-per-messaging-conversation-started (the actual optimization_goal metric, not CTR) for both ad sets, last-7-days vs the same prior-14-day baseline - to determine whether this is actually hurting funnel efficiency or whether the metric Meta optimizes toward held steady/improved while raw CTR fell for reach-mix reasons. (3) Placement/platform-position breakdown (breakdowns=publisher_platform,platform_position) for both ad sets, last-7-days vs baseline - to see whether the impression surge concentrates in specific lower-engagement placements (mix-shift) or is spread uniformly (more consistent with a broader competition/platform-side shift). Do not brief creative-copywriter for a fatigue-driven refresh and do not route a targeting/bid change to media-buyer until this diagnostic round returns - re-review once in hand. If the diagnostic data confirms a genuine platform/delivery-side shift not explained by K&A's own account changes, consider whether it clears the bar for an immediate channel-4 Meta-platform-intelligence escalation rather than waiting for the next monthly Strategic Intelligence Review, per the 'significant enough to escalate immediately' exception."
   },
   "KL-2026-09-30-PACINGTYPE-RESOLVED": {
     "id": "KL-2026-09-30-PACINGTYPE-RESOLVED",
