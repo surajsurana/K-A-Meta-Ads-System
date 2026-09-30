@@ -195,11 +195,11 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-09-29-CS-USACANADA-PACING": {
-    "id": "KL-2026-09-29-CS-USACANADA-PACING",
-    "date": "2026-09-29",
-    "type": "decision",
-    "subject": "Canada Engaged 365D & Followers (6737602550176) and USA Engaged 365D & Followers (6529679555376) - daily-budget overpacing flag from today's heartbeat pull - VERDICT: likely benign, no live change today, diagnostic follow-up requested",
-    "follow_up": "performance-analyst (or media-buyer): (1) pull daily-level spend-pacing (spend at ~30%/60%/90% of ad day) for both 6737602550176 and 6529679555376 over the next 7-14 days to confirm whether today's ~2x front-loading ratio is a consistent daily feature (supports no-action) or a new departure; (2) live GET pacing_type on both ad sets to confirm standard vs accelerated delivery - if accelerated, route back to campaign-strategist as a genuine reason to propose switching to standard pacing. Re-open this decision if either check comes back showing something other than benign/expected."
+  "KL-2026-09-30-PACINGTYPE-RESOLVED": {
+    "id": "KL-2026-09-30-PACINGTYPE-RESOLVED",
+    "date": "2026-09-30",
+    "type": "outcome",
+    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
+    "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   }
 }
