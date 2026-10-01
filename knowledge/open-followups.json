@@ -209,18 +209,18 @@
     "subject": "16th May 26 / India Whatsapp 9th Dec audience-overlap record correction (KL-2026-10-01-061500) - ACKNOWLEDGED, no live change, record now accurate for future competing-hypothesis checks",
     "follow_up": "None today. Apply this corrected overlap fact in any future decline diagnosis on either ad set."
   },
+  "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION": {
+    "id": "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
+    "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
+  },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
     "date": "2026-10-01",
     "type": "observation",
     "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
     "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
-  },
-  "KL-2026-10-01-own-content": {
-    "id": "KL-2026-10-01-own-content",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-01, weekly review) - 2 new carousels, both image-only, video drought continues (49 days)",
-    "follow_up": "Continue tracking the standalone-Reel drought (still 0 native Reels since 2026-08-13, now 49 days). Next sweep boundary should be 18122130635291100 (2026-09-30), the newest item found this cycle."
   }
 }
