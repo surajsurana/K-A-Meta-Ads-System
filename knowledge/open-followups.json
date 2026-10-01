@@ -111,6 +111,13 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
+  "KL-2026-10-01-075114": {
+    "id": "KL-2026-10-01-075114",
+    "date": "2026-10-01",
+    "type": "observation",
+    "subject": "Approved plan KL-2026-09-28-121707 (USA/Canada cold-prospecting test build) - campaign-create POST REJECTED by Meta, nothing built",
+    "follow_up": "Handing off in the same session to media-buyer (this plan's own validating agent) to re-diagnose against Meta's current API (GET-only probes) and produce a corrected execution plan for the same campaign/ad-sets/ads, same rigor as the original (fresh live state, independent budget-ceiling re-check, rollback/verification steps), then send it via scripts/send-telegram-approval.sh."
+  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
