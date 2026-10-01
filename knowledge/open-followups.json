@@ -195,13 +195,6 @@
     "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
     "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
   },
-  "KL-2026-10-01-CS-SCALEINTEL": {
-    "id": "KL-2026-10-01-CS-SCALEINTEL",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step despite Broad Advantage+ nominally posting a 2nd consecutive clean headroom week, because of a live, unresolved, confirmed defect on that exact ad set; no new geo-test proposed either (reverse-geo finding held, see KL-2026-10-01-CS-REVERSEGEO-SIX)",
-    "follow_up": "Re-ask the ceiling-step question for Broad Advantage+ specifically once the Instagram-Feed-exclusion fix (currently blocked on a 3rd targeting-spec attempt per KL-2026-09-30-181530's follow_up) has actually executed and produced a clean day 7-10 read under its own rollback criteria - not before. Continue the standing weekly scale-readiness check in the meantime. No action needed on the geo-test lever unless a future review shows materially stronger evidence than this cycle's reverse-geo finding."
-  },
   "KL-2026-10-01-EXEC-064023": {
     "id": "KL-2026-10-01-EXEC-064023",
     "date": "2026-10-01",
@@ -215,6 +208,13 @@
     "type": "observation",
     "subject": "WhatsApp Business service-message billing deadline (KL-2026-09-02-005800) now past due - re-escalated via daily heartbeat due-now sweep",
     "follow_up": "Still open. If the user confirms the WhatsApp setup (either answer), log a type:human_knowledge entry linked_to KL-2026-09-02-005800 and KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING to close both out. If unresolved by tomorrow's heartbeat, escalate again - this is an active, ongoing risk to the primary lead channel, not a one-time reminder."
+  },
+  "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN3": {
+    "id": "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN3",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - PLAN ATTEMPT #3: exclude Instagram Feed placement via targeting.instagram_positions edit, fixing the explore/explore_home-requires-stream dependency defect from KL-2026-09-30-181530 (2nd failure); pending Suraj's approval (guardrail 13, unattended run)",
+    "follow_up": "marketing-lead: this is a corrected, validated plan (3rd attempt on this fix) awaiting Suraj's direct approval (guardrail 1/2/13) - do not execute from this entry alone. Before executing, re-confirm both ad sets' live targeting still matches the OLD VALUE stated here (time may have passed again since 2026-10-01). After executing, run the verification steps listed above exactly, log a linked type:change entry, and schedule the day 3-4 and day 7-10 rollback checks explicitly (due-now sweep, RETRIEVAL.md recipe 8). If the corrected POST is rejected again for any reason on either object, stop immediately, do not attempt the second object, and hand back to media-buyer for a 4th-attempt diagnosis rather than improvising a further fix inline - do not iterate live against the write endpoint under any circumstance."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
