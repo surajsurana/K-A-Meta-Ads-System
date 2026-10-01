@@ -54,7 +54,14 @@ TELEGRAM_CONFIG = os.path.join(REPO_DIR, "telegram_config.txt")
 
 STALE_AFTER_HOURS = 48  # a plan pending this long is treated as needing fresh eyes, not a stale rubber-stamp
 POLL_TIMEOUT_S = 30     # Telegram long-poll timeout
-EXEC_TIMEOUT_S = 600    # raised from 300s 2026-09-03 (real incident): a legitimate 2-ad build (2 creatives + 2 ads
+EXEC_TIMEOUT_S = 900    # raised from 600s 2026-10-01 (real user request): on a failed write, this dispatch now stays
+                        # in-session to re-diagnose and produce a corrected plan itself (see dispatch_execution's
+                        # prompt, step 9-13) rather than stopping and waiting for a scheduled recheck - that extra
+                        # diagnostic work (multiple delivery_estimate probes, a fresh budget-ceiling re-check, writing
+                        # and logging a new plan, sending it for approval) realistically needs several more minutes
+                        # on top of the original execution attempt. 900s leaves real headroom for that combined flow
+                        # without being unbounded.
+                        # raised from 300s 2026-09-03 (real incident): a legitimate 2-ad build (2 creatives + 2 ads
                         # + ~2.5min polling Meta's review-status transition + the learning-log write/push) ran past
                         # 300s and got reported "Execution FAILED - dispatch timed out" to the user even though the
                         # underlying work completed correctly - confirmed live on Meta after the fact. No auto-retry
@@ -672,6 +679,14 @@ If everything checks out:
 8. Report EXECUTED with a plain before/after summary.
 
 Never call any Meta/Instagram write endpoint other than the exact one this specific plan specifies.
+
+IF META REJECTS THE WRITE (step 5's POST returns an error - a genuine API rejection, not the step-4 staleness case) - added 2026-10-01, real user request ("each time the system runs which requres an approval from me, it should check if that wa suceess or fail... dont have to waste a day"):
+9. Confirm via a fresh GET that no partial write occurred (same standard as always - the object must be byte-identical to its pre-attempt state before you move on).
+10. Log the failure as a type=observation via scripts/append-learning-log.sh with the exact error (full error_user_msg/code/subcode/blame_field_specs, not a paraphrase), linked_to this plan id, exactly as this project's prior failures have been logged.
+11. Do NOT stop here and wait for a scheduled recheck. In this SAME session (do not spawn a nested `claude -p` call - you already have Bash/curl and Read/Grep, everything the diagnostic needs, and recursive headless dispatch is its own real risk), switch to acting as the role named in hard rule 2/this plan's own validating agent (almost always media-buyer for an execution-plan defect): re-diagnose the real rejection reason against Meta's current live API (GET-only probes, e.g. /delivery_estimate, never a write) and produce a corrected plan for the same object(s), with the same rigor as any other plan (fresh live state, independent budget-ceiling re-check, full rollback/verification steps). This is picking up the next specialist's own job in the same continuous flow, not improvising a fix in marketing-lead's own voice.
+12. If a corrected plan comes back, log it as a type=decision (linked_to and superseding the failed plan) and call scripts/send-telegram-approval.sh on it yourself, so Suraj gets the real corrected prompt within the same exchange - not the next morning, not the next scheduled failure-recheck.
+13. If the correcting agent reports it cannot produce a fix without a fact only Suraj can supply (not a technical re-validation), stop there and say so plainly in your report - don't fabricate a plan to force a resend.
+Report FAILED (not a silent stop) as the first line regardless of whether step 11-12 produced a corrected plan - that first line is what Suraj reads; if a corrected plan was already sent, say so in the same sentence (e.g. "FAILED: Meta rejected the placement change ([reason]) - nothing changed, and I've already sent you a corrected plan to approve.").
 
 Report format - this matters, your response's first line is shown directly to the user on their phone via Telegram: the FIRST LINE of your entire response must be exactly one of EXECUTED / STALE_NOT_EXECUTED / ALREADY_EXECUTED / FAILED, immediately followed on the same line by a colon and one short plain-English sentence naming what was actually done or why not (no Meta object IDs, no jargon) - e.g. "EXECUTED: Added the Sage Green Lehenga ad to the India Insta Engaged ad set, built paused." Print nothing before that line - no "log entry committed" notices, no preamble. Elaborate with technical detail (before/after, verification) below it if useful, but that first line is what the user actually reads."""
 
