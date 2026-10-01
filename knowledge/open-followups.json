@@ -90,20 +90,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-28-CS-005920": {
-    "id": "KL-2026-09-28-CS-005920",
-    "date": "2026-09-28",
-    "type": "decision",
-    "subject": "Media Library upload 20260925T144539Z (Metallic Blue blouse+lehenga+dupatta) - NOT a valid Rafaey Master Frozen Blue Corset creative refresh; Rafaey Master stays permanently retired for now; the footage gets its own separate disposition",
-    "follow_up": "creative-copywriter: identify the real SKU for this Metallic Blue blouse+lehenga+dupatta piece next interactive session (Shopify/Stitchflow cross-check per section 3d) - once mapped, bring back to campaign-strategist for a real use/test/hold call on its own merits, separate from the closed Rafaey Master question. Rafaey Master | Frozen Blue Corset (52551343972380) remains retired; only genuine new KAFL017-specific footage would reopen that specific question."
-  },
-  "KL-2026-09-28-CS-005925": {
-    "id": "KL-2026-09-28-CS-005925",
-    "date": "2026-09-28",
-    "type": "decision",
-    "subject": "Media Library upload 20260922T133501Z (gold sequined gown, night walkway) - HOLD, source/SKU unconfirmed, but my own visual read upgrades this above social-community-managers unclear read",
-    "follow_up": "creative-copywriter: at next interactive session, check whether this video can be cross-referenced against Golden Muse tagged content or Shopify/Stitchflow product photos for a visual match before treating it as generic/unusable - if confirmed as a K&A garment (Golden Muse or a sibling design), bring back to campaign-strategist for a real use/test/hold disposition on its own merits."
-  },
   "KL-2026-09-28-CS-005930": {
     "id": "KL-2026-09-28-CS-005930",
     "date": "2026-09-28",
@@ -208,5 +194,12 @@
     "type": "observation",
     "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
     "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
+  },
+  "KL-2026-10-01-media-library-daily": {
+    "id": "KL-2026-10-01-media-library-daily",
+    "date": "2026-10-01",
+    "type": "observation",
+    "subject": "Media Library daily check (2026-10-01) - 2 re-edited entries, both resolve open SKU-identification follow-ups from KL-2026-09-28-CS-005920/005925",
+    "follow_up": "campaign-strategist: both open identification follow-ups (KL-2026-09-28-CS-005920 for the Metallic Blue blouse/lehenga/dupatta piece, KAFL014; KL-2026-09-28-CS-005925 for the Golden Muse gown, KAFL020) are now resolved with real SKUs, factory, and Suraj's own 8-9/10 ad-worthiness ratings - ready for a real use/test/hold disposition on each, without waiting on the creative-copywriter Shopify/Stitchflow cross-check that was the original plan. Note for item 1 (Golden Muse): source_handle is still blank, so the wearer/poster identity remains unconfirmed even though the SKU now is - factor that into any use decision the same as before."
   }
 }
