@@ -34,13 +34,6 @@
     "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle",
     "follow_up": "Same as last cycle: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). Do not retry the same blocked curl/WebSearch approach expecting a different result - only re-attempt if the toolset actually changes."
   },
-  "KL-2026-09-02-005800": {
-    "id": "KL-2026-09-02-005800",
-    "date": "2026-09-02",
-    "type": "decision",
-    "subject": "WhatsApp Business service-message pricing change effective 2026-10-01 - verification needed against K&A's WhatsApp click-to-message setup",
-    "follow_up": "Before 2026-09-30: confirm whether K&A's WhatsApp click-to-message flow is routed through the WhatsApp Business Platform API/a BSP (in which case a valid payment method must be on file before charging begins 2026-10-01, or service messages stop being delivered) or the standard free WhatsApp Business App (in which case this change does not apply). This is an account-configuration/billing fact-check, not a Meta Ads targeting or budget change, so it does not require media-buyer's execution-plan validation - it needs direct confirmation from whoever manages the WhatsApp Business account (likely the user directly)."
-  },
   "KL-2026-09-05-015801": {
     "id": "KL-2026-09-05-015801",
     "date": "2026-09-05",
@@ -215,6 +208,13 @@
     "type": "decision",
     "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step despite Broad Advantage+ nominally posting a 2nd consecutive clean headroom week, because of a live, unresolved, confirmed defect on that exact ad set; no new geo-test proposed either (reverse-geo finding held, see KL-2026-10-01-CS-REVERSEGEO-SIX)",
     "follow_up": "Re-ask the ceiling-step question for Broad Advantage+ specifically once the Instagram-Feed-exclusion fix (currently blocked on a 3rd targeting-spec attempt per KL-2026-09-30-181530's follow_up) has actually executed and produced a clean day 7-10 read under its own rollback criteria - not before. Continue the standing weekly scale-readiness check in the meantime. No action needed on the geo-test lever unless a future review shows materially stronger evidence than this cycle's reverse-geo finding."
+  },
+  "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING": {
+    "id": "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING",
+    "date": "2026-10-01",
+    "type": "observation",
+    "subject": "WhatsApp Business service-message billing deadline (KL-2026-09-02-005800) now past due - re-escalated via daily heartbeat due-now sweep",
+    "follow_up": "Still open. If the user confirms the WhatsApp setup (either answer), log a type:human_knowledge entry linked_to KL-2026-09-02-005800 and KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING to close both out. If unresolved by tomorrow's heartbeat, escalate again - this is an active, ongoing risk to the primary lead channel, not a one-time reminder."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
