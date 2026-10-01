@@ -167,13 +167,6 @@
     "subject": "Reverse geo check (weekly review 2026-10-01, per docs/architecture.md SS3c 2026-09-23 addition) - real FY2026-2027 revenue from UK, Netherlands, Saudi Arabia, Malaysia, Thailand and Nigeria with literally Rs0 Meta acquisition spend",
     "follow_up": "Route to campaign-strategist: weigh a small prospecting test in UK (strongest case - 3 cities, 10 orders, Rs450,700, zero current acquisition spend) and/or the other 5 countries against the standing 8 geo dispositions. Not a decision made here."
   },
-  "KL-2026-10-01-061500": {
-    "id": "KL-2026-10-01-061500",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "16th May 26 | India (6968778736776) and India | Whatsapp | 9th Dec 25 (6862975169176) - full 3-tier lookalike overlap confirmed, complicating the original non-cannibalizing basis for the 16th May HOLD decision",
-    "follow_up": "No live change proposed - informational correction to the record. If a future review finds either ad sets performance declining, this overlap (not just the Insta-Engaged-only comparison) must be part of the competing-hypothesis check before any creative/targeting-only diagnosis."
-  },
   "KL-2026-10-01-062000": {
     "id": "KL-2026-10-01-062000",
     "date": "2026-10-01",
@@ -208,6 +201,13 @@
     "type": "decision",
     "subject": "KAFL004 Blush (Rs50,026.56/60d, zero orders, largest active zero-order spend), KAFL006 Maroon Peplum (Rs19,086.67), KAFL027 Maroon Fishcut (Rs13,892.93) - DISPOSITION: hold the cut/refresh verdict, send back for the secondary manual correlation check before deciding",
     "follow_up": "performance-analyst: run the secondary manual check (customer-name/phone/timing correlation against Stitchflow list_orders, same method used for CHMK030's free-text pass this cycle) specifically for KAFL004 (Blush), KAFL006 (Maroon Peplum), and KAFL027 (Maroon Fishcut) before next weekly review. campaign-strategist will finalize cut-spend-share/refresh-creative/maintain for each once that check returns, prioritizing KAFL004 given its size."
+  },
+  "KL-2026-10-01-CS-OVERLAP-ACK": {
+    "id": "KL-2026-10-01-CS-OVERLAP-ACK",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "16th May 26 / India Whatsapp 9th Dec audience-overlap record correction (KL-2026-10-01-061500) - ACKNOWLEDGED, no live change, record now accurate for future competing-hypothesis checks",
+    "follow_up": "None today. Apply this corrected overlap fact in any future decline diagnosis on either ad set."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
