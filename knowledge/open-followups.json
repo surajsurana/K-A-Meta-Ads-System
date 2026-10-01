@@ -111,13 +111,6 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-10-01-CORRECTED2-USACANADA-ADFIX-121707": {
-    "id": "KL-2026-10-01-CORRECTED2-USACANADA-ADFIX-121707",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "USA/Canada cold-prospecting test - ad-creation fix (2nd correction), supersedes the ad-create failure in KL-2026-10-01-EXEC-USACANADA-121707-ADFAILURE. Campaign and both ad sets already built and unaffected - only the two ads need creating.",
-    "follow_up": "Awaiting Suraj Telegram approval (button being sent now via scripts/send-telegram-approval.sh). If APPROVED: marketing-lead creates the 2 creatives + 2 ads exactly as specified, runs verification steps, then requests a separate activation go-ahead. If REJECTED/HOLD: no further write happens; campaign+ad sets remain built and PAUSED as-is pending direction."
-  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
