@@ -160,13 +160,6 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   },
-  "KL-2026-10-01-060500": {
-    "id": "KL-2026-10-01-060500",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders check (weekly review 2026-10-01, 60-day window 2026-08-02 to 2026-09-30) - CHMK030 (Chatak Neela Corset & Draped Saree) spent ~Rs83,732 with zero matching Stitchflow order; 11 more confirmed-mapped First Love SKUs show zero orders on real spend; KAFL002/KAFL003 show only 1 order each against very high shared-ad spend",
-    "follow_up": "Route to campaign-strategist: real-decision needed on CHMK030 (currently paused already, but was this a wasted ~Rs84k commitment or is there an order-matching/attribution gap worth checking before writing it off) and KAFL004/KAFL006/KAFL027 (currently active ads, meaningfully sustained spend, zero orders) - refresh creative, reduce spend share, or hold. Also worth noting to creative-copywriter: the KAFL015/KAFL016 SKU-correction follow_up from KL-2026-09-28-004715 is still outstanding."
-  },
   "KL-2026-10-01-061000": {
     "id": "KL-2026-10-01-061000",
     "date": "2026-10-01",
@@ -194,6 +187,13 @@
     "type": "observation",
     "subject": "Scale-readiness signals (weekly review 2026-10-01, SS3e) - September 2026 orders (94) ran above the accounts own 3-yr Sept average (~73), account now entering October, its historically strongest month (~89 avg); no headroom red flags on the strong-performing lead-gen ad sets",
     "follow_up": "Route to campaign-strategist: weigh this septembers above-average result plus entry into Octobers historically strongest month against the standing ceiling-step criteria (sustained trend across several weeks, not a single reading) - no proposal made here."
+  },
+  "KL-2026-10-01-CS-CHMK030-CONFIRM": {
+    "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
+    "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
