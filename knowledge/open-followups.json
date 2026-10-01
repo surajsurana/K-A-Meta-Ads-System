@@ -167,13 +167,6 @@
     "subject": "Reverse geo check (weekly review 2026-10-01, per docs/architecture.md SS3c 2026-09-23 addition) - real FY2026-2027 revenue from UK, Netherlands, Saudi Arabia, Malaysia, Thailand and Nigeria with literally Rs0 Meta acquisition spend",
     "follow_up": "Route to campaign-strategist: weigh a small prospecting test in UK (strongest case - 3 cities, 10 orders, Rs450,700, zero current acquisition spend) and/or the other 5 countries against the standing 8 geo dispositions. Not a decision made here."
   },
-  "KL-2026-10-01-062500": {
-    "id": "KL-2026-10-01-062500",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "Scale-readiness signals (weekly review 2026-10-01, SS3e) - September 2026 orders (94) ran above the accounts own 3-yr Sept average (~73), account now entering October, its historically strongest month (~89 avg); no headroom red flags on the strong-performing lead-gen ad sets",
-    "follow_up": "Route to campaign-strategist: weigh this septembers above-average result plus entry into Octobers historically strongest month against the standing ceiling-step criteria (sustained trend across several weeks, not a single reading) - no proposal made here."
-  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
@@ -187,6 +180,13 @@
     "type": "decision",
     "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
+  },
+  "KL-2026-10-01-CS-INTERESTSTACK-ACTIVATE": {
+    "id": "KL-2026-10-01-CS-INTERESTSTACK-ACTIVATE",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (52535906794980) single-ad-ad-set finding - DISPOSITION: activate the already-built, ready PAUSED ad (52556519208180, 'A Glass Neckline, Fully Hand Embroidered.', reusing proven KAFL003 Peach Muted Gold creative) rather than brief new creative - closing a 10-day-old open loop, not starting new work",
+    "follow_up": "media-buyer: prepare a validated activation plan for ad 52556519208180 within ad set 52535906794980 - PAUSED-to-ACTIVE only, no targeting/budget field changes, with the same 24h early-pacing checkpoint used for this ad set's prior two new-ad attempts stated explicitly as the first rollback check. Independently re-verify live state (still PAUSED, still correct creative, ad set still Rs350/day) before finalizing, per standing guardrail 12. Awaits Suraj's direct approval before any activation."
   },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
