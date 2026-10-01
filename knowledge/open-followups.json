@@ -90,13 +90,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-28-CS-005930": {
-    "id": "KL-2026-09-28-CS-005930",
-    "date": "2026-09-28",
-    "type": "decision",
-    "subject": "Own-content post 18130443986495310 (Golden Muse ruched corset, 90 likes/3 comments, credits @mehakk.jain) - disposition: NEW AD-SET TEST (video), pending Suraj approval - breaks the video drought",
-    "follow_up": "Awaiting Suraj approval via scripts/send-telegram-approval.sh KL-2026-09-28-CS-005930. Not dispatched to creative-copywriter until approved, per the standing content-routing discipline (a paid-ad USE/TEST disposition needs direct approval like any other plan)."
-  },
   "KL-2026-09-28-CS-005935": {
     "id": "KL-2026-09-28-CS-005935",
     "date": "2026-09-28",
@@ -131,6 +124,13 @@
     "type": "decision",
     "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
+  },
+  "KL-2026-10-01-CS-GOLDENMUSE-MLUPLOAD": {
+    "id": "KL-2026-10-01-CS-GOLDENMUSE-MLUPLOAD",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "Media Library upload 20260922T133501Z (Golden Muse gown, night walkway) - KAFL020 now confirmed, suraj_rating 9/10 - disposition TEST (second creative variant alongside the pending KL-2026-09-28-CS-005930 Golden Muse test), pending Suraj approval and a provenance question",
+    "follow_up": "creative-copywriter at next INTERACTIVE session (Shopify/Stitchflow product-creative-mapping cross-check per architecture.md section 3d needs Shopify tool access, not available headless): brief as a second creative variant for the pending Golden Muse ad-set test (paired with 005930), confirm KAFL020 via Shopify same as Stitchflow already confirmed here, then media-buyer prepares a combined PAUSED build for Suraj to separately approve before anything goes live. Not dispatched to creative-copywriter yet - awaiting Suraj Approve/Reject/Hold on this disposition (and the provenance question) via scripts/send-telegram-approval.sh."
   },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
@@ -194,12 +194,5 @@
     "type": "observation",
     "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
     "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
-  },
-  "KL-2026-10-01-media-library-daily": {
-    "id": "KL-2026-10-01-media-library-daily",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "Media Library daily check (2026-10-01) - 2 re-edited entries, both resolve open SKU-identification follow-ups from KL-2026-09-28-CS-005920/005925",
-    "follow_up": "campaign-strategist: both open identification follow-ups (KL-2026-09-28-CS-005920 for the Metallic Blue blouse/lehenga/dupatta piece, KAFL014; KL-2026-09-28-CS-005925 for the Golden Muse gown, KAFL020) are now resolved with real SKUs, factory, and Suraj's own 8-9/10 ad-worthiness ratings - ready for a real use/test/hold disposition on each, without waiting on the creative-copywriter Shopify/Stitchflow cross-check that was the original plan. Note for item 1 (Golden Muse): source_handle is still blank, so the wearer/poster identity remains unconfirmed even though the SKU now is - factor that into any use decision the same as before."
   }
 }
