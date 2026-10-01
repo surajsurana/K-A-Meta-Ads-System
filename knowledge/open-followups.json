@@ -160,13 +160,6 @@
     "subject": "UGC batch (3 items) - independent visual read confirms REJECT/HOLD, agrees with and extends social-community-managers unclear reads",
     "follow_up": "nikatita carousel 18134349844637432: if this recurs on a genuinely promising future UGC item, escalate the tooling gap (Graph API permission/existence error on a tagged-content object) rather than silently holding indefinitely - not urgent this cycle since neither whatpdoes nor vaariedit needed it resolved to reach a confident call."
   },
-  "KL-2026-09-28-dmredirect-escalation": {
-    "id": "KL-2026-09-28-dmredirect-escalation",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "Staff DM-redirect wording pattern RECURRED this cycle - 4th consecutive occurrence, escalating directly to Suraj per the standing follow_up from KL-2026-09-14-004212-comment-batch",
-    "follow_up": "Escalated to Suraj directly in this cycles report (2026-09-28). Needs an actual fix at the source (retrain whoever replies live, or move all replies through this pipeline) rather than a 5th passive note next cycle."
-  },
   "KL-2026-09-28-ugc-tags": {
     "id": "KL-2026-09-28-ugc-tags",
     "date": "2026-09-28",
@@ -188,12 +181,12 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   },
-  "KL-2026-10-01-comment-batch": {
-    "id": "KL-2026-10-01-comment-batch",
+  "KL-2026-10-01-dmredirect-recurrence": {
+    "id": "KL-2026-10-01-dmredirect-recurrence",
     "date": "2026-10-01",
-    "type": "decision",
-    "subject": "Comment-reply batch plan (weekly review, 2026-10-01) - 2 routine compliments plus 1 routine price/availability reply still open; 1 other price/availability comment already answered live by staff using the DM-redirect wording (see separate observation entry)",
-    "follow_up": "None - this batch itself is complete pending approval. Next sweep boundary for comments should be comment 18173302771456333 (mady.sarma, 2026-09-30T12:38:37), the newest item found this cycle."
+    "type": "observation",
+    "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
+    "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
   },
   "KL-2026-10-01-own-content": {
     "id": "KL-2026-10-01-own-content",
