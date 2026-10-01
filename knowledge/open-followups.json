@@ -153,6 +153,13 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   },
+  "KL-2026-10-01-064023": {
+    "id": "KL-2026-10-01-064023",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - activation plan",
+    "follow_up": "Route to marketing-lead for Telegram approval (scripts/send-telegram-approval.sh) - this is an unattended scheduled run, no live conversation exists for direct approval, per guardrail 13. Once approved and executed: do not re-activate the other two PAUSED siblings as part of this; monitor ad 52556519208180 at +24h and +48h against rollback criteria (a)/(b) above; marketing-lead appends a linked type:change entry on execution."
+  },
   "KL-2026-10-01-CS-BUDGETCHECK": {
     "id": "KL-2026-10-01-CS-BUDGETCHECK",
     "date": "2026-10-01",
@@ -173,13 +180,6 @@
     "type": "decision",
     "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
-  },
-  "KL-2026-10-01-CS-INTERESTSTACK-ACTIVATE": {
-    "id": "KL-2026-10-01-CS-INTERESTSTACK-ACTIVATE",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (52535906794980) single-ad-ad-set finding - DISPOSITION: activate the already-built, ready PAUSED ad (52556519208180, 'A Glass Neckline, Fully Hand Embroidered.', reusing proven KAFL003 Peach Muted Gold creative) rather than brief new creative - closing a 10-day-old open loop, not starting new work",
-    "follow_up": "media-buyer: prepare a validated activation plan for ad 52556519208180 within ad set 52535906794980 - PAUSED-to-ACTIVE only, no targeting/budget field changes, with the same 24h early-pacing checkpoint used for this ad set's prior two new-ad attempts stated explicitly as the first rollback check. Independently re-verify live state (still PAUSED, still correct creative, ad set still Rs350/day) before finalizing, per standing guardrail 12. Awaits Suraj's direct approval before any activation."
   },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
