@@ -97,20 +97,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-28-004715": {
-    "id": "KL-2026-09-28-004715",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "creative-product-map.jsonl - SKU mismatch found for Deep Wine and Metallic Coffee Brown - mapped SKUs (KAFL015, KAFL016) do not exist in Stitchflow real product catalog",
-    "follow_up": "creative-copywriter: append a corrective creative-product-map.jsonl entry for video_ids 28090057323986782 (Deep Wine) and 1079643321138542 (Metallic Coffee Brown) with the real Stitchflow SKUs (KA-160326-92M, KA-160326-91M respectively) so future spend-vs-orders checks compare against the real codes, not the non-existent KAFL015/KAFL016. campaign-strategist: factor the confirmed real demand for the Metallic Coffee Brown garment (1 genuine Rs265,000 sale, non-Meta channel) into the upcoming staggered-activation decision for that ad."
-  },
-  "KL-2026-09-28-004720": {
-    "id": "KL-2026-09-28-004720",
-    "date": "2026-09-28",
-    "type": "outcome",
-    "subject": "Ad 52510022528580 (Sargun Mehta Purple Corset / KA-250326-04) product-map gap RESOLVED - and the real product is the account's single best-selling SKU this FY",
-    "follow_up": "None required - closed. The remaining open product-mapping gap from the same priority list (Cutout Corset / Barbie Pink ad 52547120579980, null-SKU, video_id 2042429149806766) is still unresolved and remains creative-copywriter's next priority per the original list."
-  },
   "KL-2026-09-28-004730": {
     "id": "KL-2026-09-28-004730",
     "date": "2026-09-28",
@@ -180,6 +166,13 @@
     "type": "outcome",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
+  },
+  "KL-2026-10-01-060500": {
+    "id": "KL-2026-10-01-060500",
+    "date": "2026-10-01",
+    "type": "observation",
+    "subject": "Per-product spend-vs-orders check (weekly review 2026-10-01, 60-day window 2026-08-02 to 2026-09-30) - CHMK030 (Chatak Neela Corset & Draped Saree) spent ~Rs83,732 with zero matching Stitchflow order; 11 more confirmed-mapped First Love SKUs show zero orders on real spend; KAFL002/KAFL003 show only 1 order each against very high shared-ad spend",
+    "follow_up": "Route to campaign-strategist: real-decision needed on CHMK030 (currently paused already, but was this a wasted ~Rs84k commitment or is there an order-matching/attribution gap worth checking before writing it off) and KAFL004/KAFL006/KAFL027 (currently active ads, meaningfully sustained spend, zero orders) - refresh creative, reduce spend share, or hold. Also worth noting to creative-copywriter: the KAFL015/KAFL016 SKU-correction follow_up from KL-2026-09-28-004715 is still outstanding."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
