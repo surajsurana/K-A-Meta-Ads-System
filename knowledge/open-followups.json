@@ -160,13 +160,6 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   },
-  "KL-2026-10-01-061000": {
-    "id": "KL-2026-10-01-061000",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "Reverse geo check (weekly review 2026-10-01, per docs/architecture.md SS3c 2026-09-23 addition) - real FY2026-2027 revenue from UK, Netherlands, Saudi Arabia, Malaysia, Thailand and Nigeria with literally Rs0 Meta acquisition spend",
-    "follow_up": "Route to campaign-strategist: weigh a small prospecting test in UK (strongest case - 3 cities, 10 orders, Rs450,700, zero current acquisition spend) and/or the other 5 countries against the standing 8 geo dispositions. Not a decision made here."
-  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
@@ -215,6 +208,13 @@
     "type": "decision",
     "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
     "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
+  },
+  "KL-2026-10-01-CS-REVERSEGEO-SIX": {
+    "id": "KL-2026-10-01-CS-REVERSEGEO-SIX",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "UK/Netherlands/Saudi Arabia/Malaysia/Thailand/Nigeria reverse-geo finding (KL-2026-10-01-061000) - DISPOSITION: HOLD on all six, none clears the account's own already-established evidentiary bar for a geo-test",
+    "follow_up": "No new test proposed for any of the six this cycle. If a future review shows real order growth in Thailand or Nigeria specifically that would exceed the already-declined UK case's scale (not just restate FY-to-date vs lifetime framing), revisit then. The pending USA/Canada test remains the one live geo-test opportunity in the pipeline, awaiting Suraj's approval from last cycle - not re-proposed here, just noted as still outstanding."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
