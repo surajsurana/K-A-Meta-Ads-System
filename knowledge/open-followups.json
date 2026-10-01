@@ -188,6 +188,13 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
     "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
   },
+  "KL-2026-10-01-comment-batch": {
+    "id": "KL-2026-10-01-comment-batch",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "Comment-reply batch plan (weekly review, 2026-10-01) - 2 routine compliments plus 1 routine price/availability reply still open; 1 other price/availability comment already answered live by staff using the DM-redirect wording (see separate observation entry)",
+    "follow_up": "None - this batch itself is complete pending approval. Next sweep boundary for comments should be comment 18173302771456333 (mady.sarma, 2026-09-30T12:38:37), the newest item found this cycle."
+  },
   "KL-2026-10-01-own-content": {
     "id": "KL-2026-10-01-own-content",
     "date": "2026-10-01",
