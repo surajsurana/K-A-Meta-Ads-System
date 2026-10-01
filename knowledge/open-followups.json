@@ -90,13 +90,6 @@
     "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
     "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
   },
-  "KL-2026-09-28-073242": {
-    "id": "KL-2026-09-28-073242",
-    "date": "2026-09-28",
-    "type": "observation",
-    "subject": "KL-2026-09-28-121707",
-    "follow_up": "re-check 2026-10-05: if plan KL-2026-09-28-121707 is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-09-28-CS-005920": {
     "id": "KL-2026-09-28-CS-005920",
     "date": "2026-09-28",
@@ -146,20 +139,6 @@
     "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - SECOND CORRECTION: drop explore/explore_home from instagram_positions (Instagram Explore requires Instagram Feed to also be selected, which this plan deliberately excludes), superseding KL-2026-09-30-180458, pending Suraj's approval (guardrail 1/2/13, no live write by this session)",
     "follow_up": "marketing-lead: this is the second corrected, validated plan awaiting Suraj's direct approval (guardrail 1/2/13) - do not execute from this entry alone. Before executing, re-confirm both ad sets' live targeting still matches the OLD VALUE stated here. After executing, run the verification steps listed above exactly - specifically confirm instagram_positions contains none of explore/explore_home/stream - log a linked type:change entry, and schedule the day 3-4 and day 7-10 rollback checks (RETRIEVAL.md recipe 8). If the POST is rejected again for any reason, stop and hand back to media-buyer rather than improvising a further fix inline."
   },
-  "KL-2026-10-01-071630": {
-    "id": "KL-2026-10-01-071630",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-01",
-    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature or a real departure."
-  },
-  "KL-2026-10-01-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-01-CS-BUDGETCHECK",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - weekly review 2026-10-01 - no change proposed, well within ceiling",
-    "follow_up": "Re-run fresh next weekly review. The pending USA/Canada cold-prospecting test (+Rs300/day if approved) and any outcome of the KAFL004/006/027 diagnostic check are the two known items that could change this total next cycle."
-  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
@@ -201,6 +180,13 @@
     "type": "decision",
     "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
     "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
+  },
+  "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK": {
+    "id": "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "USA/Canada cold-prospecting test plan (KL-2026-09-28-121707) - OVERDUE 2026-10-01 re-check performed directly, triggered by Suraj noting todays digest had no mention of USA/Canada - DISPOSITION: STILL HOLDS, resent unchanged",
+    "follow_up": "Plan resent unchanged via scripts/send-telegram-approval.sh KL-2026-09-28-121707 - this is the overdue 2026-10-01 recheck (this weeks Thursday review), delayed only by the now-fixed next_review_date() +7-day bug, not by neglect. If held again, a new observation entry with its own fresh follow_up continues the cycle per the standing held-plan sweep process; if approved or rejected, no further recheck is needed."
   },
   "KL-2026-10-01-EXEC-064023": {
     "id": "KL-2026-10-01-EXEC-064023",
