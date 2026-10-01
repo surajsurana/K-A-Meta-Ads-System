@@ -688,7 +688,13 @@ IF META REJECTS THE WRITE (step 5's POST returns an error - a genuine API reject
 13. If the correcting agent reports it cannot produce a fix without a fact only Suraj can supply (not a technical re-validation), stop there and say so plainly in your report - don't fabricate a plan to force a resend.
 Report FAILED (not a silent stop) as the first line regardless of whether step 11-12 produced a corrected plan - that first line is what Suraj reads; if a corrected plan was already sent, say so in the same sentence (e.g. "FAILED: Meta rejected the placement change ([reason]) - nothing changed, and I've already sent you a corrected plan to approve.").
 
-Report format - this matters, your response's first line is shown directly to the user on their phone via Telegram: the FIRST LINE of your entire response must be exactly one of EXECUTED / STALE_NOT_EXECUTED / ALREADY_EXECUTED / FAILED, immediately followed on the same line by a colon and one short plain-English sentence naming what was actually done or why not (no Meta object IDs, no jargon) - e.g. "EXECUTED: Added the Sage Green Lehenga ad to the India Insta Engaged ad set, built paused." Print nothing before that line - no "log entry committed" notices, no preamble. Elaborate with technical detail (before/after, verification) below it if useful, but that first line is what the user actually reads."""
+IF THE APPROVED PLAN IS A CONTENT/TEST-DISPOSITION DECISION (campaign-strategist recommending a new ad-set test for Media Library or UGC content) RATHER THAN A DIRECT META-WRITE INSTRUCTION - added 2026-10-02, real user request ("why is it not built? the system should have build it... i dont want you to manually build it"):
+14. Check whether the source content already has a real product/SKU linked by Suraj himself. For a Media Library upload, read its entry directly from `~/ka-meta-ads-dashboard/media-library/index.json` on this droplet (match by the id/filename the plan references) and check its `products` field.
+15. If a product IS already linked: this is the §3d exception (`docs/architecture.md`) - Shopify identification is not needed, Suraj already named it. Cross-check that SKU still resolves in Stitchflow (`mcp__stitchflow__get_product`/`list_products` - available in this session). Then, in this SAME session, act as creative-copywriter (write the brief, record the product-creative mapping via `scripts/append-product-map.sh` using this confirmed SKU) and then as media-buyer (prepare and build the new ad set PAUSED, per the plan's stated positioning) - same continuous-flow pattern as steps 11-12. Log the build as a `type: decision` (linked to this plan), and call `scripts/send-telegram-approval.sh` on it so Suraj can approve turning it live.
+16. If NO product is linked yet and the content genuinely hasn't been identified: this really does need Shopify tool access, which this headless dispatch doesn't have (same documented gap as always) - stop here, do not guess.
+17. In the step-16 case only, report the first line as `NEEDS_SESSION:` (not `STALE_NOT_EXECUTED:`), followed by a genuinely short plain sentence - 12 words or fewer, no jargon, no explanation of the underlying mechanism (Suraj's own words: he can't read long messages on Telegram - put the full reasoning in the learning-log entry instead, not here). Example: "NEEDS_SESSION: Metallic Blue still needs the product confirmed first." Still log a `type: observation` entry recording the real reason, same as any other stop - only the Telegram line itself has to stay this short.
+
+Report format - this matters, your response's first line is shown directly to the user on their phone via Telegram: the FIRST LINE of your entire response must be exactly one of EXECUTED / STALE_NOT_EXECUTED / ALREADY_EXECUTED / FAILED / NEEDS_SESSION, immediately followed on the same line by a colon and one short plain-English sentence naming what was actually done or why not (no Meta object IDs, no jargon) - e.g. "EXECUTED: Added the Sage Green Lehenga ad to the India Insta Engaged ad set, built paused." Print nothing before that line - no "log entry committed" notices, no preamble. Elaborate with technical detail (before/after, verification) below it if useful, but that first line is what the user actually reads - except for NEEDS_SESSION, where the first line is the ONLY thing that should be short and plain; keep it that way even if it feels like it's leaving detail out, the detail belongs in the learning log."""
 
     env = os.environ.copy()
     nvm_dir = os.path.expanduser("~/.nvm")
@@ -1151,7 +1157,7 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
             keyword_line_upper = ""
             for line in detail.strip().splitlines()[:8]:
                 lu = line.strip().upper()
-                if lu.startswith(("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:")):
+                if lu.startswith(("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:", "NEEDS_SESSION:")):
                     keyword_line_upper = lu
                     matched_keyword_line = line.strip()
                     break
@@ -1160,6 +1166,14 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
                 final_status = "not_executed"
             elif first_line_upper.startswith("EXECUTED:"):
                 final_status = "executed"
+            elif first_line_upper.startswith("NEEDS_SESSION:"):
+                # Added 2026-10-02: a content/test-disposition decision that
+                # genuinely can't be built headless (no product/SKU linked
+                # yet) - distinct from STALE_NOT_EXECUTED so it gets the
+                # short one-line Telegram treatment below instead of the
+                # normal icon+label+detail format (real user feedback: "i
+                # cannot read so much information").
+                final_status = "needs_session"
             elif first_line_upper.startswith("FAILED:"):
                 final_status = "failed"
             elif not success and "STATUS IS GENUINELY UNCERTAIN" in detail.upper():
@@ -1215,6 +1229,8 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
             icon, label = "🔒", "Approved, but live execution is currently disabled (see detail)"
         elif final_status == "not_executed":
             icon, label = "⚠️", "Approved but NOT executed (stale/already-done - see detail)"
+        elif final_status == "needs_session":
+            icon, label = "📋", "Needs a quick check from you"
         elif final_status == "uncertain":
             icon, label = "⏳", "Status uncertain (NOT a confirmed failure - dispatch ran long, checked and couldn't yet prove it either way - see detail, verify manually)"
         else:
@@ -1237,10 +1253,26 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
         # already says whether it executed (added 2026-08-23, user feedback:
         # keep messages short and plain, don't repeat the same status twice).
         display_line = first_line
-        for kw in ("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:"):
+        for kw in ("EXECUTED:", "STALE_NOT_EXECUTED:", "ALREADY_EXECUTED:", "FAILED:", "GATED:", "NEEDS_SESSION:"):
             if display_line.upper().startswith(kw):
                 display_line = display_line[len(kw):].strip()
                 break
+
+        if final_status == "needs_session":
+            # Added 2026-10-02, real user request ("just inform me on
+            # telegram. but a small 1 line message. not such long messages.
+            # i cannot read so much information") - deliberately skips the
+            # normal icon+label+detail+plan-id 4-line format used below; the
+            # dispatch prompt already enforces a <=12-word display_line for
+            # this one status, so one compact line is both correct and
+            # genuinely short. Full reasoning lives in the learning-log
+            # observation entry the dispatch already wrote, not here.
+            tg_api(token, "sendMessage", {
+                "chat_id": chat_id,
+                "text": f"{icon} {display_line} ({plan_id})",
+            })
+            return
+
         tg_api(token, "sendMessage", {
             "chat_id": chat_id,
             "text": f"{icon} {label}\n\n{display_line}\n\nPlan ID: {plan_id}",
