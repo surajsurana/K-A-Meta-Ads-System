@@ -181,19 +181,19 @@
     "subject": "First Love | Interest Stack (ad 52556519208180, ad set 52535906794980) - ad status PAUSED -> ACTIVE",
     "follow_up": "Per KL-2026-10-01-064023s rollback criteria: (a) +24h fresh GET insights on ad 52556519208180 - pause early if cumulative impressions below ~300 or delivery flatlined after brief initial window; (b) +48h check if (a) did not trigger - pause early if cumulative impressions below ~600 or day-2 impressions ~zero; (c) 3-day/~1000-impression stop-rule against ~0.95% avg CTR baseline if (a) and (b) both clear; (d) fatigue watch on 7-day rolling frequency vs 3x hard-flag; (e) do not touch the two other PAUSED siblings as part of monitoring this ad."
   },
+  "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4": {
+    "id": "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4",
+    "date": "2026-10-01",
+    "type": "change",
+    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - instagram_positions narrowed to [story,reels], Instagram Feed excluded (4th attempt, succeeded)",
+    "follow_up": "Per the plan's rollback criteria: (1) immediate - watch issues_info/policy flags or an impressions stall within 24-48h on either ad set; (2) day 3-4 - pull fresh publisher_platform/platform_position breakdown, confirm instagram feed impressions near-zero, compare total daily impressions vs baseline (Interest Stack ~5,804/day, Broad Advantage+ ~16,201/day), revert if down >25-30% with no offsetting gain; (3) day 7-10 - recompute cost-per-messaging-conversation-started vs baseline, revert per-ad-set if not materially improved. ADDITIONAL new follow-up from this execution: confirm with Suraj whether the unplanned 'frequently_in' geo-location-type addition (disclosed above) is acceptable as-is or should be narrowed back via a fresh media-buyer-validated plan - this was not part of the original approval scope."
+  },
   "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING": {
     "id": "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING",
     "date": "2026-10-01",
     "type": "observation",
     "subject": "WhatsApp Business service-message billing deadline (KL-2026-09-02-005800) now past due - re-escalated via daily heartbeat due-now sweep",
     "follow_up": "Still open. If the user confirms the WhatsApp setup (either answer), log a type:human_knowledge entry linked_to KL-2026-09-02-005800 and KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING to close both out. If unresolved by tomorrow's heartbeat, escalate again - this is an active, ongoing risk to the primary lead channel, not a one-time reminder."
-  },
-  "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN4": {
-    "id": "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN4",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - PLAN ATTEMPT #4: exclude Instagram Feed placement via targeting.instagram_positions edit, narrowed to [story,reels] only after the profile_feed-requires-stream defect discovered in attempt #3's real execution failure; pending Suraj's approval (guardrail 13)",
-    "follow_up": "marketing-lead: this is a corrected, validated plan (4th attempt on this fix) awaiting Suraj's direct approval (guardrail 1/2/13) - do not execute from this entry alone. Before executing, re-confirm both ad sets' live targeting still matches the OLD VALUE stated here. After executing, run the verification steps listed above exactly, log a linked type=change entry, and schedule the day 3-4 and day 7-10 rollback checks. If the corrected POST is rejected again for any reason on either object, stop immediately, do not attempt the second object, log the failure, and per this plan's own residual-risk note - do NOT attempt a 5th instagram_positions permutation; hand the disposition back to campaign-strategist for a different lever instead."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
