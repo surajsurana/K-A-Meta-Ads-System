@@ -195,6 +195,13 @@
     "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
     "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
   },
+  "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
+    "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
+    "follow_up": "None this cycle."
+  },
   "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK": {
     "id": "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK",
     "date": "2026-10-01",
