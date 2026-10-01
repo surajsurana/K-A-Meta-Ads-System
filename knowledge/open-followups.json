@@ -139,19 +139,19 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-09-30-PACINGTYPE-RESOLVED": {
-    "id": "KL-2026-09-30-PACINGTYPE-RESOLVED",
-    "date": "2026-09-30",
-    "type": "outcome",
-    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - pacing_type live-confirmed 'standard' on both, resolving half of KL-2026-09-29-CS-USACANADA-PACING's diagnostic follow-up",
-    "follow_up": "The pacing_type question is now closed (standard confirmed on both, accelerated delivery ruled out as a mechanism) - no further check needed on that specific point. The separate, broader question - whether the ~2x front-loaded daily spend pattern itself is a consistent daily feature of these ad sets or a real departure - remains OPEN and still accumulating evidence; continue pulling the same ~30%-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion."
-  },
   "KL-2026-10-01-064023": {
     "id": "KL-2026-10-01-064023",
     "date": "2026-10-01",
     "type": "decision",
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - activation plan",
     "follow_up": "Route to marketing-lead for Telegram approval (scripts/send-telegram-approval.sh) - this is an unattended scheduled run, no live conversation exists for direct approval, per guardrail 13. Once approved and executed: do not re-activate the other two PAUSED siblings as part of this; monitor ad 52556519208180 at +24h and +48h against rollback criteria (a)/(b) above; marketing-lead appends a linked type:change entry on execution."
+  },
+  "KL-2026-10-01-071630": {
+    "id": "KL-2026-10-01-071630",
+    "date": "2026-10-01",
+    "type": "observation",
+    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-01",
+    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature or a real departure."
   },
   "KL-2026-10-01-CS-BUDGETCHECK": {
     "id": "KL-2026-10-01-CS-BUDGETCHECK",
