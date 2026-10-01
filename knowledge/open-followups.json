@@ -111,13 +111,6 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-10-01-092144": {
-    "id": "KL-2026-10-01-092144",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "USA/Canada cold-prospecting test - ad-creation fix (3rd correction, image-field-redundancy), supersedes the ad-create rejection in KL-2026-10-01-OBS-USACANADA-121707-ADCREATIVEFAIL.",
-    "follow_up": "Awaiting Suraj Telegram approval (button being sent now via scripts/send-telegram-approval.sh). If APPROVED: marketing-lead creates the 2 creatives + 2 ads exactly as specified, runs verification steps, then requests a separate activation go-ahead. If REJECTED/HOLD: no further write happens; campaign+ad sets remain built and PAUSED as-is pending direction."
-  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
@@ -187,6 +180,13 @@
     "type": "change",
     "subject": "First Love | Interest Stack (ad 52556519208180, ad set 52535906794980) - ad status PAUSED -> ACTIVE",
     "follow_up": "Per KL-2026-10-01-064023s rollback criteria: (a) +24h fresh GET insights on ad 52556519208180 - pause early if cumulative impressions below ~300 or delivery flatlined after brief initial window; (b) +48h check if (a) did not trigger - pause early if cumulative impressions below ~600 or day-2 impressions ~zero; (c) 3-day/~1000-impression stop-rule against ~0.95% avg CTR baseline if (a) and (b) both clear; (d) fatigue watch on 7-day rolling frequency vs 3x hard-flag; (e) do not touch the two other PAUSED siblings as part of monitoring this ad."
+  },
+  "KL-2026-10-01-EXEC-092144": {
+    "id": "KL-2026-10-01-EXEC-092144",
+    "date": "2026-10-01",
+    "type": "change",
+    "subject": "Built 2 new PAUSED ads (USA/Canada Cold Prospecting) - 3rd ad-creation attempt, succeeded",
+    "follow_up": "Activation of both ads is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week mark post-activation, cost per messaging_conversation_started vs benchmarks plus Stitchflow US/CA new-customer cross-check, per the original disposition stop-rule (KL-2026-09-28-CS-USACANADA-DISPOSITION)."
   },
   "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4": {
     "id": "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4",
