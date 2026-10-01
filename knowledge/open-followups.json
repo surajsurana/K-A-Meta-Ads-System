@@ -188,19 +188,19 @@
     "subject": "First Love | Interest Stack (ad 52556519208180, ad set 52535906794980) - ad status PAUSED -> ACTIVE",
     "follow_up": "Per KL-2026-10-01-064023s rollback criteria: (a) +24h fresh GET insights on ad 52556519208180 - pause early if cumulative impressions below ~300 or delivery flatlined after brief initial window; (b) +48h check if (a) did not trigger - pause early if cumulative impressions below ~600 or day-2 impressions ~zero; (c) 3-day/~1000-impression stop-rule against ~0.95% avg CTR baseline if (a) and (b) both clear; (d) fatigue watch on 7-day rolling frequency vs 3x hard-flag; (e) do not touch the two other PAUSED siblings as part of monitoring this ad."
   },
-  "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN3-FAILURE": {
-    "id": "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN3-FAILURE",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - execution attempt of KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN3 FAILED on Object 1, not executed, no live change",
-    "follow_up": "media-buyer: 4th-attempt diagnosis needed. New dependency rule discovered (profile_feed requires stream), on top of the explore/explore_home-requires-stream rule from attempt #2. Both discovered dependency rules so far point the same direction: Meta may require stream (Instagram Feed) present whenever ANY of explore, explore_home, or profile_feed are also requested - i.e. feed may be a hard prerequisite for most/all of the richer placement surface, not just Explore specifically. Before a 4th live POST attempt, consider whether the only Instagram placements genuinely independent of stream are story, reels, ig_search, and shop (none of these have triggered a rejection yet), and revalidate that narrower list's real-world delivery-share tradeoff before resubmitting - do not guess a 5th time inline without re-deriving the full tradeoff math the way attempts #2 and #3 did."
-  },
   "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING": {
     "id": "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING",
     "date": "2026-10-01",
     "type": "observation",
     "subject": "WhatsApp Business service-message billing deadline (KL-2026-09-02-005800) now past due - re-escalated via daily heartbeat due-now sweep",
     "follow_up": "Still open. If the user confirms the WhatsApp setup (either answer), log a type:human_knowledge entry linked_to KL-2026-09-02-005800 and KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING to close both out. If unresolved by tomorrow's heartbeat, escalate again - this is an active, ongoing risk to the primary lead channel, not a one-time reminder."
+  },
+  "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN4": {
+    "id": "KL-2026-10-01-MB-FIRSTLOVE-FEEDEXCLUSION-PLAN4",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - PLAN ATTEMPT #4: exclude Instagram Feed placement via targeting.instagram_positions edit, narrowed to [story,reels] only after the profile_feed-requires-stream defect discovered in attempt #3's real execution failure; pending Suraj's approval (guardrail 13)",
+    "follow_up": "marketing-lead: this is a corrected, validated plan (4th attempt on this fix) awaiting Suraj's direct approval (guardrail 1/2/13) - do not execute from this entry alone. Before executing, re-confirm both ad sets' live targeting still matches the OLD VALUE stated here. After executing, run the verification steps listed above exactly, log a linked type=change entry, and schedule the day 3-4 and day 7-10 rollback checks. If the corrected POST is rejected again for any reason on either object, stop immediately, do not attempt the second object, log the failure, and per this plan's own residual-risk note - do NOT attempt a 5th instagram_positions permutation; hand the disposition back to campaign-strategist for a different lever instead."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
