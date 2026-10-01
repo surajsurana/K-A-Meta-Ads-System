@@ -167,13 +167,6 @@
     "subject": "Reverse geo check (weekly review 2026-10-01, per docs/architecture.md SS3c 2026-09-23 addition) - real FY2026-2027 revenue from UK, Netherlands, Saudi Arabia, Malaysia, Thailand and Nigeria with literally Rs0 Meta acquisition spend",
     "follow_up": "Route to campaign-strategist: weigh a small prospecting test in UK (strongest case - 3 cities, 10 orders, Rs450,700, zero current acquisition spend) and/or the other 5 countries against the standing 8 geo dispositions. Not a decision made here."
   },
-  "KL-2026-10-01-062000": {
-    "id": "KL-2026-10-01-062000",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "DOB coverage grew to 3.3% (20/606), up from 2.0% last cycle - known-DOB sample continues to converge with Metas dominant delivery/spend age bracket",
-    "follow_up": "Continue tracking at each weekly/monthly review per standing cadence - no action implied until the known-DOB sample is large enough to be more than directional (still n=20)."
-  },
   "KL-2026-10-01-062500": {
     "id": "KL-2026-10-01-062500",
     "date": "2026-10-01",
@@ -187,6 +180,13 @@
     "type": "decision",
     "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
     "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
+  },
+  "KL-2026-10-01-CS-DOBCOVERAGE-ACK": {
+    "id": "KL-2026-10-01-CS-DOBCOVERAGE-ACK",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
+    "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
   },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
