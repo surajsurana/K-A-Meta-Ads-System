@@ -111,6 +111,13 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
+  "KL-2026-10-01-101855": {
+    "id": "KL-2026-10-01-101855",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "3 bare WhatsApp India ads (adset 6862975169176) - add missing primary text + headline via new ad creatives",
+    "follow_up": "Awaiting Suraj's Telegram approval (blocked locally - see BLOCKER NOTE in summary). Once approved, marketing-lead executes per the exact plan above, verifies, and logs a linked type:change entry."
+  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
