@@ -146,13 +146,6 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
-  "KL-2026-09-30-181530": {
-    "id": "KL-2026-09-30-181530",
-    "date": "2026-09-30",
-    "type": "observation",
-    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - execution attempt of KL-2026-09-30-180458 FAILED on Object 1, not executed, no live change",
-    "follow_up": "media-buyer: this corrected plan still fails - a new, previously-undetected defect. Meta enforces that instagram_positions explore/explore_home requires stream (Instagram Feed) to also be present in the same list (OAuthException 100 / subcode 2238050 / blame_field_specs [[instagram_positions]] confirmed live on Object 1, 2026-09-30). Since the entire point of this plan is to exclude stream, explore and explore_home cannot both stay in the list as currently written - re-validate which Instagram placements can legitimately be excluded together with Feed (test live via delivery_estimate combinations before proposing another write, per hard rule 2/the pattern already used earlier today for the facebook_positions fix), and produce a corrected instagram_positions list. Object 1 and Object 2 are both untouched, still ACTIVE, targeting byte-identical to this mornings OLD VALUE - safe starting point for the next attempt."
-  },
   "KL-2026-09-30-PACINGTYPE-RESOLVED": {
     "id": "KL-2026-09-30-PACINGTYPE-RESOLVED",
     "date": "2026-09-30",
@@ -216,12 +209,12 @@
     "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
     "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
   },
-  "KL-2026-10-01-CS-REVERSEGEO-SIX": {
-    "id": "KL-2026-10-01-CS-REVERSEGEO-SIX",
+  "KL-2026-10-01-CS-SCALEINTEL": {
+    "id": "KL-2026-10-01-CS-SCALEINTEL",
     "date": "2026-10-01",
     "type": "decision",
-    "subject": "UK/Netherlands/Saudi Arabia/Malaysia/Thailand/Nigeria reverse-geo finding (KL-2026-10-01-061000) - DISPOSITION: HOLD on all six, none clears the account's own already-established evidentiary bar for a geo-test",
-    "follow_up": "No new test proposed for any of the six this cycle. If a future review shows real order growth in Thailand or Nigeria specifically that would exceed the already-declined UK case's scale (not just restate FY-to-date vs lifetime framing), revisit then. The pending USA/Canada test remains the one live geo-test opportunity in the pipeline, awaiting Suraj's approval from last cycle - not re-proposed here, just noted as still outstanding."
+    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step despite Broad Advantage+ nominally posting a 2nd consecutive clean headroom week, because of a live, unresolved, confirmed defect on that exact ad set; no new geo-test proposed either (reverse-geo finding held, see KL-2026-10-01-CS-REVERSEGEO-SIX)",
+    "follow_up": "Re-ask the ceiling-step question for Broad Advantage+ specifically once the Instagram-Feed-exclusion fix (currently blocked on a 3rd targeting-spec attempt per KL-2026-09-30-181530's follow_up) has actually executed and produced a clean day 7-10 read under its own rollback criteria - not before. Continue the standing weekly scale-readiness check in the meantime. No action needed on the geo-test lever unless a future review shows materially stronger evidence than this cycle's reverse-geo finding."
   },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
