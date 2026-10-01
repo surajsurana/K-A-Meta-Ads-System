@@ -111,6 +111,13 @@
     "subject": "UGC tags sweep (2026-09-28, weekly review) - 3 new tagged items since last boundary, all lower-priority listicle/roundup content; no strong repost or ad candidate this cycle",
     "follow_up": "No open action. Next sweep boundary should be whatpdoes reel 17902246407605259 (2026-09-23T11:10:02), the newest item found this cycle."
   },
+  "KL-2026-10-01-CORRECTED2-USACANADA-ADFIX-121707": {
+    "id": "KL-2026-10-01-CORRECTED2-USACANADA-ADFIX-121707",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "USA/Canada cold-prospecting test - ad-creation fix (2nd correction), supersedes the ad-create failure in KL-2026-10-01-EXEC-USACANADA-121707-ADFAILURE. Campaign and both ad sets already built and unaffected - only the two ads need creating.",
+    "follow_up": "Awaiting Suraj Telegram approval (button being sent now via scripts/send-telegram-approval.sh). If APPROVED: marketing-lead creates the 2 creatives + 2 ads exactly as specified, runs verification steps, then requests a separate activation go-ahead. If REJECTED/HOLD: no further write happens; campaign+ad sets remain built and PAUSED as-is pending direction."
+  },
   "KL-2026-10-01-CS-CHMK030-CONFIRM": {
     "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
     "date": "2026-10-01",
@@ -187,13 +194,6 @@
     "type": "change",
     "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - instagram_positions narrowed to [story,reels], Instagram Feed excluded (4th attempt, succeeded)",
     "follow_up": "Per the plan's rollback criteria: (1) immediate - watch issues_info/policy flags or an impressions stall within 24-48h on either ad set; (2) day 3-4 - pull fresh publisher_platform/platform_position breakdown, confirm instagram feed impressions near-zero, compare total daily impressions vs baseline (Interest Stack ~5,804/day, Broad Advantage+ ~16,201/day), revert if down >25-30% with no offsetting gain; (3) day 7-10 - recompute cost-per-messaging-conversation-started vs baseline, revert per-ad-set if not materially improved. ADDITIONAL new follow-up from this execution: confirm with Suraj whether the unplanned 'frequently_in' geo-location-type addition (disclosed above) is acceptable as-is or should be narrowed back via a fresh media-buyer-validated plan - this was not part of the original approval scope."
-  },
-  "KL-2026-10-01-EXEC-USACANADA-121707-ADFAILURE": {
-    "id": "KL-2026-10-01-EXEC-USACANADA-121707-ADFAILURE",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "KL-2026-10-01-CORRECTED-USACANADA-121707 execution - campaign+2 ad sets built successfully (PAUSED), both ad-create calls REJECTED by Meta, no ads exist, no live spend",
-    "follow_up": "marketing-lead (acting as media-buyer in the same session): diagnose the real call_to_action requirement for click-to-WhatsApp ads via GET-only probes on creative_id 1998582897599398 and 1081927694360444 and their source ads (52541313208380 USA, 52541313314580 Canada), then produce a corrected plan to create just the two ads (reusing existing campaign 52558954003380 and ad sets 52558954056780/52558954063980, no rebuild needed) with a valid call_to_action, and send via scripts/send-telegram-approval.sh."
   },
   "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING": {
     "id": "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING",
