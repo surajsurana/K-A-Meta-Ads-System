@@ -114,6 +114,25 @@ def log(msg):
         f.write(line + "\n")
 
 
+def next_review_date(from_dt):
+    """Next weekly-review day (Monday or Thursday, matching the cron
+    schedule - docs/proactive-operations.md SS8) strictly after from_dt's
+    IST calendar date. Real bug fixed 2026-10-01: a held plan's follow_up
+    used to hardcode +7 days, assuming a once-a-week review cadence. After
+    the 2026-09-28 switch to twice-weekly (Monday+Thursday) reviews, a
+    plan held on a Monday got scheduled 7 days out (the NEXT Monday),
+    silently skipping that same week's Thursday review entirely - exactly
+    what happened to KL-2026-09-28-121707 (held Monday 2026-09-28, should
+    have resurfaced Thursday 2026-10-01, and didn't, until this fix)."""
+    ist = timezone(timedelta(hours=5, minutes=30))
+    d = from_dt.astimezone(ist).date()
+    for offset in range(1, 8):
+        candidate = d + timedelta(days=offset)
+        if candidate.weekday() in (0, 3):  # Monday=0, Thursday=3
+            return candidate.strftime("%Y-%m-%d")
+    return (d + timedelta(days=7)).strftime("%Y-%m-%d")  # unreachable: 1..7 always spans both weekdays
+
+
 def _read_config_dict():
     if not os.path.exists(TELEGRAM_CONFIG):
         raise RuntimeError(f"{TELEGRAM_CONFIG} not found")
@@ -797,8 +816,11 @@ def handle_callback_query(token, cq):
         # naturally repeats without needing separate "still held" tracking -
         # the due-now sweep's own two-step check (is there a LATER
         # override/change entry for this plan_id?) is what recognizes an
-        # approve/reject as the thing that finally stops the cycle.
-        follow_up_date = (datetime.now(timezone.utc) + timedelta(days=7)).strftime("%Y-%m-%d")
+        # approve/reject as the thing that finally stops the cycle. Uses
+        # the NEXT actual review day (Monday or Thursday), not a flat +7
+        # days - see next_review_date()'s docstring for the real bug this
+        # fixes.
+        follow_up_date = next_review_date(datetime.now(timezone.utc))
         append_learning_log({
             "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             "actor": "human", "type": "observation", "subject": plan_id,
@@ -887,7 +909,7 @@ def handle_paired_callback_query(token, cq):
             })
             finalize_status(pid, "rejected")
         else:  # hold
-            follow_up_date = (datetime.now(timezone.utc) + timedelta(days=7)).strftime("%Y-%m-%d")
+            follow_up_date = next_review_date(datetime.now(timezone.utc))
             append_learning_log({
                 "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                 "actor": "human", "type": "observation", "subject": pid,
