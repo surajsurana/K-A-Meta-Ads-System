@@ -195,6 +195,13 @@
     "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
     "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
   },
+  "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK": {
+    "id": "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK",
+    "date": "2026-10-01",
+    "type": "decision",
+    "subject": "KAFL004 Blush (Rs50,026.56/60d, zero orders, largest active zero-order spend), KAFL006 Maroon Peplum (Rs19,086.67), KAFL027 Maroon Fishcut (Rs13,892.93) - DISPOSITION: hold the cut/refresh verdict, send back for the secondary manual correlation check before deciding",
+    "follow_up": "performance-analyst: run the secondary manual check (customer-name/phone/timing correlation against Stitchflow list_orders, same method used for CHMK030's free-text pass this cycle) specifically for KAFL004 (Blush), KAFL006 (Maroon Peplum), and KAFL027 (Maroon Fishcut) before next weekly review. campaign-strategist will finalize cut-spend-share/refresh-creative/maintain for each once that check returns, prioritizing KAFL004 given its size."
+  },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
     "date": "2026-10-01",
