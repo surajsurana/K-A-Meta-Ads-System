@@ -223,13 +223,6 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
   },
-  "KL-2026-10-02-CORRECTED-GOLDENMUSE-ADA-UPLOADFIX": {
-    "id": "KL-2026-10-02-CORRECTED-GOLDENMUSE-ADA-UPLOADFIX",
-    "date": "2026-10-02",
-    "type": "decision",
-    "subject": "Golden Muse Ad A (Structure First, Shine Second) - CORRECTED upload mechanism after Meta rejected URL-source fetch twice",
-    "follow_up": "marketing-lead to execute this corrected Ad A build once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-02-CORRECTED-GOLDENMUSE-ADA-UPLOADFIX, including the append-product-map.sh call once the real video_id exists; log a linked type:change entry after execution covering both Ad A and Ad B (Ad B was already built under the original plan id)."
-  },
   "KL-2026-10-02-EXEC-PADRIFT": {
     "id": "KL-2026-10-02-EXEC-PADRIFT",
     "date": "2026-10-02",
