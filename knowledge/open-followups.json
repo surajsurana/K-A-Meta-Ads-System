@@ -216,6 +216,13 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
   },
+  "KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIX": {
+    "id": "KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIX",
+    "date": "2026-10-02",
+    "type": "change",
+    "subject": "Golden Muse (KAFL020) Ad A (Structure First, Shine Second) built PAUSED using corrected local-file upload transport",
+    "follow_up": "Activation of both Golden Muse ads (Ad A 52559143466780, Ad B 52559141356380) together, simultaneous not staggered per the original plans activation-sequencing recommendation, is a separate future plan requiring its own approval."
+  },
   "KL-2026-10-02-EXEC-METALLICBLUE": {
     "id": "KL-2026-10-02-EXEC-METALLICBLUE",
     "date": "2026-10-02",
