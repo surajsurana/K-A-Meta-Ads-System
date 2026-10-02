@@ -27,13 +27,6 @@
     "subject": "First Love | A Saree With a Corset's Structure | Interest Stack (Midnight Blue Drape Saree, ad 52548730709180) - PAUSED (24h early-pacing checkpoint)",
     "follow_up": "Do not re-activate this ad informally - any future re-test requires a fresh dated plan per rollback criteria in KL-2026-09-01-071953. Continue monitoring Three Expressions (52535907844980) as the ad set's sole remaining active ad. Blush Pink Lehenga (52548730700780) remains separately gated per KL-2026-08-30-015101 and is unaffected."
   },
-  "KL-2026-09-02-005600": {
-    "id": "KL-2026-09-02-005600",
-    "date": "2026-09-02",
-    "type": "observation",
-    "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle",
-    "follow_up": "Same as last cycle: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). Do not retry the same blocked curl/WebSearch approach expecting a different result - only re-attempt if the toolset actually changes."
-  },
   "KL-2026-09-05-015801": {
     "id": "KL-2026-09-05-015801",
     "date": "2026-09-05",
@@ -215,5 +208,12 @@
     "type": "decision",
     "subject": "System self-audit finding: .claude/agents/performance-analyst.md never got the standing monthly WhatsApp-destination creative-currency sweep duty that docs/architecture.md SS3c already documents - a real documented-vs-actual drift, not yet caused a miss only because the monthly-review prompt names the check explicitly every time",
     "follow_up": "Awaiting Suraj approval via Telegram (scripts/send-telegram-approval.sh) for the proposed fix: add a new standing bullet to .claude/agents/performance-analyst.md What you own section (alongside the existing Geographic & Customer Demographic bullet), stating the WhatsApp-destination creative-currency sweep as its own permanent monthly-cadence duty - for every active destination_type:WHATSAPP ad set, pull each ads underlying videos created_time and cross-check its actual product/collection against Stitchflow (never trust the ads own name/label alone), flag any ad meaningfully older than the current push or tagged to a different collection, same severity/routing as the geography and per-product findings. Once approved, an interactive session applies the exact wording."
+  },
+  "KL-2026-10-02-010600": {
+    "id": "KL-2026-10-02-010600",
+    "date": "2026-10-02",
+    "type": "observation",
+    "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
+    "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
   }
 }
