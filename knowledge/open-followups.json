@@ -209,19 +209,19 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980)",
     "follow_up": "criteria (b)/(c)/(d) remain scheduled per the original plan; next checkpoint +48h from activation (criterion (b))."
   },
-  "KL-2026-10-02-020145": {
-    "id": "KL-2026-10-02-020145",
-    "date": "2026-10-02",
-    "type": "decision",
-    "subject": "First Love | Metallic Blue (KAFL014) Test | India -- NEW, separate ad set, one PAUSED ad",
-    "follow_up": "marketing-lead to execute the build (adset create + ad create, status PAUSED) verbatim once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-02-020145, including the append-product-map.sh call once the real video_id exists; log a linked type:change entry after execution. Activation is a SEPARATE plan requiring its own verification and approval. Re-check cost per messaging_conversation_started vs Broad Advantage+ baseline at the 2-week stop-rule mark."
-  },
   "KL-2026-10-02-071640": {
     "id": "KL-2026-10-02-071640",
     "date": "2026-10-02",
     "type": "observation",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
+  },
+  "KL-2026-10-02-EXEC-METALLICBLUE": {
+    "id": "KL-2026-10-02-EXEC-METALLICBLUE",
+    "date": "2026-10-02",
+    "type": "change",
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India - new ad set and single ad built PAUSED, succeeded first attempt",
+    "follow_up": "Activation of this ad is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week stop-rule mark post-activation, compare cost per messaging_conversation_started against the First Love | Broad Advantage+ baseline per the original plan's rollback criteria."
   },
   "KL-2026-10-02-EXEC-PADRIFT": {
     "id": "KL-2026-10-02-EXEC-PADRIFT",
