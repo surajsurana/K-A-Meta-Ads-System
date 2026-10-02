@@ -105,6 +105,32 @@ def month_bounds(year, month):
     return start.isoformat(), end.isoformat()
 
 
+def covers_full_period(rows, period_start, period_end):
+    """True if the sorted period_start..period_end ranges of `rows` union to
+    fully cover [period_start, period_end] with no gaps (adjacent ranges may
+    only touch, not overlap-skip). Added 2026-10-02 after a lone boundary
+    week (6/7 days in the wrong month) got rolled up into PERF-2026-08 as if
+    it were the whole month - the quarterly/half-yearly/yearly tiers already
+    guard against rolling up an incomplete group; this closes the same gap
+    at the weekly->monthly tier. See KL-2026-10-02-005802-SELFAUDIT-ROLLUPBUG."""
+    if not rows:
+        return False
+    intervals = sorted(
+        (date.fromisoformat(r["period_start"]), date.fromisoformat(r["period_end"]))
+        for r in rows
+    )
+    target_start = date.fromisoformat(period_start)
+    target_end = date.fromisoformat(period_end)
+    if intervals[0][0] > target_start:
+        return False
+    covered_through = intervals[0][1]
+    for start, end in intervals[1:]:
+        if start > covered_through + timedelta(days=1):
+            return False
+        covered_through = max(covered_through, end)
+    return covered_through >= target_end
+
+
 def compute_rollup(all_records):
     """Returns (added_rows, removed_ids). Cascades: a fresh monthly rollup
     can immediately make a quarterly rollup possible, which can immediately
@@ -128,10 +154,14 @@ def compute_rollup(all_records):
         if new_id in existing_monthly_ids:
             continue
         # Only roll up a month that has fully ended - never a partial/current month.
-        _, month_end = month_bounds(year, month)
-        if date.fromisoformat(month_end) >= today:
-            continue
         start, end = month_bounds(year, month)
+        if date.fromisoformat(end) >= today:
+            continue
+        # Never roll up a month unless its weekly rows fully cover it with no
+        # gaps - otherwise a lone boundary week could be mistaken for the
+        # whole month (see covers_full_period's docstring).
+        if not covers_full_period(rows, start, end):
+            continue
         row = aggregate(rows, new_id, "monthly", start, end, source="rollup")
         added.append(row)
         removed.extend(r["id"] for r in rows)
