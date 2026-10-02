@@ -222,5 +222,12 @@
     "type": "decision",
     "subject": "Meta platform intelligence - Andromeda delivery system likely explains WHY the First Love Feed-shift happened to this account specifically; reinforces video/Reels-native content as a delivery-efficiency priority, not just a creative-variety nice-to-have",
     "follow_up": "When social-community-manager/creative-copywriter next review content priorities, weigh this delivery-efficiency angle explicitly alongside the existing engagement/variety case for video - and when performance-analyst next reviews placement-level delivery on any ad set, treat a Feed-share increase with falling in-placement CTR as a recurring pattern to expect (not a one-off surprise) for as long as the account's own creative library stays static-heavy."
+  },
+  "KL-2026-10-02-010800": {
+    "id": "KL-2026-10-02-010800",
+    "date": "2026-10-02",
+    "type": "observation",
+    "subject": "WhatsApp Business service-message pricing (KL-2026-09-02-005800, still open) - new detail found: 1,000 free service messages per phone number per month before billing applies; Click-to-WhatsApp 72h entry window itself stays free",
+    "follow_up": "Still open: confirm whether K&A's WhatsApp click-to-message flow is API/BSP-routed or plain Business App. When next escalated, route via scripts/send-telegram-approval.sh as a type:decision with explicit Approve/Reject/Hold framing of the fact being confirmed, not a plain FYI notification."
   }
 }
