@@ -132,13 +132,6 @@
     "subject": "KAFL004 Blush (Rs50,026.56/60d, zero orders, largest active zero-order spend), KAFL006 Maroon Peplum (Rs19,086.67), KAFL027 Maroon Fishcut (Rs13,892.93) - DISPOSITION: hold the cut/refresh verdict, send back for the secondary manual correlation check before deciding",
     "follow_up": "performance-analyst: run the secondary manual check (customer-name/phone/timing correlation against Stitchflow list_orders, same method used for CHMK030's free-text pass this cycle) specifically for KAFL004 (Blush), KAFL006 (Maroon Peplum), and KAFL027 (Maroon Fishcut) before next weekly review. campaign-strategist will finalize cut-spend-share/refresh-creative/maintain for each once that check returns, prioritizing KAFL004 given its size."
   },
-  "KL-2026-10-01-CS-METALLICBLUE-MLUPLOAD": {
-    "id": "KL-2026-10-01-CS-METALLICBLUE-MLUPLOAD",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "Media Library upload 20260925T144539Z (Metallic Blue blouse+lehenga+dupatta editorial) - KAFL014 now confirmed, suraj_rating 8/10 - disposition TEST (new ad-set), ready for Suraj approval",
-    "follow_up": "creative-copywriter at next INTERACTIVE session (Shopify/Stitchflow product-creative-mapping cross-check per architecture.md section 3d needs Shopify tool access, not available headless): brief a new ad-set test for KAFL014 using this footage, confirm the SKU via Shopify same as Stitchflow already confirmed here, then media-buyer prepares a PAUSED build for Suraj to separately approve before anything goes live. Not dispatched to creative-copywriter yet - awaiting Suraj Approve/Reject/Hold on this disposition via scripts/send-telegram-approval.sh."
-  },
   "KL-2026-10-01-CS-OVERLAP-ACK": {
     "id": "KL-2026-10-01-CS-OVERLAP-ACK",
     "date": "2026-10-01",
@@ -243,5 +236,12 @@
     "type": "decision",
     "subject": "Golden Muse (KAFL020) new ad-set test - two creative variants, execution-ready copy",
     "follow_up": "media-buyer: build one new ad set with these two ads as PAUSED, record the KAFL020 product-creative mapping via scripts/append-product-map.sh once real video_id(s) exist (status confirmed, per the identification stated above), re-verify budget ceiling independently (hard rule 6), then send a NEW build approval via scripts/send-telegram-approval.sh - this is a separate approval from the 2026-10-01 strategic disposition approvals, which only approved testing the content, not an actual build."
+  },
+  "KL-2026-10-02-CC-METALLICBLUE-BRIEF": {
+    "id": "KL-2026-10-02-CC-METALLICBLUE-BRIEF",
+    "date": "2026-10-02",
+    "type": "decision",
+    "subject": "Metallic Blue (KAFL014) new dedicated ad-set test - execution-ready copy",
+    "follow_up": "media-buyer: build one new, separate ad set with this one ad as PAUSED, record the KAFL014 product-creative mapping via scripts/append-product-map.sh once the real video_id exists (status confirmed, per the identification stated above), re-verify budget ceiling independently (hard rule 6), then send a NEW build approval via scripts/send-telegram-approval.sh - this is a separate approval from the 2026-10-01 strategic disposition approval, which only approved testing the content, not an actual build."
   }
 }
