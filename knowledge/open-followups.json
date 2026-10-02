@@ -118,13 +118,6 @@
     "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
   },
-  "KL-2026-10-01-CS-GOLDENMUSE-MLUPLOAD": {
-    "id": "KL-2026-10-01-CS-GOLDENMUSE-MLUPLOAD",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "Media Library upload 20260922T133501Z (Golden Muse gown, night walkway) - KAFL020 now confirmed, suraj_rating 9/10 - disposition TEST (second creative variant alongside the pending KL-2026-09-28-CS-005930 Golden Muse test), pending Suraj approval and a provenance question",
-    "follow_up": "creative-copywriter at next INTERACTIVE session (Shopify/Stitchflow product-creative-mapping cross-check per architecture.md section 3d needs Shopify tool access, not available headless): brief as a second creative variant for the pending Golden Muse ad-set test (paired with 005930), confirm KAFL020 via Shopify same as Stitchflow already confirmed here, then media-buyer prepares a combined PAUSED build for Suraj to separately approve before anything goes live. Not dispatched to creative-copywriter yet - awaiting Suraj Approve/Reject/Hold on this disposition (and the provenance question) via scripts/send-telegram-approval.sh."
-  },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
     "date": "2026-10-01",
@@ -243,5 +236,12 @@
     "type": "observation",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
+  },
+  "KL-2026-10-02-CC-GOLDENMUSE-BRIEF": {
+    "id": "KL-2026-10-02-CC-GOLDENMUSE-BRIEF",
+    "date": "2026-10-02",
+    "type": "decision",
+    "subject": "Golden Muse (KAFL020) new ad-set test - two creative variants, execution-ready copy",
+    "follow_up": "media-buyer: build one new ad set with these two ads as PAUSED, record the KAFL020 product-creative mapping via scripts/append-product-map.sh once real video_id(s) exist (status confirmed, per the identification stated above), re-verify budget ceiling independently (hard rule 6), then send a NEW build approval via scripts/send-telegram-approval.sh - this is a separate approval from the 2026-10-01 strategic disposition approvals, which only approved testing the content, not an actual build."
   }
 }
