@@ -236,5 +236,12 @@
     "type": "observation",
     "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
     "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
+  },
+  "KL-2026-10-02-071640": {
+    "id": "KL-2026-10-02-071640",
+    "date": "2026-10-02",
+    "type": "observation",
+    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
+    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
   }
 }
