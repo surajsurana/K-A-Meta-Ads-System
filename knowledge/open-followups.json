@@ -223,12 +223,12 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980)",
     "follow_up": "criteria (b)/(c)/(d) remain scheduled per the original plan; next checkpoint +48h from activation (criterion (b))."
   },
-  "KL-2026-10-02-015924": {
-    "id": "KL-2026-10-02-015924",
+  "KL-2026-10-02-020145": {
+    "id": "KL-2026-10-02-020145",
     "date": "2026-10-02",
     "type": "decision",
-    "subject": "First Love | Golden Muse (KAFL020) Test | India -- NEW ad set, two PAUSED ads",
-    "follow_up": "marketing-lead to execute the build (adset create + 2 ad creates, status PAUSED) verbatim once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-02-015924, including the two append-product-map.sh calls once real video_ids exist; log a linked type:change entry after execution. Activation is a SEPARATE plan requiring its own verification and approval, with simultaneous (not staggered) activation recommended per the reasoning above once that approval is sought. Re-check cost per messaging_conversation_started per variant at the 2-week stop-rule mark."
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India -- NEW, separate ad set, one PAUSED ad",
+    "follow_up": "marketing-lead to execute the build (adset create + ad create, status PAUSED) verbatim once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-02-020145, including the append-product-map.sh call once the real video_id exists; log a linked type:change entry after execution. Activation is a SEPARATE plan requiring its own verification and approval. Re-check cost per messaging_conversation_started vs Broad Advantage+ baseline at the 2-week stop-rule mark."
   },
   "KL-2026-10-02-071640": {
     "id": "KL-2026-10-02-071640",
@@ -236,12 +236,5 @@
     "type": "observation",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
-  },
-  "KL-2026-10-02-CC-METALLICBLUE-BRIEF": {
-    "id": "KL-2026-10-02-CC-METALLICBLUE-BRIEF",
-    "date": "2026-10-02",
-    "type": "decision",
-    "subject": "Metallic Blue (KAFL014) new dedicated ad-set test - execution-ready copy",
-    "follow_up": "media-buyer: build one new, separate ad set with this one ad as PAUSED, record the KAFL014 product-creative mapping via scripts/append-product-map.sh once the real video_id exists (status confirmed, per the identification stated above), re-verify budget ceiling independently (hard rule 6), then send a NEW build approval via scripts/send-telegram-approval.sh - this is a separate approval from the 2026-10-01 strategic disposition approval, which only approved testing the content, not an actual build."
   }
 }
