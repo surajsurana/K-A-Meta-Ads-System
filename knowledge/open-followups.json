@@ -195,20 +195,6 @@
     "subject": "3 bare WhatsApp India ads (adset 6862975169176) - added missing primary text + headline via new creatives",
     "follow_up": "Watch CTR/CPL on these 3 ads for 3-4 days before reading results as final, per the plan's own risk note. Rollback (swap back to original creative ids 1609273200760733 / 1545910003414633 / 2058266332230616) only if effective_status moves to DISAPPROVED/an error state, or CTR/CPL materially worsens over that window."
   },
-  "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4": {
-    "id": "KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4",
-    "date": "2026-10-01",
-    "type": "change",
-    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - instagram_positions narrowed to [story,reels], Instagram Feed excluded (4th attempt, succeeded)",
-    "follow_up": "Per the plan's rollback criteria: (1) immediate - watch issues_info/policy flags or an impressions stall within 24-48h on either ad set; (2) day 3-4 - pull fresh publisher_platform/platform_position breakdown, confirm instagram feed impressions near-zero, compare total daily impressions vs baseline (Interest Stack ~5,804/day, Broad Advantage+ ~16,201/day), revert if down >25-30% with no offsetting gain; (3) day 7-10 - recompute cost-per-messaging-conversation-started vs baseline, revert per-ad-set if not materially improved. ADDITIONAL new follow-up from this execution: confirm with Suraj whether the unplanned 'frequently_in' geo-location-type addition (disclosed above) is acceptable as-is or should be narrowed back via a fresh media-buyer-validated plan - this was not part of the original approval scope."
-  },
-  "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING": {
-    "id": "KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "WhatsApp Business service-message billing deadline (KL-2026-09-02-005800) now past due - re-escalated via daily heartbeat due-now sweep",
-    "follow_up": "Still open. If the user confirms the WhatsApp setup (either answer), log a type:human_knowledge entry linked_to KL-2026-09-02-005800 and KL-2026-10-01-HEARTBEAT-WHATSAPPBILLING to close both out. If unresolved by tomorrow's heartbeat, escalate again - this is an active, ongoing risk to the primary lead channel, not a one-time reminder."
-  },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
     "date": "2026-10-01",
