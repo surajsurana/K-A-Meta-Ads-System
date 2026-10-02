@@ -229,5 +229,12 @@
     "type": "observation",
     "subject": "WhatsApp Business service-message pricing (KL-2026-09-02-005800, still open) - new detail found: 1,000 free service messages per phone number per month before billing applies; Click-to-WhatsApp 72h entry window itself stays free",
     "follow_up": "Still open: confirm whether K&A's WhatsApp click-to-message flow is API/BSP-routed or plain Business App. When next escalated, route via scripts/send-telegram-approval.sh as a type:decision with explicit Approve/Reject/Hold framing of the fact being confirmed, not a plain FYI notification."
+  },
+  "KL-2026-10-02-010900": {
+    "id": "KL-2026-10-02-010900",
+    "date": "2026-10-02",
+    "type": "observation",
+    "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
+    "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
   }
 }
