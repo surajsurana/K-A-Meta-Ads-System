@@ -222,5 +222,12 @@
     "type": "decision",
     "subject": "System self-audit finding: scripts/rollup_performance_summaries.py weekly-to-monthly rollup has no completeness check, unlike monthly-to-quarterly/half-yearly/yearly which all require every sub-period present - produced a materially wrong PERF-2026-08 row this run, corrected by hand",
     "follow_up": "Awaiting Suraj approval via Telegram (scripts/send-telegram-approval.sh) for the proposed code fix to scripts/rollup_performance_summaries.py (add a weekly-row-completeness guard to the weekly-to-monthly step, mirroring the existing quarterly/half-yearly/yearly completeness checks). Once approved, an interactive session should apply the exact fix and confirm with a dry run against the current file state."
+  },
+  "KL-2026-10-02-010500-SELFAUDIT-PADRIFT": {
+    "id": "KL-2026-10-02-010500-SELFAUDIT-PADRIFT",
+    "date": "2026-10-02",
+    "type": "decision",
+    "subject": "System self-audit finding: .claude/agents/performance-analyst.md never got the standing monthly WhatsApp-destination creative-currency sweep duty that docs/architecture.md SS3c already documents - a real documented-vs-actual drift, not yet caused a miss only because the monthly-review prompt names the check explicitly every time",
+    "follow_up": "Awaiting Suraj approval via Telegram (scripts/send-telegram-approval.sh) for the proposed fix: add a new standing bullet to .claude/agents/performance-analyst.md What you own section (alongside the existing Geographic & Customer Demographic bullet), stating the WhatsApp-destination creative-currency sweep as its own permanent monthly-cadence duty - for every active destination_type:WHATSAPP ad set, pull each ads underlying videos created_time and cross-check its actual product/collection against Stitchflow (never trust the ads own name/label alone), flag any ad meaningfully older than the current push or tagged to a different collection, same severity/routing as the geography and per-product findings. Once approved, an interactive session applies the exact wording."
   }
 }
