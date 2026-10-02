@@ -215,5 +215,12 @@
     "type": "observation",
     "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
     "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
+  },
+  "KL-2026-10-02-010700": {
+    "id": "KL-2026-10-02-010700",
+    "date": "2026-10-02",
+    "type": "decision",
+    "subject": "Meta platform intelligence - Andromeda delivery system likely explains WHY the First Love Feed-shift happened to this account specifically; reinforces video/Reels-native content as a delivery-efficiency priority, not just a creative-variety nice-to-have",
+    "follow_up": "When social-community-manager/creative-copywriter next review content priorities, weigh this delivery-efficiency angle explicitly alongside the existing engagement/variety case for video - and when performance-analyst next reviews placement-level delivery on any ad set, treat a Feed-share increase with falling in-placement CTR as a recurring pattern to expect (not a one-off surprise) for as long as the account's own creative library stays static-heavy."
   }
 }
