@@ -167,13 +167,6 @@
     "subject": "USA/Canada cold-prospecting test plan (KL-2026-09-28-121707) - OVERDUE 2026-10-01 re-check performed directly, triggered by Suraj noting todays digest had no mention of USA/Canada - DISPOSITION: STILL HOLDS, resent unchanged",
     "follow_up": "Plan resent unchanged via scripts/send-telegram-approval.sh KL-2026-09-28-121707 - this is the overdue 2026-10-01 recheck (this weeks Thursday review), delayed only by the now-fixed next_review_date() +7-day bug, not by neglect. If held again, a new observation entry with its own fresh follow_up continues the cycle per the standing held-plan sweep process; if approved or rejected, no further recheck is needed."
   },
-  "KL-2026-10-01-EXEC-064023": {
-    "id": "KL-2026-10-01-EXEC-064023",
-    "date": "2026-10-01",
-    "type": "change",
-    "subject": "First Love | Interest Stack (ad 52556519208180, ad set 52535906794980) - ad status PAUSED -> ACTIVE",
-    "follow_up": "Per KL-2026-10-01-064023s rollback criteria: (a) +24h fresh GET insights on ad 52556519208180 - pause early if cumulative impressions below ~300 or delivery flatlined after brief initial window; (b) +48h check if (a) did not trigger - pause early if cumulative impressions below ~600 or day-2 impressions ~zero; (c) 3-day/~1000-impression stop-rule against ~0.95% avg CTR baseline if (a) and (b) both clear; (d) fatigue watch on 7-day rolling frequency vs 3x hard-flag; (e) do not touch the two other PAUSED siblings as part of monitoring this ad."
-  },
   "KL-2026-10-01-EXEC-092144": {
     "id": "KL-2026-10-01-EXEC-092144",
     "date": "2026-10-01",
@@ -236,6 +229,13 @@
     "type": "observation",
     "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
     "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
+  },
+  "KL-2026-10-02-015137": {
+    "id": "KL-2026-10-02-015137",
+    "date": "2026-10-02",
+    "type": "outcome",
+    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980)",
+    "follow_up": "criteria (b)/(c)/(d) remain scheduled per the original plan; next checkpoint +48h from activation (criterion (b))."
   },
   "KL-2026-10-02-071640": {
     "id": "KL-2026-10-02-071640",
