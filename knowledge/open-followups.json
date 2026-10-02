@@ -215,5 +215,12 @@
     "type": "observation",
     "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
     "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
+  },
+  "KL-2026-10-02-005802-SELFAUDIT-ROLLUPBUG": {
+    "id": "KL-2026-10-02-005802-SELFAUDIT-ROLLUPBUG",
+    "date": "2026-10-02",
+    "type": "decision",
+    "subject": "System self-audit finding: scripts/rollup_performance_summaries.py weekly-to-monthly rollup has no completeness check, unlike monthly-to-quarterly/half-yearly/yearly which all require every sub-period present - produced a materially wrong PERF-2026-08 row this run, corrected by hand",
+    "follow_up": "Awaiting Suraj approval via Telegram (scripts/send-telegram-approval.sh) for the proposed code fix to scripts/rollup_performance_summaries.py (add a weekly-row-completeness guard to the weekly-to-monthly step, mirroring the existing quarterly/half-yearly/yearly completeness checks). Once approved, an interactive session should apply the exact fix and confirm with a dry run against the current file state."
   }
 }
