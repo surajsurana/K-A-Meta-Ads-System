@@ -174,13 +174,6 @@
     "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
     "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
   },
-  "KL-2026-10-02-010500-SELFAUDIT-PADRIFT": {
-    "id": "KL-2026-10-02-010500-SELFAUDIT-PADRIFT",
-    "date": "2026-10-02",
-    "type": "decision",
-    "subject": "System self-audit finding: .claude/agents/performance-analyst.md never got the standing monthly WhatsApp-destination creative-currency sweep duty that docs/architecture.md SS3c already documents - a real documented-vs-actual drift, not yet caused a miss only because the monthly-review prompt names the check explicitly every time",
-    "follow_up": "Awaiting Suraj approval via Telegram (scripts/send-telegram-approval.sh) for the proposed fix: add a new standing bullet to .claude/agents/performance-analyst.md What you own section (alongside the existing Geographic & Customer Demographic bullet), stating the WhatsApp-destination creative-currency sweep as its own permanent monthly-cadence duty - for every active destination_type:WHATSAPP ad set, pull each ads underlying videos created_time and cross-check its actual product/collection against Stitchflow (never trust the ads own name/label alone), flag any ad meaningfully older than the current push or tagged to a different collection, same severity/routing as the geography and per-product findings. Once approved, an interactive session applies the exact wording."
-  },
   "KL-2026-10-02-010600": {
     "id": "KL-2026-10-02-010600",
     "date": "2026-10-02",
@@ -229,6 +222,13 @@
     "type": "observation",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
+  },
+  "KL-2026-10-02-EXEC-PADRIFT": {
+    "id": "KL-2026-10-02-EXEC-PADRIFT",
+    "date": "2026-10-02",
+    "type": "change",
+    "subject": "Added WhatsApp-destination creative-currency sweep as a standing bullet in .claude/agents/performance-analyst.md (What you own section)",
+    "follow_up": "None automatic - the standing duty is now live in performance-analyst.md and will apply starting with the next monthly/weekly review that touches WhatsApp-destination ad sets. No further action needed unless a future self-audit finds new drift."
   },
   "KL-2026-10-02-ROLLUPBUG-EXEC": {
     "id": "KL-2026-10-02-ROLLUPBUG-EXEC",
