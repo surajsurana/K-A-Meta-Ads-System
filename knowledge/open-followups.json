@@ -209,13 +209,6 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980)",
     "follow_up": "criteria (b)/(c)/(d) remain scheduled per the original plan; next checkpoint +48h from activation (criterion (b))."
   },
-  "KL-2026-10-02-071640": {
-    "id": "KL-2026-10-02-071640",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-02",
-    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats before drawing a conclusion on whether front-loading is a consistent feature, alternates, or is pure day-to-day noise."
-  },
   "KL-2026-10-02-EXEC-METALLICBLUE": {
     "id": "KL-2026-10-02-EXEC-METALLICBLUE",
     "date": "2026-10-02",
@@ -236,6 +229,13 @@
     "type": "change",
     "subject": "Fixed scripts/rollup_performance_summaries.py: weekly->monthly rollup now requires full-month weekly coverage before rolling up",
     "follow_up": "None required - fix is live on main (commit 64f2a1b). Future monthly reviews will no longer silently roll up an incomplete month; if a month's weekly data is ever genuinely incomplete at review time, the monthly row will simply not be auto-created until the remaining weeks are logged, same as the existing quarterly/half-yearly/yearly tiers already behave."
+  },
+  "KL-2026-10-03-071700": {
+    "id": "KL-2026-10-03-071700",
+    "date": "2026-10-03",
+    "type": "observation",
+    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-03",
+    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. Series is now leaning toward consistent over-pacing (4/5 readings on both ad sets) - if the next 2-3 readings confirm this, the standing data-gathering ask is likely satisfied and a conclusion (front-loading is a real, consistent feature of these ad sets' delivery) should be drawn and routed to campaign-strategist."
   },
   "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE": {
     "id": "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE",
