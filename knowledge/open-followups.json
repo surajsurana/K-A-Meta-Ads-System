@@ -160,13 +160,6 @@
     "subject": "Built 2 new PAUSED ads (USA/Canada Cold Prospecting) - 3rd ad-creation attempt, succeeded",
     "follow_up": "Activation of both ads is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week mark post-activation, cost per messaging_conversation_started vs benchmarks plus Stitchflow US/CA new-customer cross-check, per the original disposition stop-rule (KL-2026-09-28-CS-USACANADA-DISPOSITION)."
   },
-  "KL-2026-10-01-EXEC-101855": {
-    "id": "KL-2026-10-01-EXEC-101855",
-    "date": "2026-10-01",
-    "type": "change",
-    "subject": "3 bare WhatsApp India ads (adset 6862975169176) - added missing primary text + headline via new creatives",
-    "follow_up": "Watch CTR/CPL on these 3 ads for 3-4 days before reading results as final, per the plan's own risk note. Rollback (swap back to original creative ids 1609273200760733 / 1545910003414633 / 2058266332230616) only if effective_status moves to DISAPPROVED/an error state, or CTR/CPL materially worsens over that window."
-  },
   "KL-2026-10-01-dmredirect-recurrence": {
     "id": "KL-2026-10-01-dmredirect-recurrence",
     "date": "2026-10-01",
@@ -243,5 +236,12 @@
     "type": "observation",
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - rollback criteria (b)/(c) checked, (b) clears, (c) is an ambiguous dual-condition call",
     "follow_up": "Needs a campaign-strategist disposition on criterion (c): continue letting it run given the improving trend, or treat materially-below-baseline as sufficient on its own and roll back to PAUSED now. Criterion (e) still applies either way (do not touch the two other PAUSED siblings as part of this)."
+  },
+  "KL-2026-10-04-071502": {
+    "id": "KL-2026-10-04-071502",
+    "date": "2026-10-04",
+    "type": "observation",
+    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, adset 6862975169176) - zero messaging_conversation_started actions for the entire post-creative-swap watch window despite improved CTR and continued spend",
+    "follow_up": "Needs a campaign-strategist disposition on ad 52552969624980 specifically: roll back to its original creative (id 1545910003414633, per the plans stated rollback mechanism) given the complete conversion dropout, or continue watching into day 4/5 given this is right at the edge of the stated 3-4 day window and CTR itself improved. The other 2 ads in this batch (52547120579980, 52547120592180) do not show the same severity and can continue on the original 3-4 day read without a separate disposition unless campaign-strategist judges otherwise."
   }
 }
