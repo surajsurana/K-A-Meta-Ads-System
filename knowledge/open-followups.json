@@ -216,13 +216,6 @@
     "subject": "Media Library item 20260922T133501Z_IMG_2735.mp4 (Golden Muse, KAFL020, suraj_rating 9/10) resurfaced for disposition - already fully processed, NOT new content, no new action needed",
     "follow_up": "None - this closes the loop on the heartbeats resurfaced item with no new action. Activation of the Golden Muse ad set (Ad A 52559143466780, Ad B 52559141356380) remains the genuinely open, separate decision, already tracked via KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIXs follow_up field - not restated here as a new follow_up to avoid creating a duplicate open-item entry."
   },
-  "KL-2026-10-04-015828": {
-    "id": "KL-2026-10-04-015828",
-    "date": "2026-10-04",
-    "type": "decision",
-    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176, campaign 6858349204776) - validated plan: roll back creative to original id 1545910003414633",
-    "follow_up": "Awaiting Suraj's direct Telegram approval before marketing-lead executes. Once approved and executed, marketing-lead should log a linked type:change entry per the verification steps above, then watch messaging_conversation_started for 3-4 days against the rollback criteria."
-  },
   "KL-2026-10-04-071500": {
     "id": "KL-2026-10-04-071500",
     "date": "2026-10-04",
