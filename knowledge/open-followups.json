@@ -230,11 +230,11 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
     "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
   },
-  "KL-2026-10-04-EXEC-WHATSAPPCHAMPAGNE-ROOTCAUSE": {
-    "id": "KL-2026-10-04-EXEC-WHATSAPPCHAMPAGNE-ROOTCAUSE",
+  "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-ROLLBACKBLOCKED-RESP": {
+    "id": "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-ROLLBACKBLOCKED-RESP",
     "date": "2026-10-04",
-    "type": "observation",
-    "subject": "WhatsApp India ad 52552969624980 rollback (KL-2026-10-04-015828) blocked - root cause found via GET-only probes: Meta now rejects attaching this bare (textless) creative, decision cannot be executed as literally specified",
-    "follow_up": "campaign-strategist should re-open this with a new hypothesis/approach given that a literal textless revert is no longer possible on this account - e.g. test minimal neutral text vs the existing 2026-10-01 copy, or investigate via Meta documentation/support whether this is an account-wide or ad-type-wide policy change (would affect any future bare-creative builds elsewhere in the account too). No new Telegram approval sent this pass."
+    "type": "decision",
+    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga) - literal textless rollback confirmed non-executable; NEW DISPOSITION: pause this ad now, test minimal/neutral text variant next",
+    "follow_up": "media-buyer: validate and prepare an exact plan to PAUSE ad 52552969624980 only (no other field changes) for Suraj direct Telegram approval today. Separately, creative-copywriter: draft minimal/neutral primary text per the spec above for a new creative on this same ad (reusing video_id 1373955031616755/image_hash 01cabd74d935bf5258c8abee8cd22fcc/CTA/page_welcome_message unchanged); once drafted, media-buyer builds the new-creative-plus-swap plan (same mechanism as KL-2026-10-01-101855) for its own separate Suraj approval, and this ad is unpaused only as part of that execution, not before. If the user agrees this neutral-text build should proceed as a deliberate test, log it as a type:experiment entry with a stated stop-rule/check-in window at that time, not retroactively."
   }
 }
