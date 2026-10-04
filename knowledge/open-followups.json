@@ -223,18 +223,18 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-04 (reading #6)",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. At 5/6 over-pace readings with a strong magnitude today, this is close to conclusive - 1-2 more confirming readings should be enough to draw the conclusion (front-loading is a real, consistent feature of these ad sets delivery) and route it to campaign-strategist."
   },
+  "KL-2026-10-04-071900": {
+    "id": "KL-2026-10-04-071900",
+    "date": "2026-10-04",
+    "type": "observation",
+    "subject": "Competing-cause check (requested by KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-071502) on ad set 6862975169176s two audience-sharing siblings, 2026-10-01 to 2026-10-04 - NO competing-cause signal found",
+    "follow_up": "campaign-strategist to finalize the deferred disposition on ad 52552969624980 now that the competing-cause check has come back clean."
+  },
   "KL-2026-10-04-CS-INTERESTSTACK-071501": {
     "id": "KL-2026-10-04-CS-INTERESTSTACK-071501",
     "date": "2026-10-04",
     "type": "decision",
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
     "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
-  },
-  "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-071502": {
-    "id": "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-071502",
-    "date": "2026-10-04",
-    "type": "decision",
-    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176) - DEFERRED, not finalizing a creative-attributed verdict until the standing audience-overlap check is actually run for this window",
-    "follow_up": "No live Meta Ads change decided today - NOT routed to media-buyer yet. performance-analyst: run the 2026-10-01 to 2026-10-04 overlap/scale-change check on 6968778736776 and the Insta Engaged/Followers ad set(s) against ad set 6862975169176, same day if possible given the window is closing. Once that comes back: if no competing-cause signal is found, my provisional lean (not yet a final verdict) is that the complete, isolated conversion dropout on this one ad - distinct from the other 2 ads which show worsened-but-nonzero CPL - supports rolling back this specific ad to its original creative (id 1545910003414633) per the plans own stated mechanism; if a competing-cause signal is found (e.g. 16th May or Insta Engaged scaled up in this exact window), that becomes a first-class alternative explanation to weigh before any rollback. Re-submit for a final disposition once that data exists, flagging explicitly whether it is a live Meta Ads change for media-buyer to validate."
   }
 }
