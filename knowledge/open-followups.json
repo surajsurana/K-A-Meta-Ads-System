@@ -230,18 +230,18 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-04 (reading #6)",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. At 5/6 over-pace readings with a strong magnitude today, this is close to conclusive - 1-2 more confirming readings should be enough to draw the conclusion (front-loading is a real, consistent feature of these ad sets delivery) and route it to campaign-strategist."
   },
-  "KL-2026-10-04-071501": {
-    "id": "KL-2026-10-04-071501",
-    "date": "2026-10-04",
-    "type": "observation",
-    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - rollback criteria (b)/(c) checked, (b) clears, (c) is an ambiguous dual-condition call",
-    "follow_up": "Needs a campaign-strategist disposition on criterion (c): continue letting it run given the improving trend, or treat materially-below-baseline as sufficient on its own and roll back to PAUSED now. Criterion (e) still applies either way (do not touch the two other PAUSED siblings as part of this)."
-  },
   "KL-2026-10-04-071502": {
     "id": "KL-2026-10-04-071502",
     "date": "2026-10-04",
     "type": "observation",
     "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, adset 6862975169176) - zero messaging_conversation_started actions for the entire post-creative-swap watch window despite improved CTR and continued spend",
     "follow_up": "Needs a campaign-strategist disposition on ad 52552969624980 specifically: roll back to its original creative (id 1545910003414633, per the plans stated rollback mechanism) given the complete conversion dropout, or continue watching into day 4/5 given this is right at the edge of the stated 3-4 day window and CTR itself improved. The other 2 ads in this batch (52547120579980, 52547120592180) do not show the same severity and can continue on the original 3-4 day read without a separate disposition unless campaign-strategist judges otherwise."
+  },
+  "KL-2026-10-04-CS-INTERESTSTACK-071501": {
+    "id": "KL-2026-10-04-CS-INTERESTSTACK-071501",
+    "date": "2026-10-04",
+    "type": "decision",
+    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
+    "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
   }
 }
