@@ -223,18 +223,18 @@
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-04 (reading #6)",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. At 5/6 over-pace readings with a strong magnitude today, this is close to conclusive - 1-2 more confirming readings should be enough to draw the conclusion (front-loading is a real, consistent feature of these ad sets delivery) and route it to campaign-strategist."
   },
-  "KL-2026-10-04-071900": {
-    "id": "KL-2026-10-04-071900",
-    "date": "2026-10-04",
-    "type": "observation",
-    "subject": "Competing-cause check (requested by KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-071502) on ad set 6862975169176s two audience-sharing siblings, 2026-10-01 to 2026-10-04 - NO competing-cause signal found",
-    "follow_up": "campaign-strategist to finalize the deferred disposition on ad 52552969624980 now that the competing-cause check has come back clean."
-  },
   "KL-2026-10-04-CS-INTERESTSTACK-071501": {
     "id": "KL-2026-10-04-CS-INTERESTSTACK-071501",
     "date": "2026-10-04",
     "type": "decision",
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
     "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
+  },
+  "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-074500": {
+    "id": "KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-074500",
+    "date": "2026-10-04",
+    "type": "decision",
+    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176) - FINAL VERDICT: ROLLBACK creative to original id 1545910003414633",
+    "follow_up": "media-buyer to validate current live state of ad 52552969624980 and ad set 6862975169176, then prepare an exact plan to swap this ads creative back to original id 1545910003414633, for Suraj direct Telegram approval before any write executes. No change to the other 2 ads in the same swap batch or to any sibling ad set."
   }
 }
