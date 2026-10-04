@@ -230,18 +230,18 @@
     "subject": "Fixed scripts/rollup_performance_summaries.py: weekly->monthly rollup now requires full-month weekly coverage before rolling up",
     "follow_up": "None required - fix is live on main (commit 64f2a1b). Future monthly reviews will no longer silently roll up an incomplete month; if a month's weekly data is ever genuinely incomplete at review time, the monthly row will simply not be auto-created until the remaining weeks are logged, same as the existing quarterly/half-yearly/yearly tiers already behave."
   },
-  "KL-2026-10-03-071700": {
-    "id": "KL-2026-10-03-071700",
-    "date": "2026-10-03",
-    "type": "observation",
-    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-03",
-    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. Series is now leaning toward consistent over-pacing (4/5 readings on both ad sets) - if the next 2-3 readings confirm this, the standing data-gathering ask is likely satisfied and a conclusion (front-loading is a real, consistent feature of these ad sets' delivery) should be drawn and routed to campaign-strategist."
-  },
   "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE": {
     "id": "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE",
     "date": "2026-10-03",
     "type": "decision",
     "subject": "Media Library item 20260922T133501Z_IMG_2735.mp4 (Golden Muse, KAFL020, suraj_rating 9/10) resurfaced for disposition - already fully processed, NOT new content, no new action needed",
     "follow_up": "None - this closes the loop on the heartbeats resurfaced item with no new action. Activation of the Golden Muse ad set (Ad A 52559143466780, Ad B 52559141356380) remains the genuinely open, separate decision, already tracked via KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIXs follow_up field - not restated here as a new follow_up to avoid creating a duplicate open-item entry."
+  },
+  "KL-2026-10-04-071500": {
+    "id": "KL-2026-10-04-071500",
+    "date": "2026-10-04",
+    "type": "observation",
+    "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-04 (reading #6)",
+    "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. At 5/6 over-pace readings with a strong magnitude today, this is close to conclusive - 1-2 more confirming readings should be enough to draw the conclusion (front-loading is a real, consistent feature of these ad sets delivery) and route it to campaign-strategist."
   }
 }
