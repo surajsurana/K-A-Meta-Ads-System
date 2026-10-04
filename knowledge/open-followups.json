@@ -202,13 +202,6 @@
     "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
     "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
   },
-  "KL-2026-10-02-015137": {
-    "id": "KL-2026-10-02-015137",
-    "date": "2026-10-02",
-    "type": "outcome",
-    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980)",
-    "follow_up": "criteria (b)/(c)/(d) remain scheduled per the original plan; next checkpoint +48h from activation (criterion (b))."
-  },
   "KL-2026-10-02-EXEC-METALLICBLUE": {
     "id": "KL-2026-10-02-EXEC-METALLICBLUE",
     "date": "2026-10-02",
@@ -243,5 +236,12 @@
     "type": "observation",
     "subject": "USA/Canada Engaged 365D & Followers ad sets (6529679555376, 6737602550176) - daily heartbeat spend-pacing data point, 2026-10-04 (reading #6)",
     "follow_up": "Continue pulling this same percent-of-day-elapsed spend/budget data point on both ad sets across the next several daily heartbeats. At 5/6 over-pace readings with a strong magnitude today, this is close to conclusive - 1-2 more confirming readings should be enough to draw the conclusion (front-loading is a real, consistent feature of these ad sets delivery) and route it to campaign-strategist."
+  },
+  "KL-2026-10-04-071501": {
+    "id": "KL-2026-10-04-071501",
+    "date": "2026-10-04",
+    "type": "observation",
+    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - rollback criteria (b)/(c) checked, (b) clears, (c) is an ambiguous dual-condition call",
+    "follow_up": "Needs a campaign-strategist disposition on criterion (c): continue letting it run given the improving trend, or treat materially-below-baseline as sufficient on its own and roll back to PAUSED now. Criterion (e) still applies either way (do not touch the two other PAUSED siblings as part of this)."
   }
 }
