@@ -202,13 +202,6 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180) criterion (c) recheck - trend CONTINUED through last complete day, PASS",
     "follow_up": "No live action. If a future review wants a genuinely clean 10-05 reading, re-pull later in the day once it is no longer partial - not required this cycle since the 4-day trend already resolved the standing criterion (c) question."
   },
-  "KL-2026-10-05-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-05-CS-BUDGETCHECK",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - weekly review 2026-10-05 - no daily_budget change proposed, well within ceiling",
-    "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of this cycle's two ad pauses (KAFL004 ad 52547120474380, KAFL006 ad 52536048529180)."
-  },
   "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG": {
     "id": "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG",
     "date": "2026-10-05",
@@ -257,6 +250,13 @@
     "type": "decision",
     "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
     "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
+  },
+  "KL-2026-10-05-MB-KAFL004-PAUSEPLAN": {
+    "id": "KL-2026-10-05-MB-KAFL004-PAUSEPLAN",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "First Love | Bridal Collection > First Love | Broad Advantage+ | India > ad 52547120474380 (Blush Pink Lehenga, KAFL004-only) - PAUSE execution plan",
+    "follow_up": "marketing-lead to execute this plan only after the user direct approval via Telegram; once executed, append a linked type:change entry and run the verification steps listed above."
   },
   "KL-2026-10-05-dmredirect-postescalation-recurrence": {
     "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
