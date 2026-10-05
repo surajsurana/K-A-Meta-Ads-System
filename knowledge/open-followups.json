@@ -258,12 +258,12 @@
     "subject": "Insta Engaged & Followers Remarketing Insta DM ad 52536048529180 (Maroon Peplum, KAFL006) paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL006 showing real conversions since this pause."
   },
-  "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN": {
-    "id": "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN",
+  "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST": {
+    "id": "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST",
     "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Whatsapp Message | 29th Nov 2025 > India | Whatsapp | 9th Dec 25 (adset 6862975169176) - NEW additive PAUSED ad with minimal/neutral copy variant, genuine A/B isolation test for the Champagne Gold (KAFL013) creative",
-    "follow_up": "marketing-lead to execute (build PAUSED) only after the user's direct approval via Telegram. Once built, append a linked type:change entry and run the verification steps above. Activation is a separate, later decision - not authorized by this plan - and once the user approves proceeding with it, log a linked type:experiment entry with the stop-rule above (or a refined version of it) stated explicitly, per the copywriter's own follow_up."
+    "type": "change",
+    "subject": "Whatsapp Message | 29th Nov 2025 > India | Whatsapp | 9th Dec 25 (adset 6862975169176) - built new PAUSED ad 52559623981980 for KAFL013 (Champagne Gold) neutral-copy isolation test",
+    "follow_up": "Activation is a separate, later decision - not authorized by this entry. When the user approves proceeding with it, log a linked type:experiment entry stating the stop-rule from the plan (minimum 5-7 days or comparable link-click volume to the original before its collapse, compared against both batch-mate baseline and the original's own failed metrics) before turning it ACTIVE."
   },
   "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC": {
     "id": "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC",
