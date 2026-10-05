@@ -216,13 +216,6 @@
     "subject": "Instagram follower growth this week (+138, ~19.7/day, vs recent ~34.4/day average) and higher cost/follower (~Rs2.97 vs ~Rs1.11 target) - VERDICT: HOLD, no action, single-week reading not sufficient grounds",
     "follow_up": "If a second consecutive week also shows materially slower growth and/or materially worse cost/follower, that would be the first genuine confirming data point - revisit then, not before."
   },
-  "KL-2026-10-05-CS-RUBYRED-OWNCONTENT": {
-    "id": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Own-content post 18119098733004826 (Ruby Red corset carousel, @palak.purswani, 2026-10-02) - disposition: propose as a deliberate, explicit image-vs-video controlled TEST (policy exception), not the default repeat HOLD",
-    "follow_up": "If approved: creative-copywriter briefs the ad (identify/confirm product mapping per section 3d first), media-buyer prepares a PAUSED build, and this gets logged as a type:experiment with a stated 2-week stop-rule comparing CTR/cost-per-result against a recent comparable video ad's baseline before this becomes any kind of precedent for future image use. If rejected or held, standing HOLD continues unchanged and this is not re-proposed without new content or a changed policy."
-  },
   "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX": {
     "id": "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX",
     "date": "2026-10-05",
@@ -278,6 +271,13 @@
     "type": "change",
     "subject": "First Love | Bridal Collection > First Love | Broad Advantage+ | India (adset 52535906903180) - built new PAUSED ad 52559623294780 for KAFL027 (Maroon Fishcut Corset) refreshed copy",
     "follow_up": "Activation is a separate, later decision - not authorized by this entry. When it happens, stagger at least 3-5 days after this build date (2026-10-05) so a performance read can distinguish the new angle from sibling 52541313104580's established baseline."
+  },
+  "KL-2026-10-05-ML-RUBYRED-NEEDSESSION": {
+    "id": "KL-2026-10-05-ML-RUBYRED-NEEDSESSION",
+    "date": "2026-10-05",
+    "type": "observation",
+    "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
+    "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
   },
   "KL-2026-10-05-dmredirect-postescalation-recurrence": {
     "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
