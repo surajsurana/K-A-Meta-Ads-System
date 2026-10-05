@@ -202,13 +202,6 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180) criterion (c) recheck - trend CONTINUED through last complete day, PASS",
     "follow_up": "No live action. If a future review wants a genuinely clean 10-05 reading, re-pull later in the day once it is no longer partial - not required this cycle since the 4-day trend already resolved the standing criterion (c) question."
   },
-  "KL-2026-10-05-070600": {
-    "id": "KL-2026-10-05-070600",
-    "date": "2026-10-05",
-    "type": "observation",
-    "subject": "Ad-copy completeness sweep (weekly review 2026-10-05) - 1 ad missing a headline entirely: Profile Visits | Fresh Content Jul23 (52538162380380)",
-    "follow_up": "Route to campaign-strategist/creative-copywriter: write a real headline for ad 52538162380380 (currently body/message only, no title) - same standing gap class as the 2026-10-02 WhatsApp India 3-ad finding, just singular and lower-spend this time."
-  },
   "KL-2026-10-05-CS-BUDGETCHECK": {
     "id": "KL-2026-10-05-CS-BUDGETCHECK",
     "date": "2026-10-05",
@@ -222,6 +215,13 @@
     "type": "decision",
     "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
     "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
+  },
+  "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE": {
+    "id": "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "Ad 52538162380380 (Profile Visits | Fresh Content Jul23) missing headline field - disposition: route to creative-copywriter for a proper headline, low priority given current spend",
+    "follow_up": "Route to creative-copywriter: write a real headline for ad 52538162380380 (video_id 1513283466672600), matching this ad set's established voice (see the 2026-09-03 Sage Green/Gun Metal Grey variety-ad briefs for tone/structure precedent). Not urgent - batch into next normal session. Once copy exists, media-buyer builds a new-creative-plus-swap plan, same mechanism as the WhatsApp India fix (KL-2026-10-01-101855)."
   },
   "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX": {
     "id": "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX",
