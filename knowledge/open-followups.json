@@ -216,13 +216,6 @@
     "subject": "Instagram follower growth this week (+138, ~19.7/day, vs recent ~34.4/day average) and higher cost/follower (~Rs2.97 vs ~Rs1.11 target) - VERDICT: HOLD, no action, single-week reading not sufficient grounds",
     "follow_up": "If a second consecutive week also shows materially slower growth and/or materially worse cost/follower, that would be the first genuine confirming data point - revisit then, not before."
   },
-  "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE": {
-    "id": "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Ad 52538162380380 (Profile Visits | Fresh Content Jul23) missing headline field - disposition: route to creative-copywriter for a proper headline, low priority given current spend",
-    "follow_up": "Route to creative-copywriter: write a real headline for ad 52538162380380 (video_id 1513283466672600), matching this ad set's established voice (see the 2026-09-03 Sage Green/Gun Metal Grey variety-ad briefs for tone/structure precedent). Not urgent - batch into next normal session. Once copy exists, media-buyer builds a new-creative-plus-swap plan, same mechanism as the WhatsApp India fix (KL-2026-10-01-101855)."
-  },
   "KL-2026-10-05-CS-RUBYRED-OWNCONTENT": {
     "id": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT",
     "date": "2026-10-05",
@@ -250,6 +243,13 @@
     "type": "decision",
     "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
     "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
+  },
+  "KL-2026-10-05-CW-FRESHCONTENTJUL23-HEADLINE": {
+    "id": "KL-2026-10-05-CW-FRESHCONTENTJUL23-HEADLINE",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "Ad 52538162380380 (Profile Visits | Fresh Content Jul23) - new headline to fill the missing title field, per campaign-strategist disposition KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE",
+    "follow_up": "media-buyer: build a new-creative-plus-swap plan (same mechanism as KL-2026-10-01-101855) - new creative byte-identical to the current one (video_id 1513283466672600, image_hash 053176ab13a4d42ebc4fe1a1bdd049d8, call_to_action VIEW_INSTAGRAM_PROFILE unchanged, existing message/body text copied verbatim from a fresh GET at build time, not retyped) except video_data.title is newly filled in with the headline above."
   },
   "KL-2026-10-05-CW-KAFL027-REFRESH": {
     "id": "KL-2026-10-05-CW-KAFL027-REFRESH",
