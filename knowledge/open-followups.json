@@ -244,13 +244,6 @@
     "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
     "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
   },
-  "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT": {
-    "id": "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, SKU KAFL013) - minimal/neutral primary-text + headline variant for the next isolation test, per campaign-strategist spec in KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-ROLLBACKBLOCKED-RESP",
-    "follow_up": "media-buyer: validate a new-creative-plus-swap build plan (same mechanism as KL-2026-10-01-101855) using the headline/primary text above, video_id/image_hash/CTA/page_welcome_message unchanged. This ad (52552969624980) stays PAUSED per KL-2026-10-04-PAUSE-WHATSAPPCHAMPAGNE and is only unpaused as part of that later, separately-approved execution. Once the user approves proceeding with this as a deliberate test, log a linked type:experiment entry with a stated stop-rule/check-in window, per campaign-strategists own follow_up."
-  },
   "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN": {
     "id": "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN",
     "date": "2026-10-05",
@@ -271,6 +264,13 @@
     "type": "decision",
     "subject": "First Love | Bridal Collection > First Love | Broad Advantage+ | India (adset 52535906903180) - NEW additive PAUSED test ad for KAFL027 (Maroon Fishcut Corset) refreshed copy",
     "follow_up": "marketing-lead to execute (build PAUSED) only after the user's direct approval via Telegram. Once built, append a linked type:change entry and run the verification steps above. Activation is a separate, later decision - not authorized by this plan - requiring its own approval and staggered timing per guardrail 11."
+  },
+  "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN": {
+    "id": "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "Whatsapp Message | 29th Nov 2025 > India | Whatsapp | 9th Dec 25 (adset 6862975169176) - NEW additive PAUSED ad with minimal/neutral copy variant, genuine A/B isolation test for the Champagne Gold (KAFL013) creative",
+    "follow_up": "marketing-lead to execute (build PAUSED) only after the user's direct approval via Telegram. Once built, append a linked type:change entry and run the verification steps above. Activation is a separate, later decision - not authorized by this plan - and once the user approves proceeding with it, log a linked type:experiment entry with the stop-rule above (or a refined version of it) stated explicitly, per the copywriter's own follow_up."
   },
   "KL-2026-10-05-dmredirect-postescalation-recurrence": {
     "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
