@@ -118,13 +118,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK": {
-    "id": "KL-2026-10-01-CS-KAFL004006027-HOLDFORCHECK",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "KAFL004 Blush (Rs50,026.56/60d, zero orders, largest active zero-order spend), KAFL006 Maroon Peplum (Rs19,086.67), KAFL027 Maroon Fishcut (Rs13,892.93) - DISPOSITION: hold the cut/refresh verdict, send back for the secondary manual correlation check before deciding",
-    "follow_up": "performance-analyst: run the secondary manual check (customer-name/phone/timing correlation against Stitchflow list_orders, same method used for CHMK030's free-text pass this cycle) specifically for KAFL004 (Blush), KAFL006 (Maroon Peplum), and KAFL027 (Maroon Fishcut) before next weekly review. campaign-strategist will finalize cut-spend-share/refresh-creative/maintain for each once that check returns, prioritizing KAFL004 given its size."
-  },
   "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION": {
     "id": "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION",
     "date": "2026-10-01",
@@ -215,6 +208,13 @@
     "type": "decision",
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
     "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
+  },
+  "KL-2026-10-05-070200": {
+    "id": "KL-2026-10-05-070200",
+    "date": "2026-10-05",
+    "type": "outcome",
+    "subject": "Secondary manual customer-name/phone/timing correlation check for KAFL004 (Blush), KAFL006 (Maroon Peplum), KAFL027 (Maroon Fishcut) - NO HIDDEN MATCH FOUND, zero-order finding stands",
+    "follow_up": "campaign-strategist to finalize cut-spend-share/refresh-creative/maintain for KAFL004 (Rs50,026.56/60d), KAFL006 (Rs19,086.67/60d), KAFL027 (Rs13,892.93/60d) - the secondary check found no hidden order, so this is a confirmed zero-order-on-spend finding for all 3, not a measurement-gap false alarm. Separately worth flagging to whoever owns Stitchflow data entry: the customise Outfit (KA-270326-01) bucket now holds 66 orders in the trailing 60 days alone - a real, growing measurement blind spot for per-product ROI, not just a KAFL004/006/027-specific issue."
   },
   "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED": {
     "id": "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED",
