@@ -146,13 +146,6 @@
     "subject": "Built 2 new PAUSED ads (USA/Canada Cold Prospecting) - 3rd ad-creation attempt, succeeded",
     "follow_up": "Activation of both ads is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week mark post-activation, cost per messaging_conversation_started vs benchmarks plus Stitchflow US/CA new-customer cross-check, per the original disposition stop-rule (KL-2026-09-28-CS-USACANADA-DISPOSITION)."
   },
-  "KL-2026-10-01-dmredirect-recurrence": {
-    "id": "KL-2026-10-01-dmredirect-recurrence",
-    "date": "2026-10-01",
-    "type": "observation",
-    "subject": "Staff DM-redirect wording pattern recurred again (5th consecutive cycle) - occurred hours after the 2026-09-28 direct escalation, not yet reflecting any fix",
-    "follow_up": "Next weekly review: check for any further occurrence dated AFTER 2026-09-28 (the escalation date) - a recurrence clearly dated after that point would be the first real signal the escalation hasn't changed staff behavior, and would warrant going back to the user a second time rather than a routine note."
-  },
   "KL-2026-10-02-010600": {
     "id": "KL-2026-10-02-010600",
     "date": "2026-10-02",
@@ -230,12 +223,12 @@
     "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176, campaign 6858349204776) paused per approved plan",
     "follow_up": "This ad stays paused until the planned neutral/minimal-text replacement creative (creative-copywriter to draft, media-buyer to validate the swap plan) is built and ready, per the originating plan's own sequencing - not unpaused before then without a separate approved plan."
   },
-  "KL-2026-10-05-comment-batch": {
-    "id": "KL-2026-10-05-comment-batch",
+  "KL-2026-10-05-dmredirect-postescalation-recurrence": {
+    "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
     "date": "2026-10-05",
     "type": "observation",
-    "subject": "Comment-reply sweep (weekly review, 2026-10-05) - no new routine batch; the one new comment found already has a live staff DM-redirect reply (see separate escalation entry)",
-    "follow_up": "Next sweep boundary for comments should be comment 18094333286142064 (nehha_sharma001, 2026-10-02T14:29:33), the newest item found this cycle."
+    "subject": "Staff DM-redirect wording pattern recurred with a timestamp AFTER the 2026-09-28 direct escalation - first real signal the escalation has not changed behavior yet, flagging prominently per standing instruction",
+    "follow_up": "Escalating to the user a second time in this cycles report (2026-10-05), per the prior cycles standing instruction - the 2026-09-28 escalation has not visibly changed staff behavior. Needs a real fix at the source; continue checking every cycle for further post-escalation occurrences until this stops recurring."
   },
   "KL-2026-10-05-own-content": {
     "id": "KL-2026-10-05-own-content",
