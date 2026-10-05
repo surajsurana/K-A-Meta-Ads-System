@@ -251,6 +251,13 @@
     "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
     "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
   },
+  "KL-2026-10-05-CW-KAFL027-REFRESH": {
+    "id": "KL-2026-10-05-CW-KAFL027-REFRESH",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "KAFL027 (Maroon Corset With Fishcut Lehenga) - refreshed angle/copy per campaign-strategist REFRESH disposition (KL-2026-10-05-CS-KAFL004006027-FINALDISPOSITION)",
+    "follow_up": "media-buyer: validate a plan (swap onto an existing ad, or build as a new additive test ad) using the headline/primary text/CTA above, same video_id 1682468149516701, across the 3 ads/markets this creative currently serves (India/USA/Canada) as applicable."
+  },
   "KL-2026-10-05-MB-KAFL006-PAUSEPLAN": {
     "id": "KL-2026-10-05-MB-KAFL006-PAUSEPLAN",
     "date": "2026-10-05",
