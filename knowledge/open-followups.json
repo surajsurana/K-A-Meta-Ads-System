@@ -216,6 +216,13 @@
     "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
     "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
   },
+  "KL-2026-10-05-CS-FOLLOWERGROWTH-DIP": {
+    "id": "KL-2026-10-05-CS-FOLLOWERGROWTH-DIP",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "Instagram follower growth this week (+138, ~19.7/day, vs recent ~34.4/day average) and higher cost/follower (~Rs2.97 vs ~Rs1.11 target) - VERDICT: HOLD, no action, single-week reading not sufficient grounds",
+    "follow_up": "If a second consecutive week also shows materially slower growth and/or materially worse cost/follower, that would be the first genuine confirming data point - revisit then, not before."
+  },
   "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE": {
     "id": "KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE",
     "date": "2026-10-05",
