@@ -230,12 +230,12 @@
     "subject": "Ad-copy completeness sweep (weekly review 2026-10-05) - 1 ad missing a headline entirely: Profile Visits | Fresh Content Jul23 (52538162380380)",
     "follow_up": "Route to campaign-strategist/creative-copywriter: write a real headline for ad 52538162380380 (currently body/message only, no title) - same standing gap class as the 2026-10-02 WhatsApp India 3-ad finding, just singular and lower-spend this time."
   },
-  "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED": {
-    "id": "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED",
+  "KL-2026-10-05-CS-BUDGETCHECK": {
+    "id": "KL-2026-10-05-CS-BUDGETCHECK",
     "date": "2026-10-05",
-    "type": "change",
-    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176, campaign 6858349204776) paused per approved plan",
-    "follow_up": "This ad stays paused until the planned neutral/minimal-text replacement creative (creative-copywriter to draft, media-buyer to validate the swap plan) is built and ready, per the originating plan's own sequencing - not unpaused before then without a separate approved plan."
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - weekly review 2026-10-05 - no daily_budget change proposed, well within ceiling",
+    "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of this cycle's two ad pauses (KAFL004 ad 52547120474380, KAFL006 ad 52536048529180)."
   },
   "KL-2026-10-05-dmredirect-postescalation-recurrence": {
     "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
