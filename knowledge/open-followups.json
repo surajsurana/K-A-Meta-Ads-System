@@ -258,19 +258,19 @@
     "subject": "Insta Engaged & Followers Remarketing Insta DM ad 52536048529180 (Maroon Peplum, KAFL006) paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL006 showing real conversions since this pause."
   },
-  "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN": {
-    "id": "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Profile Visits | Follower Growth | Test > Profile Visits | India (adset 52538161512180) > ad 52538162380380 (Profile Visits | Fresh Content Jul23) - new-creative-plus-swap plan to fill missing headline",
-    "follow_up": "marketing-lead to execute (create new creative, verify, then swap ad's creative_id) only after the user's direct approval via Telegram. Once executed, append a linked type:change entry and run the verification steps above. If the Unicode replacement character in the message field persists at build time, flag explicitly before proceeding rather than silently copying it forward."
-  },
   "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN": {
     "id": "KL-2026-10-05-MB-WHATSAPPCHAMPAGNE-NEUTRALTESTPLAN",
     "date": "2026-10-05",
     "type": "decision",
     "subject": "Whatsapp Message | 29th Nov 2025 > India | Whatsapp | 9th Dec 25 (adset 6862975169176) - NEW additive PAUSED ad with minimal/neutral copy variant, genuine A/B isolation test for the Champagne Gold (KAFL013) creative",
     "follow_up": "marketing-lead to execute (build PAUSED) only after the user's direct approval via Telegram. Once built, append a linked type:change entry and run the verification steps above. Activation is a separate, later decision - not authorized by this plan - and once the user approves proceeding with it, log a linked type:experiment entry with the stop-rule above (or a refined version of it) stated explicitly, per the copywriter's own follow_up."
+  },
+  "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC": {
+    "id": "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC",
+    "date": "2026-10-05",
+    "type": "change",
+    "subject": "Profile Visits | Follower Growth | Test > Profile Visits | India (adset 52538161512180) > ad 52538162380380 (Profile Visits | Fresh Content Jul23) - creative swap executed to add missing headline",
+    "follow_up": "Monitor ad 52538162380380 effective_status returns to ACTIVE after the brief post-swap review window. Over ~7-14 days, compare CTR/cost-per-profile-visit against this ad's pre-swap trailing baseline and the ad set's other 2 recent-precedent ads (Four Hand Techniques / Structure, In Motion) per the plan's rollback criteria - revert creative_id to 4379186015632260 if meaningfully worse. Separately, the pre-existing Unicode replacement character in this ad's caption text remains uninvestigated and should be looked at independently of this headline fix."
   },
   "KL-2026-10-05-ML-KAFL027-REFRESHBUILD": {
     "id": "KL-2026-10-05-ML-KAFL027-REFRESHBUILD",
