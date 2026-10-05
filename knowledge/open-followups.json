@@ -251,19 +251,19 @@
     "subject": "First Love ad 52547120474380 (Blush Pink Lehenga, KAFL004) paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL004 showing real conversions since this pause."
   },
+  "KL-2026-10-05-EXEC-KAFL006-PAUSED": {
+    "id": "KL-2026-10-05-EXEC-KAFL006-PAUSED",
+    "date": "2026-10-05",
+    "type": "change",
+    "subject": "Insta Engaged & Followers Remarketing Insta DM ad 52536048529180 (Maroon Peplum, KAFL006) paused per approved plan",
+    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL006 showing real conversions since this pause."
+  },
   "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN": {
     "id": "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN",
     "date": "2026-10-05",
     "type": "decision",
     "subject": "Profile Visits | Follower Growth | Test > Profile Visits | India (adset 52538161512180) > ad 52538162380380 (Profile Visits | Fresh Content Jul23) - new-creative-plus-swap plan to fill missing headline",
     "follow_up": "marketing-lead to execute (create new creative, verify, then swap ad's creative_id) only after the user's direct approval via Telegram. Once executed, append a linked type:change entry and run the verification steps above. If the Unicode replacement character in the message field persists at build time, flag explicitly before proceeding rather than silently copying it forward."
-  },
-  "KL-2026-10-05-MB-KAFL006-PAUSEPLAN": {
-    "id": "KL-2026-10-05-MB-KAFL006-PAUSEPLAN",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Insta Engaged & Followers Remarketing Insta DM > India Insta Engaged 365D & Followers > ad 52536048529180 (Maroon Peplum, KAFL006) - PAUSE execution plan",
-    "follow_up": "marketing-lead to execute this plan only after the user direct approval via Telegram; once executed, append a linked type:change entry and run the verification steps listed above."
   },
   "KL-2026-10-05-MB-KAFL027-REFRESHPLAN": {
     "id": "KL-2026-10-05-MB-KAFL027-REFRESHPLAN",
