@@ -230,6 +230,13 @@
     "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, ad set 6862975169176, campaign 6858349204776) paused per approved plan",
     "follow_up": "This ad stays paused until the planned neutral/minimal-text replacement creative (creative-copywriter to draft, media-buyer to validate the swap plan) is built and ready, per the originating plan's own sequencing - not unpaused before then without a separate approved plan."
   },
+  "KL-2026-10-05-comment-batch": {
+    "id": "KL-2026-10-05-comment-batch",
+    "date": "2026-10-05",
+    "type": "observation",
+    "subject": "Comment-reply sweep (weekly review, 2026-10-05) - no new routine batch; the one new comment found already has a live staff DM-redirect reply (see separate escalation entry)",
+    "follow_up": "Next sweep boundary for comments should be comment 18094333286142064 (nehha_sharma001, 2026-10-02T14:29:33), the newest item found this cycle."
+  },
   "KL-2026-10-05-own-content": {
     "id": "KL-2026-10-05-own-content",
     "date": "2026-10-05",
