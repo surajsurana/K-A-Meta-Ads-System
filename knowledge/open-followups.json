@@ -230,6 +230,13 @@
     "subject": "Ad 52538162380380 (Profile Visits | Fresh Content Jul23) missing headline field - disposition: route to creative-copywriter for a proper headline, low priority given current spend",
     "follow_up": "Route to creative-copywriter: write a real headline for ad 52538162380380 (video_id 1513283466672600), matching this ad set's established voice (see the 2026-09-03 Sage Green/Gun Metal Grey variety-ad briefs for tone/structure precedent). Not urgent - batch into next normal session. Once copy exists, media-buyer builds a new-creative-plus-swap plan, same mechanism as the WhatsApp India fix (KL-2026-10-01-101855)."
   },
+  "KL-2026-10-05-CS-RUBYRED-OWNCONTENT": {
+    "id": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "Own-content post 18119098733004826 (Ruby Red corset carousel, @palak.purswani, 2026-10-02) - disposition: propose as a deliberate, explicit image-vs-video controlled TEST (policy exception), not the default repeat HOLD",
+    "follow_up": "If approved: creative-copywriter briefs the ad (identify/confirm product mapping per section 3d first), media-buyer prepares a PAUSED build, and this gets logged as a type:experiment with a stated 2-week stop-rule comparing CTR/cost-per-result against a recent comparable video ad's baseline before this becomes any kind of precedent for future image use. If rejected or held, standing HOLD continues unchanged and this is not re-proposed without new content or a changed policy."
+  },
   "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX": {
     "id": "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX",
     "date": "2026-10-05",
