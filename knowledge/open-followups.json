@@ -251,13 +251,6 @@
     "subject": "Ad 52538162380380 (Profile Visits | Fresh Content Jul23) - new headline to fill the missing title field, per campaign-strategist disposition KL-2026-10-05-CS-FRESHCONTENTJUL23-HEADLINE",
     "follow_up": "media-buyer: build a new-creative-plus-swap plan (same mechanism as KL-2026-10-01-101855) - new creative byte-identical to the current one (video_id 1513283466672600, image_hash 053176ab13a4d42ebc4fe1a1bdd049d8, call_to_action VIEW_INSTAGRAM_PROFILE unchanged, existing message/body text copied verbatim from a fresh GET at build time, not retyped) except video_data.title is newly filled in with the headline above."
   },
-  "KL-2026-10-05-CW-KAFL027-REFRESH": {
-    "id": "KL-2026-10-05-CW-KAFL027-REFRESH",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "KAFL027 (Maroon Corset With Fishcut Lehenga) - refreshed angle/copy per campaign-strategist REFRESH disposition (KL-2026-10-05-CS-KAFL004006027-FINALDISPOSITION)",
-    "follow_up": "media-buyer: validate a plan (swap onto an existing ad, or build as a new additive test ad) using the headline/primary text/CTA above, same video_id 1682468149516701, across the 3 ads/markets this creative currently serves (India/USA/Canada) as applicable."
-  },
   "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT": {
     "id": "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT",
     "date": "2026-10-05",
@@ -271,6 +264,13 @@
     "type": "decision",
     "subject": "Insta Engaged & Followers Remarketing Insta DM > India Insta Engaged 365D & Followers > ad 52536048529180 (Maroon Peplum, KAFL006) - PAUSE execution plan",
     "follow_up": "marketing-lead to execute this plan only after the user direct approval via Telegram; once executed, append a linked type:change entry and run the verification steps listed above."
+  },
+  "KL-2026-10-05-MB-KAFL027-REFRESHPLAN": {
+    "id": "KL-2026-10-05-MB-KAFL027-REFRESHPLAN",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "First Love | Bridal Collection > First Love | Broad Advantage+ | India (adset 52535906903180) - NEW additive PAUSED test ad for KAFL027 (Maroon Fishcut Corset) refreshed copy",
+    "follow_up": "marketing-lead to execute (build PAUSED) only after the user's direct approval via Telegram. Once built, append a linked type:change entry and run the verification steps above. Activation is a separate, later decision - not authorized by this plan - requiring its own approval and staggered timing per guardrail 11."
   },
   "KL-2026-10-05-dmredirect-postescalation-recurrence": {
     "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
