@@ -258,6 +258,13 @@
     "subject": "KAFL027 (Maroon Corset With Fishcut Lehenga) - refreshed angle/copy per campaign-strategist REFRESH disposition (KL-2026-10-05-CS-KAFL004006027-FINALDISPOSITION)",
     "follow_up": "media-buyer: validate a plan (swap onto an existing ad, or build as a new additive test ad) using the headline/primary text/CTA above, same video_id 1682468149516701, across the 3 ads/markets this creative currently serves (India/USA/Canada) as applicable."
   },
+  "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT": {
+    "id": "KL-2026-10-05-CW-WHATSAPPCHAMPAGNE-NEUTRALTEXT",
+    "date": "2026-10-05",
+    "type": "decision",
+    "subject": "WhatsApp India ad 52552969624980 (Champagne Gold Corset+Lehenga, SKU KAFL013) - minimal/neutral primary-text + headline variant for the next isolation test, per campaign-strategist spec in KL-2026-10-04-CS-WHATSAPPCHAMPAGNE-ROLLBACKBLOCKED-RESP",
+    "follow_up": "media-buyer: validate a new-creative-plus-swap build plan (same mechanism as KL-2026-10-01-101855) using the headline/primary text above, video_id/image_hash/CTA/page_welcome_message unchanged. This ad (52552969624980) stays PAUSED per KL-2026-10-04-PAUSE-WHATSAPPCHAMPAGNE and is only unpaused as part of that later, separately-approved execution. Once the user approves proceeding with this as a deliberate test, log a linked type:experiment entry with a stated stop-rule/check-in window, per campaign-strategists own follow_up."
+  },
   "KL-2026-10-05-MB-KAFL006-PAUSEPLAN": {
     "id": "KL-2026-10-05-MB-KAFL006-PAUSEPLAN",
     "date": "2026-10-05",
