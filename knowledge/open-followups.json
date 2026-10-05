@@ -244,6 +244,13 @@
     "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
     "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
   },
+  "KL-2026-10-05-EXEC-KAFL004-PAUSED": {
+    "id": "KL-2026-10-05-EXEC-KAFL004-PAUSED",
+    "date": "2026-10-05",
+    "type": "change",
+    "subject": "First Love ad 52547120474380 (Blush Pink Lehenga, KAFL004) paused per approved plan",
+    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL004 showing real conversions since this pause."
+  },
   "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN": {
     "id": "KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN",
     "date": "2026-10-05",
