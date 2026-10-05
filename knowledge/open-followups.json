@@ -195,13 +195,6 @@
     "subject": "Media Library item 20260922T133501Z_IMG_2735.mp4 (Golden Muse, KAFL020, suraj_rating 9/10) resurfaced for disposition - already fully processed, NOT new content, no new action needed",
     "follow_up": "None - this closes the loop on the heartbeats resurfaced item with no new action. Activation of the Golden Muse ad set (Ad A 52559143466780, Ad B 52559141356380) remains the genuinely open, separate decision, already tracked via KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIXs follow_up field - not restated here as a new follow_up to avoid creating a duplicate open-item entry."
   },
-  "KL-2026-10-04-CS-INTERESTSTACK-071501": {
-    "id": "KL-2026-10-04-CS-INTERESTSTACK-071501",
-    "date": "2026-10-04",
-    "type": "decision",
-    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180, ad set 52535906794980) - criterion (c) disposition: KEEP RUNNING, recheck tomorrow",
-    "follow_up": "No live Meta Ads change today - not routed to media-buyer. Re-check tomorrow (2026-10-05): fresh daily CTR reading on ad 52556519208180. If the improving trend breaks (CTR flat or down day-over-day, i.e. the no-improving-trend leg now also holds alongside materially-below-baseline), that is the point to roll back to PAUSED. If the trend continues closing the gap toward the ~0.95% baseline, no action needed and criterion (c) can be considered resolved as a pass. Criterion (e) still applies - do not touch the two other PAUSED siblings as part of this."
-  },
   "KL-2026-10-05-070200": {
     "id": "KL-2026-10-05-070200",
     "date": "2026-10-05",
@@ -215,6 +208,13 @@
     "type": "outcome",
     "subject": "USA/Canada Engaged 365D & Followers (6529679555376, 6737602550176) front-loaded pacing - reading #7, CONCLUSIVE",
     "follow_up": "Route to campaign-strategist: front-loaded pacing on both USA and Canada Engaged 365D & Followers ad sets is now a confirmed standing pattern (7 readings) - decide whether this warrants a budget/bid-strategy change (e.g. a bid cap to spread delivery more evenly through the day) or is acceptable as-is given these are small, capped-budget warm-remarketing ad sets where front-loading does not obviously cost incremental results. No live Meta change made by performance-analyst."
+  },
+  "KL-2026-10-05-070400": {
+    "id": "KL-2026-10-05-070400",
+    "date": "2026-10-05",
+    "type": "outcome",
+    "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180) criterion (c) recheck - trend CONTINUED through last complete day, PASS",
+    "follow_up": "No live action. If a future review wants a genuinely clean 10-05 reading, re-pull later in the day once it is no longer partial - not required this cycle since the 4-day trend already resolved the standing criterion (c) question."
   },
   "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED": {
     "id": "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-PAUSED",
