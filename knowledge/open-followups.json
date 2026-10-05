@@ -216,12 +216,12 @@
     "subject": "Portfolio budget allocation check - weekly review 2026-10-05 - no daily_budget change proposed, well within ceiling",
     "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of this cycle's two ad pauses (KAFL004 ad 52547120474380, KAFL006 ad 52536048529180)."
   },
-  "KL-2026-10-05-CS-KAFL004006027-FINALDISPOSITION": {
-    "id": "KL-2026-10-05-CS-KAFL004006027-FINALDISPOSITION",
+  "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG": {
+    "id": "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG",
     "date": "2026-10-05",
     "type": "decision",
-    "subject": "KAFL004 (Blush), KAFL006 (Maroon Peplum), KAFL027 (Maroon Fishcut) - secondary check (KL-2026-10-05-070200) found no hidden match for any of the 3; FINAL DISPOSITION per SKU, not a single blended verdict",
-    "follow_up": "Route to media-buyer: validate and prepare execution plans to (1) pause ad 52547120474380 (KAFL004 single-product), (2) pause ad 52536048529180 (KAFL006 single-product) - fresh live pre-check required on both, including the exact current spend split across KAFL004's 4 ads/3 videos since this session had no live Meta access to pull it. Route to creative-copywriter: (a) prepare a refreshed creative/angle brief for KAFL027 (video 1682468149516701, ads 52541313341180/52541313253380/52541313104580), (b) note for the next refresh of the KAFL004/KAFL002/KAFL003 shared multi-product creatives (videos 1291859919476821, 888086080552662) that KAFL004 should be de-emphasized in favor of the two converting products. Separately, not an ads action: flag the Customise Outfit (KA-270326-01) generic-SKU bucket to Suraj as a Stitchflow data-entry/ops conversation - see companion entry."
+    "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
+    "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
   },
   "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX": {
     "id": "KL-2026-10-05-CS-SCALEINTEL-FEEDFIX",
