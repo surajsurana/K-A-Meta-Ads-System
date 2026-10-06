@@ -286,19 +286,19 @@
     "subject": "K&A own-content ad-sourcing sweep (2026-10-05, weekly review) - 1 new carousel, image-only, video drought continues (53 days)",
     "follow_up": "Continue tracking the standalone-Reel drought (0 native Reels since 2026-08-13, now 53 days). Next sweep boundary should be 18119098733004826 (2026-10-02), the newest item found this cycle."
   },
-  "KL-2026-10-06-ACTIVATE-METALLICBLUE": {
-    "id": "KL-2026-10-06-ACTIVATE-METALLICBLUE",
-    "date": "2026-10-06",
-    "type": "decision",
-    "subject": "Metallic Blue (KAFL014) ad-set test (built PAUSED 2026-10-02, KL-2026-10-02-020145) - ACTIVATION plan, 4 days after build with no activation ever proposed",
-    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs Broad Advantage+ baseline, per KL-2026-10-02-020145."
-  },
   "KL-2026-10-06-EXEC-ACTIVATEGOLDENMUSE": {
     "id": "KL-2026-10-06-EXEC-ACTIVATEGOLDENMUSE",
     "date": "2026-10-06",
     "type": "change",
     "subject": "Activated First Love | Golden Muse (KAFL020) Test | India (ad set + both ads flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-GOLDENMUSE",
     "follow_up": "2-week stop-rule check: cost per messaging_conversation_started per variant, per KL-2026-10-02-015924. Confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
+  },
+  "KL-2026-10-06-EXEC-ACTIVATEMETALLICBLUE": {
+    "id": "KL-2026-10-06-EXEC-ACTIVATEMETALLICBLUE",
+    "date": "2026-10-06",
+    "type": "change",
+    "subject": "Activated First Love | Metallic Blue (KAFL014) Test | India (ad set + ad flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-METALLICBLUE",
+    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs Broad Advantage+ baseline, per KL-2026-10-02-020145. Confirm ad clears IN_PROCESS to ACTIVE within the normal review window; flag if it comes back disapproved."
   },
   "KL-2026-10-06-EXEC-ACTIVATEUSACANADA": {
     "id": "KL-2026-10-06-EXEC-ACTIVATEUSACANADA",
