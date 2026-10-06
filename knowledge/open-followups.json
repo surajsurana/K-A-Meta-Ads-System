@@ -132,13 +132,6 @@
     "subject": "USA/Canada cold-prospecting test plan (KL-2026-09-28-121707) - OVERDUE 2026-10-01 re-check performed directly, triggered by Suraj noting todays digest had no mention of USA/Canada - DISPOSITION: STILL HOLDS, resent unchanged",
     "follow_up": "Plan resent unchanged via scripts/send-telegram-approval.sh KL-2026-09-28-121707 - this is the overdue 2026-10-01 recheck (this weeks Thursday review), delayed only by the now-fixed next_review_date() +7-day bug, not by neglect. If held again, a new observation entry with its own fresh follow_up continues the cycle per the standing held-plan sweep process; if approved or rejected, no further recheck is needed."
   },
-  "KL-2026-10-01-EXEC-092144": {
-    "id": "KL-2026-10-01-EXEC-092144",
-    "date": "2026-10-01",
-    "type": "change",
-    "subject": "Built 2 new PAUSED ads (USA/Canada Cold Prospecting) - 3rd ad-creation attempt, succeeded",
-    "follow_up": "Activation of both ads is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week mark post-activation, cost per messaging_conversation_started vs benchmarks plus Stitchflow US/CA new-customer cross-check, per the original disposition stop-rule (KL-2026-09-28-CS-USACANADA-DISPOSITION)."
-  },
   "KL-2026-10-02-010600": {
     "id": "KL-2026-10-02-010600",
     "date": "2026-10-02",
@@ -292,5 +285,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-05, weekly review) - 1 new carousel, image-only, video drought continues (53 days)",
     "follow_up": "Continue tracking the standalone-Reel drought (0 native Reels since 2026-08-13, now 53 days). Next sweep boundary should be 18119098733004826 (2026-10-02), the newest item found this cycle."
+  },
+  "KL-2026-10-06-ACTIVATE-USACANADA": {
+    "id": "KL-2026-10-06-ACTIVATE-USACANADA",
+    "date": "2026-10-06",
+    "type": "decision",
+    "subject": "USA/Canada cold-prospecting test (built PAUSED 2026-10-01, KL-2026-10-01-EXEC-092144) - ACTIVATION plan, 5 days after build with no activation ever proposed",
+    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs benchmarks, plus Stitchflow US/CA new-customer cross-check, per KL-2026-09-28-CS-USACANADA-DISPOSITION."
   }
 }
