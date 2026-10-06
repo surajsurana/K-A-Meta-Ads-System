@@ -286,6 +286,13 @@
     "subject": "K&A own-content ad-sourcing sweep (2026-10-05, weekly review) - 1 new carousel, image-only, video drought continues (53 days)",
     "follow_up": "Continue tracking the standalone-Reel drought (0 native Reels since 2026-08-13, now 53 days). Next sweep boundary should be 18119098733004826 (2026-10-02), the newest item found this cycle."
   },
+  "KL-2026-10-06-ACTIVATE-GOLDENMUSE": {
+    "id": "KL-2026-10-06-ACTIVATE-GOLDENMUSE",
+    "date": "2026-10-06",
+    "type": "decision",
+    "subject": "Golden Muse (KAFL020) ad-set test (built PAUSED 2026-10-02, KL-2026-10-02-015924) - ACTIVATION plan, 4 days after build with no activation ever proposed",
+    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started per variant, per KL-2026-10-02-015924."
+  },
   "KL-2026-10-06-ACTIVATE-USACANADA": {
     "id": "KL-2026-10-06-ACTIVATE-USACANADA",
     "date": "2026-10-06",
