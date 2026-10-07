@@ -244,13 +244,6 @@
     "subject": "Insta Engaged & Followers Remarketing Insta DM ad 52536048529180 (Maroon Peplum, KAFL006) paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL006 showing real conversions since this pause."
   },
-  "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST": {
-    "id": "KL-2026-10-05-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST",
-    "date": "2026-10-05",
-    "type": "change",
-    "subject": "Whatsapp Message | 29th Nov 2025 > India | Whatsapp | 9th Dec 25 (adset 6862975169176) - built new PAUSED ad 52559623981980 for KAFL013 (Champagne Gold) neutral-copy isolation test",
-    "follow_up": "Activation is a separate, later decision - not authorized by this entry. When the user approves proceeding with it, log a linked type:experiment entry stating the stop-rule from the plan (minimum 5-7 days or comparable link-click volume to the original before its collapse, compared against both batch-mate baseline and the original's own failed metrics) before turning it ACTIVE."
-  },
   "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC": {
     "id": "KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC",
     "date": "2026-10-05",
@@ -306,5 +299,12 @@
     "type": "change",
     "subject": "Activated USA/Canada Cold Prospecting Test (5 objects flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-USACANADA",
     "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs benchmarks, plus Stitchflow US/CA new-customer cross-check, per KL-2026-09-28-CS-USACANADA-DISPOSITION. Also confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
+  },
+  "KL-2026-10-07-014837": {
+    "id": "KL-2026-10-07-014837",
+    "date": "2026-10-07",
+    "type": "decision",
+    "subject": "WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test (ad 52559623981980, adset 6862975169176, 'India | Whatsapp | 9th Dec 25', campaign 6858349204776 'Whatsapp Message | 29th Nov 2025') - activation plan, daily heartbeat paused-build sweep",
+    "follow_up": "marketing-lead to execute (flip status PAUSED->ACTIVE on ad 52559623981980 only; no other object touched) only after the user's direct approval via Telegram. Once executed, append a linked type:change entry with post-activation verification per the steps above, AND a separate linked type:experiment entry stating the stop-rule above explicitly (per the original build's copywriter follow_up) with a stated check-in date 5-7 days out."
   }
 }
