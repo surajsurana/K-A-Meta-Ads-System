@@ -300,11 +300,11 @@
     "subject": "Activated USA/Canada Cold Prospecting Test (5 objects flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-USACANADA",
     "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs benchmarks, plus Stitchflow US/CA new-customer cross-check, per KL-2026-09-28-CS-USACANADA-DISPOSITION. Also confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
   },
-  "KL-2026-10-07-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST-ACTIVATE": {
-    "id": "KL-2026-10-07-EXEC-WHATSAPPCHAMPAGNE-NEUTRALTEST-ACTIVATE",
+  "KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST": {
+    "id": "KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST",
     "date": "2026-10-07",
-    "type": "change",
-    "subject": "Activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980) within already-active ad set 6862975169176",
-    "follow_up": "See separate linked type:experiment entry KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST for the stop-rule and check-in date."
+    "type": "experiment",
+    "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
+    "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
   }
 }
