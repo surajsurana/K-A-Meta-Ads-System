@@ -300,6 +300,13 @@
     "subject": "Zero/near-zero-order-despite-spend-and-leads: Bihar, Jharkhand, Assam, Jammu & Kashmir (30-day Meta region spend vs full-history Stitchflow orders)",
     "follow_up": "Route to campaign-strategist for one of the 8 geography dispositions. Given the parallel to the already-MAINTAINed UP/Rajasthan/MP case (low historical base rate, no established cadence to regress from, small combined spend share), a MAINTAIN verdict is plausible here too, but this is campaign-strategists call to make, not assume."
   },
+  "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND": {
+    "id": "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND",
+    "date": "2026-10-08",
+    "type": "observation",
+    "subject": "Real revenue with zero/near-zero acquisition spend behind it: Netherlands, Saudi Arabia, Australia, UK (FY2026-2027 Stitchflow sales-by-city vs current active Meta geography)",
+    "follow_up": "Route to campaign-strategist to weigh whether any of these (most plausibly Netherlands given the highest single order value) justifies a small prospecting test, per the standing missed-opportunity-signal duty. Low confidence stated explicitly given n=1 for 3 of the 4 geographies - this is a signal worth weighing, not a case to act on from a single data point alone."
+  },
   "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
     "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
     "date": "2026-10-08",
