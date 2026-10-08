@@ -265,13 +265,6 @@
     "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
     "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
   },
-  "KL-2026-10-05-dmredirect-postescalation-recurrence": {
-    "id": "KL-2026-10-05-dmredirect-postescalation-recurrence",
-    "date": "2026-10-05",
-    "type": "observation",
-    "subject": "Staff DM-redirect wording pattern recurred with a timestamp AFTER the 2026-09-28 direct escalation - first real signal the escalation has not changed behavior yet, flagging prominently per standing instruction",
-    "follow_up": "Escalating to the user a second time in this cycles report (2026-10-05), per the prior cycles standing instruction - the 2026-09-28 escalation has not visibly changed staff behavior. Needs a real fix at the source; continue checking every cycle for further post-escalation occurrences until this stops recurring."
-  },
   "KL-2026-10-05-own-content": {
     "id": "KL-2026-10-05-own-content",
     "date": "2026-10-05",
@@ -307,12 +300,12 @@
     "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
     "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
   },
-  "KL-2026-10-08-comment-batch": {
-    "id": "KL-2026-10-08-comment-batch",
+  "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
+    "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
     "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Comment-reply batch plan (twice-weekly review, 2026-10-08) - 4 routine compliments to reply to; 1 new price/availability comment already answered live by staff using the DM-redirect wording again (see separate observation entry)",
-    "follow_up": "Next sweep boundary for comments should be comment 18141501235717970 (palak.purswani, 2026-10-06T09:47:37), the newest item found this cycle."
+    "type": "observation",
+    "subject": "Staff DM-redirect wording pattern recurred a second time after the 2026-09-28 direct escalation - confirms this is an ongoing unfixed process gap, not a one-off",
+    "follow_up": "Flagging prominently in this cycles report to the user again. This is now the 2nd post-escalation occurrence - the process gap (staff replying live to price/availability comments with Instagram-DM wording instead of WhatsApp-only policy wording) needs an actual fix at the source (retrain whoever replies live, or route all replies through this pipeline), not a third passive note. Continue checking every cycle."
   },
   "KL-2026-10-08-ugc-tags": {
     "id": "KL-2026-10-08-ugc-tags",
