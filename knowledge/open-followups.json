@@ -265,13 +265,6 @@
     "subject": "KAFL027 Structure Refresh ad (52559623294780, First Love | Broad Advantage+ | India, adset 52535906903180) built PAUSED 2026-10-05 - DEFER activation, do not activate at the day-3 minimum of its staggered window",
     "follow_up": "Re-propose activation of ad 52559623294780 once the Feed-exclusion rollback on adset 52535906903180 has executed and had its own early-pacing read (a few days post-rollback), not before. media-buyer to carry this forward at that point."
   },
-  "KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE": {
-    "id": "KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset, USA Engaged 365D and Followers) missing headline field (KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE) - disposition: route to creative-copywriter for a real headline, same pattern as the 2026-10-05 Fresh Content Jul23 fix",
-    "follow_up": "creative-copywriter: write a real headline for ad 6907213796176, consistent with the existing 6 body-text variations (Deep Purple Satin Halter Ruched Corset with Drape, Skirt and a Stole theme). media-buyer: prepare a new-creative-plus-swap plan (new creative object with the new title, swap onto the ad - object_story_spec/asset_feed_spec title cannot be edited on an existing creative) for Suraj direct Telegram approval, same mechanism as KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN."
-  },
   "KL-2026-10-08-CS-SCALEINTEL": {
     "id": "KL-2026-10-08-CS-SCALEINTEL",
     "date": "2026-10-08",
@@ -285,6 +278,13 @@
     "type": "decision",
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
+  },
+  "KL-2026-10-08-CW-NIKKIMEHRA-HEADLINE": {
+    "id": "KL-2026-10-08-CW-NIKKIMEHRA-HEADLINE",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26, USA Engaged 365D & Followers adset 6529679555376) - headline variations to fill the missing title field, per campaign-strategist disposition KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE",
+    "follow_up": "media-buyer: prepare a new-creative-plus-swap plan (asset_feed_spec titles/bodies/descriptions/title fields are not editable in place on an existing creative object, same constraint as the Fresh Content Jul23 precedent KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN) - new creative object with asset_feed_spec byte-identical to the current one (same 6 bodies[], same 1 descriptions[], same video_id=2350075288833168, same object_story_spec/call_to_action CONTACT_US->INSTAGRAM_DIRECT, copied verbatim from a fresh GET at build time, not retyped) plus a new titles[] array containing the 4 headline variations above, then swap ad 6907213796176's creative_id to the new object for Suraj's direct Telegram approval. Separately (not blocking this fix): flag the existing 'Shop now!' body-text phrasing for a future copy-refresh review against house lead-gen style."
   },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
