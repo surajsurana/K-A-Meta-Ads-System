@@ -251,27 +251,6 @@
     "subject": "Activated USA/Canada Cold Prospecting Test (5 objects flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-USACANADA",
     "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs benchmarks, plus Stitchflow US/CA new-customer cross-check, per KL-2026-09-28-CS-USACANADA-DISPOSITION. Also confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
   },
-  "KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST": {
-    "id": "KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST",
-    "date": "2026-10-07",
-    "type": "experiment",
-    "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
-    "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
-  },
-  "KL-2026-10-08-CS-GEO-BIHARJHARKHANDASSAMJK": {
-    "id": "KL-2026-10-08-CS-GEO-BIHARJHARKHANDASSAMJK",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Bihar/Jharkhand/Assam/Jammu and Kashmir zero-order-despite-spend-and-leads (KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK) - DISPOSITION: MAINTAIN on all four, base-rate math shows this is an even weaker signal than the already-MAINTAINed UP/Rajasthan/MP case",
-    "follow_up": "No action this cycle on any of the four. Re-open only if: (a) a genuinely longer window (several months, matching or exceeding each states own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) combined spend in these four states grows materially beyond its current ~Rs203/day share without any corresponding order. Do not re-run this exact 30-day check again next cycle without meaningfully more calendar time having passed."
-  },
-  "KL-2026-10-08-CS-GEO-REVENUENOACQSPEND": {
-    "id": "KL-2026-10-08-CS-GEO-REVENUENOACQSPEND",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Netherlands/Saudi Arabia/Australia/UK revenue-without-acquisition-spend (KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND) - DISPOSITION: HOLD on all four, no new evidence beyond what was already weighed and decided in the last two weeks",
-    "follow_up": "No new action on any of the four this cycle. Revisit any single one only if it produces a SECOND real order (or a meaningfully larger cumulative figure than what is already on record) in a future review - a repeat of the identical single order should not trigger a fresh round of this same analysis again."
-  },
   "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER": {
     "id": "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER",
     "date": "2026-10-08",
@@ -285,6 +264,13 @@
     "type": "decision",
     "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset, USA Engaged 365D and Followers) missing headline field (KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE) - disposition: route to creative-copywriter for a real headline, same pattern as the 2026-10-05 Fresh Content Jul23 fix",
     "follow_up": "creative-copywriter: write a real headline for ad 6907213796176, consistent with the existing 6 body-text variations (Deep Purple Satin Halter Ruched Corset with Drape, Skirt and a Stole theme). media-buyer: prepare a new-creative-plus-swap plan (new creative object with the new title, swap onto the ad - object_story_spec/asset_feed_spec title cannot be edited on an existing creative) for Suraj direct Telegram approval, same mechanism as KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN."
+  },
+  "KL-2026-10-08-CS-SCALEINTEL": {
+    "id": "KL-2026-10-08-CS-SCALEINTEL",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step; the Oct1-4 disruption on Broad Advantage+/Interest Stack did NOT clear as hoped and now requires its own rollback (KL-2026-10-08-CS-FEEDEXCL-ROLLBACK), and 16th May 26s own audience-overlap partner is mid-experiment",
+    "follow_up": "Re-ask the ceiling-step question next weekly review. Specifically give 16th May 26 its own dedicated audience-overlap-vs-WhatsApp-India review once the neutral-text-test check-in (2026-10-12 to 2026-10-14) has resolved and WhatsApp India is in a settled state again - that is the earliest clean moment to treat 16th May as an isolated step destination. Re-check Broad Advantage+/Interest Stack headroom only after their own rollback has executed and settled."
   },
   "KL-2026-10-08-CS-UGC-PREETT": {
     "id": "KL-2026-10-08-CS-UGC-PREETT",
