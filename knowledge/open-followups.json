@@ -265,12 +265,12 @@
     "subject": "KAFL027 Structure Refresh ad (52559623294780, First Love | Broad Advantage+ | India, adset 52535906903180) built PAUSED 2026-10-05 - DEFER activation, do not activate at the day-3 minimum of its staggered window",
     "follow_up": "Re-propose activation of ad 52559623294780 once the Feed-exclusion rollback on adset 52535906903180 has executed and had its own early-pacing read (a few days post-rollback), not before. media-buyer to carry this forward at that point."
   },
-  "KL-2026-10-08-CS-SCALEINTEL": {
-    "id": "KL-2026-10-08-CS-SCALEINTEL",
+  "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK": {
+    "id": "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK",
     "date": "2026-10-08",
     "type": "decision",
-    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step; the Oct1-4 disruption on Broad Advantage+/Interest Stack did NOT clear as hoped and now requires its own rollback (KL-2026-10-08-CS-FEEDEXCL-ROLLBACK), and 16th May 26s own audience-overlap partner is mid-experiment",
-    "follow_up": "Re-ask the ceiling-step question next weekly review. Specifically give 16th May 26 its own dedicated audience-overlap-vs-WhatsApp-India review once the neutral-text-test check-in (2026-10-12 to 2026-10-14) has resolved and WhatsApp India is in a settled state again - that is the earliest clean moment to treat 16th May as an isolated step destination. Re-check Broad Advantage+/Interest Stack headroom only after their own rollback has executed and settled."
+    "subject": "Metallic Coffee Brown (ad 52552969628580, ad set 6862975169176 'India | Whatsapp | 9th Dec 25') 3rd-of-4 staggered activation - DISPOSITION: HOLD, do not activate yet; Burnt Orange stays paused behind it",
+    "follow_up": "No media-buyer action this cycle - Metallic Coffee Brown and Burnt Orange both stay PAUSED. Re-ask this question at or after the 2026-10-12 to 2026-10-14 Champagne Gold neutral-text check-in, once ad set 6862975169176 is in a settled, single-test state again. Separately and not blocking: creative-copywriter to finally append the corrective creative-product-map.jsonl entry (KAFL016 -> KA-160326-91M) requested by KL-2026-09-28-004715, and to reconcile the video_id discrepancy noted above (map shows 1079643321138542, live creative shows 1690996575992051) while doing so."
   },
   "KL-2026-10-08-CS-UGC-PREETT": {
     "id": "KL-2026-10-08-CS-UGC-PREETT",
