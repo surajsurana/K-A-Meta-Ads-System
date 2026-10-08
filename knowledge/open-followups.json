@@ -279,6 +279,13 @@
     "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
     "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
   },
+  "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE": {
+    "id": "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE",
+    "date": "2026-10-08",
+    "type": "observation",
+    "subject": "Ad-copy completeness gap: ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26, USA Engaged 365D & Followers adset 6529679555376) has real primary text but NO headline/title field at all",
+    "follow_up": "Route to campaign-strategist -> creative-copywriter to write a real headline/title for ad 6907213796176, same as any other content gap."
+  },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
     "date": "2026-10-08",
