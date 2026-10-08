@@ -76,13 +76,6 @@
     "subject": "Portfolio budget allocation check - weekly review 2026-09-21",
     "follow_up": "media-buyer to independently re-verify the current total fresh against the live account before finalizing execution of any of this cycle's resulting ad-level plans (Champagne Gold activation, Interest Stack candidate build)."
   },
-  "KL-2026-09-21-CS-GEO-UPDR": {
-    "id": "KL-2026-09-21-CS-GEO-UPDR",
-    "date": "2026-09-21",
-    "type": "decision",
-    "subject": "Uttar Pradesh / Rajasthan / Madhya Pradesh zero-order-despite-spend - DISPOSITION: MAINTAIN, base-rate math shows this is not the same shape as Delhi's regression",
-    "follow_up": "No action this cycle. Re-open only if: (a) a genuinely longer window (e.g. 4-6+ months, matching or exceeding these states' own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) spend in these states grows materially beyond its current ~Rs850/day combined share without any corresponding order. A repeat of this exact 60-day check next week would still be almost entirely the same overlapping window - performance-analyst should let meaningfully more calendar time pass before re-running this specific check rather than re-pulling weekly."
-  },
   "KL-2026-09-28-CS-005935": {
     "id": "KL-2026-09-28-CS-005935",
     "date": "2026-09-28",
@@ -299,6 +292,13 @@
     "type": "outcome",
     "subject": "First Love | Broad Advantage+ (52535906903180) and Interest Stack (52535906794980) - day 7-10 cost-per-conversation rollback check per KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4, both WORSENED not improved",
     "follow_up": "Route to campaign-strategist for the actual rollback/hold decision - this is a finding that implies a next move, not a decision. Flag explicitly: Interest Stack is the more severe case (cost per conversation more than doubled) and is also the smaller-budget ad set (Rs350/day), so reverting it carries less real-money risk than touching Broad Advantage+ (Rs1,000/day) if campaign-strategist wants to act on only one first."
+  },
+  "KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK": {
+    "id": "KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK",
+    "date": "2026-10-08",
+    "type": "observation",
+    "subject": "Zero/near-zero-order-despite-spend-and-leads: Bihar, Jharkhand, Assam, Jammu & Kashmir (30-day Meta region spend vs full-history Stitchflow orders)",
+    "follow_up": "Route to campaign-strategist for one of the 8 geography dispositions. Given the parallel to the already-MAINTAINed UP/Rajasthan/MP case (low historical base rate, no established cadence to regress from, small combined spend share), a MAINTAIN verdict is plausible here too, but this is campaign-strategists call to make, not assume."
   },
   "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
     "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
