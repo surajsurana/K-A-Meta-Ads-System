@@ -286,6 +286,13 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
+  "KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK": {
+    "id": "KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK",
+    "date": "2026-10-08",
+    "type": "change",
+    "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - Instagram-Feed placement exclusion reverted, automatic/Advantage+ placements restored",
+    "follow_up": "Per the plan's rollback criteria: (1) immediate - watch issues_info/policy flags or a near-zero impressions stall within 24-48h on either ad set, revert to the Feed-excluded config if so; (2) day 7-10 - recompute cost-per-messaging-conversation-started and compare against both the original pre-exclusion baseline (Broad Advantage+ Rs56.54, Interest Stack Rs61.29) and the excluded-state result this reverts (Rs57.65 / Rs161.41); if not meaningfully better than both, escalate to campaign-strategist for the Reels-native creative-mix fix rather than a 5th placement permutation; (3) if cost-per-conversation returns close to or better than the original baseline, close the loop - this confirms the Feed-exclusion experiment as net negative and correctly undone."
+  },
   "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE": {
     "id": "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE",
     "date": "2026-10-08",
