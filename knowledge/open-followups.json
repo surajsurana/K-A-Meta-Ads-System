@@ -97,13 +97,6 @@
     "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
     "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
   },
-  "KL-2026-10-01-CS-DOBCOVERAGE-ACK": {
-    "id": "KL-2026-10-01-CS-DOBCOVERAGE-ACK",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "DOB coverage 3.3% (20/606), mean age 35.25, continues converging with Meta's dominant 25-34 delivery bracket - ACKNOWLEDGED, no targeting change, directional only",
-    "follow_up": "Continue standing weekly/monthly tracking. Revisit if known-DOB sample grows materially or if a future finding shows an active ad set's age targeting diverging from the 25-34 convergence."
-  },
   "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
     "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
     "date": "2026-10-01",
@@ -285,6 +278,13 @@
     "type": "experiment",
     "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
     "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
+  },
+  "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
+    "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
+    "date": "2026-10-08",
+    "type": "observation",
+    "subject": "DOB coverage grown to 5.89% (37/628 customers), nearly double the 2026-10-01 reading (3.3%, 20/606) - mean age 33.73, bracket distribution still converging with Metas dominant 25-34",
+    "follow_up": "Continue standing weekly/monthly tracking. Revisit the low-confidence tag once the known-DOB sample grows well past the current n=37 - still too small for anything beyond directional convergence-watching."
   },
   "KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK": {
     "id": "KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK",
