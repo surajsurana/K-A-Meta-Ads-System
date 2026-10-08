@@ -125,13 +125,6 @@
     "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
     "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
   },
-  "KL-2026-10-02-010700": {
-    "id": "KL-2026-10-02-010700",
-    "date": "2026-10-02",
-    "type": "decision",
-    "subject": "Meta platform intelligence - Andromeda delivery system likely explains WHY the First Love Feed-shift happened to this account specifically; reinforces video/Reels-native content as a delivery-efficiency priority, not just a creative-variety nice-to-have",
-    "follow_up": "When social-community-manager/creative-copywriter next review content priorities, weigh this delivery-efficiency angle explicitly alongside the existing engagement/variety case for video - and when performance-analyst next reviews placement-level delivery on any ad set, treat a Feed-share increase with falling in-placement CTR as a recurring pattern to expect (not a one-off surprise) for as long as the account's own creative library stays static-heavy."
-  },
   "KL-2026-10-02-010800": {
     "id": "KL-2026-10-02-010800",
     "date": "2026-10-02",
@@ -272,6 +265,13 @@
     "subject": "Stop-rule for newly activated WhatsApp India | Champagne Gold Corset+Lehenga | Neutral Text Test ad (52559623981980)",
     "follow_up": "performance-analyst or campaign-strategist to re-check between 2026-10-12 and 2026-10-14 and apply the stop-rule above."
   },
+  "KL-2026-10-08-CS-FEEDEXCL-ROLLBACK": {
+    "id": "KL-2026-10-08-CS-FEEDEXCL-ROLLBACK",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "First Love | Broad Advantage+ (52535906903180) and Interest Stack (52535906794980) - ROLLBACK decision on KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK: revert instagram_positions Feed exclusion on both ad sets, per the plans own pre-written stop-rule",
+    "follow_up": "media-buyer: validate current live state of both ad sets targeting.instagram_positions (confirm still [story,reels], no drift since 2026-10-01) and prepare an exact plan to remove the instagram_positions restriction entirely on both 52535906903180 and 52535906794980, restoring automatic/Advantage+ placement delivery - for Suraj direct Telegram approval before any write executes. This is a live Meta Ads change, headless run, no execution today (guardrail 13). Once executed: schedule a fresh day 7-10 cost-per-conversation re-check to confirm recovery, and separately watch whether the original Feed CTR-collapse symptom resurfaces - if it does, the next response should be creative (Reels-native content), not another placement-exclusion attempt."
+  },
   "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE": {
     "id": "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE",
     "date": "2026-10-08",
@@ -285,13 +285,6 @@
     "type": "observation",
     "subject": "DOB coverage grown to 5.89% (37/628 customers), nearly double the 2026-10-01 reading (3.3%, 20/606) - mean age 33.73, bracket distribution still converging with Metas dominant 25-34",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit the low-confidence tag once the known-DOB sample grows well past the current n=37 - still too small for anything beyond directional convergence-watching."
-  },
-  "KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK": {
-    "id": "KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK",
-    "date": "2026-10-08",
-    "type": "outcome",
-    "subject": "First Love | Broad Advantage+ (52535906903180) and Interest Stack (52535906794980) - day 7-10 cost-per-conversation rollback check per KL-2026-10-01-EXEC-FIRSTLOVE-FEEDEXCLUSION-PLAN4, both WORSENED not improved",
-    "follow_up": "Route to campaign-strategist for the actual rollback/hold decision - this is a finding that implies a next move, not a decision. Flag explicitly: Interest Stack is the more severe case (cost per conversation more than doubled) and is also the smaller-budget ad set (Rs350/day), so reverting it carries less real-money risk than touching Broad Advantage+ (Rs1,000/day) if campaign-strategist wants to act on only one first."
   },
   "KL-2026-10-08-PA-FOLLOWERGROWTH-CONTINUEDDIP": {
     "id": "KL-2026-10-08-PA-FOLLOWERGROWTH-CONTINUEDDIP",
