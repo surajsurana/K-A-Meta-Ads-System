@@ -279,12 +279,12 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
-  "KL-2026-10-08-CW-NIKKIMEHRA-HEADLINE": {
-    "id": "KL-2026-10-08-CW-NIKKIMEHRA-HEADLINE",
+  "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN": {
+    "id": "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
     "date": "2026-10-08",
     "type": "decision",
-    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26, USA Engaged 365D & Followers adset 6529679555376) - headline variations to fill the missing title field, per campaign-strategist disposition KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE",
-    "follow_up": "media-buyer: prepare a new-creative-plus-swap plan (asset_feed_spec titles/bodies/descriptions/title fields are not editable in place on an existing creative object, same constraint as the Fresh Content Jul23 precedent KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN) - new creative object with asset_feed_spec byte-identical to the current one (same 6 bodies[], same 1 descriptions[], same video_id=2350075288833168, same object_story_spec/call_to_action CONTACT_US->INSTAGRAM_DIRECT, copied verbatim from a fresh GET at build time, not retyped) plus a new titles[] array containing the 4 headline variations above, then swap ad 6907213796176's creative_id to the new object for Suraj's direct Telegram approval. Separately (not blocking this fix): flag the existing 'Shop now!' body-text phrasing for a future copy-refresh review against house lead-gen style."
+    "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - new-creative-plus-swap plan to fill missing headline",
+    "follow_up": "marketing-lead to execute (create new creative, verify, then swap ad's creative_id) only after the user's direct approval via Telegram. Once executed, append a linked type:change entry and run the verification steps above. Separately (not blocking): flag the existing body-text 'Shop now!' phrasing for a future copy-refresh review against house lead-gen/DM-enquiry style (same flag creative-copywriter raised, not fixed here), and flag the shrinking total-budget headroom (Rs130/day vs Rs730/day 3 days ago) to campaign-strategist for awareness on its next portfolio-allocation check."
   },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
