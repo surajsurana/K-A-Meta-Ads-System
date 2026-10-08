@@ -272,6 +272,13 @@
     "subject": "First Love | Broad Advantage+ (52535906903180) and Interest Stack (52535906794980) - ROLLBACK decision on KL-2026-10-08-PA-FEEDEXCL-DAY7CHECK: revert instagram_positions Feed exclusion on both ad sets, per the plans own pre-written stop-rule",
     "follow_up": "media-buyer: validate current live state of both ad sets targeting.instagram_positions (confirm still [story,reels], no drift since 2026-10-01) and prepare an exact plan to remove the instagram_positions restriction entirely on both 52535906903180 and 52535906794980, restoring automatic/Advantage+ placement delivery - for Suraj direct Telegram approval before any write executes. This is a live Meta Ads change, headless run, no execution today (guardrail 13). Once executed: schedule a fresh day 7-10 cost-per-conversation re-check to confirm recovery, and separately watch whether the original Feed CTR-collapse symptom resurfaces - if it does, the next response should be creative (Reels-native content), not another placement-exclusion attempt."
   },
+  "KL-2026-10-08-CS-GEO-BIHARJHARKHANDASSAMJK": {
+    "id": "KL-2026-10-08-CS-GEO-BIHARJHARKHANDASSAMJK",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "Bihar/Jharkhand/Assam/Jammu and Kashmir zero-order-despite-spend-and-leads (KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK) - DISPOSITION: MAINTAIN on all four, base-rate math shows this is an even weaker signal than the already-MAINTAINed UP/Rajasthan/MP case",
+    "follow_up": "No action this cycle on any of the four. Re-open only if: (a) a genuinely longer window (several months, matching or exceeding each states own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) combined spend in these four states grows materially beyond its current ~Rs203/day share without any corresponding order. Do not re-run this exact 30-day check again next cycle without meaningfully more calendar time having passed."
+  },
   "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE": {
     "id": "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE",
     "date": "2026-10-08",
@@ -292,13 +299,6 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading continues the dip flagged 2026-10-05, but window is partial (3 days, not a full week)",
     "follow_up": "At the next full-week reading (around 2026-10-12), compute the complete 7-day delta/cost-per-follower. If that full-week reading also lands materially below the ~34.4/day average and/or above the ~Rs2.32/follower ceiling, that would be the second genuine confirming data point KL-2026-10-05-CS-FOLLOWERGROWTH-DIP asked for - route to campaign-strategist at that point, not from this partial reading alone."
-  },
-  "KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK": {
-    "id": "KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "Zero/near-zero-order-despite-spend-and-leads: Bihar, Jharkhand, Assam, Jammu & Kashmir (30-day Meta region spend vs full-history Stitchflow orders)",
-    "follow_up": "Route to campaign-strategist for one of the 8 geography dispositions. Given the parallel to the already-MAINTAINed UP/Rajasthan/MP case (low historical base rate, no established cadence to regress from, small combined spend share), a MAINTAIN verdict is plausible here too, but this is campaign-strategists call to make, not assume."
   },
   "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND": {
     "id": "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND",
