@@ -279,6 +279,13 @@
     "subject": "Bihar/Jharkhand/Assam/Jammu and Kashmir zero-order-despite-spend-and-leads (KL-2026-10-08-PA-GEO-BIHAR-JHARKHAND-ASSAM-JK) - DISPOSITION: MAINTAIN on all four, base-rate math shows this is an even weaker signal than the already-MAINTAINed UP/Rajasthan/MP case",
     "follow_up": "No action this cycle on any of the four. Re-open only if: (a) a genuinely longer window (several months, matching or exceeding each states own historical inter-order gap) shows continued zero orders despite continued spend/leads, or (b) combined spend in these four states grows materially beyond its current ~Rs203/day share without any corresponding order. Do not re-run this exact 30-day check again next cycle without meaningfully more calendar time having passed."
   },
+  "KL-2026-10-08-CS-GEO-REVENUENOACQSPEND": {
+    "id": "KL-2026-10-08-CS-GEO-REVENUENOACQSPEND",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "Netherlands/Saudi Arabia/Australia/UK revenue-without-acquisition-spend (KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND) - DISPOSITION: HOLD on all four, no new evidence beyond what was already weighed and decided in the last two weeks",
+    "follow_up": "No new action on any of the four this cycle. Revisit any single one only if it produces a SECOND real order (or a meaningfully larger cumulative figure than what is already on record) in a future review - a repeat of the identical single order should not trigger a fresh round of this same analysis again."
+  },
   "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE": {
     "id": "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE",
     "date": "2026-10-08",
@@ -299,13 +306,6 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading continues the dip flagged 2026-10-05, but window is partial (3 days, not a full week)",
     "follow_up": "At the next full-week reading (around 2026-10-12), compute the complete 7-day delta/cost-per-follower. If that full-week reading also lands materially below the ~34.4/day average and/or above the ~Rs2.32/follower ceiling, that would be the second genuine confirming data point KL-2026-10-05-CS-FOLLOWERGROWTH-DIP asked for - route to campaign-strategist at that point, not from this partial reading alone."
-  },
-  "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND": {
-    "id": "KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "Real revenue with zero/near-zero acquisition spend behind it: Netherlands, Saudi Arabia, Australia, UK (FY2026-2027 Stitchflow sales-by-city vs current active Meta geography)",
-    "follow_up": "Route to campaign-strategist to weigh whether any of these (most plausibly Netherlands given the highest single order value) justifies a small prospecting test, per the standing missed-opportunity-signal duty. Low confidence stated explicitly given n=1 for 3 of the 4 geographies - this is a signal worth weighing, not a case to act on from a single data point alone."
   },
   "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
     "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
