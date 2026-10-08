@@ -286,12 +286,12 @@
     "subject": "Netherlands/Saudi Arabia/Australia/UK revenue-without-acquisition-spend (KL-2026-10-08-PA-GEO-REVENUE-NOACQSPEND) - DISPOSITION: HOLD on all four, no new evidence beyond what was already weighed and decided in the last two weeks",
     "follow_up": "No new action on any of the four this cycle. Revisit any single one only if it produces a SECOND real order (or a meaningfully larger cumulative figure than what is already on record) in a future review - a repeat of the identical single order should not trigger a fresh round of this same analysis again."
   },
-  "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE": {
-    "id": "KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE",
+  "KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE": {
+    "id": "KL-2026-10-08-CS-NIKKIMEHRA-HEADLINE",
     "date": "2026-10-08",
-    "type": "observation",
-    "subject": "Ad-copy completeness gap: ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26, USA Engaged 365D & Followers adset 6529679555376) has real primary text but NO headline/title field at all",
-    "follow_up": "Route to campaign-strategist -> creative-copywriter to write a real headline/title for ad 6907213796176, same as any other content gap."
+    "type": "decision",
+    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset, USA Engaged 365D and Followers) missing headline field (KL-2026-10-08-PA-ADCOPY-NIKKIMEHRA-NOHEADLINE) - disposition: route to creative-copywriter for a real headline, same pattern as the 2026-10-05 Fresh Content Jul23 fix",
+    "follow_up": "creative-copywriter: write a real headline for ad 6907213796176, consistent with the existing 6 body-text variations (Deep Purple Satin Halter Ruched Corset with Drape, Skirt and a Stole theme). media-buyer: prepare a new-creative-plus-swap plan (new creative object with the new title, swap onto the ad - object_story_spec/asset_feed_spec title cannot be edited on an existing creative) for Suraj direct Telegram approval, same mechanism as KL-2026-10-05-MB-FRESHCONTENTJUL23-HEADLINEPLAN."
   },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
