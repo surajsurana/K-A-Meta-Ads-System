@@ -293,12 +293,12 @@
     "subject": "First Love | Interest Stack (52535906794980) and First Love | Broad Advantage+ (52535906903180) - Instagram-Feed placement exclusion reverted, automatic/Advantage+ placements restored",
     "follow_up": "Per the plan's rollback criteria: (1) immediate - watch issues_info/policy flags or a near-zero impressions stall within 24-48h on either ad set, revert to the Feed-excluded config if so; (2) day 7-10 - recompute cost-per-messaging-conversation-started and compare against both the original pre-exclusion baseline (Broad Advantage+ Rs56.54, Interest Stack Rs61.29) and the excluded-state result this reverts (Rs57.65 / Rs161.41); if not meaningfully better than both, escalate to campaign-strategist for the Reels-native creative-mix fix rather than a 5th placement permutation; (3) if cost-per-conversation returns close to or better than the original baseline, close the loop - this confirms the Feed-exclusion experiment as net negative and correctly undone."
   },
-  "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE": {
-    "id": "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE",
+  "KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC": {
+    "id": "KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC",
     "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Profile Visits | India (52538161512180) - activate Ad B (52551760704780), closing a month-long process-gap delay",
-    "follow_up": "Once approved and executed: run the 24h checkpoint described in rollback criterion (2). If Ad B clears cleanly, continue monitoring per rollback criterion (3), whose next trigger point is performance-analyst's already-scheduled full-week follower-growth check due ~2026-10-12."
+    "type": "change",
+    "subject": "Profile Visits | India - Ad B (Structure, In Motion) activated, closing month-long process-gap delay",
+    "follow_up": "Run the 24h delivery checkpoint (rollback criterion 2) on ad 52551760704780 - if cumulative impressions are below 500 at the 24h mark, re-pause and route to performance-analyst. Ongoing cost-per-follower signal already tracked separately, next confirming read due ~2026-10-12 (rollback criterion 3)."
   },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
