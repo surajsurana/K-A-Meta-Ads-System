@@ -286,19 +286,19 @@
     "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - new-creative-plus-swap plan to fill missing headline",
     "follow_up": "marketing-lead to execute (create new creative, verify, then swap ad's creative_id) only after the user's direct approval via Telegram. Once executed, append a linked type:change entry and run the verification steps above. Separately (not blocking): flag the existing body-text 'Shop now!' phrasing for a future copy-refresh review against house lead-gen/DM-enquiry style (same flag creative-copywriter raised, not fixed here), and flag the shrinking total-budget headroom (Rs130/day vs Rs730/day 3 days ago) to campaign-strategist for awareness on its next portfolio-allocation check."
   },
+  "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE": {
+    "id": "KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE",
+    "date": "2026-10-08",
+    "type": "decision",
+    "subject": "Profile Visits | India (52538161512180) - activate Ad B (52551760704780), closing a month-long process-gap delay",
+    "follow_up": "Once approved and executed: run the 24h checkpoint described in rollback criterion (2). If Ad B clears cleanly, continue monitoring per rollback criterion (3), whose next trigger point is performance-analyst's already-scheduled full-week follower-growth check due ~2026-10-12."
+  },
   "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
     "date": "2026-10-08",
     "type": "observation",
     "subject": "DOB coverage grown to 5.89% (37/628 customers), nearly double the 2026-10-01 reading (3.3%, 20/606) - mean age 33.73, bracket distribution still converging with Metas dominant 25-34",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit the low-confidence tag once the known-DOB sample grows well past the current n=37 - still too small for anything beyond directional convergence-watching."
-  },
-  "KL-2026-10-08-PA-FOLLOWERGROWTH-CONTINUEDDIP": {
-    "id": "KL-2026-10-08-PA-FOLLOWERGROWTH-CONTINUEDDIP",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "Instagram follower growth - 3-day partial reading continues the dip flagged 2026-10-05, but window is partial (3 days, not a full week)",
-    "follow_up": "At the next full-week reading (around 2026-10-12), compute the complete 7-day delta/cost-per-follower. If that full-week reading also lands materially below the ~34.4/day average and/or above the ~Rs2.32/follower ceiling, that would be the second genuine confirming data point KL-2026-10-05-CS-FOLLOWERGROWTH-DIP asked for - route to campaign-strategist at that point, not from this partial reading alone."
   },
   "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
     "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
