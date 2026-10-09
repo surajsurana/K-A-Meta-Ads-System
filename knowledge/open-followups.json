@@ -188,13 +188,6 @@
     "subject": "New @styled_bytan carousel 18016529750943802 (2026-10-03) - confirmed as the same already-declined shoot/ensemble (KL-2026-09-21-143615); NOT a fresh candidate, no re-proposal",
     "follow_up": "No action, no re-proposal. If @styled_bytan posts genuinely new, distinct content (a different shoot/ensemble, not a continuation of this one) in future, that would warrant its own fresh disposition - not this recurring one."
   },
-  "KL-2026-10-05-CS-USACANADA-PACING-VERDICT": {
-    "id": "KL-2026-10-05-CS-USACANADA-PACING-VERDICT",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "USA/Canada Engaged 365D & Followers front-loaded pacing (now 7 consecutive readings, confirmed per KL-2026-10-05-070300) - VERDICT: ACCEPT as a benign, even desirable, delivery-mechanics feature; no bid-cap or schedule change proposed; closing this thread",
-    "follow_up": "No further standing data-gathering needed on this specific question. If a future weekly review shows front-loading co-occurring with a worsening cost-per-result metric, treat that as a new finding requiring its own fresh analysis, not a reopening of this one."
-  },
   "KL-2026-10-05-EXEC-KAFL004-PAUSED": {
     "id": "KL-2026-10-05-EXEC-KAFL004-PAUSED",
     "date": "2026-10-05",
@@ -229,27 +222,6 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-05, weekly review) - 1 new carousel, image-only, video drought continues (53 days)",
     "follow_up": "Continue tracking the standalone-Reel drought (0 native Reels since 2026-08-13, now 53 days). Next sweep boundary should be 18119098733004826 (2026-10-02), the newest item found this cycle."
-  },
-  "KL-2026-10-06-EXEC-ACTIVATEGOLDENMUSE": {
-    "id": "KL-2026-10-06-EXEC-ACTIVATEGOLDENMUSE",
-    "date": "2026-10-06",
-    "type": "change",
-    "subject": "Activated First Love | Golden Muse (KAFL020) Test | India (ad set + both ads flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-GOLDENMUSE",
-    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started per variant, per KL-2026-10-02-015924. Confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
-  },
-  "KL-2026-10-06-EXEC-ACTIVATEMETALLICBLUE": {
-    "id": "KL-2026-10-06-EXEC-ACTIVATEMETALLICBLUE",
-    "date": "2026-10-06",
-    "type": "change",
-    "subject": "Activated First Love | Metallic Blue (KAFL014) Test | India (ad set + ad flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-METALLICBLUE",
-    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs Broad Advantage+ baseline, per KL-2026-10-02-020145. Confirm ad clears IN_PROCESS to ACTIVE within the normal review window; flag if it comes back disapproved."
-  },
-  "KL-2026-10-06-EXEC-ACTIVATEUSACANADA": {
-    "id": "KL-2026-10-06-EXEC-ACTIVATEUSACANADA",
-    "date": "2026-10-06",
-    "type": "change",
-    "subject": "Activated USA/Canada Cold Prospecting Test (5 objects flipped PAUSED -> ACTIVE) per approved plan KL-2026-10-06-ACTIVATE-USACANADA",
-    "follow_up": "2-week stop-rule check: cost per messaging_conversation_started vs benchmarks, plus Stitchflow US/CA new-customer cross-check, per KL-2026-09-28-CS-USACANADA-DISPOSITION. Also confirm both ads clear IN_PROCESS to ACTIVE within the normal review window; flag if either comes back disapproved."
   },
   "KL-2026-10-08-034403": {
     "id": "KL-2026-10-08-034403",
@@ -299,6 +271,13 @@
     "type": "observation",
     "subject": "Staff DM-redirect wording pattern recurred a second time after the 2026-09-28 direct escalation - confirms this is an ongoing unfixed process gap, not a one-off",
     "follow_up": "Flagging prominently in this cycles report to the user again. This is now the 2nd post-escalation occurrence - the process gap (staff replying live to price/availability comments with Instagram-DM wording instead of WhatsApp-only policy wording) needs an actual fix at the source (retrain whoever replies live, or route all replies through this pipeline), not a third passive note. Continue checking every cycle."
+  },
+  "KL-2026-10-09-015227": {
+    "id": "KL-2026-10-09-015227",
+    "date": "2026-10-09",
+    "type": "observation",
+    "subject": "Four Rs150/day test ad sets (Cold Prospecting USA/Canada, Golden Muse KAFL020, Metallic Blue KAFL014) consistently overspending own daily budget by 39-65% - independent read, verdict ACCEPT for now, no live change",
+    "follow_up": "No live budget/bid change this cycle. Two distinct standing watches: (1) performance-analyst to track each of the four test ad sets own cost-per-result (cost per messaging_conversation_started) at their already-scheduled 2026-10-20 2-week stop-rule reviews per KL-2026-10-06-ACTIVATE-USACANADA/GOLDENMUSE/METALLICBLUE - if the overspend pattern persists AND a second small-budget test elsewhere in the account shows the same signature, promote to best_practice; if cost-per-result is also bad, treat as a real reason to kill/cut rather than just a pacing curiosity. (2) performance-analyst to track ACTUAL total daily account spend (not just the committed-daily-budget sum) against the Rs6,500 ceiling on every daily heartbeat pull until these four ad sets exit test status - real headroom was only ~Rs135 yesterday and the committed-budget-sum check is structurally blind to this exact overspend pattern, so a change in which ad sets are underspending could breach the real ceiling without the sum-of-budgets check ever showing it."
   },
   "KL-2026-10-09-071849": {
     "id": "KL-2026-10-09-071849",
