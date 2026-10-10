@@ -230,13 +230,6 @@
     "subject": "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
     "follow_up": "re-check 2026-10-12: if plan KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-08-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-08-CS-BUDGETCHECK",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check (twice-weekly review, 2026-10-08) - no changes proposed this cycle, confirmed within ceiling",
-    "follow_up": "None - routine confirmation. Re-run fresh at the next full review."
-  },
   "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER": {
     "id": "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER",
     "date": "2026-10-08",
@@ -272,13 +265,6 @@
     "subject": "Staff DM-redirect wording pattern recurred a second time after the 2026-09-28 direct escalation - confirms this is an ongoing unfixed process gap, not a one-off",
     "follow_up": "Flagging prominently in this cycles report to the user again. This is now the 2nd post-escalation occurrence - the process gap (staff replying live to price/availability comments with Instagram-DM wording instead of WhatsApp-only policy wording) needs an actual fix at the source (retrain whoever replies live, or route all replies through this pipeline), not a third passive note. Continue checking every cycle."
   },
-  "KL-2026-10-09-015227": {
-    "id": "KL-2026-10-09-015227",
-    "date": "2026-10-09",
-    "type": "observation",
-    "subject": "Four Rs150/day test ad sets (Cold Prospecting USA/Canada, Golden Muse KAFL020, Metallic Blue KAFL014) consistently overspending own daily budget by 39-65% - independent read, verdict ACCEPT for now, no live change",
-    "follow_up": "No live budget/bid change this cycle. Two distinct standing watches: (1) performance-analyst to track each of the four test ad sets own cost-per-result (cost per messaging_conversation_started) at their already-scheduled 2026-10-20 2-week stop-rule reviews per KL-2026-10-06-ACTIVATE-USACANADA/GOLDENMUSE/METALLICBLUE - if the overspend pattern persists AND a second small-budget test elsewhere in the account shows the same signature, promote to best_practice; if cost-per-result is also bad, treat as a real reason to kill/cut rather than just a pacing curiosity. (2) performance-analyst to track ACTUAL total daily account spend (not just the committed-daily-budget sum) against the Rs6,500 ceiling on every daily heartbeat pull until these four ad sets exit test status - real headroom was only ~Rs135 yesterday and the committed-budget-sum check is structurally blind to this exact overspend pattern, so a change in which ad sets are underspending could breach the real ceiling without the sum-of-budgets check ever showing it."
-  },
   "KL-2026-10-09-071849": {
     "id": "KL-2026-10-09-071849",
     "date": "2026-10-09",
@@ -292,5 +278,12 @@
     "type": "outcome",
     "subject": "Profile Visits | Structure, In Motion (ad 52551760704780) - 24h delivery checkpoint, rollback criterion (2)",
     "follow_up": "Cost-per-follower confirming read (rollback criterion 3) still due ~2026-10-12, per KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC."
+  },
+  "KL-2026-10-10-CS-CEILINGBREACH-HOLD": {
+    "id": "KL-2026-10-10-CS-CEILINGBREACH-HOLD",
+    "date": "2026-10-10",
+    "type": "decision",
+    "subject": "Daily heartbeat 2026-10-10 (data for 2026-10-09): real Rs6,957.07 actual account spend breached the Rs6,500 ceiling by +Rs457.07 (+7%) - independent read, DISPOSITION: HOLD, no live budget change today, concrete pre-committed escalation trigger set for tomorrows reading",
+    "follow_up": "Next daily heartbeat (covering 2026-10-10 actual spend) must explicitly re-check this trigger: (1) is actual total account spend again over Rs6,500, (2) is India Insta Engaged again overspending its own committed budget by a comparable or greater margin. If both yes, escalate immediately to the contingent proposal above (India Insta Engaged budget trim, Rs2,438 -> Rs2,188) for media-buyer independent validation and fresh ceiling re-check, then Suraj approval via Telegram - do not wait for the next full weekly review. If either no, this stays HOLD and the watch continues day-by-day. Does not change or supersede the separate, already-scheduled 2026-10-20 stop-rule reviews for the four Rs150/day test ad sets."
   }
 }
