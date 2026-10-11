@@ -279,11 +279,11 @@
     "subject": "Profile Visits | Structure, In Motion (ad 52551760704780) - 24h delivery checkpoint, rollback criterion (2)",
     "follow_up": "Cost-per-follower confirming read (rollback criterion 3) still due ~2026-10-12, per KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC."
   },
-  "KL-2026-10-10-CS-CEILINGBREACH-HOLD": {
-    "id": "KL-2026-10-10-CS-CEILINGBREACH-HOLD",
-    "date": "2026-10-10",
-    "type": "decision",
-    "subject": "Daily heartbeat 2026-10-10 (data for 2026-10-09): real Rs6,957.07 actual account spend breached the Rs6,500 ceiling by +Rs457.07 (+7%) - independent read, DISPOSITION: HOLD, no live budget change today, concrete pre-committed escalation trigger set for tomorrows reading",
-    "follow_up": "Next daily heartbeat (covering 2026-10-10 actual spend) must explicitly re-check this trigger: (1) is actual total account spend again over Rs6,500, (2) is India Insta Engaged again overspending its own committed budget by a comparable or greater margin. If both yes, escalate immediately to the contingent proposal above (India Insta Engaged budget trim, Rs2,438 -> Rs2,188) for media-buyer independent validation and fresh ceiling re-check, then Suraj approval via Telegram - do not wait for the next full weekly review. If either no, this stays HOLD and the watch continues day-by-day. Does not change or supersede the separate, already-scheduled 2026-10-20 stop-rule reviews for the four Rs150/day test ad sets."
+  "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED": {
+    "id": "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED",
+    "date": "2026-10-11",
+    "type": "outcome",
+    "subject": "Daily heartbeat 2026-10-11 (data for 2026-10-10): pre-committed escalation trigger from KL-2026-10-10-CS-CEILINGBREACH-HOLD NOT met - neither condition true, HOLD continues, no escalation",
+    "follow_up": "Continue the day-by-day watch per KL-2026-10-10-CS-CEILINGBREACH-HOLD original follow_up field - next heartbeat should again re-check both conditions fresh against 2026-10-11 actual data, not assume todays compliant reading means the volatility pattern is over (the 6-day actual trend so far: 10-06 breach / 10-07 compliant / 10-08 compliant / 10-09 breach / 10-10 compliant - still no clean monotonic direction)."
   }
 }
