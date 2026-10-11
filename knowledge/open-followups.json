@@ -230,13 +230,6 @@
     "subject": "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
     "follow_up": "re-check 2026-10-12: if plan KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER": {
-    "id": "KL-2026-10-08-CS-KAFL027-ACTIVATION-DEFER",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "KAFL027 Structure Refresh ad (52559623294780, First Love | Broad Advantage+ | India, adset 52535906903180) built PAUSED 2026-10-05 - DEFER activation, do not activate at the day-3 minimum of its staggered window",
-    "follow_up": "Re-propose activation of ad 52559623294780 once the Feed-exclusion rollback on adset 52535906903180 has executed and had its own early-pacing read (a few days post-rollback), not before. media-buyer to carry this forward at that point."
-  },
   "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK": {
     "id": "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK",
     "date": "2026-10-08",
@@ -265,19 +258,19 @@
     "subject": "Staff DM-redirect wording pattern recurred a second time after the 2026-09-28 direct escalation - confirms this is an ongoing unfixed process gap, not a one-off",
     "follow_up": "Flagging prominently in this cycles report to the user again. This is now the 2nd post-escalation occurrence - the process gap (staff replying live to price/availability comments with Instagram-DM wording instead of WhatsApp-only policy wording) needs an actual fix at the source (retrain whoever replies live, or route all replies through this pipeline), not a third passive note. Continue checking every cycle."
   },
-  "KL-2026-10-09-071849": {
-    "id": "KL-2026-10-09-071849",
-    "date": "2026-10-09",
-    "type": "outcome",
-    "subject": "First Love Instagram-Feed placement exclusion rollback (KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) - 24-48h immediate check, rollback criterion (1)",
-    "follow_up": "Day 7-10 recheck (criterion 2) still open: recompute cost-per-messaging-conversation-started on both ad sets around 2026-10-15 to 2026-10-18 and compare against the original pre-exclusion baseline (Broad Advantage+ Rs56.54, Interest Stack Rs61.29) and the excluded-state result (Rs57.65 / Rs161.41), per the original plans criteria (2)-(3)."
-  },
   "KL-2026-10-09-071850": {
     "id": "KL-2026-10-09-071850",
     "date": "2026-10-09",
     "type": "outcome",
     "subject": "Profile Visits | Structure, In Motion (ad 52551760704780) - 24h delivery checkpoint, rollback criterion (2)",
     "follow_up": "Cost-per-follower confirming read (rollback criterion 3) still due ~2026-10-12, per KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC."
+  },
+  "KL-2026-10-11-CS-KAFL027-ACTIVATION-RECHECK": {
+    "id": "KL-2026-10-11-CS-KAFL027-ACTIVATION-RECHECK",
+    "date": "2026-10-11",
+    "type": "decision",
+    "subject": "KAFL027 Structure Refresh ad (52559623294780, First Love | Broad Advantage+ | India, adset 52535906903180) - re-check of 2026-10-08 activation defer condition (early-pacing read post Feed-exclusion rollback) - CONDITION MET, proceed to activation planning",
+    "follow_up": "media-buyer to re-verify ad 52559623294780 fresh and prepare activation plan for Telegram approval. Separately, whoever runs the Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18) should isolate KAFL027s ad-level contribution from the ad-set blend so that verdict is not confounded by this activation."
   },
   "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED": {
     "id": "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED",
