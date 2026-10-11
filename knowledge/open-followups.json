@@ -265,12 +265,12 @@
     "subject": "Profile Visits | Structure, In Motion (ad 52551760704780) - 24h delivery checkpoint, rollback criterion (2)",
     "follow_up": "Cost-per-follower confirming read (rollback criterion 3) still due ~2026-10-12, per KL-2026-10-08-ML-PROFILEVISITS-ADBACTIVATE-EXEC."
   },
-  "KL-2026-10-11-072418": {
-    "id": "KL-2026-10-11-072418",
+  "KL-2026-10-11-EXEC-KAFL027-ACTIVATION": {
+    "id": "KL-2026-10-11-EXEC-KAFL027-ACTIVATION",
     "date": "2026-10-11",
-    "type": "decision",
-    "subject": "KAFL027 Structure Refresh ad (52559623294780, First Love | Broad Advantage+ | India, adset 52535906903180) - VALIDATED ACTIVATION PLAN: flip PAUSED -> ACTIVE, pending Suraj's approval (guardrail 13, no live write by this session)",
-    "follow_up": "Once approved and executed, marketing-lead logs a linked type:change entry. Separately open: whoever runs the Feed-exclusion rollback day 7-10 cost-per-conversation check (~2026-10-15 to 10-18, per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK follow_up) must pull an ad-level breakdown isolating ad 52559623294780's own contribution so that verdict isn't confounded by this activation landing in the same window."
+    "type": "change",
+    "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
+    "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
   },
   "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED": {
     "id": "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED",
