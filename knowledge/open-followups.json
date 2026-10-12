@@ -27,13 +27,6 @@
     "subject": "First Love | A Saree With a Corset's Structure | Interest Stack (Midnight Blue Drape Saree, ad 52548730709180) - PAUSED (24h early-pacing checkpoint)",
     "follow_up": "Do not re-activate this ad informally - any future re-test requires a fresh dated plan per rollback criteria in KL-2026-09-01-071953. Continue monitoring Three Expressions (52535907844980) as the ad set's sole remaining active ad. Blush Pink Lehenga (52548730700780) remains separately gated per KL-2026-08-30-015101 and is unaffected."
   },
-  "KL-2026-09-05-015801": {
-    "id": "KL-2026-09-05-015801",
-    "date": "2026-09-05",
-    "type": "decision",
-    "subject": "Own-content disposition - Rich Maroon Raw Silk Corset and Cutout Corset plus Floral-Jaal Lehenga (companion video now confirmed)",
-    "follow_up": "Once creative-copywriter briefs and media-buyer validates a build plan for these 2 ads, this becomes a ready-to-approve decision - check for that linked build plan before treating this as still-open."
-  },
   "KL-2026-09-06-014741": {
     "id": "KL-2026-09-06-014741",
     "date": "2026-09-06",
@@ -230,19 +223,19 @@
     "subject": "Profile Visits | India - pause Ad B (Structure, In Motion), triggering pre-committed rollback criterion (3)",
     "follow_up": "At ~2026-10-19, performance-analyst re-measures ad-set-wide cost-per-follower with only Ad A + Fresh Content Jul23 active. If not recovering toward Rs1.11-2.32/follower, escalate to also pausing Ad A per the same pre-committed criterion."
   },
-  "KL-2026-10-12-010920": {
-    "id": "KL-2026-10-12-010920",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "India Insta Engaged 365D & Followers - ceiling-breach trim, daily_budget Rs2,438 -> Rs2,188/day",
-    "follow_up": "Over the following week, performance-analyst's daily actual-spend watch reports whether actual spend returns under Rs6,500/day. If not, escalate to a broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
-  },
   "KL-2026-10-12-011115": {
     "id": "KL-2026-10-12-011115",
     "date": "2026-10-12",
     "type": "decision",
     "subject": "Punjab reduced targeting - exclude from India Insta Engaged 365D & Followers only (identified as Punjab's single highest-spend ad set among the 4 candidates)",
     "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds or worsens, escalate to full exclusion across all 4 ad sets."
+  },
+  "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK": {
+    "id": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK",
+    "date": "2026-10-12",
+    "type": "decision",
+    "subject": "Rich Maroon Raw Silk Corset + Cutout Corset / Floral-Jaal Lehenga TEST disposition (KL-2026-09-05-015801) - fresh 5-week recheck, same discipline as KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK - DISPOSITION STILL HOLDS, approval-to-proceed now sent, but activation timing flagged as a real new concern",
+    "follow_up": "If APPROVED: creative-copywriter briefs both ads (WhatsApp/CONVERSATIONS funnel, enquiry-oriented CTA, product-SKU identification per architecture.md section 3d); media-buyer validates a build plan (paused-first, fresh budget re-verification at build time, explicit note that activation should wait for the ceiling-breach situation to stabilize - see KL-2026-10-12-010920's own follow_up window). Do not activate either ad until actual account spend has run compliant under Rs6,500/day for several consecutive days post-trim AND Broad Advantage+'s KAFL027-related volatility has settled. If REJECTED or HELD, report back and leave the third look (Maroon Corset + Fishcut Lehenga) on its existing unchanged HOLD."
   },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
