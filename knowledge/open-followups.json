@@ -223,13 +223,6 @@
     "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
     "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
   },
-  "KL-2026-10-12-CS-CEILINGBREACH-ESCALATE": {
-    "id": "KL-2026-10-12-CS-CEILINGBREACH-ESCALATE",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Budget ceiling - ESCALATE NOW, revise the single-ad-set trigger, reactivate the pre-computed India Insta Engaged trim (KL-2026-10-10-CS-CEILINGBREACH-HOLD contingent proposal)",
-    "follow_up": "Route to media-buyer: independently re-verify the Rs6,370 committed total fresh against the live account (do not reuse this cached figure), then validate and prepare an exact plan to trim India Insta Engaged 365D daily_budget from Rs2,438 to Rs2,188 (-Rs250/day). After execution, performance-analyst continues the daily actual-spend watch (now against a revised, broader trigger: any single day where actual spend exceeds the ceiling by >10% OR 2 of any 3 consecutive days breach) - report back whether actual spend returns under Rs6,500 before any further trim is considered. Do not re-propose a ceiling step-up (section 3e) until actual spend has run compliant for at least a week straight - see companion scale-readiness entry this cycle."
-  },
   "KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITION": {
     "id": "KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITION",
     "date": "2026-10-12",
@@ -243,6 +236,13 @@
     "type": "decision",
     "subject": "Punjab/Karnataka/Gujarat/Odisha/West Bengal geography disposition - resolves the 7-week-stale KL-2026-08-24-161600 open item; 5 explicit dispositions among the 8 allowed",
     "follow_up": "Route to media-buyer: validate and prepare 2 live targeting-change plans - (1) add Gujarat and Karnataka to excluded_geo_locations on Broad Advantage+, Interest Stack, India Insta Engaged 365D, and WhatsApp India; (2) identify Punjab's single highest-spend contributing ad set among those 4 and add Punjab to its excluded_geo_locations only. Stop-rule for both: over the following 2-4 weeks (this account's own low-volume minimum per the Mumbai-test precedent), confirm total account messaging connections/leads do not materially drop (would indicate real demand loss, not just inefficient spend removal) and that freed delivery is landing in better-converting geos (Maharashtra especially). Ask performance-analyst to continue tracking Odisha (re-open criteria: spend grows materially beyond ~Rs75/day, or a longer window still shows zero orders) and West Bengal (re-open criteria: order count grows beyond 2, or spend continues climbing without a 3rd+ order) as their own named items at the next weekly review, not re-litigated from scratch each time."
+  },
+  "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
+    "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
+    "date": "2026-10-12",
+    "type": "decision",
+    "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
+    "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
   "KL-2026-10-12-CS-UGC-DISPOSITION": {
     "id": "KL-2026-10-12-CS-UGC-DISPOSITION",
