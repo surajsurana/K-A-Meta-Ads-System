@@ -216,13 +216,6 @@
     "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
     "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
   },
-  "KL-2026-10-12-011115": {
-    "id": "KL-2026-10-12-011115",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Punjab reduced targeting - exclude from India Insta Engaged 365D & Followers only (identified as Punjab's single highest-spend ad set among the 4 candidates)",
-    "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds or worsens, escalate to full exclusion across all 4 ad sets."
-  },
   "KL-2026-10-12-032513": {
     "id": "KL-2026-10-12-032513",
     "date": "2026-10-12",
@@ -271,6 +264,13 @@
     "type": "change",
     "subject": "Profile Visits | India - paused Ad B (Structure, In Motion, 52551760704780) per approved rollback plan",
     "follow_up": "At ~2026-10-19, performance-analyst re-measures ad-set-wide cost-per-follower with only Ad A + Fresh Content Jul23 active. If not recovering toward Rs1.11-2.32/follower, escalate per the pre-committed criterion to also pausing Ad A - route to campaign-strategist for that call, not an automatic next step."
+  },
+  "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION": {
+    "id": "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION",
+    "date": "2026-10-12",
+    "type": "change",
+    "subject": "Punjab geo exclusion added to ad set India Insta Engaged 365D & Followers (6538717752176) per approved plan KL-2026-10-12-011115",
+    "follow_up": "Per the plan's own stop-rule and escalation path: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account leads/connections trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds at ~2.5x or worsens despite this single-ad-set step, escalate to full exclusion across all 4 ad sets (matching Gujarat/Karnataka's current treatment)."
   },
   "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX": {
     "id": "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX",
