@@ -265,6 +265,13 @@
     "subject": "Handoff to campaign-strategist: 3 new UGC items from KL-2026-10-12-ugc-tags for ad-use disposition",
     "follow_up": "Awaiting campaign-strategist's disposition on all 3 items. Item (1) is also independently queued as an organic Reels-repost candidate (KL-2026-10-12-repost-priyaas) - that repost decision is separate from, and does not pre-empt, any paid-use disposition campaign-strategist reaches for the same footage."
   },
+  "KL-2026-10-12-PA-BLENDED-WINDOW": {
+    "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
+    "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
+  },
   "KL-2026-10-12-comment-batch": {
     "id": "KL-2026-10-12-comment-batch",
     "date": "2026-10-12",
