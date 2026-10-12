@@ -265,12 +265,12 @@
     "subject": "Handoff to campaign-strategist: 3 new UGC items from KL-2026-10-12-ugc-tags for ad-use disposition",
     "follow_up": "Awaiting campaign-strategist's disposition on all 3 items. Item (1) is also independently queued as an organic Reels-repost candidate (KL-2026-10-12-repost-priyaas) - that repost decision is separate from, and does not pre-empt, any paid-use disposition campaign-strategist reaches for the same footage."
   },
-  "KL-2026-10-12-comment-sweep": {
-    "id": "KL-2026-10-12-comment-sweep",
+  "KL-2026-10-12-comment-batch": {
+    "id": "KL-2026-10-12-comment-batch",
     "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Comment reply sweep + staff DM-redirect pattern check (2026-10-12, twice-weekly review) - no new comments since the 2026-10-06 boundary, so no opportunity for a 3rd post-escalation recurrence this cycle; 2 old unreplied routine compliments found and batched",
-    "follow_up": "Continue checking every cycle for the next genuine post-escalation dm-redirect occurrence (would be the 3rd) until the underlying process gap is actually fixed at the source - this cycle found no new trigger for it. Comment-reply batch KL-2026-10-12-comment-batch awaits approval."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (2 items) - 2 old unreplied compliment comments found during this cycle's sweep",
+    "follow_up": "Awaiting Telegram approval."
   },
   "KL-2026-10-12-own-content": {
     "id": "KL-2026-10-12-own-content",
