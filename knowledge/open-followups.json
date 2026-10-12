@@ -251,6 +251,13 @@
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
+  "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM": {
+    "id": "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM",
+    "date": "2026-10-12",
+    "type": "change",
+    "subject": "India Insta Engaged 365D & Followers - trimmed ad set daily_budget Rs2,438/day -> Rs2,188/day per approved ceiling-breach plan",
+    "follow_up": "Per campaign-strategist's stated next step and this plan's own rollback criteria: performance-analyst's daily actual-spend watch over the following week reports whether actual account-wide spend trends back under Rs6,500/day. If not, escalate to the broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
+  },
   "KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE": {
     "id": "KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE",
     "date": "2026-10-12",
