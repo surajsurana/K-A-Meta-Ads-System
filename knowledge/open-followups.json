@@ -251,6 +251,13 @@
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
+  "KL-2026-10-12-EXEC-GUJARATKARNATAKA-EXCLUSION": {
+    "id": "KL-2026-10-12-EXEC-GUJARATKARNATAKA-EXCLUSION",
+    "date": "2026-10-12",
+    "type": "change",
+    "subject": "Gujarat and Karnataka geo exclusion added to 4 ad sets (Broad Advantage+, Interest Stack, India Insta Engaged 365D, India Whatsapp 9th Dec 25) per approved plan KL-2026-10-12-011022",
+    "follow_up": "Per the plans own stop-rule: performance-analyst re-pulls /insights?breakdowns=region in 2-4 weeks to confirm Gujarat/Karnataka spend on these 4 ad sets has gone to zero/near-zero, plus total account leads/connections and Maharashtra spend-share trend. Additionally, media-buyer/performance-analyst should specifically check whether the Whatsapp ad sets (6862975169176) dropped age/gender Advantage+ individual_setting flags materially change its delivery pattern, since that was an unrequested side effect of this write, not an intended part of this plan."
+  },
   "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM": {
     "id": "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM",
     "date": "2026-10-12",
