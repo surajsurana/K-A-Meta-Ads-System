@@ -237,13 +237,6 @@
     "subject": "DOB coverage grown to 5.89% (37/628 customers), nearly double the 2026-10-01 reading (3.3%, 20/606) - mean age 33.73, bracket distribution still converging with Metas dominant 25-34",
     "follow_up": "Continue standing weekly/monthly tracking. Revisit the low-confidence tag once the known-DOB sample grows well past the current n=37 - still too small for anything beyond directional convergence-watching."
   },
-  "KL-2026-10-08-dmredirect-postescalation-recurrence2": {
-    "id": "KL-2026-10-08-dmredirect-postescalation-recurrence2",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "Staff DM-redirect wording pattern recurred a second time after the 2026-09-28 direct escalation - confirms this is an ongoing unfixed process gap, not a one-off",
-    "follow_up": "Flagging prominently in this cycles report to the user again. This is now the 2nd post-escalation occurrence - the process gap (staff replying live to price/availability comments with Instagram-DM wording instead of WhatsApp-only policy wording) needs an actual fix at the source (retrain whoever replies live, or route all replies through this pipeline), not a third passive note. Continue checking every cycle."
-  },
   "KL-2026-10-09-071850": {
     "id": "KL-2026-10-09-071850",
     "date": "2026-10-09",
@@ -271,6 +264,13 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist: 3 new UGC items from KL-2026-10-12-ugc-tags for ad-use disposition",
     "follow_up": "Awaiting campaign-strategist's disposition on all 3 items. Item (1) is also independently queued as an organic Reels-repost candidate (KL-2026-10-12-repost-priyaas) - that repost decision is separate from, and does not pre-empt, any paid-use disposition campaign-strategist reaches for the same footage."
+  },
+  "KL-2026-10-12-comment-sweep": {
+    "id": "KL-2026-10-12-comment-sweep",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Comment reply sweep + staff DM-redirect pattern check (2026-10-12, twice-weekly review) - no new comments since the 2026-10-06 boundary, so no opportunity for a 3rd post-escalation recurrence this cycle; 2 old unreplied routine compliments found and batched",
+    "follow_up": "Continue checking every cycle for the next genuine post-escalation dm-redirect occurrence (would be the 3rd) until the underlying process gap is actually fixed at the source - this cycle found no new trigger for it. Comment-reply batch KL-2026-10-12-comment-batch awaits approval."
   },
   "KL-2026-10-12-own-content": {
     "id": "KL-2026-10-12-own-content",
