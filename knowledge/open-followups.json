@@ -216,13 +216,6 @@
     "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
     "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
   },
-  "KL-2026-10-05-own-content": {
-    "id": "KL-2026-10-05-own-content",
-    "date": "2026-10-05",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-05, weekly review) - 1 new carousel, image-only, video drought continues (53 days)",
-    "follow_up": "Continue tracking the standalone-Reel drought (0 native Reels since 2026-08-13, now 53 days). Next sweep boundary should be 18119098733004826 (2026-10-02), the newest item found this cycle."
-  },
   "KL-2026-10-08-034403": {
     "id": "KL-2026-10-08-034403",
     "date": "2026-10-08",
@@ -278,5 +271,12 @@
     "type": "outcome",
     "subject": "Daily heartbeat 2026-10-11 (data for 2026-10-10): pre-committed escalation trigger from KL-2026-10-10-CS-CEILINGBREACH-HOLD NOT met - neither condition true, HOLD continues, no escalation",
     "follow_up": "Continue the day-by-day watch per KL-2026-10-10-CS-CEILINGBREACH-HOLD original follow_up field - next heartbeat should again re-check both conditions fresh against 2026-10-11 actual data, not assume todays compliant reading means the volatility pattern is over (the 6-day actual trend so far: 10-06 breach / 10-07 compliant / 10-08 compliant / 10-09 breach / 10-10 compliant - still no clean monotonic direction)."
+  },
+  "KL-2026-10-12-own-content": {
+    "id": "KL-2026-10-12-own-content",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-10-12, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 60 days",
+    "follow_up": "Continue tracking the standalone-Reel drought (now 60 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
   }
 }
