@@ -230,6 +230,13 @@
     "subject": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
     "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
+  "KL-2026-10-12-034934": {
+    "id": "KL-2026-10-12-034934",
+    "date": "2026-10-12",
+    "type": "change",
+    "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - headline-fix creative swap executed",
+    "follow_up": "Monitor ad 6907213796176 performance over 7-14 days vs rollback criteria (original creative 1470479441441756 is not deleted, only unattached - revert creative_id back to it if post-swap performance is meaningfully worse)."
+  },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
     "date": "2026-10-12",
@@ -264,13 +271,6 @@
     "type": "change",
     "subject": "Punjab geo exclusion added to ad set India Insta Engaged 365D & Followers (6538717752176) per approved plan KL-2026-10-12-011115",
     "follow_up": "Per the plan's own stop-rule and escalation path: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account leads/connections trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds at ~2.5x or worsens despite this single-ad-set step, escalate to full exclusion across all 4 ad sets (matching Gujarat/Karnataka's current treatment)."
-  },
-  "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX": {
-    "id": "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - CORRECTED headline-fix plan, supersedes failed KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
-    "follow_up": "marketing-lead to execute (create new creative omitting image_url, verify, then swap ad's creative_id) only after the user's direct fresh approval via Telegram for this corrected plan specifically. Once executed, append a linked type=change entry and run the verification steps above."
   },
   "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION": {
     "id": "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION",
