@@ -251,12 +251,12 @@
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
-  "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL": {
-    "id": "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL",
+  "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX": {
+    "id": "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX",
     "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset) headline-fix creative swap - Meta rejected new-creative write",
-    "follow_up": "Per hard rule (added 2026-10-01), re-diagnosing in the same session as media-buyer and producing a corrected plan that omits image_url from the new creative's video_data input (image_hash alone is the real settable field - exact same fix already used successfully 2026-10-05 for KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC, same ObjectStorySpecRedundant class). Corrected plan to be sent for fresh Telegram approval before any retry."
+    "type": "decision",
+    "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - CORRECTED headline-fix plan, supersedes failed KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
+    "follow_up": "marketing-lead to execute (create new creative omitting image_url, verify, then swap ad's creative_id) only after the user's direct fresh approval via Telegram for this corrected plan specifically. Once executed, append a linked type=change entry and run the verification steps above."
   },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
