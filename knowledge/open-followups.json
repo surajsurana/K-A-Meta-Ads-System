@@ -258,6 +258,13 @@
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
   },
+  "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION": {
+    "id": "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Correction: blended headline numbers window for 2026-10-12 Monday review",
+    "follow_up": "Use these corrected figures (spend Rs21,018.38, orders 3, order value Rs406,500, CPO Rs7,006.13, ROAS 19.34x) for the digest and the performance-summaries.jsonl structured append for this cycle, period 2026-10-09 to 2026-10-12."
+  },
   "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE",
     "date": "2026-10-12",
