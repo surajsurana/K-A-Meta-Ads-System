@@ -146,13 +146,6 @@
     "subject": "First Love | Metallic Blue (KAFL014) Test | India - new ad set and single ad built PAUSED, succeeded first attempt",
     "follow_up": "Activation of this ad is a separate future decision, not authorized by this execution - requires its own approval/verification cycle. At the 2-week stop-rule mark post-activation, compare cost per messaging_conversation_started against the First Love | Broad Advantage+ baseline per the original plan's rollback criteria."
   },
-  "KL-2026-10-02-EXEC-PADRIFT": {
-    "id": "KL-2026-10-02-EXEC-PADRIFT",
-    "date": "2026-10-02",
-    "type": "change",
-    "subject": "Added WhatsApp-destination creative-currency sweep as a standing bullet in .claude/agents/performance-analyst.md (What you own section)",
-    "follow_up": "None automatic - the standing duty is now live in performance-analyst.md and will apply starting with the next monthly/weekly review that touches WhatsApp-destination ad sets. No further action needed unless a future self-audit finds new drift."
-  },
   "KL-2026-10-02-ROLLUPBUG-EXEC": {
     "id": "KL-2026-10-02-ROLLUPBUG-EXEC",
     "date": "2026-10-02",
@@ -216,13 +209,6 @@
     "subject": "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
     "follow_up": "re-check 2026-10-12: if plan KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK": {
-    "id": "KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "Metallic Coffee Brown (ad 52552969628580, ad set 6862975169176 'India | Whatsapp | 9th Dec 25') 3rd-of-4 staggered activation - DISPOSITION: HOLD, do not activate yet; Burnt Orange stays paused behind it",
-    "follow_up": "No media-buyer action this cycle - Metallic Coffee Brown and Burnt Orange both stay PAUSED. Re-ask this question at or after the 2026-10-12 to 2026-10-14 Champagne Gold neutral-text check-in, once ad set 6862975169176 is in a settled, single-test state again. Separately and not blocking: creative-copywriter to finally append the corrective creative-product-map.jsonl entry (KAFL016 -> KA-160326-91M) requested by KL-2026-09-28-004715, and to reconcile the video_id discrepancy noted above (map shows 1079643321138542, live creative shows 1690996575992051) while doing so."
-  },
   "KL-2026-10-08-CS-UGC-PREETT": {
     "id": "KL-2026-10-08-CS-UGC-PREETT",
     "date": "2026-10-08",
@@ -285,6 +271,13 @@
     "type": "observation",
     "subject": "Punjab/Karnataka overspend-relative-to-return CONFIRMED with fuller multi-city aggregation (resolves the 7-week-old open follow_up from KL-2026-08-24-161600) - plus two new candidates, Gujarat and Odisha",
     "follow_up": "Route all four (Punjab/Karnataka confirmation, Gujarat new, Odisha new, West Bengal spend-growth re-check) to campaign-strategist for disposition against the eight geography dispositions - this closes the stale 08-24 open item either way."
+  },
+  "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN": {
+    "id": "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "WhatsApp-destination creative-currency sweep - first formal run since the duty was added 2026-10-02; 2 of 3 active ads use videos aged 55 days, pre-dating the current KAFL0XX push, but this corroborates rather than contradicts the already-in-progress remediation",
+    "follow_up": "Continue this sweep monthly per standing cadence. No new action implied beyond the already-scheduled Metallic Coffee Brown/Burnt Orange activation re-ask once ad set 6862975169176 settles post the 2026-10-12/14 Champagne Gold neutral-text check-in."
   },
   "KL-2026-10-12-comment-batch": {
     "id": "KL-2026-10-12-comment-batch",
