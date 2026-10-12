@@ -216,13 +216,6 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
-  "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE": {
-    "id": "KL-2026-10-08-PA-DOBCOVERAGE-UPDATE",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "DOB coverage grown to 5.89% (37/628 customers), nearly double the 2026-10-01 reading (3.3%, 20/606) - mean age 33.73, bracket distribution still converging with Metas dominant 25-34",
-    "follow_up": "Continue standing weekly/monthly tracking. Revisit the low-confidence tag once the known-DOB sample grows well past the current n=37 - still too small for anything beyond directional convergence-watching."
-  },
   "KL-2026-10-09-071850": {
     "id": "KL-2026-10-09-071850",
     "date": "2026-10-09",
@@ -257,6 +250,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
+  },
+  "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE": {
+    "id": "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "DOB coverage grows to 6.40% (41/641 customers), up from 5.89% (37/628) on 2026-10-08 - mean age 32.85, bracket distribution still converging with Metas dominant 25-34",
+    "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain (KL-2026-08-24-161600 onward)."
   },
   "KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM": {
     "id": "KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM",
