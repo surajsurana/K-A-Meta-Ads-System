@@ -237,12 +237,12 @@
     "subject": "India Insta Engaged 365D & Followers - ceiling-breach trim, daily_budget Rs2,438 -> Rs2,188/day",
     "follow_up": "Over the following week, performance-analyst's daily actual-spend watch reports whether actual spend returns under Rs6,500/day. If not, escalate to a broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
   },
-  "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION": {
-    "id": "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION",
+  "KL-2026-10-12-011022": {
+    "id": "KL-2026-10-12-011022",
     "date": "2026-10-12",
     "type": "decision",
-    "subject": "Punjab/Karnataka/Gujarat/Odisha/West Bengal geography disposition - resolves the 7-week-stale KL-2026-08-24-161600 open item; 5 explicit dispositions among the 8 allowed",
-    "follow_up": "Route to media-buyer: validate and prepare 2 live targeting-change plans - (1) add Gujarat and Karnataka to excluded_geo_locations on Broad Advantage+, Interest Stack, India Insta Engaged 365D, and WhatsApp India; (2) identify Punjab's single highest-spend contributing ad set among those 4 and add Punjab to its excluded_geo_locations only. Stop-rule for both: over the following 2-4 weeks (this account's own low-volume minimum per the Mumbai-test precedent), confirm total account messaging connections/leads do not materially drop (would indicate real demand loss, not just inefficient spend removal) and that freed delivery is landing in better-converting geos (Maharashtra especially). Ask performance-analyst to continue tracking Odisha (re-open criteria: spend grows materially beyond ~Rs75/day, or a longer window still shows zero orders) and West Bengal (re-open criteria: order count grows beyond 2, or spend continues climbing without a 3rd+ order) as their own named items at the next weekly review, not re-litigated from scratch each time."
+    "subject": "Gujarat and Karnataka geo exclusion - 4 ad sets (Broad Advantage+, Interest Stack, India Insta Engaged 365D, India Whatsapp 9th Dec 25)",
+    "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Gujarat/Karnataka spend on these ad sets has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend, per the stop-rule above."
   },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
