@@ -272,6 +272,13 @@
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
   },
+  "KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM": {
+    "id": "KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Instagram follower growth - second consecutive full-week reading confirms the dip flagged 2026-10-05/continued 2026-10-08; this IS the confirming data point that entrys follow_up asked for",
+    "follow_up": "Per KL-2026-10-05-CS-FOLLOWERGROWTH-DIPs own stated criterion, this is now campaign-strategists call - route for a disposition (continue HOLD a third time, investigate cause, or propose a change) rather than treating this as more of the same single-week noise."
+  },
   "KL-2026-10-12-comment-batch": {
     "id": "KL-2026-10-12-comment-batch",
     "date": "2026-10-12",
