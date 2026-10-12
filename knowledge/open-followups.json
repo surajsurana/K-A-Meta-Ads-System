@@ -237,6 +237,13 @@
     "subject": "KL-2026-10-12-CS-UGC-DISPOSITION",
     "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CS-UGC-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
+  "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY": {
+    "id": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
+    "date": "2026-10-12",
+    "type": "decision",
+    "subject": "CORRECTED retry plan - Reels repost of priyaas_makeoverpune Reel 17961616521238941, after first attempt failed with Media Upload error 2207076",
+    "follow_up": "marketing-lead to execute this corrected retry once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY. If this second attempt also errors, this becomes a platform-limitation question for Suraj to weigh in on (e.g. whether to pursue a droplet-hosted public-URL workaround as its own separately-approved plan), not a further unilateral retry."
+  },
   "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK": {
     "id": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK",
     "date": "2026-10-12",
@@ -250,13 +257,6 @@
     "type": "decision",
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
-  },
-  "KL-2026-10-12-EXEC-REPOST-PRIYAAS-FAIL": {
-    "id": "KL-2026-10-12-EXEC-REPOST-PRIYAAS-FAIL",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Reels repost of @priyaas_makeoverpune Reel 17961616521238941 to K and A own IG (KL-2026-10-12-repost-priyaas) - media upload failed, no partial write",
-    "follow_up": "Re-diagnosis of error code 2207076 against Meta live API (GET-only) and a corrected plan, if one can be produced without needing a Suraj-only fact, to follow in this same session - see the companion entry this links forward to."
   },
   "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX": {
     "id": "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX",
