@@ -251,6 +251,13 @@
     "subject": "Five-way disposition on 3 UGC items from KL-2026-10-12-CS-HANDOFF, plus independent review of the already-dispatched repost/comment-batch Telegram requests",
     "follow_up": "Item (a): brief creative-copywriter to write ad copy/identify the real underlying product (SKU cross-check against Stitchflow, per section 3d) for a new TEST ad/ad set using this footage, then media-buyer validates the build. This paid-ad use needs Suraj's direct Approve/Reject/Hold via Telegram before copy is briefed, per the standing rule - see the companion Telegram request sent for this plan id. Item (b): awaiting the full video (not just thumbnail) before any disposition beyond HOLD; when reviewed, explicitly weigh the bar/lounge setting against brand fit, not just motion/pacing quality. Item (c): no further ad-use action unless/until ownership is affirmatively confirmed; if Suraj or anyone recognizes the person/stylist, revisit then."
   },
+  "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL": {
+    "id": "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Ad 6907213796176 (Nikki Mehra | Deep Purple Corset) headline-fix creative swap - Meta rejected new-creative write",
+    "follow_up": "Per hard rule (added 2026-10-01), re-diagnosing in the same session as media-buyer and producing a corrected plan that omits image_url from the new creative's video_data input (image_hash alone is the real settable field - exact same fix already used successfully 2026-10-05 for KL-2026-10-05-ML-FRESHCONTENTJUL23-HEADLINEEXEC, same ObjectStorySpecRedundant class). Corrected plan to be sent for fresh Telegram approval before any retry."
+  },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
     "date": "2026-10-12",
