@@ -230,6 +230,13 @@
     "subject": "Punjab reduced targeting - exclude from India Insta Engaged 365D & Followers only (identified as Punjab's single highest-spend ad set among the 4 candidates)",
     "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds or worsens, escalate to full exclusion across all 4 ad sets."
   },
+  "KL-2026-10-12-032513": {
+    "id": "KL-2026-10-12-032513",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "KL-2026-10-12-CS-UGC-DISPOSITION",
+    "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CS-UGC-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
   "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK": {
     "id": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK",
     "date": "2026-10-12",
@@ -243,13 +250,6 @@
     "type": "decision",
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
-  },
-  "KL-2026-10-12-CS-UGC-DISPOSITION": {
-    "id": "KL-2026-10-12-CS-UGC-DISPOSITION",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Five-way disposition on 3 UGC items from KL-2026-10-12-CS-HANDOFF, plus independent review of the already-dispatched repost/comment-batch Telegram requests",
-    "follow_up": "Item (a): brief creative-copywriter to write ad copy/identify the real underlying product (SKU cross-check against Stitchflow, per section 3d) for a new TEST ad/ad set using this footage, then media-buyer validates the build. This paid-ad use needs Suraj's direct Approve/Reject/Hold via Telegram before copy is briefed, per the standing rule - see the companion Telegram request sent for this plan id. Item (b): awaiting the full video (not just thumbnail) before any disposition beyond HOLD; when reviewed, explicitly weigh the bar/lounge setting against brand fit, not just motion/pacing quality. Item (c): no further ad-use action unless/until ownership is affirmatively confirmed; if Suraj or anyone recognizes the person/stylist, revisit then."
   },
   "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL": {
     "id": "KL-2026-10-12-ML-NIKKIMEHRA-HEADLINEFAIL",
