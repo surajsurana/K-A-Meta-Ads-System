@@ -230,13 +230,6 @@
     "subject": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
     "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK": {
-    "id": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Rich Maroon Raw Silk Corset + Cutout Corset / Floral-Jaal Lehenga TEST disposition (KL-2026-09-05-015801) - fresh 5-week recheck, same discipline as KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK - DISPOSITION STILL HOLDS, approval-to-proceed now sent, but activation timing flagged as a real new concern",
-    "follow_up": "If APPROVED: creative-copywriter briefs both ads (WhatsApp/CONVERSATIONS funnel, enquiry-oriented CTA, product-SKU identification per architecture.md section 3d); media-buyer validates a build plan (paused-first, fresh budget re-verification at build time, explicit note that activation should wait for the ceiling-breach situation to stabilize - see KL-2026-10-12-010920's own follow_up window). Do not activate either ad until actual account spend has run compliant under Rs6,500/day for several consecutive days post-trim AND Broad Advantage+'s KAFL027-related volatility has settled. If REJECTED or HELD, report back and leave the third look (Maroon Corset + Fishcut Lehenga) on its existing unchanged HOLD."
-  },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
     "date": "2026-10-12",
@@ -278,6 +271,13 @@
     "type": "decision",
     "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - CORRECTED headline-fix plan, supersedes failed KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
     "follow_up": "marketing-lead to execute (create new creative omitting image_url, verify, then swap ad's creative_id) only after the user's direct fresh approval via Telegram for this corrected plan specifically. Once executed, append a linked type=change entry and run the verification steps above."
+  },
+  "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION": {
+    "id": "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK approval-to-proceed received via Telegram - dispatch halted, no product/SKU identified yet",
+    "follow_up": "Needs an interactive session with Shopify tool access to identify/confirm the product/SKU for both REELs (17950760811197157 and 18108323200886400) before creative-copywriter can brief or media-buyer can build. Once a SKU is confirmed for each, re-run this plan id."
   },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
