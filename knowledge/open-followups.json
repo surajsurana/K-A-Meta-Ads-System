@@ -244,12 +244,12 @@
     "subject": "Punjab/Karnataka/Gujarat/Odisha/West Bengal geography disposition - resolves the 7-week-stale KL-2026-08-24-161600 open item; 5 explicit dispositions among the 8 allowed",
     "follow_up": "Route to media-buyer: validate and prepare 2 live targeting-change plans - (1) add Gujarat and Karnataka to excluded_geo_locations on Broad Advantage+, Interest Stack, India Insta Engaged 365D, and WhatsApp India; (2) identify Punjab's single highest-spend contributing ad set among those 4 and add Punjab to its excluded_geo_locations only. Stop-rule for both: over the following 2-4 weeks (this account's own low-volume minimum per the Mumbai-test precedent), confirm total account messaging connections/leads do not materially drop (would indicate real demand loss, not just inefficient spend removal) and that freed delivery is landing in better-converting geos (Maharashtra especially). Ask performance-analyst to continue tracking Odisha (re-open criteria: spend grows materially beyond ~Rs75/day, or a longer window still shows zero orders) and West Bengal (re-open criteria: order count grows beyond 2, or spend continues climbing without a 3rd+ order) as their own named items at the next weekly review, not re-litigated from scratch each time."
   },
-  "KL-2026-10-12-CS-HANDOFF": {
-    "id": "KL-2026-10-12-CS-HANDOFF",
+  "KL-2026-10-12-CS-UGC-DISPOSITION": {
+    "id": "KL-2026-10-12-CS-UGC-DISPOSITION",
     "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist: 3 new UGC items from KL-2026-10-12-ugc-tags for ad-use disposition",
-    "follow_up": "Awaiting campaign-strategist's disposition on all 3 items. Item (1) is also independently queued as an organic Reels-repost candidate (KL-2026-10-12-repost-priyaas) - that repost decision is separate from, and does not pre-empt, any paid-use disposition campaign-strategist reaches for the same footage."
+    "type": "decision",
+    "subject": "Five-way disposition on 3 UGC items from KL-2026-10-12-CS-HANDOFF, plus independent review of the already-dispatched repost/comment-batch Telegram requests",
+    "follow_up": "Item (a): brief creative-copywriter to write ad copy/identify the real underlying product (SKU cross-check against Stitchflow, per section 3d) for a new TEST ad/ad set using this footage, then media-buyer validates the build. This paid-ad use needs Suraj's direct Approve/Reject/Hold via Telegram before copy is briefed, per the standing rule - see the companion Telegram request sent for this plan id. Item (b): awaiting the full video (not just thumbnail) before any disposition beyond HOLD; when reviewed, explicitly weigh the bar/lounge setting against brand fit, not just motion/pacing quality. Item (c): no further ad-use action unless/until ownership is affirmatively confirmed; if Suraj or anyone recognizes the person/stylist, revisit then."
   },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
@@ -272,25 +272,11 @@
     "subject": "WhatsApp-destination creative-currency sweep - first formal run since the duty was added 2026-10-02; 2 of 3 active ads use videos aged 55 days, pre-dating the current KAFL0XX push, but this corroborates rather than contradicts the already-in-progress remediation",
     "follow_up": "Continue this sweep monthly per standing cadence. No new action implied beyond the already-scheduled Metallic Coffee Brown/Burnt Orange activation re-ask once ad set 6862975169176 settles post the 2026-10-12/14 Champagne Gold neutral-text check-in."
   },
-  "KL-2026-10-12-comment-batch": {
-    "id": "KL-2026-10-12-comment-batch",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (2 items) - 2 old unreplied compliment comments found during this cycle's sweep",
-    "follow_up": "Awaiting Telegram approval."
-  },
   "KL-2026-10-12-own-content": {
     "id": "KL-2026-10-12-own-content",
     "date": "2026-10-12",
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-12, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 60 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 60 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
-  },
-  "KL-2026-10-12-repost-priyaas": {
-    "id": "KL-2026-10-12-repost-priyaas",
-    "date": "2026-10-12",
-    "type": "decision",
-    "subject": "UGC repost plan - @priyaas_makeoverpune Reel 17961616521238941 (GRWM ending in gold corset-lehenga staircase reveal), to Reels",
-    "follow_up": "Not pre-approved - awaiting Suraj's Approve/Reject/Hold via Telegram. If approved, marketing-lead must re-fetch a fresh video_url immediately before executing (the one on file at review time is a signed URL that may have expired)."
   }
 }
