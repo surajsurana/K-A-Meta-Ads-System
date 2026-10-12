@@ -223,12 +223,12 @@
     "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
     "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
   },
-  "KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITION": {
-    "id": "KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITION",
+  "KL-2026-10-12-010832": {
+    "id": "KL-2026-10-12-010832",
     "date": "2026-10-12",
     "type": "decision",
-    "subject": "Profile Visits | India follower-growth dip - SECOND confirming full-week reading received (KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM); DISPOSITION: trigger the pre-committed rollback criterion (3) from KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE, not a third HOLD",
-    "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad B (52551760704780, 'Profile Visits | Structure, In Motion') under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget field change (stays Rs100/day for the ad set). Ad A (52551760703580) and Fresh Content Jul23 (52538162380380) stay untouched. At the next full-week reading (~2026-10-19), performance-analyst re-measures ad-set-wide cost-per-follower with only 2 ads competing for budget. If still not recovering toward the Rs1.11-2.32/follower band, escalate to pausing Ad A as well per this same criterion, and treat it as a root-cause investigation rather than a mechanical next step."
+    "subject": "Profile Visits | India - pause Ad B (Structure, In Motion), triggering pre-committed rollback criterion (3)",
+    "follow_up": "At ~2026-10-19, performance-analyst re-measures ad-set-wide cost-per-follower with only Ad A + Fresh Content Jul23 active. If not recovering toward Rs1.11-2.32/follower, escalate to also pausing Ad A per the same pre-committed criterion."
   },
   "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION": {
     "id": "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION",
