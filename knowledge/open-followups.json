@@ -230,6 +230,13 @@
     "subject": "Profile Visits | India - pause Ad B (Structure, In Motion), triggering pre-committed rollback criterion (3)",
     "follow_up": "At ~2026-10-19, performance-analyst re-measures ad-set-wide cost-per-follower with only Ad A + Fresh Content Jul23 active. If not recovering toward Rs1.11-2.32/follower, escalate to also pausing Ad A per the same pre-committed criterion."
   },
+  "KL-2026-10-12-010920": {
+    "id": "KL-2026-10-12-010920",
+    "date": "2026-10-12",
+    "type": "decision",
+    "subject": "India Insta Engaged 365D & Followers - ceiling-breach trim, daily_budget Rs2,438 -> Rs2,188/day",
+    "follow_up": "Over the following week, performance-analyst's daily actual-spend watch reports whether actual spend returns under Rs6,500/day. If not, escalate to a broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
+  },
   "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION": {
     "id": "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION",
     "date": "2026-10-12",
