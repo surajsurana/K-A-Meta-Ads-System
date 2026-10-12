@@ -237,6 +237,13 @@
     "subject": "Profile Visits | India follower-growth dip - SECOND confirming full-week reading received (KL-2026-10-12-PA-FOLLOWERGROWTH-SECONDCONFIRM); DISPOSITION: trigger the pre-committed rollback criterion (3) from KL-2026-10-08-MB-PROFILEVISITS-ADBACTIVATE, not a third HOLD",
     "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad B (52551760704780, 'Profile Visits | Structure, In Motion') under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget field change (stays Rs100/day for the ad set). Ad A (52551760703580) and Fresh Content Jul23 (52538162380380) stay untouched. At the next full-week reading (~2026-10-19), performance-analyst re-measures ad-set-wide cost-per-follower with only 2 ads competing for budget. If still not recovering toward the Rs1.11-2.32/follower band, escalate to pausing Ad A as well per this same criterion, and treat it as a root-cause investigation rather than a mechanical next step."
   },
+  "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION": {
+    "id": "KL-2026-10-12-CS-GEO-PUNJABKARNATAKAGUJARAT-DISPOSITION",
+    "date": "2026-10-12",
+    "type": "decision",
+    "subject": "Punjab/Karnataka/Gujarat/Odisha/West Bengal geography disposition - resolves the 7-week-stale KL-2026-08-24-161600 open item; 5 explicit dispositions among the 8 allowed",
+    "follow_up": "Route to media-buyer: validate and prepare 2 live targeting-change plans - (1) add Gujarat and Karnataka to excluded_geo_locations on Broad Advantage+, Interest Stack, India Insta Engaged 365D, and WhatsApp India; (2) identify Punjab's single highest-spend contributing ad set among those 4 and add Punjab to its excluded_geo_locations only. Stop-rule for both: over the following 2-4 weeks (this account's own low-volume minimum per the Mumbai-test precedent), confirm total account messaging connections/leads do not materially drop (would indicate real demand loss, not just inefficient spend removal) and that freed delivery is landing in better-converting geos (Maharashtra especially). Ask performance-analyst to continue tracking Odisha (re-open criteria: spend grows materially beyond ~Rs75/day, or a longer window still shows zero orders) and West Bengal (re-open criteria: order count grows beyond 2, or spend continues climbing without a 3rd+ order) as their own named items at the next weekly review, not re-litigated from scratch each time."
+  },
   "KL-2026-10-12-CS-HANDOFF": {
     "id": "KL-2026-10-12-CS-HANDOFF",
     "date": "2026-10-12",
@@ -257,13 +264,6 @@
     "type": "observation",
     "subject": "DOB coverage grows to 6.40% (41/641 customers), up from 5.89% (37/628) on 2026-10-08 - mean age 32.85, bracket distribution still converging with Metas dominant 25-34",
     "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain (KL-2026-08-24-161600 onward)."
-  },
-  "KL-2026-10-12-PA-GEO-PUNJABKARNATAKA-CONFIRMED-PLUS-GUJARAT-ODISHA": {
-    "id": "KL-2026-10-12-PA-GEO-PUNJABKARNATAKA-CONFIRMED-PLUS-GUJARAT-ODISHA",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Punjab/Karnataka overspend-relative-to-return CONFIRMED with fuller multi-city aggregation (resolves the 7-week-old open follow_up from KL-2026-08-24-161600) - plus two new candidates, Gujarat and Odisha",
-    "follow_up": "Route all four (Punjab/Karnataka confirmation, Gujarat new, Odisha new, West Bengal spend-growth re-check) to campaign-strategist for disposition against the eight geography dispositions - this closes the stale 08-24 open item either way."
   },
   "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN": {
     "id": "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN",
