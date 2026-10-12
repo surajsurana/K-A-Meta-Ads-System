@@ -237,12 +237,12 @@
     "subject": "KL-2026-10-12-CS-UGC-DISPOSITION",
     "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CS-UGC-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY": {
-    "id": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
+  "KL-2026-10-12-033439": {
+    "id": "KL-2026-10-12-033439",
     "date": "2026-10-12",
-    "type": "decision",
-    "subject": "CORRECTED retry plan - Reels repost of priyaas_makeoverpune Reel 17961616521238941, after first attempt failed with Media Upload error 2207076",
-    "follow_up": "marketing-lead to execute this corrected retry once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY. If this second attempt also errors, this becomes a platform-limitation question for Suraj to weigh in on (e.g. whether to pursue a droplet-hosted public-URL workaround as its own separately-approved plan), not a further unilateral retry."
+    "type": "observation",
+    "subject": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
+    "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
   "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK": {
     "id": "KL-2026-10-12-CS-RICHMAROON-FRESHRECHECK",
