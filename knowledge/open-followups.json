@@ -237,12 +237,12 @@
     "subject": "India Insta Engaged 365D & Followers - ceiling-breach trim, daily_budget Rs2,438 -> Rs2,188/day",
     "follow_up": "Over the following week, performance-analyst's daily actual-spend watch reports whether actual spend returns under Rs6,500/day. If not, escalate to a broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
   },
-  "KL-2026-10-12-011022": {
-    "id": "KL-2026-10-12-011022",
+  "KL-2026-10-12-011115": {
+    "id": "KL-2026-10-12-011115",
     "date": "2026-10-12",
     "type": "decision",
-    "subject": "Gujarat and Karnataka geo exclusion - 4 ad sets (Broad Advantage+, Interest Stack, India Insta Engaged 365D, India Whatsapp 9th Dec 25)",
-    "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Gujarat/Karnataka spend on these ad sets has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend, per the stop-rule above."
+    "subject": "Punjab reduced targeting - exclude from India Insta Engaged 365D & Followers only (identified as Punjab's single highest-spend ad set among the 4 candidates)",
+    "follow_up": "At the next 2-4 week check: performance-analyst re-pulls region-breakdown spend to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account messaging connections/leads trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds or worsens, escalate to full exclusion across all 4 ad sets."
   },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
