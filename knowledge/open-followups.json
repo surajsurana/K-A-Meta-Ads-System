@@ -251,6 +251,13 @@
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
+  "KL-2026-10-12-EXEC-REPOST-PRIYAAS-FAIL": {
+    "id": "KL-2026-10-12-EXEC-REPOST-PRIYAAS-FAIL",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Reels repost of @priyaas_makeoverpune Reel 17961616521238941 to K and A own IG (KL-2026-10-12-repost-priyaas) - media upload failed, no partial write",
+    "follow_up": "Re-diagnosis of error code 2207076 against Meta live API (GET-only) and a corrected plan, if one can be produced without needing a Suraj-only fact, to follow in this same session - see the companion entry this links forward to."
+  },
   "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX": {
     "id": "KL-2026-10-12-MB-NIKKIMEHRA-HEADLINEPLAN-FIX",
     "date": "2026-10-12",
