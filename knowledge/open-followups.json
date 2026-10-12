@@ -230,13 +230,6 @@
     "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
     "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
   },
-  "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED": {
-    "id": "KL-2026-10-11-PA-CEILINGBREACH-RESOLVED",
-    "date": "2026-10-11",
-    "type": "outcome",
-    "subject": "Daily heartbeat 2026-10-11 (data for 2026-10-10): pre-committed escalation trigger from KL-2026-10-10-CS-CEILINGBREACH-HOLD NOT met - neither condition true, HOLD continues, no escalation",
-    "follow_up": "Continue the day-by-day watch per KL-2026-10-10-CS-CEILINGBREACH-HOLD original follow_up field - next heartbeat should again re-check both conditions fresh against 2026-10-11 actual data, not assume todays compliant reading means the volatility pattern is over (the 6-day actual trend so far: 10-06 breach / 10-07 compliant / 10-08 compliant / 10-09 breach / 10-10 compliant - still no clean monotonic direction)."
-  },
   "KL-2026-10-12-CS-HANDOFF": {
     "id": "KL-2026-10-12-CS-HANDOFF",
     "date": "2026-10-12",
@@ -250,6 +243,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
+  },
+  "KL-2026-10-12-PA-CEILINGBREACH-ESCALATED": {
+    "id": "KL-2026-10-12-PA-CEILINGBREACH-ESCALATED",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "Daily ceiling watch (data for 2026-10-11): actual account spend Rs7,431.47, the LARGEST breach yet in the 6-day trend (+Rs931.47/+14.3% over Rs6,500) - continuing KL-2026-10-10-CS-CEILINGBREACH-HOLDs day-by-day watch, criterion (b) as literally written NOT met but overall severity is a real escalation worth explicit attention",
+    "follow_up": "Route to campaign-strategist for a fresh read given this is the largest breach yet and the overspend is now broadly distributed rather than concentrated in the one ad set the original trigger was written around - continuing the mechanical day-by-day watch is not a substitute for campaign-strategists own judgment on whether the trigger wording itself needs updating."
   },
   "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE": {
     "id": "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE",
