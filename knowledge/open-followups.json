@@ -181,13 +181,6 @@
     "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
     "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
   },
-  "KL-2026-10-05-CS-STYLEDBYTAN-REPEAT": {
-    "id": "KL-2026-10-05-CS-STYLEDBYTAN-REPEAT",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "New @styled_bytan carousel 18016529750943802 (2026-10-03) - confirmed as the same already-declined shoot/ensemble (KL-2026-09-21-143615); NOT a fresh candidate, no re-proposal",
-    "follow_up": "No action, no re-proposal. If @styled_bytan posts genuinely new, distinct content (a different shoot/ensemble, not a continuation of this one) in future, that would warrant its own fresh disposition - not this recurring one."
-  },
   "KL-2026-10-05-EXEC-KAFL004-PAUSED": {
     "id": "KL-2026-10-05-EXEC-KAFL004-PAUSED",
     "date": "2026-10-05",
@@ -278,5 +271,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-12, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 60 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 60 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
+  },
+  "KL-2026-10-12-ugc-tags": {
+    "id": "KL-2026-10-12-ugc-tags",
+    "date": "2026-10-12",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-10-12, twice-weekly review) - 3 new tagged items since the 2026-10-07 boundary, independent frame-level visual reads performed on all 3",
+    "follow_up": "All 3 items handed off to campaign-strategist (see KL-2026-10-12-CS-HANDOFF) for the five-way ad-use disposition call; the priyaas_makeoverpune reel is also being queued separately as a Reels repost candidate for Suraj's direct approval (see KL-2026-10-12-repost-priyaas). Next sweep boundary should be 17961120785999733 (2026-10-11T11:41:07), the newest item found this cycle."
   }
 }
