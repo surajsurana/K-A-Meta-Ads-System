@@ -694,6 +694,15 @@ IF THE APPROVED PLAN IS A CONTENT/TEST-DISPOSITION DECISION (campaign-strategist
 16. If NO product is linked yet and the content genuinely hasn't been identified: this really does need Shopify tool access, which this headless dispatch doesn't have (same documented gap as always) - stop here, do not guess.
 17. In the step-16 case only, report the first line as `NEEDS_SESSION:` (not `STALE_NOT_EXECUTED:`), followed by a genuinely short plain sentence - 12 words or fewer, no jargon, no explanation of the underlying mechanism (Suraj's own words: he can't read long messages on Telegram - put the full reasoning in the learning-log entry instead, not here). Example: "NEEDS_SESSION: Metallic Blue still needs the product confirmed first." Still log a `type: observation` entry recording the real reason, same as any other stop - only the Telegram line itself has to stay this short.
 
+IF THE APPROVED PLAN IS A SYSTEM CODE-FIX (tagged `system-fix` in its learning-log entry, produced by the weekly pipeline self-check, `prompts/weekly-system-selfcheck.md`) RATHER THAN A META-WRITE OR CONTENT-BUILD INSTRUCTION - added 2026-10-13, real user request ("only if there is any problem in execution or a bug it must fix... we can put a guardrail... to get any fix approved before fixing"):
+18. Confirm the plan's own target file is in scope: a git-tracked repo file only (`prompts/*.md`, `.claude/agents/*.md`, `scripts/*`, this file itself, `docs/*.md`). If the plan names `live_server.py` or `template.html` (the dashboard - deployed by hand via `scp`, not git-tracked, no git-based rollback safety net), STOP - do not apply anything, report FAILED: "dashboard files are out of scope for automated fixes, needs an interactive session." This boundary is absolute, not a judgment call to weigh case by case.
+19. Re-read the target file's exact current content at the location the plan names, and confirm the plan's stated "existing text being replaced" still matches byte-for-byte. If it doesn't (the file changed since the plan was written - already fixed another way, or the plan's own context went stale), STOP - report STALE_NOT_EXECUTED, never force a fuzzy match onto text that's moved.
+20. Apply the edit exactly as the plan specifies, using the Edit tool - the exact old text to the exact new text, nothing else in the file touched. No redesign, no reinterpretation, no "while I'm here" cleanup - identical discipline to step 5 above.
+21. Validate before deploying: a `.py` file needs `python3 -m py_compile <file>`; a shell script needs `bash -n <file>`; a `.md` file has no compile step, just confirm the edit landed as intended. If validation fails, immediately revert the edit (Edit tool back to the exact original text) and report FAILED with the validation error - the file must end this run in exactly its pre-edit state if the fix doesn't pass, same "no partial damage" standard as a rejected Meta write.
+22. If validation passes, commit and push using the exact same safe pattern `scripts/append-learning-log.sh` already uses for the learning log itself (`git add <file>`, commit, `git fetch origin main`, `git rebase origin/main`, `git push origin main`, retry up to 3 times on a push race, never force-push) - this IS the deploy step, since every scheduled job already hard-syncs to `origin/main` before it runs, so the fix reaches every future run automatically without a separate deploy action. If the target file is `telegram_approval_listener.py` itself, say so plainly in the report: the running listener process needs a restart to pick up this change (the watchdog handles this within about a minute of the process stopping, but nothing in this dispatch restarts it) - never attempt to kill or restart your own parent process.
+23. Log a `type: change` entry via `scripts/append-learning-log.sh`, actor=marketing-lead, linked_to this plan id, with the real before/after text included.
+24. Report EXECUTED with a plain summary of what was fixed and why, including the listener-restart note from step 22 if it applies. A code fix is higher-stakes than a routine ad change and its Telegram summary necessarily can't show the full diff (per the self-check prompt's own brevity rule) - say plainly in the report that the full before/after is in the learning-log entry, so Suraj can ask to see it before relying on the fix.
+
 Report format - this matters, your response's first line is shown directly to the user on their phone via Telegram: the FIRST LINE of your entire response must be exactly one of EXECUTED / STALE_NOT_EXECUTED / ALREADY_EXECUTED / FAILED / NEEDS_SESSION, immediately followed on the same line by a colon and one short plain-English sentence naming what was actually done or why not (no Meta object IDs, no jargon) - e.g. "EXECUTED: Added the Sage Green Lehenga ad to the India Insta Engaged ad set, built paused." Print nothing before that line - no "log entry committed" notices, no preamble. Elaborate with technical detail (before/after, verification) below it if useful, but that first line is what the user actually reads - except for NEEDS_SESSION, where the first line is the ONLY thing that should be short and plain; keep it that way even if it feels like it's leaving detail out, the detail belongs in the learning log."""
 
     env = os.environ.copy()
@@ -707,11 +716,19 @@ Report format - this matters, your response's first line is shown directly to th
     # nvm's node/claude aren't on PATH in this process's minimal cron-derived
     # environment either - resolve the actual node bin dir the same way the
     # shell wrapper scripts do, rather than assuming.
+    # Edit added 2026-10-13 (was Read,Grep,Glob,Bash,mcp__stitchflow__* only)
+    # - the ONE place this dispatch can now modify a file, specifically for
+    # the new system-fix plan type (steps 18-24 above). Every other branch
+    # of this prompt still writes exclusively through append-learning-
+    # log.sh/append-product-map.sh (Bash calls) - this does not loosen that
+    # discipline for Meta-write or content-build plans, it only gives the
+    # code-fix branch the one tool it structurally needs, scoped by the
+    # prompt itself to repo files only (step 18's dashboard-file exclusion).
     bash_cmd = (
         f'export NVM_DIR="{nvm_dir}"; '
         f'[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; '
         f'cd "{REPO_DIR}" && claude -p "$1" --permission-mode dontAsk '
-        f'--allowedTools "Read,Grep,Glob,Bash,mcp__stitchflow__*"'
+        f'--allowedTools "Read,Grep,Glob,Bash,Edit,mcp__stitchflow__*"'
     )
     try:
         result = subprocess.run(
