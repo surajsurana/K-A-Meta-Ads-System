@@ -223,13 +223,6 @@
     "subject": "Should the Rs6,500 ceiling go up this cycle? NO - the account is currently spending ABOVE its existing ceiling, not under it with headroom; a step-up proposal is not coherent until the overspend pattern resolves",
     "follow_up": "Re-ask this question only once (a) actual account spend has run compliant against the Rs6,500 ceiling for at least a week straight (per the companion ceiling entry's own re-check cadence), AND (b) the WhatsApp India Champagne Gold neutral-text check-in (due 2026-10-12 to 10-14) has resolved, clearing the way to isolate 16th May | Awareness's headroom signal from its shared-lookalike confound. If both clear within October, the seasonality case (this account's own strongest month historically) still favors acting before the window closes - don't let this slip to November by default."
   },
-  "KL-2026-10-12-EXEC-GUJARATKARNATAKA-EXCLUSION": {
-    "id": "KL-2026-10-12-EXEC-GUJARATKARNATAKA-EXCLUSION",
-    "date": "2026-10-12",
-    "type": "change",
-    "subject": "Gujarat and Karnataka geo exclusion added to 4 ad sets (Broad Advantage+, Interest Stack, India Insta Engaged 365D, India Whatsapp 9th Dec 25) per approved plan KL-2026-10-12-011022",
-    "follow_up": "Per the plans own stop-rule: performance-analyst re-pulls /insights?breakdowns=region in 2-4 weeks to confirm Gujarat/Karnataka spend on these 4 ad sets has gone to zero/near-zero, plus total account leads/connections and Maharashtra spend-share trend. Additionally, media-buyer/performance-analyst should specifically check whether the Whatsapp ad sets (6862975169176) dropped age/gender Advantage+ individual_setting flags materially change its delivery pattern, since that was an unrequested side effect of this write, not an intended part of this plan."
-  },
   "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION": {
     "id": "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION",
     "date": "2026-10-12",
@@ -299,5 +292,12 @@
     "type": "decision",
     "subject": "Daily heartbeat 2026-10-13 (data for 2026-10-12): post-trim actual spend Rs6,459.19 (99.4% of Rs6,500 ceiling, Rs40.81 headroom) - DISPOSITION: HOLD, do not escalate to the broader multi-ad-set cut yet, day 1 of the pre-committed one-week watch",
     "follow_up": "Next daily heartbeat (data for 2026-10-13) must re-check actual spend fresh against Rs6,500. Continue through the remainder of the 1-week window (~2026-10-19) before any escalation decision. When/if the broader cut is eventually considered, note explicitly (per the companion Finding 3 entry this same cycle) that India Whatsapp and Interest Stack are currently mid-unsettled from their own recent structural changes (new ad added 2026-10-07 to Whatsapp; Feed-exclusion rollback 2026-10-08 to Interest Stack; Gujarat/Karnataka exclusion 2026-10-12 to both) - stacking a budget cut onto an ad set that is also mid-diagnosis on a separate CTR question would confound both reads, consistent with how this account has repeatedly avoided stacking changes onto unsettled objects (KL-2026-10-05-CS-SCALEINTEL-FEEDFIX, KL-2026-10-08-CS-SCALEINTEL, KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK)."
+  },
+  "KL-2026-10-13-CS-NOISEFLOOR-EXTENDED": {
+    "id": "KL-2026-10-13-CS-NOISEFLOOR-EXTENDED",
+    "date": "2026-10-13",
+    "type": "decision",
+    "subject": "Non-test ad sets also overspending configured daily budgets on 2026-10-12 (Profile Visits +22.1%, Whatsapp 9th Dec +24.4%, 16th May +10.6%, Canada Engaged +6.3%) - independent read: 3 of 4 extend the already-accepted noise-floor pattern (KL-2026-10-09-015227), Whatsapp 9th Dec is DIFFERENT and explained by its own known unsettled state, not a new standalone concern",
+    "follow_up": "Promote KL-2026-10-09-015227 to best_practice on the next qualifying weekly review, citing this entry as the second independent confirmation. Separately: resolve the Champagne Gold Neutral Text stop-rule (see companion Finding 3 entry) - once that is actually checked, Whatsapp 9th Dec 25 budget overshoot should be re-read alongside it, not separately. Tooling: whoever next touches scripts/update-open-followups.py should review whether a linked_to mention should really be sufficient to drop an entry from the open-followups index, or whether it should require the linking entry to be of a type/role that actually resolves the specific stop-rule (e.g. an outcome entry judging the named criteria) - not fixed in this entry, just flagged."
   }
 }
