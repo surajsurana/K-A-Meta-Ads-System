@@ -188,13 +188,6 @@
     "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
     "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
   },
-  "KL-2026-10-08-034403": {
-    "id": "KL-2026-10-08-034403",
-    "date": "2026-10-08",
-    "type": "observation",
-    "subject": "KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN",
-    "follow_up": "re-check 2026-10-12: if plan KL-2026-10-08-MB-NIKKIMEHRA-HEADLINEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-10-08-CS-UGC-PREETT": {
     "id": "KL-2026-10-08-CS-UGC-PREETT",
     "date": "2026-10-08",
@@ -229,13 +222,6 @@
     "type": "observation",
     "subject": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
     "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
-  "KL-2026-10-12-034934": {
-    "id": "KL-2026-10-12-034934",
-    "date": "2026-10-12",
-    "type": "change",
-    "subject": "Insta Engaged & Followers Remarketing Insta DM (campaign 6529679554576) > USA Engaged 365D & Followers (adset 6529679555376) > ad 6907213796176 (Nikki Mehra | Deep Purple Corset | 8th March 26) - headline-fix creative swap executed",
-    "follow_up": "Monitor ad 6907213796176 performance over 7-14 days vs rollback criteria (original creative 1470479441441756 is not deleted, only unattached - revert creative_id back to it if post-swap performance is meaningfully worse)."
   },
   "KL-2026-10-12-CS-SCALEREADINESS-DEFER": {
     "id": "KL-2026-10-12-CS-SCALEREADINESS-DEFER",
@@ -313,5 +299,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-12, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 60 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 60 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
+  },
+  "KL-2026-10-13-014530": {
+    "id": "KL-2026-10-13-014530",
+    "date": "2026-10-13",
+    "type": "outcome",
+    "subject": "Due-now sweep: KL-2026-10-08-034403 (Nikki Mehra headline plan hold re-check) - already resolved, no resend needed",
+    "follow_up": "None - closed."
   }
 }
