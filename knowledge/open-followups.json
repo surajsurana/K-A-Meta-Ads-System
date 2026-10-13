@@ -293,11 +293,11 @@
     "subject": "Daily heartbeat 2026-10-13 (data for 2026-10-12): post-trim actual spend Rs6,459.19 (99.4% of Rs6,500 ceiling, Rs40.81 headroom) - DISPOSITION: HOLD, do not escalate to the broader multi-ad-set cut yet, day 1 of the pre-committed one-week watch",
     "follow_up": "Next daily heartbeat (data for 2026-10-13) must re-check actual spend fresh against Rs6,500. Continue through the remainder of the 1-week window (~2026-10-19) before any escalation decision. When/if the broader cut is eventually considered, note explicitly (per the companion Finding 3 entry this same cycle) that India Whatsapp and Interest Stack are currently mid-unsettled from their own recent structural changes (new ad added 2026-10-07 to Whatsapp; Feed-exclusion rollback 2026-10-08 to Interest Stack; Gujarat/Karnataka exclusion 2026-10-12 to both) - stacking a budget cut onto an ad set that is also mid-diagnosis on a separate CTR question would confound both reads, consistent with how this account has repeatedly avoided stacking changes onto unsettled objects (KL-2026-10-05-CS-SCALEINTEL-FEEDFIX, KL-2026-10-08-CS-SCALEINTEL, KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK)."
   },
-  "KL-2026-10-13-CS-CTRDECLINE-SENDBACK": {
-    "id": "KL-2026-10-13-CS-CTRDECLINE-SENDBACK",
+  "KL-2026-10-13-CS-CTRDECLINE-FINALVERDICT": {
+    "id": "KL-2026-10-13-CS-CTRDECLINE-FINALVERDICT",
     "date": "2026-10-13",
     "type": "decision",
-    "subject": "Sustained multi-day CTR decline, 3 ad sets (India Whatsapp 9th Dec 25, First Love Broad Advantage+, First Love Interest Stack), 2026-10-08 to 10-12 - DISPOSITION: NOT a creative-fatigue finding, SEND BACK for the standing audience-overlap check plus two already-open/applicable checks before any rollback verdict - multiple known structural causes already in flight, none yet ruled in or out directly",
-    "follow_up": "performance-analyst to run the 4 specific checks listed above and report back; campaign-strategist re-reviews once that data is in (expect within 1-2 days, since check (1) is already overdue). No rollback/creative-change plan goes to media-buyer until this resolves. If, after those checks, a genuine residual decline remains unexplained by any structural cause, THEN a creative-attributed verdict becomes appropriate - this send-back is not a standing refusal to ever conclude creative fatigue, only a refusal to conclude it before the known confounds are actually checked."
+    "subject": "Final disposition on CTR-decline send-back (KL-2026-10-13-CS-CTRDECLINE-SENDBACK) and Champagne Gold Neutral Text Test stop-rule (KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST) - both questions CLOSED, no open loop",
+    "follow_up": "performance-analyst to pull day-by-day (not aggregated) cost/messaging_conversation_started and conversation-start rate for ad 52559623981980 by approx 2026-10-19/20, split pre-10-11 vs 10-11-to-13 vs post-10-13, and apply the pass/fail thresholds stated above. No pause/retire action on the Champagne Gold ad goes to media-buyer until that re-check. CTR-decline question is fully closed, no further checks needed on it."
   }
 }
