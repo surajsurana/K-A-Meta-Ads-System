@@ -118,13 +118,6 @@
     "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
     "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
   },
-  "KL-2026-10-02-010800": {
-    "id": "KL-2026-10-02-010800",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "WhatsApp Business service-message pricing (KL-2026-09-02-005800, still open) - new detail found: 1,000 free service messages per phone number per month before billing applies; Click-to-WhatsApp 72h entry window itself stays free",
-    "follow_up": "Still open: confirm whether K&A's WhatsApp click-to-message flow is API/BSP-routed or plain Business App. When next escalated, route via scripts/send-telegram-approval.sh as a type:decision with explicit Approve/Reject/Hold framing of the fact being confirmed, not a plain FYI notification."
-  },
   "KL-2026-10-02-010900": {
     "id": "KL-2026-10-02-010900",
     "date": "2026-10-02",
@@ -299,5 +292,12 @@
     "type": "decision",
     "subject": "Final disposition on CTR-decline send-back (KL-2026-10-13-CS-CTRDECLINE-SENDBACK) and Champagne Gold Neutral Text Test stop-rule (KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST) - both questions CLOSED, no open loop",
     "follow_up": "performance-analyst to pull day-by-day (not aggregated) cost/messaging_conversation_started and conversation-start rate for ad 52559623981980 by approx 2026-10-19/20, split pre-10-11 vs 10-11-to-13 vs post-10-13, and apply the pass/fail thresholds stated above. No pause/retire action on the Champagne Gold ad goes to media-buyer until that re-check. CTR-decline question is fully closed, no further checks needed on it."
+  },
+  "KL-2026-10-13-WATI-CONFIRMED": {
+    "id": "KL-2026-10-13-WATI-CONFIRMED",
+    "date": "2026-10-13",
+    "type": "outcome",
+    "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
+    "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
   }
 }
