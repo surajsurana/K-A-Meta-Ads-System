@@ -230,13 +230,6 @@
     "subject": "Gujarat and Karnataka geo exclusion added to 4 ad sets (Broad Advantage+, Interest Stack, India Insta Engaged 365D, India Whatsapp 9th Dec 25) per approved plan KL-2026-10-12-011022",
     "follow_up": "Per the plans own stop-rule: performance-analyst re-pulls /insights?breakdowns=region in 2-4 weeks to confirm Gujarat/Karnataka spend on these 4 ad sets has gone to zero/near-zero, plus total account leads/connections and Maharashtra spend-share trend. Additionally, media-buyer/performance-analyst should specifically check whether the Whatsapp ad sets (6862975169176) dropped age/gender Advantage+ individual_setting flags materially change its delivery pattern, since that was an unrequested side effect of this write, not an intended part of this plan."
   },
-  "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM": {
-    "id": "KL-2026-10-12-EXEC-INSTAENGAGED365D-TRIM",
-    "date": "2026-10-12",
-    "type": "change",
-    "subject": "India Insta Engaged 365D & Followers - trimmed ad set daily_budget Rs2,438/day -> Rs2,188/day per approved ceiling-breach plan",
-    "follow_up": "Per campaign-strategist's stated next step and this plan's own rollback criteria: performance-analyst's daily actual-spend watch over the following week reports whether actual account-wide spend trends back under Rs6,500/day. If not, escalate to the broader multi-ad-set cut (Canada Engaged, India Whatsapp, Interest Stack) rather than trimming this ad set further alone."
-  },
   "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION": {
     "id": "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION",
     "date": "2026-10-12",
@@ -299,5 +292,12 @@
     "type": "outcome",
     "subject": "Due-now sweep: KL-2026-10-09-071850 (Profile Visits cost-per-follower confirming read) - already resolved via Ad B pause",
     "follow_up": "None - closed. Next checkpoint already tracked in KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE."
+  },
+  "KL-2026-10-13-CS-CEILINGWATCH-DAY1HOLD": {
+    "id": "KL-2026-10-13-CS-CEILINGWATCH-DAY1HOLD",
+    "date": "2026-10-13",
+    "type": "decision",
+    "subject": "Daily heartbeat 2026-10-13 (data for 2026-10-12): post-trim actual spend Rs6,459.19 (99.4% of Rs6,500 ceiling, Rs40.81 headroom) - DISPOSITION: HOLD, do not escalate to the broader multi-ad-set cut yet, day 1 of the pre-committed one-week watch",
+    "follow_up": "Next daily heartbeat (data for 2026-10-13) must re-check actual spend fresh against Rs6,500. Continue through the remainder of the 1-week window (~2026-10-19) before any escalation decision. When/if the broader cut is eventually considered, note explicitly (per the companion Finding 3 entry this same cycle) that India Whatsapp and Interest Stack are currently mid-unsettled from their own recent structural changes (new ad added 2026-10-07 to Whatsapp; Feed-exclusion rollback 2026-10-08 to Interest Stack; Gujarat/Karnataka exclusion 2026-10-12 to both) - stacking a budget cut onto an ad set that is also mid-diagnosis on a separate CTR question would confound both reads, consistent with how this account has repeatedly avoided stacking changes onto unsettled objects (KL-2026-10-05-CS-SCALEINTEL-FEEDFIX, KL-2026-10-08-CS-SCALEINTEL, KL-2026-10-08-CS-METALLICCOFFEEBROWN-SEQUENCECHECK)."
   }
 }
