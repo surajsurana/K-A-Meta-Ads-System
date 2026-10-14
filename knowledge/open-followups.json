@@ -188,13 +188,6 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
-  "KL-2026-10-11-EXEC-KAFL027-ACTIVATION": {
-    "id": "KL-2026-10-11-EXEC-KAFL027-ACTIVATION",
-    "date": "2026-10-11",
-    "type": "change",
-    "subject": "First Love | Maroon Fishcut Corset | Structure Refresh ad (52559623294780) - activated, PAUSED -> ACTIVE",
-    "follow_up": "Rollback criteria per the plan: (1) immediate - re-pause if issues_info shows DISAPPROVED/policy flag or impressions stay near-zero beyond 24-48h; (2) 3-5 day pacing checkpoint - pull ad-level insights, re-pause if frequency/CPM is abnormally worse with no offsetting CTR/engagement gain; (3) 5-7 day cost-per-conversation comparison against sibling ad 52541313104580's baseline - re-pause this ad if >50% worse with no improving trend; (4) whoever runs the separate Feed-exclusion rollback day 7-10 check (~2026-10-15 to 10-18 per KL-2026-10-08-EXEC-FIRSTLOVE-FEEDEXCLUSION-ROLLBACK) must pull an ad-level breakdown isolating this ad's own contribution so that check's verdict isn't confounded by this activation landing in the same window."
-  },
   "KL-2026-10-12-032513": {
     "id": "KL-2026-10-12-032513",
     "date": "2026-10-12",
@@ -299,6 +292,13 @@
     "type": "outcome",
     "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
     "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
+  },
+  "KL-2026-10-14-014733": {
+    "id": "KL-2026-10-14-014733",
+    "date": "2026-10-14",
+    "type": "outcome",
+    "subject": "KAFL027 (ad 52559623294780, First Love | Maroon Fishcut Corset | Structure Refresh) 3-5 day pacing checkpoint (rollback criterion 2) - PASS, no rollback",
+    "follow_up": "Rollback criterion (3) (5-7 day cost-per-conversation comparison vs sibling 52541313104580 baseline) is next due ~2026-10-16/17 - re-pull then. Criterion (4) (Feed-exclusion rollback day 7-10 check, ~2026-10-15 to 10-18) still needs an ad-level breakdown isolating this ads own contribution, per the original activation plans note."
   },
   "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG": {
     "id": "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG",
