@@ -286,19 +286,19 @@
     "subject": "KAFL027 (ad 52559623294780, First Love | Maroon Fishcut Corset | Structure Refresh) 3-5 day pacing checkpoint (rollback criterion 2) - PASS, no rollback",
     "follow_up": "Rollback criterion (3) (5-7 day cost-per-conversation comparison vs sibling 52541313104580 baseline) is next due ~2026-10-16/17 - re-pull then. Criterion (4) (Feed-exclusion rollback day 7-10 check, ~2026-10-15 to 10-18) still needs an ad-level breakdown isolating this ads own contribution, per the original activation plans note."
   },
-  "KL-2026-10-14-014900": {
-    "id": "KL-2026-10-14-014900",
-    "date": "2026-10-14",
-    "type": "observation",
-    "subject": "Rs6,500 daily ceiling watch, day 2 (data for 2026-10-13) - ACTUAL BREACH, Rs7,058.19 spent (108.6% of ceiling, Rs558.19 over), worse than day 1s near-miss",
-    "follow_up": "ESCALATE to campaign-strategist: day 2 of the pre-committed one-week ceiling watch shows an actual breach (Rs7,058.19 vs Rs6,500, 108.6%), not just a near-miss - this is a real new data point the watch was designed to catch, and campaign-strategist should decide whether the watch continues unchanged through 2026-10-19 or whether this breach already warrants an earlier decision on the broader multi-ad-set cut. Next daily heartbeat (data for 2026-10-14) must re-pull fresh and continue the day-by-day record regardless of this decision."
-  },
   "KL-2026-10-14-014950": {
     "id": "KL-2026-10-14-014950",
     "date": "2026-10-14",
     "type": "observation",
     "subject": "26 legacy ads (2023-2024 vintage) show effective_status=WITH_ISSUES while their own status field still reads ACTIVE - confirmed zero spend, not a live issue",
     "follow_up": "No urgent action - zero spend, zero live impact. Worth a future housekeeping pass (not urgent) to either fix the underlying deleted-audience error or formally archive/delete these legacy ad sets so they stop appearing in WITH_ISSUES sweeps as noise. Not campaign-strategists concern unless a future sweep finds one of these has somehow started delivering again."
+  },
+  "KL-2026-10-14-CS-CEILINGWATCH-DAY2HOLD": {
+    "id": "KL-2026-10-14-CS-CEILINGWATCH-DAY2HOLD",
+    "date": "2026-10-14",
+    "type": "decision",
+    "subject": "Daily heartbeat 2026-10-14 (data for 2026-10-13): post-trim actual spend Rs7,058.19 (108.6% of Rs6,500 ceiling, Rs558.19 over) - DISPOSITION: HOLD, do not escalate early to the broader multi-ad-set cut, day 2 of the pre-committed one-week watch, but this is a real, concerning data point and the checkpoint for day 3 is tightened explicitly",
+    "follow_up": "Next daily heartbeat (data for 2026-10-14) must re-pull actual spend fresh. If that day ALSO breaches Rs6,500, treat as 2 breaches in the 2 most recent clean readings and bring an escalation recommendation (broader cut to Canada Engaged/India Whatsapp/Interest Stack, full 4-part allocation statement) to media-buyer for validation rather than waiting out the remainder of the 7-day window. If that day is compliant, continue the unchanged day-by-day watch through 2026-10-19. Either way, keep flagging the India Whatsapp/Interest Stack mid-unsettled-structural-change caveat if/when the broader cut is eventually proposed."
   },
   "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG": {
     "id": "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG",
