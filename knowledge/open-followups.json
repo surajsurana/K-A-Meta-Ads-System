@@ -299,5 +299,12 @@
     "type": "outcome",
     "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
     "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
+  },
+  "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG": {
+    "id": "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG",
+    "date": "2026-10-14",
+    "type": "observation",
+    "subject": "Dashboard (live_server.py) product-mapped ad-status verification has been 100% broken since 2026-09-23/28 - a leftover SYNC_TEST_00000 test id poisons every batch Meta call",
+    "follow_up": "Next interactive session (not this headless run - live_server.py/template.html are out of this runs fix scope, deployed by hand via scp, not git-tracked): fix load_confirmed_product_map()/get_ads_running_grid_html in live_server.py so an unlink (empty-products confirmed entry) actually removes the prior sku->ad_ids key instead of being silently absorbed, and/or validate candidate ids look like real numeric Meta object ids before batching them into the ids= GET - then clean up or correct the stale SYNC_TEST_00000 lines (47-48) in knowledge/creative-product-map.jsonl so this test probe never reaches a live batch call again. Until fixed, every product-mapped ads live effective_status on the Ads Running tab is running on a cache that has never once successfully populated since 2026-09-28."
   }
 }
