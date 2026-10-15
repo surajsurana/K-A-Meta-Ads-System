@@ -293,6 +293,13 @@
     "subject": "Single-ad ad set audit (Cold Prospecting Canada, Cold Prospecting USA, Metallic Blue Test, 16th May 26 | India) - 3 HOLD as-is, 1 (16th May) gets a 2nd creative",
     "follow_up": "Creative-copywriter to brief a 2nd ad for 16th May 26 | India this cycle or next, build PAUSED. Separately, finally give the 16th May vs India Whatsapp audience-overlap question its own dedicated fresh look next review - it has been deferred since 2026-10-01/05 and should not keep sliding."
   },
+  "KL-2026-10-15-CS-UGC-CHARMFACE-HOLD-VERIFY": {
+    "id": "KL-2026-10-15-CS-UGC-CHARMFACE-HOLD-VERIFY",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "@charmfacebylavnika Reel instagram.com/reel/DeWcfHVpLtx/ (media 17896784679608444) - DISPOSITION: HOLD, my own independent read leans plausible-K&A-fit, route a verification question to Suraj before any TEST decision",
+    "follow_up": "Creative-copywriter to attempt a Shopify catalog match for the navy sequinned/beaded structured corset bodice with sheer cape. Parent/marketing-lead to include the tappable verification question (permalink + my read, Approve/Reject/Hold via scripts/send-telegram-approval.sh) in the consolidated digest for this review cycle."
+  },
   "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
     "id": "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT",
     "date": "2026-10-15",
