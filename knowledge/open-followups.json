@@ -299,5 +299,12 @@
     "type": "observation",
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
+  },
+  "KL-2026-10-15-ugc-tags": {
+    "id": "KL-2026-10-15-ugc-tags",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-10-15, twice-weekly review) - 2 new tagged items since the 2026-10-11 boundary, both carry zero caption/comment credit to karishmaashita, independent frame-level visual reads performed on both",
+    "follow_up": "Both items handed off to campaign-strategist (see KL-2026-10-15-CS-HANDOFF) for the five-way disposition call, though my own read leans toward neither being confirmed K&A product - no repost or paid-use plan queued by me this cycle given the attribution gap. Next sweep boundary should be 17865666309675229 (2026-10-12T10:33:53), the newest item found this cycle."
   }
 }
