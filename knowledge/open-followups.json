@@ -265,13 +265,6 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - KAFL018 Barbie Pink refresh ad build plan, PAUSED, activation explicitly deferred",
     "follow_up": "DO NOT ACTIVATE on build. Hold until the Champagne Gold Neutral Text Test stop-rule resolves (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD). Next review should re-check that resolution, then produce a SEPARATE activation plan for this ad (sequenced alongside Metallic Coffee Brown/Burnt Orange reactivation decisions on the same Rs720/day pool), which should also address whether to pause the existing stale KAFL018 ad (52547120579980) at that time."
   },
-  "KL-2026-10-15-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-15-CS-BUDGETCHECK",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - twice-weekly review 2026-10-15 - no reallocation proposed, confirmed within ceiling",
-    "follow_up": "Next twice-weekly review (expected 2026-10-19): re-pull committed total fresh, and expect the ceiling-compliance watch to resolve around the same date - fold both into one combined read at that point."
-  },
   "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
     "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
     "date": "2026-10-15",
@@ -292,6 +285,13 @@
     "type": "decision",
     "subject": "Gujarat/Karnataka/Punjab exclusion partial leakage (KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE) - DISPOSITION: WATCH further, do not tighten yet",
     "follow_up": "Re-check Gujarat/Karnataka/Punjab residual spend at the next 1-2 weekly reviews. If Gujarat/Karnataka residual spend stays flat or grows rather than continuing to taper, accept it as a platform-level location-matching floor rather than attempting further ad-set-level tightening. If Punjab residual spend specifically does not continue decaying, consider extending the reduced-targeting exclusion to its next-highest contributing ad set (Broad Advantage+, Rs932.38/30d pre-exclusion) as the next incremental step - this is a distinct lever from the Gujarat/Karnataka platform-mechanism question."
+  },
+  "KL-2026-10-15-CS-KAFL007-MEDIALIBRARY-DISPOSITION": {
+    "id": "KL-2026-10-15-CS-KAFL007-MEDIALIBRARY-DISPOSITION",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "Media Library item 20261014T071631Z_Video-87984.mp4 (Gold Hand Embellished Sculpted Corset, KAFL007) - DISPOSITION: new ad-set test, standalone Rs150/day First Love test ad set",
+    "follow_up": "BUDGET (four-part, per Budget Policy section 3a): CURRENT TOTAL Rs6,120.00/day (pulled fresh today, KL-2026-10-15-CS-BUDGETCHECK, unchanged since). PROPOSED: +Rs150.00/day new standalone First Love test ad set for this KAFL007 creative. RESULTING TOTAL: Rs6,270.00/day. WITHIN CEILING: YES against the Rs6,500.00/day ceiling (docs/architecture.md section 3a, read fresh today) - Rs230.00/day headroom remaining after this addition. Noting the same-day ceiling-WATCH (KL-2026-10-15-CS-CEILINGWATCH-DAY3CONFIRM) on real-time pacing sometimes running above committed sum - not blocking, but media-buyer should factor it into final headroom math at build time, not just the committed-sum figure. NEXT STEPS: (1) creative-copywriter briefs this ad - section 3d exception applies, SKU KAFL007 already confirmed/tagged by Suraj via the Ops Console, so no Shopify identification step needed, only the Stitchflow cross-check (confirm KAFL007 still exists/active in Stitchflow - already done once in the 2026-09-04 backfill entry but worth a fresh check), which is available headlessly. (2) media-buyer builds the new ad set/ad PAUSED, verifies against this budget math fresh, and prepares the exact execution plan (including confirming current state of the one other existing KAFL007 ad/ad-set, 52536048560580, so we are not accidentally duplicating spend against the same product without realizing it). (3) Telegram approval required before any activation, per standing guardrail 1/2 - this is a new live Meta Ads object, not a routine within-ad-set change."
   },
   "KL-2026-10-15-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-15-CS-SCALEINTEL-NOTYET",
@@ -341,13 +341,6 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (1 item) - price/availability WhatsApp redirect",
     "follow_up": "Awaiting Telegram approval."
-  },
-  "KL-2026-10-15-media-library-video87984": {
-    "id": "KL-2026-10-15-media-library-video87984",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "Media Library daily check - 20261014T071631Z_Video-87984.mp4 (Gold Hand Embellished Sculpted Corset With Raw Silk Lehenga & Dupatta, KAFL007)",
-    "follow_up": "Route to campaign-strategist for the actual disposition call (use in existing ad / new ad-set test / new campaign / hold / reject) on 20261014T071631Z_Video-87984.mp4 (KAFL007, Sarfaraz) - my read leans toward testing in a new ad-set given near-zero current KAFL007 spend, but campaign-strategist decides placement/audience; only after that should creative-copywriter be briefed on copy. suraj_rating still null on this item if he wants to add one."
   },
   "KL-2026-10-15-own-content": {
     "id": "KL-2026-10-15-own-content",
