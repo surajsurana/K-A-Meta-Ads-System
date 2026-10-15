@@ -251,6 +251,13 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-15-CS-DOBCOVERAGE-ACK": {
+    "id": "KL-2026-10-15-CS-DOBCOVERAGE-ACK",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "DOB coverage 6.76% (44/651), mean age 33.44, 25-34 bracket dominant in both known-DOB (63.6%) and Meta delivery (60% of spend) - ACKNOWLEDGED, no targeting change this cycle",
+    "follow_up": "Continue tracking DOB coverage weekly; re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual."
+  },
   "KL-2026-10-15-CS-GEOLEAKAGE-WATCH": {
     "id": "KL-2026-10-15-CS-GEOLEAKAGE-WATCH",
     "date": "2026-10-15",
@@ -299,13 +306,6 @@
     "type": "observation",
     "subject": "Rs6,500 daily ceiling watch, day 3 (data for 2026-10-14) - COMPLIANT, Rs5,523.95 spent (84.9% of ceiling), restores the alternating pattern per campaign-strategists own stated day-3 checkpoint",
     "follow_up": "campaign-strategist to confirm disposition (continue HOLD unchanged through 2026-10-19, per the day-3-compliant branch of its own stated checkpoint). Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window."
-  },
-  "KL-2026-10-15-PA-DOBCOVERAGE-UPDATE": {
-    "id": "KL-2026-10-15-PA-DOBCOVERAGE-UPDATE",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "DOB coverage grows to 6.76% 44/651 customers, up from 6.40% 41/641 on 2026-10-12 - mean age 33.44, bracket distribution still converging with Metas dominant 25-34",
-    "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain."
   },
   "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM": {
     "id": "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM",
