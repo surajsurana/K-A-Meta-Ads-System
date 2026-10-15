@@ -265,13 +265,6 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - KAFL018 Barbie Pink refresh ad build plan, PAUSED, activation explicitly deferred",
     "follow_up": "DO NOT ACTIVATE on build. Hold until the Champagne Gold Neutral Text Test stop-rule resolves (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD). Next review should re-check that resolution, then produce a SEPARATE activation plan for this ad (sequenced alongside Metallic Coffee Brown/Burnt Orange reactivation decisions on the same Rs720/day pool), which should also address whether to pause the existing stale KAFL018 ad (52547120579980) at that time."
   },
-  "KL-2026-10-15-CC-KAFL007-GOLDSCULPTED-BRIEF": {
-    "id": "KL-2026-10-15-CC-KAFL007-GOLDSCULPTED-BRIEF",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "First Love Gold Sculpted Test (KAFL007) - new standalone ad-set test - execution-ready copy",
-    "follow_up": "media-buyer: build the new ad set (\"First Love Gold Sculpted Test\", campaign 52535906524580, daily_budget Rs150/day) with this one ad as PAUSED - do not authorize activation, Telegram approval is required first per standing guardrail 1/2, same as the Golden Muse/Metallic Blue precedent. Once the real video_id exists, record the product-creative mapping via scripts/append-product-map.sh (sku KAFL007, name \"Gold Hand Embellished Sculpted Corset With Raw Silk Lehenga & Dupatta\", matched_by creative-copywriter, notes referencing both this entry and the 2026-09-04 backfill entry) - mark status confirmed only once a fresh Stitchflow check is actually run, since this session could not independently re-verify live due to the stitchflow MCP tool-access gap noted above (the 2026-09-04 backfill record supports confirmed but is not a fresh check). Also confirm current state/health of the other existing KAFL007 ad (52536048560580), per campaign-strategist's own open question, independent of this new build."
-  },
   "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
     "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
     "date": "2026-10-15",
@@ -327,6 +320,13 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading since Ad B pause looks directionally improved vs the confirmed dip, but window is partial not the full week the standing follow-up asked for",
     "follow_up": "At the next full-week reading around 2026-10-19, compute the complete 7-day post-pause delta/cost-per-follower with only 2 ads competing for budget, per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITIONs own stated checkpoint. If still not recovering toward the Rs1.11-2.32/follower band, that escalates to pausing Ad A as well per the same criterion."
+  },
+  "KL-2026-10-15-PA-KAFL007-STITCHFLOWCONFIRM": {
+    "id": "KL-2026-10-15-PA-KAFL007-STITCHFLOWCONFIRM",
+    "date": "2026-10-15",
+    "type": "outcome",
+    "subject": "KAFL007 Stitchflow cross-check - CONFIRMED live, closing the gap creative-copywriter flagged in KL-2026-10-15-CC-KAFL007-GOLDSCULPTED-BRIEF",
+    "follow_up": "None - resolved. Separately worth a housekeeping note (not urgent): the Shopify/Stitchflow SKU conflict (KAFL007-S vs KAFL007) could be raised with Suraj at some point, same category as other Shopify/Stitchflow sync gaps already known (architecture.md section 3d)."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
