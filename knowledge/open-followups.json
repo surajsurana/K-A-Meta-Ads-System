@@ -209,13 +209,6 @@
     "subject": "Correction: blended headline numbers window for 2026-10-12 Monday review",
     "follow_up": "Use these corrected figures (spend Rs21,018.38, orders 3, order value Rs406,500, CPO Rs7,006.13, ROAS 19.34x) for the digest and the performance-summaries.jsonl structured append for this cycle, period 2026-10-09 to 2026-10-12."
   },
-  "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN": {
-    "id": "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "WhatsApp-destination creative-currency sweep - first formal run since the duty was added 2026-10-02; 2 of 3 active ads use videos aged 55 days, pre-dating the current KAFL0XX push, but this corroborates rather than contradicts the already-in-progress remediation",
-    "follow_up": "Continue this sweep monthly per standing cadence. No new action implied beyond the already-scheduled Metallic Coffee Brown/Burnt Orange activation re-ask once ad set 6862975169176 settles post the 2026-10-12/14 Champagne Gold neutral-text check-in."
-  },
   "KL-2026-10-13-014530": {
     "id": "KL-2026-10-13-014530",
     "date": "2026-10-13",
@@ -299,6 +292,13 @@
     "type": "observation",
     "subject": "Gujarat/Karnataka/Punjab geo exclusion executed 2026-10-12 is reducing but not fully eliminating spend in those regions - real residual delivery confirmed in the exact post-exclusion window 2026-10-13 to 2026-10-15",
     "follow_up": "Continue monitoring Gujarat/Karnataka/Punjab spend over the next 1-2 weekly reviews - if residual spend stays flat or grows rather than continuing to taper toward zero, that is worth a campaign-strategist call on whether a further targeting tightening is warranted versus accepting this as normal platform-level leakage. Not escalating this cycle on its own given the small absolute magnitude."
+  },
+  "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED": {
+    "id": "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "KAFL010 Burnt Orange Raw Silk Lehenga - real Rs200,000 order landed 2026-10-13 while its dedicated ad 52552969630380 remains PAUSED, 4th-of-4 in the still-unactivated Delhi staggered refresh sequence",
+    "follow_up": "campaign-strategist to weigh this fresh organic-demand signal when deciding the timing of the Metallic Coffee Brown and Burnt Orange staggered activations - not a standalone trigger to act immediately, but relevant context for that already-open decision."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
