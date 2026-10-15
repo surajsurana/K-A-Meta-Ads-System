@@ -293,6 +293,13 @@
     "subject": "DOB coverage grows to 6.76% 44/651 customers, up from 6.40% 41/641 on 2026-10-12 - mean age 33.44, bracket distribution still converging with Metas dominant 25-34",
     "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain."
   },
+  "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM": {
+    "id": "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "Instagram follower growth - 3-day partial reading since Ad B pause looks directionally improved vs the confirmed dip, but window is partial not the full week the standing follow-up asked for",
+    "follow_up": "At the next full-week reading around 2026-10-19, compute the complete 7-day post-pause delta/cost-per-follower with only 2 ads competing for budget, per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITIONs own stated checkpoint. If still not recovering toward the Rs1.11-2.32/follower band, that escalates to pausing Ad A as well per the same criterion."
+  },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
     "date": "2026-10-15",
