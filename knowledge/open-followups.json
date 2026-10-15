@@ -272,6 +272,13 @@
     "subject": "KAFL010 Burnt Orange organic demand signal (KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED, real Rs200,000 order 2026-10-13 while ad remains PAUSED) - DISPOSITION: HOLD on activating, maintain existing sequencing discipline, does not override the standing blocker",
     "follow_up": "Re-ask both the Metallic Coffee Brown and Burnt Orange activation questions together once the Champagne Gold Neutral Text Test day-by-day re-check (due ~2026-10-19/20) resolves and ad set 6862975169176 returns to a settled, single-test state. At that point also factor in the new KAFL018 creative-refresh build (KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION) which will be queued for the same ad set/budget pool - sequence all three (MCB, Burnt Orange, KAFL018 refresh) deliberately rather than activating them in a rush once unblocked."
   },
+  "KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION": {
+    "id": "KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "16-SKU zero-order-despite-spend tail (first raised 2026-09-14) - individual dispositions: KAFL018 pulled out for creative refresh, KA-040326-03 blocked pending data-quality fix, KAFL019/022/023/024/025/026 MAINTAIN",
+    "follow_up": "Creative-copywriter to brief KAFL018 refresh this cycle (build PAUSED now is fine, no delivery impact; activation deferred to the same ~2026-10-19/20 checkpoint as Metallic Coffee Brown/Burnt Orange). Performance-analyst to run a fresh live status check on KA-040326-03's ad(s) to confirm the Delhi pause actually held, and to re-verify the product-name match, before the next review attempts a disposition on it."
+  },
   "KL-2026-10-15-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-15-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-15",
