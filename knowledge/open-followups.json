@@ -216,13 +216,6 @@
     "subject": "Correction: blended headline numbers window for 2026-10-12 Monday review",
     "follow_up": "Use these corrected figures (spend Rs21,018.38, orders 3, order value Rs406,500, CPO Rs7,006.13, ROAS 19.34x) for the digest and the performance-summaries.jsonl structured append for this cycle, period 2026-10-09 to 2026-10-12."
   },
-  "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE": {
-    "id": "KL-2026-10-12-PA-DOBCOVERAGE-UPDATE",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "DOB coverage grows to 6.40% (41/641 customers), up from 5.89% (37/628) on 2026-10-08 - mean age 32.85, bracket distribution still converging with Metas dominant 25-34",
-    "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain (KL-2026-08-24-161600 onward)."
-  },
   "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN": {
     "id": "KL-2026-10-12-PA-WHATSAPPCREATIVECURRENCY-FIRSTRUN",
     "date": "2026-10-12",
@@ -292,6 +285,13 @@
     "type": "observation",
     "subject": "Rs6,500 daily ceiling watch, day 3 (data for 2026-10-14) - COMPLIANT, Rs5,523.95 spent (84.9% of ceiling), restores the alternating pattern per campaign-strategists own stated day-3 checkpoint",
     "follow_up": "campaign-strategist to confirm disposition (continue HOLD unchanged through 2026-10-19, per the day-3-compliant branch of its own stated checkpoint). Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window."
+  },
+  "KL-2026-10-15-PA-DOBCOVERAGE-UPDATE": {
+    "id": "KL-2026-10-15-PA-DOBCOVERAGE-UPDATE",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "DOB coverage grows to 6.76% 44/651 customers, up from 6.40% 41/641 on 2026-10-12 - mean age 33.44, bracket distribution still converging with Metas dominant 25-34",
+    "follow_up": "Continue standing weekly/monthly tracking. Still too small a sample for any age-informed targeting call per the existing HOLD chain."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
