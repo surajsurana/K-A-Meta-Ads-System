@@ -258,12 +258,12 @@
     "subject": "16th May 26 | India (ad set 6968778736776) - 2nd ad build plan, KAFL026 Ice Blue Cutwork Corset, PAUSED",
     "follow_up": "Not activated by this plan. Future activation decision is separate (guardrail 3), must be staggered (guardrail 11) from other in-flight changes, and should re-check the open audience-overlap question (KL-2026-10-01-061500) is still unresolved before any targeting-level decision is made alongside it (overlap does not block this creative add itself)."
   },
-  "KL-2026-10-15-CC-KAFL018-REFRESH-BRIEF": {
-    "id": "KL-2026-10-15-CC-KAFL018-REFRESH-BRIEF",
+  "KL-2026-10-15-011738": {
+    "id": "KL-2026-10-15-011738",
     "date": "2026-10-15",
     "type": "decision",
-    "subject": "KAFL018 Barbie Pink refresh - ad set 6862975169176 (India | Whatsapp | 9th Dec 25) - execution-ready copy, PAUSED, activation queued behind Champagne Gold resolution",
-    "follow_up": "media-buyer: validate this brief, build PAUSED (one new ad, additive to ad set 6862975169176, same shared budget pool), confirm at build time whether this ad shape actually renders separate title/message text or only the video+CTA button (per the standing WhatsApp-destination format caveat), record the new ad_id against the existing confirmed video_id=2042429149806766 map entry (additive ad_id, no new product identification needed), and hold activation until the Champagne Gold Neutral Text Test stop-rule resolves (~2026-10-19/20) per campaign-strategists sequencing decision - do not activate on build."
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - KAFL018 Barbie Pink refresh ad build plan, PAUSED, activation explicitly deferred",
+    "follow_up": "DO NOT ACTIVATE on build. Hold until the Champagne Gold Neutral Text Test stop-rule resolves (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD). Next review should re-check that resolution, then produce a SEPARATE activation plan for this ad (sequenced alongside Metallic Coffee Brown/Burnt Orange reactivation decisions on the same Rs720/day pool), which should also address whether to pause the existing stale KAFL018 ad (52547120579980) at that time."
   },
   "KL-2026-10-15-CS-BUDGETCHECK": {
     "id": "KL-2026-10-15-CS-BUDGETCHECK",
