@@ -188,20 +188,6 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
-  "KL-2026-10-12-032513": {
-    "id": "KL-2026-10-12-032513",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "KL-2026-10-12-CS-UGC-DISPOSITION",
-    "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CS-UGC-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
-  "KL-2026-10-12-033439": {
-    "id": "KL-2026-10-12-033439",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY",
-    "follow_up": "re-check 2026-10-15: if plan KL-2026-10-12-CORRECTED-REPOST-PRIYAAS-RETRY is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION": {
     "id": "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION",
     "date": "2026-10-12",
@@ -306,5 +292,12 @@
     "type": "observation",
     "subject": "Dashboard (live_server.py) product-mapped ad-status verification has been 100% broken since 2026-09-23/28 - a leftover SYNC_TEST_00000 test id poisons every batch Meta call",
     "follow_up": "Next interactive session (not this headless run - live_server.py/template.html are out of this runs fix scope, deployed by hand via scp, not git-tracked): fix load_confirmed_product_map()/get_ads_running_grid_html in live_server.py so an unlink (empty-products confirmed entry) actually removes the prior sku->ad_ids key instead of being silently absorbed, and/or validate candidate ids look like real numeric Meta object ids before batching them into the ids= GET - then clean up or correct the stale SYNC_TEST_00000 lines (47-48) in knowledge/creative-product-map.jsonl so this test probe never reaches a live batch call again. Until fixed, every product-mapped ads live effective_status on the Ads Running tab is running on a cache that has never once successfully populated since 2026-09-28."
+  },
+  "KL-2026-10-15-003913": {
+    "id": "KL-2026-10-15-003913",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
+    "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   }
 }
