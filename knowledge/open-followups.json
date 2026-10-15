@@ -251,6 +251,13 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-15-CS-BUDGETCHECK": {
+    "id": "KL-2026-10-15-CS-BUDGETCHECK",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - twice-weekly review 2026-10-15 - no reallocation proposed, confirmed within ceiling",
+    "follow_up": "Next twice-weekly review (expected 2026-10-19): re-pull committed total fresh, and expect the ceiling-compliance watch to resolve around the same date - fold both into one combined read at that point."
+  },
   "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
     "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
     "date": "2026-10-15",
