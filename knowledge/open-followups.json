@@ -307,11 +307,11 @@
     "subject": "Single-ad ad set audit (Cold Prospecting Canada, Cold Prospecting USA, Metallic Blue Test, 16th May 26 | India) - 3 HOLD as-is, 1 (16th May) gets a 2nd creative",
     "follow_up": "Creative-copywriter to brief a 2nd ad for 16th May 26 | India this cycle or next, build PAUSED. Separately, finally give the 16th May vs India Whatsapp audience-overlap question its own dedicated fresh look next review - it has been deferred since 2026-10-01/05 and should not keep sliding."
   },
-  "KL-2026-10-15-CS-UGC-CHARMFACE-TELEGRAM": {
-    "id": "KL-2026-10-15-CS-UGC-CHARMFACE-TELEGRAM",
+  "KL-2026-10-15-CS-UGC-CHARMFACE-TELEGRAM-CORRECTED": {
+    "id": "KL-2026-10-15-CS-UGC-CHARMFACE-TELEGRAM-CORRECTED",
     "date": "2026-10-15",
     "type": "decision",
-    "subject": "Telegram verification question for @charmfacebylavnika Reel disposition (KL-2026-10-15-CS-UGC-CHARMFACE-HOLD-VERIFY) - packaging the plain-English ask campaign-strategist already specified, which its own entry omitted as a structured telegram_summary field",
+    "subject": "CORRECTED Telegram verification question for @charmfacebylavnika Reel disposition - supersedes KL-2026-10-15-CS-UGC-CHARMFACE-TELEGRAM, which had a permalink typo (DeWkfHVpLtx instead of the correct DeWcfHVpLtx)",
     "follow_up": "Awaiting Suraj's Telegram Approve/Reject/Hold. Approve = authorize creative-copywriter to attempt a Shopify SKU match (next interactive session - not available headlessly) and brief a TEST ad if found. Reject = treat as not K&A, close out. Hold = decide later, same 7-day held-plan-sweep cycle as any other hold."
   },
   "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
