@@ -265,6 +265,13 @@
     "subject": "Daily ceiling watch day 3 (data for 2026-10-14): actual spend Rs5,523.95 (84.9% of Rs6,500 ceiling, well-compliant, not just thin) - DISPOSITION: CONFIRM HOLD unchanged, watch continues through the pre-committed 1-week window (expires ~2026-10-19)",
     "follow_up": "Continue day-by-day actual-spend watch through 2026-10-19 (day 7). Only escalate to the broader multi-ad-set cut if the trend over the remaining days shows actual spend running persistently at or above Rs6,500, not isolated single days in either direction. If the full week closes with a majority of compliant days and no worsening trend, resolve the watch as a pass at the next twice-weekly review."
   },
+  "KL-2026-10-15-CS-GEOLEAKAGE-WATCH": {
+    "id": "KL-2026-10-15-CS-GEOLEAKAGE-WATCH",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "Gujarat/Karnataka/Punjab exclusion partial leakage (KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE) - DISPOSITION: WATCH further, do not tighten yet",
+    "follow_up": "Re-check Gujarat/Karnataka/Punjab residual spend at the next 1-2 weekly reviews. If Gujarat/Karnataka residual spend stays flat or grows rather than continuing to taper, accept it as a platform-level location-matching floor rather than attempting further ad-set-level tightening. If Punjab residual spend specifically does not continue decaying, consider extending the reduced-targeting exclusion to its next-highest contributing ad set (Broad Advantage+, Rs932.38/30d pre-exclusion) as the next incremental step - this is a distinct lever from the Gujarat/Karnataka platform-mechanism question."
+  },
   "KL-2026-10-15-CS-HANDOFF": {
     "id": "KL-2026-10-15-CS-HANDOFF",
     "date": "2026-10-15",
@@ -292,13 +299,6 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading since Ad B pause looks directionally improved vs the confirmed dip, but window is partial not the full week the standing follow-up asked for",
     "follow_up": "At the next full-week reading around 2026-10-19, compute the complete 7-day post-pause delta/cost-per-follower with only 2 ads competing for budget, per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITIONs own stated checkpoint. If still not recovering toward the Rs1.11-2.32/follower band, that escalates to pausing Ad A as well per the same criterion."
-  },
-  "KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE": {
-    "id": "KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "Gujarat/Karnataka/Punjab geo exclusion executed 2026-10-12 is reducing but not fully eliminating spend in those regions - real residual delivery confirmed in the exact post-exclusion window 2026-10-13 to 2026-10-15",
-    "follow_up": "Continue monitoring Gujarat/Karnataka/Punjab spend over the next 1-2 weekly reviews - if residual spend stays flat or grows rather than continuing to taper toward zero, that is worth a campaign-strategist call on whether a further targeting tightening is warranted versus accepting this as normal platform-level leakage. Not escalating this cycle on its own given the small absolute magnitude."
   },
   "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED": {
     "id": "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED",
