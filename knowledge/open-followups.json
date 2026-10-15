@@ -307,11 +307,11 @@
     "subject": "Handoff to campaign-strategist: 2 new UGC items from KL-2026-10-15-ugc-tags, both unconfirmed-attribution",
     "follow_up": "Awaiting campaign-strategist disposition on both items."
   },
-  "KL-2026-10-15-dmredirect-postescalation-recurrence3": {
-    "id": "KL-2026-10-15-dmredirect-postescalation-recurrence3",
+  "KL-2026-10-15-comment-sweep": {
+    "id": "KL-2026-10-15-comment-sweep",
     "date": "2026-10-15",
     "type": "observation",
-    "subject": "Staff DM-redirect wording pattern recurred a THIRD time after the 2026-09-28 direct escalation - the specific recurrence this cycle was explicitly asked to watch for",
-    "follow_up": "Recommend re-escalating directly to Suraj given this is now 3 post-escalation occurrences with no change in behavior - a log entry alone has not been sufficient to stop this. Continue checking every cycle regardless."
+    "subject": "Comment reply sweep (2026-10-15, twice-weekly review) - 1 new unreplied routine comment found since the 2026-10-06 boundary; 1 comment already answered live by staff (3rd post-escalation dm-redirect recurrence, see separate entry)",
+    "follow_up": "Comment-reply batch KL-2026-10-15-comment-batch (1 item) awaits approval. Continue checking every cycle for further dmredirect post-escalation occurrences."
   }
 }
