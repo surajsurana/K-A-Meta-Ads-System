@@ -272,13 +272,6 @@
     "subject": "26 legacy ads (2023-2024 vintage) show effective_status=WITH_ISSUES while their own status field still reads ACTIVE - confirmed zero spend, not a live issue",
     "follow_up": "No urgent action - zero spend, zero live impact. Worth a future housekeeping pass (not urgent) to either fix the underlying deleted-audience error or formally archive/delete these legacy ad sets so they stop appearing in WITH_ISSUES sweeps as noise. Not campaign-strategists concern unless a future sweep finds one of these has somehow started delivering again."
   },
-  "KL-2026-10-14-CS-CEILINGWATCH-DAY2HOLD": {
-    "id": "KL-2026-10-14-CS-CEILINGWATCH-DAY2HOLD",
-    "date": "2026-10-14",
-    "type": "decision",
-    "subject": "Daily heartbeat 2026-10-14 (data for 2026-10-13): post-trim actual spend Rs7,058.19 (108.6% of Rs6,500 ceiling, Rs558.19 over) - DISPOSITION: HOLD, do not escalate early to the broader multi-ad-set cut, day 2 of the pre-committed one-week watch, but this is a real, concerning data point and the checkpoint for day 3 is tightened explicitly",
-    "follow_up": "Next daily heartbeat (data for 2026-10-14) must re-pull actual spend fresh. If that day ALSO breaches Rs6,500, treat as 2 breaches in the 2 most recent clean readings and bring an escalation recommendation (broader cut to Canada Engaged/India Whatsapp/Interest Stack, full 4-part allocation statement) to media-buyer for validation rather than waiting out the remainder of the 7-day window. If that day is compliant, continue the unchanged day-by-day watch through 2026-10-19. Either way, keep flagging the India Whatsapp/Interest Stack mid-unsettled-structural-change caveat if/when the broader cut is eventually proposed."
-  },
   "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG": {
     "id": "KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG",
     "date": "2026-10-14",
@@ -299,6 +292,13 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist: 2 new UGC items from KL-2026-10-15-ugc-tags, both unconfirmed-attribution",
     "follow_up": "Awaiting campaign-strategist disposition on both items."
+  },
+  "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT": {
+    "id": "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "Rs6,500 daily ceiling watch, day 3 (data for 2026-10-14) - COMPLIANT, Rs5,523.95 spent (84.9% of ceiling), restores the alternating pattern per campaign-strategists own stated day-3 checkpoint",
+    "follow_up": "campaign-strategist to confirm disposition (continue HOLD unchanged through 2026-10-19, per the day-3-compliant branch of its own stated checkpoint). Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window."
   },
   "KL-2026-10-15-comment-batch": {
     "id": "KL-2026-10-15-comment-batch",
