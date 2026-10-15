@@ -258,6 +258,13 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-15-CS-CEILINGWATCH-DAY3CONFIRM": {
+    "id": "KL-2026-10-15-CS-CEILINGWATCH-DAY3CONFIRM",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "Daily ceiling watch day 3 (data for 2026-10-14): actual spend Rs5,523.95 (84.9% of Rs6,500 ceiling, well-compliant, not just thin) - DISPOSITION: CONFIRM HOLD unchanged, watch continues through the pre-committed 1-week window (expires ~2026-10-19)",
+    "follow_up": "Continue day-by-day actual-spend watch through 2026-10-19 (day 7). Only escalate to the broader multi-ad-set cut if the trend over the remaining days shows actual spend running persistently at or above Rs6,500, not isolated single days in either direction. If the full week closes with a majority of compliant days and no worsening trend, resolve the watch as a pass at the next twice-weekly review."
+  },
   "KL-2026-10-15-CS-HANDOFF": {
     "id": "KL-2026-10-15-CS-HANDOFF",
     "date": "2026-10-15",
