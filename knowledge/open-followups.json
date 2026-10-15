@@ -188,13 +188,6 @@
     "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
     "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
   },
-  "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION": {
-    "id": "KL-2026-10-12-EXEC-PUNJAB-INSTAENGAGED-EXCLUSION",
-    "date": "2026-10-12",
-    "type": "change",
-    "subject": "Punjab geo exclusion added to ad set India Insta Engaged 365D & Followers (6538717752176) per approved plan KL-2026-10-12-011115",
-    "follow_up": "Per the plan's own stop-rule and escalation path: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set has gone to zero/near-zero, plus total account leads/connections trend and Maharashtra spend-share trend. If Punjab's spend-share-to-revenue-share ratio holds at ~2.5x or worsens despite this single-ad-set step, escalate to full exclusion across all 4 ad sets (matching Gujarat/Karnataka's current treatment)."
-  },
   "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION": {
     "id": "KL-2026-10-12-ML-RICHMAROON-NEEDSSESSION",
     "date": "2026-10-12",
@@ -299,6 +292,13 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading since Ad B pause looks directionally improved vs the confirmed dip, but window is partial not the full week the standing follow-up asked for",
     "follow_up": "At the next full-week reading around 2026-10-19, compute the complete 7-day post-pause delta/cost-per-follower with only 2 ads competing for budget, per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITIONs own stated checkpoint. If still not recovering toward the Rs1.11-2.32/follower band, that escalates to pausing Ad A as well per the same criterion."
+  },
+  "KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE": {
+    "id": "KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "Gujarat/Karnataka/Punjab geo exclusion executed 2026-10-12 is reducing but not fully eliminating spend in those regions - real residual delivery confirmed in the exact post-exclusion window 2026-10-13 to 2026-10-15",
+    "follow_up": "Continue monitoring Gujarat/Karnataka/Punjab spend over the next 1-2 weekly reviews - if residual spend stays flat or grows rather than continuing to taper toward zero, that is worth a campaign-strategist call on whether a further targeting tightening is warranted versus accepting this as normal platform-level leakage. Not escalating this cycle on its own given the small absolute magnitude."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
