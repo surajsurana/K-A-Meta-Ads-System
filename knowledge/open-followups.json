@@ -251,6 +251,13 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
+    "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "Staff DM-redirect WhatsApp-only-policy violation, 3rd confirmed recurrence after the 2026-09-28 direct escalation to Suraj - RECOMMEND RE-ESCALATING, agree with social-community-manager's default lean",
+    "follow_up": "Include in the consolidated digest as a direct re-escalation to Suraj, with the concrete ask (is the approved reply text actually accessible to whoever is replying) rather than a bare repeat-flag."
+  },
   "KL-2026-10-15-CS-DOBCOVERAGE-ACK": {
     "id": "KL-2026-10-15-CS-DOBCOVERAGE-ACK",
     "date": "2026-10-15",
