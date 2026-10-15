@@ -265,13 +265,6 @@
     "subject": "Gujarat/Karnataka/Punjab exclusion partial leakage (KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE) - DISPOSITION: WATCH further, do not tighten yet",
     "follow_up": "Re-check Gujarat/Karnataka/Punjab residual spend at the next 1-2 weekly reviews. If Gujarat/Karnataka residual spend stays flat or grows rather than continuing to taper, accept it as a platform-level location-matching floor rather than attempting further ad-set-level tightening. If Punjab residual spend specifically does not continue decaying, consider extending the reduced-targeting exclusion to its next-highest contributing ad set (Broad Advantage+, Rs932.38/30d pre-exclusion) as the next incremental step - this is a distinct lever from the Gujarat/Karnataka platform-mechanism question."
   },
-  "KL-2026-10-15-CS-HANDOFF": {
-    "id": "KL-2026-10-15-CS-HANDOFF",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist: 2 new UGC items from KL-2026-10-15-ugc-tags, both unconfirmed-attribution",
-    "follow_up": "Awaiting campaign-strategist disposition on both items."
-  },
   "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD": {
     "id": "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD",
     "date": "2026-10-15",
@@ -299,6 +292,13 @@
     "type": "decision",
     "subject": "Single-ad ad set audit (Cold Prospecting Canada, Cold Prospecting USA, Metallic Blue Test, 16th May 26 | India) - 3 HOLD as-is, 1 (16th May) gets a 2nd creative",
     "follow_up": "Creative-copywriter to brief a 2nd ad for 16th May 26 | India this cycle or next, build PAUSED. Separately, finally give the 16th May vs India Whatsapp audience-overlap question its own dedicated fresh look next review - it has been deferred since 2026-10-01/05 and should not keep sliding."
+  },
+  "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
+    "id": "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "@houseofmisu Reel instagram.com/reel/DeZBD4YNCYs/ (media 17865666309675229) - DISPOSITION: REJECT, confirmed by my own independent frame review, not just social-community-manager's",
+    "follow_up": "None - closed. No repost, no paid use, no further verification needed."
   },
   "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT": {
     "id": "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT",
