@@ -230,13 +230,6 @@
     "subject": "WhatsApp-destination creative-currency sweep - first formal run since the duty was added 2026-10-02; 2 of 3 active ads use videos aged 55 days, pre-dating the current KAFL0XX push, but this corroborates rather than contradicts the already-in-progress remediation",
     "follow_up": "Continue this sweep monthly per standing cadence. No new action implied beyond the already-scheduled Metallic Coffee Brown/Burnt Orange activation re-ask once ad set 6862975169176 settles post the 2026-10-12/14 Champagne Gold neutral-text check-in."
   },
-  "KL-2026-10-12-own-content": {
-    "id": "KL-2026-10-12-own-content",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-12, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 60 days",
-    "follow_up": "Continue tracking the standalone-Reel drought (now 60 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
-  },
   "KL-2026-10-13-014530": {
     "id": "KL-2026-10-13-014530",
     "date": "2026-10-13",
@@ -313,5 +306,12 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (1 item) - price/availability WhatsApp redirect",
     "follow_up": "Awaiting Telegram approval."
+  },
+  "KL-2026-10-15-own-content": {
+    "id": "KL-2026-10-15-own-content",
+    "date": "2026-10-15",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-10-15, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 63 days",
+    "follow_up": "Continue tracking the standalone-Reel drought (now 63 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
   }
 }
