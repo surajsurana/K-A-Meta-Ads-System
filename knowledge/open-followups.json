@@ -223,13 +223,6 @@
     "subject": "Due-now sweep: KL-2026-10-09-071850 (Profile Visits cost-per-follower confirming read) - already resolved via Ad B pause",
     "follow_up": "None - closed. Next checkpoint already tracked in KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE."
   },
-  "KL-2026-10-13-CS-CTRDECLINE-FINALVERDICT": {
-    "id": "KL-2026-10-13-CS-CTRDECLINE-FINALVERDICT",
-    "date": "2026-10-13",
-    "type": "decision",
-    "subject": "Final disposition on CTR-decline send-back (KL-2026-10-13-CS-CTRDECLINE-SENDBACK) and Champagne Gold Neutral Text Test stop-rule (KL-2026-10-07-EXPERIMENT-WHATSAPPCHAMPAGNE-NEUTRALTEST) - both questions CLOSED, no open loop",
-    "follow_up": "performance-analyst to pull day-by-day (not aggregated) cost/messaging_conversation_started and conversation-start rate for ad 52559623981980 by approx 2026-10-19/20, split pre-10-11 vs 10-11-to-13 vs post-10-13, and apply the pass/fail thresholds stated above. No pause/retire action on the Champagne Gold ad goes to media-buyer until that re-check. CTR-decline question is fully closed, no further checks needed on it."
-  },
   "KL-2026-10-13-WATI-CONFIRMED": {
     "id": "KL-2026-10-13-WATI-CONFIRMED",
     "date": "2026-10-13",
@@ -279,6 +272,13 @@
     "subject": "Handoff to campaign-strategist: 2 new UGC items from KL-2026-10-15-ugc-tags, both unconfirmed-attribution",
     "follow_up": "Awaiting campaign-strategist disposition on both items."
   },
+  "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD": {
+    "id": "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "KAFL010 Burnt Orange organic demand signal (KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED, real Rs200,000 order 2026-10-13 while ad remains PAUSED) - DISPOSITION: HOLD on activating, maintain existing sequencing discipline, does not override the standing blocker",
+    "follow_up": "Re-ask both the Metallic Coffee Brown and Burnt Orange activation questions together once the Champagne Gold Neutral Text Test day-by-day re-check (due ~2026-10-19/20) resolves and ad set 6862975169176 returns to a settled, single-test state. At that point also factor in the new KAFL018 creative-refresh build (KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION) which will be queued for the same ad set/budget pool - sequence all three (MCB, Burnt Orange, KAFL018 refresh) deliberately rather than activating them in a rush once unblocked."
+  },
   "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT": {
     "id": "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT",
     "date": "2026-10-15",
@@ -299,13 +299,6 @@
     "type": "observation",
     "subject": "Instagram follower growth - 3-day partial reading since Ad B pause looks directionally improved vs the confirmed dip, but window is partial not the full week the standing follow-up asked for",
     "follow_up": "At the next full-week reading around 2026-10-19, compute the complete 7-day post-pause delta/cost-per-follower with only 2 ads competing for budget, per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITIONs own stated checkpoint. If still not recovering toward the Rs1.11-2.32/follower band, that escalates to pausing Ad A as well per the same criterion."
-  },
-  "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED": {
-    "id": "KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "KAFL010 Burnt Orange Raw Silk Lehenga - real Rs200,000 order landed 2026-10-13 while its dedicated ad 52552969630380 remains PAUSED, 4th-of-4 in the still-unactivated Delhi staggered refresh sequence",
-    "follow_up": "campaign-strategist to weigh this fresh organic-demand signal when deciding the timing of the Metallic Coffee Brown and Burnt Orange staggered activations - not a standalone trigger to act immediately, but relevant context for that already-open decision."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
