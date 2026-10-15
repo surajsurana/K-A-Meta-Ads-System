@@ -258,6 +258,13 @@
     "subject": "16th May 26 | India (ad set 6968778736776) 2nd ad - execution-ready copy, KAFL026 Ice Blue Cutwork Corset With Pencil Skirt",
     "follow_up": "media-buyer: validate this brief, confirm the actual available CTA set for this Awareness/REACH placement (adjust from Learn More if not offered), record the ad_id against the existing confirmed video_id=1343447671101996 map entry once built (additive ad_id, no new product identification needed), build PAUSED, verify, then activate per guardrail 3 staggered per guardrail 11 from other in-flight changes this cycle."
   },
+  "KL-2026-10-15-CC-KAFL018-REFRESH-BRIEF": {
+    "id": "KL-2026-10-15-CC-KAFL018-REFRESH-BRIEF",
+    "date": "2026-10-15",
+    "type": "decision",
+    "subject": "KAFL018 Barbie Pink refresh - ad set 6862975169176 (India | Whatsapp | 9th Dec 25) - execution-ready copy, PAUSED, activation queued behind Champagne Gold resolution",
+    "follow_up": "media-buyer: validate this brief, build PAUSED (one new ad, additive to ad set 6862975169176, same shared budget pool), confirm at build time whether this ad shape actually renders separate title/message text or only the video+CTA button (per the standing WhatsApp-destination format caveat), record the new ad_id against the existing confirmed video_id=2042429149806766 map entry (additive ad_id, no new product identification needed), and hold activation until the Champagne Gold Neutral Text Test stop-rule resolves (~2026-10-19/20) per campaign-strategists sequencing decision - do not activate on build."
+  },
   "KL-2026-10-15-CS-BUDGETCHECK": {
     "id": "KL-2026-10-15-CS-BUDGETCHECK",
     "date": "2026-10-15",
@@ -285,20 +292,6 @@
     "type": "decision",
     "subject": "Gujarat/Karnataka/Punjab exclusion partial leakage (KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE) - DISPOSITION: WATCH further, do not tighten yet",
     "follow_up": "Re-check Gujarat/Karnataka/Punjab residual spend at the next 1-2 weekly reviews. If Gujarat/Karnataka residual spend stays flat or grows rather than continuing to taper, accept it as a platform-level location-matching floor rather than attempting further ad-set-level tightening. If Punjab residual spend specifically does not continue decaying, consider extending the reduced-targeting exclusion to its next-highest contributing ad set (Broad Advantage+, Rs932.38/30d pre-exclusion) as the next incremental step - this is a distinct lever from the Gujarat/Karnataka platform-mechanism question."
-  },
-  "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD": {
-    "id": "KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "KAFL010 Burnt Orange organic demand signal (KL-2026-10-15-PA-KAFL010-ORGANICDEMAND-WHILEPAUSED, real Rs200,000 order 2026-10-13 while ad remains PAUSED) - DISPOSITION: HOLD on activating, maintain existing sequencing discipline, does not override the standing blocker",
-    "follow_up": "Re-ask both the Metallic Coffee Brown and Burnt Orange activation questions together once the Champagne Gold Neutral Text Test day-by-day re-check (due ~2026-10-19/20) resolves and ad set 6862975169176 returns to a settled, single-test state. At that point also factor in the new KAFL018 creative-refresh build (KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION) which will be queued for the same ad set/budget pool - sequence all three (MCB, Burnt Orange, KAFL018 refresh) deliberately rather than activating them in a rush once unblocked."
-  },
-  "KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION": {
-    "id": "KL-2026-10-15-CS-PRODUCTBATCH-DISPOSITION",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "16-SKU zero-order-despite-spend tail (first raised 2026-09-14) - individual dispositions: KAFL018 pulled out for creative refresh, KA-040326-03 blocked pending data-quality fix, KAFL019/022/023/024/025/026 MAINTAIN",
-    "follow_up": "Creative-copywriter to brief KAFL018 refresh this cycle (build PAUSED now is fine, no delivery impact; activation deferred to the same ~2026-10-19/20 checkpoint as Metallic Coffee Brown/Burnt Orange). Performance-analyst to run a fresh live status check on KA-040326-03's ad(s) to confirm the Delhi pause actually held, and to re-verify the product-name match, before the next review attempts a disposition on it."
   },
   "KL-2026-10-15-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-15-CS-SCALEINTEL-NOTYET",
