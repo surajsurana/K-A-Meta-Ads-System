@@ -258,13 +258,6 @@
     "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
     "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
   },
-  "KL-2026-10-14-014733": {
-    "id": "KL-2026-10-14-014733",
-    "date": "2026-10-14",
-    "type": "outcome",
-    "subject": "KAFL027 (ad 52559623294780, First Love | Maroon Fishcut Corset | Structure Refresh) 3-5 day pacing checkpoint (rollback criterion 2) - PASS, no rollback",
-    "follow_up": "Rollback criterion (3) (5-7 day cost-per-conversation comparison vs sibling 52541313104580 baseline) is next due ~2026-10-16/17 - re-pull then. Criterion (4) (Feed-exclusion rollback day 7-10 check, ~2026-10-15 to 10-18) still needs an ad-level breakdown isolating this ads own contribution, per the original activation plans note."
-  },
   "KL-2026-10-14-014950": {
     "id": "KL-2026-10-14-014950",
     "date": "2026-10-14",
@@ -299,6 +292,13 @@
     "type": "observation",
     "subject": "Rs6,500 daily ceiling watch, day 3 (data for 2026-10-14) - COMPLIANT, Rs5,523.95 spent (84.9% of ceiling), restores the alternating pattern per campaign-strategists own stated day-3 checkpoint",
     "follow_up": "campaign-strategist to confirm disposition (continue HOLD unchanged through 2026-10-19, per the day-3-compliant branch of its own stated checkpoint). Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window."
+  },
+  "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
+    "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
+    "date": "2026-10-15",
+    "type": "outcome",
+    "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
+    "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
   "KL-2026-10-15-comment-batch": {
     "id": "KL-2026-10-15-comment-batch",
