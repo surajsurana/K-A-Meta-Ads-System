@@ -251,13 +251,6 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-15-011649": {
-    "id": "KL-2026-10-15-011649",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "16th May 26 | India (ad set 6968778736776) - 2nd ad build plan, KAFL026 Ice Blue Cutwork Corset, PAUSED",
-    "follow_up": "Not activated by this plan. Future activation decision is separate (guardrail 3), must be staggered (guardrail 11) from other in-flight changes, and should re-check the open audience-overlap question (KL-2026-10-01-061500) is still unresolved before any targeting-level decision is made alongside it (overlap does not block this creative add itself)."
-  },
   "KL-2026-10-15-011738": {
     "id": "KL-2026-10-15-011738",
     "date": "2026-10-15",
@@ -348,5 +341,12 @@
     "type": "decision",
     "subject": "Media Library item 20261015T083932Z_Video-67563.mp4 (Crimson Red Heavy Glass-beaded Lehenga, @styled_bytan) - DISPOSITION: new ad-set test, scoped to the opening beaded-blouse-and-skirt segment only, GATED on SKU confirmation and on sending Suraj a proper tappable confirmation (currently blocked by a missing Instagram permalink)",
     "follow_up": "Next interactive session: (1) attempt to locate the original Instagram post/permalink for this clip from @styled_bytan (or confirm none exists), (2) send Suraj a real tappable Approve/Reject/Hold question via send-telegram-approval.sh per the fixed-2026-09-11 guardrail, including the permalink if found, stating plainly my read (NEW AD-SET TEST on the 0-4s beaded-blouse-and-skirt segment only) and the open SKU question, (3) if approved, creative-copywriter identifies/confirms the SKU (Suraj/design-team input or Shopify-photo match) before briefing, explicitly trimming to the confirmed segment, not the full file, (4) media-buyer builds a small standalone PAUSED test ad set (~Rs150/day, mirroring the KAFL007/First Love precedent) with a full 4-part budget statement at that time, (5) standard Telegram approval before activation. Do not treat the 6-9s segment as K&A product in any downstream step without separate confirmation."
+  },
+  "KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD": {
+    "id": "KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD",
+    "date": "2026-10-16",
+    "type": "change",
+    "subject": "16th May 26 | India (ad set 6968778736776) - 2nd ad built, KAFL026 Ice Blue Cutwork Corset, PAUSED",
+    "follow_up": "Not activated by this entry - activation is a separate future decision (guardrail 3), must be staggered (guardrail 11) from other in-flight changes this cycle, and should re-check the open audience-overlap question (KL-2026-10-01-061500) is still unresolved before any targeting-level decision is made alongside it."
   }
 }
