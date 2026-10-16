@@ -349,11 +349,11 @@
     "subject": "Daily ceiling watch day 4 (data for 2026-10-15): actual spend Rs5,417.77 (83.4% of Rs6,500 ceiling, second consecutive comfortably-compliant day) - DISPOSITION: CONFIRM HOLD unchanged, continue through the full pre-committed 1-week window (expires ~2026-10-19), not resolved early",
     "follow_up": "Continue day-by-day actual-spend watch through 2026-10-19 (days 5, 6, 7). Only escalate if a later day shows a fresh breach re-establishing a persistent pattern, not on the current trend. If the remaining days close with a majority compliant and no worsening, resolve the watch as a pass at the next twice-weekly review and consider folding this into the Scale Intelligence question (KL-2026-10-15-CS-SCALEINTEL-NOTYET condition 1) once the window closes."
   },
-  "KL-2026-10-16-media-library-video67563": {
-    "id": "KL-2026-10-16-media-library-video67563",
+  "KL-2026-10-16-CS-STYLEDBYTAN-VIDEO67563-DISPOSITION": {
+    "id": "KL-2026-10-16-CS-STYLEDBYTAN-VIDEO67563-DISPOSITION",
     "date": "2026-10-16",
-    "type": "observation",
-    "subject": "Media Library daily check (2026-10-16) - 1 new unreviewed item, Video-67563.mp4 from @styled_bytan, crimson red heavy glass-beaded lehenga - visually strong, unconfirmed SKU, handed to campaign-strategist",
-    "follow_up": "Handed to campaign-strategist for the five-way disposition call on this item (Media Library upload, crimson beaded lehenga, @styled_bytan) - include suraj_rating=null and no linked product/factory in that handoff so campaign-strategist has it as direct input, not something it has to re-derive. No repost or ad plan queued by me this cycle pending that read. Marked reviewed_by_social=true via the mark-reviewed endpoint (confirmed ok:true) so this does not resurface in tomorrows daily check; it genuinely is fully triaged now, not a placeholder."
+    "type": "decision",
+    "subject": "Media Library item 20261015T083932Z_Video-67563.mp4 (Crimson Red Heavy Glass-beaded Lehenga, @styled_bytan) - DISPOSITION: new ad-set test, scoped to the opening beaded-blouse-and-skirt segment only, GATED on SKU confirmation and on sending Suraj a proper tappable confirmation (currently blocked by a missing Instagram permalink)",
+    "follow_up": "Next interactive session: (1) attempt to locate the original Instagram post/permalink for this clip from @styled_bytan (or confirm none exists), (2) send Suraj a real tappable Approve/Reject/Hold question via send-telegram-approval.sh per the fixed-2026-09-11 guardrail, including the permalink if found, stating plainly my read (NEW AD-SET TEST on the 0-4s beaded-blouse-and-skirt segment only) and the open SKU question, (3) if approved, creative-copywriter identifies/confirms the SKU (Suraj/design-team input or Shopify-photo match) before briefing, explicitly trimming to the confirmed segment, not the full file, (4) media-buyer builds a small standalone PAUSED test ad set (~Rs150/day, mirroring the KAFL007/First Love precedent) with a full 4-part budget statement at that time, (5) standard Telegram approval before activation. Do not treat the 6-9s segment as K&A product in any downstream step without separate confirmation."
   }
 }
