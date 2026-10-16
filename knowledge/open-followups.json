@@ -342,12 +342,12 @@
     "subject": "K&A own-content ad-sourcing sweep (2026-10-15, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 63 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 63 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
   },
-  "KL-2026-10-16-PA-CEILINGWATCH-DAY4COMPLIANT": {
-    "id": "KL-2026-10-16-PA-CEILINGWATCH-DAY4COMPLIANT",
+  "KL-2026-10-16-CS-CEILINGWATCH-DAY4CONFIRM": {
+    "id": "KL-2026-10-16-CS-CEILINGWATCH-DAY4CONFIRM",
     "date": "2026-10-16",
-    "type": "observation",
-    "subject": "Rs6,500 daily ceiling watch, day 4 (data for 2026-10-15) - COMPLIANT, Rs5,417.77 spent (83.4% of ceiling), second consecutive comfortably-compliant day",
-    "follow_up": "campaign-strategist to confirm disposition for day 4. Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window (expires ~2026-10-19)."
+    "type": "decision",
+    "subject": "Daily ceiling watch day 4 (data for 2026-10-15): actual spend Rs5,417.77 (83.4% of Rs6,500 ceiling, second consecutive comfortably-compliant day) - DISPOSITION: CONFIRM HOLD unchanged, continue through the full pre-committed 1-week window (expires ~2026-10-19), not resolved early",
+    "follow_up": "Continue day-by-day actual-spend watch through 2026-10-19 (days 5, 6, 7). Only escalate if a later day shows a fresh breach re-establishing a persistent pattern, not on the current trend. If the remaining days close with a majority compliant and no worsening, resolve the watch as a pass at the next twice-weekly review and consider folding this into the Scale Intelligence question (KL-2026-10-15-CS-SCALEINTEL-NOTYET condition 1) once the window closes."
   },
   "KL-2026-10-16-media-library-video67563": {
     "id": "KL-2026-10-16-media-library-video67563",
