@@ -251,13 +251,6 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-15-015840": {
-    "id": "KL-2026-10-15-015840",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India -- NEW standalone ad set, one PAUSED ad",
-    "follow_up": "marketing-lead to execute the build (adset create + 1 ad create, status PAUSED) verbatim once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-15-015840, including the append-product-map.sh call once the real video_id exists; log a linked type:change entry after execution. Activation is a SEPARATE plan requiring its own verification and approval -- not bundled here, per guardrail 3."
-  },
   "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
     "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
     "date": "2026-10-15",
@@ -341,6 +334,13 @@
     "type": "change",
     "subject": "16th May 26 | India (ad set 6968778736776) - 2nd ad built, KAFL026 Ice Blue Cutwork Corset, PAUSED",
     "follow_up": "Not activated by this entry - activation is a separate future decision (guardrail 3), must be staggered (guardrail 11) from other in-flight changes this cycle, and should re-check the open audience-overlap question (KL-2026-10-01-061500) is still unresolved before any targeting-level decision is made alongside it."
+  },
+  "KL-2026-10-16-ML-KAFL007-GOLDSCULPTED-BUILD": {
+    "id": "KL-2026-10-16-ML-KAFL007-GOLDSCULPTED-BUILD",
+    "date": "2026-10-16",
+    "type": "change",
+    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - NEW standalone ad set + 1 ad built, both PAUSED",
+    "follow_up": "Activation is a SEPARATE future plan requiring its own independent approval cycle, per guardrail 3 - not bundled here. When that plan is proposed, re-verify the budget ceiling fresh at that time (Rs6,120/day + Rs150/day = Rs6,270/day projected, within the Rs6,500/day ceiling as of this build, but must be reconfirmed live since other plans may execute in between)."
   },
   "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD": {
     "id": "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD",
