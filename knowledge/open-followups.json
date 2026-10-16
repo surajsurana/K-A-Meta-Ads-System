@@ -348,5 +348,12 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-15, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 63 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 63 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
+  },
+  "KL-2026-10-16-media-library-video67563": {
+    "id": "KL-2026-10-16-media-library-video67563",
+    "date": "2026-10-16",
+    "type": "observation",
+    "subject": "Media Library daily check (2026-10-16) - 1 new unreviewed item, Video-67563.mp4 from @styled_bytan, crimson red heavy glass-beaded lehenga - visually strong, unconfirmed SKU, handed to campaign-strategist",
+    "follow_up": "Handed to campaign-strategist for the five-way disposition call on this item (Media Library upload, crimson beaded lehenga, @styled_bytan) - include suraj_rating=null and no linked product/factory in that handoff so campaign-strategist has it as direct input, not something it has to re-derive. No repost or ad plan queued by me this cycle pending that read. Marked reviewed_by_social=true via the mark-reviewed endpoint (confirmed ok:true) so this does not resurface in tomorrows daily check; it genuinely is fully triaged now, not a placeholder."
   }
 }
