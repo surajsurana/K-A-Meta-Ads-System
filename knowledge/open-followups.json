@@ -314,13 +314,6 @@
     "subject": "@houseofmisu Reel instagram.com/reel/DeZBD4YNCYs/ (media 17865666309675229) - DISPOSITION: REJECT, confirmed by my own independent frame review, not just social-community-manager's",
     "follow_up": "None - closed. No repost, no paid use, no further verification needed."
   },
-  "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT": {
-    "id": "KL-2026-10-15-PA-CEILINGWATCH-DAY3COMPLIANT",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "Rs6,500 daily ceiling watch, day 3 (data for 2026-10-14) - COMPLIANT, Rs5,523.95 spent (84.9% of ceiling), restores the alternating pattern per campaign-strategists own stated day-3 checkpoint",
-    "follow_up": "campaign-strategist to confirm disposition (continue HOLD unchanged through 2026-10-19, per the day-3-compliant branch of its own stated checkpoint). Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window."
-  },
   "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM": {
     "id": "KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM",
     "date": "2026-10-15",
@@ -348,6 +341,13 @@
     "type": "observation",
     "subject": "K&A own-content ad-sourcing sweep (2026-10-15, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 63 days",
     "follow_up": "Continue tracking the standalone-Reel drought (now 63 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
+  },
+  "KL-2026-10-16-PA-CEILINGWATCH-DAY4COMPLIANT": {
+    "id": "KL-2026-10-16-PA-CEILINGWATCH-DAY4COMPLIANT",
+    "date": "2026-10-16",
+    "type": "observation",
+    "subject": "Rs6,500 daily ceiling watch, day 4 (data for 2026-10-15) - COMPLIANT, Rs5,417.77 spent (83.4% of ceiling), second consecutive comfortably-compliant day",
+    "follow_up": "campaign-strategist to confirm disposition for day 4. Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window (expires ~2026-10-19)."
   },
   "KL-2026-10-16-media-library-video67563": {
     "id": "KL-2026-10-16-media-library-video67563",
