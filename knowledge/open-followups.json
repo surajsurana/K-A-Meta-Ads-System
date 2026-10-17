@@ -328,12 +328,12 @@
     "subject": "Ad 'Ice Blue KAFL026' (52562107907380) in ad set '16th May 26 | India' (6968778736776), campaign '16th May 26 | Awareness' (6968778737176) - activation plan for the PAUSED 2nd-ad build logged KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD",
     "follow_up": "marketing-lead to execute this exact plan (status PAUSED->ACTIVE on ad 52562107907380 only) and log a linked type=change entry. Observe the ad set for 3-5 days post-activation against the stated rollback criteria. The audience-overlap question (KL-2026-10-01-061500) remains open for future competing-hypothesis checks only, not reopened by this activation."
   },
-  "KL-2026-10-17-CC-STYLEDBYTAN-CRIMSON-BRIEF": {
-    "id": "KL-2026-10-17-CC-STYLEDBYTAN-CRIMSON-BRIEF",
+  "KL-2026-10-17-032005": {
+    "id": "KL-2026-10-17-032005",
     "date": "2026-10-17",
     "type": "decision",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test - new standalone ad-set test - execution-ready copy",
-    "follow_up": "media-buyer: build a new standalone PAUSED ad set named \"First Love | Crimson Beaded (KA-270826-002) Test | India\" in campaign 52535906524580 (\"First Love | Bridal Collection\"), mirroring the KAFL007/Metallic Blue/Golden Muse sibling targeting template exactly (age 24-65, genders [2], geo IN home/recent, advantage_audience=1, WHATSAPP/CONVERSATIONS, page_id 346729958819819), ~Rs150/day net-new per campaign-strategist's four-part budget statement, with its own fresh four-part budget re-verification at build time. Source file to upload (local multipart, not URL fetch - per the documented Golden Muse Ad A upload-transport lesson): ~/ka-meta-ads-dashboard/media-library/20261015T083932Z_Video-67563.mp4 (7,875,502 bytes) - TRIM TO THE 0-4s SEGMENT ONLY before/during upload, do not use the full file. Do not call scripts/append-product-map.sh yet - no real Meta video_id exists for this item (nothing has been uploaded to Meta for it). Once the trimmed clip is uploaded and a real video_id is captured, call append-product-map.sh once with sku KA-270826-002, name \"Crimson Red Heavy Glass beaded Lehenga With Blouse & Dupatta\", matched_by creative-copywriter, status confirmed, notes referencing this entry plus the fresh Stitchflow cross-check (id c4ba1e24-5b52-46eb-af05-890de39413a7) performed in this same session. Build PAUSED only - standard Telegram approval required again before activation, per guardrail 3, separate from the approval already obtained on the disposition itself."
+    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India -- NEW standalone ad set, one PAUSED ad",
+    "follow_up": "marketing-lead to execute the build (trim source to 0-4s via the specified ffmpeg command, verify the trim, adset create + 1 ad create, status PAUSED) verbatim once Suraj approves via scripts/send-telegram-approval.sh KL-2026-10-17-032005, including the append-product-map.sh call once the real video_id exists; log a linked type:change entry after execution. Activation is a SEPARATE plan requiring its own verification and approval -- not bundled here, per guardrail 3."
   },
   "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC": {
     "id": "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC",
