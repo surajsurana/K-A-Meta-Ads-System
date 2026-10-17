@@ -334,5 +334,12 @@
     "type": "decision",
     "subject": "Media Library item 20261015T083932Z_Video-67563.mp4 (Crimson Red Heavy Glass-beaded Lehenga, @styled_bytan) - updated disposition now that products=KA-270826-002/factories=[Sarfaraz] are linked; sending Suraj a real tappable Approve/Reject/Hold question on the disposition itself",
     "follow_up": "If Suraj APPROVEs: (1) route the Stitchflow cross-check for KA-270826-002 to an agent/session with mcp__stitchflow__* access (performance-analyst or a headless run per architecture.md section 3d's exception) - confirm existence, is_active, and real collection/category before creative-copywriter treats it as fully confirmed. (2) creative-copywriter briefs the ad, explicitly trimming the source file to the 0-4s segment only, mirroring the First Love Gold Sculpted (KAFL007) Test copy/structure pattern. (3) media-buyer prepares a standalone PAUSED build plan (new ad set, ~Rs150/day, First Love | Bridal Collection campaign, same targeting template as the KAFL007/Golden Muse/Metallic Blue siblings) with its own fresh four-part budget re-verification. (4) standard Telegram approval required again before activation, per guardrail 3 - this approval does not cover that step. If REJECTed or HELD, no further action on this item until/unless revisited."
+  },
+  "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC": {
+    "id": "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC",
+    "date": "2026-10-17",
+    "type": "change",
+    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - ad set + ad flipped PAUSED -> ACTIVE",
+    "follow_up": "Per the plans own rollback_criteria: pause both objects immediately if effective_status ever shows WITH_ISSUES/DISAPPROVED. After a 2-week minimum comparable-window read, if cost per messaging_conversation_started is materially worse than the First Love | Broad Advantage+ baseline with no improving trend, pause this ad set entirely. Separately, if the open account-wide ceiling-watch (through 2026-10-19) shows a fresh, worsening breach clearly correlated with this ad sets own delivery pacing, route that judgment to campaign-strategist rather than acting unilaterally."
   }
 }
