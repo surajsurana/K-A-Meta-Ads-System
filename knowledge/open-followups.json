@@ -328,18 +328,11 @@
     "subject": "Ad 'Ice Blue KAFL026' (52562107907380) in ad set '16th May 26 | India' (6968778736776), campaign '16th May 26 | Awareness' (6968778737176) - activation plan for the PAUSED 2nd-ad build logged KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD",
     "follow_up": "marketing-lead to execute this exact plan (status PAUSED->ACTIVE on ad 52562107907380 only) and log a linked type=change entry. Observe the ad set for 3-5 days post-activation against the stated rollback criteria. The audience-overlap question (KL-2026-10-01-061500) remains open for future competing-hypothesis checks only, not reopened by this activation."
   },
-  "KL-2026-10-17-PA-CEILINGWATCH-DAY5COMPLIANT": {
-    "id": "KL-2026-10-17-PA-CEILINGWATCH-DAY5COMPLIANT",
+  "KL-2026-10-17-CS-STYLEDBYTAN-VIDEO67563-SKUCONFIRMED-TELEGRAM": {
+    "id": "KL-2026-10-17-CS-STYLEDBYTAN-VIDEO67563-SKUCONFIRMED-TELEGRAM",
     "date": "2026-10-17",
-    "type": "observation",
-    "subject": "Rs6,500 daily ceiling watch, day 5 (data for 2026-10-16) - COMPLIANT, Rs5,399.41 spent (83.1% of ceiling), third consecutive comfortably-compliant day",
-    "follow_up": "campaign-strategist to confirm disposition for day 5. Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window (days 6 and 7, expires ~2026-10-19)."
-  },
-  "KL-2026-10-17-media-library-video67563-reedit": {
-    "id": "KL-2026-10-17-media-library-video67563-reedit",
-    "date": "2026-10-17",
-    "type": "observation",
-    "subject": "Media Library daily check (2026-10-17) - no new uploads, but Video-67563.mp4 (@styled_bytan, crimson beaded lehenga) was edited after its prior review and after campaign-strategist's disposition - product/factory link added, resolving part of the SKU-unconfirmed gap campaign-strategist flagged as blocking",
-    "follow_up": "Pass this along to campaign-strategist/creative-copywriter: product KA-270826-002 (factory Sarfaraz) is now linked to this item in the Media Library dashboard and should be checked against the open SKU-unconfirmed gate on KL-2026-10-16-CS-STYLEDBYTAN-VIDEO67563-DISPOSITION - likely shortcuts the Shopify-photo-match step that disposition called for, but still needs the standard verification (not a blind trust of the dashboard link) before creative-copywriter is briefed. The other two open gaps on that disposition (missing Instagram permalink, pending tappable Telegram confirmation to Suraj) are unaffected by this edit and still open."
+    "type": "decision",
+    "subject": "Media Library item 20261015T083932Z_Video-67563.mp4 (Crimson Red Heavy Glass-beaded Lehenga, @styled_bytan) - updated disposition now that products=KA-270826-002/factories=[Sarfaraz] are linked; sending Suraj a real tappable Approve/Reject/Hold question on the disposition itself",
+    "follow_up": "If Suraj APPROVEs: (1) route the Stitchflow cross-check for KA-270826-002 to an agent/session with mcp__stitchflow__* access (performance-analyst or a headless run per architecture.md section 3d's exception) - confirm existence, is_active, and real collection/category before creative-copywriter treats it as fully confirmed. (2) creative-copywriter briefs the ad, explicitly trimming the source file to the 0-4s segment only, mirroring the First Love Gold Sculpted (KAFL007) Test copy/structure pattern. (3) media-buyer prepares a standalone PAUSED build plan (new ad set, ~Rs150/day, First Love | Bridal Collection campaign, same targeting template as the KAFL007/Golden Muse/Metallic Blue siblings) with its own fresh four-part budget re-verification. (4) standard Telegram approval required again before activation, per guardrail 3 - this approval does not cover that step. If REJECTed or HELD, no further action on this item until/unless revisited."
   }
 }
