@@ -314,13 +314,6 @@
     "subject": "KL-2026-10-15-comment-batch",
     "follow_up": "re-check 2026-10-19: if plan KL-2026-10-15-comment-batch is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-16-ML-KAFL007-GOLDSCULPTED-BUILD": {
-    "id": "KL-2026-10-16-ML-KAFL007-GOLDSCULPTED-BUILD",
-    "date": "2026-10-16",
-    "type": "change",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - NEW standalone ad set + 1 ad built, both PAUSED",
-    "follow_up": "Activation is a SEPARATE future plan requiring its own independent approval cycle, per guardrail 3 - not bundled here. When that plan is proposed, re-verify the budget ceiling fresh at that time (Rs6,120/day + Rs150/day = Rs6,270/day projected, within the Rs6,500/day ceiling as of this build, but must be reconfirmed live since other plans may execute in between)."
-  },
   "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD": {
     "id": "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD",
     "date": "2026-10-16",
