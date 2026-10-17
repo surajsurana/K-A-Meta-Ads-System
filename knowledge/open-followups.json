@@ -314,13 +314,6 @@
     "subject": "KL-2026-10-15-comment-batch",
     "follow_up": "re-check 2026-10-19: if plan KL-2026-10-15-comment-batch is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-10-16-CS-CEILINGWATCH-DAY4CONFIRM": {
-    "id": "KL-2026-10-16-CS-CEILINGWATCH-DAY4CONFIRM",
-    "date": "2026-10-16",
-    "type": "decision",
-    "subject": "Daily ceiling watch day 4 (data for 2026-10-15): actual spend Rs5,417.77 (83.4% of Rs6,500 ceiling, second consecutive comfortably-compliant day) - DISPOSITION: CONFIRM HOLD unchanged, continue through the full pre-committed 1-week window (expires ~2026-10-19), not resolved early",
-    "follow_up": "Continue day-by-day actual-spend watch through 2026-10-19 (days 5, 6, 7). Only escalate if a later day shows a fresh breach re-establishing a persistent pattern, not on the current trend. If the remaining days close with a majority compliant and no worsening, resolve the watch as a pass at the next twice-weekly review and consider folding this into the Scale Intelligence question (KL-2026-10-15-CS-SCALEINTEL-NOTYET condition 1) once the window closes."
-  },
   "KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD": {
     "id": "KL-2026-10-16-ML-16THMAY-ICEBLUE-BUILD",
     "date": "2026-10-16",
@@ -341,6 +334,13 @@
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - 4th ad built, KAFL018 Barbie Pink refresh, PAUSED",
     "follow_up": "Not activated by this entry, per explicit sequencing hold - activation must wait for the Champagne Gold Neutral Text Test stop-rule resolution (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD), and should be sequenced alongside the Metallic Coffee Brown/Burnt Orange reactivation decisions on this same Rs720/day pool. At that time, also address whether to pause the existing stale KAFL018 ad (52547120579980) in favor of this refresh."
+  },
+  "KL-2026-10-17-PA-CEILINGWATCH-DAY5COMPLIANT": {
+    "id": "KL-2026-10-17-PA-CEILINGWATCH-DAY5COMPLIANT",
+    "date": "2026-10-17",
+    "type": "observation",
+    "subject": "Rs6,500 daily ceiling watch, day 5 (data for 2026-10-16) - COMPLIANT, Rs5,399.41 spent (83.1% of ceiling), third consecutive comfortably-compliant day",
+    "follow_up": "campaign-strategist to confirm disposition for day 5. Next review to continue the day-by-day actual-spend record through the remainder of the 1-week window (days 6 and 7, expires ~2026-10-19)."
   },
   "KL-2026-10-17-media-library-video67563-reedit": {
     "id": "KL-2026-10-17-media-library-video67563-reedit",
