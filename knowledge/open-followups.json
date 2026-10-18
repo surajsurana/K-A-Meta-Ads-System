@@ -335,11 +335,11 @@
     "subject": "Ad 'Ice Blue KAFL026' (52562107907380) in ad set '16th May 26 | India' (6968778736776) -- activated per direct user approval via authenticated Telegram button tap",
     "follow_up": "Recheck ad 52562107907380 effective_status within 24h to confirm it settled to ACTIVE (not stuck IN_PROCESS and not DISAPPROVED/WITH_ISSUES). Then observe the ad set for 3-5 days against the rollback criteria stated in the approved plan (CPM, frequency, actual spend, issues_info, account-ceiling attribution)."
   },
-  "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE": {
-    "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
+  "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC": {
+    "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC",
     "date": "2026-10-18",
-    "type": "decision",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activation plan for the PAUSED build logged KL-2026-10-17-ML-CRIMSONBEADED-BUILD-EXEC",
-    "follow_up": "Awaiting Telegram approval dispatch by the orchestrating session (not media-buyer). Once approved and executed by marketing-lead: run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline, and log a linked type=change entry on execution."
+    "type": "change",
+    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
+    "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   }
 }
