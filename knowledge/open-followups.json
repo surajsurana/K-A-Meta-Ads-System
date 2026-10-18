@@ -321,13 +321,6 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - 4th ad built, KAFL018 Barbie Pink refresh, PAUSED",
     "follow_up": "Not activated by this entry, per explicit sequencing hold - activation must wait for the Champagne Gold Neutral Text Test stop-rule resolution (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD), and should be sequenced alongside the Metallic Coffee Brown/Burnt Orange reactivation decisions on this same Rs720/day pool. At that time, also address whether to pause the existing stale KAFL018 ad (52547120579980) in favor of this refresh."
   },
-  "KL-2026-10-17-ML-CRIMSONBEADED-BUILD-EXEC": {
-    "id": "KL-2026-10-17-ML-CRIMSONBEADED-BUILD-EXEC",
-    "date": "2026-10-17",
-    "type": "change",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India -- NEW standalone ad set + 1 ad, built PAUSED, per direct user approval via authenticated Telegram button tap",
-    "follow_up": "Ad set 52562444646780 and ad 52562444656580 remain PAUSED. Activation is a separate future decision requiring its own independent approval cycle via Telegram, per the plan's own guardrail 3 sequencing -- not implied or bundled by this execution."
-  },
   "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC": {
     "id": "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC",
     "date": "2026-10-17",
@@ -341,5 +334,12 @@
     "type": "decision",
     "subject": "Ad 'Ice Blue KAFL026' (52562107907380) in ad set '16th May 26 | India' (6968778736776), campaign '16th May 26 | Awareness' (6968778737176) - RE-ISSUED activation plan after KL-2026-10-17-014848's execution failed on a stale IN_PROCESS state",
     "follow_up": "Awaiting Telegram approval dispatch by the orchestrating session (not media-buyer). Once approved and executed by marketing-lead: observe the ad set for 3-5 days post-activation against the stated rollback criteria, and log a linked type=change entry on execution."
+  },
+  "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE": {
+    "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
+    "date": "2026-10-18",
+    "type": "decision",
+    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activation plan for the PAUSED build logged KL-2026-10-17-ML-CRIMSONBEADED-BUILD-EXEC",
+    "follow_up": "Awaiting Telegram approval dispatch by the orchestrating session (not media-buyer). Once approved and executed by marketing-lead: run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline, and log a linked type=change entry on execution."
   }
 }
