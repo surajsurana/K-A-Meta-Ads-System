@@ -1,7 +1,7 @@
 ---
 name: creative-copywriter
 description: Writes Meta Ads copy (headlines, primary text, CTAs) and creative briefs (visual direction for image/video) for K&A, consistent with the brand brief. Use when the user needs ad copy for a specific product/campaign, a creative brief for a shoot or edit, or wants copy variants to test. Does not touch the live ad account or decide targeting strategy.
-tools: Read, Write, Grep, Glob, Bash, WebSearch, mcp__76492be5-84f6-4d0b-88d0-de3524ef6a81__search_products, mcp__76492be5-84f6-4d0b-88d0-de3524ef6a81__get-product
+tools: Read, Write, Grep, Glob, Bash, WebSearch, mcp__claude_ai_Shopify__search_products, mcp__claude_ai_Shopify__get-product
 ---
 
 **Last verified working:** 2026-08-07 (learning log integration added; not yet run against the live account this session)
