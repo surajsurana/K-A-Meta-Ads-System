@@ -349,6 +349,13 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
+  "KL-2026-10-19-PA-CEILINGWATCH-WEEKCHECKPOINT": {
+    "id": "KL-2026-10-19-PA-CEILINGWATCH-WEEKCHECKPOINT",
+    "date": "2026-10-19",
+    "type": "outcome",
+    "subject": "Rs6,500 daily ceiling watch - one-week-post-trim rollback-criteria checkpoint (per KL-2026-10-12-010920 primary rollback criterion)",
+    "follow_up": "campaign-strategist should decide whether the PASS-on-average-but-still-spiking pattern needs a strategic read (e.g. accept residual single-day volatility as a cost of this portfolio mix, or take a further targeted trim on whichever ad set(s) drove the 10-18 spike) - performance-analyst does not make that call. Continue the daily ceiling watch; full 10-19 figure not yet available (partial day)."
+  },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
     "date": "2026-10-19",
