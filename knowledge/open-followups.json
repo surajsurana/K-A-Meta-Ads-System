@@ -97,13 +97,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION": {
-    "id": "KL-2026-10-01-CS-OWNCONTENT-DISPOSITION",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "2 new own-content image carousels (18122130635291100 black crystal corset+skirt, 17964101282983009 burnt orange zardozi lehenga) - independent visual read performed; DISPOSITION: HOLD on paid use for both, video-default policy, item (a) flagged as a priority video-reshoot candidate",
-    "follow_up": "No paid action this cycle for either carousel. Flag item (a) (black crystal corset+skirt, 18122130635291100) to whoever schedules the next video shoot as a priority re-shoot/video-treatment candidate given its distinctive hero quality. Video drought continues (49 days since last Reel, 2026-08-13) - already escalated directly to Suraj once (2026-09-21); no new escalation needed this cycle absent a response or further material change."
-  },
   "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK": {
     "id": "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK",
     "date": "2026-10-01",
@@ -300,13 +293,6 @@
     "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
     "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
-  "KL-2026-10-15-own-content": {
-    "id": "KL-2026-10-15-own-content",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-15, twice-weekly review) - quiet cycle, no new own posts since the 2026-10-02 boundary; video drought now 63 days",
-    "follow_up": "Continue tracking the standalone-Reel drought (now 63 days since 2026-08-13). Next sweep boundary remains 18119098733004826 (2026-10-02) until a new own post appears."
-  },
   "KL-2026-10-16-022630": {
     "id": "KL-2026-10-16-022630",
     "date": "2026-10-16",
@@ -341,6 +327,13 @@
     "type": "change",
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
+  },
+  "KL-2026-10-19-own-content": {
+    "id": "KL-2026-10-19-own-content",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-10-19, twice-weekly review) - 2 new own posts since the 2026-10-02 boundary, standalone-Reel video drought BROKEN after 66 days with a new teaser Reel",
+    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-19-CS-HANDOFF) for the five-way disposition call on both LOOMIERE teaser posts - first native video in 66 days plus a new editorial direction not yet in ad rotation. Next sweep boundary is 17964527067230906 (2026-10-18T15:49:28), the newest own post. Drought tracking as a standing watch item ends here since new native video content now exists; future sweeps should watch for whether LOOMIERE continues as a sustained content direction or was a one-off teaser pair."
   },
   "KL-2026-10-19-ugc-tags": {
     "id": "KL-2026-10-19-ugc-tags",
