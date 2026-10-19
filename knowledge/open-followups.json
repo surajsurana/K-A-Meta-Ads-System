@@ -300,13 +300,6 @@
     "subject": "Profile Visits | India follower growth - full-week post-Ad-B-pause reading improved but not recovered (Rs3.88/follower vs Rs1.11-2.32 target) - DISPOSITION: pause Ad A too, per the pre-committed rollback criteria 2nd branch, as a root-cause investigation step",
     "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad A (52551760703580) under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget change. LOW RISK (non-lead-gen objective, no budget field touched, Rs100/day ad set). At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 active and reports back for the root-cause read described above."
   },
-  "KL-2026-10-19-CS-GEO-AUSTRALIA-REOPEN": {
-    "id": "KL-2026-10-19-CS-GEO-AUSTRALIA-REOPEN",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Australia reverse-geo finding (KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE, lifetime now 8 orders/Rs460,000, 8 distinct cities/customers, Rs0 acquisition spend) - DISPOSITION: GEOGRAPHIC AD-SET TEST on strategic merits, but build PAUSED and defer budget commitment until the account-wide ceiling-compliance watch resolves (see KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK)",
-    "follow_up": "Route to media-buyer: validate and prepare a PAUSED build for a new Australia-targeted ad set (structure/placement left to media-buyer, reusing First Love/Insta Engaged creative, lead-gen/messaging objective, Rs100/day net-new specified but NOT activated). Re-ask activation/budget-commitment timing at the next review once the ceiling-compliance watch resolves. No action on Singapore/Pakistan this cycle."
-  },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
     "date": "2026-10-19",
@@ -334,6 +327,13 @@
     "type": "decision",
     "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25, Rs720/day shared ABO pool) - staggered activation plan for the 3 builds queued behind the now-resolved Champagne Gold stop-rule (KAFL018 Barbie Pink refresh, Metallic Coffee Brown, Burnt Orange)",
     "follow_up": "Route to media-buyer: validate and prepare step 1 (activate 52562108793580, pause 52547120579980, no budget change) for this cycles approval. Step 2 (activate 52552969628580) is not due until ~2026-10-24 - do not build/send for approval before then. Step 3 (activate 52552969630380) is not due until ~2026-10-29 and is contingent on step 2s clean read."
+  },
+  "KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK": {
+    "id": "KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Scale Intelligence (section 3e) weekly call - ceiling stays at Rs6,500/day, NOT YET for a step-up; portfolio budget allocation check (four-part, per section 3a) shows Rs0 net change proposed this cycle and an unresolved pre-existing compliance gap",
+    "follow_up": "Re-ask both the ceiling-compliance and ceiling-step questions at the next review. Conditions for a yes, unchanged from last cycle: (1) a full week showing consistent compliance with the current Rs6,500 ceiling (no breach days), AND (2) a second consecutive clean headroom check on whichever ad set is the step candidate at that time, with CPM genuinely flat/falling, not just frequency. Do not treat October seasonality alone as sufficient justification when either condition is still open."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
