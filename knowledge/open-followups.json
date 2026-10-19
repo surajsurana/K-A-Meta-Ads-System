@@ -328,6 +328,13 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
+  "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN": {
+    "id": "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "UP/Rajasthan zero-order streak each broken by 1 real order in trailing 60 days; Madhya Pradesh continues at zero - fact pattern behind the 2026-09-21 MAINTAIN decision has changed",
+    "follow_up": "Route to campaign-strategist: re-assess the UP/Rajasthan/MP geography disposition now that 2 of the 3 have produced a real (if thin) order in the trailing 60 days - this breaks the original MAINTAIN's own stated re-open condition for those two specifically; MP alone now continues the original zero-order pattern. Also flag the Bihar/Jharkhand/Assam/JK group's +34.8% spend growth as approaching, not yet past, that group's own stated re-open bar."
+  },
   "KL-2026-10-19-PA-GEOLEAKAGE-RECHECK": {
     "id": "KL-2026-10-19-PA-GEOLEAKAGE-RECHECK",
     "date": "2026-10-19",
