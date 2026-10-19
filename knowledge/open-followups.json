@@ -293,6 +293,13 @@
     "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
     "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT": {
+    "id": "KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Rs6,500 ceiling watch, 1-week post-trim checkpoint (KL-2026-10-12-010920 rollback criterion) - PASS on primary criterion; residual single-day volatility (2/7 breach days) ACCEPTED as already-explained structural noise, not a trigger for a further targeted trim",
+    "follow_up": "No further trim this cycle. Continue the standing daily actual-spend watch under the existing revised trigger (any single day >10% over ceiling, OR 2 of any 3 consecutive days breach) - unchanged, did not fire this week, no basis to retune it. Re-examine specifically once the India Whatsapp 9th Dec staggered-activation sequence settles (after step 3, ~2026-10-29) and once Broad Advantage+s own recent targeting/creative churn has had a full week to settle - if single-day spikes persist AFTER both of those settle (i.e. with the currently-known confounds genuinely gone), that would be a materially different, less-explained finding and a targeted trim should be reconsidered at that point. Do not treat this ACCEPT as a standing decision never to trim for volatility - only as todays read that the current spikes are still explained by known, already-settling causes."
+  },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
     "date": "2026-10-19",
@@ -348,13 +355,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
-  },
-  "KL-2026-10-19-PA-CEILINGWATCH-WEEKCHECKPOINT": {
-    "id": "KL-2026-10-19-PA-CEILINGWATCH-WEEKCHECKPOINT",
-    "date": "2026-10-19",
-    "type": "outcome",
-    "subject": "Rs6,500 daily ceiling watch - one-week-post-trim rollback-criteria checkpoint (per KL-2026-10-12-010920 primary rollback criterion)",
-    "follow_up": "campaign-strategist should decide whether the PASS-on-average-but-still-spiking pattern needs a strategic read (e.g. accept residual single-day volatility as a cost of this portfolio mix, or take a further targeted trim on whichever ad set(s) drove the 10-18 spike) - performance-analyst does not make that call. Continue the daily ceiling watch; full 10-19 figure not yet available (partial day)."
   },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
