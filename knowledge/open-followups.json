@@ -363,13 +363,6 @@
     "subject": "One ambiguous comment flagged individually, not batched - @aesana0710 Pls check your DM on media 18119098733004826",
     "follow_up": "No plan drafted - awaiting a human read on what this comment actually refers to before any reply is proposed."
   },
-  "KL-2026-10-19-comment-batch": {
-    "id": "KL-2026-10-19-comment-batch",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (2 items) - price/availability WhatsApp redirect",
-    "follow_up": "Awaiting Telegram approval."
-  },
   "KL-2026-10-19-dmredirect-watch-no-recurrence": {
     "id": "KL-2026-10-19-dmredirect-watch-no-recurrence",
     "date": "2026-10-19",
