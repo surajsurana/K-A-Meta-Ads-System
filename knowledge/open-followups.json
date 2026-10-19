@@ -328,6 +328,13 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   },
+  "KL-2026-10-19-ambiguous-comment": {
+    "id": "KL-2026-10-19-ambiguous-comment",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "One ambiguous comment flagged individually, not batched - @aesana0710 Pls check your DM on media 18119098733004826",
+    "follow_up": "No plan drafted - awaiting a human read on what this comment actually refers to before any reply is proposed."
+  },
   "KL-2026-10-19-comment-batch": {
     "id": "KL-2026-10-19-comment-batch",
     "date": "2026-10-19",
