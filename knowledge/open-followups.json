@@ -314,13 +314,6 @@
     "subject": "Gujarat/Karnataka/Punjab geo-exclusion residual-spend watch (KL-2026-10-19-PA-GEOLEAKAGE-RECHECK) - DISPOSITION: Gujarat/Karnataka MAINTAIN (accept as platform floor); Punjab EXCLUSION extended to Broad Advantage+",
     "follow_up": "Route to media-buyer: validate and prepare a targeting-only plan adding Punjab to the geo_locations exclusion list on ad set 52535906903180 (First Love | Broad Advantage+ | India), alongside its existing Gujarat/Karnataka exclusion. No budget field touched. No further action needed on Gujarat/Karnataka this cycle - watch closed on that half, standing low-key monitoring only."
   },
-  "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE": {
-    "id": "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25, Rs720/day shared ABO pool) - staggered activation plan for the 3 builds queued behind the now-resolved Champagne Gold stop-rule (KAFL018 Barbie Pink refresh, Metallic Coffee Brown, Burnt Orange)",
-    "follow_up": "Route to media-buyer: validate and prepare step 1 (activate 52562108793580, pause 52547120579980, no budget change) for this cycles approval. Step 2 (activate 52552969628580) is not due until ~2026-10-24 - do not build/send for approval before then. Step 3 (activate 52552969630380) is not due until ~2026-10-29 and is contingent on step 2s clean read."
-  },
   "KL-2026-10-19-CS-LOOMIERE-DISPOSITION": {
     "id": "KL-2026-10-19-CS-LOOMIERE-DISPOSITION",
     "date": "2026-10-19",
@@ -341,6 +334,13 @@
     "type": "decision",
     "subject": "@priyaas_makeoverr Reel 18101705564056757 (instagram.com/reel/DeoMHQzsur8/) - five-way disposition call: TEST in a new ad/ad-set, pending Suraj confirmation",
     "follow_up": "Awaiting Suraj approval via Telegram. If approved, hand to creative-copywriter for product identification (section 3d) and brief; media-buyer validates the resulting ad build separately before any approval-to-launch."
+  },
+  "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP": {
+    "id": "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - step 1 of staggered activation sequence: activate KAFL018 Barbie Pink refresh ad, pause stale original KAFL018 ad, same ad set, no budget change",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead executes exactly this swap (activate 52562108793580, pause 52547120579980), runs the verification steps above, logs a linked type:change entry. Step 2 (activate Metallic Coffee Brown 52552969628580) is not due before 2026-10-24 - do not build/send before then. Step 3 (activate Burnt Orange 52552969630380) is not due before ~2026-10-29 and is contingent on step 2's clean read. At the next review after step 3 lands, flag that 5 ads sharing this fixed Rs720/day pool is getting crowded and performance-analyst/campaign-strategist should assess retiring the oldest/weakest performer rather than stacking indefinitely."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
