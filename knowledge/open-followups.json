@@ -341,5 +341,12 @@
     "type": "change",
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
+  },
+  "KL-2026-10-19-ugc-tags": {
+    "id": "KL-2026-10-19-ugc-tags",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-10-19, twice-weekly review) - 1 new tagged item since the 2026-10-12 boundary, first in several cycles with a confirmed caption credit",
+    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-19-CS-HANDOFF) for the five-way disposition call - confirmed credit and strong on-brand visual make this a stronger candidate than recent cycles ambiguous items. Next sweep boundary is 18101705564056757 (2026-10-18T07:53:20)."
   }
 }
