@@ -251,13 +251,6 @@
     "subject": "DOB coverage 6.76% (44/651), mean age 33.44, 25-34 bracket dominant in both known-DOB (63.6%) and Meta delivery (60% of spend) - ACKNOWLEDGED, no targeting change this cycle",
     "follow_up": "Continue tracking DOB coverage weekly; re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual."
   },
-  "KL-2026-10-15-CS-GEOLEAKAGE-WATCH": {
-    "id": "KL-2026-10-15-CS-GEOLEAKAGE-WATCH",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "Gujarat/Karnataka/Punjab exclusion partial leakage (KL-2026-10-15-PA-GEOEXCLUSION-PARTIALLEAKAGE) - DISPOSITION: WATCH further, do not tighten yet",
-    "follow_up": "Re-check Gujarat/Karnataka/Punjab residual spend at the next 1-2 weekly reviews. If Gujarat/Karnataka residual spend stays flat or grows rather than continuing to taper, accept it as a platform-level location-matching floor rather than attempting further ad-set-level tightening. If Punjab residual spend specifically does not continue decaying, consider extending the reduced-targeting exclusion to its next-highest contributing ad set (Broad Advantage+, Rs932.38/30d pre-exclusion) as the next incremental step - this is a distinct lever from the Gujarat/Karnataka platform-mechanism question."
-  },
   "KL-2026-10-15-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-15-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-15",
@@ -334,6 +327,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
+  },
+  "KL-2026-10-19-PA-GEOLEAKAGE-RECHECK": {
+    "id": "KL-2026-10-19-PA-GEOLEAKAGE-RECHECK",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Gujarat/Karnataka/Punjab geo-exclusion residual-spend recheck (per KL-2026-10-15-CS-GEOLEAKAGE-WATCH follow_up) - Gujarat/Karnataka grew per-day, Punjab roughly flat",
+    "follow_up": "Route to campaign-strategist: per the watch's own pre-committed criteria, this data indicates (1) accepting Gujarat/Karnataka residual as a platform floor rather than further ad-set tightening, and (2) considering extending Punjab's reduced-targeting exclusion to Broad Advantage+. Not deciding either here - campaign-strategist's call."
   },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
