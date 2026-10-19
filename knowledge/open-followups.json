@@ -321,6 +321,13 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   },
+  "KL-2026-10-19-CS-HANDOFF": {
+    "id": "KL-2026-10-19-CS-HANDOFF",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Handoff to campaign-strategist - 2 items for the five-way disposition call (use in existing ad / new ad-set test / new campaign / hold / reject)",
+    "follow_up": "Awaiting campaign-strategists disposition call on both items."
+  },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
     "date": "2026-10-19",
@@ -341,12 +348,5 @@
     "type": "observation",
     "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked explicitly for a 4th post-escalation recurrence this cycle, NONE found",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern genuinely stops or Suraj responds to the re-escalation (concrete ask: whether whoever replies live has the approved text readily accessible)."
-  },
-  "KL-2026-10-19-ugc-tags": {
-    "id": "KL-2026-10-19-ugc-tags",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "UGC tags sweep (2026-10-19, twice-weekly review) - 1 new tagged item since the 2026-10-12 boundary, first in several cycles with a confirmed caption credit",
-    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-19-CS-HANDOFF) for the five-way disposition call - confirmed credit and strong on-brand visual make this a stronger candidate than recent cycles ambiguous items. Next sweep boundary is 18101705564056757 (2026-10-18T07:53:20)."
   }
 }
