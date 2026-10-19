@@ -328,12 +328,12 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   },
-  "KL-2026-10-19-own-content": {
-    "id": "KL-2026-10-19-own-content",
+  "KL-2026-10-19-comment-batch": {
+    "id": "KL-2026-10-19-comment-batch",
     "date": "2026-10-19",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-19, twice-weekly review) - 2 new own posts since the 2026-10-02 boundary, standalone-Reel video drought BROKEN after 66 days with a new teaser Reel",
-    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-19-CS-HANDOFF) for the five-way disposition call on both LOOMIERE teaser posts - first native video in 66 days plus a new editorial direction not yet in ad rotation. Next sweep boundary is 17964527067230906 (2026-10-18T15:49:28), the newest own post. Drought tracking as a standing watch item ends here since new native video content now exists; future sweeps should watch for whether LOOMIERE continues as a sustained content direction or was a one-off teaser pair."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (2 items) - price/availability WhatsApp redirect",
+    "follow_up": "Awaiting Telegram approval."
   },
   "KL-2026-10-19-ugc-tags": {
     "id": "KL-2026-10-19-ugc-tags",
