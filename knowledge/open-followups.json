@@ -314,13 +314,6 @@
     "subject": "LOOMIERE festive 2026 teaser posts (Reel 17964527067230906, carousel 17991984456103781) - five-way disposition call: HOLD, no SKU/CTA to attach spend or tracking to yet",
     "follow_up": "Social-community-managers next sweep should watch specifically for a LOOMIERE product/SKU reveal post and hand off again at that point for a fresh five-way call (most likely use-in-existing-ad or new-campaign once a real CTA exists). No Suraj approval needed for this HOLD itself."
   },
-  "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION": {
-    "id": "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "@priyaas_makeoverr Reel 18101705564056757 (instagram.com/reel/DeoMHQzsur8/) - five-way disposition call: TEST in a new ad/ad-set, pending Suraj confirmation",
-    "follow_up": "Awaiting Suraj approval via Telegram. If approved, hand to creative-copywriter for product identification (section 3d) and brief; media-buyer validates the resulting ad build separately before any approval-to-launch."
-  },
   "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE": {
     "id": "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE",
     "date": "2026-10-19",
@@ -348,6 +341,13 @@
     "type": "decision",
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) - extend Punjab geo-exclusion to this ad set, targeting-only, no budget change",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead re-GETs targeting fresh immediately before writing, POSTs the full targeting object with Punjab added to excluded_geo_locations.regions, verifies, logs a linked type:change entry. VERIFICATION STEPS: pre-write fresh GET /52535906903180?fields=targeting confirms current state matches this plan's capture (abort/re-plan if drifted); post-write fresh GET confirms excluded_geo_locations.regions includes Gujarat, Karnataka, and Punjab (key 1742), every other targeting field byte-identical to the pre-write capture, daily_budget still 100000, status ACTIVE. ROLLBACK CRITERIA: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set drops toward zero, and checks (1) total account messaging connections/leads do not materially drop, (2) freed delivery lands in better-converting geos (Maharashtra especially). If leads/connections drop materially with no offsetting gain, revert - remove Punjab from this ad set's excluded_geo_locations.regions, back to Gujarat+Karnataka only."
+  },
+  "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP": {
+    "id": "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "@priyaas_makeoverr Reel 18101705564056757 TEST disposition approved by Suraj but cannot be built this session - no product/SKU linked, no video asset in media library",
+    "follow_up": "Needs an interactive session to retrieve the actual video asset for this reel and identify/confirm the real product/SKU via Shopify + Stitchflow cross-check before creative-copywriter can brief it and media-buyer can build the ad set."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
