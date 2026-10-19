@@ -307,13 +307,6 @@
     "subject": "UP/Rajasthan single real orders breaking the zero-order streak (KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN) - DISPOSITION: MAINTAIN on UP/Rajasthan/MP, re-open bar refined to be base-rate-consistent; Bihar/Jharkhand/Assam/JK group MAINTAIN, watch threshold tightened given +34.8% spend growth",
     "follow_up": "No action this cycle on UP/Rajasthan/MP or the Bihar group. Re-open UP/Rajasthan/MP only per the refined bar stated above (frequency exceeding base rate, material spend growth without orders, or unusually high AOV/ROAS on a new order) - not on a single order alone. Re-check the Bihar/Jharkhand/Assam/JK combined spend trend at the very next review given its directional growth toward its own re-open bar."
   },
-  "KL-2026-10-19-CS-LOOMIERE-DISPOSITION": {
-    "id": "KL-2026-10-19-CS-LOOMIERE-DISPOSITION",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "LOOMIERE festive 2026 teaser posts (Reel 17964527067230906, carousel 17991984456103781) - five-way disposition call: HOLD, no SKU/CTA to attach spend or tracking to yet",
-    "follow_up": "Social-community-managers next sweep should watch specifically for a LOOMIERE product/SKU reveal post and hand off again at that point for a fresh five-way call (most likely use-in-existing-ad or new-campaign once a real CTA exists). No Suraj approval needed for this HOLD itself."
-  },
   "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE": {
     "id": "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE",
     "date": "2026-10-19",
