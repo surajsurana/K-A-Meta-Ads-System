@@ -293,6 +293,13 @@
     "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
     "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
+  "KL-2026-10-19-CS-FOLLOWERGROWTH-ADAPAUSE": {
+    "id": "KL-2026-10-19-CS-FOLLOWERGROWTH-ADAPAUSE",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Profile Visits | India follower growth - full-week post-Ad-B-pause reading improved but not recovered (Rs3.88/follower vs Rs1.11-2.32 target) - DISPOSITION: pause Ad A too, per the pre-committed rollback criteria 2nd branch, as a root-cause investigation step",
+    "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad A (52551760703580) under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget change. LOW RISK (non-lead-gen objective, no budget field touched, Rs100/day ad set). At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 active and reports back for the root-cause read described above."
+  },
   "KL-2026-10-19-CS-HANDOFF": {
     "id": "KL-2026-10-19-CS-HANDOFF",
     "date": "2026-10-19",
@@ -313,13 +320,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
-  },
-  "KL-2026-10-19-PA-FOLLOWERGROWTH-FULLWEEK-POSTPAUSE": {
-    "id": "KL-2026-10-19-PA-FOLLOWERGROWTH-FULLWEEK-POSTPAUSE",
-    "date": "2026-10-19",
-    "type": "outcome",
-    "subject": "Instagram follower growth - full 7-day post-Ad-B-pause reading (the checkpoint KL-2026-10-15-PA-FOLLOWERGROWTH-POSTPAUSE-INTERIM asked for) - improved but still outside the Rs1.11-2.32/follower target band",
-    "follow_up": "Per KL-2026-10-12-CS-FOLLOWERGROWTH-DISPOSITION's own pre-committed criterion (escalate to pausing Ad A too if the full-week reading still doesn't recover toward the Rs1.11-2.32 band), route this result to campaign-strategist for that exact call - Rs3.88/follower is improved but still outside the band."
   },
   "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE": {
     "id": "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE",
