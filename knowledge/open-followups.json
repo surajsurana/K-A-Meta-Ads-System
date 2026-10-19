@@ -328,6 +328,13 @@
     "subject": "Handoff to campaign-strategist - 2 items for the five-way disposition call (use in existing ad / new ad-set test / new campaign / hold / reject)",
     "follow_up": "Awaiting campaign-strategists disposition call on both items."
   },
+  "KL-2026-10-19-PA-BLENDED-WINDOW": {
+    "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
+    "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
+  },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
     "date": "2026-10-19",
