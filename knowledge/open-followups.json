@@ -307,19 +307,19 @@
     "subject": "UP/Rajasthan single real orders breaking the zero-order streak (KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN) - DISPOSITION: MAINTAIN on UP/Rajasthan/MP, re-open bar refined to be base-rate-consistent; Bihar/Jharkhand/Assam/JK group MAINTAIN, watch threshold tightened given +34.8% spend growth",
     "follow_up": "No action this cycle on UP/Rajasthan/MP or the Bihar group. Re-open UP/Rajasthan/MP only per the refined bar stated above (frequency exceeding base rate, material spend growth without orders, or unusually high AOV/ROAS on a new order) - not on a single order alone. Re-check the Bihar/Jharkhand/Assam/JK combined spend trend at the very next review given its directional growth toward its own re-open bar."
   },
+  "KL-2026-10-19-EXEC-AUSTRALIABUILD": {
+    "id": "KL-2026-10-19-EXEC-AUSTRALIABUILD",
+    "date": "2026-10-19",
+    "type": "change",
+    "subject": "Built 1 new PAUSED ad set + 1 new PAUSED ad (First Love | Cold Prospecting | Australia) per approved plan KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED",
+    "follow_up": "Activation of this ad set is explicitly NOT authorized by this execution - it is a separate future decision, gated on (1) the ceiling-compliance watch (KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK) showing a full clean week against the Rs6,500/day ceiling, AND (2) the Rs20/day nominal-ceiling gap the build plan identified (Rs6,420 current + Rs100 new = Rs6,520, over todays Rs6,500 ceiling) being resolved via a trim elsewhere or an explicit ceiling increase - re-verify the current total fresh again at that time, do not reuse this entrys figures."
+  },
   "KL-2026-10-19-EXEC-PUNJAB-BROADADVPLUS-EXCLUSION": {
     "id": "KL-2026-10-19-EXEC-PUNJAB-BROADADVPLUS-EXCLUSION",
     "date": "2026-10-19",
     "type": "change",
     "subject": "Punjab geo exclusion added to First Love | Broad Advantage+ | India ad set (52535906903180) per approved plan KL-2026-10-19-MB-PUNJAB-BROADADVPLUS-EXCLUSION",
     "follow_up": "Per the plans own stop-rule: performance-analyst re-pulls /insights?breakdowns=region on ad set 52535906903180 in 2-4 weeks to confirm Punjab spend drops toward zero, total account leads/connections do not materially drop, and freed delivery lands in better-converting geos (Maharashtra especially). If leads/connections drop materially with no offsetting gain, revert - remove Punjab from this ad sets excluded_geo_locations.regions, back to Gujarat+Karnataka only."
-  },
-  "KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED": {
-    "id": "KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "First Love | Cold Prospecting Test | USA-CA (campaign 52558954003380) - new Australia ad set, built PAUSED only, net-new Rs100/day NOT activated by this plan",
-    "follow_up": "Awaiting Suraj's Telegram approval for the BUILD (PAUSED) only. If APPROVED: marketing-lead builds the ad set + ad exactly as specified, both PAUSED, runs the verification steps above, confirms the product-map entry, logs a linked type:change entry. Activation is explicitly NOT covered by this approval and must be re-asked as its own decision once: (1) the ceiling-compliance watch shows a full clean week against the current Rs6,500/day ceiling, AND (2) the Rs20/day nominal-ceiling gap this plan identified (Rs6,420 current + Rs100 new = Rs6,520, over today's Rs6,500 ceiling) is resolved via a trim elsewhere or an explicit ceiling increase - re-verify the current total fresh again at that time, do not reuse this plan's figures."
   },
   "KL-2026-10-19-ML-FOLLOWERGROWTH-ADAPAUSE-EXECUTED": {
     "id": "KL-2026-10-19-ML-FOLLOWERGROWTH-ADAPAUSE-EXECUTED",
