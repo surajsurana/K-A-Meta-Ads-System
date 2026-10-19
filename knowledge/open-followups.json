@@ -293,13 +293,6 @@
     "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
     "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-19-CS-FOLLOWERGROWTH-ADAPAUSE": {
-    "id": "KL-2026-10-19-CS-FOLLOWERGROWTH-ADAPAUSE",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Profile Visits | India follower growth - full-week post-Ad-B-pause reading improved but not recovered (Rs3.88/follower vs Rs1.11-2.32 target) - DISPOSITION: pause Ad A too, per the pre-committed rollback criteria 2nd branch, as a root-cause investigation step",
-    "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad A (52551760703580) under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget change. LOW RISK (non-lead-gen objective, no budget field touched, Rs100/day ad set). At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 active and reports back for the root-cause read described above."
-  },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
     "date": "2026-10-19",
@@ -334,6 +327,13 @@
     "type": "decision",
     "subject": "@priyaas_makeoverr Reel 18101705564056757 (instagram.com/reel/DeoMHQzsur8/) - five-way disposition call: TEST in a new ad/ad-set, pending Suraj confirmation",
     "follow_up": "Awaiting Suraj approval via Telegram. If approved, hand to creative-copywriter for product identification (section 3d) and brief; media-buyer validates the resulting ad build separately before any approval-to-launch."
+  },
+  "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE": {
+    "id": "KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Profile Visits | India (ad set 52538161512180) - pause Ad A ('Four Techniques, One Sage Green Silhouette', ad 52551760703580), root-cause diagnostic step, no budget change",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead pauses ad 52551760703580, verifies, logs a linked type:change entry. At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 (52538162380380) active. ROLLBACK CRITERIA: if cost/follower recovers toward the Rs1.11-2.32 band with only Fresh Content Jul23 running, that supports A+B collectively diluting an otherwise-healthy asset - keep Ad A paused, no reactivation needed. If it does NOT recover even then, that points away from any specific ad and toward a broader cause (seasonal IG shift, organic reach decline, or Rs100/day being too small for current CPMs) - at that point do NOT reactivate Ad A as a reflex; escalate to campaign-strategist for a strategic rethink of this test rather than further ad-level pausing. If reactivation is ever decided, revert: status PAUSED -> ACTIVE on 52551760703580."
   },
   "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP": {
     "id": "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP",
