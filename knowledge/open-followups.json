@@ -328,6 +328,13 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
+  "KL-2026-10-19-PA-CHAMPAGNENEUTRAL-DAYBYDAY-RECHECK": {
+    "id": "KL-2026-10-19-PA-CHAMPAGNENEUTRAL-DAYBYDAY-RECHECK",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Champagne Gold Neutral Text Test (ad 52559623981980) day-by-day re-check, due ~2026-10-19/20 per KL-2026-10-13-CS-CTRDECLINE-FINALVERDICT's own follow_up - cost/conv recovered to baseline post-confound-window",
+    "follow_up": "Route to campaign-strategist for the final stop-rule verdict on ad 52559623981980, using this clean post-confound data. This also unblocks the queued Metallic Coffee Brown/Burnt Orange/KAFL018-refresh activation sequencing decisions on the same shared ad set 6862975169176 budget pool (KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD), since the structural blocker (Champagne Gold stop-rule unresolved) that held them back is now answerable."
+  },
   "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE": {
     "id": "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE",
     "date": "2026-10-19",
