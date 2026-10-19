@@ -251,13 +251,6 @@
     "subject": "DOB coverage 6.76% (44/651), mean age 33.44, 25-34 bracket dominant in both known-DOB (63.6%) and Meta delivery (60% of spend) - ACKNOWLEDGED, no targeting change this cycle",
     "follow_up": "Continue tracking DOB coverage weekly; re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual."
   },
-  "KL-2026-10-15-CS-SCALEINTEL-NOTYET": {
-    "id": "KL-2026-10-15-CS-SCALEINTEL-NOTYET",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "Scale Intelligence (section 3e) weekly call - should the Rs6,500 ceiling go up this cycle? NOT YET, for two independent reasons",
-    "follow_up": "Re-ask the ceiling-step question at the next weekly/twice-weekly review. Two conditions should both be in place before saying yes: (1) the ceiling-compliance watch on India Insta Engaged has actually resolved (full week trending back under ceiling, expected ~2026-10-19), and (2) the India Insta Engaged headroom signal (flat frequency, falling CPM) holds for a second consecutive clean weekly check after that resolution, not just this first instance - consistent with the sustained-not-single-week bar."
-  },
   "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
     "id": "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT",
     "date": "2026-10-15",
@@ -355,6 +348,13 @@
     "type": "observation",
     "subject": "Gujarat/Karnataka/Punjab geo-exclusion residual-spend recheck (per KL-2026-10-15-CS-GEOLEAKAGE-WATCH follow_up) - Gujarat/Karnataka grew per-day, Punjab roughly flat",
     "follow_up": "Route to campaign-strategist: per the watch's own pre-committed criteria, this data indicates (1) accepting Gujarat/Karnataka residual as a platform floor rather than further ad-set tightening, and (2) considering extending Punjab's reduced-targeting exclusion to Broad Advantage+. Not deciding either here - campaign-strategist's call."
+  },
+  "KL-2026-10-19-PA-SCALEINTEL-WEEKLY": {
+    "id": "KL-2026-10-19-PA-SCALEINTEL-WEEKLY",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Scale Intelligence weekly pull - neither KL-2026-10-15-CS-SCALEINTEL-NOTYET condition has resolved; October tracking as the historically-strongest seasonal month",
+    "follow_up": "Route to campaign-strategist: neither pre-committed condition for a ceiling step has resolved yet (ceiling compliance still bouncing above/below, 2 of last 6 days over). Re-ask again next review. Separately note 16th May's CPM is drifting up (not flat) even though frequency remains excellent - worth factoring into whichever ad set is eventually chosen as the step candidate."
   },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
