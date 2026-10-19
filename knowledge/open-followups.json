@@ -300,6 +300,13 @@
     "subject": "Profile Visits | India follower growth - full-week post-Ad-B-pause reading improved but not recovered (Rs3.88/follower vs Rs1.11-2.32 target) - DISPOSITION: pause Ad A too, per the pre-committed rollback criteria 2nd branch, as a root-cause investigation step",
     "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad A (52551760703580) under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget change. LOW RISK (non-lead-gen objective, no budget field touched, Rs100/day ad set). At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 active and reports back for the root-cause read described above."
   },
+  "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
+    "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "UP/Rajasthan single real orders breaking the zero-order streak (KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN) - DISPOSITION: MAINTAIN on UP/Rajasthan/MP, re-open bar refined to be base-rate-consistent; Bihar/Jharkhand/Assam/JK group MAINTAIN, watch threshold tightened given +34.8% spend growth",
+    "follow_up": "No action this cycle on UP/Rajasthan/MP or the Bihar group. Re-open UP/Rajasthan/MP only per the refined bar stated above (frequency exceeding base rate, material spend growth without orders, or unusually high AOV/ROAS on a new order) - not on a single order alone. Re-check the Bihar/Jharkhand/Assam/JK combined spend trend at the very next review given its directional growth toward its own re-open bar."
+  },
   "KL-2026-10-19-CS-GEOLEAKAGE-DISPOSITION": {
     "id": "KL-2026-10-19-CS-GEOLEAKAGE-DISPOSITION",
     "date": "2026-10-19",
@@ -334,13 +341,6 @@
     "type": "observation",
     "subject": "Reverse geo check - Australia lifetime figure now 8 orders/Rs460,000 (up from the 5/Rs226,000 already assessed 2026-08-24), meaningfully larger per that decision's own stated re-open bar; Singapore and Pakistan are new single-lumpy-order zero-spend countries, same thin shape as already-HELD cases",
     "follow_up": "Route to campaign-strategist: Australia's lifetime figure has grown meaningfully (8/Rs460,000, multi-city, multi-customer, zero acquisition spend) and now exceeds the account's own prior re-open bar - worth a fresh disposition call, not an automatic HOLD continuation. Singapore/Pakistan noted but not escalated on their own (same single-order shape as already-HELD cases) - revisit only if either produces a second order."
-  },
-  "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN": {
-    "id": "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "UP/Rajasthan zero-order streak each broken by 1 real order in trailing 60 days; Madhya Pradesh continues at zero - fact pattern behind the 2026-09-21 MAINTAIN decision has changed",
-    "follow_up": "Route to campaign-strategist: re-assess the UP/Rajasthan/MP geography disposition now that 2 of the 3 have produced a real (if thin) order in the trailing 60 days - this breaks the original MAINTAIN's own stated re-open condition for those two specifically; MP alone now continues the original zero-order pattern. Also flag the Bihar/Jharkhand/Assam/JK group's +34.8% spend growth as approaching, not yet past, that group's own stated re-open bar."
   },
   "KL-2026-10-19-PA-SCALEINTEL-WEEKLY": {
     "id": "KL-2026-10-19-PA-SCALEINTEL-WEEKLY",
