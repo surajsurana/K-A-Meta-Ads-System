@@ -265,13 +265,6 @@
     "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
     "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
-  "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD": {
-    "id": "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD",
-    "date": "2026-10-16",
-    "type": "change",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - 4th ad built, KAFL018 Barbie Pink refresh, PAUSED",
-    "follow_up": "Not activated by this entry, per explicit sequencing hold - activation must wait for the Champagne Gold Neutral Text Test stop-rule resolution (~2026-10-19/20, KL-2026-10-15-CS-KAFL010-SEQUENCEHOLD), and should be sequenced alongside the Metallic Coffee Brown/Burnt Orange reactivation decisions on this same Rs720/day pool. At that time, also address whether to pause the existing stale KAFL018 ad (52547120579980) in favor of this refresh."
-  },
   "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC": {
     "id": "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC",
     "date": "2026-10-17",
@@ -300,19 +293,19 @@
     "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
     "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-19-CS-CHAMPAGNENEUTRAL-VALIDATED": {
-    "id": "KL-2026-10-19-CS-CHAMPAGNENEUTRAL-VALIDATED",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Champagne Gold Neutral Text Test (ad 52559623981980) stop-rule final verdict - VALIDATED, neutral text confirmed as the fix, no further action on this ad",
-    "follow_up": "No further monitoring needed on this specific ad beyond the ad sets normal standing checks. See KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE for the resulting activation decisions this unblocks."
-  },
   "KL-2026-10-19-CS-HANDOFF": {
     "id": "KL-2026-10-19-CS-HANDOFF",
     "date": "2026-10-19",
     "type": "observation",
     "subject": "Handoff to campaign-strategist - 2 items for the five-way disposition call (use in existing ad / new ad-set test / new campaign / hold / reject)",
     "follow_up": "Awaiting campaign-strategists disposition call on both items."
+  },
+  "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE": {
+    "id": "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25, Rs720/day shared ABO pool) - staggered activation plan for the 3 builds queued behind the now-resolved Champagne Gold stop-rule (KAFL018 Barbie Pink refresh, Metallic Coffee Brown, Burnt Orange)",
+    "follow_up": "Route to media-buyer: validate and prepare step 1 (activate 52562108793580, pause 52547120579980, no budget change) for this cycles approval. Step 2 (activate 52552969628580) is not due until ~2026-10-24 - do not build/send for approval before then. Step 3 (activate 52552969630380) is not due until ~2026-10-29 and is contingent on step 2s clean read."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
