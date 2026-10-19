@@ -244,13 +244,6 @@
     "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
     "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-15-CS-DMREDIRECT-REESCALATE": {
-    "id": "KL-2026-10-15-CS-DMREDIRECT-REESCALATE",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "Staff DM-redirect WhatsApp-only-policy violation, 3rd confirmed recurrence after the 2026-09-28 direct escalation to Suraj - RECOMMEND RE-ESCALATING, agree with social-community-manager's default lean",
-    "follow_up": "Include in the consolidated digest as a direct re-escalation to Suraj, with the concrete ask (is the approved reply text actually accessible to whoever is replying) rather than a bare repeat-flag."
-  },
   "KL-2026-10-15-CS-DOBCOVERAGE-ACK": {
     "id": "KL-2026-10-15-CS-DOBCOVERAGE-ACK",
     "date": "2026-10-15",
@@ -341,6 +334,13 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (2 items) - price/availability WhatsApp redirect",
     "follow_up": "Awaiting Telegram approval."
+  },
+  "KL-2026-10-19-dmredirect-watch-no-recurrence": {
+    "id": "KL-2026-10-19-dmredirect-watch-no-recurrence",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked explicitly for a 4th post-escalation recurrence this cycle, NONE found",
+    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern genuinely stops or Suraj responds to the re-escalation (concrete ask: whether whoever replies live has the approved text readily accessible)."
   },
   "KL-2026-10-19-ugc-tags": {
     "id": "KL-2026-10-19-ugc-tags",
