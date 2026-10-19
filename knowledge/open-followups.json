@@ -265,13 +265,6 @@
     "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
     "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
-  "KL-2026-10-16-022630": {
-    "id": "KL-2026-10-16-022630",
-    "date": "2026-10-16",
-    "type": "observation",
-    "subject": "KL-2026-10-15-comment-batch",
-    "follow_up": "re-check 2026-10-19: if plan KL-2026-10-15-comment-batch is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD": {
     "id": "KL-2026-10-16-ML-KAFL018-BARBIEPINK-REFRESH-BUILD",
     "date": "2026-10-16",
@@ -299,6 +292,13 @@
     "type": "change",
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
+  },
+  "KL-2026-10-19-003912": {
+    "id": "KL-2026-10-19-003912",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
+    "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
   "KL-2026-10-19-CS-HANDOFF": {
     "id": "KL-2026-10-19-CS-HANDOFF",
