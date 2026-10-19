@@ -328,19 +328,19 @@
     "subject": "First Love | Cold Prospecting Test | USA-CA (campaign 52558954003380) - new Australia ad set, built PAUSED only, net-new Rs100/day NOT activated by this plan",
     "follow_up": "Awaiting Suraj's Telegram approval for the BUILD (PAUSED) only. If APPROVED: marketing-lead builds the ad set + ad exactly as specified, both PAUSED, runs the verification steps above, confirms the product-map entry, logs a linked type:change entry. Activation is explicitly NOT covered by this approval and must be re-asked as its own decision once: (1) the ceiling-compliance watch shows a full clean week against the current Rs6,500/day ceiling, AND (2) the Rs20/day nominal-ceiling gap this plan identified (Rs6,420 current + Rs100 new = Rs6,520, over today's Rs6,500 ceiling) is resolved via a trim elsewhere or an explicit ceiling increase - re-verify the current total fresh again at that time, do not reuse this plan's figures."
   },
-  "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP": {
-    "id": "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - step 1 of staggered activation sequence: activate KAFL018 Barbie Pink refresh ad, pause stale original KAFL018 ad, same ad set, no budget change",
-    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead executes exactly this swap (activate 52562108793580, pause 52547120579980), runs the verification steps above, logs a linked type:change entry. Step 2 (activate Metallic Coffee Brown 52552969628580) is not due before 2026-10-24 - do not build/send before then. Step 3 (activate Burnt Orange 52552969630380) is not due before ~2026-10-29 and is contingent on step 2's clean read. At the next review after step 3 lands, flag that 5 ads sharing this fixed Rs720/day pool is getting crowded and performance-analyst/campaign-strategist should assess retiring the oldest/weakest performer rather than stacking indefinitely."
-  },
   "KL-2026-10-19-MB-PUNJAB-BROADADVPLUS-EXCLUSION": {
     "id": "KL-2026-10-19-MB-PUNJAB-BROADADVPLUS-EXCLUSION",
     "date": "2026-10-19",
     "type": "decision",
     "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) - extend Punjab geo-exclusion to this ad set, targeting-only, no budget change",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead re-GETs targeting fresh immediately before writing, POSTs the full targeting object with Punjab added to excluded_geo_locations.regions, verifies, logs a linked type:change entry. VERIFICATION STEPS: pre-write fresh GET /52535906903180?fields=targeting confirms current state matches this plan's capture (abort/re-plan if drifted); post-write fresh GET confirms excluded_geo_locations.regions includes Gujarat, Karnataka, and Punjab (key 1742), every other targeting field byte-identical to the pre-write capture, daily_budget still 100000, status ACTIVE. ROLLBACK CRITERIA: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set drops toward zero, and checks (1) total account messaging connections/leads do not materially drop, (2) freed delivery lands in better-converting geos (Maharashtra especially). If leads/connections drop materially with no offsetting gain, revert - remove Punjab from this ad set's excluded_geo_locations.regions, back to Gujarat+Karnataka only."
+  },
+  "KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTED": {
+    "id": "KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTED",
+    "date": "2026-10-19",
+    "type": "change",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - executed step 1 swap: activated KAFL018 Barbie Pink refresh ad, paused stale original KAFL018 ad",
+    "follow_up": "Monitor refresh ad 52562108793580 effective_status settles cleanly to ACTIVE (not WITH_ISSUES/DISAPPROVED) in the next check. Step 2 (Metallic Coffee Brown) remains not due before 2026-10-24."
   },
   "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP": {
     "id": "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP",
