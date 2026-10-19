@@ -314,13 +314,6 @@
     "subject": "Gujarat/Karnataka/Punjab geo-exclusion residual-spend watch (KL-2026-10-19-PA-GEOLEAKAGE-RECHECK) - DISPOSITION: Gujarat/Karnataka MAINTAIN (accept as platform floor); Punjab EXCLUSION extended to Broad Advantage+",
     "follow_up": "Route to media-buyer: validate and prepare a targeting-only plan adding Punjab to the geo_locations exclusion list on ad set 52535906903180 (First Love | Broad Advantage+ | India), alongside its existing Gujarat/Karnataka exclusion. No budget field touched. No further action needed on Gujarat/Karnataka this cycle - watch closed on that half, standing low-key monitoring only."
   },
-  "KL-2026-10-19-CS-HANDOFF": {
-    "id": "KL-2026-10-19-CS-HANDOFF",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist - 2 items for the five-way disposition call (use in existing ad / new ad-set test / new campaign / hold / reject)",
-    "follow_up": "Awaiting campaign-strategists disposition call on both items."
-  },
   "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE": {
     "id": "KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE",
     "date": "2026-10-19",
@@ -334,6 +327,13 @@
     "type": "decision",
     "subject": "Scale Intelligence (section 3e) weekly call - ceiling stays at Rs6,500/day, NOT YET for a step-up; portfolio budget allocation check (four-part, per section 3a) shows Rs0 net change proposed this cycle and an unresolved pre-existing compliance gap",
     "follow_up": "Re-ask both the ceiling-compliance and ceiling-step questions at the next review. Conditions for a yes, unchanged from last cycle: (1) a full week showing consistent compliance with the current Rs6,500 ceiling (no breach days), AND (2) a second consecutive clean headroom check on whichever ad set is the step candidate at that time, with CPM genuinely flat/falling, not just frequency. Do not treat October seasonality alone as sufficient justification when either condition is still open."
+  },
+  "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION": {
+    "id": "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "@priyaas_makeoverr Reel 18101705564056757 (instagram.com/reel/DeoMHQzsur8/) - five-way disposition call: TEST in a new ad/ad-set, pending Suraj confirmation",
+    "follow_up": "Awaiting Suraj approval via Telegram. If approved, hand to creative-copywriter for product identification (section 3d) and brief; media-buyer validates the resulting ad build separately before any approval-to-launch."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
