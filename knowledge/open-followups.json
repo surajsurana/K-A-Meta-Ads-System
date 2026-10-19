@@ -328,6 +328,13 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
+  "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE": {
+    "id": "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE",
+    "date": "2026-10-19",
+    "type": "observation",
+    "subject": "Reverse geo check - Australia lifetime figure now 8 orders/Rs460,000 (up from the 5/Rs226,000 already assessed 2026-08-24), meaningfully larger per that decision's own stated re-open bar; Singapore and Pakistan are new single-lumpy-order zero-spend countries, same thin shape as already-HELD cases",
+    "follow_up": "Route to campaign-strategist: Australia's lifetime figure has grown meaningfully (8/Rs460,000, multi-city, multi-customer, zero acquisition spend) and now exceeds the account's own prior re-open bar - worth a fresh disposition call, not an automatic HOLD continuation. Singapore/Pakistan noted but not escalated on their own (same single-order shape as already-HELD cases) - revisit only if either produces a second order."
+  },
   "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN": {
     "id": "KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN",
     "date": "2026-10-19",
