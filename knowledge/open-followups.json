@@ -300,6 +300,13 @@
     "subject": "Profile Visits | India follower growth - full-week post-Ad-B-pause reading improved but not recovered (Rs3.88/follower vs Rs1.11-2.32 target) - DISPOSITION: pause Ad A too, per the pre-committed rollback criteria 2nd branch, as a root-cause investigation step",
     "follow_up": "Route to media-buyer: validate and prepare a pause plan for Ad A (52551760703580) under ad set 52538161512180 - status ACTIVE -> PAUSED, no budget change. LOW RISK (non-lead-gen objective, no budget field touched, Rs100/day ad set). At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 active and reports back for the root-cause read described above."
   },
+  "KL-2026-10-19-CS-GEO-AUSTRALIA-REOPEN": {
+    "id": "KL-2026-10-19-CS-GEO-AUSTRALIA-REOPEN",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "Australia reverse-geo finding (KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE, lifetime now 8 orders/Rs460,000, 8 distinct cities/customers, Rs0 acquisition spend) - DISPOSITION: GEOGRAPHIC AD-SET TEST on strategic merits, but build PAUSED and defer budget commitment until the account-wide ceiling-compliance watch resolves (see KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK)",
+    "follow_up": "Route to media-buyer: validate and prepare a PAUSED build for a new Australia-targeted ad set (structure/placement left to media-buyer, reusing First Love/Insta Engaged creative, lead-gen/messaging objective, Rs100/day net-new specified but NOT activated). Re-ask activation/budget-commitment timing at the next review once the ceiling-compliance watch resolves. No action on Singapore/Pakistan this cycle."
+  },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
     "date": "2026-10-19",
@@ -334,20 +341,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
-  },
-  "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE": {
-    "id": "KL-2026-10-19-PA-GEO-REVERSE-AUSTRALIA-UPDATE",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "Reverse geo check - Australia lifetime figure now 8 orders/Rs460,000 (up from the 5/Rs226,000 already assessed 2026-08-24), meaningfully larger per that decision's own stated re-open bar; Singapore and Pakistan are new single-lumpy-order zero-spend countries, same thin shape as already-HELD cases",
-    "follow_up": "Route to campaign-strategist: Australia's lifetime figure has grown meaningfully (8/Rs460,000, multi-city, multi-customer, zero acquisition spend) and now exceeds the account's own prior re-open bar - worth a fresh disposition call, not an automatic HOLD continuation. Singapore/Pakistan noted but not escalated on their own (same single-order shape as already-HELD cases) - revisit only if either produces a second order."
-  },
-  "KL-2026-10-19-PA-SCALEINTEL-WEEKLY": {
-    "id": "KL-2026-10-19-PA-SCALEINTEL-WEEKLY",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "Scale Intelligence weekly pull - neither KL-2026-10-15-CS-SCALEINTEL-NOTYET condition has resolved; October tracking as the historically-strongest seasonal month",
-    "follow_up": "Route to campaign-strategist: neither pre-committed condition for a ceiling step has resolved yet (ceiling compliance still bouncing above/below, 2 of last 6 days over). Re-ask again next review. Separately note 16th May's CPM is drifting up (not flat) even though frequency remains excellent - worth factoring into whichever ad set is eventually chosen as the step candidate."
   },
   "KL-2026-10-19-ambiguous-comment": {
     "id": "KL-2026-10-19-ambiguous-comment",
