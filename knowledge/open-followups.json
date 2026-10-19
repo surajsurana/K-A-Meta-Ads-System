@@ -300,13 +300,6 @@
     "subject": "UP/Rajasthan single real orders breaking the zero-order streak (KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN) - DISPOSITION: MAINTAIN on UP/Rajasthan/MP, re-open bar refined to be base-rate-consistent; Bihar/Jharkhand/Assam/JK group MAINTAIN, watch threshold tightened given +34.8% spend growth",
     "follow_up": "No action this cycle on UP/Rajasthan/MP or the Bihar group. Re-open UP/Rajasthan/MP only per the refined bar stated above (frequency exceeding base rate, material spend growth without orders, or unusually high AOV/ROAS on a new order) - not on a single order alone. Re-check the Bihar/Jharkhand/Assam/JK combined spend trend at the very next review given its directional growth toward its own re-open bar."
   },
-  "KL-2026-10-19-CS-GEOLEAKAGE-DISPOSITION": {
-    "id": "KL-2026-10-19-CS-GEOLEAKAGE-DISPOSITION",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Gujarat/Karnataka/Punjab geo-exclusion residual-spend watch (KL-2026-10-19-PA-GEOLEAKAGE-RECHECK) - DISPOSITION: Gujarat/Karnataka MAINTAIN (accept as platform floor); Punjab EXCLUSION extended to Broad Advantage+",
-    "follow_up": "Route to media-buyer: validate and prepare a targeting-only plan adding Punjab to the geo_locations exclusion list on ad set 52535906903180 (First Love | Broad Advantage+ | India), alongside its existing Gujarat/Karnataka exclusion. No budget field touched. No further action needed on Gujarat/Karnataka this cycle - watch closed on that half, standing low-key monitoring only."
-  },
   "KL-2026-10-19-CS-LOOMIERE-DISPOSITION": {
     "id": "KL-2026-10-19-CS-LOOMIERE-DISPOSITION",
     "date": "2026-10-19",
@@ -341,6 +334,13 @@
     "type": "decision",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - step 1 of staggered activation sequence: activate KAFL018 Barbie Pink refresh ad, pause stale original KAFL018 ad, same ad set, no budget change",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead executes exactly this swap (activate 52562108793580, pause 52547120579980), runs the verification steps above, logs a linked type:change entry. Step 2 (activate Metallic Coffee Brown 52552969628580) is not due before 2026-10-24 - do not build/send before then. Step 3 (activate Burnt Orange 52552969630380) is not due before ~2026-10-29 and is contingent on step 2's clean read. At the next review after step 3 lands, flag that 5 ads sharing this fixed Rs720/day pool is getting crowded and performance-analyst/campaign-strategist should assess retiring the oldest/weakest performer rather than stacking indefinitely."
+  },
+  "KL-2026-10-19-MB-PUNJAB-BROADADVPLUS-EXCLUSION": {
+    "id": "KL-2026-10-19-MB-PUNJAB-BROADADVPLUS-EXCLUSION",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "First Love | Broad Advantage+ | India (ad set 52535906903180) - extend Punjab geo-exclusion to this ad set, targeting-only, no budget change",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead re-GETs targeting fresh immediately before writing, POSTs the full targeting object with Punjab added to excluded_geo_locations.regions, verifies, logs a linked type:change entry. VERIFICATION STEPS: pre-write fresh GET /52535906903180?fields=targeting confirms current state matches this plan's capture (abort/re-plan if drifted); post-write fresh GET confirms excluded_geo_locations.regions includes Gujarat, Karnataka, and Punjab (key 1742), every other targeting field byte-identical to the pre-write capture, daily_budget still 100000, status ACTIVE. ROLLBACK CRITERIA: over the following 2-4 weeks, performance-analyst re-pulls /insights?breakdowns=region to confirm Punjab spend on this ad set drops toward zero, and checks (1) total account messaging connections/leads do not materially drop, (2) freed delivery lands in better-converting geos (Maharashtra especially). If leads/connections drop materially with no offsetting gain, revert - remove Punjab from this ad set's excluded_geo_locations.regions, back to Gujarat+Karnataka only."
   },
   "KL-2026-10-19-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
