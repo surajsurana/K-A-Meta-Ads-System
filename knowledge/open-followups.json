@@ -307,13 +307,6 @@
     "subject": "LOOMIERE festive 2026 teaser posts (Reel 17964527067230906, carousel 17991984456103781) - five-way disposition call: HOLD, no SKU/CTA to attach spend or tracking to yet",
     "follow_up": "Social-community-managers next sweep should watch specifically for a LOOMIERE product/SKU reveal post and hand off again at that point for a fresh five-way call (most likely use-in-existing-ad or new-campaign once a real CTA exists). No Suraj approval needed for this HOLD itself."
   },
-  "KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK": {
-    "id": "KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Scale Intelligence (section 3e) weekly call - ceiling stays at Rs6,500/day, NOT YET for a step-up; portfolio budget allocation check (four-part, per section 3a) shows Rs0 net change proposed this cycle and an unresolved pre-existing compliance gap",
-    "follow_up": "Re-ask both the ceiling-compliance and ceiling-step questions at the next review. Conditions for a yes, unchanged from last cycle: (1) a full week showing consistent compliance with the current Rs6,500 ceiling (no breach days), AND (2) a second consecutive clean headroom check on whichever ad set is the step candidate at that time, with CPM genuinely flat/falling, not just frequency. Do not treat October seasonality alone as sufficient justification when either condition is still open."
-  },
   "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION": {
     "id": "KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION",
     "date": "2026-10-19",
@@ -327,6 +320,13 @@
     "type": "decision",
     "subject": "Profile Visits | India (ad set 52538161512180) - pause Ad A ('Four Techniques, One Sage Green Silhouette', ad 52551760703580), root-cause diagnostic step, no budget change",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead pauses ad 52551760703580, verifies, logs a linked type:change entry. At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 (52538162380380) active. ROLLBACK CRITERIA: if cost/follower recovers toward the Rs1.11-2.32 band with only Fresh Content Jul23 running, that supports A+B collectively diluting an otherwise-healthy asset - keep Ad A paused, no reactivation needed. If it does NOT recover even then, that points away from any specific ad and toward a broader cause (seasonal IG shift, organic reach decline, or Rs100/day being too small for current CPMs) - at that point do NOT reactivate Ad A as a reflex; escalate to campaign-strategist for a strategic rethink of this test rather than further ad-level pausing. If reactivation is ever decided, revert: status PAUSED -> ACTIVE on 52551760703580."
+  },
+  "KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED": {
+    "id": "KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED",
+    "date": "2026-10-19",
+    "type": "decision",
+    "subject": "First Love | Cold Prospecting Test | USA-CA (campaign 52558954003380) - new Australia ad set, built PAUSED only, net-new Rs100/day NOT activated by this plan",
+    "follow_up": "Awaiting Suraj's Telegram approval for the BUILD (PAUSED) only. If APPROVED: marketing-lead builds the ad set + ad exactly as specified, both PAUSED, runs the verification steps above, confirms the product-map entry, logs a linked type:change entry. Activation is explicitly NOT covered by this approval and must be re-asked as its own decision once: (1) the ceiling-compliance watch shows a full clean week against the current Rs6,500/day ceiling, AND (2) the Rs20/day nominal-ceiling gap this plan identified (Rs6,420 current + Rs100 new = Rs6,520, over today's Rs6,500 ceiling) is resolved via a trim elsewhere or an explicit ceiling increase - re-verify the current total fresh again at that time, do not reuse this plan's figures."
   },
   "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP": {
     "id": "KL-2026-10-19-MB-KAFL018POOL-STEP1-SWAP",
