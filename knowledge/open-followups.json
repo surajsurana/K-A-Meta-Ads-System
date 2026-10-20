@@ -355,5 +355,12 @@
     "type": "outcome",
     "subject": "Daily heartbeat paused-build activation sweep - First Love | Cold Prospecting | Australia (ad set 52562820202180) - both activation gating conditions re-verified fresh, BOTH still unmet, activation correctly remains gated, one day after build",
     "follow_up": "Re-check again on a future daily heartbeat paused-build activation sweep. Condition 1 (full clean week, no breach day) cannot be assessed as met until at least 7 consecutive clean days follow the most recent breach (now 2026-10-19) - earliest possible clean-week confirmation would be around 2026-10-27, assuming no further breach in between. Condition 2 (nominal Rs20/day gap) requires either a trim elsewhere or an explicit ceiling increase from Suraj, re-verified fresh at that time, not reused from this entry's figures."
+  },
+  "KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE": {
+    "id": "KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE",
+    "date": "2026-10-20",
+    "type": "decision",
+    "subject": "Rs6,500 ceiling-watch escalation trigger has fired for the first time (2 of 3 consecutive days, 10-18/10-19, breached within the 10-17/18/19 window) - independent read: ESCALATE, do not accept as confound settling noise; fresh per-ad-set breakdown shows the two named confounds (Broad Advantage+ churn, KAFL018/Whatsapp sequence) are NOT the drivers",
+    "follow_up": "media-buyer to independently re-verify the ceiling math and every listed ad sets current daily_budget/status fresh (hard rule 6), decide whether to adopt this exact trim list or refine it, prepare an exact execution plan (old->new per ad set, rollback criteria, verification steps), explicitly state the Australia ad sets activation gate is NOT met and stays open, and route the resulting plan plus the day-cap-vs-weekly-average policy question to Suraj for approval before any live write."
   }
 }
