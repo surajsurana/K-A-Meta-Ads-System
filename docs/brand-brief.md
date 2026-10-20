@@ -6,7 +6,7 @@
 Luxury Indo-Western occasion and bridal couture — structured corsets, lehengas, sarees, and drape ensembles. Signature pieces: sculpted corset silhouettes, hand-embellishment (zari, cutdana, crystal), bold color stories (sapphire, maroon, electric blue, mustard, fuchsia).
 
 ## Price tier
-₹30,000 – ₹280,000+ per piece (INR). This is a considered, high-involvement purchase, not an impulse buy. Ads and landing experiences should never read as discount- or volume-driven.
+₹30,000 – ₹4,80,000+ per piece (INR; updated 2026-10-20 by Suraj to match the lowest and highest prices live on the website, with + because pieces can cost more than listed). This is a considered, high-involvement purchase, not an impulse buy. Ads and landing experiences should never read as discount- or volume-driven.
 
 *(Updated 2026-07-22, second correction same day: entry price corrected from ₹38,000 to ₹30,000 — Suraj confirmed live products priced at ₹30,000 are correct, not a data error. Meta Ads team: flag if this affects existing ad copy/targeting.)*
 
