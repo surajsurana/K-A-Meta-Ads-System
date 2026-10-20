@@ -272,13 +272,6 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - ad set + ad flipped PAUSED -> ACTIVE",
     "follow_up": "Per the plans own rollback_criteria: pause both objects immediately if effective_status ever shows WITH_ISSUES/DISAPPROVED. After a 2-week minimum comparable-window read, if cost per messaging_conversation_started is materially worse than the First Love | Broad Advantage+ baseline with no improving trend, pause this ad set entirely. Separately, if the open account-wide ceiling-watch (through 2026-10-19) shows a fresh, worsening breach clearly correlated with this ad sets own delivery pacing, route that judgment to campaign-strategist rather than acting unilaterally."
   },
-  "KL-2026-10-18-ML-16THMAY-ICEBLUE-REACTIVATE-EXEC": {
-    "id": "KL-2026-10-18-ML-16THMAY-ICEBLUE-REACTIVATE-EXEC",
-    "date": "2026-10-18",
-    "type": "change",
-    "subject": "Ad 'Ice Blue KAFL026' (52562107907380) in ad set '16th May 26 | India' (6968778736776) -- activated per direct user approval via authenticated Telegram button tap",
-    "follow_up": "Recheck ad 52562107907380 effective_status within 24h to confirm it settled to ACTIVE (not stuck IN_PROCESS and not DISAPPROVED/WITH_ISSUES). Then observe the ad set for 3-5 days against the rollback criteria stated in the approved plan (CPM, frequency, actual spend, issues_info, account-ceiling attribution)."
-  },
   "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC": {
     "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC",
     "date": "2026-10-18",
@@ -356,11 +349,11 @@
     "subject": "Daily heartbeat paused-build activation sweep - First Love | Cold Prospecting | Australia (ad set 52562820202180) - both activation gating conditions re-verified fresh, BOTH still unmet, activation correctly remains gated, one day after build",
     "follow_up": "Re-check again on a future daily heartbeat paused-build activation sweep. Condition 1 (full clean week, no breach day) cannot be assessed as met until at least 7 consecutive clean days follow the most recent breach (now 2026-10-19) - earliest possible clean-week confirmation would be around 2026-10-27, assuming no further breach in between. Condition 2 (nominal Rs20/day gap) requires either a trim elsewhere or an explicit ceiling increase from Suraj, re-verified fresh at that time, not reused from this entry's figures."
   },
-  "KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE": {
-    "id": "KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE",
+  "KL-2026-10-20-MB-CEILINGTRIM-VALIDATED": {
+    "id": "KL-2026-10-20-MB-CEILINGTRIM-VALIDATED",
     "date": "2026-10-20",
     "type": "decision",
-    "subject": "Rs6,500 ceiling-watch escalation trigger has fired for the first time (2 of 3 consecutive days, 10-18/10-19, breached within the 10-17/18/19 window) - independent read: ESCALATE, do not accept as confound settling noise; fresh per-ad-set breakdown shows the two named confounds (Broad Advantage+ churn, KAFL018/Whatsapp sequence) are NOT the drivers",
-    "follow_up": "media-buyer to independently re-verify the ceiling math and every listed ad sets current daily_budget/status fresh (hard rule 6), decide whether to adopt this exact trim list or refine it, prepare an exact execution plan (old->new per ad set, rollback criteria, verification steps), explicitly state the Australia ad sets activation gate is NOT met and stays open, and route the resulting plan plus the day-cap-vs-weekly-average policy question to Suraj for approval before any live write."
+    "subject": "Rs6,500 ceiling-watch escalation trigger (KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE) - independent validation of the proposed 10-ad-set trim; CORRECTED to 7 ad sets after finding 3 of the 10 are themselves mid an unsettled change CS missed",
+    "follow_up": "Awaiting Suraj Telegram approval on this plan (KL-2026-10-20-MB-CEILINGTRIM-VALIDATED). If approved, marketing-lead executes the 7 daily_budget changes verbatim and logs a linked type=change entry. Re-check the 3 additionally-excluded ad sets for inclusion in a future trim once their own settling windows close (16th May ~10-21/23, Gold Sculpted ~10-24, Profile Visits after its 2026-10-26 diagnostic checkpoint). Suraj's explicit answer also needed on the committed-vs-actual-spend ceiling-interpretation policy question CS raised."
   }
 }
