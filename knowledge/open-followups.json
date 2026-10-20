@@ -293,26 +293,12 @@
     "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
     "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
-  "KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT": {
-    "id": "KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT",
-    "date": "2026-10-19",
-    "type": "decision",
-    "subject": "Rs6,500 ceiling watch, 1-week post-trim checkpoint (KL-2026-10-12-010920 rollback criterion) - PASS on primary criterion; residual single-day volatility (2/7 breach days) ACCEPTED as already-explained structural noise, not a trigger for a further targeted trim",
-    "follow_up": "No further trim this cycle. Continue the standing daily actual-spend watch under the existing revised trigger (any single day >10% over ceiling, OR 2 of any 3 consecutive days breach) - unchanged, did not fire this week, no basis to retune it. Re-examine specifically once the India Whatsapp 9th Dec staggered-activation sequence settles (after step 3, ~2026-10-29) and once Broad Advantage+s own recent targeting/creative churn has had a full week to settle - if single-day spikes persist AFTER both of those settle (i.e. with the currently-known confounds genuinely gone), that would be a materially different, less-explained finding and a targeted trim should be reconsidered at that point. Do not treat this ACCEPT as a standing decision never to trim for volatility - only as todays read that the current spikes are still explained by known, already-settling causes."
-  },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
     "date": "2026-10-19",
     "type": "decision",
     "subject": "UP/Rajasthan single real orders breaking the zero-order streak (KL-2026-10-19-PA-GEO-UPRAJASTHAN-BROKEN) - DISPOSITION: MAINTAIN on UP/Rajasthan/MP, re-open bar refined to be base-rate-consistent; Bihar/Jharkhand/Assam/JK group MAINTAIN, watch threshold tightened given +34.8% spend growth",
     "follow_up": "No action this cycle on UP/Rajasthan/MP or the Bihar group. Re-open UP/Rajasthan/MP only per the refined bar stated above (frequency exceeding base rate, material spend growth without orders, or unusually high AOV/ROAS on a new order) - not on a single order alone. Re-check the Bihar/Jharkhand/Assam/JK combined spend trend at the very next review given its directional growth toward its own re-open bar."
-  },
-  "KL-2026-10-19-EXEC-AUSTRALIABUILD": {
-    "id": "KL-2026-10-19-EXEC-AUSTRALIABUILD",
-    "date": "2026-10-19",
-    "type": "change",
-    "subject": "Built 1 new PAUSED ad set + 1 new PAUSED ad (First Love | Cold Prospecting | Australia) per approved plan KL-2026-10-19-MB-GEO-AUSTRALIA-BUILD-PAUSED",
-    "follow_up": "Activation of this ad set is explicitly NOT authorized by this execution - it is a separate future decision, gated on (1) the ceiling-compliance watch (KL-2026-10-19-CS-SCALEINTEL-BUDGETCHECK) showing a full clean week against the Rs6,500/day ceiling, AND (2) the Rs20/day nominal-ceiling gap the build plan identified (Rs6,420 current + Rs100 new = Rs6,520, over todays Rs6,500 ceiling) being resolved via a trim elsewhere or an explicit ceiling increase - re-verify the current total fresh again at that time, do not reuse this entrys figures."
   },
   "KL-2026-10-19-EXEC-PUNJAB-BROADADVPLUS-EXCLUSION": {
     "id": "KL-2026-10-19-EXEC-PUNJAB-BROADADVPLUS-EXCLUSION",
@@ -362,5 +348,12 @@
     "type": "observation",
     "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked explicitly for a 4th post-escalation recurrence this cycle, NONE found",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern genuinely stops or Suraj responds to the re-escalation (concrete ask: whether whoever replies live has the approved text readily accessible)."
+  },
+  "KL-2026-10-20-015025": {
+    "id": "KL-2026-10-20-015025",
+    "date": "2026-10-20",
+    "type": "outcome",
+    "subject": "Daily heartbeat paused-build activation sweep - First Love | Cold Prospecting | Australia (ad set 52562820202180) - both activation gating conditions re-verified fresh, BOTH still unmet, activation correctly remains gated, one day after build",
+    "follow_up": "Re-check again on a future daily heartbeat paused-build activation sweep. Condition 1 (full clean week, no breach day) cannot be assessed as met until at least 7 consecutive clean days follow the most recent breach (now 2026-10-19) - earliest possible clean-week confirmation would be around 2026-10-27, assuming no further breach in between. Condition 2 (nominal Rs20/day gap) requires either a trim elsewhere or an explicit ceiling increase from Suraj, re-verified fresh at that time, not reused from this entry's figures."
   }
 }
