@@ -355,5 +355,12 @@
     "type": "decision",
     "subject": "Rs6,500 ceiling-watch escalation trigger (KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE) - independent validation of the proposed 10-ad-set trim; CORRECTED to 7 ad sets after finding 3 of the 10 are themselves mid an unsettled change CS missed",
     "follow_up": "Awaiting Suraj Telegram approval on this plan (KL-2026-10-20-MB-CEILINGTRIM-VALIDATED). If approved, marketing-lead executes the 7 daily_budget changes verbatim and logs a linked type=change entry. Re-check the 3 additionally-excluded ad sets for inclusion in a future trim once their own settling windows close (16th May ~10-21/23, Gold Sculpted ~10-24, Profile Visits after its 2026-10-26 diagnostic checkpoint). Suraj's explicit answer also needed on the committed-vs-actual-spend ceiling-interpretation policy question CS raised."
+  },
+  "KL-2026-10-20-SEO-CONVERSION-FINDINGS": {
+    "id": "KL-2026-10-20-SEO-CONVERSION-FINDINGS",
+    "date": "2026-10-20",
+    "type": "observation",
+    "subject": "website-conversion-findings",
+    "follow_up": "When Website Engineering proposes a Meta Contact event for WhatsApp enquiry clicks, campaign-strategist and media-buyer review it before it goes live."
   }
 }
