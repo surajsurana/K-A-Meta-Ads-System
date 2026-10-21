@@ -362,5 +362,12 @@
     "type": "observation",
     "subject": "website-conversion-findings",
     "follow_up": "When Website Engineering proposes a Meta Contact event for WhatsApp enquiry clicks, campaign-strategist and media-buyer review it before it goes live."
+  },
+  "KL-2026-10-21-WEEKLYSELFCHECK-OPENFOLLOWUPS-NOOP-INDEXBUG": {
+    "id": "KL-2026-10-21-WEEKLYSELFCHECK-OPENFOLLOWUPS-NOOP-INDEXBUG",
+    "date": "2026-10-21",
+    "type": "decision",
+    "subject": "scripts/update-open-followups.py never removes self-closing (\"None...\") follow_ups from the due-now sweep index",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path (steps 18-24) - apply the exact edit to scripts/update-open-followups.py, python3 -m py_compile it, commit+push. This fix only stops NEW self-closing entries from being added - it does not retroactively clean the 20+ already-stale self-closing entries currently sitting in knowledge/open-followups.json. Next interactive session should separately run `python3 scripts/update-open-followups.py --rebuild` once (regenerates the index from a full log scan using the corrected logic) and commit the resulting knowledge/open-followups.json - a one-time data cleanup, not part of this code fix itself.\nSeparately (NOT part of this fix, routed to the monthly self-audit instead per this run's own hard boundary): the dashboard's product-mapped ad-status verification bug (KL-2026-10-14-WEEKLYSELFCHECK-SYNCTESTBUG) is still firing continuously as of this run (2026-10-21, same WARN pattern seen through today in dashboard-server.log) - still unfixed a week later, still needs an interactive-session fix to live_server.py, out of this run's scope."
   }
 }
