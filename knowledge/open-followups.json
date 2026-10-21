@@ -363,6 +363,13 @@
     "subject": "website-conversion-findings",
     "follow_up": "When Website Engineering proposes a Meta Contact event for WhatsApp enquiry clicks, campaign-strategist and media-buyer review it before it goes live."
   },
+  "KL-2026-10-21-HEARTBEAT-TGSTATESTALE": {
+    "id": "KL-2026-10-21-HEARTBEAT-TGSTATESTALE",
+    "date": "2026-10-21",
+    "type": "observation",
+    "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
+    "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
+  },
   "KL-2026-10-21-WEEKLYSELFCHECK-OPENFOLLOWUPS-NOOP-INDEXBUG": {
     "id": "KL-2026-10-21-WEEKLYSELFCHECK-OPENFOLLOWUPS-NOOP-INDEXBUG",
     "date": "2026-10-21",
