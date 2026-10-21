@@ -349,19 +349,19 @@
     "subject": "Daily heartbeat paused-build activation sweep - First Love | Cold Prospecting | Australia (ad set 52562820202180) - both activation gating conditions re-verified fresh, BOTH still unmet, activation correctly remains gated, one day after build",
     "follow_up": "Re-check again on a future daily heartbeat paused-build activation sweep. Condition 1 (full clean week, no breach day) cannot be assessed as met until at least 7 consecutive clean days follow the most recent breach (now 2026-10-19) - earliest possible clean-week confirmation would be around 2026-10-27, assuming no further breach in between. Condition 2 (nominal Rs20/day gap) requires either a trim elsewhere or an explicit ceiling increase from Suraj, re-verified fresh at that time, not reused from this entry's figures."
   },
-  "KL-2026-10-20-MB-CEILINGTRIM-VALIDATED": {
-    "id": "KL-2026-10-20-MB-CEILINGTRIM-VALIDATED",
-    "date": "2026-10-20",
-    "type": "decision",
-    "subject": "Rs6,500 ceiling-watch escalation trigger (KL-2026-10-20-CS-CEILINGWATCH-TRIGGERFIRED-ESCALATE) - independent validation of the proposed 10-ad-set trim; CORRECTED to 7 ad sets after finding 3 of the 10 are themselves mid an unsettled change CS missed",
-    "follow_up": "Awaiting Suraj Telegram approval on this plan (KL-2026-10-20-MB-CEILINGTRIM-VALIDATED). If approved, marketing-lead executes the 7 daily_budget changes verbatim and logs a linked type=change entry. Re-check the 3 additionally-excluded ad sets for inclusion in a future trim once their own settling windows close (16th May ~10-21/23, Gold Sculpted ~10-24, Profile Visits after its 2026-10-26 diagnostic checkpoint). Suraj's explicit answer also needed on the committed-vs-actual-spend ceiling-interpretation policy question CS raised."
-  },
   "KL-2026-10-20-SEO-CONVERSION-FINDINGS": {
     "id": "KL-2026-10-20-SEO-CONVERSION-FINDINGS",
     "date": "2026-10-20",
     "type": "observation",
     "subject": "website-conversion-findings",
     "follow_up": "When Website Engineering proposes a Meta Contact event for WhatsApp enquiry clicks, campaign-strategist and media-buyer review it before it goes live."
+  },
+  "KL-2026-10-21-CS-CEILINGWATCH-DAY3BREACH-CONFIRMPENDING": {
+    "id": "KL-2026-10-21-CS-CEILINGWATCH-DAY3BREACH-CONFIRMPENDING",
+    "date": "2026-10-21",
+    "type": "decision",
+    "subject": "Rs6,500 ceiling watch - third consecutive breach day (10-18/19/20), 10-20 now independently clears the single-day >10% trigger leg too (110.1%); independent read: already-pending KL-2026-10-20-MB-CEILINGTRIM-VALIDATED plan remains the correct immediate action, NO new/revised allocation proposed today - but flagging it is unlikely to fully resolve breaches and that this is exactly what its own rollback criterion (3) anticipates",
+    "follow_up": "No new action from campaign-strategist today - the already-pending trim plan (KL-2026-10-20-MB-CEILINGTRIM-VALIDATED) stands as proposed and still needs Suraj's direct Telegram approval before any execution; this entry does not authorize anything. Suggest (not require) refreshing that pending Telegram approval's summary to include the 10-20 data point (third consecutive breach day, single-day >10% leg now independently cleared) before Suraj approves, so the decision is made on current information - reporting this suggestion back to the orchestrator rather than acting on it directly. Once the pending plan is approved and executed, re-check actual spend over the following days against the projection in this entry (~104% of ceiling expected, not full compliance) - if actual spend remains materially above ~100% of ceiling for a sustained period post-trim with the same broad-based pattern, that is exactly when rollback criterion (3) in KL-2026-10-20-MB-CEILINGTRIM-VALIDATED says to escalate to a second-round trim, at which point the currently-excluded ad sets (India Insta Engaged, Broad Advantage+, India Whatsapp, Crimson Beaded, Gold Sculpted, 16th May, Profile Visits) should be re-examined individually for whether their own settling windows have closed by then. Also carrying forward, unchanged: Suraj's explicit answer is still needed on whether the Rs6,500 ceiling means committed daily_budget (reliably controllable) or actual realized spend (inherently noisier) - this entry's projection makes that policy question more consequential, not less, since even a real, approved trim is unlikely to fully resolve actual-spend breaches under the realized-spend reading."
   },
   "KL-2026-10-21-HEARTBEAT-TGSTATESTALE": {
     "id": "KL-2026-10-21-HEARTBEAT-TGSTATESTALE",
