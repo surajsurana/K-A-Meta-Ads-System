@@ -342,13 +342,6 @@
     "subject": "@dear._.sau carousel 18107304968246234 (instagram.com/p/DepqEi6joUA/) - five-way disposition call: REJECT - zero attribution, independently viewed all 3 frames myself, cannot confirm this is a K&A garment at all",
     "follow_up": "No further action - not pursued as an ad or organic repost. No Suraj approval needed for a REJECT. Link for reference if Suraj wants to look himself: instagram.com/p/DepqEi6joUA/"
   },
-  "KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT": {
-    "id": "KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - quality-triggered revert of the 2026-10-19 swap: pause ad 52562108793580 (KAFL018 Barbie Pink Refresh), reactivate ad 52547120579980 (You've Seen the Corsets. Meet the Cutout.), no budget change",
-    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead executes exactly this plan (pause 52562108793580, activate 52547120579980), runs the verification steps above, logs a linked type:change entry. After execution, route lead-quality-analyst/performance-analyst to re-check this ad set's junk rate within the next few days to confirm the causal read - escalate per rollback criterion (2) if junk rate does not trend back toward baseline."
-  },
   "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK": {
     "id": "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK",
     "date": "2026-10-22",
@@ -376,6 +369,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
+  },
+  "KL-2026-10-22-SOS-LEADQUALITY-RESULT": {
+    "id": "KL-2026-10-22-SOS-LEADQUALITY-RESULT",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "Lead-quality SOS (Suraj Telegram button, 2026-10-22 14:08 UTC) - result: narrow CHANGE NEEDED on one new ad, rest of account ROUTINE/TOO-EARLY",
+    "follow_up": "Awaiting Suraj Telegram approval on KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT (message_id 350). If approved, marketing-lead executes. Re-check Broad Advantage+ and the 4 test ad sets at next scheduled review."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
