@@ -259,6 +259,7 @@ def main():
     by_campaign = collections.defaultdict(new_bucket)
     by_country = collections.defaultdict(new_bucket)
     by_tap_source = collections.defaultdict(new_bucket)
+    adset_tap = collections.defaultdict(lambda: collections.defaultdict(new_bucket))
     by_hour_block = collections.defaultdict(new_bucket)
     reason_codes = collections.Counter()
     overall_ads = new_bucket()        # WhatsApp-destination ads only
@@ -271,7 +272,8 @@ def main():
                   by_campaign[a.get("campaign_name") or "unknown"],
                   by_country[r.get("residence_country") or "unknown"],
                   overall_ads if is_wa(r["source_id"]) else non_whatsapp,
-                  by_tap_source[tap_source(r)], by_hour_block[hour_block_ist(r)]):
+                  by_tap_source[tap_source(r)], by_hour_block[hour_block_ist(r)],
+                  adset_tap[a.get("adset_id") or "unknown"][tap_source(r)]):
             add_row(b, r)
         reason_codes[r.get("reason_code") or "none"] += 1
     # Spend: every ad that produced at least one enquiry, summed up the tree.
@@ -305,7 +307,10 @@ def main():
         "non_ad_enquiries_baseline": finish(non_ad),
         "by_campaign": {k: finish(v) for k, v in sorted(by_campaign.items(), key=lambda kv: -kv[1]["enquiries"])},
         "by_adset": {"{} ({})".format(adset_names.get(k, "unknown"), k):
-                     dict(finish(v), destination=adset_dest.get(k, ""))
+                     dict(finish(v), destination=adset_dest.get(k, ""),
+                          tap_sources={src: {"enquiries": tb["enquiries"], "junk_pct": finish(tb)["junk_pct"],
+                                             "serious_or_better_pct": tb["serious_or_better_pct"]}
+                                       for src, tb in adset_tap[k].items()})
                      for k, v in sorted(by_adset.items(), key=lambda kv: -kv[1]["enquiries"])},
         "by_ad": {"{} ({})".format(ads.get(k, {}).get("ad_name", "unknown"), k):
                   dict(finish(v), status=ads.get(k, {}).get("status", ""),

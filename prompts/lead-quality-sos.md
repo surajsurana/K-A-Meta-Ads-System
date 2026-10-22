@@ -13,7 +13,8 @@ Suraj, 2026-10-22: "sometimes what happens is lead quality drops too much. like 
 
 2. Dispatch **lead-quality-analyst** (`.claude/agents/lead-quality-analyst.md`) to compare the spike window with the baseline:
    - Junk % and serious % overall, and per ad set and per ad. Which ads produced the junk (exact ad names; `source_id` is the real ad id)?
-   - Where people tapped (`by_tap_source`: Instagram / Facebook / WhatsApp Status), time of day (`by_hour_block_ist`), and what kind of junk (`ad_reason_codes`: prefill-only, greeting-only, vendor/job pitch, no product intent).
+   - **Placement is mandatory, not background (Suraj, 2026-10-22: "it should also check the placement in such cases. is it coming from instagram or facebook? because that also matters").** For the whole window AND for every ad set/ad producing the junk: enquiries and junk % by where people tapped (`by_tap_source` and each ad set's `tap_sources`: Instagram / Facebook / WhatsApp Status), next to that ad set's own 30-day split.
+   - Time of day (`by_hour_block_ist`) and what kind of junk (`ad_reason_codes`: prefill-only, greeting-only, vendor/job pitch, no product intent).
    - **Is it statistically unusual?** With small numbers, 15 junk out of 20 can be normal: the account's baseline junk rate is ~60-75%. Compare against each ad set's own baseline and say plainly whether the spike is outside the normal range for that sample size (a simple binomial-style check is enough; show n).
 
 3. In the same pass, dispatch **performance-analyst** for a targeted read-only pull of **what changed on the ads side** in the spike window vs the previous 2 weeks, only for the ad sets/ads producing the junk:
@@ -24,6 +25,7 @@ Suraj, 2026-10-22: "sometimes what happens is lead quality drops too much. like 
 
 4. Dispatch **campaign-strategist** for the verdict, weighing both reads together:
    - **ROUTINE:** within the normal range for this sample size, or a known one-off (say what). No change; say what would make it worth re-checking.
+   - **Always weigh a placement fix against a creative/targeting fix and say which you chose and why**, even when the answer is "not placement". Remember: Meta only allows placement changes per ad SET (never per ad), so it hits every ad in it; and the 2026-10-01 Instagram Feed exclusion made results worse and was rolled back (`KL-2026-10-08-010536`).
    - **CHANGE NEEDED:** name the cause in one sentence with the numbers (e.g. "since the Golden Muse ad went live on Tuesday, 80% of its enquiries are junk vs 60% for the ad set"), and a concrete fix (pause/swap a creative, exclude a placement, tighten targeting, trim budget). Route it through media-buyer validation to a `type: decision` plan and send it with `scripts/send-telegram-approval.sh <plan-id>`.
    - **TOO EARLY:** if most of the window is still pending or n is tiny, say so and when to look again.
 
@@ -34,9 +36,10 @@ Suraj, 2026-10-22: "sometimes what happens is lead quality drops too much. like 
    🆘 Lead quality SOS - result
    Last 72h: <N> WhatsApp ad enquiries, <J> junk (<J%>), <S> serious. Normal: <baseline junk%>.
 
-   Where the junk came from: <ad set / ad names, tap source, time of day, kind of junk>
+   Where the junk came from: <ad set / ad names, time of day, kind of junk>
+   Placement: Instagram <n> enquiries (<junk%> junk), Facebook <n> (<junk%>), WhatsApp Status <n> (<junk%>) - <one plain sentence: is placement part of the problem?>
    Verdict: <Routine / Change needed / Too early to tell> - <one or two plain sentences why>
-   <if change needed: "Fix sent for your approval: <what changes, in plain words>">
+   <if change needed: "Fix sent for your approval: <what changes, in plain words>" + one line on why this fix and not a placement change (or vice versa)>
    ```
 
 ## Hard boundaries — identical to every other unattended run
