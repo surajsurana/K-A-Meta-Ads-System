@@ -114,8 +114,17 @@ def ad_spend(token, since, until):
 
 def new_bucket():
     return {"enquiries": 0, "junk": 0, "browsing": 0, "serious": 0, "converted": 0,
-            "prefill_only": 0, "staff_not_replied": 0, "appointments": 0,
-            "orders": 0, "order_value_inr": 0.0, "spend_inr": 0.0}
+            "prefill_only": 0, "appointments": 0,
+            # Suraj, 2026-10-22: an enquiry staff never answered is still judged on
+            # what the customer said and still counts FOR the ad - "the ad did its
+            # job and the staff didn't". So the label counts above include these;
+            # this separate bucket just shows how many good ones went unanswered.
+            "not_answered": 0, "not_answered_serious_or_better": 0,
+            # Orders: credited to the ad however late they come (AISI matches
+            # orders on/after first contact, no upper time limit).
+            "orders": 0, "order_value_inr": 0.0,
+            "orders_new_customers": 0, "orders_returning_customers": 0,
+            "spend_inr": 0.0}
 
 
 def add_row(b, r):
@@ -125,12 +134,20 @@ def add_row(b, r):
     if r.get("reason_code") == "prefill-only":
         b["prefill_only"] += 1
     if r.get("staff_replied") is False:
-        b["staff_not_replied"] += 1
+        b["not_answered"] += 1
+        if r.get("label") in ("serious", "converted"):
+            b["not_answered_serious_or_better"] += 1
     if r.get("appointment_booked"):
         b["appointments"] += 1
     if r.get("has_order"):
-        b["orders"] += int(r.get("order_count") or 1)
+        n = int(r.get("order_count") or 1)
+        b["orders"] += n
         b["order_value_inr"] += float(r.get("order_value") or 0)
+        returning = r.get("existing_customer_before_enquiry")
+        if returning is True:
+            b["orders_returning_customers"] += n
+        elif returning is False:
+            b["orders_new_customers"] += n
 
 
 def finish(b):
