@@ -321,6 +321,13 @@
     "subject": "Frozen Blue is the strongest quality signal in the WhatsApp data: two separate (now paused) Frozen Blue creatives were the cheapest serious-enquiry sources in the account",
     "follow_up": "At the next review after 2026-10-29, campaign-strategist checks with social-community-manager for Frozen Blue footage and confirms the product is still live/available, then briefs creative-copywriter. Needs Suraj's agreement before an experiment entry is written."
   },
+  "KL-2026-10-22-CS-LEADQUALITY-STANDINGCHECKS": {
+    "id": "KL-2026-10-22-CS-LEADQUALITY-STANDINGCHECKS",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "Backlog #10 recommendation: which standing checks should include lead quality",
+    "follow_up": "marketing-lead to put to Suraj; if agreed, update prompts/weekly-review.md, prompts/monthly-strategic-review.md and the test check-in template."
+  },
   "KL-2026-10-22-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-22-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-22",
