@@ -307,6 +307,13 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
+  "KL-2026-10-22-CS-CEILINGWATCH-DAY4-NOACTION": {
+    "id": "KL-2026-10-22-CS-CEILINGWATCH-DAY4-NOACTION",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "Rs6,500 ceiling watch - 10-21 compliant day (92.9%) read as consistent with already-documented pacing noise, not a resolution; given Suraj's 10-21 REJECT of the pending 7-ad-set trim (KL-2026-10-21-103844), NO new/revised allocation proposed this cycle - standing pacing-volatility read still holds",
+    "follow_up": "Continue the standing daily/twice-weekly actual-spend watch, unchanged trigger (any single day >10% over ceiling, OR 2 of any 3 consecutive days breach). Do not re-propose a trim materially similar to the rejected KL-2026-10-20-MB-CEILINGTRIM-VALIDATED without either a new/different driver emerging or Suraj's own answer to the separate policy question (KL-2026-10-22-CS-CEILINGPOLICY-QUESTION) changing the basis for one. If the trigger fires again with a genuinely new or more concentrated driver (not the same broad pacing pattern), that would be new information warranting a fresh, differently-targeted proposal."
+  },
   "KL-2026-10-22-CS-HANDOFF": {
     "id": "KL-2026-10-22-CS-HANDOFF",
     "date": "2026-10-22",
@@ -327,13 +334,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
-  },
-  "KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED": {
-    "id": "KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "Rs6,500 ceiling watch - the 3-day breach streak (10-18/19/20) did NOT extend to a 4th day: 10-21 actual spend came in UNDER ceiling (92.9%), easing not worsening - reported fresh per explicit instruction, after KL-2026-10-20-MB-CEILINGTRIM-VALIDATED was rejected by Suraj (KL-2026-10-21-103844) and no trim has been applied",
-    "follow_up": "campaign-strategist to decide, at the next due point, whether one compliant day changes anything about the already-rejected trim or whether the standing pacing-volatility explanation (accepted previously via KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT) still applies without further action. performance-analyst continues the daily/twice-weekly fresh actual-vs-ceiling pull regardless."
   },
   "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET",
