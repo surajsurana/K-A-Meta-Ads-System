@@ -131,7 +131,9 @@ def add_row(b, r):
     b["enquiries"] += 1
     if r.get("label") in LABELS:
         b[r["label"]] += 1
-    if r.get("reason_code") == "prefill-only":
+    # rules-v2 also has "prefill-only-unanswered" (labelled browsing, since an
+    # unanswered tap can't be judged junk) - count both as prefill-only.
+    if (r.get("reason_code") or "").startswith("prefill-only"):
         b["prefill_only"] += 1
     if r.get("staff_replied") is False:
         b["not_answered"] += 1
