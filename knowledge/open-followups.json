@@ -307,13 +307,6 @@
     "subject": "Bihar/Jharkhand/Assam/JK combined-spend re-check, explicitly due 'at the very next review' per KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN's own stated watch, does NOT appear to have been performed this cycle - PA's handoff states 'unchanged, no new geo finding' without a fresh Bihar-group spend/order pull on record for 2026-10-22",
     "follow_up": "performance-analyst to explicitly re-run the Bihar/Jharkhand/Assam/JK combined-spend-vs-orders pull (the specific tightened check from KL-2026-10-19) before or at the next review - do not let this slip a second cycle. If combined spend has continued climbing toward ~Rs400/day with orders still at zero, that clears the stated re-open bar and should come back to campaign-strategist as a fresh disposition call, not another 'unchanged' restatement."
   },
-  "KL-2026-10-22-CS-LEADQUALITY-CUTOUTREVEAL-PAUSE": {
-    "id": "KL-2026-10-22-CS-LEADQUALITY-CUTOUTREVEAL-PAUSE",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "PAUSE CREATIVE: ad 52547120422780 'First Love | Cut Out to Reveal, Cut to Sculpt.' in First Love | Broad Advantage+ | India (52535906903180) - for media-buyer validation",
-    "follow_up": "Route to media-buyer: fresh GET of ad 52547120422780 and ad set 52535906903180 (status, budget, active-ad count; Broad had a Punjab exclusion on 10-19, so check whether pausing an ad now confounds that read), prepare exact plan, send to Suraj via Telegram. Not executed by campaign-strategist."
-  },
   "KL-2026-10-22-CS-LEADQUALITY-FROZENBLUE-SIGNAL": {
     "id": "KL-2026-10-22-CS-LEADQUALITY-FROZENBLUE-SIGNAL",
     "date": "2026-10-22",
