@@ -300,13 +300,6 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
-  "KL-2026-10-22-CS-CEILINGPOLICY-QUESTION": {
-    "id": "KL-2026-10-22-CS-CEILINGPOLICY-QUESTION",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "Rs6,500 ceiling policy interpretation - committed daily_budget vs. actual realized spend - carried unanswered across 3 cycles (10-20/21/22) bundled inside execution-plan approvals; asked cleanly on its own this cycle, confirmation-only, no Meta/Instagram write involved either way",
-    "follow_up": "If APPROVE: log a type:human_knowledge entry recording 'ceiling = committed budget' as the standing interpretation, closing this question for future cycles. If REJECT: log the opposite interpretation and campaign-strategist brings a concrete lower-committed-total proposal (four-part budget statement) at the next review. If HOLD: no change, continue the existing per-cycle flagging pattern, ask again if it keeps recurring."
-  },
   "KL-2026-10-22-CS-DOBCOVERAGE-ACK": {
     "id": "KL-2026-10-22-CS-DOBCOVERAGE-ACK",
     "date": "2026-10-22",
@@ -334,6 +327,13 @@
     "type": "decision",
     "subject": "@dear._.sau carousel 18107304968246234 (instagram.com/p/DepqEi6joUA/) - five-way disposition call: REJECT - zero attribution, independently viewed all 3 frames myself, cannot confirm this is a K&A garment at all",
     "follow_up": "No further action - not pursued as an ad or organic repost. No Suraj approval needed for a REJECT. Link for reference if Suraj wants to look himself: instagram.com/p/DepqEi6joUA/"
+  },
+  "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC": {
+    "id": "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC",
+    "date": "2026-10-22",
+    "type": "human_knowledge",
+    "subject": "Rs6,500/day ceiling policy interpretation RESOLVED: ceiling means the COMMITTED daily_budget total, not actual realized day-to-day spend",
+    "follow_up": "Future ceiling-watch cycles should stop flagging actual-realized-spend breach days as a compliance problem requiring a reactive cut by default; the account is compliant on the basis that matters (committed total, currently Rs6,420.00/day under Rs6,500.00/day). The existing daily/twice-weekly actual-spend watch can continue as an informational pacing-volatility tracker, but should not reflexively trigger trim proposals absent a new/different driver, consistent with KL-2026-10-22-CS-CEILINGWATCH-DAY4-NOACTION."
   },
   "KL-2026-10-22-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
