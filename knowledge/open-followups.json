@@ -97,13 +97,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK": {
-    "id": "KL-2026-10-01-CS-USACANADA-OVERDUE-RECHECK",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "USA/Canada cold-prospecting test plan (KL-2026-09-28-121707) - OVERDUE 2026-10-01 re-check performed directly, triggered by Suraj noting todays digest had no mention of USA/Canada - DISPOSITION: STILL HOLDS, resent unchanged",
-    "follow_up": "Plan resent unchanged via scripts/send-telegram-approval.sh KL-2026-09-28-121707 - this is the overdue 2026-10-01 recheck (this weeks Thursday review), delayed only by the now-fixed next_review_date() +7-day bug, not by neglect. If held again, a new observation entry with its own fresh follow_up continues the cycle per the standing held-plan sweep process; if approved or rejected, no further recheck is needed."
-  },
   "KL-2026-10-02-010600": {
     "id": "KL-2026-10-02-010600",
     "date": "2026-10-02",
@@ -237,13 +230,6 @@
     "subject": "Dashboard (live_server.py) product-mapped ad-status verification has been 100% broken since 2026-09-23/28 - a leftover SYNC_TEST_00000 test id poisons every batch Meta call",
     "follow_up": "Next interactive session (not this headless run - live_server.py/template.html are out of this runs fix scope, deployed by hand via scp, not git-tracked): fix load_confirmed_product_map()/get_ads_running_grid_html in live_server.py so an unlink (empty-products confirmed entry) actually removes the prior sku->ad_ids key instead of being silently absorbed, and/or validate candidate ids look like real numeric Meta object ids before batching them into the ids= GET - then clean up or correct the stale SYNC_TEST_00000 lines (47-48) in knowledge/creative-product-map.jsonl so this test probe never reaches a live batch call again. Until fixed, every product-mapped ads live effective_status on the Ads Running tab is running on a cache that has never once successfully populated since 2026-09-28."
   },
-  "KL-2026-10-15-003913": {
-    "id": "KL-2026-10-15-003913",
-    "date": "2026-10-15",
-    "type": "observation",
-    "subject": "Held-plan sweep (twice-weekly review 2026-10-15) - 2 priyaas_makeover reel plans re-checked, both STILL HOLD, one cosmetic correction found",
-    "follow_up": "Both plans resent unchanged via scripts/send-telegram-approval.sh. If held again, a new observation entry with its own fresh 7-day follow_up continues the cycle; if approved/rejected, no further recheck needed."
-  },
   "KL-2026-10-15-CS-DOBCOVERAGE-ACK": {
     "id": "KL-2026-10-15-CS-DOBCOVERAGE-ACK",
     "date": "2026-10-15",
@@ -278,13 +264,6 @@
     "type": "change",
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
-  },
-  "KL-2026-10-19-003912": {
-    "id": "KL-2026-10-19-003912",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "Held-plan sweep: KL-2026-10-15-comment-batch re-check (due 2026-10-19 per KL-2026-10-16-022630) - STILL UNANSWERED, plan's assumption holds",
-    "follow_up": "Resend KL-2026-10-15-comment-batch unchanged via scripts/send-telegram-approval.sh at this cycle's review, per the original hold's own instruction. If held again, continue the cycle with a fresh dated re-check; if approved/rejected, no further recheck needed."
   },
   "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN": {
     "id": "KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN",
