@@ -300,13 +300,6 @@
     "subject": "@priyaas_makeoverr Reel 18101705564056757 TEST disposition approved by Suraj but cannot be built this session - no product/SKU linked, no video asset in media library",
     "follow_up": "Needs an interactive session to retrieve the actual video asset for this reel and identify/confirm the real product/SKU via Shopify + Stitchflow cross-check before creative-copywriter can brief it and media-buyer can build the ad set."
   },
-  "KL-2026-10-19-PA-BLENDED-WINDOW": {
-    "id": "KL-2026-10-19-PA-BLENDED-WINDOW",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
-    "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
-  },
   "KL-2026-10-20-015025": {
     "id": "KL-2026-10-20-015025",
     "date": "2026-10-20",
@@ -341,6 +334,13 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist - 1 item for a fresh five-way disposition call, 1 item as an FYI continuation of an existing HOLD",
     "follow_up": "Awaiting campaign-strategists disposition call on the dear._.sau item. No action needed on the LOOMIERE continuation beyond the existing HOLD."
+  },
+  "KL-2026-10-22-PA-BLENDED-WINDOW": {
+    "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
+    "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
