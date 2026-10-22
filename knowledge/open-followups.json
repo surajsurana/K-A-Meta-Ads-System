@@ -348,5 +348,12 @@
     "type": "observation",
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
+  },
+  "KL-2026-10-22-ugc-tags": {
+    "id": "KL-2026-10-22-ugc-tags",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-10-22, twice-weekly review) - 1 new tagged item since the 2026-10-18 boundary (priyaas_makeoverr), zero caption/comment credit, weaker attribution than even the recently-REJECTED charmfacebylavnika item",
+    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-22-CS-HANDOFF) for the five-way disposition call, though given the zero-credit pattern and Suraj's recent explicit REJECT on a comparably-ambiguous (and better-contextualized) item, my own lean is toward REJECT or at most a verification HOLD rather than TEST. Next sweep boundary is 18107304968246234 (2026-10-18T21:33:00)."
   }
 }
