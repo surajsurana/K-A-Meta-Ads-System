@@ -307,13 +307,6 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
-  "KL-2026-10-19-ambiguous-comment": {
-    "id": "KL-2026-10-19-ambiguous-comment",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "One ambiguous comment flagged individually, not batched - @aesana0710 Pls check your DM on media 18119098733004826",
-    "follow_up": "No plan drafted - awaiting a human read on what this comment actually refers to before any reply is proposed."
-  },
   "KL-2026-10-19-dmredirect-watch-no-recurrence": {
     "id": "KL-2026-10-19-dmredirect-watch-no-recurrence",
     "date": "2026-10-19",
@@ -348,6 +341,13 @@
     "type": "observation",
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
+  },
+  "KL-2026-10-22-ambiguous-comment-still-open": {
+    "id": "KL-2026-10-22-ambiguous-comment-still-open",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "Ambiguous comment @aesana0710 Pls check your DM (media 18119098733004826) - still unresolved, no new developments this cycle",
+    "follow_up": "Still no plan drafted - awaiting a human read on what this comment actually refers to. Continue checking status each cycle until resolved."
   },
   "KL-2026-10-22-comment-batch": {
     "id": "KL-2026-10-22-comment-batch",
