@@ -335,6 +335,13 @@
     "subject": "@dear._.sau carousel 18107304968246234 (instagram.com/p/DepqEi6joUA/) - five-way disposition call: REJECT - zero attribution, independently viewed all 3 frames myself, cannot confirm this is a K&A garment at all",
     "follow_up": "No further action - not pursued as an ad or organic repost. No Suraj approval needed for a REJECT. Link for reference if Suraj wants to look himself: instagram.com/p/DepqEi6joUA/"
   },
+  "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK": {
+    "id": "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "First Love | Broad Advantage+ | India",
+    "follow_up": "re-check 2026-11-02: rerun scripts/lead_quality_report.py --mature-only (and the full window). Pre-committed rule: if First Love | Broad Advantage+ | India still costs at least 1.5x India | Whatsapp | 9th Dec 25 per serious-or-better enquiry, campaign-strategist proposes Broad Rs1,000 to Rs860 and India | Whatsapp Rs720 to Rs860 (total unchanged, within the Rs6,500 ceiling), validated by media-buyer and sent to Suraj via Telegram. Weigh placement, hour and normal performance too; small samples stay watch items."
+  },
   "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC": {
     "id": "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC",
     "date": "2026-10-22",
