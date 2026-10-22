@@ -300,12 +300,12 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
-  "KL-2026-10-22-CS-ADCOPY-BLANKTITLE-FIX": {
-    "id": "KL-2026-10-22-CS-ADCOPY-BLANKTITLE-FIX",
+  "KL-2026-10-22-CC-ADCOPY-BLANKTITLE-HEADLINES": {
+    "id": "KL-2026-10-22-CC-ADCOPY-BLANKTITLE-HEADLINES",
     "date": "2026-10-22",
     "type": "decision",
-    "subject": "Ad-copy blank-title-variant gap (KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT) - DISPOSITION: fix, not leave-as-is - route to creative-copywriter to write a real 6th title variant for both Canada Engaged dynamic-creative ads",
-    "follow_up": "Awaiting creative-copywriter's replacement headline text for both ads (next interactive session - this is a straightforward text task, no vision/image-viewing dependency, so it does not need to wait for an interactive-only window the way product-photo matching does). Once drafted, media-buyer validates and prepares the exact asset_feed_spec update plan for Suraj's approval before any live change."
+    "subject": "Replacement headline text for the 2 blank DCO title variants flagged in KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT / KL-2026-10-22-CS-ADCOPY-BLANKTITLE-FIX (Red Corset and Gold Sculpted - Fatigue Refresh v3, Canada Engaged 365D & Followers ad set 6737602550176)",
+    "follow_up": "media-buyer to validate and prepare the exact asset_feed_spec update plan for both ads (title index 0, empty string -> the new headline text above) and route for Surajs direct approval before any live edit."
   },
   "KL-2026-10-22-CS-CEILINGPOLICY-QUESTION": {
     "id": "KL-2026-10-22-CS-CEILINGPOLICY-QUESTION",
