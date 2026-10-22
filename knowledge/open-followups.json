@@ -230,13 +230,6 @@
     "subject": "Dashboard (live_server.py) product-mapped ad-status verification has been 100% broken since 2026-09-23/28 - a leftover SYNC_TEST_00000 test id poisons every batch Meta call",
     "follow_up": "Next interactive session (not this headless run - live_server.py/template.html are out of this runs fix scope, deployed by hand via scp, not git-tracked): fix load_confirmed_product_map()/get_ads_running_grid_html in live_server.py so an unlink (empty-products confirmed entry) actually removes the prior sku->ad_ids key instead of being silently absorbed, and/or validate candidate ids look like real numeric Meta object ids before batching them into the ids= GET - then clean up or correct the stale SYNC_TEST_00000 lines (47-48) in knowledge/creative-product-map.jsonl so this test probe never reaches a live batch call again. Until fixed, every product-mapped ads live effective_status on the Ads Running tab is running on a cache that has never once successfully populated since 2026-09-28."
   },
-  "KL-2026-10-15-CS-DOBCOVERAGE-ACK": {
-    "id": "KL-2026-10-15-CS-DOBCOVERAGE-ACK",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "DOB coverage 6.76% (44/651), mean age 33.44, 25-34 bracket dominant in both known-DOB (63.6%) and Meta delivery (60% of spend) - ACKNOWLEDGED, no targeting change this cycle",
-    "follow_up": "Continue tracking DOB coverage weekly; re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual."
-  },
   "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
     "id": "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT",
     "date": "2026-10-15",
@@ -341,6 +334,13 @@
     "type": "observation",
     "subject": "Rs6,500 ceiling watch - the 3-day breach streak (10-18/19/20) did NOT extend to a 4th day: 10-21 actual spend came in UNDER ceiling (92.9%), easing not worsening - reported fresh per explicit instruction, after KL-2026-10-20-MB-CEILINGTRIM-VALIDATED was rejected by Suraj (KL-2026-10-21-103844) and no trim has been applied",
     "follow_up": "campaign-strategist to decide, at the next due point, whether one compliant day changes anything about the already-rejected trim or whether the standing pacing-volatility explanation (accepted previously via KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT) still applies without further action. performance-analyst continues the daily/twice-weekly fresh actual-vs-ceiling pull regardless."
+  },
+  "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET": {
+    "id": "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "DOB coverage update - 7.40% (50/676), mean actual age 32.9, 25-34 bracket still dominant (64.0% of known-DOB) and converges again with Metas own age-bracket delivery (61.1% of spend in 25-34 this window) - continuing the pattern acknowledged at KL-2026-10-15-CS-DOBCOVERAGE-ACK, growth confirmed since then (6.76%/44 -> 7.40%/50)",
+    "follow_up": "Continue tracking DOB coverage weekly/twice-weekly. Re-assess with campaign-strategist whether the convergence pattern is now strong/consistent enough (several consecutive readings all agreeing) to inform an actual targeting or creative-messaging decision - still not yet proposed as a change, per the small-sample discipline."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
