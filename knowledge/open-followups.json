@@ -321,6 +321,13 @@
     "subject": "Handoff to campaign-strategist - 1 item for a fresh five-way disposition call, 1 item as an FYI continuation of an existing HOLD",
     "follow_up": "Awaiting campaign-strategists disposition call on the dear._.sau item. No action needed on the LOOMIERE continuation beyond the existing HOLD."
   },
+  "KL-2026-10-22-CS-SCALEINTEL-NOTYET": {
+    "id": "KL-2026-10-22-CS-SCALEINTEL-NOTYET",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "Scale Intelligence weekly call - ceiling stays at Rs6,500/day, NOT YET for a step-up - positive headroom on Broad Advantage+/India Whatsapp and strengthening October seasonality do not override the account's own unresolved ceiling-compliance picture and rejected trim",
+    "follow_up": "Re-ask at the next review. Conditions for a yes, carried forward unchanged plus one new one this cycle: (1) a full week showing consistent compliance with the CURRENT Rs6,500 ceiling under whichever interpretation Suraj confirms (no unresolved policy ambiguity), (2) a second consecutive clean headroom check on whichever ad set is the step candidate, CPM genuinely flat/falling not just frequency, (3) NEW: the committed-vs-actual ceiling policy question (KL-2026-10-22-CS-CEILINGPOLICY-QUESTION) answered, since a step-up proposal is not well-formed while it's unclear what 'within ceiling' even means for this account right now. Broad Advantage+/India Whatsapp's positive headroom should be the first candidates re-examined once these conditions clear, ahead of 16th May given its continuing CPM headwind."
+  },
   "KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT": {
     "id": "KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT",
     "date": "2026-10-22",
@@ -348,20 +355,6 @@
     "type": "outcome",
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh ad (52562108793580) settled cleanly to status=ACTIVE/effective_status=ACTIVE, no issues_info - resolves KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTEDs own monitor follow_up",
     "follow_up": "Step 2 (Metallic Coffee Brown) remains not-before-10-24 per the original staggered-activation sequence - no change from this outcome."
-  },
-  "KL-2026-10-22-PA-SCALEINTEL-HEADROOM": {
-    "id": "KL-2026-10-22-PA-SCALEINTEL-HEADROOM",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "Scale-readiness headroom signals, weekly review 2026-10-22 - 16th May Awareness CPM drift CONTINUING (not a one-off), while Broad Advantage+ and India Whatsapp (the two strongest-performing ad sets this window, 93 and 58 conversations respectively) show the OPPOSITE, positive headroom pattern (falling CPM, falling frequency, growing reach) - two different stories, reported separately per campaign-strategists own standing not-yet call",
-    "follow_up": "campaign-strategist to weigh this alongside the still-unresolved ceiling-compliance picture (KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED) before any step-up call - headroom existing on two ad sets does not by itself answer whether the account can currently hold its OWN existing ceiling cleanly."
-  },
-  "KL-2026-10-22-PA-SEASONALITY-OCTMTD": {
-    "id": "KL-2026-10-22-PA-SEASONALITY-OCTMTD",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "October 2026 MTD seasonality via get_monthly_summary (never get_monthly_orders_report, per SS3e) - 65 orders/Rs5,666,900 through day 22 of 31, annualizing to ~91.6/month, continuing to track the accounts own 3-year October average (85-99/month, strongest month historically)",
-    "follow_up": "Re-check once October closes out fully for the real final count vs. this projection."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
