@@ -314,6 +314,13 @@
     "subject": "Rs6,500 ceiling policy interpretation - committed daily_budget vs. actual realized spend - carried unanswered across 3 cycles (10-20/21/22) bundled inside execution-plan approvals; asked cleanly on its own this cycle, confirmation-only, no Meta/Instagram write involved either way",
     "follow_up": "If APPROVE: log a type:human_knowledge entry recording 'ceiling = committed budget' as the standing interpretation, closing this question for future cycles. If REJECT: log the opposite interpretation and campaign-strategist brings a concrete lower-committed-total proposal (four-part budget statement) at the next review. If HOLD: no change, continue the existing per-cycle flagging pattern, ask again if it keeps recurring."
   },
+  "KL-2026-10-22-CS-DOBCOVERAGE-ACK": {
+    "id": "KL-2026-10-22-CS-DOBCOVERAGE-ACK",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "DOB coverage 7.40% (50/676), mean age 32.9, 25-34 bracket dominant in both known-DOB (64.0%) and Meta delivery (61.1% of spend) - ACKNOWLEDGED, convergence pattern continues to hold across readings, still no targeting change this cycle",
+    "follow_up": "Continue tracking weekly/twice-weekly. Re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual, same standing posture as every prior ACK in this chain."
+  },
   "KL-2026-10-22-CS-HANDOFF": {
     "id": "KL-2026-10-22-CS-HANDOFF",
     "date": "2026-10-22",
@@ -341,13 +348,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
-  },
-  "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET": {
-    "id": "KL-2026-10-22-PA-DOBCOVERAGE-AGEBRACKET",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "DOB coverage update - 7.40% (50/676), mean actual age 32.9, 25-34 bracket still dominant (64.0% of known-DOB) and converges again with Metas own age-bracket delivery (61.1% of spend in 25-34 this window) - continuing the pattern acknowledged at KL-2026-10-15-CS-DOBCOVERAGE-ACK, growth confirmed since then (6.76%/44 -> 7.40%/50)",
-    "follow_up": "Continue tracking DOB coverage weekly/twice-weekly. Re-assess with campaign-strategist whether the convergence pattern is now strong/consistent enough (several consecutive readings all agreeing) to inform an actual targeting or creative-messaging decision - still not yet proposed as a change, per the small-sample discipline."
   },
   "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN": {
     "id": "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN",
