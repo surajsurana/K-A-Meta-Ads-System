@@ -215,9 +215,10 @@ def main():
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "window": {"since": args.since, "until": until, "mature_only": args.mature_only},
-        "feed": {k: feed.get(k) for k in ("generated_at", "rules_version", "validated", "maturity_days", "count")},
-        "caveat": ("Labels are rules-v1 and not yet validated against Suraj's blind sample; "
-                   "orders lag up to a day; few conversions so far - treat per-ad reads as early."),
+        "feed": {k: feed.get(k) for k in ("generated_at", "rules_version", "validated", "validation", "maturity_days", "count")},
+        "caveat": ("Labels are spot-checked, not fully validated (see feed.validation: Suraj agreed "
+                   "with 25/25 on a non-blind check, 2026-10-22); weight per-ad reads by sample size; "
+                   "orders lag up to a day."),
         "ad_enquiries_overall": finish(overall_ads),
         "non_ad_enquiries_baseline": finish(non_ad),
         "by_campaign": {k: finish(v) for k, v in sorted(by_campaign.items(), key=lambda kv: -kv[1]["enquiries"])},
