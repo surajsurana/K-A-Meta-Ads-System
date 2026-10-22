@@ -279,13 +279,6 @@
     "subject": "Profile Visits | India (ad set 52538161512180) - executed pause of Ad A (\"Profile Visits | Four Techniques, One Sage Green Silhouette\", ad 52551760703580), root-cause diagnostic step, no budget change",
     "follow_up": "At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 (52538162380380) active, per the rollback criteria in KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE. If reactivation is ever decided, revert: status PAUSED -> ACTIVE on 52551760703580."
   },
-  "KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTED": {
-    "id": "KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTED",
-    "date": "2026-10-19",
-    "type": "change",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - executed step 1 swap: activated KAFL018 Barbie Pink refresh ad, paused stale original KAFL018 ad",
-    "follow_up": "Monitor refresh ad 52562108793580 effective_status settles cleanly to ACTIVE (not WITH_ISSUES/DISAPPROVED) in the next check. Step 2 (Metallic Coffee Brown) remains not due before 2026-10-24."
-  },
   "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP": {
     "id": "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP",
     "date": "2026-10-19",
@@ -348,6 +341,13 @@
     "type": "observation",
     "subject": "DOB coverage update - 7.40% (50/676), mean actual age 32.9, 25-34 bracket still dominant (64.0% of known-DOB) and converges again with Metas own age-bracket delivery (61.1% of spend in 25-34 this window) - continuing the pattern acknowledged at KL-2026-10-15-CS-DOBCOVERAGE-ACK, growth confirmed since then (6.76%/44 -> 7.40%/50)",
     "follow_up": "Continue tracking DOB coverage weekly/twice-weekly. Re-assess with campaign-strategist whether the convergence pattern is now strong/consistent enough (several consecutive readings all agreeing) to inform an actual targeting or creative-messaging decision - still not yet proposed as a change, per the small-sample discipline."
+  },
+  "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN": {
+    "id": "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN",
+    "date": "2026-10-22",
+    "type": "outcome",
+    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh ad (52562108793580) settled cleanly to status=ACTIVE/effective_status=ACTIVE, no issues_info - resolves KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTEDs own monitor follow_up",
+    "follow_up": "Step 2 (Metallic Coffee Brown) remains not-before-10-24 per the original staggered-activation sequence - no change from this outcome."
   },
   "KL-2026-10-22-PA-SCALEINTEL-HEADROOM": {
     "id": "KL-2026-10-22-PA-SCALEINTEL-HEADROOM",
