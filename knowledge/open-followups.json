@@ -328,6 +328,13 @@
     "subject": "Backlog #10 recommendation: which standing checks should include lead quality",
     "follow_up": "marketing-lead to put to Suraj; if agreed, update prompts/weekly-review.md, prompts/monthly-strategic-review.md and the test check-in template."
   },
+  "KL-2026-10-22-CS-LEADQUALITYSOS-VERDICT": {
+    "id": "KL-2026-10-22-CS-LEADQUALITYSOS-VERDICT",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "Lead-quality SOS (Suraj button, 72h junk spike) - verdict: CHANGE NEEDED on WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) only; Broad Advantage+ and 4 new test ad sets are ROUTINE/TOO-EARLY",
+    "follow_up": "Route to media-buyer now: validate and prepare an exact execution plan for pausing ad 52562108793580 and reactivating ad 52547120579980 in ad set 6862975169176 (no budget change), including fresh pre-check, rollback criteria, and verification steps - for Surajs direct Telegram approval before marketing-lead executes. Broad Advantage+ and the 4 test ad sets: re-check at next scheduled review, no action now."
+  },
   "KL-2026-10-22-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-22-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-22",
@@ -369,13 +376,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
-  },
-  "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN": {
-    "id": "KL-2026-10-22-PA-KAFL018REFRESH-SETTLEDCLEAN",
-    "date": "2026-10-22",
-    "type": "outcome",
-    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh ad (52562108793580) settled cleanly to status=ACTIVE/effective_status=ACTIVE, no issues_info - resolves KL-2026-10-19-ML-KAFL018POOL-STEP1-SWAP-EXECUTEDs own monitor follow_up",
-    "follow_up": "Step 2 (Metallic Coffee Brown) remains not-before-10-24 per the original staggered-activation sequence - no change from this outcome."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
