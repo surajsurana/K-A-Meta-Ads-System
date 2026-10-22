@@ -321,6 +321,13 @@
     "subject": "Handoff to campaign-strategist - 1 item for a fresh five-way disposition call, 1 item as an FYI continuation of an existing HOLD",
     "follow_up": "Awaiting campaign-strategists disposition call on the dear._.sau item. No action needed on the LOOMIERE continuation beyond the existing HOLD."
   },
+  "KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT": {
+    "id": "KL-2026-10-22-PA-ADCOPY-BLANKTITLEVARIANT",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "Ad-copy completeness sweep (standing weekly duty) - 40/42 active ads clean, 2 ads (Canada Engaged 365D) carry a dynamic-creative title variant that is a blank string - minor completeness gap, not the bare-video-no-text severity of the original 2026-10-02 WhatsApp finding",
+    "follow_up": "campaign-strategist to decide whether to route to creative-copywriter to replace the blank title variant with real text on both ads, or leave as-is given the low severity (5/6 variants already complete)."
+  },
   "KL-2026-10-22-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
     "date": "2026-10-22",
