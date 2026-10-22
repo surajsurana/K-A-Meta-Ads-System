@@ -59,8 +59,9 @@ ka_run_headless() {
   # Concurrency guard: only one headless run touches the shared working
   # directory at a time, across all three job types, not just same-job.
   exec 9>"$LOCK_FILE"
-  if ! flock -w 300 9; then
-    ka_alert_failure "could not acquire run lock within 5 minutes — another run may be stuck"
+  # KA_LOCK_WAIT_S: the lead-quality SOS waits longer (behind a weekly review).
+  if ! flock -w "${KA_LOCK_WAIT_S:-300}" 9; then
+    ka_alert_failure "could not acquire run lock within ${KA_LOCK_WAIT_S:-300}s — another run may be stuck"
     exit 1
   fi
 
@@ -176,6 +177,10 @@ ka_run_headless() {
     heartbeat)
       BG_WAIT_CEILING_MS=600000    # 10 min - back to the CLI's own default; heartbeat should never need the raised ceiling
       OUTER_TIMEOUT_S=1800         # 30 min hard cap (was 20min - see note above)
+      ;;
+    lead-quality-sos)
+      BG_WAIT_CEILING_MS=1200000   # 20 min - an SOS should answer within ~30 min of the press
+      OUTER_TIMEOUT_S=2400         # 40 min hard cap
       ;;
     *)
       BG_WAIT_CEILING_MS=3000000   # 50 min

@@ -110,6 +110,13 @@ PAIRED_CALLBACK_PREFIXES = {"RB": "reject", "HB": "hold"}
 # mis-copied callback_data value - "PY:<check_id>" / "PN:<check_id>" only
 # ever mean "yes/no, this photo pairing shows the same product", nothing else.
 PRODUCT_CALLBACK_PREFIXES = {"PY": "confirm", "PN": "reject"}
+# Lead-quality SOS (added 2026-10-22): "SOS:lead-quality" on a pinned button
+# message (scripts/send_sos_button.py). Same chat-id authorization as every
+# other callback. It only STARTS a read-only investigation run via
+# scripts/lead_quality_sos.py (one at a time, cooldown) - it can never reach
+# an execution dispatch or any Meta/Instagram write.
+SOS_CALLBACK_PREFIXES = {"SOS": "lead-quality"}
+SOS_TRIGGER = os.path.join(REPO_DIR, "scripts", "lead_quality_sos.py")
 PRODUCT_CHECK_STALE_AFTER_HOURS = 168  # a week - these aren't time-sensitive live actions like an execution plan, no reason to expire fast
 
 
@@ -1079,6 +1086,47 @@ def handle_product_check_callback(token, cq):
         log(f"WARNING: could not get message_id from ForceReply prompt for {check_id} - reply matching may fail: {prompt_resp}")
 
 
+def handle_sos_callback(token, cq):
+    cq_id = cq["id"]
+    from_id = cq["from"]["id"]
+    chat_id = cq.get("message", {}).get("chat", {}).get("id")
+    _, configured_chat_id = load_telegram_config()
+    if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        log(f"UNAUTHORIZED SOS attempt from user {from_id} / chat {chat_id}")
+        return
+    try:
+        out = subprocess.run([sys.executable, SOS_TRIGGER, "trigger", "--source", "telegram"],
+                             capture_output=True, text=True, timeout=30, cwd=REPO_DIR)
+        res = json.loads(out.stdout.strip() or "{}")
+    except Exception as e:
+        log(f"ERROR starting SOS: {e}")
+        res = {"status": "error"}
+    st = res.get("status")
+    if st == "started":
+        toast = "SOS received - investigating."
+        text = ("🆘 Lead quality SOS received.\n\nI'm looking at the last 72 hours of enquiries: which ads, "
+                "where people tapped, time of day, and what changed on the ads side. Result here in about 20-30 minutes. "
+                "If a scheduled review is running, it starts right after.")
+    elif st == "running":
+        toast = "An SOS is already running."
+        text = "🆘 An SOS check is already running - the result will come here shortly."
+    elif st == "cooldown":
+        nxt = res.get("next_allowed_at", "")
+        try:
+            nxt = datetime.fromisoformat(nxt).astimezone(timezone(timedelta(hours=5, minutes=30))).strftime("%H:%M IST")
+        except ValueError:
+            pass
+        toast = "SOS ran recently."
+        text = f"🆘 An SOS check ran less than an hour ago. You can press it again after {nxt}."
+    else:
+        toast = "Could not start the SOS."
+        text = "🆘 Sorry - the SOS check could not start. I've logged it; please tell the K&A Meta Ads session."
+    tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": toast})
+    tg_api(token, "sendMessage", {"chat_id": configured_chat_id, "text": text})
+    log(f"SOS button pressed: {st}")
+
+
 def handle_text_reply(token, message):
     """Handles a plain-text message that's a Telegram reply to a pending
     product-check question - the only kind of free-text input this listener
@@ -1366,6 +1414,8 @@ def main_loop():
                             handle_paired_callback_query(token, cq)
                         elif prefix in PRODUCT_CALLBACK_PREFIXES:
                             handle_product_check_callback(token, cq)
+                        elif prefix in SOS_CALLBACK_PREFIXES:
+                            handle_sos_callback(token, cq)
                         else:
                             # Unrecognized data - same "ack quietly, do nothing"
                             # boundary handle_callback_query already documents,

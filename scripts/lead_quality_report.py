@@ -119,6 +119,50 @@ def ad_spend(token, since, until):
     return spend
 
 
+IST = timezone(timedelta(hours=5, minutes=30))
+
+
+def parse_ts(s):
+    try:
+        return datetime.fromisoformat((s or "").replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def is_pending(r, now):
+    """AISI (2026-10-22): a prefill-only row whose staff_replied is still null
+    and that's under ~24h old is "too early to judge", not junk - it becomes
+    prefill-only-unanswered (browsing) once the daily sync knows nobody
+    replied. Kept out of junk counts in SOS reads."""
+    if not (r.get("reason_code") or "").startswith("prefill-only") or r.get("staff_replied") is not None:
+        return False
+    ts = parse_ts(r.get("first_message_at"))
+    return bool(ts) and (now - ts) < timedelta(hours=24)
+
+
+def tap_source(r):
+    """Where the person tapped, from the enquiry's own link."""
+    u = (r.get("source_url") or "").lower()
+    if "instagram.com" in u:
+        return "instagram"
+    if "wa.me/wamo/status" in u:
+        return "whatsapp_status"
+    if "fb.me" in u or "facebook.com" in u:
+        return "facebook"
+    return "unknown"
+
+
+def hour_block_ist(r):
+    ts = parse_ts(r.get("first_message_at"))
+    if not ts:
+        return "unknown"
+    h = ts.astimezone(IST).hour
+    for lo, hi, name in ((0, 6, "00-06"), (6, 9, "06-09"), (9, 12, "09-12"), (12, 15, "12-15"),
+                         (15, 18, "15-18"), (18, 21, "18-21"), (21, 24, "21-24")):
+        if lo <= h < hi:
+            return name + " IST"
+
+
 def new_bucket():
     return {"enquiries": 0, "junk": 0, "browsing": 0, "serious": 0, "converted": 0,
             "prefill_only": 0, "appointments": 0,
@@ -177,13 +221,24 @@ def finish(b):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--since", default=DEFAULT_SINCE)
+    ap.add_argument("--recent-hours", type=int, default=0,
+                    help="only enquiries from the last N hours (lead-quality SOS); "
+                         "spend window starts on that date")
     ap.add_argument("--mature-only", action="store_true",
                     help="only enquiries past AISI's maturity window (default 30 days)")
     args = ap.parse_args()
 
     token = read_text(os.path.join(REPO, "meta_token.txt.txt"))
+    now = datetime.now(timezone.utc)
+    if args.recent_hours:
+        cutoff = now - timedelta(hours=args.recent_hours)
+        args.since = cutoff.strftime("%Y-%m-%d")
     feed = fetch_feed(args.since)
     rows = feed.get("rows", [])
+    if args.recent_hours:
+        rows = [r for r in rows if (parse_ts(r.get("first_message_at")) or now) >= cutoff]
+    pending = [r for r in rows if is_pending(r, now)]
+    rows = [r for r in rows if not is_pending(r, now)]
     if args.mature_only:
         rows = [r for r in rows if r.get("mature")]
     ad_rows = [r for r in rows if r.get("attribution") == "source_id" and r.get("source_id")]
@@ -203,6 +258,9 @@ def main():
     by_adset = collections.defaultdict(new_bucket)
     by_campaign = collections.defaultdict(new_bucket)
     by_country = collections.defaultdict(new_bucket)
+    by_tap_source = collections.defaultdict(new_bucket)
+    by_hour_block = collections.defaultdict(new_bucket)
+    reason_codes = collections.Counter()
     overall_ads = new_bucket()        # WhatsApp-destination ads only
     non_whatsapp = new_bucket()       # DM/Messenger ad sets, shown separately
     def is_wa(ad_id):
@@ -212,8 +270,10 @@ def main():
         for b in (by_ad[r["source_id"]], by_adset[a.get("adset_id") or "unknown"],
                   by_campaign[a.get("campaign_name") or "unknown"],
                   by_country[r.get("residence_country") or "unknown"],
-                  overall_ads if is_wa(r["source_id"]) else non_whatsapp):
+                  overall_ads if is_wa(r["source_id"]) else non_whatsapp,
+                  by_tap_source[tap_source(r)], by_hour_block[hour_block_ist(r)]):
             add_row(b, r)
+        reason_codes[r.get("reason_code") or "none"] += 1
     # Spend: every ad that produced at least one enquiry, summed up the tree.
     # (Ads with spend but zero enquiries are reported separately below.)
     for ad_id, b in by_ad.items():
@@ -232,7 +292,8 @@ def main():
     adset_dest = {a["adset_id"]: a.get("destination_type", "") for a in ads.values()}
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "window": {"since": args.since, "until": until, "mature_only": args.mature_only},
+        "window": {"since": args.since, "until": until, "mature_only": args.mature_only,
+                   "recent_hours": args.recent_hours or None},
         "feed": {k: feed.get(k) for k in ("generated_at", "rules_version", "validated", "validation", "maturity_days", "count")},
         "caveat": ("Labels are spot-checked, not fully validated (see feed.validation: Suraj agreed "
                    "with 25/25 on a non-blind check, 2026-10-22); weight per-ad reads by sample size; "
@@ -251,6 +312,12 @@ def main():
                        adset=ads.get(k, {}).get("adset_name", ""))
                   for k, v in sorted(by_ad.items(), key=lambda kv: -kv[1]["enquiries"])},
         "by_residence_country": {k: finish(v) for k, v in sorted(by_country.items(), key=lambda kv: -kv[1]["enquiries"])},
+        # Spend isn't split by tap source or hour here (Meta can't attribute an
+        # enquiry's spend that way), so only counts and percentages mean anything.
+        "by_tap_source": {k: finish(v) for k, v in sorted(by_tap_source.items(), key=lambda kv: -kv[1]["enquiries"])},
+        "by_hour_block_ist": {k: finish(v) for k, v in sorted(by_hour_block.items())},
+        "ad_reason_codes": dict(reason_codes.most_common()),
+        "pending_too_early_to_judge": len(pending),
         "spend_on_ads_with_no_tracked_enquiry_inr": round(
             sum(s for ad_id, s in spend.items() if ad_id not in by_ad), 0),
     }
