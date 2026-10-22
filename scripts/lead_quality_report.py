@@ -29,7 +29,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 REPO = os.environ.get("KA_REPO") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOME_DIR = os.path.expanduser("~/ka-meta-ads")
@@ -39,6 +39,12 @@ FEED_URL = "https://stitchflow.in/api/ai-sales-intelligence/webhooks/ad-lead-qua
 GRAPH = "https://graph.facebook.com/v21.0"
 ACCOUNT = "act_686170454752172"
 LABELS = ("junk", "browsing", "serious", "converted")
+# The feed is WhatsApp-only. Ad sets that send people to Instagram DMs or
+# Messenger get few or no rows, so their spend would wrongly inflate the
+# WhatsApp cost per serious enquiry (caught 2026-10-22: ~Rs1.29L of DM
+# remarketing spend doubled the headline). They're kept out of the overall
+# totals and reported on their own until DM leads are added (backlog #6).
+NON_WHATSAPP_DESTINATIONS = ("INSTAGRAM_DIRECT", "MESSENGER")
 # The WhatsApp attribution window the feed starts from (AISI's webhook log
 # begins 2026-08-29; earlier rows have no source_id).
 DEFAULT_SINCE = "2026-08-29"
@@ -85,7 +91,7 @@ def ad_lookup(token, ad_ids):
         chunk = ids[i:i + 50]
         res = meta_get("", {
             "ids": ",".join(chunk),
-            "fields": "name,effective_status,adset{id,name},campaign{id,name}",
+            "fields": "name,effective_status,adset{id,name,destination_type},campaign{id,name}",
         }, token)
         for ad_id, a in res.items():
             out[ad_id] = {
@@ -93,6 +99,7 @@ def ad_lookup(token, ad_ids):
                 "status": a.get("effective_status", ""),
                 "adset_id": (a.get("adset") or {}).get("id", ""),
                 "adset_name": (a.get("adset") or {}).get("name", ""),
+                "destination_type": (a.get("adset") or {}).get("destination_type", ""),
                 "campaign_name": (a.get("campaign") or {}).get("name", ""),
             }
     return out
@@ -182,7 +189,13 @@ def main():
     ad_rows = [r for r in rows if r.get("attribution") == "source_id" and r.get("source_id")]
     other_rows = [r for r in rows if r not in ad_rows]
 
-    until = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today = datetime.now(timezone.utc)
+    until = today.strftime("%Y-%m-%d")
+    if args.mature_only:
+        # Spend must cover the same weeks as the enquiries being judged, or
+        # recent spend is divided by older enquiries only (bug caught by
+        # campaign-strategist 2026-10-22: costs came out ~2x too high).
+        until = (today - timedelta(days=int(feed.get("maturity_days") or 30))).strftime("%Y-%m-%d")
     ads = ad_lookup(token, {r["source_id"] for r in ad_rows})
     spend = ad_spend(token, args.since, until)
 
@@ -190,12 +203,16 @@ def main():
     by_adset = collections.defaultdict(new_bucket)
     by_campaign = collections.defaultdict(new_bucket)
     by_country = collections.defaultdict(new_bucket)
-    overall_ads = new_bucket()
+    overall_ads = new_bucket()        # WhatsApp-destination ads only
+    non_whatsapp = new_bucket()       # DM/Messenger ad sets, shown separately
+    def is_wa(ad_id):
+        return ads.get(ad_id, {}).get("destination_type", "") not in NON_WHATSAPP_DESTINATIONS
     for r in ad_rows:
         a = ads.get(r["source_id"], {})
         for b in (by_ad[r["source_id"]], by_adset[a.get("adset_id") or "unknown"],
                   by_campaign[a.get("campaign_name") or "unknown"],
-                  by_country[r.get("residence_country") or "unknown"], overall_ads):
+                  by_country[r.get("residence_country") or "unknown"],
+                  overall_ads if is_wa(r["source_id"]) else non_whatsapp):
             add_row(b, r)
     # Spend: every ad that produced at least one enquiry, summed up the tree.
     # (Ads with spend but zero enquiries are reported separately below.)
@@ -205,13 +222,14 @@ def main():
         a = ads.get(ad_id, {})
         by_adset[a.get("adset_id") or "unknown"]["spend_inr"] += s
         by_campaign[a.get("campaign_name") or "unknown"]["spend_inr"] += s
-        overall_ads["spend_inr"] += s
+        (overall_ads if is_wa(ad_id) else non_whatsapp)["spend_inr"] += s
 
     non_ad = new_bucket()
     for r in other_rows:
         add_row(non_ad, r)
 
     adset_names = {a["adset_id"]: a["adset_name"] for a in ads.values()}
+    adset_dest = {a["adset_id"]: a.get("destination_type", "") for a in ads.values()}
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "window": {"since": args.since, "until": until, "mature_only": args.mature_only},
@@ -220,9 +238,13 @@ def main():
                    "with 25/25 on a non-blind check, 2026-10-22); weight per-ad reads by sample size; "
                    "orders lag up to a day."),
         "ad_enquiries_overall": finish(overall_ads),
+        "non_whatsapp_destination_ad_sets": dict(finish(non_whatsapp), note=(
+            "Instagram-DM / Messenger ad sets: the feed can't see their DM enquiries, "
+            "so cost per serious enquiry here is NOT meaningful (backlog #6).")),
         "non_ad_enquiries_baseline": finish(non_ad),
         "by_campaign": {k: finish(v) for k, v in sorted(by_campaign.items(), key=lambda kv: -kv[1]["enquiries"])},
-        "by_adset": {"{} ({})".format(adset_names.get(k, "unknown"), k): finish(v)
+        "by_adset": {"{} ({})".format(adset_names.get(k, "unknown"), k):
+                     dict(finish(v), destination=adset_dest.get(k, ""))
                      for k, v in sorted(by_adset.items(), key=lambda kv: -kv[1]["enquiries"])},
         "by_ad": {"{} ({})".format(ads.get(k, {}).get("ad_name", "unknown"), k):
                   dict(finish(v), status=ads.get(k, {}).get("status", ""),
