@@ -328,13 +328,6 @@
     "subject": "Backlog #10 recommendation: which standing checks should include lead quality",
     "follow_up": "marketing-lead to put to Suraj; if agreed, update prompts/weekly-review.md, prompts/monthly-strategic-review.md and the test check-in template."
   },
-  "KL-2026-10-22-CS-LEADQUALITYSOS-VERDICT": {
-    "id": "KL-2026-10-22-CS-LEADQUALITYSOS-VERDICT",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "Lead-quality SOS (Suraj button, 72h junk spike) - verdict: CHANGE NEEDED on WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) only; Broad Advantage+ and 4 new test ad sets are ROUTINE/TOO-EARLY",
-    "follow_up": "Route to media-buyer now: validate and prepare an exact execution plan for pausing ad 52562108793580 and reactivating ad 52547120579980 in ad set 6862975169176 (no budget change), including fresh pre-check, rollback criteria, and verification steps - for Surajs direct Telegram approval before marketing-lead executes. Broad Advantage+ and the 4 test ad sets: re-check at next scheduled review, no action now."
-  },
   "KL-2026-10-22-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-22-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-22",
@@ -348,6 +341,13 @@
     "type": "decision",
     "subject": "@dear._.sau carousel 18107304968246234 (instagram.com/p/DepqEi6joUA/) - five-way disposition call: REJECT - zero attribution, independently viewed all 3 frames myself, cannot confirm this is a K&A garment at all",
     "follow_up": "No further action - not pursued as an ad or organic repost. No Suraj approval needed for a REJECT. Link for reference if Suraj wants to look himself: instagram.com/p/DepqEi6joUA/"
+  },
+  "KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT": {
+    "id": "KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - quality-triggered revert of the 2026-10-19 swap: pause ad 52562108793580 (KAFL018 Barbie Pink Refresh), reactivate ad 52547120579980 (You've Seen the Corsets. Meet the Cutout.), no budget change",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: marketing-lead executes exactly this plan (pause 52562108793580, activate 52547120579980), runs the verification steps above, logs a linked type:change entry. After execution, route lead-quality-analyst/performance-analyst to re-check this ad set's junk rate within the next few days to confirm the causal read - escalate per rollback criterion (2) if junk rate does not trend back toward baseline."
   },
   "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK": {
     "id": "KL-2026-10-22-ML-BROAD-VS-INDIAWA-RULE-CHECK",
