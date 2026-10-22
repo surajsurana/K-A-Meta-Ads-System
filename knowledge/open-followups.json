@@ -314,13 +314,6 @@
     "subject": "website-conversion-findings",
     "follow_up": "When Website Engineering proposes a Meta Contact event for WhatsApp enquiry clicks, campaign-strategist and media-buyer review it before it goes live."
   },
-  "KL-2026-10-21-CS-CEILINGWATCH-DAY3BREACH-CONFIRMPENDING": {
-    "id": "KL-2026-10-21-CS-CEILINGWATCH-DAY3BREACH-CONFIRMPENDING",
-    "date": "2026-10-21",
-    "type": "decision",
-    "subject": "Rs6,500 ceiling watch - third consecutive breach day (10-18/19/20), 10-20 now independently clears the single-day >10% trigger leg too (110.1%); independent read: already-pending KL-2026-10-20-MB-CEILINGTRIM-VALIDATED plan remains the correct immediate action, NO new/revised allocation proposed today - but flagging it is unlikely to fully resolve breaches and that this is exactly what its own rollback criterion (3) anticipates",
-    "follow_up": "No new action from campaign-strategist today - the already-pending trim plan (KL-2026-10-20-MB-CEILINGTRIM-VALIDATED) stands as proposed and still needs Suraj's direct Telegram approval before any execution; this entry does not authorize anything. Suggest (not require) refreshing that pending Telegram approval's summary to include the 10-20 data point (third consecutive breach day, single-day >10% leg now independently cleared) before Suraj approves, so the decision is made on current information - reporting this suggestion back to the orchestrator rather than acting on it directly. Once the pending plan is approved and executed, re-check actual spend over the following days against the projection in this entry (~104% of ceiling expected, not full compliance) - if actual spend remains materially above ~100% of ceiling for a sustained period post-trim with the same broad-based pattern, that is exactly when rollback criterion (3) in KL-2026-10-20-MB-CEILINGTRIM-VALIDATED says to escalate to a second-round trim, at which point the currently-excluded ad sets (India Insta Engaged, Broad Advantage+, India Whatsapp, Crimson Beaded, Gold Sculpted, 16th May, Profile Visits) should be re-examined individually for whether their own settling windows have closed by then. Also carrying forward, unchanged: Suraj's explicit answer is still needed on whether the Rs6,500 ceiling means committed daily_budget (reliably controllable) or actual realized spend (inherently noisier) - this entry's projection makes that policy question more consequential, not less, since even a real, approved trim is unlikely to fully resolve actual-spend breaches under the realized-spend reading."
-  },
   "KL-2026-10-21-HEARTBEAT-TGSTATESTALE": {
     "id": "KL-2026-10-21-HEARTBEAT-TGSTATESTALE",
     "date": "2026-10-21",
@@ -341,6 +334,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
+  },
+  "KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED": {
+    "id": "KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "Rs6,500 ceiling watch - the 3-day breach streak (10-18/19/20) did NOT extend to a 4th day: 10-21 actual spend came in UNDER ceiling (92.9%), easing not worsening - reported fresh per explicit instruction, after KL-2026-10-20-MB-CEILINGTRIM-VALIDATED was rejected by Suraj (KL-2026-10-21-103844) and no trim has been applied",
+    "follow_up": "campaign-strategist to decide, at the next due point, whether one compliant day changes anything about the already-rejected trim or whether the standing pacing-volatility explanation (accepted previously via KL-2026-10-19-CS-CEILINGWATCH-WEEKRESOLVED-ACCEPT) still applies without further action. performance-analyst continues the daily/twice-weekly fresh actual-vs-ceiling pull regardless."
   },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
