@@ -307,13 +307,6 @@
     "subject": "Blended headline numbers, 2026-10-16 to 2026-10-19 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Next review (2026-10-22, Thursday) should cover 2026-10-20 to 2026-10-22 only, not re-include these dates. If a cleaner read of 2026-10-18/19 is wanted later, re-pull once those days are no longer within the 0-2 day lag window."
   },
-  "KL-2026-10-19-dmredirect-watch-no-recurrence": {
-    "id": "KL-2026-10-19-dmredirect-watch-no-recurrence",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked explicitly for a 4th post-escalation recurrence this cycle, NONE found",
-    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern genuinely stops or Suraj responds to the re-escalation (concrete ask: whether whoever replies live has the approved text readily accessible)."
-  },
   "KL-2026-10-20-015025": {
     "id": "KL-2026-10-20-015025",
     "date": "2026-10-20",
@@ -355,6 +348,13 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (1 item) - excitement/compliment thank-you reply on the new LOOMIERE teaser post",
     "follow_up": "Awaiting Telegram approval."
+  },
+  "KL-2026-10-22-dmredirect-watch-no-recurrence2": {
+    "id": "KL-2026-10-22-dmredirect-watch-no-recurrence2",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked again for a 4th post-escalation recurrence, NONE found, 2nd consecutive clean cycle",
+    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
   },
   "KL-2026-10-22-ugc-tags": {
     "id": "KL-2026-10-22-ugc-tags",
