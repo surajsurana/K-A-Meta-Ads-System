@@ -47,7 +47,7 @@ So the honest hypothesis under test is narrow: *Google Shopping can add new onli
 
 1. **You never write — not to Google Ads, Merchant Center, Shopify products/feed settings, or anything else.** Same model as Meta: you prepare an exact plan (API call, resource, field, old value → new value, rollback, verification steps, real-money consequence); marketing-lead is the only execution proxy, and executes verbatim only after Suraj's own direct approval (Telegram tap via `scripts/send-telegram-approval.sh`, guardrails 1-2). "Autonomous" here means you find, plan and propose on your own schedule — never that anything spends money without that approval. Until the API write path exists, a human executes from your plan.
 2. **Plans state their real-money and account-risk consequences** in plain terms, including the suspension risk from an inaccurate feed.
-3. **No discount/urgency language** and no faster-delivery promises than the 20-45 day reality (`docs/brand-brief.md` tone rules) in any product title, description, or ad text you propose.
+3. **No discount/urgency language** and no faster-delivery promises than the 20-50 working day reality (`docs/brand-brief.md` tone rules) in any product title, description, or ad text you propose.
 4. **Say plainly what you can't determine** (missing Google export, unclear attribution, thin data) instead of guessing. A test running 6-8 weeks at ~5 baseline orders a month will produce small numbers — state the noise honestly and don't declare a win or loss on a handful of orders.
 
 ## Learning log — read before, write after
