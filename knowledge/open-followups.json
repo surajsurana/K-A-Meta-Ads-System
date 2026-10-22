@@ -342,6 +342,13 @@
     "subject": "Rs6,500/day ceiling policy interpretation RESOLVED: ceiling means the COMMITTED daily_budget total, not actual realized day-to-day spend",
     "follow_up": "Future ceiling-watch cycles should stop flagging actual-realized-spend breach days as a compliance problem requiring a reactive cut by default; the account is compliant on the basis that matters (committed total, currently Rs6,420.00/day under Rs6,500.00/day). The existing daily/twice-weekly actual-spend watch can continue as an informational pacing-volatility tracker, but should not reflexively trigger trim proposals absent a new/different driver, consistent with KL-2026-10-22-CS-CEILINGWATCH-DAY4-NOACTION."
   },
+  "KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK": {
+    "id": "KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "First Love | Broad Advantage+ | India",
+    "follow_up": "re-check 2026-10-30 (or 7 full days after the pause, if it was executed later than 2026-10-23): only if KL-2026-10-22-142513 was actually executed (a later type:change linked to it). Apply its own rollback rule - switch ad 52547120422780 back to ACTIVE if Broad Advantage+ cost per enquiry rose >20% over the Rs60.5 baseline without more serious leads, or Sage Green 7-day frequency >3.0 - AND weigh it together with the lead-quality report (scripts/lead_quality_report.py), placement and normal performance. campaign-strategist gives one combined keep-paused / switch-back-on recommendation; any reactivation goes through media-buyer and Suraj via Telegram. If the plan was rejected or never executed, close this with no action."
+  },
   "KL-2026-10-22-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
     "date": "2026-10-22",
