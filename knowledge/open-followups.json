@@ -314,6 +314,13 @@
     "subject": "Bihar/Jharkhand/Assam/JK combined-spend re-check, explicitly due 'at the very next review' per KL-2026-10-19-CS-GEO-UPRAJASTHANMP-BIHARGROUP-MAINTAIN's own stated watch, does NOT appear to have been performed this cycle - PA's handoff states 'unchanged, no new geo finding' without a fresh Bihar-group spend/order pull on record for 2026-10-22",
     "follow_up": "performance-analyst to explicitly re-run the Bihar/Jharkhand/Assam/JK combined-spend-vs-orders pull (the specific tightened check from KL-2026-10-19) before or at the next review - do not let this slip a second cycle. If combined spend has continued climbing toward ~Rs400/day with orders still at zero, that clears the stated re-open bar and should come back to campaign-strategist as a fresh disposition call, not another 'unchanged' restatement."
   },
+  "KL-2026-10-22-CS-LEADQUALITY-PORTFOLIO-READ": {
+    "id": "KL-2026-10-22-CS-LEADQUALITY-PORTFOLIO-READ",
+    "date": "2026-10-22",
+    "type": "decision",
+    "subject": "First lead-quality portfolio read (backlog #5): dispositions per ad set using cost per serious-or-better (SoB) enquiry and cost per order - no budget reallocation now, Rs0 net change, one creative pause sent to media-buyer, pre-committed Broad->India Whatsapp shift trigger",
+    "follow_up": "PRE-COMMITTED TRIGGER (written before the data): on or after 2026-11-02 re-run the report and cut enquiries dated 2026-09-23..2026-10-19 (all at least 14 days old), using spend from the same window. If Broad Advantage+ cost per SoB is >=1.5x India Whatsapp 9th Dec's AND Broad has no more SoB than India Whatsapp (combined SoB >=12), campaign-strategist proposes Broad Rs1,000->Rs860 and India Whatsapp Rs720->Rs860 (+19.4%, under the 20% learning-reset line), total unchanged Rs6,420. If the gap is under 1.25x, close the watch with no change. In between: hold one more week. Separately: lead-quality-analyst to fix --mature-only spend window (spend should end at today-30d) and the stale 'rules-v1' caveat string."
+  },
   "KL-2026-10-22-CS-SCALEINTEL-NOTYET": {
     "id": "KL-2026-10-22-CS-SCALEINTEL-NOTYET",
     "date": "2026-10-22",
