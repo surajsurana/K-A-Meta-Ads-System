@@ -349,12 +349,12 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
-  "KL-2026-10-22-own-content": {
-    "id": "KL-2026-10-22-own-content",
+  "KL-2026-10-22-comment-batch": {
+    "id": "KL-2026-10-22-comment-batch",
     "date": "2026-10-22",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-22, twice-weekly review) - 1 new own post since the 2026-10-18 boundary, 3rd LOOMIERE festive 2026 teaser post, still coming soon with no SKU/CTA",
-    "follow_up": "Handed off to campaign-strategist as an FYI continuation (see KL-2026-10-22-CS-HANDOFF), not a fresh disposition request, given the existing HOLD still applies (no SKU/CTA yet). Next sweep boundary is 18082101086714747 (2026-10-19T12:58:53). Continue watching for a LOOMIERE reveal/SKU post, which would warrant a fresh five-way call per the standing follow_up from KL-2026-10-19-CS-LOOMIERE-DISPOSITION."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (1 item) - excitement/compliment thank-you reply on the new LOOMIERE teaser post",
+    "follow_up": "Awaiting Telegram approval."
   },
   "KL-2026-10-22-ugc-tags": {
     "id": "KL-2026-10-22-ugc-tags",
