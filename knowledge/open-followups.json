@@ -349,6 +349,13 @@
     "subject": "Scale-readiness headroom signals, weekly review 2026-10-22 - 16th May Awareness CPM drift CONTINUING (not a one-off), while Broad Advantage+ and India Whatsapp (the two strongest-performing ad sets this window, 93 and 58 conversations respectively) show the OPPOSITE, positive headroom pattern (falling CPM, falling frequency, growing reach) - two different stories, reported separately per campaign-strategists own standing not-yet call",
     "follow_up": "campaign-strategist to weigh this alongside the still-unresolved ceiling-compliance picture (KL-2026-10-22-PA-CEILINGWATCH-DAY4EASED) before any step-up call - headroom existing on two ad sets does not by itself answer whether the account can currently hold its OWN existing ceiling cleanly."
   },
+  "KL-2026-10-22-PA-SEASONALITY-OCTMTD": {
+    "id": "KL-2026-10-22-PA-SEASONALITY-OCTMTD",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "October 2026 MTD seasonality via get_monthly_summary (never get_monthly_orders_report, per SS3e) - 65 orders/Rs5,666,900 through day 22 of 31, annualizing to ~91.6/month, continuing to track the accounts own 3-year October average (85-99/month, strongest month historically)",
+    "follow_up": "Re-check once October closes out fully for the real final count vs. this projection."
+  },
   "KL-2026-10-22-ambiguous-comment-still-open": {
     "id": "KL-2026-10-22-ambiguous-comment-still-open",
     "date": "2026-10-22",
