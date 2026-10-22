@@ -293,6 +293,13 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
+  "KL-2026-10-22-093245": {
+    "id": "KL-2026-10-22-093245",
+    "date": "2026-10-22",
+    "type": "observation",
+    "subject": "KL-2026-10-22-142513",
+    "follow_up": "re-check 2026-10-26: if plan KL-2026-10-22-142513 is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
   "KL-2026-10-22-CS-DOBCOVERAGE-ACK": {
     "id": "KL-2026-10-22-CS-DOBCOVERAGE-ACK",
     "date": "2026-10-22",
