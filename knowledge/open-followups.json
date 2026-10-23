@@ -411,5 +411,12 @@
     "type": "observation",
     "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked again for a 4th post-escalation recurrence, NONE found, 2nd consecutive clean cycle",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
+  },
+  "KL-2026-10-23-015145": {
+    "id": "KL-2026-10-23-015145",
+    "date": "2026-10-23",
+    "type": "decision",
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - 2-week stop-rule check (3 days late) - DISPOSITION: MAINTAIN at Rs150/day, re-check in ~1 week, no scale-up and no pause",
+    "follow_up": "Re-check around 2026-10-30 (~1 week, shorter than a full next cycle given the fresh 3-day CPM/impression trend): (1) has cost per messaging_conversation_started vs Broad Advantage+ baseline held, improved, or eroded; (2) has the CTR-up/impressions-down/CPM-up trend continued, reversed, or stabilized; (3) re-pull scripts/lead_quality_report.py - has serious-or-better % moved off 0% now that enquiries are 3-4 weeks old, and does the cross-ad-set 0%-serious pattern on other new tests still hold (if it clears on others but stays at 0% here specifically, that would newly make this ad-set-specific and change the read)."
   }
 }
