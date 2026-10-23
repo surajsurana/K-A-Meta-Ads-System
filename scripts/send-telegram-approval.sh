@@ -63,6 +63,22 @@ if [ "$TYPE" != "decision" ]; then
   exit 1
 fi
 TELEGRAM_SUMMARY="$(printf '%s' "$PLAN_LINE" | jq -r '.telegram_summary // empty')"
+# Scheduled publishing (added 2026-10-22, Suraj: approve ahead of time, post at
+# the planned time). A plan's optional "scheduled_for" (ISO 8601 with offset,
+# e.g. 2026-10-23T19:30:00+05:30) is recorded with the pending request, so the
+# listener holds an approved plan until then instead of executing at the tap.
+SCHEDULED_FOR="$(printf '%s' "$PLAN_LINE" | jq -r '.scheduled_for // empty')"
+SCHEDULE_LINE=""
+if [ -n "$SCHEDULED_FOR" ]; then
+  SCHEDULE_HUMAN="$(python3 -c 'import sys;from datetime import datetime,timezone,timedelta;print(datetime.fromisoformat(sys.argv[1]).astimezone(timezone(timedelta(hours=5,minutes=30))).strftime("%d %b, %I:%M %p IST"))' "$SCHEDULED_FOR" 2>/dev/null)"
+  if [ -z "$SCHEDULE_HUMAN" ]; then
+    echo "ERROR: ${PLAN_ID} has an unreadable scheduled_for (${SCHEDULED_FOR}) - refusing to send, so it can't post at the wrong time." >&2
+    exit 1
+  fi
+  SCHEDULE_LINE="
+
+⏰ Scheduled: approving now does NOT post now. It goes out at ${SCHEDULE_HUMAN}."
+fi
 
 # Plain text, deliberately no parse_mode: plan content is free-form (real
 # plans are full of underscored API field names like app_destination/
@@ -80,7 +96,7 @@ if [ -n "$TELEGRAM_SUMMARY" ]; then
   # header/footer, it never touches the agent's own formatting.
   CAPTION="🔔 Approval needed
 
-${TELEGRAM_SUMMARY}
+${TELEGRAM_SUMMARY}${SCHEDULE_LINE}
 
 Plan ID: ${PLAN_ID}"
 else
@@ -132,6 +148,7 @@ MESSAGE_ID=$(printf '%s' "$RESPONSE" | jq -r '.result.message_id')
 python3 "$REPO_DIR/scripts/telegram_approval_listener.py" --record-sent \
   --plan-id "$PLAN_ID" \
   --chat-id "$TELEGRAM_CHAT_ID" \
-  --message-id "$MESSAGE_ID"
+  --message-id "$MESSAGE_ID" \
+  --scheduled-for "$SCHEDULED_FOR"
 
 echo "Sent approval request for ${PLAN_ID} (Telegram message_id ${MESSAGE_ID})."

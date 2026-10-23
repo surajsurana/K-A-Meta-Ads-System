@@ -116,6 +116,14 @@ PRODUCT_CALLBACK_PREFIXES = {"PY": "confirm", "PN": "reject"}
 # scripts/lead_quality_sos.py (one at a time, cooldown) - it can never reach
 # an execution dispatch or any Meta/Instagram write.
 SOS_CALLBACK_PREFIXES = {"SOS": "lead-quality"}
+# Scheduled publishing (added 2026-10-22): an approved plan whose pending
+# entry carries scheduled_for in the future is parked as status "scheduled"
+# and dispatched by scheduler_loop() at that time - the same dispatch path as
+# an immediate approval, just later. "X:<plan>" cancels a scheduled plan
+# before it runs (same chat-id authorization). Capped at 48h after approval.
+CANCEL_CALLBACK_PREFIXES = {"X": "cancel"}
+MAX_SCHEDULE_AHEAD = timedelta(hours=48)
+IST_TZ = timezone(timedelta(hours=5, minutes=30))
 SOS_TRIGGER = os.path.join(REPO_DIR, "scripts", "lead_quality_sos.py")
 PRODUCT_CHECK_STALE_AFTER_HOURS = 168  # a week - these aren't time-sensitive live actions like an execution plan, no reason to expire fast
 
@@ -230,7 +238,7 @@ def with_state_lock(fn):
             fcntl.flock(lockf, fcntl.LOCK_UN)
 
 
-def record_sent(plan_id, chat_id, message_id):
+def record_sent(plan_id, chat_id, message_id, scheduled_for=""):
     def op(state):
         state[plan_id] = {
             "status": "pending",
@@ -238,6 +246,8 @@ def record_sent(plan_id, chat_id, message_id):
             "message_id": message_id,
             "sent_at": datetime.now(timezone.utc).isoformat(),
         }
+        if scheduled_for:
+            state[plan_id]["scheduled_for"] = scheduled_for
         return state, None
     with_state_lock(op)
     log(f"recorded pending approval request: {plan_id} (message_id={message_id})")
@@ -889,6 +899,35 @@ def handle_callback_query(token, cq):
     # never reach the queue at all and would be stuck exactly like before -
     # enqueueing first guarantees the dispatch always happens once claimed,
     # regardless of what the UI-feedback calls below do.
+    entry = get_entry(plan_id) or {}
+    sched = None
+    if entry.get("scheduled_for"):
+        try:
+            sched = datetime.fromisoformat(entry["scheduled_for"])
+        except ValueError:
+            sched = None
+            # Unreadable time: never post early on a guess. Park it as failed.
+            finalize_status(plan_id, "failed", "unreadable scheduled_for - not posted")
+            tg_api(token, "sendMessage", {"chat_id": chat_id, "text": f"❗ Not posted: this plan's scheduled time couldn't be read, so nothing was done.\n\nPlan ID: {plan_id}"})
+            return
+    now_utc = datetime.now(timezone.utc)
+    if sched and sched > now_utc + timedelta(seconds=60):
+        if sched > now_utc + MAX_SCHEDULE_AHEAD:
+            finalize_status(plan_id, "failed", "scheduled_for more than 48h ahead - not accepted")
+            tg_api(token, "sendMessage", {"chat_id": chat_id, "text": f"❗ Not scheduled: the planned time is more than 48 hours away. Please send it closer to the date.\n\nPlan ID: {plan_id}"})
+            return
+        finalize_status(plan_id, "scheduled", f"approved, will run at {sched.isoformat()}")
+        when = sched.astimezone(IST_TZ).strftime("%d %b, %I:%M %p IST")
+        log(f"approved and scheduled {plan_id} for {sched.isoformat()}")
+        try:
+            tg_api(token, "editMessageText", {
+                "chat_id": chat_id, "message_id": message_id,
+                "text": f"✅ Approved - scheduled\n\nIt will go out at {when}. Nothing happens before then.\n\nPlan ID: {plan_id}",
+                "reply_markup": json.dumps({"inline_keyboard": [[{"text": "Cancel scheduled post", "callback_data": "X:" + plan_id}]]}),
+            })
+        except Exception as e:
+            log(f"non-fatal: failed to edit scheduled message for {plan_id}: {e}")
+        return
     DISPATCH_QUEUE.put((token, plan_id, chat_id, message_id))
     try:
         tg_api(token, "editMessageText", {
@@ -1360,6 +1399,74 @@ def process_approve_dispatch(token, plan_id, chat_id, message_id):
             pass  # best-effort notification; state is already finalized above regardless
 
 
+def handle_cancel_callback(token, cq):
+    cq_id = cq["id"]
+    from_id = cq["from"]["id"]
+    message = cq.get("message", {})
+    chat_id = message.get("chat", {}).get("id")
+    message_id = message.get("message_id")
+    plan_id = cq.get("data", "").split(":", 1)[1]
+    _, configured_chat_id = load_telegram_config()
+    if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Not authorized.", "show_alert": True})
+        log(f"UNAUTHORIZED cancel attempt on {plan_id} from user {from_id} / chat {chat_id}")
+        return
+
+    def op(state):
+        entry = state.get(plan_id)
+        if entry is None:
+            return None, "unknown"
+        if entry.get("status") != "scheduled":
+            return None, "already:" + str(entry.get("status"))
+        entry["status"] = "cancelled"
+        entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
+        state[plan_id] = entry
+        return state, "cancelled"
+    outcome = with_state_lock(op)
+    if outcome != "cancelled":
+        tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Too late or not scheduled: " + outcome.replace("already:", ""), "show_alert": True})
+        return
+    append_learning_log({
+        "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "actor": "human", "type": "override", "subject": plan_id,
+        "summary": f"Scheduled plan {plan_id} cancelled via Telegram before it ran. No Meta/Instagram changes made.",
+        "source": "human_told", "confidence": "high",
+        "tags": ["telegram-approval", "scheduled", "cancelled"], "linked_to": [plan_id],
+    })
+    tg_api(token, "answerCallbackQuery", {"callback_query_id": cq_id, "text": "Cancelled."})
+    tg_api(token, "editMessageText", {"chat_id": chat_id, "message_id": message_id,
+                                       "text": f"❌ Scheduled post cancelled\n\nNothing was posted.\n\nPlan ID: {plan_id}"})
+    log(f"scheduled plan cancelled: {plan_id}")
+
+
+def scheduler_loop(token):
+    """Every 30s: move any approved+scheduled plan whose time has come onto the
+    normal dispatch queue. State survives listener restarts (it's on disk), so
+    a restart before the time can't lose or double-run a scheduled plan."""
+    while True:
+        try:
+            def op(state):
+                due = []
+                now_utc = datetime.now(timezone.utc)
+                for pid, e in state.items():
+                    if e.get("status") != "scheduled":
+                        continue
+                    try:
+                        when = datetime.fromisoformat(e.get("scheduled_for", ""))
+                    except ValueError:
+                        continue
+                    if when <= now_utc:
+                        e["status"] = "claimed_approve"
+                        due.append((pid, e.get("chat_id"), e.get("message_id")))
+                return (state if due else None), due
+            for pid, chat_id, message_id in with_state_lock(op):
+                log(f"scheduled time reached, dispatching {pid}")
+                DISPATCH_QUEUE.put((token, pid, chat_id, message_id))
+        except Exception as e:
+            log(f"scheduler loop error (will retry): {e}")
+        time.sleep(30)
+
+
 def dispatch_worker_loop():
     """Runs forever on a background thread, processing approved plans one at
     a time (bounded concurrency - see DISPATCH_QUEUE comment) so the main
@@ -1392,6 +1499,7 @@ def main_loop():
     _lock_handle = acquire_singleton_lock()  # noqa: F841 - held for process lifetime
     token, _ = load_telegram_config()
     threading.Thread(target=dispatch_worker_loop, daemon=True, name="dispatch-worker").start()
+    threading.Thread(target=scheduler_loop, args=(token,), daemon=True, name="scheduler").start()
     log(f"listener started, pid={os.getpid()}")
     maybe_send_next_queued_check(token)  # in case something was queued while the listener was down/restarting
     offset = None
@@ -1416,6 +1524,8 @@ def main_loop():
                             handle_product_check_callback(token, cq)
                         elif prefix in SOS_CALLBACK_PREFIXES:
                             handle_sos_callback(token, cq)
+                        elif prefix in CANCEL_CALLBACK_PREFIXES:
+                            handle_cancel_callback(token, cq)
                         else:
                             # Unrecognized data - same "ack quietly, do nothing"
                             # boundary handle_callback_query already documents,
@@ -1444,7 +1554,8 @@ if __name__ == "__main__":
         def arg(name):
             i = sys.argv.index(name)
             return sys.argv[i + 1]
-        record_sent(arg("--plan-id"), arg("--chat-id"), arg("--message-id"))
+        record_sent(arg("--plan-id"), arg("--chat-id"), arg("--message-id"),
+                    arg("--scheduled-for") if "--scheduled-for" in sys.argv else "")
     elif "--record-product-check" in sys.argv:
         def arg(name):
             i = sys.argv.index(name)
