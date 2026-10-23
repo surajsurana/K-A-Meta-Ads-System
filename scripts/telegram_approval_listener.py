@@ -124,6 +124,13 @@ SOS_CALLBACK_PREFIXES = {"SOS": "lead-quality"}
 CANCEL_CALLBACK_PREFIXES = {"X": "cancel"}
 MAX_SCHEDULE_AHEAD = timedelta(hours=48)
 IST_TZ = timezone(timedelta(hours=5, minutes=30))
+# Organic auto-publish (added 2026-10-23, Suraj: "no tap. drive checks only"):
+# entries written by scripts/organic_autopost.py submit carry
+# executor="organic_autopost". At their time the scheduler runs that tool's
+# deterministic `publish` (which re-checks the Drive approval first) instead
+# of the claude-p execution dispatch. Cancel (X:) works the same way.
+AUTOPOST_PY = os.path.expanduser("~/venvs/ka-autopost/bin/python3")
+AUTOPOST_SCRIPT = os.path.join(REPO_DIR, "scripts", "organic_autopost.py")
 SOS_TRIGGER = os.path.join(REPO_DIR, "scripts", "lead_quality_sos.py")
 PRODUCT_CHECK_STALE_AFTER_HOURS = 168  # a week - these aren't time-sensitive live actions like an execution plan, no reason to expire fast
 
@@ -1456,12 +1463,20 @@ def scheduler_loop(token):
                     except ValueError:
                         continue
                     if when <= now_utc:
-                        e["status"] = "claimed_approve"
-                        due.append((pid, e.get("chat_id"), e.get("message_id")))
+                        auto = e.get("executor") == "organic_autopost"
+                        e["status"] = "publishing" if auto else "claimed_approve"
+                        due.append((pid, e.get("chat_id"), e.get("message_id"), auto))
                 return (state if due else None), due
-            for pid, chat_id, message_id in with_state_lock(op):
-                log(f"scheduled time reached, dispatching {pid}")
-                DISPATCH_QUEUE.put((token, pid, chat_id, message_id))
+            for pid, chat_id, message_id, auto in with_state_lock(op):
+                log(f"scheduled time reached, dispatching {pid}" + (" (organic auto-publish)" if auto else ""))
+                if auto:
+                    subprocess.Popen([AUTOPOST_PY if os.path.exists(AUTOPOST_PY) else sys.executable,
+                                      AUTOPOST_SCRIPT, "publish", pid], cwd=REPO_DIR,
+                                     stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                                     stderr=open(os.path.join(LOG_DIR, "organic-autopost.log"), "a"),
+                                     start_new_session=True)
+                else:
+                    DISPATCH_QUEUE.put((token, pid, chat_id, message_id))
         except Exception as e:
             log(f"scheduler loop error (will retry): {e}")
         time.sleep(30)
