@@ -398,13 +398,6 @@
     "subject": "Ambiguous comment @aesana0710 Pls check your DM (media 18119098733004826) - still unresolved, no new developments this cycle",
     "follow_up": "Still no plan drafted - awaiting a human read on what this comment actually refers to. Continue checking status each cycle until resolved."
   },
-  "KL-2026-10-22-comment-batch": {
-    "id": "KL-2026-10-22-comment-batch",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (1 item) - excitement/compliment thank-you reply on the new LOOMIERE teaser post",
-    "follow_up": "Awaiting Telegram approval."
-  },
   "KL-2026-10-22-dmredirect-watch-no-recurrence2": {
     "id": "KL-2026-10-22-dmredirect-watch-no-recurrence2",
     "date": "2026-10-22",
@@ -418,5 +411,12 @@
     "type": "decision",
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - 2-week stop-rule check (3 days late) - DISPOSITION: MAINTAIN at Rs150/day, re-check in ~1 week, no scale-up and no pause",
     "follow_up": "Re-check around 2026-10-30 (~1 week, shorter than a full next cycle given the fresh 3-day CPM/impression trend): (1) has cost per messaging_conversation_started vs Broad Advantage+ baseline held, improved, or eroded; (2) has the CTR-up/impressions-down/CPM-up trend continued, reversed, or stabilized; (3) re-pull scripts/lead_quality_report.py - has serious-or-better % moved off 0% now that enquiries are 3-4 weeks old, and does the cross-ad-set 0%-serious pattern on other new tests still hold (if it clears on others but stays at 0% here specifically, that would newly make this ad-set-specific and change the read)."
+  },
+  "KL-2026-10-23-140410": {
+    "id": "KL-2026-10-23-140410",
+    "date": "2026-10-23",
+    "type": "decision",
+    "subject": "Organic Instagram feed carousel LM-002 - Loomiere Festive 2026 launch (3 slides) - RUN 1 TEST post, Suraj deletes after checking",
+    "follow_up": "Awaiting Suraj's Telegram APPROVE tap. After execution: marketing-lead logs type=change with permalink; Suraj deletes the test post manually on Instagram. Do not re-send this plan if it was already executed or handled manually."
   }
 }
