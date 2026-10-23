@@ -412,11 +412,11 @@
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - 2-week stop-rule check (3 days late) - DISPOSITION: MAINTAIN at Rs150/day, re-check in ~1 week, no scale-up and no pause",
     "follow_up": "Re-check around 2026-10-30 (~1 week, shorter than a full next cycle given the fresh 3-day CPM/impression trend): (1) has cost per messaging_conversation_started vs Broad Advantage+ baseline held, improved, or eroded; (2) has the CTR-up/impressions-down/CPM-up trend continued, reversed, or stabilized; (3) re-pull scripts/lead_quality_report.py - has serious-or-better % moved off 0% now that enquiries are 3-4 weeks old, and does the cross-ad-set 0%-serious pattern on other new tests still hold (if it clears on others but stays at 0% here specifically, that would newly make this ad-set-specific and change the read)."
   },
-  "KL-2026-10-23-LM002-RUN2-1930": {
-    "id": "KL-2026-10-23-LM002-RUN2-1930",
+  "KL-2026-10-23-193049": {
+    "id": "KL-2026-10-23-193049",
     "date": "2026-10-23",
-    "type": "decision",
-    "subject": "Organic Instagram feed carousel LM-002 - Loomiere Festive 2026 launch (3 slides) - RUN 2, REAL launch post (test deleted)",
-    "follow_up": "The top-level session sends the Telegram approval to Suraj at about 7:25 pm IST on 2026-10-23. After execution, marketing-lead logs type=change with the permalink. Do not re-send if already executed or handled manually."
+    "type": "change",
+    "subject": "Executed KL-2026-10-23-LM002-RUN2-1930 - organic IG feed carousel LM-002 REAL launch posted at scheduled 7:30pm IST",
+    "follow_up": "Post is live and intended to stay up. No further action needed unless Suraj requests a change."
   }
 }
