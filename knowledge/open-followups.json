@@ -405,18 +405,18 @@
     "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked again for a 4th post-escalation recurrence, NONE found, 2nd consecutive clean cycle",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
   },
-  "KL-2026-10-23-015145": {
-    "id": "KL-2026-10-23-015145",
-    "date": "2026-10-23",
-    "type": "decision",
-    "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - 2-week stop-rule check (3 days late) - DISPOSITION: MAINTAIN at Rs150/day, re-check in ~1 week, no scale-up and no pause",
-    "follow_up": "Re-check around 2026-10-30 (~1 week, shorter than a full next cycle given the fresh 3-day CPM/impression trend): (1) has cost per messaging_conversation_started vs Broad Advantage+ baseline held, improved, or eroded; (2) has the CTR-up/impressions-down/CPM-up trend continued, reversed, or stabilized; (3) re-pull scripts/lead_quality_report.py - has serious-or-better % moved off 0% now that enquiries are 3-4 weeks old, and does the cross-ad-set 0%-serious pattern on other new tests still hold (if it clears on others but stays at 0% here specifically, that would newly make this ad-set-specific and change the read)."
-  },
   "KL-2026-10-23-193049": {
     "id": "KL-2026-10-23-193049",
     "date": "2026-10-23",
     "type": "change",
     "subject": "Executed KL-2026-10-23-LM002-RUN2-1930 - organic IG feed carousel LM-002 REAL launch posted at scheduled 7:30pm IST",
     "follow_up": "Post is live and intended to stay up. No further action needed unless Suraj requests a change."
+  },
+  "KL-2026-10-24-CS-METALLICBLUE-TRENDCONTINUATION": {
+    "id": "KL-2026-10-24-CS-METALLICBLUE-TRENDCONTINUATION",
+    "date": "2026-10-24",
+    "type": "outcome",
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - week-over-week CTR/CPM anomaly checked against KL-2026-10-23-015145s mid-cycle note - DISPOSITION: same already-tracked trend, continuing; no new action; existing ~2026-10-30 re-check stands",
+    "follow_up": "No change to the re-check date - remains ~2026-10-30 per KL-2026-10-23-015145, covering: (1) cost per messaging_conversation_started vs Broad Advantage+ baseline, (2) whether this CTR-up/impressions-down/CPM-up trend has continued, reversed, or stabilized by then, (3) a fresh scripts/lead_quality_report.py pull for serious-or-better % movement now that leads are older. No Telegram notification for this entry - pure confirmation that an already-tracked trend is continuing, no new action triggered, consistent with the daily heartbeats own routing rule that a pure reconfirmation does not get escalated."
   }
 }
