@@ -7,7 +7,6 @@ library". Runs from cron once a day around midnight IST (unattended jobs run at
 night). Read-only against Instagram: GET calls only.
 
 What it collects (only what Instagram's official API exposes):
-  - own posts/Reels       GET /{ig}/media
   - own Stories           GET /{ig}/stories   (live 24h only, hence daily)
   - posts tagging us      GET /{ig}/tags
   - brand hashtags        ig_hashtag_search -> /recent_media (last 24h only)
@@ -113,8 +112,10 @@ def parse_ts(s):
 def found_items(tok):
     """[(found_via, media dict)] from every readable source."""
     out, errors = [], []
-    for via, path, params in (("own_post", IG + "/media", {"fields": FIELDS, "limit": 25}),
-                              ("own_story", IG + "/stories", {"fields": FIELDS}),
+    # Own posts/Reels are NOT collected (Suraj, 2026-10-25): they stay on the
+    # account and the ads system reads them from Meta directly. Own Stories
+    # are, because Meta only shows a Story for 24 hours.
+    for via, path, params in (("own_story", IG + "/stories", {"fields": FIELDS}),
                               ("tagged", IG + "/tags", {"fields": FIELDS, "limit": 25})):
         d = get(path, params, tok)
         if "error" in d:
