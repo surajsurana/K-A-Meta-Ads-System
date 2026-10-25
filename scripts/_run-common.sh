@@ -199,12 +199,28 @@ ka_run_headless() {
     # unflushed buffer when it got killed, so a human reading the log had no
     # way to see how far it actually got. Doesn't change what work happens,
     # only makes a future killed run's partial log actually readable.
-    stdbuf -oL -eL timeout "$OUTER_TIMEOUT_S" claude -p "$(cat "$PROMPT_FILE")" \
-      --permission-mode dontAsk \
-      --allowedTools "Read,Grep,Glob,Bash,WebSearch,mcp__stitchflow__*" \
-      2>&1
-    CLAUDE_EXIT=$?
-    echo "[run-${JOB_NAME}] claude exited $CLAUDE_EXIT"
+    # One automatic retry for a start-up failure (added 2026-10-25, real
+    # incident: the 2026-10-25 heartbeat printed only "Execution error" from
+    # the CLI, then sat until the 30-min timeout with no work done). If the
+    # run fails and produced almost no output, it never really started -
+    # wait 2 minutes and try once more. A run that did real work is never
+    # repeated (that could double-log entries).
+    for ATTEMPT in 1 2; do
+      ATTEMPT_START_BYTES=$(stat -c %s "$LOG_FILE" 2>/dev/null || echo 0)
+      stdbuf -oL -eL timeout "$OUTER_TIMEOUT_S" claude -p "$(cat "$PROMPT_FILE")" \
+        --permission-mode dontAsk \
+        --allowedTools "Read,Grep,Glob,Bash,WebSearch,mcp__stitchflow__*" \
+        2>&1
+      CLAUDE_EXIT=$?
+      echo "[run-${JOB_NAME}] claude exited $CLAUDE_EXIT (attempt $ATTEMPT)"
+      PRODUCED=$(( $(stat -c %s "$LOG_FILE" 2>/dev/null || echo 0) - ATTEMPT_START_BYTES ))
+      if [ "$CLAUDE_EXIT" -ne 0 ] && [ "$ATTEMPT" -eq 1 ] && [ "$PRODUCED" -lt 400 ]; then
+        echo "[run-${JOB_NAME}] start-up failure (only ${PRODUCED} bytes of output) - retrying once in 2 minutes"
+        sleep 120
+        continue
+      fi
+      break
+    done
   } >> "$LOG_FILE" 2>&1
 
   if [ "${CLAUDE_EXIT:-1}" -ne 0 ]; then
