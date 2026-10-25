@@ -412,12 +412,12 @@
     "subject": "Priyaas makeover UGC (reel 18101705564056757, KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP) - the \"no video asset in media library\" half of the stop is now resolved; product/SKU still not linked",
     "follow_up": "No live action. Still needs Suraj to tag the real product/SKU for this reel (media-library/index.json entry 20261025T064023Z_ig_tagged_DeoMHQzsur8.mp4) via the Ops Console, or an interactive session with Shopify tooling to identify it, before creative-copywriter can brief or media-buyer can build. Once a SKU is confirmed, re-run plan KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION."
   },
-  "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK": {
-    "id": "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK",
+  "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-VERDICT-TRIM": {
+    "id": "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-VERDICT-TRIM",
     "date": "2026-10-25",
     "type": "decision",
-    "subject": "India Insta Engaged 365D & Followers (6538717752176) - frequency climb 2.465->3.121 (Oct 11-17 vs Oct 18-24), now above the account own 3x hard-flag threshold - DISPOSITION: SEND BACK for the standing audience-overlap check before any trim/hold verdict, do not finalize a saturation read yet",
-    "follow_up": "performance-analyst to run the overlap + own-budget check and re-present; no trim/hold/scale verdict until then."
+    "subject": "India Insta Engaged 365D & Followers (6538717752176) - frequency 3x hard-flag crossed for the first time on this ad set - VERDICT: TRIM 20%, saturation diagnosis confirmed, sibling-overlap mechanism ruled out this cycle",
+    "follow_up": "HANDOFF to media-buyer: validate and prepare the exact execution plan (POST /6538717752176 daily_budget=175000 minor units; re-verify live state fresh, including the current committed total, before finalizing - do not reuse the Rs6,420.00/day figure without a fresh pull). Route to Suraj via the normal Meta-change approval flow (this is a real budget write, not a confirmation-only question) - the telegram_summary should state plainly that this is a different mechanism from the pacing-volatility trim he rejected on 2026-10-21, so he does not read it as the same declined idea resurfacing. ROLLBACK/RE-CHECK: re-pull this ad set's 7-day rolling frequency and reach one week after the trim lands. If frequency has eased toward/under ~2.7x with reach growth resuming roughly proportional to impressions, the trim worked as intended - hold at the new budget. If frequency has NOT eased despite the cut, that would mean the within-pool-saturation diagnosis was incomplete - re-escalate (reopen the sibling-overlap question or another cause) rather than cutting again blindly. SEPARATELY: ask performance-analyst to identify, at the next check, whether any specific ad within this ad set is the newest/weakest performer - pausing it remains an available secondary lever not applied this cycle for lack of that data."
   },
   "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN": {
     "id": "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN",
