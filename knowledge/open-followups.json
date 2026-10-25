@@ -265,13 +265,6 @@
     "subject": "Profile Visits | India (ad set 52538161512180) - executed pause of Ad A (\"Profile Visits | Four Techniques, One Sage Green Silhouette\", ad 52551760703580), root-cause diagnostic step, no budget change",
     "follow_up": "At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 (52538162380380) active, per the rollback criteria in KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE. If reactivation is ever decided, revert: status PAUSED -> ACTIVE on 52551760703580."
   },
-  "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP": {
-    "id": "KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP",
-    "date": "2026-10-19",
-    "type": "observation",
-    "subject": "@priyaas_makeoverr Reel 18101705564056757 TEST disposition approved by Suraj but cannot be built this session - no product/SKU linked, no video asset in media library",
-    "follow_up": "Needs an interactive session to retrieve the actual video asset for this reel and identify/confirm the real product/SKU via Shopify + Stitchflow cross-check before creative-copywriter can brief it and media-buyer can build the ad set."
-  },
   "KL-2026-10-20-015025": {
     "id": "KL-2026-10-20-015025",
     "date": "2026-10-20",
@@ -411,6 +404,13 @@
     "type": "outcome",
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - week-over-week CTR/CPM anomaly checked against KL-2026-10-23-015145s mid-cycle note - DISPOSITION: same already-tracked trend, continuing; no new action; existing ~2026-10-30 re-check stands",
     "follow_up": "No change to the re-check date - remains ~2026-10-30 per KL-2026-10-23-015145, covering: (1) cost per messaging_conversation_started vs Broad Advantage+ baseline, (2) whether this CTR-up/impressions-down/CPM-up trend has continued, reversed, or stabilized by then, (3) a fresh scripts/lead_quality_report.py pull for serious-or-better % movement now that leads are older. No Telegram notification for this entry - pure confirmation that an already-tracked trend is continuing, no new action triggered, consistent with the daily heartbeats own routing rule that a pure reconfirmation does not get escalated."
+  },
+  "KL-2026-10-25-074214": {
+    "id": "KL-2026-10-25-074214",
+    "date": "2026-10-25",
+    "type": "observation",
+    "subject": "Priyaas makeover UGC (reel 18101705564056757, KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP) - the \"no video asset in media library\" half of the stop is now resolved; product/SKU still not linked",
+    "follow_up": "No live action. Still needs Suraj to tag the real product/SKU for this reel (media-library/index.json entry 20261025T064023Z_ig_tagged_DeoMHQzsur8.mp4) via the Ops Console, or an interactive session with Shopify tooling to identify it, before creative-copywriter can brief or media-buyer can build. Once a SKU is confirmed, re-run plan KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION."
   },
   "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK": {
     "id": "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK",
