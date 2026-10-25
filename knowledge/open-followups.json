@@ -412,18 +412,18 @@
     "subject": "Priyaas makeover UGC (reel 18101705564056757, KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP) - the \"no video asset in media library\" half of the stop is now resolved; product/SKU still not linked",
     "follow_up": "No live action. Still needs Suraj to tag the real product/SKU for this reel (media-library/index.json entry 20261025T064023Z_ig_tagged_DeoMHQzsur8.mp4) via the Ops Console, or an interactive session with Shopify tooling to identify it, before creative-copywriter can brief or media-buyer can build. Once a SKU is confirmed, re-run plan KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION."
   },
-  "KL-2026-10-25-075257": {
-    "id": "KL-2026-10-25-075257",
-    "date": "2026-10-25",
-    "type": "decision",
-    "subject": "India Insta Engaged 365D & Followers (6538717752176) - execution plan for the 3x-frequency-hard-flag trim, independently verified fresh",
-    "follow_up": "Re-check ad set 6538717752176's 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
-  },
   "KL-2026-10-25-075436": {
     "id": "KL-2026-10-25-075436",
     "date": "2026-10-25",
     "type": "observation",
     "subject": "Escalated the staff_replied/AISI labelling-pipeline break to Suraj via Telegram (plain FYI, no approval needed)",
     "follow_up": "No live action pending from this entry itself. Continue the staff_replied None-rate recheck on future heartbeats per KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKENs own follow_up; re-notify only if Suraj asks or if the break clears/worsens materially."
+  },
+  "KL-2026-10-25-135922": {
+    "id": "KL-2026-10-25-135922",
+    "date": "2026-10-25",
+    "type": "change",
+    "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
+    "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   }
 }
