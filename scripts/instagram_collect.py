@@ -215,7 +215,9 @@ def collect(dry_run=False):
                     # Instagram withholds some files (e.g. Stories with licensed music),
                     # or it's too big: keep the thumbnail + link only.
                     entry["video_removed_at"] = entry["uploaded_at"]
-                    entry["video_note"] = "not downloaded (Instagram didn't provide the file, or it's over {} MB)".format(MAX_VIDEO_MB)
+                    entry["video_note"] = ("Instagram doesn't share this video's file (usually because it uses licensed music), "
+                                           "so it plays on Instagram only" if not src.get("media_url")
+                                           else "video is over {} MB, so only the cover is kept".format(MAX_VIDEO_MB))
                     if not entry.get("thumbnail"):
                         continue
             else:
