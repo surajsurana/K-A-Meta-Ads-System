@@ -419,11 +419,11 @@
     "subject": "India Insta Engaged 365D & Followers (6538717752176) - execution plan for the 3x-frequency-hard-flag trim, independently verified fresh",
     "follow_up": "Re-check ad set 6538717752176's 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN": {
-    "id": "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN",
+  "KL-2026-10-25-075436": {
+    "id": "KL-2026-10-25-075436",
     "date": "2026-10-25",
     "type": "observation",
-    "subject": "staff_replied labelling-pipeline break (KL-2026-10-25-CS-KAFL018ROLLBACKCRIT2-ARTIFACT-HOLD) has NOT cleared as of this pull - stays at 95-100% None through today, rollback-criterion-2 recheck remains on hold",
-    "follow_up": "Re-run this same staff_replied None-rate check on the next heartbeat before attempting rollback-criterion-2 again. If staff_replied resumes populating (drops back to ~0% None for recent days), only then run the real rollback-criterion-2 recheck."
+    "subject": "Escalated the staff_replied/AISI labelling-pipeline break to Suraj via Telegram (plain FYI, no approval needed)",
+    "follow_up": "No live action pending from this entry itself. Continue the staff_replied None-rate recheck on future heartbeats per KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKENs own follow_up; re-notify only if Suraj asks or if the break clears/worsens materially."
   }
 }
