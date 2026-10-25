@@ -370,13 +370,6 @@
     "subject": "First Love | Broad Advantage+ | India",
     "follow_up": "re-check 2026-10-30 (or 7 full days after the pause, if it was executed later than 2026-10-23): only if KL-2026-10-22-142513 was actually executed (a later type:change linked to it). Apply its own rollback rule - switch ad 52547120422780 back to ACTIVE if Broad Advantage+ cost per enquiry rose >20% over the Rs60.5 baseline without more serious leads, or Sage Green 7-day frequency >3.0 - AND weigh it together with the lead-quality report (scripts/lead_quality_report.py), placement and normal performance. campaign-strategist gives one combined keep-paused / switch-back-on recommendation; any reactivation goes through media-buyer and Suraj via Telegram. If the plan was rejected or never executed, close this with no action."
   },
-  "KL-2026-10-22-ML-KAFL018POOL-QUALITYREVERT-EXECUTED": {
-    "id": "KL-2026-10-22-ML-KAFL018POOL-QUALITYREVERT-EXECUTED",
-    "date": "2026-10-22",
-    "type": "change",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - executed quality-triggered revert: paused KAFL018 Barbie Pink Refresh ad, reactivated stale original ad",
-    "follow_up": "Route lead-quality-analyst/performance-analyst to re-check this ad set's junk rate and placement mix over the next few days to confirm the causal read - junk rate should trend back toward the 61.0% 30-day baseline now that the drifting ad is out of the mix. Escalate per the plan's rollback criterion (2) if it does not. Also monitor reactivated ad 52547120579980 effective_status settles cleanly to ACTIVE, not WITH_ISSUES/DISAPPROVED."
-  },
   "KL-2026-10-22-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
     "date": "2026-10-22",
@@ -418,5 +411,12 @@
     "type": "outcome",
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - week-over-week CTR/CPM anomaly checked against KL-2026-10-23-015145s mid-cycle note - DISPOSITION: same already-tracked trend, continuing; no new action; existing ~2026-10-30 re-check stands",
     "follow_up": "No change to the re-check date - remains ~2026-10-30 per KL-2026-10-23-015145, covering: (1) cost per messaging_conversation_started vs Broad Advantage+ baseline, (2) whether this CTR-up/impressions-down/CPM-up trend has continued, reversed, or stabilized by then, (3) a fresh scripts/lead_quality_report.py pull for serious-or-better % movement now that leads are older. No Telegram notification for this entry - pure confirmation that an already-tracked trend is continuing, no new action triggered, consistent with the daily heartbeats own routing rule that a pure reconfirmation does not get escalated."
+  },
+  "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK": {
+    "id": "KL-2026-10-25-CS-INSTAENGAGED-FREQ3X-SENDBACK",
+    "date": "2026-10-25",
+    "type": "decision",
+    "subject": "India Insta Engaged 365D & Followers (6538717752176) - frequency climb 2.465->3.121 (Oct 11-17 vs Oct 18-24), now above the account own 3x hard-flag threshold - DISPOSITION: SEND BACK for the standing audience-overlap check before any trim/hold verdict, do not finalize a saturation read yet",
+    "follow_up": "performance-analyst to run the overlap + own-budget check and re-present; no trim/hold/scale verdict until then."
   }
 }
