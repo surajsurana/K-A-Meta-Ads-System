@@ -21,9 +21,20 @@ scored 5 (8/8 frames); different videos never came below ~84, mostly 95-130.
 The 64-bit aHash used by find-duplicate-creative.py was tried first and
 produced false matches here (one blank frame; two different corsets at 8).
 
+Also compared against (added 2026-10-25, Suraj: "some items can be in our
+instagram feed as reels or content available to ads system somehow. so there
+is no need to upload that"): our recent Instagram feed posts/Reels
+(FEED_LIMIT) and the most recent videos/images already in the Meta ad account
+(ADS_LIMIT). Those files are downloaded to a temp folder only long enough to
+fingerprint them, one at a time, then deleted; only the fingerprints are
+cached. An item found there is not "missing": the ads system can use it
+from Meta directly.
+
 Results go to ~/ka-meta-ads-dashboard/media-library/matches.json, a separate
 file from index.json so the dashboard's own saves can never wipe them:
-  {"<collected item id>": {"upload": "<upload id>" | null, "distance": n,
+  {"<collected item id>": {"upload": "<upload id | feed permalink | ad video/image id>" | null,
+                           "where": "uploads" | "feed" | "ad_account" | null,
+                           "label": "<what to show>", "distance": n,
                            "checked_at": "...", "manual": true|false}}
 "manual" entries come from the dashboard's "Already uploaded" button and are
 never overwritten by the automatic match.
@@ -38,6 +49,9 @@ import os
 import subprocess
 import sys
 import tempfile
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 
 LIB = os.path.expanduser("~/ka-meta-ads-dashboard/media-library")
@@ -50,6 +64,13 @@ MIN_AGREEING = 2
 BLANK_STDDEV = 15
 MAX_FRAMES = 40
 HASH_VERSION = "dhash16-v2"
+REPO = os.environ.get("KA_REPO") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GRAPH = "https://graph.facebook.com/v21.0"
+IG = "17841401625784277"
+AD_ACCOUNT = "act_686170454752172"
+FEED_LIMIT = 50
+ADS_LIMIT = 60
+MAX_DOWNLOAD_MB = 120
 
 
 def load(path, default):
@@ -133,6 +154,89 @@ def hashes_for(item, cache):
     return hs
 
 
+def graph(path, params, tok):
+    url = "{}/{}?{}".format(GRAPH, path, urllib.parse.urlencode(dict(params, access_token=tok)))
+    try:
+        with urllib.request.urlopen(url, timeout=60) as r:
+            return json.loads(r.read().decode())
+    except (urllib.error.URLError, TimeoutError, ValueError) as e:
+        print("WARN Meta read failed for {}: {}".format(path.split("?")[0], e))
+        return {}
+
+
+def meta_sources(tok):
+    """Content the ads system can already use from Meta directly:
+    [(cache key, where, label, ref, [(url, is_video), ...])]."""
+    out = []
+    d = graph(IG + "/media", {"limit": FEED_LIMIT, "fields": "id,media_type,media_url,thumbnail_url,permalink,timestamp,"
+                                                          "children{media_type,media_url,thumbnail_url}"}, tok)
+    for m in d.get("data", []):
+        parts = (m.get("children") or {}).get("data") or [m]
+        urls = []
+        for c in parts:
+            if c.get("media_type") == "VIDEO":
+                if c.get("media_url"):
+                    urls.append((c["media_url"], True))
+                if c.get("thumbnail_url"):
+                    urls.append((c["thumbnail_url"], False))
+            elif c.get("media_url"):
+                urls.append((c["media_url"], False))
+        if urls:
+            when = (m.get("timestamp") or "")[:10]
+            out.append(("feed:" + m["id"], "feed", "On our Instagram feed ({})".format(when),
+                        m.get("permalink", ""), urls))
+    d = graph(AD_ACCOUNT + "/advideos", {"limit": ADS_LIMIT, "fields": "id,title,source,picture,created_time"}, tok)
+    for v in d.get("data", []):
+        urls = [(v["source"], True)] if v.get("source") else []
+        if v.get("picture"):
+            urls.append((v["picture"], False))
+        if urls:
+            out.append(("adv:" + v["id"], "ad_account", "In the ad account: " + (v.get("title") or "video " + v["id"])[:60],
+                        v["id"], urls))
+    d = graph(AD_ACCOUNT + "/adimages", {"limit": ADS_LIMIT, "fields": "hash,name,url,created_time"}, tok)
+    for im in d.get("data", []):
+        if im.get("url"):
+            out.append(("adi:" + im["hash"], "ad_account", "In the ad account: " + (im.get("name") or "image")[:60],
+                        im["hash"], [(im["url"], False)]))
+    return out
+
+
+def remote_hashes(urls):
+    """Download each file to a temp folder, fingerprint it, delete it."""
+    hs = []
+    with tempfile.TemporaryDirectory() as d:
+        for i, (url, is_video) in enumerate(urls):
+            path = os.path.join(d, "f{}{}".format(i, ".mp4" if is_video else ".jpg"))
+            try:
+                with urllib.request.urlopen(url, timeout=180) as r:
+                    size = int(r.headers.get("Content-Length") or 0)
+                    if size > MAX_DOWNLOAD_MB * 1024 * 1024:
+                        continue
+                    with open(path, "wb") as f:
+                        while True:
+                            chunk = r.read(1 << 20)
+                            if not chunk:
+                                break
+                            f.write(chunk)
+                hs += video_hashes(path) if is_video else image_hashes(path)
+            except Exception as e:
+                print("WARN could not fingerprint a Meta file: {}".format(str(e)[:120]))
+            finally:
+                if os.path.exists(path):
+                    os.remove(path)
+    return hs
+
+
+def is_match(hs, other):
+    if not hs or not other:
+        return None
+    mins = [min(distance(a, b) for b in other) for a in hs]
+    agreeing = sum(1 for m in mins if m <= FRAME_MATCH)
+    if agreeing >= MIN_AGREEING or (len(hs) <= 2 and min(mins) <= SINGLE_MATCH):
+        return min(mins)
+    return None
+
+
 def distance(a, b):
     return bin(a ^ b).count("1")
 
@@ -143,35 +247,49 @@ def main():
     cache = load(CACHE, {})
     uploads = [it for it in index if it.get("source") != "instagram_auto"]
     collected = [it for it in index if it.get("source") == "instagram_auto"]
-    up_hashes = {u["id"]: hashes_for(u, cache) for u in uploads}
+    # candidates, in order of preference: Your uploads first, then Meta
+    cands = [(u["id"], "uploads", "In Your uploads", hashes_for(u, cache)) for u in uploads]
+    ext_keys = set()
+    try:
+        with open(os.path.join(REPO, "meta_token.txt.txt"), encoding="utf-8") as f:
+            tok = f.read().strip()
+    except OSError:
+        tok = None
+        print("WARN no Meta token - comparing against Your uploads only")
+    for key, where, label, ref, urls in (meta_sources(tok) if tok and collected else []):
+        ext_keys.add(key)
+        ent = cache.get(key)
+        if not ent or ent.get("key") != HASH_VERSION:
+            ent = {"key": HASH_VERSION, "h": remote_hashes(urls)}
+            cache[key] = ent
+        cands.append((ref, where, label, ent["h"]))
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     found = 0
     for it in collected:
         if matches.get(it["id"], {}).get("manual"):
             continue
         hs = hashes_for(it, cache)
-        hit, hit_score = None, None
-        for uid, uh in up_hashes.items():
-            if not hs or not uh:
-                continue
-            mins = [min(distance(a, b) for b in uh) for a in hs]
-            agreeing = sum(1 for m in mins if m <= FRAME_MATCH)
-            ok = agreeing >= MIN_AGREEING or (len(hs) <= 2 and min(mins) <= SINGLE_MATCH)
-            if ok and (hit_score is None or min(mins) < hit_score):
-                hit, hit_score = uid, min(mins)
-        found += bool(hit)
-        matches[it["id"]] = {"upload": hit, "distance": hit_score,
+        best = None
+        for ref, where, label, ch in cands:
+            score = is_match(hs, ch)
+            if score is not None and (best is None or score < best[3]):
+                best = (ref, where, label, score)
+        found += bool(best)
+        matches[it["id"]] = {"upload": best[0] if best else None, "where": best[1] if best else None,
+                             "label": best[2] if best else None, "distance": best[3] if best else None,
                              "checked_at": now, "manual": False}
-    # forget entries for items that no longer exist
+    # forget entries for items that no longer exist / Meta files no longer listed
     ids = {it["id"] for it in index}
     matches = {k: v for k, v in matches.items() if k in ids}
-    cache = {k: v for k, v in cache.items() if k in ids}
+    cache = {k: v for k, v in cache.items() if k in ids or k in ext_keys}
     save(MATCHES, matches)
     save(CACHE, cache)
-    print("{} collected item(s) checked against {} upload(s): {} in Your uploads, {} missing".format(
-        len(collected), len(uploads), found + sum(1 for it in collected if matches.get(it["id"], {}).get("manual")
-                                                 and matches[it["id"]].get("upload")),
-        sum(1 for it in collected if not matches.get(it["id"], {}).get("upload"))))
+    where = {}
+    for it in collected:
+        w = (matches.get(it["id"]) or {}).get("where") or ("manual" if (matches.get(it["id"]) or {}).get("upload") else "missing")
+        where[w] = where.get(w, 0) + 1
+    print("{} collected item(s) checked against {} upload(s) and {} Meta file(s): {}".format(
+        len(collected), len(uploads), len(ext_keys), ", ".join("{} {}".format(v, k) for k, v in sorted(where.items()))))
 
 
 if __name__ == "__main__":

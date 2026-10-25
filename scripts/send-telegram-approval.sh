@@ -68,6 +68,9 @@ TELEGRAM_SUMMARY="$(printf '%s' "$PLAN_LINE" | jq -r '.telegram_summary // empty
 # e.g. 2026-10-23T19:30:00+05:30) is recorded with the pending request, so the
 # listener holds an approved plan until then instead of executing at the tap.
 SCHEDULED_FOR="$(printf '%s' "$PLAN_LINE" | jq -r '.scheduled_for // empty')"
+# System-evolution proposals (added 2026-10-25): Accept means "add to the build
+# list", never "execute" - recorded with the request so the listener knows.
+KIND="$(printf '%s' "$PLAN_LINE" | jq -r 'if ((.tags // []) | index("system-evolution")) then "evolution" else empty end')"
 SCHEDULE_LINE=""
 if [ -n "$SCHEDULED_FOR" ]; then
   SCHEDULE_HUMAN="$(python3 -c 'import sys;from datetime import datetime,timezone,timedelta;print(datetime.fromisoformat(sys.argv[1]).astimezone(timezone(timedelta(hours=5,minutes=30))).strftime("%d %b, %I:%M %p IST"))' "$SCHEDULED_FOR" 2>/dev/null)"
@@ -149,6 +152,7 @@ python3 "$REPO_DIR/scripts/telegram_approval_listener.py" --record-sent \
   --plan-id "$PLAN_ID" \
   --chat-id "$TELEGRAM_CHAT_ID" \
   --message-id "$MESSAGE_ID" \
-  --scheduled-for "$SCHEDULED_FOR"
+  --scheduled-for "$SCHEDULED_FOR" \
+  --kind "$KIND"
 
 echo "Sent approval request for ${PLAN_ID} (Telegram message_id ${MESSAGE_ID})."

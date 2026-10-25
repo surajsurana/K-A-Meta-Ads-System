@@ -245,7 +245,7 @@ def with_state_lock(fn):
             fcntl.flock(lockf, fcntl.LOCK_UN)
 
 
-def record_sent(plan_id, chat_id, message_id, scheduled_for=""):
+def record_sent(plan_id, chat_id, message_id, scheduled_for="", kind=""):
     def op(state):
         state[plan_id] = {
             "status": "pending",
@@ -255,6 +255,8 @@ def record_sent(plan_id, chat_id, message_id, scheduled_for=""):
         }
         if scheduled_for:
             state[plan_id]["scheduled_for"] = scheduled_for
+        if kind:
+            state[plan_id]["kind"] = kind
         return state, None
     with_state_lock(op)
     log(f"recorded pending approval request: {plan_id} (message_id={message_id})")
@@ -907,6 +909,25 @@ def handle_callback_query(token, cq):
     # enqueueing first guarantees the dispatch always happens once claimed,
     # regardless of what the UI-feedback calls below do.
     entry = get_entry(plan_id) or {}
+    if entry.get("kind") == "evolution":
+        # System-evolution proposal (added 2026-10-25): Accept adds it to the
+        # build list for an interactive session. It never executes anything.
+        append_learning_log({
+            "id": new_id(), "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            "actor": "human", "type": "outcome", "subject": plan_id,
+            "summary": f"Suraj accepted system-evolution proposal {plan_id} via Telegram. To be built in an interactive K&A Meta Ads session and added to the backlog with the next Sr. No.",
+            "source": "human_told", "confidence": "high",
+            "tags": ["system-evolution", "accepted", "telegram-approval"], "linked_to": [plan_id],
+        })
+        finalize_status(plan_id, "accepted")
+        try:
+            tg_api(token, "editMessageText", {
+                "chat_id": chat_id, "message_id": message_id,
+                "text": f"✅ Accepted - added to the build list\n\nNothing changes yet. It gets built in the K&A Meta Ads session.\n\nPlan ID: {plan_id}",
+            })
+        except Exception as e:
+            log(f"non-fatal: failed to edit accepted message for {plan_id}: {e}")
+        return
     sched = None
     if entry.get("scheduled_for"):
         try:
@@ -1570,7 +1591,8 @@ if __name__ == "__main__":
             i = sys.argv.index(name)
             return sys.argv[i + 1]
         record_sent(arg("--plan-id"), arg("--chat-id"), arg("--message-id"),
-                    arg("--scheduled-for") if "--scheduled-for" in sys.argv else "")
+                    arg("--scheduled-for") if "--scheduled-for" in sys.argv else "",
+                    arg("--kind") if "--kind" in sys.argv else "")
     elif "--record-product-check" in sys.argv:
         def arg(name):
             i = sys.argv.index(name)
