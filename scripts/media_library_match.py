@@ -49,6 +49,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -221,7 +222,9 @@ def remote_hashes(urls):
                 hs += video_hashes(path) if is_video else image_hashes(path)
             except Exception as e:
                 print("WARN could not fingerprint a Meta file: {}".format(str(e)[:120]))
+                return None   # failed (e.g. HTTP 429): don't cache, retry next run
             finally:
+                time.sleep(0.5)   # be gentle with Meta's CDN
                 if os.path.exists(path):
                     os.remove(path)
     return hs
@@ -260,7 +263,10 @@ def main():
         ext_keys.add(key)
         ent = cache.get(key)
         if not ent or ent.get("key") != HASH_VERSION:
-            ent = {"key": HASH_VERSION, "h": remote_hashes(urls)}
+            hs_remote = remote_hashes(urls)
+            if hs_remote is None:      # a download failed - try again next run
+                continue
+            ent = {"key": HASH_VERSION, "h": hs_remote}
             cache[key] = ent
         cands.append((ref, where, label, ent["h"]))
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
