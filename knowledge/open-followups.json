@@ -419,11 +419,11 @@
     "subject": "India Insta Engaged 365D & Followers (6538717752176) - frequency climb 2.465->3.121 (Oct 11-17 vs Oct 18-24), now above the account own 3x hard-flag threshold - DISPOSITION: SEND BACK for the standing audience-overlap check before any trim/hold verdict, do not finalize a saturation read yet",
     "follow_up": "performance-analyst to run the overlap + own-budget check and re-present; no trim/hold/scale verdict until then."
   },
-  "KL-2026-10-25-CS-KAFL018ROLLBACKCRIT2-ARTIFACT-HOLD": {
-    "id": "KL-2026-10-25-CS-KAFL018ROLLBACKCRIT2-ARTIFACT-HOLD",
+  "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN": {
+    "id": "KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN",
     "date": "2026-10-25",
-    "type": "decision",
-    "subject": "KAFL018 quality-revert rollback criterion 2 (KL-2026-10-22-ML-KAFL018POOL-QUALITYREVERT-EXECUTED) - the apparent account-wide junk spike since 2026-10-22 is NOT evidence the revert was wrong and NOT grounds for any further live change - independently re-derived the raw AISI feed myself (droplet, lead_quality_report.py source module) and found a sharp, account-wide staff_replied labelling-pipeline break starting 2026-10-20, 2 full days BEFORE the revert, hitting organic traffic equally",
-    "follow_up": "marketing-lead to escalate the staff_replied/AISI sync break for technical diagnosis. lead-quality-analyst to confirm on a fresh pull whether staff_replied has resumed populating for recent rows before any rollback-criterion-2 re-check runs."
+    "type": "observation",
+    "subject": "staff_replied labelling-pipeline break (KL-2026-10-25-CS-KAFL018ROLLBACKCRIT2-ARTIFACT-HOLD) has NOT cleared as of this pull - stays at 95-100% None through today, rollback-criterion-2 recheck remains on hold",
+    "follow_up": "Re-run this same staff_replied None-rate check on the next heartbeat before attempting rollback-criterion-2 again. If staff_replied resumes populating (drops back to ~0% None for recent days), only then run the real rollback-criterion-2 recheck."
   }
 }
