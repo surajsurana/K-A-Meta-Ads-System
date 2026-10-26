@@ -377,6 +377,13 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
+  "KL-2026-10-26-CC-LOOMIERE-PRODUCT-ID": {
+    "id": "KL-2026-10-26-CC-LOOMIERE-PRODUCT-ID",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "LOOMIERE launch creative - product identification for carousel De1uZT9DkS7, Reel De4F72EsTj0, carousel De6w1zVDI15 (resolves KL-2026-10-26-marketing-lead-LOOMIERE-NEEDS-SESSION)",
+    "follow_up": "media-buyer: at build, record creative-product-map entries for the new video_id/image ads using the SKUs above (all looks per asset, not one pick); Ice Blue KA-231026-013 stays 'probable' unless Suraj confirms. Someone with live Stitchflow access (e.g. performance-analyst on the droplet) to cross-check all SKUs above, especially the KA-231026-* ones, before any map entry is marked confirmed."
+  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
@@ -460,13 +467,6 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (6 items) - thank-yous/compliments plus 1 WhatsApp-redirect, all on the new LOOMIERE Reel and reveal carousel",
     "follow_up": "Awaiting Telegram approval via marketing-lead."
-  },
-  "KL-2026-10-26-marketing-lead-LOOMIERE-NEEDS-SESSION": {
-    "id": "KL-2026-10-26-marketing-lead-LOOMIERE-NEEDS-SESSION",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "LOOMIERE launch plan (KL-2026-10-26-CS-LOOMIERE-DISPOSITION) approved via Telegram but cannot be built headlessly - product identification still missing",
-    "follow_up": "Needs an interactive session with Shopify tool access to identify which specific Loomiere SKU(s) this creative shows (per KL-2026-10-23-LOOMIERE-FINAL-NAMES 30-look table) and to confirm current Shopify publish status, before creative-copywriter and media-buyer can build the approved ad set."
   },
   "KL-2026-10-26-media-library-CS-HANDOFF": {
     "id": "KL-2026-10-26-media-library-CS-HANDOFF",
