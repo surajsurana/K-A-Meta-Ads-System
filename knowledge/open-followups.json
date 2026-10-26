@@ -377,6 +377,13 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
+  "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
+    "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Profile Visits | India follower growth - pre-committed root-cause branch now resolved: both Ad A and Ad B ruled out as primary cause (cost/follower barely moved, Rs3.61 vs Rs3.88); verdict per the branch's own stated next step - KEEP Fresh Content Jul23 running, RECONSIDER the target band, do not pause the ad set",
+    "follow_up": "performance-analyst to research a current, realistic cost/follower benchmark for this objective before the band is cited as a pass/fail bar again. No live action this cycle."
+  },
   "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN": {
     "id": "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN",
     "date": "2026-10-26",
@@ -404,13 +411,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-23 to 2026-10-26 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Re-pull this exact window's Stitchflow order count once more at the next review to confirm the lag-driven upward revision actually happened (expect >6 orders once 10-25/10-26 fully land)."
-  },
-  "KL-2026-10-26-PA-FOLLOWERGROWTH-ADAPAUSE-CHECKPOINT": {
-    "id": "KL-2026-10-26-PA-FOLLOWERGROWTH-ADAPAUSE-CHECKPOINT",
-    "date": "2026-10-26",
-    "type": "outcome",
-    "subject": "Profile Visits | India follower growth - full-week reading with BOTH Ad A and Ad B paused (only Fresh Content Jul23 active) - DOES NOT recover into the Rs1.11-2.32/follower target band - points away from any single ad and toward a structural/organic cause",
-    "follow_up": "Hand to campaign-strategist: the single-ad-dilution hypothesis is now ruled out by this cycle's own pre-committed test. A real next-move decision is needed - leave Fresh Content Jul23 running as-is (it is at least producing real follower growth, just above the cost target), try a genuinely new creative for this ad set, or reconsider the Rs1.11-2.32 target band itself if it no longer reflects current Meta auction costs for this objective."
   },
   "KL-2026-10-26-PA-GEO-BIHARGROUP-NEARREOPEN": {
     "id": "KL-2026-10-26-PA-GEO-BIHARGROUP-NEARREOPEN",
