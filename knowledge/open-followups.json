@@ -412,6 +412,13 @@
     "subject": "Bihar/Jharkhand/Assam/JK combined-spend re-check, explicitly due at the very next review per KL-2026-10-19/flagged as skipped once already (KL-2026-10-22-CS-GEO-BIHARRECHECK-GAP) - run fresh this cycle: combined spend now ~Rs374/day (30d trailing), closing in on the stated Rs400/day re-open bar, orders still zero for 3 of 4 states",
     "follow_up": "Hand to campaign-strategist - this is now close enough to the group's own stated re-open threshold (Rs374 vs Rs400/day) that a fresh disposition call is warranted this cycle, not deferred again. If spend continues this trajectory, the next review will likely clear the bar outright."
   },
+  "KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE": {
+    "id": "KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "Odisha and Uttarakhand - new zero-order-despite-spend candidates found during this cycle's full region sweep, not previously flagged as their own group",
+    "follow_up": "Hand to campaign-strategist to decide whether Odisha/Uttarakhand warrant their own watch group (same treatment as the Bihar group) or folding into a single combined small-states watch list."
+  },
   "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE": {
     "id": "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE",
     "date": "2026-10-26",
