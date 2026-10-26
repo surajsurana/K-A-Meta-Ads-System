@@ -391,12 +391,12 @@
     "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
     "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
   },
-  "KL-2026-10-26-CS-HANDOFF": {
-    "id": "KL-2026-10-26-CS-HANDOFF",
+  "KL-2026-10-26-CS-LOOMIERE-DISPOSITION": {
+    "id": "KL-2026-10-26-CS-LOOMIERE-DISPOSITION",
     "date": "2026-10-26",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist (twice-weekly review 2026-10-26) - LOOMIERE reveal (own content, priority) plus 4 UGC items for the five-way disposition call",
-    "follow_up": "Awaiting campaign-strategist's disposition call on the LOOMIERE reveal and the 4 UGC items."
+    "type": "decision",
+    "subject": "LOOMIERE collection reveal (carousel instagram.com/p/De1uZT9DkS7/, Reel instagram.com/reel/De4F72EsTj0/, carousel instagram.com/p/De6w1zVDI15/) - five-way disposition: NEW CAMPAIGN, my read is USE for a dedicated launch test; resolves the standing HOLD from KL-2026-10-19-CS-LOOMIERE-DISPOSITION",
+    "follow_up": "Awaiting Suraj's Telegram approval. If approved: route to creative-copywriter for an ad-copy brief (funnel stage: consult booking; audience: IG-engaged/followers retargeting first; angle: new-collection launch, structured-corset craftsmanship story), then media-buyer for a PAUSED build plan. Also verify LOOMIERE's current Shopify/Stitchflow status before launch."
   },
   "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
     "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
