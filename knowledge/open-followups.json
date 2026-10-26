@@ -377,13 +377,6 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-011252": {
-    "id": "KL-2026-10-26-011252",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Bihar/Jharkhand/Assam/Jammu and Kashmir exclusion - execution plan (9 ad sets) for campaign-strategist's EXCLUSION disposition",
-    "follow_up": "Awaiting Suraj's approval via Telegram. Once approved and executed by marketing-lead, performance-analyst should re-check Bihar/Jharkhand/Assam/Jammu and Kashmir Meta delivery at the next weekly review to confirm spend trends toward zero, and check the 9 touched ad sets' cost-per-conversation for any adverse shift per this plan's rollback criteria."
-  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
@@ -432,6 +425,13 @@
     "type": "change",
     "subject": "Executed KL-2026-10-22-142513 - paused ad 52547120422780 First Love | Cut Out to Reveal, Cut to Sculpt. in First Love | Broad Advantage+ | India (ad set 52535906903180)",
     "follow_up": "Per the plan's own rollback criteria (re-stated in KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK and re-confirmed in KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT): re-check 7 full days after this pause (~2026-11-02). Reactivate ad 52547120422780 if, over those 7 days, Broad Advantage+ cost per conversation rises more than 20% vs the pre-pause baseline AND serious-or-better count does not rise, OR Sage Green (52547120457180) 7-day frequency exceeds 3.0. Also close out KL-2026-10-22-093245 (held-plan) as resolved via this entry."
+  },
+  "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED": {
+    "id": "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED",
+    "date": "2026-10-26",
+    "type": "change",
+    "subject": "Executed KL-2026-10-26-011252 - excluded Bihar/Jharkhand/Assam/Jammu and Kashmir from 9 ad sets delivering into those states",
+    "follow_up": "Per the plan's own rollback criteria: performance-analyst should re-check at the next weekly review that Meta's region-breakdown insights show spend into these 4 states trending toward zero over the following 1-2 weeks, and that cost-per-conversation on the 9 touched ad sets (especially the 4 small-budget product Test ad sets, which had no prior targeting edit and may see a learning-phase reset) has not meaningfully worsened. Revert by removing only the 4 added regions from each ad set's excluded_geo_locations.regions, restoring each to its exact OLD value stated in the original plan's Step 3, if any rollback trigger fires."
   },
   "KL-2026-10-26-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
