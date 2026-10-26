@@ -377,13 +377,6 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-26-CS-BUDGETCHECK",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check - twice-weekly review 2026-10-26",
-    "follow_up": "media-buyer to independently re-verify this ceiling math against the live account before executing any of the above, per guardrail 10/12."
-  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
@@ -405,6 +398,13 @@
     "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
     "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
   },
+  "KL-2026-10-26-CS-SCALEINTEL-NOTYET": {
+    "id": "KL-2026-10-26-CS-SCALEINTEL-NOTYET",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step; independently corrected performance-analyst's own CPM framing from 'flat-to-falling' to actually RISING this window, most plausibly Diwali/festive-season auction pressure, with softer November approaching next",
+    "follow_up": "Re-ask the ceiling-step question next weekly review, re-reading CPM window-vs-trailing comparisons directly each time rather than trusting a prose characterization. Watch whether the Diwali-period CPM elevation recedes post-festive-season, which would be the cleaner signal to re-evaluate headroom against."
+  },
   "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
     "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
     "date": "2026-10-26",
@@ -418,13 +418,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-23 to 2026-10-26 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Re-pull this exact window's Stitchflow order count once more at the next review to confirm the lag-driven upward revision actually happened (expect >6 orders once 10-25/10-26 fully land)."
-  },
-  "KL-2026-10-26-PA-SEASONALITY-OCTMTD": {
-    "id": "KL-2026-10-26-PA-SEASONALITY-OCTMTD",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "October 2026 MTD seasonality via get_monthly_summary (never get_monthly_orders_report, per SS3e) - 74 orders/Rs6,126,900 through day 26 of 31, annualizing to ~88.2/month, still inside the account own 3-year October range (85-99/month) but projection has eased slightly from the 2026-10-22 reading; November (the account own 3-year average ~53-61/month, Solid but much softer than October) is the next month up",
-    "follow_up": "Re-check once October closes out fully for the real final count vs. this projection; November's historically softer pattern should factor into any ceiling-step timing decision made now."
   },
   "KL-2026-10-26-ambiguous-comment": {
     "id": "KL-2026-10-26-ambiguous-comment",
