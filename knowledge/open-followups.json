@@ -419,6 +419,13 @@
     "subject": "Odisha and Uttarakhand - new zero-order-despite-spend candidates found during this cycle's full region sweep, not previously flagged as their own group",
     "follow_up": "Hand to campaign-strategist to decide whether Odisha/Uttarakhand warrant their own watch group (same treatment as the Bihar group) or folding into a single combined small-states watch list."
   },
+  "KL-2026-10-26-PA-GEO-UK-FULLCOUNTRY-UNDERCOUNTED": {
+    "id": "KL-2026-10-26-PA-GEO-UK-FULLCOUNTRY-UNDERCOUNTED",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "UK reverse-geo (revenue without acquisition spend) - prior HOLD readings (KL-2026-10-01-CS-REVERSEGEO-SIX, KL-2026-10-08-CS-GEO-REVENUENOACQSPEND) appear to have used only the single top UK city (London, 4 orders/Rs171,000), not the full country - true FY-to-date UK total is materially larger and still growing, 0 Meta UK spend confirmed via country breakdown",
+    "follow_up": "Hand to campaign-strategist - worth deciding whether this growth trajectory changes the calculus on the previously-declined UK prospecting test, given it is not the same static case Suraj said no to in August."
+  },
   "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE": {
     "id": "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE",
     "date": "2026-10-26",
