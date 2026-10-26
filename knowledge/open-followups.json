@@ -377,12 +377,12 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-CC-LOOMIERE-LAUNCH-COPY": {
-    "id": "KL-2026-10-26-CC-LOOMIERE-LAUNCH-COPY",
+  "KL-2026-10-26-150100": {
+    "id": "KL-2026-10-26-150100",
     "date": "2026-10-26",
     "type": "decision",
-    "subject": "LOOMIERE launch ad set (Rs200/day, consult/styling-appointment funnel) - execution-ready copy for the Reel ad plus two carousel-image ads",
-    "follow_up": "media-buyer: build the PAUSED plan from this entry (Reel ad at minimum; carousels optional per note), re-fetch the Reel media_url fresh at build, check all text fields non-empty and rehearse with generatepreviews, then send for Telegram approval. Revisit the carousel copy if Burgundy Scalloped / Golden Petal / Deep Purple / Bronze Muse get published (a product link could then be added)."
+    "subject": "Loomière | Festive 2026 | Launch - NEW campaign + ad set 'Loomière | IG Engaged 365D & Followers | WhatsApp | India' (Rs200/day) + 1 Reel ad, built PAUSED; carousels deferred",
+    "follow_up": "Awaiting Suraj's Telegram approval of this BUILD (sent by the top-level session). If approved, marketing-lead executes STEPS 0-10 verbatim and logs a type=change linked here. Then: (1) media-buyer re-GETs the creative and prepares a SEPARATE activation plan (campaign + ad set + ad to ACTIVE, budget line Rs5,982 -> Rs6,182, overlap watch on 6538717752176, the rollback criteria above), and the WhatsApp team should have Loomière prices ready before it goes live. (2) Someone with Stitchflow access cross-checks all 16 SKUs, especially the KA-231026-* ones, before any product-map line is marked confirmed. Ice Blue KA-231026-013 stays probable unless Suraj confirms. (3) Carousels: creative-copywriter revises AD 3's 'the Diwali evening' line. No earlier than 7 days after the Reel activates, media-buyer plans AD 2 (Burgundy Scalloped + Golden Petal) as an explicit image-vs-video test in this ad set. AD 3 comes at least 7 more days after AD 2 (guardrail 11). Each is re-fetched and rehearsed again at that time. Revisit both if those 4 products get published on Shopify (a product link could then be added)."
   },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
