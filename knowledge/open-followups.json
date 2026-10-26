@@ -412,6 +412,13 @@
     "subject": "Profile Visits | India follower growth - full-week reading with BOTH Ad A and Ad B paused (only Fresh Content Jul23 active) - DOES NOT recover into the Rs1.11-2.32/follower target band - points away from any single ad and toward a structural/organic cause",
     "follow_up": "Hand to campaign-strategist: the single-ad-dilution hypothesis is now ruled out by this cycle's own pre-committed test. A real next-move decision is needed - leave Fresh Content Jul23 running as-is (it is at least producing real follower growth, just above the cost target), try a genuinely new creative for this ad set, or reconsider the Rs1.11-2.32 target band itself if it no longer reflects current Meta auction costs for this objective."
   },
+  "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE": {
+    "id": "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "First Love | Golden Muse (KAFL020) Test | India (ad set 52559141092980) - 2-week stop-rule check was never explicitly run (due ~2026-10-20, 6 days overdue, found via this cycle's full review) - now run fresh: PASSES, roughly in line with baseline, plus one real Rs112,200 Stitchflow order for the exact SKU",
+    "follow_up": "Hand to campaign-strategist for the actual maintain/scale/pause call now that the overdue check has finally been run. Also worth a process note: unlike Metallic Blue, this ad set's stop-rule never auto-surfaced via the open-followups index or a daily heartbeat catch - worth checking why if this is a recurring pattern."
+  },
   "KL-2026-10-26-ambiguous-comment": {
     "id": "KL-2026-10-26-ambiguous-comment",
     "date": "2026-10-26",
