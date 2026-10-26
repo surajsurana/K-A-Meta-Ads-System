@@ -405,6 +405,13 @@
     "subject": "staff_replied labelling-pipeline break is STILL unresolved as of today's twice-weekly pull (extends KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKEN) - now quantified its junk% inflation impact: largely explains the original 72h facebook-tap junk spike (KL-2026-10-22-141357) AND inflates the pause-candidate ad's junk reading; cost-per-serious/cost-per-order figures are unaffected",
     "follow_up": "marketing-lead's escalation of the AISI/WATI sync break to whoever owns that integration is still open (first raised 2026-10-25) - re-confirm status there rather than re-discovering it on each pull. Next lead-quality pull: re-check staff_replied None-rate for the most recent 2-3 days before citing any raw junk% for ads/ad sets/tap sources with meaningful volume since 2026-10-20; cost-per-serious-or-better and cost-per-order figures can be cited normally throughout, they are unaffected."
   },
+  "KL-2026-10-26-PA-BLENDED-WINDOW": {
+    "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "Blended headline numbers, 2026-10-23 to 2026-10-26 (4-day Thursday-to-Monday window, twice-weekly review)",
+    "follow_up": "Re-pull this exact window's Stitchflow order count once more at the next review to confirm the lag-driven upward revision actually happened (expect >6 orders once 10-25/10-26 fully land)."
+  },
   "KL-2026-10-26-ambiguous-comment": {
     "id": "KL-2026-10-26-ambiguous-comment",
     "date": "2026-10-26",
