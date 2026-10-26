@@ -377,6 +377,13 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
+  "KL-2026-10-26-CS-BUDGETCHECK": {
+    "id": "KL-2026-10-26-CS-BUDGETCHECK",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check - twice-weekly review 2026-10-26",
+    "follow_up": "media-buyer to independently re-verify this ceiling math against the live account before executing any of the above, per guardrail 10/12."
+  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
@@ -391,13 +398,6 @@
     "subject": "Odisha (~Rs86/day) and Uttarakhand (~Rs65/day) new zero-order-despite-spend candidates (KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE) - DISPOSITION: MAINTAIN with a tightened standing watch, same treatment the Bihar group originally got, not immediate exclusion",
     "follow_up": "Re-check Odisha and Uttarakhand spend-vs-orders at the very next review, not an extended gap. Escalate to exclusion if the trajectory matches the pattern that just resolved the Bihar group."
   },
-  "KL-2026-10-26-CS-GEO-UK-REOPEN-ASK": {
-    "id": "KL-2026-10-26-CS-GEO-UK-REOPEN-ASK",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "UK full-country re-aggregation (KL-2026-10-26-PA-GEO-UK-FULLCOUNTRY-UNDERCOUNTED, true FY-to-date 16 orders/Rs732,169 across 9 cities, up 60%+ since 2026-10-01) - DISPOSITION: GEOGRAPHIC AD-SET TEST, but flagging explicitly for Suraj's direct reconsideration given his 2026-08-31 explicit REJECT on this exact market, not a silent re-propose",
-    "follow_up": "Awaiting Suraj's direct response. If approved: route to media-buyer to re-verify KL-2026-08-24-010513's build spec is still current (campaign/ad-set/creative objects unchanged) before resending for final build approval."
-  },
   "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN": {
     "id": "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN",
     "date": "2026-10-26",
@@ -405,26 +405,12 @@
     "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
     "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
   },
-  "KL-2026-10-26-CS-LOOMIERE-DISPOSITION": {
-    "id": "KL-2026-10-26-CS-LOOMIERE-DISPOSITION",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "LOOMIERE collection reveal (carousel instagram.com/p/De1uZT9DkS7/, Reel instagram.com/reel/De4F72EsTj0/, carousel instagram.com/p/De6w1zVDI15/) - five-way disposition: NEW CAMPAIGN, my read is USE for a dedicated launch test; resolves the standing HOLD from KL-2026-10-19-CS-LOOMIERE-DISPOSITION",
-    "follow_up": "Awaiting Suraj's Telegram approval. If approved: route to creative-copywriter for an ad-copy brief (funnel stage: consult booking; audience: IG-engaged/followers retargeting first; angle: new-collection launch, structured-corset craftsmanship story), then media-buyer for a PAUSED build plan. Also verify LOOMIERE's current Shopify/Stitchflow status before launch."
-  },
   "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
     "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
     "date": "2026-10-26",
     "type": "observation",
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
-  },
-  "KL-2026-10-26-CS-UGC-DISPOSITIONS": {
-    "id": "KL-2026-10-26-CS-UGC-DISPOSITIONS",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "4 UGC items from KL-2026-10-26-ugc-tags - five-way dispositions, own frame reads performed directly: thesassthing_ TEST, dye_4_hairven HOLD, priyaas_makeoverr REJECT, natasha.luthra REJECT",
-    "follow_up": "thesassthing_: awaiting Suraj's Telegram approval; if approved, needs product/SKU identification (Suraj tag or interactive Shopify session) before creative-copywriter can brief, same blocker pattern as the priyaas_makeoverr approved reel. dye_4_hairven: re-check at next sweep whether the video file becomes fetchable. priyaas_makeoverr and natasha.luthra: no further action."
   },
   "KL-2026-10-26-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
