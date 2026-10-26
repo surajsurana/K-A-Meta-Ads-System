@@ -377,12 +377,12 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-CC-LOOMIERE-PRODUCT-ID": {
-    "id": "KL-2026-10-26-CC-LOOMIERE-PRODUCT-ID",
+  "KL-2026-10-26-CC-LOOMIERE-LAUNCH-COPY": {
+    "id": "KL-2026-10-26-CC-LOOMIERE-LAUNCH-COPY",
     "date": "2026-10-26",
     "type": "decision",
-    "subject": "LOOMIERE launch creative - product identification for carousel De1uZT9DkS7, Reel De4F72EsTj0, carousel De6w1zVDI15 (resolves KL-2026-10-26-marketing-lead-LOOMIERE-NEEDS-SESSION)",
-    "follow_up": "media-buyer: at build, record creative-product-map entries for the new video_id/image ads using the SKUs above (all looks per asset, not one pick); Ice Blue KA-231026-013 stays 'probable' unless Suraj confirms. Someone with live Stitchflow access (e.g. performance-analyst on the droplet) to cross-check all SKUs above, especially the KA-231026-* ones, before any map entry is marked confirmed."
+    "subject": "LOOMIERE launch ad set (Rs200/day, consult/styling-appointment funnel) - execution-ready copy for the Reel ad plus two carousel-image ads",
+    "follow_up": "media-buyer: build the PAUSED plan from this entry (Reel ad at minimum; carousels optional per note), re-fetch the Reel media_url fresh at build, check all text fields non-empty and rehearse with generatepreviews, then send for Telegram approval. Revisit the carousel copy if Burgundy Scalloped / Golden Petal / Deep Purple / Bronze Muse get published (a product link could then be added)."
   },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
