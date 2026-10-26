@@ -356,13 +356,6 @@
     "subject": "Lead-quality SOS (Suraj Telegram button, 2026-10-22 14:08 UTC) - result: narrow CHANGE NEEDED on one new ad, rest of account ROUTINE/TOO-EARLY",
     "follow_up": "Awaiting Suraj Telegram approval on KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT (message_id 350). If approved, marketing-lead executes. Re-check Broad Advantage+ and the 4 test ad sets at next scheduled review."
   },
-  "KL-2026-10-22-ambiguous-comment-still-open": {
-    "id": "KL-2026-10-22-ambiguous-comment-still-open",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "Ambiguous comment @aesana0710 Pls check your DM (media 18119098733004826) - still unresolved, no new developments this cycle",
-    "follow_up": "Still no plan drafted - awaiting a human read on what this comment actually refers to. Continue checking status each cycle until resolved."
-  },
   "KL-2026-10-22-dmredirect-watch-no-recurrence2": {
     "id": "KL-2026-10-22-dmredirect-watch-no-recurrence2",
     "date": "2026-10-22",
@@ -397,6 +390,13 @@
     "type": "change",
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
+  },
+  "KL-2026-10-26-ambiguous-comment": {
+    "id": "KL-2026-10-26-ambiguous-comment",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "2 ambiguous 'check your DM'-style comments flagged individually, not batched - new @social_cravings on the LOOMIERE Reel, plus @aesana0710 still open for a 3rd cycle",
+    "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved."
   },
   "KL-2026-10-26-comment-batch": {
     "id": "KL-2026-10-26-comment-batch",
