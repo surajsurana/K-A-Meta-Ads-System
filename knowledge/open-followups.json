@@ -377,6 +377,13 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
+  "KL-2026-10-26-011252": {
+    "id": "KL-2026-10-26-011252",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Bihar/Jharkhand/Assam/Jammu and Kashmir exclusion - execution plan (9 ad sets) for campaign-strategist's EXCLUSION disposition",
+    "follow_up": "Awaiting Suraj's approval via Telegram. Once approved and executed by marketing-lead, performance-analyst should re-check Bihar/Jharkhand/Assam/Jammu and Kashmir Meta delivery at the next weekly review to confirm spend trends toward zero, and check the 9 touched ad sets' cost-per-conversation for any adverse shift per this plan's rollback criteria."
+  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
