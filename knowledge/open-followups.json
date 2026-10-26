@@ -433,6 +433,13 @@
     "subject": "First Love | Golden Muse (KAFL020) Test | India (ad set 52559141092980) - 2-week stop-rule check was never explicitly run (due ~2026-10-20, 6 days overdue, found via this cycle's full review) - now run fresh: PASSES, roughly in line with baseline, plus one real Rs112,200 Stitchflow order for the exact SKU",
     "follow_up": "Hand to campaign-strategist for the actual maintain/scale/pause call now that the overdue check has finally been run. Also worth a process note: unlike Metallic Blue, this ad set's stop-rule never auto-surfaced via the open-followups index or a daily heartbeat catch - worth checking why if this is a recurring pattern."
   },
+  "KL-2026-10-26-PA-SEASONALITY-OCTMTD": {
+    "id": "KL-2026-10-26-PA-SEASONALITY-OCTMTD",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "October 2026 MTD seasonality via get_monthly_summary (never get_monthly_orders_report, per SS3e) - 74 orders/Rs6,126,900 through day 26 of 31, annualizing to ~88.2/month, still inside the account own 3-year October range (85-99/month) but projection has eased slightly from the 2026-10-22 reading; November (the account own 3-year average ~53-61/month, Solid but much softer than October) is the next month up",
+    "follow_up": "Re-check once October closes out fully for the real final count vs. this projection; November's historically softer pattern should factor into any ceiling-step timing decision made now."
+  },
   "KL-2026-10-26-ambiguous-comment": {
     "id": "KL-2026-10-26-ambiguous-comment",
     "date": "2026-10-26",
