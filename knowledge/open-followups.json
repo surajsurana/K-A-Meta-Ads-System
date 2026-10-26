@@ -398,11 +398,11 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-own-content": {
-    "id": "KL-2026-10-26-own-content",
+  "KL-2026-10-26-comment-batch": {
+    "id": "KL-2026-10-26-comment-batch",
     "date": "2026-10-26",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-26, twice-weekly review) - LOOMIERE collection REVEAL lands (3 new posts): real SKU/colorways, a booking CTA, and the first native Reel since the video drought - resolves the standing HOLD, fresh five-way call warranted",
-    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-26-CS-HANDOFF) for a fresh five-way disposition call on the LOOMIERE reveal as a whole (use in existing ad / new ad-set test / new campaign / hold / reject) - my own lean is this is a strong new-campaign candidate given multiple colorways, a real CTA, and full production credits, but that call belongs to campaign-strategist. Next sweep boundary is 18119095139106949 (2026-10-25T12:59:15)."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (6 items) - thank-yous/compliments plus 1 WhatsApp-redirect, all on the new LOOMIERE Reel and reveal carousel",
+    "follow_up": "Awaiting Telegram approval via marketing-lead."
   }
 }
