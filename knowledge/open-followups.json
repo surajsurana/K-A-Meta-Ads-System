@@ -419,6 +419,13 @@
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
+  "KL-2026-10-26-MB-UK-REVERIFIED-010513": {
+    "id": "KL-2026-10-26-MB-UK-REVERIFIED-010513",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Re-verification of UK Engaged 365D & Followers | Geo Test build spec (KL-2026-08-24-010513) following Suraj approving reconsideration (KL-2026-10-26-CS-GEO-UK-REOPEN-ASK) - build spec CONFIRMED STILL CURRENT, resending for final build approval",
+    "follow_up": "If approved: marketing-lead executes the build (new ad set + ad, status PAUSED) exactly as specified in KL-2026-08-24-010513, verifies via fresh GET, logs a type=change entry linked to both this entry and KL-2026-08-24-010513. Activation remains a separate future plan, not included here."
+  },
   "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
     "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
     "date": "2026-10-26",
