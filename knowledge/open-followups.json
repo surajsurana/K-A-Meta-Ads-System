@@ -377,19 +377,19 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT": {
-    "id": "KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "First Love | Broad Advantage+ | India - Cut Out to Reveal, Cut to Sculpt (ad 52547120422780) - CONFIRM PAUSE, resend KL-2026-10-22-142513 unchanged for approval; combined performance+quality+placement read",
-    "follow_up": "Route to marketing-lead: resend KL-2026-10-22-142513 unchanged via Telegram approval now. Next review: pull a fresh ad-level placement-mix breakdown for this specific ad before any further verdict, to close the gap noted above."
-  },
   "KL-2026-10-26-CS-HANDOFF": {
     "id": "KL-2026-10-26-CS-HANDOFF",
     "date": "2026-10-26",
     "type": "observation",
     "subject": "Handoff to campaign-strategist (twice-weekly review 2026-10-26) - LOOMIERE reveal (own content, priority) plus 4 UGC items for the five-way disposition call",
     "follow_up": "Awaiting campaign-strategist's disposition call on the LOOMIERE reveal and the 4 UGC items."
+  },
+  "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
+    "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
+    "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
   "KL-2026-10-26-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
