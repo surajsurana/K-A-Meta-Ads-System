@@ -384,6 +384,13 @@
     "subject": "Profile Visits | India follower growth - pre-committed root-cause branch now resolved: both Ad A and Ad B ruled out as primary cause (cost/follower barely moved, Rs3.61 vs Rs3.88); verdict per the branch's own stated next step - KEEP Fresh Content Jul23 running, RECONSIDER the target band, do not pause the ad set",
     "follow_up": "performance-analyst to research a current, realistic cost/follower benchmark for this objective before the band is cited as a pass/fail bar again. No live action this cycle."
   },
+  "KL-2026-10-26-CS-GEO-BIHARGROUP-EXCLUSION": {
+    "id": "KL-2026-10-26-CS-GEO-BIHARGROUP-EXCLUSION",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "Bihar/Jharkhand/Assam/J&K combined spend (KL-2026-10-26-PA-GEO-BIHARGROUP-NEARREOPEN, now Rs374/day, 93.5% of its own Rs400/day re-open bar) - DISPOSITION: EXCLUSION, treating this as having met the bar's intent even though not its literal number",
+    "follow_up": "Route to media-buyer: pull a per-ad-set region breakdown (not just account-level) to identify exactly which ad set(s) deliver spend into Bihar/Jharkhand/Assam/J&K, then build an exclusion plan (add these 4 states to excluded_geo_locations) for those specific ad set(s). Validate before sending for Suraj's approval - this is a live targeting change like any other."
+  },
   "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN": {
     "id": "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN",
     "date": "2026-10-26",
@@ -418,13 +425,6 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-23 to 2026-10-26 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Re-pull this exact window's Stitchflow order count once more at the next review to confirm the lag-driven upward revision actually happened (expect >6 orders once 10-25/10-26 fully land)."
-  },
-  "KL-2026-10-26-PA-GEO-BIHARGROUP-NEARREOPEN": {
-    "id": "KL-2026-10-26-PA-GEO-BIHARGROUP-NEARREOPEN",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "Bihar/Jharkhand/Assam/JK combined-spend re-check, explicitly due at the very next review per KL-2026-10-19/flagged as skipped once already (KL-2026-10-22-CS-GEO-BIHARRECHECK-GAP) - run fresh this cycle: combined spend now ~Rs374/day (30d trailing), closing in on the stated Rs400/day re-open bar, orders still zero for 3 of 4 states",
-    "follow_up": "Hand to campaign-strategist - this is now close enough to the group's own stated re-open threshold (Rs374 vs Rs400/day) that a fresh disposition call is warranted this cycle, not deferred again. If spend continues this trajectory, the next review will likely clear the bar outright."
   },
   "KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE": {
     "id": "KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE",
