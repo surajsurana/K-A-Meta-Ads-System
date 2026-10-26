@@ -440,11 +440,11 @@
     "subject": "Routine comment-reply batch (6 items) - thank-yous/compliments plus 1 WhatsApp-redirect, all on the new LOOMIERE Reel and reveal carousel",
     "follow_up": "Awaiting Telegram approval via marketing-lead."
   },
-  "KL-2026-10-26-media-library": {
-    "id": "KL-2026-10-26-media-library",
+  "KL-2026-10-26-media-library-CS-HANDOFF": {
+    "id": "KL-2026-10-26-media-library-CS-HANDOFF",
     "date": "2026-10-26",
     "type": "observation",
-    "subject": "Daily Media Library check (2026-10-26) - all 10 instagram_auto entries triaged; 7 were already substantively covered by today's separate twice-weekly UGC/own-content sweeps, 3 own-story-reposts-of-others'-content are the genuinely new finding this check surfaces that the Graph API /tags sweep structurally cannot see",
-    "follow_up": "All 10 instagram_auto entries marked reviewed_by_social:true via the mark-reviewed endpoint. @ankitakariya and @natasha.luthra own-story items handed to campaign-strategist as HOLD-only notes (no file, can never be ad material) for the record, consistent with how the analogous dye_4_hairven no-file item was treated today. @lifewith.tkg item needs no further action. No live publish/repost/reply action taken."
+    "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
+    "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
   }
 }
