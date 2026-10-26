@@ -384,13 +384,6 @@
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - week-over-week CTR/CPM anomaly checked against KL-2026-10-23-015145s mid-cycle note - DISPOSITION: same already-tracked trend, continuing; no new action; existing ~2026-10-30 re-check stands",
     "follow_up": "No change to the re-check date - remains ~2026-10-30 per KL-2026-10-23-015145, covering: (1) cost per messaging_conversation_started vs Broad Advantage+ baseline, (2) whether this CTR-up/impressions-down/CPM-up trend has continued, reversed, or stabilized by then, (3) a fresh scripts/lead_quality_report.py pull for serious-or-better % movement now that leads are older. No Telegram notification for this entry - pure confirmation that an already-tracked trend is continuing, no new action triggered, consistent with the daily heartbeats own routing rule that a pure reconfirmation does not get escalated."
   },
-  "KL-2026-10-25-074214": {
-    "id": "KL-2026-10-25-074214",
-    "date": "2026-10-25",
-    "type": "observation",
-    "subject": "Priyaas makeover UGC (reel 18101705564056757, KL-2026-10-19-ML-UGC-PRIYAASMAKEOVERR-STOP) - the \"no video asset in media library\" half of the stop is now resolved; product/SKU still not linked",
-    "follow_up": "No live action. Still needs Suraj to tag the real product/SKU for this reel (media-library/index.json entry 20261025T064023Z_ig_tagged_DeoMHQzsur8.mp4) via the Ops Console, or an interactive session with Shopify tooling to identify it, before creative-copywriter can brief or media-buyer can build. Once a SKU is confirmed, re-run plan KL-2026-10-19-CS-UGC-PRIYAASMAKEOVERR-DISPOSITION."
-  },
   "KL-2026-10-25-075436": {
     "id": "KL-2026-10-25-075436",
     "date": "2026-10-25",
@@ -404,5 +397,12 @@
     "type": "change",
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
+  },
+  "KL-2026-10-26-ugc-tags": {
+    "id": "KL-2026-10-26-ugc-tags",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-10-26, twice-weekly review) - 5 new tagged items since the 2026-10-18 boundary, best-engagement/best-credit cycle in weeks (thesassthing_ 12.1k likes, makeupbysurbhikb confirmed as our own LOOMIERE shoot BTS)",
+    "follow_up": "Handed off to campaign-strategist (see KL-2026-10-26-CS-HANDOFF) for the five-way disposition call on items 1, 2, 3 and 5 (item 4 is own-content BTS, not a UGC disposition question in the same sense - flagged separately as supplementary LOOMIERE material). Next sweep boundary is 18152664124557948 (2026-10-25T19:54:15)."
   }
 }
