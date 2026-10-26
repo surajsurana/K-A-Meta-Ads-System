@@ -377,13 +377,6 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
-  "KL-2026-10-26-150100": {
-    "id": "KL-2026-10-26-150100",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Loomière | Festive 2026 | Launch - NEW campaign + ad set 'Loomière | IG Engaged 365D & Followers | WhatsApp | India' (Rs200/day) + 1 Reel ad, built PAUSED; carousels deferred",
-    "follow_up": "Awaiting Suraj's Telegram approval of this BUILD (sent by the top-level session). If approved, marketing-lead executes STEPS 0-10 verbatim and logs a type=change linked here. Then: (1) media-buyer re-GETs the creative and prepares a SEPARATE activation plan (campaign + ad set + ad to ACTIVE, budget line Rs5,982 -> Rs6,182, overlap watch on 6538717752176, the rollback criteria above), and the WhatsApp team should have Loomière prices ready before it goes live. (2) Someone with Stitchflow access cross-checks all 16 SKUs, especially the KA-231026-* ones, before any product-map line is marked confirmed. Ice Blue KA-231026-013 stays probable unless Suraj confirms. (3) Carousels: creative-copywriter revises AD 3's 'the Diwali evening' line. No earlier than 7 days after the Reel activates, media-buyer plans AD 2 (Burgundy Scalloped + Golden Petal) as an explicit image-vs-video test in this ad set. AD 3 comes at least 7 more days after AD 2 (guardrail 11). Each is re-fetched and rehearsed again at that time. Revisit both if those 4 products get published on Shopify (a product link could then be added)."
-  },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
     "date": "2026-10-26",
@@ -418,6 +411,13 @@
     "type": "observation",
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
+  },
+  "KL-2026-10-26-EXEC-LOOMIEREBUILD": {
+    "id": "KL-2026-10-26-EXEC-LOOMIEREBUILD",
+    "date": "2026-10-26",
+    "type": "change",
+    "subject": "Built 1 new PAUSED campaign + 1 new PAUSED ad set + 1 new PAUSED ad (Loomière | Festive 2026 | Launch) per approved plan KL-2026-10-26-150100",
+    "follow_up": "Activation of this campaign/ad set/ad is explicitly NOT authorized by this execution - it is a separate future decision per the plan's own follow_up: (1) media-buyer re-GETs the creative to re-confirm text fields, then prepares a separate activation plan (budget Rs5,982 -> Rs6,182, overlap watch on ad set 6538717752176 which shares both custom audiences, WhatsApp team needs Loomière prices ready since 13/16 Shopify SKUs are still DRAFT). (2) Someone with Stitchflow access should cross-check all 16 SKUs, especially the KA-231026-* ones and particularly the low-confidence KA-231026-013 Ice Blue, before any product-map line is marked confirmed - this execution did not have Stitchflow access and did not attempt that cross-check. (3) The two carousel ads (AD 2, AD 3) remain deferred per the plan's own Decision 2, AD 3 pending creative-copywriter's revision of its Diwali-timing line."
   },
   "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
     "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
