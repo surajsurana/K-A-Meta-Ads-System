@@ -419,19 +419,19 @@
     "subject": "Execution attempt on KL-2026-10-26-CORRECTED-153045 (Red Corset ad 52536048558380 new-creative fix) STOPPED at its own step-3 self-check - new creative auto-expanded, hypothesis disproven.",
     "follow_up": "media-buyer should re-diagnose with fresh GET-only probes why Meta auto-expands degrees_of_freedom_spec.creative_features_spec on write even for a minimal, 6-key POST, given that the one proven-working live creative (1923259605011760) was created before this auto-expansion behavior existed or before Meta started applying it to new creates. Consider whether omitting degrees_of_freedom_spec entirely (letting Meta pick its own full defaults, as population (a) in KL-2026-10-22-094020 showed many live ACTIVE DCO creatives already do) is a safer third attempt than trying to control individual keys at all. New orphaned creative 1656327816223604 is unattached and can be deleted or left as further evidence per media-buyer's judgment."
   },
-  "KL-2026-10-26-MB-UK-REVERIFIED-010513": {
-    "id": "KL-2026-10-26-MB-UK-REVERIFIED-010513",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Re-verification of UK Engaged 365D & Followers | Geo Test build spec (KL-2026-08-24-010513) following Suraj approving reconsideration (KL-2026-10-26-CS-GEO-UK-REOPEN-ASK) - build spec CONFIRMED STILL CURRENT, resending for final build approval",
-    "follow_up": "If approved: marketing-lead executes the build (new ad set + ad, status PAUSED) exactly as specified in KL-2026-08-24-010513, verifies via fresh GET, logs a type=change entry linked to both this entry and KL-2026-08-24-010513. Activation remains a separate future plan, not included here."
-  },
   "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
     "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
     "date": "2026-10-26",
     "type": "change",
     "subject": "Executed KL-2026-10-22-142513 - paused ad 52547120422780 First Love | Cut Out to Reveal, Cut to Sculpt. in First Love | Broad Advantage+ | India (ad set 52535906903180)",
     "follow_up": "Per the plan's own rollback criteria (re-stated in KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK and re-confirmed in KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT): re-check 7 full days after this pause (~2026-11-02). Reactivate ad 52547120422780 if, over those 7 days, Broad Advantage+ cost per conversation rises more than 20% vs the pre-pause baseline AND serious-or-better count does not rise, OR Sage Green (52547120457180) 7-day frequency exceeds 3.0. Also close out KL-2026-10-22-093245 (held-plan) as resolved via this entry."
+  },
+  "KL-2026-10-26-ML-EXEC-UK-GEOTEST-010513": {
+    "id": "KL-2026-10-26-ML-EXEC-UK-GEOTEST-010513",
+    "date": "2026-10-26",
+    "type": "change",
+    "subject": "Built UK Engaged 365D & Followers | Geo Test ad set + ad, PAUSED",
+    "follow_up": "Activation remains a separate future plan, not included here."
   },
   "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED": {
     "id": "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED",
