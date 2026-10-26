@@ -412,6 +412,13 @@
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
+  "KL-2026-10-26-EXEC-BLANKTITLE-SELFCHECK-STOP-6": {
+    "id": "KL-2026-10-26-EXEC-BLANKTITLE-SELFCHECK-STOP-6",
+    "date": "2026-10-26",
+    "type": "observation",
+    "subject": "Execution attempt on KL-2026-10-26-CORRECTED-153045 (Red Corset ad 52536048558380 new-creative fix) STOPPED at its own step-3 self-check - new creative auto-expanded, hypothesis disproven.",
+    "follow_up": "media-buyer should re-diagnose with fresh GET-only probes why Meta auto-expands degrees_of_freedom_spec.creative_features_spec on write even for a minimal, 6-key POST, given that the one proven-working live creative (1923259605011760) was created before this auto-expansion behavior existed or before Meta started applying it to new creates. Consider whether omitting degrees_of_freedom_spec entirely (letting Meta pick its own full defaults, as population (a) in KL-2026-10-22-094020 showed many live ACTIVE DCO creatives already do) is a safer third attempt than trying to control individual keys at all. New orphaned creative 1656327816223604 is unattached and can be deleted or left as further evidence per media-buyer's judgment."
+  },
   "KL-2026-10-26-MB-UK-REVERIFIED-010513": {
     "id": "KL-2026-10-26-MB-UK-REVERIFIED-010513",
     "date": "2026-10-26",
