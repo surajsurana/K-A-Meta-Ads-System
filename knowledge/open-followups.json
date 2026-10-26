@@ -419,6 +419,13 @@
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
+  "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
+    "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
+    "date": "2026-10-26",
+    "type": "change",
+    "subject": "Executed KL-2026-10-22-142513 - paused ad 52547120422780 First Love | Cut Out to Reveal, Cut to Sculpt. in First Love | Broad Advantage+ | India (ad set 52535906903180)",
+    "follow_up": "Per the plan's own rollback criteria (re-stated in KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK and re-confirmed in KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT): re-check 7 full days after this pause (~2026-11-02). Reactivate ad 52547120422780 if, over those 7 days, Broad Advantage+ cost per conversation rises more than 20% vs the pre-pause baseline AND serious-or-better count does not rise, OR Sage Green (52547120457180) 7-day frequency exceeds 3.0. Also close out KL-2026-10-22-093245 (held-plan) as resolved via this entry."
+  },
   "KL-2026-10-26-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
     "date": "2026-10-26",
