@@ -258,13 +258,6 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   },
-  "KL-2026-10-19-ML-FOLLOWERGROWTH-ADAPAUSE-EXECUTED": {
-    "id": "KL-2026-10-19-ML-FOLLOWERGROWTH-ADAPAUSE-EXECUTED",
-    "date": "2026-10-19",
-    "type": "change",
-    "subject": "Profile Visits | India (ad set 52538161512180) - executed pause of Ad A (\"Profile Visits | Four Techniques, One Sage Green Silhouette\", ad 52551760703580), root-cause diagnostic step, no budget change",
-    "follow_up": "At the next full-week reading (~2026-10-26), performance-analyst re-measures ad-set-wide cost-per-follower with only Fresh Content Jul23 (52538162380380) active, per the rollback criteria in KL-2026-10-19-MB-FOLLOWERGROWTH-ADAPAUSE. If reactivation is ever decided, revert: status PAUSED -> ACTIVE on 52551760703580."
-  },
   "KL-2026-10-20-015025": {
     "id": "KL-2026-10-20-015025",
     "date": "2026-10-20",
@@ -411,6 +404,13 @@
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-23 to 2026-10-26 (4-day Thursday-to-Monday window, twice-weekly review)",
     "follow_up": "Re-pull this exact window's Stitchflow order count once more at the next review to confirm the lag-driven upward revision actually happened (expect >6 orders once 10-25/10-26 fully land)."
+  },
+  "KL-2026-10-26-PA-FOLLOWERGROWTH-ADAPAUSE-CHECKPOINT": {
+    "id": "KL-2026-10-26-PA-FOLLOWERGROWTH-ADAPAUSE-CHECKPOINT",
+    "date": "2026-10-26",
+    "type": "outcome",
+    "subject": "Profile Visits | India follower growth - full-week reading with BOTH Ad A and Ad B paused (only Fresh Content Jul23 active) - DOES NOT recover into the Rs1.11-2.32/follower target band - points away from any single ad and toward a structural/organic cause",
+    "follow_up": "Hand to campaign-strategist: the single-ad-dilution hypothesis is now ruled out by this cycle's own pre-committed test. A real next-move decision is needed - leave Fresh Content Jul23 running as-is (it is at least producing real follower growth, just above the cost target), try a genuinely new creative for this ad set, or reconsider the Rs1.11-2.32 target band itself if it no longer reflects current Meta auction costs for this objective."
   },
   "KL-2026-10-26-ambiguous-comment": {
     "id": "KL-2026-10-26-ambiguous-comment",
