@@ -377,6 +377,13 @@
     "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
     "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
+  "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN": {
+    "id": "KL-2026-10-26-CS-GOLDENMUSE-MAINTAIN",
+    "date": "2026-10-26",
+    "type": "decision",
+    "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
+    "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
+  },
   "KL-2026-10-26-CS-HANDOFF": {
     "id": "KL-2026-10-26-CS-HANDOFF",
     "date": "2026-10-26",
@@ -425,13 +432,6 @@
     "type": "observation",
     "subject": "UK reverse-geo (revenue without acquisition spend) - prior HOLD readings (KL-2026-10-01-CS-REVERSEGEO-SIX, KL-2026-10-08-CS-GEO-REVENUENOACQSPEND) appear to have used only the single top UK city (London, 4 orders/Rs171,000), not the full country - true FY-to-date UK total is materially larger and still growing, 0 Meta UK spend confirmed via country breakdown",
     "follow_up": "Hand to campaign-strategist - worth deciding whether this growth trajectory changes the calculus on the previously-declined UK prospecting test, given it is not the same static case Suraj said no to in August."
-  },
-  "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE": {
-    "id": "KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "First Love | Golden Muse (KAFL020) Test | India (ad set 52559141092980) - 2-week stop-rule check was never explicitly run (due ~2026-10-20, 6 days overdue, found via this cycle's full review) - now run fresh: PASSES, roughly in line with baseline, plus one real Rs112,200 Stitchflow order for the exact SKU",
-    "follow_up": "Hand to campaign-strategist for the actual maintain/scale/pause call now that the overdue check has finally been run. Also worth a process note: unlike Metallic Blue, this ad set's stop-rule never auto-surfaced via the open-followups index or a daily heartbeat catch - worth checking why if this is a recurring pattern."
   },
   "KL-2026-10-26-PA-SEASONALITY-OCTMTD": {
     "id": "KL-2026-10-26-PA-SEASONALITY-OCTMTD",
