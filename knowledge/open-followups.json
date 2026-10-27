@@ -433,13 +433,6 @@
     "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
     "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
   },
-  "KL-2026-10-27-154919": {
-    "id": "KL-2026-10-27-154919",
-    "date": "2026-10-27",
-    "type": "decision",
-    "subject": "Loomiere launch - activate retargeting ad set at Rs400, add Reel to India | Whatsapp | 9th Dec 25 with Rs720->864, new Loomiere | Broad Advantage+ | WhatsApp | India at Rs700; one approval builds and switches on; total Rs6,232 -> Rs7,476 with time-boxed ceiling Rs7,500 (28 Oct - 10 Nov)",
-    "follow_up": "2026-11-04 DAY-7 WATCH (daily heartbeat new-ad watch, prompts/daily-heartbeat.md step 5): flag if A 52564357579980 delivers < 60% of its Rs400 budget (auction overlap with India Insta Engaged); if India Insta Engaged 6538717752176's own daily spend falls > 30% vs its post-trim pre-launch level (cannibalisation); if C's cost per serious-or-better is > Rs2,500 after Rs3,500 spend; also whether the Reel in 9th Dec is starving or splitting with the 3 existing ads. Propose pauses through the normal approval path. 2026-11-10 END-DATE CHECK (campaign-strategist), rules set before results: C broad: keep at Rs700 if cost per serious-or-better <= Rs1,500 AND (>= 1 traced Loomiere order OR >= 8 serious-or-better), otherwise pause. A retargeting: keep Rs400 if 7d frequency < 3.0 and cost per serious <= Rs1,500, otherwise drop to Rs200 (daily_budget 20000). B 9th Dec: keep Rs864 if its cost per serious is <= Rs1,570 (not worse than Rs1,307 by > 20%), otherwise back to Rs720 (72000); keep the Loomiere Reel there if it took >= 25% of the ad set's spend at an equal or better cost per serious, otherwise pause it. Lower the quality-based thresholds if the staff_replied labelling break is still open, and say so. Pull spend, WhatsApp enquiries, serious-or-better and traced orders for A, C and the Reel inside 9th Dec, Stitchflow orders on the 16 Loomiere SKUs, and Nov MTD vs Nov 2025 (62 / Rs37.9L). Each keep/drop is a normal approval plan. 2026-11-11 CEILING REVERTS to Rs6,500/day unless Suraj approves a result-backed new level; if the 10 Nov keep set totals more than Rs6,500, that keep plan must carry the ceiling question explicitly. Re-run lead_quality_report.py --since 2026-09-27 on the droplet before the 10 Nov call."
-  },
   "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
     "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
     "date": "2026-10-27",
