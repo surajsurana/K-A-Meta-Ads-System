@@ -440,6 +440,13 @@
     "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
     "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
   },
+  "KL-2026-10-27-EXEC-AUSTRALIAACTIVATE": {
+    "id": "KL-2026-10-27-EXEC-AUSTRALIAACTIVATE",
+    "date": "2026-10-27",
+    "type": "change",
+    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - ACTIVATED (PAUSED -> ACTIVE) per approved plan KL-2026-10-27-015045",
+    "follow_up": "Per the plans own rollback criteria: (1) pause back to PAUSED if cost per messaging_conversation_started runs materially worse (~1.5x+) than the USA/Canada siblings over a full comparable 2-week window; (2) pause first (least-proven spend) if the committed total unexpectedly exceeds Rs6,500/day for any reason; (3) pause immediately and route to media-buyer if Meta flags an issue (issues_info populated). Next performance check per standard 2-week comparable window."
+  },
   "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
     "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
     "date": "2026-10-27",
