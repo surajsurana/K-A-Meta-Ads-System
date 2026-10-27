@@ -258,13 +258,6 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
     "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
   },
-  "KL-2026-10-20-015025": {
-    "id": "KL-2026-10-20-015025",
-    "date": "2026-10-20",
-    "type": "outcome",
-    "subject": "Daily heartbeat paused-build activation sweep - First Love | Cold Prospecting | Australia (ad set 52562820202180) - both activation gating conditions re-verified fresh, BOTH still unmet, activation correctly remains gated, one day after build",
-    "follow_up": "Re-check again on a future daily heartbeat paused-build activation sweep. Condition 1 (full clean week, no breach day) cannot be assessed as met until at least 7 consecutive clean days follow the most recent breach (now 2026-10-19) - earliest possible clean-week confirmation would be around 2026-10-27, assuming no further breach in between. Condition 2 (nominal Rs20/day gap) requires either a trim elsewhere or an explicit ceiling increase from Suraj, re-verified fresh at that time, not reused from this entry's figures."
-  },
   "KL-2026-10-20-SEO-CONVERSION-FINDINGS": {
     "id": "KL-2026-10-20-SEO-CONVERSION-FINDINGS",
     "date": "2026-10-20",
@@ -321,13 +314,6 @@
     "subject": "First Love | Broad Advantage+ | India",
     "follow_up": "re-check 2026-11-02: rerun scripts/lead_quality_report.py --mature-only (and the full window). Pre-committed rule: if First Love | Broad Advantage+ | India still costs at least 1.5x India | Whatsapp | 9th Dec 25 per serious-or-better enquiry, campaign-strategist proposes Broad Rs1,000 to Rs860 and India | Whatsapp Rs720 to Rs860 (total unchanged, within the Rs6,500 ceiling), validated by media-buyer and sent to Suraj via Telegram. Weigh placement, hour and normal performance too; small samples stay watch items."
   },
-  "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC": {
-    "id": "KL-2026-10-22-ML-CEILINGPOLICY-RESOLVED-EXEC",
-    "date": "2026-10-22",
-    "type": "human_knowledge",
-    "subject": "Rs6,500/day ceiling policy interpretation RESOLVED: ceiling means the COMMITTED daily_budget total, not actual realized day-to-day spend",
-    "follow_up": "Future ceiling-watch cycles should stop flagging actual-realized-spend breach days as a compliance problem requiring a reactive cut by default; the account is compliant on the basis that matters (committed total, currently Rs6,420.00/day under Rs6,500.00/day). The existing daily/twice-weekly actual-spend watch can continue as an informational pacing-volatility tracker, but should not reflexively trigger trim proposals absent a new/different driver, consistent with KL-2026-10-22-CS-CEILINGWATCH-DAY4-NOACTION."
-  },
   "KL-2026-10-22-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-22-PA-BLENDED-WINDOW",
     "date": "2026-10-22",
@@ -369,13 +355,6 @@
     "type": "observation",
     "subject": "Escalated the staff_replied/AISI labelling-pipeline break to Suraj via Telegram (plain FYI, no approval needed)",
     "follow_up": "No live action pending from this entry itself. Continue the staff_replied None-rate recheck on future heartbeats per KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKENs own follow_up; re-notify only if Suraj asks or if the break clears/worsens materially."
-  },
-  "KL-2026-10-25-135922": {
-    "id": "KL-2026-10-25-135922",
-    "date": "2026-10-25",
-    "type": "change",
-    "subject": "Executed KL-2026-10-25-075257 - India Insta Engaged 365D & Followers (6538717752176) daily_budget trimmed Rs2,188->Rs1,750/day",
-    "follow_up": "Re-check ad set 6538717752176 7-day rolling frequency/reach approx one week post-trim (~2026-11-01). If frequency eased toward/under ~2.7x with proportional reach growth, hold at Rs1,750/day. If not eased, re-escalate rather than cutting again."
   },
   "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
     "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
@@ -474,5 +453,12 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
     "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
+  },
+  "KL-2026-10-27-015045": {
+    "id": "KL-2026-10-27-015045",
+    "date": "2026-10-27",
+    "type": "decision",
+    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - ACTIVATION PLAN, both gating conditions from KL-2026-10-19-EXEC-AUSTRALIABUILD/KL-2026-10-20-015025 now independently re-verified MET",
+    "follow_up": "Awaiting Suraj Telegram approval. ROLLBACK CRITERIA: (1) if this ad set's cost per messaging_conversation_started runs materially worse (roughly 1.5x+) than the USA/Canada Cold Prospecting siblings' own benchmark over a full comparable 2-week window, pause this ad set back to PAUSED, daily_budget unchanged at 10000; (2) if the account-wide committed total unexpectedly exceeds Rs6,500/day for any reason after this activation (should not happen - resulting total is Rs6,082.00/day with Rs418/day headroom), pause this ad set first before any other remedy, since it is the newest, least-proven spend; (3) if Meta disapproves the ad or flags a policy issue (issues_info populated), pause immediately and route to media-buyer for a fix plan, do not leave it running with an issue; (4) if rejected/held, nothing changes - ad set and ad remain PAUSED at Rs0/day live impact. VERIFICATION STEPS (post-execution, all GET): (1) GET 52562820202180?fields=status,effective_status,daily_budget - confirm status=ACTIVE, effective_status eventually ACTIVE (PENDING_REVIEW is an expected transient state, not a failure), daily_budget still 10000; (2) GET 52562820223580?fields=status,effective_status,issues_info - confirm status=ACTIVE, no issues_info; (3) GET /act_686170454752172/adsets?effective_status=[\"ACTIVE\"]&fields=daily_budget and re-sum - confirm total = Rs6,082.00/day (608200 minor units) across 15 ad sets."
   }
 }
