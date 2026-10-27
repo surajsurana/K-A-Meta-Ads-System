@@ -398,13 +398,6 @@
     "subject": "Executed KL-2026-10-22-142513 - paused ad 52547120422780 First Love | Cut Out to Reveal, Cut to Sculpt. in First Love | Broad Advantage+ | India (ad set 52535906903180)",
     "follow_up": "Per the plan's own rollback criteria (re-stated in KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK and re-confirmed in KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT): re-check 7 full days after this pause (~2026-11-02). Reactivate ad 52547120422780 if, over those 7 days, Broad Advantage+ cost per conversation rises more than 20% vs the pre-pause baseline AND serious-or-better count does not rise, OR Sage Green (52547120457180) 7-day frequency exceeds 3.0. Also close out KL-2026-10-22-093245 (held-plan) as resolved via this entry."
   },
-  "KL-2026-10-26-ML-EXEC-UK-GEOTEST-010513": {
-    "id": "KL-2026-10-26-ML-EXEC-UK-GEOTEST-010513",
-    "date": "2026-10-26",
-    "type": "change",
-    "subject": "Built UK Engaged 365D & Followers | Geo Test ad set + ad, PAUSED",
-    "follow_up": "Activation remains a separate future plan, not included here."
-  },
   "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED": {
     "id": "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED",
     "date": "2026-10-26",
@@ -453,6 +446,13 @@
     "type": "decision",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - ACTIVATION PLAN, both gating conditions from KL-2026-10-19-EXEC-AUSTRALIABUILD/KL-2026-10-20-015025 now independently re-verified MET",
     "follow_up": "Awaiting Suraj Telegram approval. ROLLBACK CRITERIA: (1) if this ad set's cost per messaging_conversation_started runs materially worse (roughly 1.5x+) than the USA/Canada Cold Prospecting siblings' own benchmark over a full comparable 2-week window, pause this ad set back to PAUSED, daily_budget unchanged at 10000; (2) if the account-wide committed total unexpectedly exceeds Rs6,500/day for any reason after this activation (should not happen - resulting total is Rs6,082.00/day with Rs418/day headroom), pause this ad set first before any other remedy, since it is the newest, least-proven spend; (3) if Meta disapproves the ad or flags a policy issue (issues_info populated), pause immediately and route to media-buyer for a fix plan, do not leave it running with an issue; (4) if rejected/held, nothing changes - ad set and ad remain PAUSED at Rs0/day live impact. VERIFICATION STEPS (post-execution, all GET): (1) GET 52562820202180?fields=status,effective_status,daily_budget - confirm status=ACTIVE, effective_status eventually ACTIVE (PENDING_REVIEW is an expected transient state, not a failure), daily_budget still 10000; (2) GET 52562820223580?fields=status,effective_status,issues_info - confirm status=ACTIVE, no issues_info; (3) GET /act_686170454752172/adsets?effective_status=[\"ACTIVE\"]&fields=daily_budget and re-sum - confirm total = Rs6,082.00/day (608200 minor units) across 15 ad sets."
+  },
+  "KL-2026-10-27-015130": {
+    "id": "KL-2026-10-27-015130",
+    "date": "2026-10-27",
+    "type": "decision",
+    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780) - ACTIVATION PLAN, 1-day build-buffer rule met, fresh ceiling re-check and build re-verify both clean",
+    "follow_up": "Awaiting Suraj Telegram approval. ROLLBACK CRITERIA: (1) if this ad set's cost per messaging_conversation_started (or equivalent INSTAGRAM_DIRECT engagement cost) runs materially worse (roughly 1.5x+) than the USA/Canada Engaged 365D & Followers siblings' own benchmark over a full comparable 2-week window, pause this ad set back to PAUSED, daily_budget unchanged at 15000; (2) if the account-wide committed total unexpectedly exceeds Rs6,500/day after this activation (should not happen - resulting total is Rs6,132.00/day, or Rs6,232.00/day in the combined scenario with Australia, both under ceiling), pause this ad set as one of the two newest, least-proven spends; (3) if Meta disapproves the ad or flags a policy issue (issues_info populated), pause immediately and route to media-buyer for a fix plan; (4) if rejected/held, nothing changes - ad set and ad remain PAUSED at Rs0/day live impact, consistent with the 2026-08-31 precedent of this exact market being declinable without further consequence. VERIFICATION STEPS (post-execution, all GET): (1) GET 52564305237780?fields=status,effective_status,daily_budget - confirm status=ACTIVE, effective_status eventually ACTIVE (PENDING_REVIEW is an expected transient state), daily_budget still 15000; (2) GET 52564305260180?fields=status,effective_status,issues_info - confirm status=ACTIVE, no issues_info; (3) GET /act_686170454752172/adsets?effective_status=[\"ACTIVE\"]&fields=daily_budget and re-sum - confirm total = Rs6,132.00/day (613200 minor units) across 15 ad sets (or Rs6,232.00/day across 16 if the Australia activation plan was also approved first)."
   },
   "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
     "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
