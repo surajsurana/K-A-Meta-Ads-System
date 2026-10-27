@@ -377,13 +377,6 @@
     "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
     "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
   },
-  "KL-2026-10-26-CS-SCALEINTEL-NOTYET": {
-    "id": "KL-2026-10-26-CS-SCALEINTEL-NOTYET",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Scale Intelligence (section 3e) weekly call - NOT YET on a ceiling step; independently corrected performance-analyst's own CPM framing from 'flat-to-falling' to actually RISING this window, most plausibly Diwali/festive-season auction pressure, with softer November approaching next",
-    "follow_up": "Re-ask the ceiling-step question next weekly review, re-reading CPM window-vs-trailing comparisons directly each time rather than trusting a prose characterization. Watch whether the Diwali-period CPM elevation recedes post-festive-season, which would be the cleaner signal to re-evaluate headroom against."
-  },
   "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
     "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
     "date": "2026-10-26",
@@ -440,19 +433,12 @@
     "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
     "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
   },
-  "KL-2026-10-27-EXEC-AUSTRALIAACTIVATE": {
-    "id": "KL-2026-10-27-EXEC-AUSTRALIAACTIVATE",
+  "KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET": {
+    "id": "KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET",
     "date": "2026-10-27",
-    "type": "change",
-    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - ACTIVATED (PAUSED -> ACTIVE) per approved plan KL-2026-10-27-015045",
-    "follow_up": "Per the plans own rollback criteria: (1) pause back to PAUSED if cost per messaging_conversation_started runs materially worse (~1.5x+) than the USA/Canada siblings over a full comparable 2-week window; (2) pause first (least-proven spend) if the committed total unexpectedly exceeds Rs6,500/day for any reason; (3) pause immediately and route to media-buyer if Meta flags an issue (issues_info populated). Next performance check per standard 2-week comparable window."
-  },
-  "KL-2026-10-27-EXEC-UKGEOTESTACTIVATE": {
-    "id": "KL-2026-10-27-EXEC-UKGEOTESTACTIVATE",
-    "date": "2026-10-27",
-    "type": "change",
-    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780) - ACTIVATED (PAUSED -> ACTIVE) per approved plan KL-2026-10-27-015130",
-    "follow_up": "Per the plan's own rollback criteria: (1) pause back to PAUSED if cost per messaging_conversation_started runs materially worse (~1.5x+) than the USA/Canada siblings over a full comparable 2-week window; (2) pause first (one of the two newest, least-proven spends) if the committed total unexpectedly exceeds Rs6,500/day for any reason; (3) pause immediately and route to media-buyer if Meta flags an issue (issues_info populated). Next performance check per standard 2-week comparable window."
+    "type": "decision",
+    "subject": "Loomiere launch budget - 14 days (2026-10-28 to 2026-11-10): retargeting ad set Rs400/day, Reel added to India | Whatsapp | 9th Dec 25 with +20% (Rs720->864), new Loomiere Broad Advantage+ WhatsApp ad set Rs700/day; account Rs6,232 -> Rs7,476/day, needs time-boxed ceiling raise to Rs7,500",
+    "follow_up": "END-DATE CHECK 2026-11-10 (campaign-strategist): pull spend, WhatsApp enquiries, serious-or-better, and traced orders for Loomiere ad sets A (52564357579980) and C (new broad), and for the Loomiere Reel inside 9th Dec 6862975169176. Also pull Stitchflow orders on the 16 Loomiere SKUs and Nov MTD vs Nov 2025 (62 / Rs37.9L) via get_monthly_summary. Apply the pre-set keep/drop rules in the summary, propose the result as an approval plan, and revert the ceiling to Rs6,500 unless Suraj approves a new level. DAY-7 WATCH 2026-11-04 via the heartbeat new-ad watch: A under 60% delivery, India Insta Engaged spend down more than 30%, or C cost per serious over Rs2,500 after Rs3,500 spend. Re-run lead_quality_report.py --since 2026-09-27 on the droplet (could not be run from this session)."
   },
   "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
     "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
