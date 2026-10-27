@@ -23,7 +23,7 @@ The complete, exhaustive review — not the daily heartbeat's cheap targeted che
    - A disposition decision (existing ad / new ad-set test / new campaign / hold / reject) for every content item social-community-manager surfaced.
    - A **portfolio budget allocation check** against the current ceiling in `docs/architecture.md` §Budget Policy — state current total / proposed allocation (if any change is warranted) / resulting total / within-ceiling, exactly per the required format.
    - A **geographic/demographic disposition call** (`docs/architecture.md` §3c) for any geographic or age-related finding performance-analyst surfaced this cycle — maintain/geo ad-set test/dedicated campaign/budget reallocation/creative-message adaptation/reduced targeting/exclusion/hold, weighted by actual commercial outcomes, never by CTR/engagement alone. No finding this cycle means no entry, same as any other quiet-week outcome.
-   - **The standing "should the ceiling go up" question** (`docs/architecture.md` §3e) — using this cycle's headroom/seasonality signals plus whether the trend has now held across several consecutive weekly checks (never act on a single strong week). If justified: a ≤20% ceiling step, or a small new-geography test budget, proposed with the same current/proposed/resulting/within-ceiling discipline as any allocation call. No sustained signal this cycle means no proposal, same as any other quiet-week outcome — this is a standing question to ask, not a standing bias toward scaling.
+   - **The budget call (rewritten 2026-10-27, `docs/architecture.md` §3e)** — should we propose more budget this review? Use the month's sales target and forecast (performance-analyst), cost per serious enquiry and per order (step 1b), saturation signals, and any launch or peak season. Propose a ceiling raise or a time-boxed launch budget when §3e's rules say so; otherwise give the reason to stay. Always produce the one-line "Budget:" verdict for the digest.
 
 ## Routing
 
@@ -44,6 +44,9 @@ Where a finding genuinely implies a next move, continue through creative-copywri
   Order value: ₹<Y>
   Cost per order: ₹<Z>
   ROAS: <W>x
+
+  Sales this month: <N> orders, ₹<value> so far. Forecast ₹<low>-<high> vs target ₹<target> (<on track / behind / ahead>; say "suggested target" if none is set)
+  Budget: <"proposing ₹X -> ₹Y/day because ..." or "staying at ₹X/day because ..." - one line, every run>
 
   <then, only if there's something to say - each on its own short paragraph, blank line between:>
   <Enquiry quality: one short paragraph, every run - WhatsApp ad enquiries in the window, how many were serious or better, cost per serious enquiry, and any ad set that stood out good or bad, plain English. Say plainly when the numbers are too small to judge.>
