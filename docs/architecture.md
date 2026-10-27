@@ -92,7 +92,7 @@ Mostly enforced by instructions in each agent's definition, not by technical san
 
 **Current total Meta Ads daily budget ceiling: ₹6,500/day, effective 2026-08-19, set by Suraj.** This is a configurable policy value, not a fixed constant — it may change; campaign-strategist and media-buyer must read this line fresh each time rather than caching the figure.
 
-**Temporary ceiling: ₹7,500/day from 2026-10-28 to 2026-11-10 (Loomière launch, KL-2026-10-27-154919, approved by Suraj 2026-10-27); back to ₹6,500 on 2026-11-11 unless Suraj approves otherwise.** A temporary ceiling always has this one-line shape (`Temporary ceiling: ₹X/day from YYYY-MM-DD to YYYY-MM-DD`) so the dashboard can read it; remove the line once it ends.
+**Temporary ceiling: ₹7,500/day from 2026-10-27 to 2026-11-10 (Loomière launch, KL-2026-10-27-154919, approved by Suraj 2026-10-27); back to ₹6,500 on 2026-11-11 unless Suraj approves otherwise.** A temporary ceiling always has this one-line shape (`Temporary ceiling: ₹X/day from YYYY-MM-DD to YYYY-MM-DD`) so the dashboard can read it; remove the line once it ends.
 
 **What counts against the ceiling (Suraj, 2026-10-27): the daily budgets we set, summed across active ad sets.** Meta routinely spends a little above a set budget on a given day (7-10% seen in Oct 2026). That extra spend is accepted. It is never a breach, never a reason to trim, and never a reason to hold back a budget increase. **The ceiling is a decision point, not a goal to stay under:** the goal is more total orders (§3e), and raising the ceiling is a normal proposal whenever results justify it.
 
