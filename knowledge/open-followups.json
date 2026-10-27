@@ -391,13 +391,6 @@
     "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
     "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
-  "KL-2026-10-26-EXEC-LOOMIEREBUILD": {
-    "id": "KL-2026-10-26-EXEC-LOOMIEREBUILD",
-    "date": "2026-10-26",
-    "type": "change",
-    "subject": "Built 1 new PAUSED campaign + 1 new PAUSED ad set + 1 new PAUSED ad (Loomière | Festive 2026 | Launch) per approved plan KL-2026-10-26-150100",
-    "follow_up": "Activation of this campaign/ad set/ad is explicitly NOT authorized by this execution - it is a separate future decision per the plan's own follow_up: (1) media-buyer re-GETs the creative to re-confirm text fields, then prepares a separate activation plan (budget Rs5,982 -> Rs6,182, overlap watch on ad set 6538717752176 which shares both custom audiences, WhatsApp team needs Loomière prices ready since 13/16 Shopify SKUs are still DRAFT). (2) Someone with Stitchflow access should cross-check all 16 SKUs, especially the KA-231026-* ones and particularly the low-confidence KA-231026-013 Ice Blue, before any product-map line is marked confirmed - this execution did not have Stitchflow access and did not attempt that cross-check. (3) The two carousel ads (AD 2, AD 3) remain deferred per the plan's own Decision 2, AD 3 pending creative-copywriter's revision of its Diwali-timing line."
-  },
   "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
     "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
     "date": "2026-10-26",
@@ -460,5 +453,12 @@
     "type": "decision",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - ACTIVATION PLAN, both gating conditions from KL-2026-10-19-EXEC-AUSTRALIABUILD/KL-2026-10-20-015025 now independently re-verified MET",
     "follow_up": "Awaiting Suraj Telegram approval. ROLLBACK CRITERIA: (1) if this ad set's cost per messaging_conversation_started runs materially worse (roughly 1.5x+) than the USA/Canada Cold Prospecting siblings' own benchmark over a full comparable 2-week window, pause this ad set back to PAUSED, daily_budget unchanged at 10000; (2) if the account-wide committed total unexpectedly exceeds Rs6,500/day for any reason after this activation (should not happen - resulting total is Rs6,082.00/day with Rs418/day headroom), pause this ad set first before any other remedy, since it is the newest, least-proven spend; (3) if Meta disapproves the ad or flags a policy issue (issues_info populated), pause immediately and route to media-buyer for a fix plan, do not leave it running with an issue; (4) if rejected/held, nothing changes - ad set and ad remain PAUSED at Rs0/day live impact. VERIFICATION STEPS (post-execution, all GET): (1) GET 52562820202180?fields=status,effective_status,daily_budget - confirm status=ACTIVE, effective_status eventually ACTIVE (PENDING_REVIEW is an expected transient state, not a failure), daily_budget still 10000; (2) GET 52562820223580?fields=status,effective_status,issues_info - confirm status=ACTIVE, no issues_info; (3) GET /act_686170454752172/adsets?effective_status=[\"ACTIVE\"]&fields=daily_budget and re-sum - confirm total = Rs6,082.00/day (608200 minor units) across 15 ad sets."
+  },
+  "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
+    "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
+    "date": "2026-10-27",
+    "type": "observation",
+    "subject": "creative-copywriter is missing mcp__stitchflow__list_products/get_product in its tool grant, despite docs/architecture.md section 3d explicitly requiring it for the product-SKU Stitchflow cross-check",
+    "follow_up": "Next interactive session: add mcp__stitchflow__list_products and mcp__stitchflow__get_product to creative-copywriter.md tools frontmatter line (matching performance-analyst existing working grant), update its Last verified working line, then retry the Loomiere SKU cross-check through creative-copywriter per section 3d documented ownership (this cycle instead routed the actual cross-check to performance-analyst as a one-off workaround, not a precedent for who normally owns this)."
   }
 }
