@@ -18,7 +18,9 @@ mkdir -p "$LOG_DIR"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-if pgrep -f "telegram_approval_listener.py" >/dev/null 2>&1; then
+# Anchored (2026-10-27): the execution prompt text mentions this filename,
+# so an unanchored pattern would treat a running `claude -p` as the listener.
+if pgrep -f "^python3 [^ ]*telegram_approval_listener\.py$" >/dev/null 2>&1; then
   exit 0  # already running, nothing to do
 fi
 

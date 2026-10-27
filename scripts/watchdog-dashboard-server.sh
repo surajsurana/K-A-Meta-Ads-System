@@ -31,7 +31,10 @@ mkdir -p "$LOG_DIR"
 # 2026-09-13): a plain `pkill -f "http.server 8090"` killed the very SSH
 # session running it, since that session's own command line also
 # contained the literal string "http.server 8090".
-if ! pgrep -f "[l]ive_server.py" > /dev/null; then
+# Anchored to the exact process command line (2026-10-27): an unanchored
+# pattern also matched a running `claude -p` execution whose prompt text
+# mentions live_server.py, so a dead dashboard was never restarted.
+if ! pgrep -f "^python3 live_server.py$" > /dev/null; then
   echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] dashboard live server not running, restarting" >> "$LOG_FILE"
   cd "$DASH_DIR" || exit 1
   nohup python3 live_server.py >> "$LOG_FILE" 2>&1 &
