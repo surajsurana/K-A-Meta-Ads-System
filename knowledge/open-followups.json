@@ -446,12 +446,5 @@
     "type": "observation",
     "subject": "media-buyer incorrectly asserted the Loomiere ad set does not exist in the live account during the Australia/UK Geo Test paused-build activation sweep",
     "follow_up": "No live action needed - the two activation plans sent this cycle remain correct. Worth watching for a recurrence of this specific failure mode (an agent concluding an object does not exist without a fresh live GET on the exact id, or without checking linked_to for a superseding entry) in future media-buyer dispatches; escalate if it recurs."
-  },
-  "KL-2026-10-27-LM005-1900": {
-    "id": "KL-2026-10-27-LM005-1900",
-    "date": "2026-10-27",
-    "type": "decision",
-    "subject": "Organic Instagram feed carousel LM-005 - Loomiere Metallic Pink Brocade Corset With Draped Skirt (3 slides), scheduled 7:00 pm IST",
-    "follow_up": "The top-level session sends the Telegram approval to Suraj. After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-005_0*.jpg copies may be deleted. Do not re-send if already executed or handled manually."
   }
 }
