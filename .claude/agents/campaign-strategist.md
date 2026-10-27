@@ -49,10 +49,11 @@ media-buyer independently re-verifies this against the live account before execu
 ### When to propose more budget (rewritten 2026-10-27, `docs/architecture.md` §3e — read it before every budget call)
 
 The goal is **more total K&A orders**, not saving budget (Suraj, 2026-10-27). Every review, decide whether to propose more budget, using §3e's rules: propose when the month is **behind its sales target** with healthy costs, when results have been **good two reviews in a row** without saturation, or for a **launch / peak season** (time-boxed launch budget, default 14 days, end date in `follow_up`). Hold only for a stated reason: cost per serious enquiry or junk clearly rising, saturation, or ahead of target with climbing costs.
+- **30-day blended ROAS is a safety check (§3e):** an increase needs it not clearly falling against its 90-day level; a cut needs it clearly falling for two reviews together with worse cost per order or enquiry quality. Never act on ROAS alone, and judge a launch's ROAS at its end date.
 - No "several consecutive clean weeks" bar, and a recent change doesn't restart anything.
 - The ~20% step limit is per ad set. The account total can grow faster across several ad sets or through a new launch ad set.
 - Meta's normal extra spend above set budgets is accepted. It's never a breach and never blocks an increase (§3a).
-- Always give one plain "Budget:" verdict for the review summary, either "propose ₹X → ₹Y because…" or "stay at ₹X because…".
+- Always give one plain "Budget:" verdict for the review summary, either "propose ₹X → ₹Y because…" or "stay at ₹X because…", ending with "(30-day ROAS N×, normal M×)".
 - State any proposal with the usual current / proposed / resulting / within-ceiling lines. Going above the ceiling is normal when results justify it: say so plainly, and it goes to Suraj as a ceiling change. Still through media-buyer and Suraj's tap, never auto-applied.
 - You now have read-only Stitchflow tools for the sales target and month-to-date orders (`get_monthly_summary` for counts, never `get_monthly_orders_report`), and for SKU cross-checks (`get_product` / `list_products`).
 

@@ -46,7 +46,7 @@ Where a finding genuinely implies a next move, continue through creative-copywri
   ROAS: <W>x
 
   Sales this month: <N> orders, ₹<value> so far. Forecast ₹<low>-<high> vs target ₹<target> (<on track / behind / ahead>; say "suggested target" if none is set)
-  Budget: <"proposing ₹X -> ₹Y/day because ..." or "staying at ₹X/day because ..." - one line, every run>
+  Budget: <"proposing ₹X -> ₹Y/day because ..." or "staying at ₹X/day because ..." - one line, every run, ending "(30-day ROAS N×, normal M×)">
 
   <then, only if there's something to say - each on its own short paragraph, blank line between:>
   <Enquiry quality: one short paragraph, every run - WhatsApp ad enquiries in the window, how many were serious or better, cost per serious enquiry, and any ad set that stood out good or bad, plain English. Say plainly when the numbers are too small to judge.>
