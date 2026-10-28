@@ -433,13 +433,6 @@
     "subject": "media-buyer incorrectly asserted the Loomiere ad set does not exist in the live account during the Australia/UK Geo Test paused-build activation sweep",
     "follow_up": "No live action needed - the two activation plans sent this cycle remain correct. Worth watching for a recurrence of this specific failure mode (an agent concluding an object does not exist without a fresh live GET on the exact id, or without checking linked_to for a superseding entry) in future media-buyer dispatches; escalate if it recurs."
   },
-  "KL-2026-10-28-221839-B": {
-    "id": "KL-2026-10-28-221839-B",
-    "date": "2026-10-28",
-    "type": "decision",
-    "subject": "Gradual step 1 (revised) - strictly women (advantage_audience 1->0) + age_max 65->55 on 4 First Love product tests + Loomiere Broad Advantage+; nothing else changes; no budget change",
-    "follow_up": "2026-10-31 day-3 gender + age check on the 5; 2026-11-04 to 11-07 serious-enquiry check."
-  },
   "KL-2026-10-28-222233": {
     "id": "KL-2026-10-28-222233",
     "date": "2026-10-28",
@@ -495,5 +488,12 @@
     "type": "observation",
     "subject": "AISI enquiry labels unreliable 2026-10-20 to about 2026-11-01 (WATI quota pause); Loomière prefill fixed in rules-v3",
     "follow_up": "2026-11-02: confirm with AISI that staff_replied and milestones are populated again for 10-20 onwards, then re-read quality for 21-27 Oct."
+  },
+  "KL-2026-10-28-STEP1-C": {
+    "id": "KL-2026-10-28-STEP1-C",
+    "date": "2026-10-28",
+    "type": "decision",
+    "subject": "Gradual step 1 (final) - strictly women (advantage_audience 1->0) + ages 24-55 + Instagram-only placements on 4 First Love product tests + Loomière Broad Advantage+; nothing else changes; no budget change",
+    "follow_up": "2026-10-31 day-3 gender + age + platform check on the 5; after 2026-11-02 serious-enquiry check."
   }
 }
