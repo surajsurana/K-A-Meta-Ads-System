@@ -38,7 +38,7 @@ There is no dedicated MCP for this — call the Graph API directly via `Bash` + 
 
 ## Women only, gradual fixes (added 2026-10-28, guardrail 15)
 
-Every NEW ad set: `genders: [2]` and `targeting_automation.advantage_audience: 0`, so gender and age are hard limits. Use the brand's core ages (24-45 unless the plan says why not). Never copy Advantage+ audience from an older ad set used as a template. Placements: keep the account's usual setting until channel analysis decides about Facebook (guardrail 15-16), and say in the plan what was chosen. Fixes to EXISTING ad sets are gradual: a few ad sets per plan, worst first, never a performing ad set without a reason, and each step watched 3-4 days before the next. If a plan departs from this, its first line says "Departs from guardrail 15:" and why.
+Every NEW ad set: `genders: [2]` and `targeting_automation.advantage_audience: 0`, so gender and age are hard limits. Ages must sit within 22-55 (guardrail 15); 24-45 is the usual core. If an ad set is being edited anyway, fix its placements, gender and ages in the same edit, since every edit restarts learning. Never copy Advantage+ audience from an older ad set used as a template. Placements: keep the account's usual setting until channel analysis decides about Facebook (guardrail 15-16), and say in the plan what was chosen. Fixes to EXISTING ad sets are gradual: a few ad sets per plan, worst first, never a performing ad set without a reason, and each step watched 3-4 days before the next. If a plan departs from this, its first line says "Departs from guardrail 15:" and why.
 
 ## Ad text: check it at build, leave it alone once live (added 2026-10-22, Suraj's rule)
 
