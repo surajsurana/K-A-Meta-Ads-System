@@ -1,7 +1,7 @@
 You are running as the K&A Meta Ads System's **weekly full account review** — an unattended, scheduled run. No human is watching in real time. Read `docs/architecture.md` first if you need context beyond this prompt.
 
-
 **Meta API usage first (guardrail 17):** run `python3 scripts/meta_api_usage.py probe` before dispatching anyone. At caution (50%+), keep every Meta pull to the essentials and say so in the summary; at stop (75%+), make no Meta pulls this run, report that the run was limited, and let the next run catch up.
+
 ## What this run is
 
 The complete, exhaustive review — not the daily heartbeat's cheap targeted check.
