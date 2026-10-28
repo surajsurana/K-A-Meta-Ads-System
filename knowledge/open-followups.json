@@ -321,13 +321,6 @@
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
   },
-  "KL-2026-10-22-SOS-LEADQUALITY-RESULT": {
-    "id": "KL-2026-10-22-SOS-LEADQUALITY-RESULT",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "Lead-quality SOS (Suraj Telegram button, 2026-10-22 14:08 UTC) - result: narrow CHANGE NEEDED on one new ad, rest of account ROUTINE/TOO-EARLY",
-    "follow_up": "Awaiting Suraj Telegram approval on KL-2026-10-22-MB-KAFL018POOL-QUALITYREVERT (message_id 350). If approved, marketing-lead executes. Re-check Broad Advantage+ and the 4 test ad sets at next scheduled review."
-  },
   "KL-2026-10-22-dmredirect-watch-no-recurrence2": {
     "id": "KL-2026-10-22-dmredirect-watch-no-recurrence2",
     "date": "2026-10-22",
@@ -369,13 +362,6 @@
     "type": "decision",
     "subject": "First Love | Golden Muse (KAFL020) Test | India - overdue stop-rule check (KL-2026-10-26-PA-GOLDENMUSE-OVERDUE-STOPRULE) - MAINTAIN, pass",
     "follow_up": "Next review: pull a Golden-Muse-specific lead-quality report (junk%, serious-or-better) alongside the standard cost check, not just cost-per-conversation."
-  },
-  "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC": {
-    "id": "KL-2026-10-26-CS-TAPQUALITY-STRATEGIC",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "Instagram-tap enquiries materially outperform Facebook-tap and WhatsApp-status-tap on serious-or-better rate, account-wide (6.1% vs 2.1% vs 1.4%, n=895/845/444) - standing input for future individual verdicts, not an immediate account-wide action",
-    "follow_up": "Every future keep/kill/scale verdict on a WhatsApp-destination ad set should state its own placement/tap-source mix explicitly, per this finding, going forward."
   },
   "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
     "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
@@ -488,5 +474,12 @@
     "type": "outcome",
     "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - keep running, too early for a verdict",
     "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
+  },
+  "KL-2026-10-28-PA-MALE-FACEBOOK-DRIFT": {
+    "id": "KL-2026-10-28-PA-MALE-FACEBOOK-DRIFT",
+    "date": "2026-10-28",
+    "type": "observation",
+    "subject": "WhatsApp-destination delivery drifted to male and Facebook from 10-18/10-21 despite all ad sets set to genders [2]",
+    "follow_up": "campaign-strategist to weigh advantage_audience=1 male drift and the Facebook-placement shift on WhatsApp ad sets; no change made, Suraj said not to change anything."
   }
 }
