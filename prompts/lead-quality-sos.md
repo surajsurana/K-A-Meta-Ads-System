@@ -21,7 +21,8 @@ Suraj, 2026-10-22: "sometimes what happens is lead quality drops too much. like 
    - ads or creatives that started delivering or got a big share jump (new ad live, Meta shifting spend between sibling ads);
    - budget or targeting changes, and our own recent `type: change` entries in `knowledge/learning-log.jsonl` (e.g. the 2026-10-19 Punjab exclusion);
    - placement mix shifts (`breakdowns=publisher_platform,platform_position`): e.g. more Facebook or WhatsApp Status;
-   - learning-phase resets, frequency or CPM jumps, audience expansion on Advantage+ ad sets.
+   - learning-phase resets, frequency or CPM jumps, audience expansion on Advantage+ ad sets;
+   - **gender and age delivery** (`breakdowns=gender` and `breakdowns=age`, spend and conversations) against the previous 2 weeks (added 2026-10-28, guardrail 16). Men's share rose from about 35% to about 68% of WhatsApp conversations from 18 Oct, which is what this check would have caught.
 
 4. Dispatch **campaign-strategist** for the verdict, weighing both reads together:
    - **ROUTINE:** within the normal range for this sample size, or a known one-off (say what). No change; say what would make it worth re-checking.
@@ -38,6 +39,7 @@ Suraj, 2026-10-22: "sometimes what happens is lead quality drops too much. like 
 
    Where the junk came from: <ad set / ad names, time of day, kind of junk>
    Placement: Instagram <n> enquiries (<junk%> junk), Facebook <n> (<junk%>), WhatsApp Status <n> (<junk%>) - <one plain sentence: is placement part of the problem?>
+   Audience: <men's share of spend and conversations now vs before, and any age shift - one plain sentence>
    Verdict: <Routine / Change needed / Too early to tell> - <one or two plain sentences why>
    <if change needed: "Fix sent for your approval: <what changes, in plain words>" + one line on why this fix and not a placement change (or vice versa)>
    ```
