@@ -446,5 +446,12 @@
     "type": "observation",
     "subject": "media-buyer incorrectly asserted the Loomiere ad set does not exist in the live account during the Australia/UK Geo Test paused-build activation sweep",
     "follow_up": "No live action needed - the two activation plans sent this cycle remain correct. Worth watching for a recurrence of this specific failure mode (an agent concluding an object does not exist without a fresh live GET on the exact id, or without checking linked_to for a superseding entry) in future media-buyer dispatches; escalate if it recurs."
+  },
+  "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING": {
+    "id": "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING",
+    "date": "2026-10-28",
+    "type": "outcome",
+    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - keep running, too early for a verdict",
+    "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
   }
 }
