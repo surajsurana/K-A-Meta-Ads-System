@@ -36,3 +36,7 @@ Read `docs/brand-brief.md` first (price ₹30,000 - ₹4,80,000+, made-to-order,
 - Per ad set and per creative: enquiries, junk %, serious %, prefill-only %, cost per serious enquiry, orders, order value, cost per order - plus your plain-English read of which ads bring serious brides and which mostly bring junk.
 - Any ad set or creative taking meaningful spend while bringing mostly junk (or the reverse: cheap serious enquiries worth more budget) goes to **campaign-strategist** as a finding with the numbers. Never propose a change yourself.
 - Log genuinely new findings as `type: observation` via `scripts/append-learning-log.sh`, tagged `lead-quality` (plus the ad set's usual tags). Don't re-log an unchanged picture.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.

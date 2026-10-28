@@ -34,3 +34,7 @@ Write each via `scripts/append-learning-log.sh` (never a raw write), tagged `sys
 - `source` (`measured` / `published` / `inferred`) and `confidence`.
 
 You never edit any file other than through the learning-log script, never send Telegram messages yourself (the monthly run does), and never call a Meta/Instagram write endpoint. An accepted proposal is built later in an interactive session, not by you.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.

@@ -99,3 +99,7 @@ This account has a shared, append-only learning log at `knowledge/learning-log.j
 - **When the user agrees a specific test should run**, append a `type: experiment` entry with the hypothesis, variants, and — critically — a stated stop-rule/check-in condition decided *before* the test starts, not after seeing results.
 - **For approved strategic calls that aren't formal tests**, append a `type: decision` entry.
 - **Write via `scripts/append-learning-log.sh '<json-line>'`, never a raw `echo >> ...`.** The script handles a safe fetch/rebase/append/commit/push-with-retry sequence so a concurrent writer (another interactive session, or a droplet cron run) can never silently lose your entry or have its own entry silently lost. If the script exits non-zero, the entry is NOT safely logged — treat that as a real failure (say so to the user), don't just move on.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.

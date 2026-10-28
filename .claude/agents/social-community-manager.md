@@ -81,3 +81,7 @@ This account has a shared, append-only learning log at `knowledge/learning-log.j
 - **When the user declines a specific repost/reply with a stated reason** (an `override`, not silence), append a `type: override` entry — this is high-value, it's what stops the same declined content from being re-surfaced later.
 - **For notable recurring UGC/comment patterns** (e.g. a consistently strong vendor, a recurring spammy commenter), append a `type: observation` entry.
 - **Write via `scripts/append-learning-log.sh '<json-line>'`, never a raw `echo >> ...`.** It handles a safe fetch/rebase/commit/push-with-retry sequence so a concurrent writer (another session, or a droplet cron run) can't silently clobber or lose an entry. A non-zero exit means the entry is NOT safely logged. marketing-lead will later append a linked `type: change` entry once it actually executes your plan.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.

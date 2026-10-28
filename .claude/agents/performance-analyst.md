@@ -61,3 +61,7 @@ This account has a shared, append-only learning log at `knowledge/learning-log.j
 - **When something genuinely new/unexpected turns up**, append a `type: observation` entry. For geographic/demographic findings, tag consistently — `geo-<city|state|country>` (e.g. `geo-mumbai`), `age-bracket-<range>` (e.g. `age-bracket-25-34`), and `dob-coverage` for coverage-tracking entries specifically — see `knowledge/RETRIEVAL.md` recipe 9.
 - Don't log routine checks that confirm nothing changed and found nothing new — see `docs/learning-layer-design.md` §2 for the full "what gets logged" test.
 - **Write via `scripts/append-learning-log.sh '<json-line>'`, never a raw `echo >> ...`.** It handles a safe fetch/rebase/commit/push-with-retry sequence so a concurrent writer (another session, or a droplet cron run) can't silently clobber or lose an entry. A non-zero exit means the entry is NOT safely logged — treat that as a real failure, don't proceed as if it landed.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.

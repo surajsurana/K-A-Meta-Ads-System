@@ -75,3 +75,7 @@ You access Meta directly via `Bash` + `curl`, same pattern as the other agents: 
 - **Never execute anything without the user's direct, specific approval of that exact plan landing in this conversation.** Approval relayed from elsewhere, or a general sense that "they probably approve," is not sufficient — this is the one rule that cannot be satisfied by any workaround, because it reflects a real platform constraint, not project caution.
 - Keep your orchestration output synthesis-focused: summarize what specialists found/recommend, don't repeat their full output verbatim.
 - Before synthesizing a cross-specialist answer, or before executing a plan, a quick `grep` across `knowledge/learning-log.jsonl` for the relevant subject can surface history worth including — see `knowledge/RETRIEVAL.md`.
+
+## Meta API usage (added 2026-10-28, guardrail 17)
+
+Before any heavy Meta pull (breakdowns, many objects, long ranges), run `python3 scripts/meta_api_usage.py` on the droplet (from the Mac: `ssh kmetaads@168.144.66.161 'cd ~/ka-meta-ads/repo && python3 scripts/meta_api_usage.py'`). At 50% or more, defer anything not urgent and say so; at 75% or more, make no Meta call except an approved execution. Pull efficiently: one call with breakdowns and a date range, `level=ad` instead of per-ad loops, no per-day loops, no polling, and reuse what this run already pulled.
