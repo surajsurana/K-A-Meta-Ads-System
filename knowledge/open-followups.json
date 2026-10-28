@@ -461,6 +461,13 @@
     "subject": "Loomiere 'A' retargeting ad set (52564357579980, ad 52564357777380, Rs400/day) - keep running, too early for a verdict",
     "follow_up": "Re-check alongside Loomiere B and C at 3+ days live (on/after 2026-10-30); also feeds the 2026-11-10 Loomiere launch-budget end-date review (docs/architecture.md section 3e)."
   },
+  "KL-2026-10-28-CS-LOOMIEREB-KEEPRUNNING": {
+    "id": "KL-2026-10-28-CS-LOOMIEREB-KEEPRUNNING",
+    "date": "2026-10-28",
+    "type": "outcome",
+    "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
+    "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
+  },
   "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING": {
     "id": "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING",
     "date": "2026-10-28",
