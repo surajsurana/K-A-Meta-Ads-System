@@ -454,6 +454,13 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - keep running, too early for a verdict",
     "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
   },
+  "KL-2026-10-28-CS-CHAMPAGNENEUTRAL-POOLCOMPOSITION-RECHECK": {
+    "id": "KL-2026-10-28-CS-CHAMPAGNENEUTRAL-POOLCOMPOSITION-RECHECK",
+    "date": "2026-10-28",
+    "type": "decision",
+    "subject": "Champagne Gold Neutral Text Test (ad 52559623981980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - fresh read against the now-current pool composition since the 2026-10-22 KAFL018 revert: KEEP, no pause - the sustained ~3x cost-per-conversation gap does not hold once weighted by enquiry quality",
+    "follow_up": "Re-check with a larger since-10-22 sample (target ~20-30 enquiries per ad in this pool) and once the staff_replied/AISI labelling break clears, to confirm the quality-weighted read holds at larger n; if Champagne's serious-rate advantage reverses with more data, revisit the pause question then."
+  },
   "KL-2026-10-28-CS-LOOMIEREA-KEEPRUNNING": {
     "id": "KL-2026-10-28-CS-LOOMIEREA-KEEPRUNNING",
     "date": "2026-10-28",
