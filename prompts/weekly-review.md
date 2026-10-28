@@ -49,7 +49,8 @@ Where a finding genuinely implies a next move, continue through creative-copywri
   Budget: <"proposing ₹X -> ₹Y/day because ..." or "staying at ₹X/day because ..." - one line, every run, ending "(30-day ROAS N×, normal M×)">
 
   <then, only if there's something to say - each on its own short paragraph, blank line between:>
-  <Audience: one line, every run - share of spend and conversations to women / men / unknown and to each age band (18-24, 25-34, 35-44, 45+) across WhatsApp ad sets, from Meta's own breakdown, plus Instagram vs anything else. Name any ad set reaching men or off Instagram (guardrail 15-16).>
+  <Audience: one line, every run - share of spend and conversations to women / men / unknown and to each age band (18-24, 25-34, 35-44, 45+) across WhatsApp ad sets, from Meta's own breakdown, plus Instagram vs anything else. Name any ad set reaching men.>
+  <Channels: one short paragraph, every run (guardrail 16) - Instagram vs Facebook vs WhatsApp Status: share of spend, conversations, cost per conversation and enquiry quality by tap source, per ad set where it differs. If one channel is clearly worse, name the next one or two ad sets (worst first) proposed for removing it, never all at once.>
   <Enquiry quality: one short paragraph, every run - WhatsApp ad enquiries in the window, how many were serious or better, cost per serious enquiry, and any ad set that stood out good or bad, plain English. Say plainly when the numbers are too small to judge.>
   <other notable findings, plain English, no Meta object IDs/jargon>
   <plan(s) awaiting approval - name what's changing in plain English, not just an id>
