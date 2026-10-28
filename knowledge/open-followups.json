@@ -433,13 +433,6 @@
     "subject": "media-buyer incorrectly asserted the Loomiere ad set does not exist in the live account during the Australia/UK Geo Test paused-build activation sweep",
     "follow_up": "No live action needed - the two activation plans sent this cycle remain correct. Worth watching for a recurrence of this specific failure mode (an agent concluding an object does not exist without a fresh live GET on the exact id, or without checking linked_to for a superseding entry) in future media-buyer dispatches; escalate if it recurs."
   },
-  "KL-2026-10-28-222233": {
-    "id": "KL-2026-10-28-222233",
-    "date": "2026-10-28",
-    "type": "decision",
-    "subject": "Gradual step 2 - strictly women (advantage_audience 1->0) + age_max 65->55 on First Love Broad Advantage+ and India | Whatsapp | 9th Dec 25; nothing else changes; no budget change",
-    "follow_up": "2026-10-31 day-3 gender + age check on the 2; after 2026-11-02 serious-enquiry check; 9th Dec age_min 18 for Suraj to decide separately."
-  },
   "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING": {
     "id": "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING",
     "date": "2026-10-28",
@@ -495,5 +488,12 @@
     "type": "decision",
     "subject": "Gradual step 1 (final) - strictly women (advantage_audience 1->0) + ages 24-55 + Instagram-only placements on 4 First Love product tests + Loomière Broad Advantage+; nothing else changes; no budget change",
     "follow_up": "2026-10-31 day-3 gender + age + platform check on the 5; after 2026-11-02 serious-enquiry check."
+  },
+  "KL-2026-10-28-STEP2-B": {
+    "id": "KL-2026-10-28-STEP2-B",
+    "date": "2026-10-28",
+    "type": "decision",
+    "subject": "Gradual step 2 (final) - strictly women (advantage_audience 1->0) + ages within 22-55 + Instagram-only placements on First Love Broad Advantage+ and India | Whatsapp | 9th Dec 25; nothing else changes; no budget change",
+    "follow_up": "2026-10-31 day-3 gender + age + platform check on the 2; after 2026-11-02 serious-enquiry check."
   }
 }
