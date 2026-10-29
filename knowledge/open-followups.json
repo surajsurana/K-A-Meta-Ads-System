@@ -426,26 +426,12 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-28-CS-LOOMIEREC-KEEPRUNNING": {
-    "id": "KL-2026-10-28-CS-LOOMIEREC-KEEPRUNNING",
-    "date": "2026-10-28",
-    "type": "outcome",
-    "subject": "Loomiere 'C' new Broad-Advantage+-style ad set (52564598075780, ad 52564598185780, Rs700/day) - keep running, too early for a verdict; day-1 higher cost/conversation is expected for a new broad ad set, not a gap",
-    "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) once the learning phase settles, and again at the 2026-11-10 Loomiere launch-budget end date."
-  },
   "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING": {
     "id": "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING",
     "date": "2026-10-28",
     "type": "outcome",
     "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - keep running, too early for a verdict",
     "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
-  },
-  "KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE": {
-    "id": "KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE",
-    "date": "2026-10-28",
-    "type": "observation",
-    "subject": "AISI enquiry labels unreliable 2026-10-20 to about 2026-11-01 (WATI quota pause); Loomière prefill fixed in rules-v3",
-    "follow_up": "2026-11-02: confirm with AISI that staff_replied and milestones are populated again for 10-20 onwards, then re-read quality for 21-27 Oct."
   },
   "KL-2026-10-29-CS-BUDGETCHECK": {
     "id": "KL-2026-10-29-CS-BUDGETCHECK",
@@ -474,6 +460,13 @@
     "type": "decision",
     "subject": "@kajolrpaswwanteam Reel 18384643498231269 (instagram.com/reel/DfBqZjktXHh/) - five-way ad-use disposition: TEST, own frame-by-frame read performed, differs from performance-analyst's borderline-caution lean",
     "follow_up": "Send Suraj a tappable Approve/Reject/Hold question (scripts/send-telegram-approval.sh, type:decision) with the direct permalink instagram.com/reel/DfBqZjktXHh/ and this read stated plainly, before creative-copywriter is briefed on SKU identification. Suggested telegram_summary: 'New reel from @kajolrpaswwanteam: instagram.com/reel/DfBqZjktXHh/ - maroon lace halter gown, bodice visible in detail (not full-length). My read: on-brand color/silhouette, good detail-shot ad material, worth testing. Approve = brief copy for a detail-shot test ad. Reject = skip. Hold = decide later.' APPROVE authorizes creative-copywriter to identify the SKU and brief it, and media-buyer to build a plan - still needs its own separate approval before anything goes live."
+  },
+  "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED": {
+    "id": "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "Loomiere prefill-mislabel bug (KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE) is concretely inflating 'serious' on the 3 newest Loomiere WhatsApp ads; rules-v3 fix not live yet",
+    "follow_up": "Re-read these 3 ads' quality once rules_version reports rules-v3 (expect after a stitchflow-backend restart, and/or once WATI resets 2026-11-01 00:00 IST); do not use current serious% for any keep/cut call before that."
   },
   "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
     "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
