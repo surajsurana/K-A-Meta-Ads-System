@@ -426,13 +426,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-29-CS-BUDGETCHECK": {
-    "id": "KL-2026-10-29-CS-BUDGETCHECK",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) verdict - twice-weekly review 2026-10-29 - no allocation change, no ceiling increase proposed this cycle",
-    "follow_up": "Re-run the saturation trigger for First Love Broad Advantage+ and India|Whatsapp|9th Dec 25 once their day-3 post-targeting-change checkpoint clears (~2026-10-31); Loomiere launch budget verdict (keep/drop) due at its own 2026-11-10 end date per S3e."
-  },
   "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK": {
     "id": "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK",
     "date": "2026-10-29",
@@ -447,6 +440,13 @@
     "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25) staggered-activation sequence (KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE) - explicit RESUME with revised dates, not retired; stall closed",
     "follow_up": "2026-11-01: confirm the 10-28 targeting change has a clean day-3+ read on this ad set, then route Metallic Coffee Brown activation (ad 52552969628580) to media-buyer for a validated plan, and explicitly re-assess pool composition (retire candidate: 52547120579980). 2026-11-06 (contingent on a clean MCB read): route Burnt Orange activation (ad 52552969630380) to media-buyer."
   },
+  "KL-2026-10-29-CS-PROFILEVISITS-STEP3": {
+    "id": "KL-2026-10-29-CS-PROFILEVISITS-STEP3",
+    "date": "2026-10-29",
+    "type": "decision",
+    "subject": "Profile Visits | India (52538161512180) - gradual gender/age/placement fix, next step: hard women (advantage_audience 1->0), age_max 65->55 (age_min 22 already compliant), Instagram-only placements; no budget change",
+    "follow_up": "media-buyer to build the validated plan (fresh pre-edit GET to check for drift, independent ceiling re-check, same mechanics as STEP1-C/STEP2-B) and send for Suraj's Telegram approval. Watch 3-4 days post-edit per guardrail 15: delivery, men's share, placements, cost, and (once labels are reliable) enquiry quality is not applicable here since this ad set has no enquiries - watch cost-per-follower and reach instead."
+  },
   "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED": {
     "id": "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED",
     "date": "2026-10-29",
@@ -460,13 +460,6 @@
     "type": "observation",
     "subject": "30-day blended ROAS baseline (new standing metric per architecture.md 3e added 2026-10-27) - first formal reading: 39.55x, vs 36.24x over the trailing 90 days; no prior logged 30-day figure exists for a trend comparison",
     "follow_up": "Next review: compare the then-current 30-day blended ROAS against this 39.55x baseline and report the trend. If a cleaner same-period-last-year Stitchflow figure is ever needed, flag that list_orders historical completeness for periods before ~2026-04 should not be trusted without cross-checking get_monthly_summary first."
-  },
-  "KL-2026-10-29-PA-PROFILEVISITS-MALEDRIFT": {
-    "id": "KL-2026-10-29-PA-PROFILEVISITS-MALEDRIFT",
-    "date": "2026-10-29",
-    "type": "observation",
-    "subject": "Profile Visits | India (ad set 52538161512180) - not included in the 2026-10-28 gradual gender/age/placement fix; 74.1% of last-3-day spend going to men, age_max still 65 (outside the standing 22-55 rule)",
-    "follow_up": "campaign-strategist to weigh whether Profile Visits | India should become a step 3 of the gradual gender/age/placement fix, consistent with the 7 ad sets already done."
   },
   "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK": {
     "id": "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK",
