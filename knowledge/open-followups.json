@@ -475,6 +475,13 @@
     "subject": "October 2026 sales target recheck (held plan KL-2026-10-27-114404, follow_up due today) - fresh MTD 85 orders/Rs67.36L, value trajectory diverging further above the suggested Rs62L target; orders pace still roughly brackets the suggested 94",
     "follow_up": "Resend/supersede decision for the held plan remains upstream (marketing-lead/Suraj), not decided here. If the value gap keeps widening at this rate through month-end, the next review (post-month-close) should report the final MTD figure against both the suggested Rs62L and whatever figure (if any) Suraj ultimately sets."
   },
+  "KL-2026-10-29-SCM-LOOMIERE-LAVENDER-DISTINCT": {
+    "id": "KL-2026-10-29-SCM-LOOMIERE-LAVENDER-DISTINCT",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "New Reel 18094748135665342 (instagram.com/reel/DfCl-EAsQob/, Metallic Lavender Brocade Corset) is genuinely distinct footage from the existing Loomiere montage ad video - NOT a duplicate/reused cut",
+    "follow_up": "Hand off to campaign-strategist: new dedicated single-product lavender Reel (full 360-degree product visibility, superior to the brief group-shot cut in the existing 16-product montage ad) worth considering for its own single-product ad test, not a duplicate of the existing active Loomiere 'A' ad. Also pass along the possibly-related own-Story outtake (ig_own_story_4017730090733490982.mp4) as a supplementary own-content asset, unmatched in Your uploads. Note a minor naming inconsistency worth flagging separately: the Story graphic for this same SKU (KL-2026-10-29-SCM-MEDIALIB-DAILYCHECK item 2) displays on-screen text 'Metallic Pink Brocade Corset With Draped Skirt' even though the Reel's own IG caption and creative-product-map.jsonl both say 'Metallic Lavender' (KA-100826-011, distinct from the actual Metallic Pink SKU KA-200826-003) - worth a quick confirm with Suraj/the product team on which name is correct before any new creative copy uses either name."
+  },
   "KL-2026-10-29-SCRIPTBUG-REPOSTCHOICE-BUTTONDATA": {
     "id": "KL-2026-10-29-SCRIPTBUG-REPOSTCHOICE-BUTTONDATA",
     "date": "2026-10-29",
