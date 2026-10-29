@@ -468,6 +468,13 @@
     "subject": "Handoff to campaign-strategist (twice-weekly review 2026-10-29) - 1 new UGC item for the five-way disposition call, 2 new LOOMIERE product posts as supplementary creative (no fresh call needed)",
     "follow_up": "Awaiting campaign-strategist's disposition call on kajolrpaswwanteam. No action needed on the 2 supplementary LOOMIERE posts beyond awareness."
   },
+  "KL-2026-10-29-CS-KAFL010POOL-RESUME": {
+    "id": "KL-2026-10-29-CS-KAFL010POOL-RESUME",
+    "date": "2026-10-29",
+    "type": "decision",
+    "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25) staggered-activation sequence (KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE) - explicit RESUME with revised dates, not retired; stall closed",
+    "follow_up": "2026-11-01: confirm the 10-28 targeting change has a clean day-3+ read on this ad set, then route Metallic Coffee Brown activation (ad 52552969628580) to media-buyer for a validated plan, and explicitly re-assess pool composition (retire candidate: 52547120579980). 2026-11-06 (contingent on a clean MCB read): route Burnt Orange activation (ad 52552969630380) to media-buyer."
+  },
   "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
     "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
     "date": "2026-10-29",
@@ -481,13 +488,6 @@
     "type": "observation",
     "subject": "7 ad sets changed to hard women-only/Instagram-only on 2026-10-28 (STEP1-C/STEP2-B) - first full post-execution day (10-29) confirms 0% male spend on 6 of 7 and 100% Instagram placement on all 7; one thin-sample out-of-range-age reading flagged, not alarming",
     "follow_up": "The plans own day-3 check (due ~2026-10-31) should re-confirm with a fuller spend sample, and specifically re-check whether First Love Broad Advantage+s out-of-range-age share stays near this threshold or was genuinely just a thin-sample artifact on 10-29."
-  },
-  "KL-2026-10-29-PA-KAFL010POOL-STALLED": {
-    "id": "KL-2026-10-29-PA-KAFL010POOL-STALLED",
-    "date": "2026-10-29",
-    "type": "observation",
-    "subject": "India Whatsapp 9th Dec shared pool - staggered Metallic Coffee Brown/Burnt Orange activation (KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE) steps 2 and 3 never executed; step 3 was due ~2026-10-29 (today) and both ads remain PAUSED",
-    "follow_up": "Route to campaign-strategist: explicitly resume the staggered sequence (activate MCB then Burnt Orange per the original plan, now that the ad set has absorbed both the quality revert and the Loomiere Reel addition) or formally retire/replace it - do not let it continue drifting without a stated decision, especially given Burnt Oranges real confirmed organic demand sitting behind a paused ad."
   },
   "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK": {
     "id": "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK",
