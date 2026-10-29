@@ -454,13 +454,6 @@
     "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25) staggered-activation sequence (KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE) - explicit RESUME with revised dates, not retired; stall closed",
     "follow_up": "2026-11-01: confirm the 10-28 targeting change has a clean day-3+ read on this ad set, then route Metallic Coffee Brown activation (ad 52552969628580) to media-buyer for a validated plan, and explicitly re-assess pool composition (retire candidate: 52547120579980). 2026-11-06 (contingent on a clean MCB read): route Burnt Orange activation (ad 52552969630380) to media-buyer."
   },
-  "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION": {
-    "id": "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "@kajolrpaswwanteam Reel 18384643498231269 (instagram.com/reel/DfBqZjktXHh/) - five-way ad-use disposition: TEST, own frame-by-frame read performed, differs from performance-analyst's borderline-caution lean",
-    "follow_up": "Send Suraj a tappable Approve/Reject/Hold question (scripts/send-telegram-approval.sh, type:decision) with the direct permalink instagram.com/reel/DfBqZjktXHh/ and this read stated plainly, before creative-copywriter is briefed on SKU identification. Suggested telegram_summary: 'New reel from @kajolrpaswwanteam: instagram.com/reel/DfBqZjktXHh/ - maroon lace halter gown, bodice visible in detail (not full-length). My read: on-brand color/silhouette, good detail-shot ad material, worth testing. Approve = brief copy for a detail-shot test ad. Reject = skip. Hold = decide later.' APPROVE authorizes creative-copywriter to identify the SKU and brief it, and media-buyer to build a plan - still needs its own separate approval before anything goes live."
-  },
   "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED": {
     "id": "KL-2026-10-29-LQ-LOOMIERE-PREFILL-BUG-CONFIRMED",
     "date": "2026-10-29",
