@@ -482,6 +482,13 @@
     "subject": "AISI enquiry labels unreliable 2026-10-20 to about 2026-11-01 (WATI quota pause); Loomière prefill fixed in rules-v3",
     "follow_up": "2026-11-02: confirm with AISI that staff_replied and milestones are populated again for 10-20 onwards, then re-read quality for 21-27 Oct."
   },
+  "KL-2026-10-29-own-content": {
+    "id": "KL-2026-10-29-own-content",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-10-29, twice-weekly review) - 2 new LOOMIERE single-product posts since the 2026-10-25 boundary, supplementary creative to the already-pending NEW CAMPAIGN disposition, not a fresh call",
+    "follow_up": "Passed to campaign-strategist as supplementary creative (KL-2026-10-29-CS-HANDOFF) in case useful for additional ad variations once the pending LOOMIERE campaign is approved and SKU-identified - no fresh disposition call needed. Next sweep boundary is 18094748135665342 (2026-10-28T14:00:52)."
+  },
   "KL-2026-10-29-ugc-tags": {
     "id": "KL-2026-10-29-ugc-tags",
     "date": "2026-10-29",
