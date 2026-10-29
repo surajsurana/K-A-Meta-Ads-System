@@ -447,6 +447,13 @@
     "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - extend to the clean 3-day mark (2026-10-30) rather than pause today; pre-committing the stop-rule now",
     "follow_up": "Re-check at/after 2026-10-30 full day-3 close. If still 0 conversations across all 3 full days, pause immediately per the stop-rule above - route through media-buyer for a validated plan + Telegram approval, do not re-defer again."
   },
+  "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
+    "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION approved by Suraj via Telegram - execution stopped, no Stitchflow SKU linked yet",
+    "follow_up": "Needs an interactive session with Shopify tool access to identify the maroon lace halter gown's SKU before creative-copywriter/media-buyer can proceed."
+  },
   "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN": {
     "id": "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN",
     "date": "2026-10-29",
