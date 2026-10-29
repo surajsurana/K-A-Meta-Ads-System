@@ -391,13 +391,6 @@
     "subject": "Red Corset blank-title fix (ad 52536048558380) - re-diagnosed follow_up from KL-2026-10-26-EXEC-BLANKTITLE-SELFCHECK-STOP-6, both live hypotheses now disproven by fresh GET evidence - ESCALATING, not proposing a 7th execution attempt.",
     "follow_up": "Awaiting Suraj/engineering decision among the three options above before any further attempt on ad 52536048558380. Do not auto-retry a sparse-key or full-expansion variant again without new information - both already tested and disproven."
   },
-  "KL-2026-10-26-ambiguous-comment": {
-    "id": "KL-2026-10-26-ambiguous-comment",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "2 ambiguous 'check your DM'-style comments flagged individually, not batched - new @social_cravings on the LOOMIERE Reel, plus @aesana0710 still open for a 3rd cycle",
-    "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved."
-  },
   "KL-2026-10-26-media-library-CS-HANDOFF": {
     "id": "KL-2026-10-26-media-library-CS-HANDOFF",
     "date": "2026-10-26",
@@ -474,6 +467,13 @@
     "type": "observation",
     "subject": "AISI enquiry labels unreliable 2026-10-20 to about 2026-11-01 (WATI quota pause); Loomière prefill fixed in rules-v3",
     "follow_up": "2026-11-02: confirm with AISI that staff_replied and milestones are populated again for 10-20 onwards, then re-read quality for 21-27 Oct."
+  },
+  "KL-2026-10-29-ambiguous-comment": {
+    "id": "KL-2026-10-29-ambiguous-comment",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 4th consecutive cycle, @social_cravings a 2nd",
+    "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved. aesana0710 is now 11 days unreplied/unresolved - worth flagging to Suraj directly if it reaches a 5th cycle with still no human action."
   },
   "KL-2026-10-29-comment-batch": {
     "id": "KL-2026-10-29-comment-batch",
