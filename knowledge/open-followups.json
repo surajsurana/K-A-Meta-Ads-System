@@ -412,13 +412,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-29-CC-LOOMIERE-LAVENDER-SOLO-COPY": {
-    "id": "KL-2026-10-29-CC-LOOMIERE-LAVENDER-SOLO-COPY",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Loomiere solo Metallic Lavender Brocade Corset Reel (18094748135665342, instagram.com/reel/DfCl-EAsQob/, SKU KA-100826-011) - execution-ready copy for a new ad in the live Loomiere IG Engaged 365D & Followers ad set",
-    "follow_up": "media-buyer/marketing-lead: build as a new ad in the live ad set 52564357579980 (PAUSED, verify, then activate in the same run per guardrail 3 - the ad set and campaign are both already ACTIVE, this is a new-ad-into-existing-ad-set with no daily_budget change), fetch the Reel's media_url fresh at build time (signed, expiring CDN URL), and record the product-creative map entry for the new video_id with SKU KA-100826-011, confidence high, status confirmed (Stitchflow cross-check already done)."
-  },
   "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK": {
     "id": "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK",
     "date": "2026-10-29",
@@ -446,6 +439,13 @@
     "type": "outcome",
     "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - extend to the clean 3-day mark (2026-10-30) rather than pause today; pre-committing the stop-rule now",
     "follow_up": "Re-check at/after 2026-10-30 full day-3 close. If still 0 conversations across all 3 full days, pause immediately per the stop-rule above - route through media-buyer for a validated plan + Telegram approval, do not re-defer again."
+  },
+  "KL-2026-10-29-EXEC-LOOMIERE-LAVENDER-SOLO": {
+    "id": "KL-2026-10-29-EXEC-LOOMIERE-LAVENDER-SOLO",
+    "date": "2026-10-29",
+    "type": "change",
+    "subject": "Built + activated 1 new ad (Loomière | Metallic Lavender Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-10-29-CS-LOOMIERE-LAVENDER-DISPOSITION",
+    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation and propose a pause through the normal approval path if something is wrong, per guardrail 3's own stated safety net. No other action pending."
   },
   "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
     "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
