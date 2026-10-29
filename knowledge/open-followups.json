@@ -398,13 +398,6 @@
     "subject": "2 ambiguous 'check your DM'-style comments flagged individually, not batched - new @social_cravings on the LOOMIERE Reel, plus @aesana0710 still open for a 3rd cycle",
     "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved."
   },
-  "KL-2026-10-26-comment-batch": {
-    "id": "KL-2026-10-26-comment-batch",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (6 items) - thank-yous/compliments plus 1 WhatsApp-redirect, all on the new LOOMIERE Reel and reveal carousel",
-    "follow_up": "Awaiting Telegram approval via marketing-lead."
-  },
   "KL-2026-10-26-media-library-CS-HANDOFF": {
     "id": "KL-2026-10-26-media-library-CS-HANDOFF",
     "date": "2026-10-26",
@@ -482,12 +475,12 @@
     "subject": "AISI enquiry labels unreliable 2026-10-20 to about 2026-11-01 (WATI quota pause); Loomière prefill fixed in rules-v3",
     "follow_up": "2026-11-02: confirm with AISI that staff_replied and milestones are populated again for 10-20 onwards, then re-read quality for 21-27 Oct."
   },
-  "KL-2026-10-29-own-content": {
-    "id": "KL-2026-10-29-own-content",
+  "KL-2026-10-29-comment-batch": {
+    "id": "KL-2026-10-29-comment-batch",
     "date": "2026-10-29",
-    "type": "observation",
-    "subject": "K&A own-content ad-sourcing sweep (2026-10-29, twice-weekly review) - 2 new LOOMIERE single-product posts since the 2026-10-25 boundary, supplementary creative to the already-pending NEW CAMPAIGN disposition, not a fresh call",
-    "follow_up": "Passed to campaign-strategist as supplementary creative (KL-2026-10-29-CS-HANDOFF) in case useful for additional ad variations once the pending LOOMIERE campaign is approved and SKU-identified - no fresh disposition call needed. Next sweep boundary is 18094748135665342 (2026-10-28T14:00:52)."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (7 items) - thank-yous to excited comments on the 2 new LOOMIERE product posts",
+    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
   },
   "KL-2026-10-29-ugc-tags": {
     "id": "KL-2026-10-29-ugc-tags",
