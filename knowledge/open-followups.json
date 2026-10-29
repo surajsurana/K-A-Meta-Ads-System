@@ -481,12 +481,5 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (7 items) - thank-yous to excited comments on the 2 new LOOMIERE product posts",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
-  "KL-2026-10-29-ugc-tags": {
-    "id": "KL-2026-10-29-ugc-tags",
-    "date": "2026-10-29",
-    "type": "observation",
-    "subject": "UGC tags sweep (2026-10-29, twice-weekly review) - 2 new tagged items since the 2026-10-25 boundary, 1 strong candidate (kajolrpaswwanteam, confirmed credit, full video file retrievable), 1 low-priority multi-brand listicle (mehakk.jain)",
-    "follow_up": "kajolrpaswwanteam: worth-reposting repost plan drafted (KL-2026-10-29-kajolrpaswwanteam-repost-feed / -story) and handed to campaign-strategist for the ad five-way disposition call (KL-2026-10-29-CS-HANDOFF). mehakk.jain: neither reposting nor ad handoff - noting and moving on per the established listicle/roundup pattern. Next sweep boundary is 18384643498231269 (2026-10-28T05:19:14)."
   }
 }
