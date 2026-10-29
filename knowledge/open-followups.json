@@ -426,13 +426,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING": {
-    "id": "KL-2026-10-28-CS-UKGEOTEST-KEEPRUNNING",
-    "date": "2026-10-28",
-    "type": "outcome",
-    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - keep running, too early for a verdict",
-    "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
-  },
   "KL-2026-10-29-CS-BUDGETCHECK": {
     "id": "KL-2026-10-29-CS-BUDGETCHECK",
     "date": "2026-10-29",
@@ -481,6 +474,13 @@
     "type": "observation",
     "subject": "October 2026 sales target recheck (held plan KL-2026-10-27-114404, follow_up due today) - fresh MTD 85 orders/Rs67.36L, value trajectory diverging further above the suggested Rs62L target; orders pace still roughly brackets the suggested 94",
     "follow_up": "Resend/supersede decision for the held plan remains upstream (marketing-lead/Suraj), not decided here. If the value gap keeps widening at this rate through month-end, the next review (post-month-close) should report the final MTD figure against both the suggested Rs62L and whatever figure (if any) Suraj ultimately sets."
+  },
+  "KL-2026-10-29-PA-UKGEOTEST-ZEROCONVO": {
+    "id": "KL-2026-10-29-PA-UKGEOTEST-ZEROCONVO",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - 0 Instagram-Direct conversation starts over first ~2.3 days live despite real engagement, approaching the 3-day review point",
+    "follow_up": "campaign-strategist to decide today whether 0 conversations over ~2.3-3 days on real engagement is now enough to act on, or whether to extend the watch further given still-thin absolute volume."
   },
   "KL-2026-10-29-SCM-LOOMIERE-LAVENDER-DISTINCT": {
     "id": "KL-2026-10-29-SCM-LOOMIERE-LAVENDER-DISTINCT",
