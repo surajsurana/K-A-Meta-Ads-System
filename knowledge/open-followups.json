@@ -454,12 +454,12 @@
     "subject": "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION approved by Suraj via Telegram - execution stopped, no Stitchflow SKU linked yet",
     "follow_up": "Needs an interactive session with Shopify tool access to identify the maroon lace halter gown's SKU before creative-copywriter/media-buyer can proceed."
   },
-  "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN": {
-    "id": "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN",
+  "KL-2026-10-29-ML-PROFILEVISITS-STEP3-EXEC": {
+    "id": "KL-2026-10-29-ML-PROFILEVISITS-STEP3-EXEC",
     "date": "2026-10-29",
-    "type": "decision",
-    "subject": "VALIDATED PLAN - Profile Visits | India (52538161512180), gradual gender/age/placement fix step 3: advantage_audience 1->0, age_max 65->55, Instagram-only placements; no budget change",
-    "follow_up": "Pending Suraj's Telegram approval. Once approved and executed by marketing-lead: day-3 check ~2026-11-01 (gender/platform/age via live GET+breakdowns), day 7-10 check ~2026-11-05/08 (cost-per-follower via followers_count delta vs spend)."
+    "type": "change",
+    "subject": "Executed STEP3: advantage_audience 1->0, age_max 65->55, Instagram-only placements on Profile Visits | India ad set 52538161512180; no budget change",
+    "follow_up": "Day-3 check ~2026-11-01: live GET targeting (confirm no drift back) + insights breakdowns=gender and breakdowns=publisher_platform since the edit date, expect ~0% male share, 100% Instagram. Day 7-10 check ~2026-11-05/08: cost-per-follower via followers_count-delta-vs-spend methodology against the ~Rs3.6-3.9/follower pre-edit baseline. Rollback (if ever needed) to the PRE-EDIT targeting requires confirming with Suraj first whether to keep ages 22-55/hard-gender per guardrail 15, since a byte-for-byte rollback would reinstate age_max 65 and advantage_audience:1, which conflicts with that standing rule."
   },
   "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
     "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
