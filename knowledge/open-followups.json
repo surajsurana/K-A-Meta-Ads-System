@@ -468,6 +468,13 @@
     "subject": "Handoff to campaign-strategist (twice-weekly review 2026-10-29) - 1 new UGC item for the five-way disposition call, 2 new LOOMIERE product posts as supplementary creative (no fresh call needed)",
     "follow_up": "Awaiting campaign-strategist's disposition call on kajolrpaswwanteam. No action needed on the 2 supplementary LOOMIERE posts beyond awareness."
   },
+  "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
+    "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
+    "date": "2026-10-29",
+    "type": "observation",
+    "subject": "30-day blended ROAS baseline (new standing metric per architecture.md 3e added 2026-10-27) - first formal reading: 39.55x, vs 36.24x over the trailing 90 days; no prior logged 30-day figure exists for a trend comparison",
+    "follow_up": "Next review: compare the then-current 30-day blended ROAS against this 39.55x baseline and report the trend. If a cleaner same-period-last-year Stitchflow figure is ever needed, flag that list_orders historical completeness for periods before ~2026-04 should not be trusted without cross-checking get_monthly_summary first."
+  },
   "KL-2026-10-29-PA-GRADUALFIX-DAY1CHECK": {
     "id": "KL-2026-10-29-PA-GRADUALFIX-DAY1CHECK",
     "date": "2026-10-29",
