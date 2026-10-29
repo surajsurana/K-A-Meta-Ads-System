@@ -488,12 +488,5 @@
     "type": "observation",
     "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 4th consecutive cycle, @social_cravings a 2nd",
     "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved. aesana0710 is now 11 days unreplied/unresolved - worth flagging to Suraj directly if it reaches a 5th cycle with still no human action."
-  },
-  "KL-2026-10-29-comment-batch": {
-    "id": "KL-2026-10-29-comment-batch",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (7 items) - thank-yous to excited comments on the 2 new LOOMIERE product posts",
-    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
   }
 }
