@@ -335,13 +335,6 @@
     "subject": "Escalated the staff_replied/AISI labelling-pipeline break to Suraj via Telegram (plain FYI, no approval needed)",
     "follow_up": "No live action pending from this entry itself. Continue the staff_replied None-rate recheck on future heartbeats per KL-2026-10-25-LQ-STAFFREPLIED-STILLBROKENs own follow_up; re-notify only if Suraj asks or if the break clears/worsens materially."
   },
-  "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION": {
-    "id": "KL-2026-10-26-CS-FOLLOWERGROWTH-ROOTCAUSE-RESOLUTION",
-    "date": "2026-10-26",
-    "type": "decision",
-    "subject": "Profile Visits | India follower growth - pre-committed root-cause branch now resolved: both Ad A and Ad B ruled out as primary cause (cost/follower barely moved, Rs3.61 vs Rs3.88); verdict per the branch's own stated next step - KEEP Fresh Content Jul23 running, RECONSIDER the target band, do not pause the ad set",
-    "follow_up": "performance-analyst to research a current, realistic cost/follower benchmark for this objective before the band is cited as a pass/fail bar again. No live action this cycle."
-  },
   "KL-2026-10-26-CS-GEO-ODISHA-UTTARAKHAND-WATCH": {
     "id": "KL-2026-10-26-CS-GEO-ODISHA-UTTARAKHAND-WATCH",
     "date": "2026-10-26",
@@ -447,19 +440,19 @@
     "subject": "New-ad watch 2026-10-29 - Loomiere A/B/C (10/20/24 conversions, ~Rs66/Rs29/Rs42 per conv) and First Love | Cold Prospecting | Australia (52562820223580, 1 conv, ~Rs383/conv) - keep all four running, judged on cost/volume only",
     "follow_up": "Re-read Loomiere A/B/C quality once rules-v3 is live and WATI resumes (2026-11-01) - do not use current serious% for any keep/cut call before that. Australia: continue new-ad watch, re-check once 3+ days live."
   },
-  "KL-2026-10-29-CS-PROFILEVISITS-STEP3": {
-    "id": "KL-2026-10-29-CS-PROFILEVISITS-STEP3",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Profile Visits | India (52538161512180) - gradual gender/age/placement fix, next step: hard women (advantage_audience 1->0), age_max 65->55 (age_min 22 already compliant), Instagram-only placements; no budget change",
-    "follow_up": "media-buyer to build the validated plan (fresh pre-edit GET to check for drift, independent ceiling re-check, same mechanics as STEP1-C/STEP2-B) and send for Suraj's Telegram approval. Watch 3-4 days post-edit per guardrail 15: delivery, men's share, placements, cost, and (once labels are reliable) enquiry quality is not applicable here since this ad set has no enquiries - watch cost-per-follower and reach instead."
-  },
   "KL-2026-10-29-CS-UKGEOTEST-EXTENDONEDAY": {
     "id": "KL-2026-10-29-CS-UKGEOTEST-EXTENDONEDAY",
     "date": "2026-10-29",
     "type": "outcome",
     "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - extend to the clean 3-day mark (2026-10-30) rather than pause today; pre-committing the stop-rule now",
     "follow_up": "Re-check at/after 2026-10-30 full day-3 close. If still 0 conversations across all 3 full days, pause immediately per the stop-rule above - route through media-buyer for a validated plan + Telegram approval, do not re-defer again."
+  },
+  "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN": {
+    "id": "KL-2026-10-29-ML-PROFILEVISITS-STEP3-PLAN",
+    "date": "2026-10-29",
+    "type": "decision",
+    "subject": "VALIDATED PLAN - Profile Visits | India (52538161512180), gradual gender/age/placement fix step 3: advantage_audience 1->0, age_max 65->55, Instagram-only placements; no budget change",
+    "follow_up": "Pending Suraj's Telegram approval. Once approved and executed by marketing-lead: day-3 check ~2026-11-01 (gender/platform/age via live GET+breakdowns), day 7-10 check ~2026-11-05/08 (cost-per-follower via followers_count delta vs spend)."
   },
   "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
     "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
