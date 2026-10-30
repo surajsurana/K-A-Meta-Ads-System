@@ -461,13 +461,6 @@
     "subject": "Guardrail-16 gender sweep (KL-2026-10-30-PA-GENDERSWEEP-BROADSKEW) - verified this is trailing pre-fix data, not new post-fix leakage; no new action, existing guardrail-15 watch cadence continues",
     "follow_up": "No new dated check beyond the existing guardrail-15 cadence (~2026-10-31/11-01 for the STEP1-C/STEP2-B batch; later for Profile Visits STEP3). If the next sweep after ad sets have had a full 3+ clean post-fix days still shows the same elevated male/Facebook share, that would newly be a real leakage concern, not trailing data - escalate distinctly, do not fold into the normal next-gradual-step process."
   },
-  "KL-2026-10-30-CS-HOUSEOFMISU-DISPOSITION": {
-    "id": "KL-2026-10-30-CS-HOUSEOFMISU-DISPOSITION",
-    "date": "2026-10-30",
-    "type": "decision",
-    "subject": "Houseofmisu UGC repost (mustard/rust draped gown, Story 4018618162764816931) - my own read: promising, candidate for a new First Love Broad Advantage+ ad once SKU is confirmed; sent to Suraj for product ID + agreement, not pursued further headless",
-    "follow_up": "On APPROVE with a product ID from Suraj: creative-copywriter briefs a new ad (image-exception noted, WhatsApp/enquiry CTA) for the existing Broad Advantage+ India ad set; media-buyer prepares a paused-first build plan with a fresh budget check, then a normal Telegram approval before activation. On APPROVE without an ID: needs an interactive session for the Shopify-photo match step before anything can be briefed. On HOLD or REJECT: close out, no further action; note the Story link will likely have expired by the next review regardless."
-  },
   "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
     "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
     "date": "2026-10-30",
