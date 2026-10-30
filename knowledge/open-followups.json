@@ -461,6 +461,13 @@
     "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - full 3 days live reached; cost/conv Rs450.28 is a real concern but n=1 conversion is too thin to call a clear gap yet - flagging, not pausing",
     "follow_up": "Recheck at 5-6 days live or on the 2nd conversion, whichever comes first. If cost/conv is still materially above Rs100-150 with no quality signal at that point, get an enquiry-quality read first (standing policy - quality before any keep/kill verdict), then route a pause through media-buyer if warranted."
   },
+  "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
+    "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
+    "date": "2026-10-30",
+    "type": "observation",
+    "subject": "Loomiere | Metallic Lavender Solo | Styling Appointment (ad 52565052977180) - under 36h old, early CTR gap vs sibling Launch Reel noted but not actionable yet per new-ad-watch guardrail",
+    "follow_up": "Recheck at the 3-day live mark (around 2026-11-01). If the CTR/conversation gap against Launch Reel persists at that point with real volume behind it, that is the first point a pause call on Lavender Solo would be appropriate - not before."
+  },
   "KL-2026-10-30-CS-METALLICBLUE-EXTENDTO90": {
     "id": "KL-2026-10-30-CS-METALLICBLUE-EXTENDTO90",
     "date": "2026-10-30",
