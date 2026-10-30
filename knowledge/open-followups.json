@@ -419,13 +419,6 @@
     "subject": "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION approved by Suraj via Telegram - execution stopped, no Stitchflow SKU linked yet",
     "follow_up": "Needs an interactive session with Shopify tool access to identify the maroon lace halter gown's SKU before creative-copywriter/media-buyer can proceed."
   },
-  "KL-2026-10-29-ML-PROFILEVISITS-STEP3-EXEC": {
-    "id": "KL-2026-10-29-ML-PROFILEVISITS-STEP3-EXEC",
-    "date": "2026-10-29",
-    "type": "change",
-    "subject": "Executed STEP3: advantage_audience 1->0, age_max 65->55, Instagram-only placements on Profile Visits | India ad set 52538161512180; no budget change",
-    "follow_up": "Day-3 check ~2026-11-01: live GET targeting (confirm no drift back) + insights breakdowns=gender and breakdowns=publisher_platform since the edit date, expect ~0% male share, 100% Instagram. Day 7-10 check ~2026-11-05/08: cost-per-follower via followers_count-delta-vs-spend methodology against the ~Rs3.6-3.9/follower pre-edit baseline. Rollback (if ever needed) to the PRE-EDIT targeting requires confirming with Suraj first whether to keep ages 22-55/hard-gender per guardrail 15, since a byte-for-byte rollback would reinstate age_max 65 and advantage_audience:1, which conflicts with that standing rule."
-  },
   "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE": {
     "id": "KL-2026-10-29-PA-BLENDEDROAS-30D-BASELINE",
     "date": "2026-10-29",
@@ -461,6 +454,13 @@
     "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - full 3 days live reached; cost/conv Rs450.28 is a real concern but n=1 conversion is too thin to call a clear gap yet - flagging, not pausing",
     "follow_up": "Recheck at 5-6 days live or on the 2nd conversion, whichever comes first. If cost/conv is still materially above Rs100-150 with no quality signal at that point, get an enquiry-quality read first (standing policy - quality before any keep/kill verdict), then route a pause through media-buyer if warranted."
   },
+  "KL-2026-10-30-CS-GENDERSWEEP-TRAILINGDATA": {
+    "id": "KL-2026-10-30-CS-GENDERSWEEP-TRAILINGDATA",
+    "date": "2026-10-30",
+    "type": "observation",
+    "subject": "Guardrail-16 gender sweep (KL-2026-10-30-PA-GENDERSWEEP-BROADSKEW) - verified this is trailing pre-fix data, not new post-fix leakage; no new action, existing guardrail-15 watch cadence continues",
+    "follow_up": "No new dated check beyond the existing guardrail-15 cadence (~2026-10-31/11-01 for the STEP1-C/STEP2-B batch; later for Profile Visits STEP3). If the next sweep after ad sets have had a full 3+ clean post-fix days still shows the same elevated male/Facebook share, that would newly be a real leakage concern, not trailing data - escalate distinctly, do not fold into the normal next-gradual-step process."
+  },
   "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
     "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
     "date": "2026-10-30",
@@ -488,19 +488,5 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
-  },
-  "KL-2026-10-30-PA-GENDERSWEEP-BROADSKEW": {
-    "id": "KL-2026-10-30-PA-GENDERSWEEP-BROADSKEW",
-    "date": "2026-10-30",
-    "type": "observation",
-    "subject": "Guardrail-16 gender/age/platform sweep, all 18 active ad sets, last 3 days (2026-10-27 to 2026-10-29)",
-    "follow_up": "campaign-strategist to prioritize which 1-2 ad sets (beyond Profile Visits, already in progress) get the gradual gender/age/placement fix next, per guardrail 15's dont-fix-everything-at-once limit."
-  },
-  "KL-2026-10-30-PA-METALLICBLUE-POSTFIX-PLACEMENT": {
-    "id": "KL-2026-10-30-PA-METALLICBLUE-POSTFIX-PLACEMENT",
-    "date": "2026-10-30",
-    "type": "outcome",
-    "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - cost/conversation vs Broad Advantage+ baseline and placement mix post-targeting-change",
-    "follow_up": "One more full day (10-30) of post-fix Instagram-only delivery would double the post-fix sample to roughly 4 conversions - worth a second look before treating Rs46.59/conv as stable."
   }
 }
