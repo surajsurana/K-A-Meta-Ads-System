@@ -433,13 +433,6 @@
     "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - extend to the clean 3-day mark (2026-10-30) rather than pause today; pre-committing the stop-rule now",
     "follow_up": "Re-check at/after 2026-10-30 full day-3 close. If still 0 conversations across all 3 full days, pause immediately per the stop-rule above - route through media-buyer for a validated plan + Telegram approval, do not re-defer again."
   },
-  "KL-2026-10-29-EXEC-LOOMIERE-LAVENDER-SOLO": {
-    "id": "KL-2026-10-29-EXEC-LOOMIERE-LAVENDER-SOLO",
-    "date": "2026-10-29",
-    "type": "change",
-    "subject": "Built + activated 1 new ad (Loomière | Metallic Lavender Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-10-29-CS-LOOMIERE-LAVENDER-DISPOSITION",
-    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation and propose a pause through the normal approval path if something is wrong, per guardrail 3's own stated safety net. No other action pending."
-  },
   "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
     "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
     "date": "2026-10-29",
