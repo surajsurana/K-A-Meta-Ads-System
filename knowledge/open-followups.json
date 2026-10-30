@@ -384,13 +384,6 @@
     "subject": "media-buyer incorrectly asserted the Loomiere ad set does not exist in the live account during the Australia/UK Geo Test paused-build activation sweep",
     "follow_up": "No live action needed - the two activation plans sent this cycle remain correct. Worth watching for a recurrence of this specific failure mode (an agent concluding an object does not exist without a fresh live GET on the exact id, or without checking linked_to for a superseding entry) in future media-buyer dispatches; escalate if it recurs."
   },
-  "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING": {
-    "id": "KL-2026-10-28-CS-AUSTRALIA-KEEPRUNNING",
-    "date": "2026-10-28",
-    "type": "outcome",
-    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - keep running, too early for a verdict",
-    "follow_up": "Re-check at 3+ days live (on/after 2026-10-30) for a real cost/CTR read."
-  },
   "KL-2026-10-28-CS-CHAMPAGNENEUTRAL-POOLCOMPOSITION-RECHECK": {
     "id": "KL-2026-10-28-CS-CHAMPAGNENEUTRAL-POOLCOMPOSITION-RECHECK",
     "date": "2026-10-28",
@@ -474,5 +467,12 @@
     "type": "observation",
     "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 4th consecutive cycle, @social_cravings a 2nd",
     "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved. aesana0710 is now 11 days unreplied/unresolved - worth flagging to Suraj directly if it reaches a 5th cycle with still no human action."
+  },
+  "KL-2026-10-30-PA-AUSTRALIA-DAY3READ": {
+    "id": "KL-2026-10-30-PA-AUSTRALIA-DAY3READ",
+    "date": "2026-10-30",
+    "type": "outcome",
+    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
+    "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   }
 }
