@@ -419,13 +419,6 @@
     "subject": "New-ad watch 2026-10-29 - Loomiere A/B/C (10/20/24 conversions, ~Rs66/Rs29/Rs42 per conv) and First Love | Cold Prospecting | Australia (52562820223580, 1 conv, ~Rs383/conv) - keep all four running, judged on cost/volume only",
     "follow_up": "Re-read Loomiere A/B/C quality once rules-v3 is live and WATI resumes (2026-11-01) - do not use current serious% for any keep/cut call before that. Australia: continue new-ad watch, re-check once 3+ days live."
   },
-  "KL-2026-10-29-CS-UKGEOTEST-EXTENDONEDAY": {
-    "id": "KL-2026-10-29-CS-UKGEOTEST-EXTENDONEDAY",
-    "date": "2026-10-29",
-    "type": "outcome",
-    "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - extend to the clean 3-day mark (2026-10-30) rather than pause today; pre-committing the stop-rule now",
-    "follow_up": "Re-check at/after 2026-10-30 full day-3 close. If still 0 conversations across all 3 full days, pause immediately per the stop-rule above - route through media-buyer for a validated plan + Telegram approval, do not re-defer again."
-  },
   "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
     "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
     "date": "2026-10-29",
@@ -474,5 +467,12 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
+  },
+  "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO": {
+    "id": "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO",
+    "date": "2026-10-30",
+    "type": "outcome",
+    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - full day-3 close, stop-rule check",
+    "follow_up": "campaign-strategist to decide keep/pause given 1 conversation (not literal zero) at Rs509 spend over 3 full days - route through media-buyer if pause is chosen, per the standing instruction."
   }
 }
