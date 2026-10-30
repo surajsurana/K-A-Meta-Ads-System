@@ -398,13 +398,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK": {
-    "id": "KL-2026-10-29-CS-CRIMSONBEADED-METALLICBLUE-QUALITYCHECK",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Crimson Beaded Test and Metallic Blue Test - combined performance+quality+placement read; both cross from watch item toward a real stop-rule concern, explicit dated stop-rules set rather than acting today",
-    "follow_up": "2026-10-30: Metallic Blue pre-committed check (cost/conv vs Broad Advantage+, serious-or-better movement off 0% at n>=77, tap-source mix post-targeting-change). 2026-11-02: Crimson Beaded re-check (junk% and serious-or-better post-targeting-fix) - PAUSE if still >=80% junk / 0% serious at that point, route to media-buyer if so."
-  },
   "KL-2026-10-29-CS-KAFL010POOL-RESUME": {
     "id": "KL-2026-10-29-CS-KAFL010POOL-RESUME",
     "date": "2026-10-29",
@@ -467,6 +460,13 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
+  },
+  "KL-2026-10-30-PA-METALLICBLUE-POSTFIX-PLACEMENT": {
+    "id": "KL-2026-10-30-PA-METALLICBLUE-POSTFIX-PLACEMENT",
+    "date": "2026-10-30",
+    "type": "outcome",
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - cost/conversation vs Broad Advantage+ baseline and placement mix post-targeting-change",
+    "follow_up": "One more full day (10-30) of post-fix Instagram-only delivery would double the post-fix sample to roughly 4 conversions - worth a second look before treating Rs46.59/conv as stable."
   },
   "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO": {
     "id": "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO",
