@@ -454,6 +454,13 @@
     "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 4th consecutive cycle, @social_cravings a 2nd",
     "follow_up": "No plan drafted for either comment - awaiting a human with DM access to check what, if anything, these refer to before any reply is proposed. Continue checking status each cycle until resolved. aesana0710 is now 11 days unreplied/unresolved - worth flagging to Suraj directly if it reaches a 5th cycle with still no human action."
   },
+  "KL-2026-10-30-CS-UKGEOTEST-EXTEND2": {
+    "id": "KL-2026-10-30-CS-UKGEOTEST-EXTEND2",
+    "date": "2026-10-30",
+    "type": "outcome",
+    "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - literal stop-rule not triggered (1 conversation appeared on day 3); extending with a tighter cost-based stop-rule rather than treating one weak conversion as a pass",
+    "follow_up": "Recheck 2026-11-02 (5 full days live). Pause via media-buyer + Telegram approval if cumulative cost/conv is still >Rs250 with no quality signal; otherwise re-evaluate normally."
+  },
   "KL-2026-10-30-PA-AUSTRALIA-DAY3READ": {
     "id": "KL-2026-10-30-PA-AUSTRALIA-DAY3READ",
     "date": "2026-10-30",
@@ -474,12 +481,5 @@
     "type": "outcome",
     "subject": "First Love | Metallic Blue (KAFL014) Test | India (ad set 52559142430580) - cost/conversation vs Broad Advantage+ baseline and placement mix post-targeting-change",
     "follow_up": "One more full day (10-30) of post-fix Instagram-only delivery would double the post-fix sample to roughly 4 conversions - worth a second look before treating Rs46.59/conv as stable."
-  },
-  "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO": {
-    "id": "KL-2026-10-30-PA-UKGEOTEST-DAY3-ONECONVO",
-    "date": "2026-10-30",
-    "type": "outcome",
-    "subject": "UK Engaged 365D & Followers | Geo Test (ad set 52564305237780, ad 52564305260180) - full day-3 close, stop-rule check",
-    "follow_up": "campaign-strategist to decide keep/pause given 1 conversation (not literal zero) at Rs509 spend over 3 full days - route through media-buyer if pause is chosen, per the standing instruction."
   }
 }
