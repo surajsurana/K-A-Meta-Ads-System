@@ -447,13 +447,6 @@
     "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - full 3 days live reached; cost/conv Rs450.28 is a real concern but n=1 conversion is too thin to call a clear gap yet - flagging, not pausing",
     "follow_up": "Recheck at 5-6 days live or on the 2nd conversion, whichever comes first. If cost/conv is still materially above Rs100-150 with no quality signal at that point, get an enquiry-quality read first (standing policy - quality before any keep/kill verdict), then route a pause through media-buyer if warranted."
   },
-  "KL-2026-10-30-CS-GENDERSWEEP-TRAILINGDATA": {
-    "id": "KL-2026-10-30-CS-GENDERSWEEP-TRAILINGDATA",
-    "date": "2026-10-30",
-    "type": "observation",
-    "subject": "Guardrail-16 gender sweep (KL-2026-10-30-PA-GENDERSWEEP-BROADSKEW) - verified this is trailing pre-fix data, not new post-fix leakage; no new action, existing guardrail-15 watch cadence continues",
-    "follow_up": "No new dated check beyond the existing guardrail-15 cadence (~2026-10-31/11-01 for the STEP1-C/STEP2-B batch; later for Profile Visits STEP3). If the next sweep after ad sets have had a full 3+ clean post-fix days still shows the same elevated male/Facebook share, that would newly be a real leakage concern, not trailing data - escalate distinctly, do not fold into the normal next-gradual-step process."
-  },
   "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
     "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
     "date": "2026-10-30",
@@ -481,6 +474,13 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
+  },
+  "KL-2026-10-31-PA-GENDERSWEEP-CLEANPOSTFIX": {
+    "id": "KL-2026-10-31-PA-GENDERSWEEP-CLEANPOSTFIX",
+    "date": "2026-10-31",
+    "type": "outcome",
+    "subject": "Guardrail-16 gender/age/platform sweep - STEP1-C/STEP2-B 7 touched ad sets now show clean post-fix days, elevated male/Facebook share does NOT persist",
+    "follow_up": "No new dated check needed for these 7 - fold into the normal next-gradual-step cadence. Continue the days 7-10 serious-enquiry check already scheduled (after 2026-11-02 once AISI labels self-heal) per KL-2026-10-28-STEP2-B."
   },
   "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD": {
     "id": "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD",
