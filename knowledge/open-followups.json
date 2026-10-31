@@ -454,19 +454,19 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - 2-week stop-rule checkpoint: NOT pausing today, extending to a confound-free window because the comparison window is genuinely confounded by the 2026-10-28 guardrail-15 targeting edit on BOTH compared ad sets",
     "follow_up": "2026-11-04/05: re-pull cost/conv for Gold Sculpted vs Broad Advantage+ over the clean 2026-10-29 to 2026-11-04 window (both ad sets post-edit, no further confound in between unless a new one is introduced), plus a fresh lead-quality read for Gold Sculpted (watch for n growing past ~25-30 and whether serious-or-better moves off 0% or an order appears - an order counts for the ad however late it comes). PAUSE (route through media-buyer + Telegram approval) if, over that clean window, Gold Sculpted is still materially worse (~1.4x+) on cost/conv than Broad AND lead quality is still flat 0% serious-or-better with no orders. MAINTAIN/keep running if either cost converges meaningfully or quality shows any real movement (a serious-or-better enquiry or an order). Do not invent a different threshold at that point - use this one as pre-committed now, before seeing the 11-04 data."
   },
-  "KL-2026-10-31-CS-INTERESTSTACK-NEXTSTEP": {
-    "id": "KL-2026-10-31-CS-INTERESTSTACK-NEXTSTEP",
-    "date": "2026-10-31",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - queuing as the next guardrail-15 gradual-fix step: Instagram-only placements (remove Facebook + WhatsApp Status); gender already clean, age to be verified/corrected by media-buyer in the same edit",
-    "follow_up": "Route to media-buyer: build a validated plan for Interest Stack (52535906794980) matching the STEP1-C/STEP2-B placement pattern - publisher_platforms=[instagram], instagram_positions=[stream,story,reels,explore,explore_home,profile_feed], removing Facebook/Messenger/Audience Network/WhatsApp Status - plus a fresh live GET of current targeting first to (a) confirm genders=[2]/advantage_audience=0 still hold (expected, not re-proposed) and (b) correct age_min/age_max into 22-55 in the same edit if currently outside that range. No budget change proposed (daily_budget stays as-is, matching the STEP1/STEP2 no-budget-change pattern). This is a live Meta Ads targeting change - needs Telegram approval, same as STEP1-C and STEP2-B, each its own separate approval. Watch for 3-4 days post-edit (delivery, Facebook share actually dropping to 0%, cost/conv, and once AISI labels are reliable again, serious-or-better) before considering any further gradual-fix step."
-  },
   "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE": {
     "id": "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE",
     "date": "2026-10-31",
     "type": "decision",
     "subject": "Mouni Roy red/maroon halter gown (5 video items, no usable file) - disposition HOLD for ad use, but escalate sourcing to Suraj as worth actively pursuing",
     "follow_up": "Send Suraj a plain FYI notification recommending active sourcing (contact @amigos.rizwan / @rishika_devnani / @eshawadhwa_ / @sejal.005 and/or the Johnnie Walker event organizers) for real photos/footage of the Mouni Roy red/maroon halter gown moment; re-review for ad use the moment any of the 5 items gets a fetchable file."
+  },
+  "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX": {
+    "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX",
+    "date": "2026-10-31",
+    "type": "decision",
+    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - Instagram-only placements (remove Facebook/Messenger/Audience Network/WhatsApp Status); gender re-verified clean, age re-verified already within 22-55, no change to either; no budget change",
+    "follow_up": "2026-11-03 day-3 check (publisher_platform breakdown, delivery, cost/conversation vs 7d baseline). After 2026-11-07, once AISI labels reliable: serious-enquiry check vs pre-edit baseline. Watch 3-4 days before proposing any further gradual-fix step."
   },
   "KL-2026-10-31-SCM-AMBIGUOUS-5TH": {
     "id": "KL-2026-10-31-SCM-AMBIGUOUS-5TH",
