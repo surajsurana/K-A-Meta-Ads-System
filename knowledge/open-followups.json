@@ -468,6 +468,13 @@
     "subject": "Organic Instagram REEL LM-008 - Loomiere Ivory Polki Corset With Drape Skirt, scheduled 6:30 pm IST 31 Oct",
     "follow_up": "The top-level session sends the Telegram approval to Suraj. After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-008_01.mp4 may be deleted. If STEP 2 returns ERROR, do not retry; report back so a separate plan can address the host (no HEAD/Range support) - that would be its own approved change. Do not re-send if already executed or handled manually."
   },
+  "KL-2026-10-31-LM009-NOV01-1730": {
+    "id": "KL-2026-10-31-LM009-NOV01-1730",
+    "date": "2026-10-31",
+    "type": "decision",
+    "subject": "Organic Instagram feed carousel LM-009 - Loomiere Fuchsia Pink Bubble Peplum Corset With Pencil Skirt (7 slides), scheduled 5:30 pm IST 1 Nov (time not yet final)",
+    "follow_up": "The top-level session sends the Telegram approval to Suraj once K&A Social Media confirms the time (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-009_0*.jpg copies may be deleted. Do not re-send if already executed or handled manually."
+  },
   "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX": {
     "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX",
     "date": "2026-10-31",
