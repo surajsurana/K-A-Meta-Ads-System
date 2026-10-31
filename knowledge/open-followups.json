@@ -300,13 +300,6 @@
     "subject": "Blended headline numbers, 2026-10-20 to 2026-10-22 (3-day Monday-to-Thursday window, twice-weekly review) - no double-count vs PERF-2026-W43/KL-2026-10-19-PA-BLENDED-WINDOW",
     "follow_up": "Next twice-weekly review (2026-10-26, Monday) should cover 2026-10-23 to 2026-10-26 only, not re-include these dates, to avoid double counting. Also worth re-pulling 10-21/10-22 order counts once clear of the entry-lag window to confirm no further orders landed."
   },
-  "KL-2026-10-22-dmredirect-watch-no-recurrence2": {
-    "id": "KL-2026-10-22-dmredirect-watch-no-recurrence2",
-    "date": "2026-10-22",
-    "type": "observation",
-    "subject": "DM-redirect standing watch item (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE) - checked again for a 4th post-escalation recurrence, NONE found, 2nd consecutive clean cycle",
-    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
-  },
   "KL-2026-10-25-075436": {
     "id": "KL-2026-10-25-075436",
     "date": "2026-10-25",
@@ -495,6 +488,13 @@
     "type": "observation",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India - Facebook spend share remains elevated 10-29 to 10-31, continuing the 2026-10-30 watch item, not yet resolving",
     "follow_up": "Route to campaign-strategist: decide whether Interest Stack should be queued for the next guardrail-15 gradual step (Instagram-only + hard women/age edit, same treatment as the 7 ad sets already fixed) given Facebook share has stayed elevated rather than resolving on its own."
+  },
+  "KL-2026-10-31-SCM-DMREDIRECT-CLEAN3": {
+    "id": "KL-2026-10-31-SCM-DMREDIRECT-CLEAN3",
+    "date": "2026-10-31",
+    "type": "observation",
+    "subject": "DM-redirect standing watch (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE / KL-2026-10-22-dmredirect-watch-no-recurrence2) - checked again for a 4th post-escalation recurrence, NONE found, 3rd consecutive clean cycle",
+    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
   },
   "KL-2026-10-31-SCM-MEDIALIB": {
     "id": "KL-2026-10-31-SCM-MEDIALIB",
