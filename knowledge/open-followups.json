@@ -489,6 +489,13 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - due-now 2-week stop-rule read vs First Love | Broad Advantage+ baseline",
     "follow_up": "Route to campaign-strategist for the pause/hold/extend-read decision - the stop-rule condition (materially worse, no clean improving trend) is met on the numbers, but the confound from the simultaneous 10-28 targeting change on both compared ad sets means a mechanical pause is not clearly correct either; campaign-strategist should form an independent read, possibly proposing a short confound-free extension before a final call."
   },
+  "KL-2026-10-31-PA-INTERESTSTACK-FBDRIFT": {
+    "id": "KL-2026-10-31-PA-INTERESTSTACK-FBDRIFT",
+    "date": "2026-10-31",
+    "type": "observation",
+    "subject": "First Love | Interest Stack (geo only, interests TBD) | India - Facebook spend share remains elevated 10-29 to 10-31, continuing the 2026-10-30 watch item, not yet resolving",
+    "follow_up": "Route to campaign-strategist: decide whether Interest Stack should be queued for the next guardrail-15 gradual step (Instagram-only + hard women/age edit, same treatment as the 7 ad sets already fixed) given Facebook share has stayed elevated rather than resolving on its own."
+  },
   "KL-2026-10-31-SCM-MEDIALIB": {
     "id": "KL-2026-10-31-SCM-MEDIALIB",
     "date": "2026-10-31",
