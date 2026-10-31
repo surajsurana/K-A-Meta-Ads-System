@@ -488,5 +488,12 @@
     "type": "observation",
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - due-now 2-week stop-rule read vs First Love | Broad Advantage+ baseline",
     "follow_up": "Route to campaign-strategist for the pause/hold/extend-read decision - the stop-rule condition (materially worse, no clean improving trend) is met on the numbers, but the confound from the simultaneous 10-28 targeting change on both compared ad sets means a mechanical pause is not clearly correct either; campaign-strategist should form an independent read, possibly proposing a short confound-free extension before a final call."
+  },
+  "KL-2026-10-31-SCM-MEDIALIB": {
+    "id": "KL-2026-10-31-SCM-MEDIALIB",
+    "date": "2026-10-31",
+    "type": "observation",
+    "subject": "Daily Media Library check (2026-10-31) - 8 instagram_auto items unreviewed, 0 manual uploads unreviewed; strongest find is independently-corroborated Mouni Roy red-gown coverage, but no usable video file for any of it",
+    "follow_up": "These 8 items remain reviewed_by_social=false - a write-capable session should mark them reviewed once actually processed (repost queued / handed to campaign-strategist / neither), and should carry the Mouni-Roy-gown sourcing flag to campaign-strategist."
   }
 }
