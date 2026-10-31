@@ -237,13 +237,6 @@
     "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
     "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
-  "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC": {
-    "id": "KL-2026-10-17-ML-GOLDSCULPTED-ACTIVATE-EXEC",
-    "date": "2026-10-17",
-    "type": "change",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - ad set + ad flipped PAUSED -> ACTIVE",
-    "follow_up": "Per the plans own rollback_criteria: pause both objects immediately if effective_status ever shows WITH_ISSUES/DISAPPROVED. After a 2-week minimum comparable-window read, if cost per messaging_conversation_started is materially worse than the First Love | Broad Advantage+ baseline with no improving trend, pause this ad set entirely. Separately, if the open account-wide ceiling-watch (through 2026-10-19) shows a fresh, worsening breach clearly correlated with this ad sets own delivery pacing, route that judgment to campaign-strategist rather than acting unilaterally."
-  },
   "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC": {
     "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC",
     "date": "2026-10-18",
@@ -488,5 +481,12 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
+  },
+  "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD": {
+    "id": "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD",
+    "date": "2026-10-31",
+    "type": "observation",
+    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - due-now 2-week stop-rule read vs First Love | Broad Advantage+ baseline",
+    "follow_up": "Route to campaign-strategist for the pause/hold/extend-read decision - the stop-rule condition (materially worse, no clean improving trend) is met on the numbers, but the confound from the simultaneous 10-28 targeting change on both compared ad sets means a mechanical pause is not clearly correct either; campaign-strategist should form an independent read, possibly proposing a short confound-free extension before a final call."
   }
 }
