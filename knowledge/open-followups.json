@@ -433,13 +433,6 @@
     "subject": "Loomiere | Metallic Lavender Solo | Styling Appointment (ad 52565052977180) - under 36h old, early CTR gap vs sibling Launch Reel noted but not actionable yet per new-ad-watch guardrail",
     "follow_up": "Recheck at the 3-day live mark (around 2026-11-01). If the CTR/conversation gap against Launch Reel persists at that point with real volume behind it, that is the first point a pause call on Lavender Solo would be appropriate - not before."
   },
-  "KL-2026-10-30-CS-METALLICBLUE-EXTENDTO90": {
-    "id": "KL-2026-10-30-CS-METALLICBLUE-EXTENDTO90",
-    "date": "2026-10-30",
-    "type": "outcome",
-    "subject": "First Love | Metallic Blue (KAFL014) Test (52559142430580) - pre-committed stop-rule check at n=78: neither the MAINTAIN bar nor the FAIL bar is actually met; extending to n>=90 as originally pre-committed rather than inventing a new in-between threshold today",
-    "follow_up": "Recheck when lead-quality-analyst next reports n>=90 for this ad set. If serious-or-better is still a flat 0% with junk still 60s-70s%, PAUSE per the pre-committed FAIL bar, routed through media-buyer + Telegram approval regardless of cost/conv. If 1-2 serious-or-better enquiries appear by then, re-evaluate as a MAINTAIN candidate alongside the cost/conv read."
-  },
   "KL-2026-10-30-CS-UKGEOTEST-EXTEND2": {
     "id": "KL-2026-10-30-CS-UKGEOTEST-EXTEND2",
     "date": "2026-10-30",
@@ -454,6 +447,13 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
+  "KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD": {
+    "id": "KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD",
+    "date": "2026-10-31",
+    "type": "decision",
+    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - 2-week stop-rule checkpoint: NOT pausing today, extending to a confound-free window because the comparison window is genuinely confounded by the 2026-10-28 guardrail-15 targeting edit on BOTH compared ad sets",
+    "follow_up": "2026-11-04/05: re-pull cost/conv for Gold Sculpted vs Broad Advantage+ over the clean 2026-10-29 to 2026-11-04 window (both ad sets post-edit, no further confound in between unless a new one is introduced), plus a fresh lead-quality read for Gold Sculpted (watch for n growing past ~25-30 and whether serious-or-better moves off 0% or an order appears - an order counts for the ad however late it comes). PAUSE (route through media-buyer + Telegram approval) if, over that clean window, Gold Sculpted is still materially worse (~1.4x+) on cost/conv than Broad AND lead quality is still flat 0% serious-or-better with no orders. MAINTAIN/keep running if either cost converges meaningfully or quality shows any real movement (a serious-or-better enquiry or an order). Do not invent a different threshold at that point - use this one as pre-committed now, before seeing the 11-04 data."
+  },
   "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE": {
     "id": "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE",
     "date": "2026-10-31",
@@ -467,13 +467,6 @@
     "type": "outcome",
     "subject": "Guardrail-16 gender/age/platform sweep - STEP1-C/STEP2-B 7 touched ad sets now show clean post-fix days, elevated male/Facebook share does NOT persist",
     "follow_up": "No new dated check needed for these 7 - fold into the normal next-gradual-step cadence. Continue the days 7-10 serious-enquiry check already scheduled (after 2026-11-02 once AISI labels self-heal) per KL-2026-10-28-STEP2-B."
-  },
-  "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD": {
-    "id": "KL-2026-10-31-PA-GOLDSCULPTED-2WEEKREAD",
-    "date": "2026-10-31",
-    "type": "observation",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - due-now 2-week stop-rule read vs First Love | Broad Advantage+ baseline",
-    "follow_up": "Route to campaign-strategist for the pause/hold/extend-read decision - the stop-rule condition (materially worse, no clean improving trend) is met on the numbers, but the confound from the simultaneous 10-28 targeting change on both compared ad sets means a mechanical pause is not clearly correct either; campaign-strategist should form an independent read, possibly proposing a short confound-free extension before a final call."
   },
   "KL-2026-10-31-PA-INTERESTSTACK-FBDRIFT": {
     "id": "KL-2026-10-31-PA-INTERESTSTACK-FBDRIFT",
