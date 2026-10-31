@@ -475,12 +475,12 @@
     "subject": "Organic Instagram feed carousel LM-009 - Loomiere Fuchsia Pink Bubble Peplum Corset With Pencil Skirt (7 slides), scheduled 5:30 pm IST 1 Nov (time not yet final)",
     "follow_up": "The top-level session sends the Telegram approval to Suraj once K&A Social Media confirms the time (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-009_0*.jpg copies may be deleted. Do not re-send if already executed or handled manually."
   },
-  "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX": {
-    "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX",
+  "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC": {
+    "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC",
     "date": "2026-10-31",
-    "type": "decision",
-    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - Instagram-only placements (remove Facebook/Messenger/Audience Network/WhatsApp Status); gender re-verified clean, age re-verified already within 22-55, no change to either; no budget change",
-    "follow_up": "2026-11-03 day-3 check (publisher_platform breakdown, delivery, cost/conversation vs 7d baseline). After 2026-11-07, once AISI labels reliable: serious-enquiry check vs pre-edit baseline. Watch 3-4 days before proposing any further gradual-fix step."
+    "type": "change",
+    "subject": "Executed Instagram-only placement restriction on First Love | Interest Stack (geo only, interests TBD) | India (52535906794980)",
+    "follow_up": "2026-11-03 day-3 check (publisher_platform breakdown, delivery, cost/conversation vs 7d baseline). After 2026-11-07: serious-enquiry check vs pre-edit baseline. Watch 3-4 days before proposing any further gradual-fix step."
   },
   "KL-2026-10-31-SCM-AMBIGUOUS-5TH": {
     "id": "KL-2026-10-31-SCM-AMBIGUOUS-5TH",
