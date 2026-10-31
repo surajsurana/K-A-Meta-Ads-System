@@ -342,13 +342,6 @@
     "subject": "Red Corset blank-title fix (ad 52536048558380) - re-diagnosed follow_up from KL-2026-10-26-EXEC-BLANKTITLE-SELFCHECK-STOP-6, both live hypotheses now disproven by fresh GET evidence - ESCALATING, not proposing a 7th execution attempt.",
     "follow_up": "Awaiting Suraj/engineering decision among the three options above before any further attempt on ad 52536048558380. Do not auto-retry a sparse-key or full-expansion variant again without new information - both already tested and disproven."
   },
-  "KL-2026-10-26-media-library-CS-HANDOFF": {
-    "id": "KL-2026-10-26-media-library-CS-HANDOFF",
-    "date": "2026-10-26",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist - 2 own-story-repost UGC items found via Media Library check, both structurally blocked from ad use (no video file), FYI/record-only",
-    "follow_up": "Awaiting campaign-strategist's formal HOLD/REJECT call on these two, if it chooses to make one; no live action pending from me either way."
-  },
   "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
     "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
     "date": "2026-10-27",
@@ -461,6 +454,13 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
+  "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE": {
+    "id": "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE",
+    "date": "2026-10-31",
+    "type": "decision",
+    "subject": "Mouni Roy red/maroon halter gown (5 video items, no usable file) - disposition HOLD for ad use, but escalate sourcing to Suraj as worth actively pursuing",
+    "follow_up": "Send Suraj a plain FYI notification recommending active sourcing (contact @amigos.rizwan / @rishika_devnani / @eshawadhwa_ / @sejal.005 and/or the Johnnie Walker event organizers) for real photos/footage of the Mouni Roy red/maroon halter gown moment; re-review for ad use the moment any of the 5 items gets a fetchable file."
+  },
   "KL-2026-10-31-PA-GENDERSWEEP-CLEANPOSTFIX": {
     "id": "KL-2026-10-31-PA-GENDERSWEEP-CLEANPOSTFIX",
     "date": "2026-10-31",
@@ -495,12 +495,5 @@
     "type": "observation",
     "subject": "DM-redirect standing watch (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE / KL-2026-10-22-dmredirect-watch-no-recurrence2) - checked again for a 4th post-escalation recurrence, NONE found, 3rd consecutive clean cycle",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
-  },
-  "KL-2026-10-31-SCM-MEDIALIB": {
-    "id": "KL-2026-10-31-SCM-MEDIALIB",
-    "date": "2026-10-31",
-    "type": "observation",
-    "subject": "Daily Media Library check (2026-10-31) - 8 instagram_auto items unreviewed, 0 manual uploads unreviewed; strongest find is independently-corroborated Mouni Roy red-gown coverage, but no usable video file for any of it",
-    "follow_up": "These 8 items remain reviewed_by_social=false - a write-capable session should mark them reviewed once actually processed (repost queued / handed to campaign-strategist / neither), and should carry the Mouni-Roy-gown sourcing flag to campaign-strategist."
   }
 }
