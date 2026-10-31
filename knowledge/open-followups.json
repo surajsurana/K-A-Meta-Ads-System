@@ -461,6 +461,13 @@
     "subject": "Mouni Roy red/maroon halter gown (5 video items, no usable file) - disposition HOLD for ad use, but escalate sourcing to Suraj as worth actively pursuing",
     "follow_up": "Send Suraj a plain FYI notification recommending active sourcing (contact @amigos.rizwan / @rishika_devnani / @eshawadhwa_ / @sejal.005 and/or the Johnnie Walker event organizers) for real photos/footage of the Mouni Roy red/maroon halter gown moment; re-review for ad use the moment any of the 5 items gets a fetchable file."
   },
+  "KL-2026-10-31-LM008-1830": {
+    "id": "KL-2026-10-31-LM008-1830",
+    "date": "2026-10-31",
+    "type": "decision",
+    "subject": "Organic Instagram REEL LM-008 - Loomiere Ivory Polki Corset With Drape Skirt, scheduled 6:30 pm IST 31 Oct",
+    "follow_up": "The top-level session sends the Telegram approval to Suraj. After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-008_01.mp4 may be deleted. If STEP 2 returns ERROR, do not retry; report back so a separate plan can address the host (no HEAD/Range support) - that would be its own approved change. Do not re-send if already executed or handled manually."
+  },
   "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX": {
     "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX",
     "date": "2026-10-31",
