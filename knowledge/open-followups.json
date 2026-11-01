@@ -489,11 +489,11 @@
     "subject": "DM-redirect standing watch (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE / KL-2026-10-22-dmredirect-watch-no-recurrence2) - checked again for a 4th post-escalation recurrence, NONE found, 3rd consecutive clean cycle",
     "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
   },
-  "KL-2026-11-01-LM010-NOV02-1800": {
-    "id": "KL-2026-11-01-LM010-NOV02-1800",
+  "KL-2026-11-01-LM011-NOV02-2030": {
+    "id": "KL-2026-11-01-LM011-NOV02-2030",
     "date": "2026-11-01",
     "type": "decision",
-    "subject": "Organic Instagram feed carousel LM-010 - Loomiere Brown Lace Corset With Drape Saree (3 slides), scheduled 6:00 pm IST 2 Nov",
-    "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-010_0*.jpg copies may be deleted. Do not re-send if already executed or handled manually."
+    "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
+    "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
   }
 }
