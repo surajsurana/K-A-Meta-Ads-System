@@ -426,13 +426,6 @@
     "subject": "Loomiere | Metallic Lavender Solo | Styling Appointment (ad 52565052977180) - under 36h old, early CTR gap vs sibling Launch Reel noted but not actionable yet per new-ad-watch guardrail",
     "follow_up": "Recheck at the 3-day live mark (around 2026-11-01). If the CTR/conversation gap against Launch Reel persists at that point with real volume behind it, that is the first point a pause call on Lavender Solo would be appropriate - not before."
   },
-  "KL-2026-10-30-CS-UKGEOTEST-EXTEND2": {
-    "id": "KL-2026-10-30-CS-UKGEOTEST-EXTEND2",
-    "date": "2026-10-30",
-    "type": "outcome",
-    "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - literal stop-rule not triggered (1 conversation appeared on day 3); extending with a tighter cost-based stop-rule rather than treating one weak conversion as a pass",
-    "follow_up": "Recheck 2026-11-02 (5 full days live). Pause via media-buyer + Telegram approval if cumulative cost/conv is still >Rs250 with no quality signal; otherwise re-evaluate normally."
-  },
   "KL-2026-10-30-PA-AUSTRALIA-DAY3READ": {
     "id": "KL-2026-10-30-PA-AUSTRALIA-DAY3READ",
     "date": "2026-10-30",
@@ -481,6 +474,13 @@
     "type": "decision",
     "subject": "@trisha___shetty carousel (instagram.com/p/DfKH7TagITw/, media 17987454984090291) - five-way UGC disposition, my own vision read performed directly",
     "follow_up": "If APPROVE: (1) social-community-manager executes the feed+story repost plans already drafted (KL-2026-11-02-trisha-repost-feed/-story). (2) creative-copywriter attempts SKU identification against Shopify/Stitchflow, then briefs copy for a test ad in an existing evening/festive-relevant WhatsApp or IG-DM retargeting ad set; media-buyer validates and builds PAUSED, checks, then activates per guardrail 3 - comes back for its own build approval, this APPROVE does not itself spend anything."
+  },
+  "KL-2026-11-02-CS-UKGEOTEST-DATAGAP": {
+    "id": "KL-2026-11-02-CS-UKGEOTEST-DATAGAP",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - the pre-committed 2026-11-02 recheck (KL-2026-10-30-CS-UKGEOTEST-EXTEND2) cannot be honestly resolved today - the data handed up this cycle is the same stale 3-day/Rs508.61 figure already judged 2026-10-30, not a fresh 5-full-day pull",
+    "follow_up": "performance-analyst to pull fresh level=ad insights for 52564305260180, 2026-10-27 through latest closed day, before the next review - resolve this specific recheck then, not on next cycle's default pull alone."
   },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
