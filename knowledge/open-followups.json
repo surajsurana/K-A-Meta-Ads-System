@@ -419,6 +419,13 @@
     "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - validated pause plan per campaign-strategist's PAUSE verdict",
     "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52562820202180), then run the verification GETs above and append a linked type:change entry; this plan is being routed through send-telegram-approval.sh for Suraj's approval before any live write."
   },
+  "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM": {
+    "id": "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "Bihar/Jharkhand/Assam/J&K exclusion rollback check - CONFIRM performance-analyst no-action read; the 4 small-budget Test ad sets cost-per-conversation rise rides the existing 2026-10-28 STEP1-C/STEP2-B recovery watch, no separate disposition",
+    "follow_up": "No live change. Re-check these 4 ad sets cost-per-conversation alongside the existing about 2026-11-06 to 11-09 STEP1-C/STEP2-B recovery re-check already scheduled for Cut Out to Reveal; the geo exclusion itself needs no separate rollback review unless a future clean-window read shows the problem persisting after the targeting-edit confound has cleared."
+  },
   "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST": {
     "id": "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST",
     "date": "2026-11-02",
@@ -432,13 +439,6 @@
     "type": "decision",
     "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) ceiling verdict + geography disposition - Monday full review 2026-11-02",
     "follow_up": "2026-11-10: Loomiere launch end-date review - decide extend/revert-to-Rs6,500/new ceiling based on the launch's actual results over its full window, per S3e."
-  },
-  "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD": {
-    "id": "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "Cut Out to Reveal rollback check (ad 52547120422780, First Love | Broad Advantage+ | India, ad set 52535906903180) - do NOT reactivate on todays mechanical rollback read; the comparison is confounded by a known concurrent event on this same ad set",
-    "follow_up": "No live change now (ad stays paused, as it already is - no reactivation sent to media-buyer). Re-run this rollback comparison once First Love | Broad Advantage+s own CPM has demonstrably stabilized post-10-28 restart (watch alongside its sibling recovery, currently Rs350->231 and still moving) - target re-check ~2026-11-06 to 11-09, using a comparison window that starts after the restart has settled rather than one that straddles it."
   },
   "KL-2026-11-02-CS-GOLDSCULPTED-WATCH": {
     "id": "KL-2026-11-02-CS-GOLDSCULPTED-WATCH",
@@ -488,13 +488,6 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
-  "KL-2026-11-02-PA-BIHARGROUP-ROLLBACKCHECK": {
-    "id": "KL-2026-11-02-PA-BIHARGROUP-ROLLBACKCHECK",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "Bihar/Jharkhand/Assam/J&K exclusion (KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED) - rollback-window check: spend into the 4 states already at zero (pass); cost-per-conversation on 4 of 9 touched ad sets worsened meaningfully, but confounded by concurrent account-wide events in the same window",
-    "follow_up": "campaign-strategist: decide whether the 3 small-budget Test ad sets CPC rise needs its own disposition (separate from the geo exclusion, since the targeting-edit confound is the more likely driver) or should just continue riding the existing STEP1-C/STEP2-B recovery watch. No rollback of the geo exclusion itself is indicated by this data."
   },
   "KL-2026-11-02-PA-INSTAENGAGED-FREQROLLBACK": {
     "id": "KL-2026-11-02-PA-INSTAENGAGED-FREQROLLBACK",
