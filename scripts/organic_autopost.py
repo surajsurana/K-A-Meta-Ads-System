@@ -37,6 +37,7 @@ listener stays stdlib-only:
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py check  handoff.json
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py submit handoff.json   (or "-" for stdin)
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py publish <log-id>
+  ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py cancel  <log-id>   (to move a post: cancel, then submit again)
 
 Hand-off JSON (written by the K&A Social Media session):
   {"plan_id": "LM-003", "type": "feed_carousel" | "feed_image" | "reel" | "story",
@@ -557,13 +558,45 @@ def cmd_publish(log_id):
     unhost(log_id)
 
 
+def cmd_cancel(log_id):
+    """The content producer moved a post's date/time: stop the old schedule (same effect as Suraj's Cancel tap)."""
+    def op(state):
+        entry = state.get(log_id)
+        if not entry or entry.get("executor") != "organic_autopost":
+            return None, "not an organic auto-post"
+        if entry.get("status") != "scheduled":
+            return None, "already " + str(entry.get("status"))
+        entry["status"] = "cancelled"
+        entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
+        state[log_id] = entry
+        return state, "cancelled"
+    outcome = L.with_state_lock(op)
+    if outcome != "cancelled":
+        raise Stop("can't cancel {}: {}".format(log_id, outcome))
+    entry = L.get_entry(log_id)
+    token, chat_id = L.load_telegram_config()
+    try:
+        L.tg_api(token, "editMessageText", {"chat_id": chat_id, "message_id": entry.get("message_id"), "text":
+                 "↪️ Moved: {} was taken off {} because Lupta changed its date/time. The new slot follows.\n\nPlan ID: {}".format(
+                     entry.get("organic_plan_id"), when_text(entry["scheduled_for"]), log_id)})
+    except Exception:
+        pass
+    append_log({"id": log_id + "-CANCELLED", "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                "actor": "organic-autopost", "type": "observation",
+                "subject": "Organic Instagram post " + str(entry.get("organic_plan_id")),
+                "summary": "Scheduled organic post cancelled before publishing (content producer changed its date/time); "
+                           "nothing was posted.", "source": "human_told", "confidence": "high", "linked_to": [log_id],
+                "tags": ["organic-post", "auto-publish", "cancelled"]})
+    print(json.dumps({"status": "cancelled", "log_id": log_id}))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=("check", "submit", "publish"))
-    ap.add_argument("target", help="hand-off JSON file (check/submit) or log id (publish)")
+    ap.add_argument("command", choices=("check", "submit", "publish", "cancel"))
+    ap.add_argument("target", help="hand-off JSON file (check/submit) or log id (publish/cancel)")
     a = ap.parse_args()
     try:
-        {"check": cmd_check, "submit": cmd_submit, "publish": cmd_publish}[a.command](a.target)
+        {"check": cmd_check, "submit": cmd_submit, "publish": cmd_publish, "cancel": cmd_cancel}[a.command](a.target)
     except Stop as e:
         print("STOPPED: " + str(e))
         sys.exit(1)
