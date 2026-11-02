@@ -440,13 +440,6 @@
     "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) ceiling verdict + geography disposition - Monday full review 2026-11-02",
     "follow_up": "2026-11-10: Loomiere launch end-date review - decide extend/revert-to-Rs6,500/new ceiling based on the launch's actual results over its full window, per S3e."
   },
-  "KL-2026-11-02-CS-CONTENT-CONFIRMATIONS": {
-    "id": "KL-2026-11-02-CS-CONTENT-CONFIRMATIONS",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "Monday review 2026-11-02 - confirming social-community-manager's framing on the 2 supplementary Loomiere carousels and the BTS sighting; one correction (disposition status is stale, not pending)",
-    "follow_up": "2026-11-03: media-buyer to plan the IG Engaged/Followers ad set's AD2 carousel (Burgundy Scalloped + Golden Petal) per the original build plan's pre-stated 7-day gap, still needing the AD3 Diwali-line copy fix before AD3 follows."
-  },
   "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD": {
     "id": "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD",
     "date": "2026-11-02",
@@ -495,6 +488,13 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
+  },
+  "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
+    "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "Loomiere launch video check 2026-11-02 - no genuinely new video beyond what is already known/handed off",
+    "follow_up": "Next daily check boundary: 18167082763492162 (2026-10-31T14:15:24). No action needed."
   },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
