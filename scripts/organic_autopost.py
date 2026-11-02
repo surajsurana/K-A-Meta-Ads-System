@@ -5,7 +5,7 @@ Added 2026-10-23. Suraj, directly: "no tap. drive checks only. lets see this
 for a few days. if any problem happens we will then add a security layer of
 lupta tap on telegram." Earlier, also directly: "Lupta approvals are fine to
 be posted." Scope is deliberately narrow: ORGANIC Instagram feed posts
-(single image or carousel) and Stories only. This code never touches ads,
+(single image or carousel), Reels (added 2026-11-02) and Stories only. This code never touches ads,
 boosts, budgets or anything with spend.
 
 Every decision here is made by plain code, never by an LLM:
@@ -16,6 +16,12 @@ Every decision here is made by plain code, never by an LLM:
       3. the plan sheet's "Plan" tab says Status = Approved for that ID
          (anything else - Hold, Changes needed, blank - stops it);
       4. every file is owned by ALLOWED_OWNERS.
+  - 2026-11-02: Suraj, directly: "i dont want to approve each post that lupta
+    approves. it should go automatically". Feed images taller than 4:5 (the
+    producer shoots 3:4) are trimmed evenly top and bottom to 4:5 and resized
+    to 1080 wide - the same method the tap route used for LM-005/009/010 - and
+    Reels are re-encoded to H.264/AAC mp4 (faststart) with ffmpeg, nothing else
+    changed.
   - Suraj gets an FYI on Telegram with a Cancel button (the listener's
     existing X:<id> callback), then the permalink or the reason it stopped.
   - At the scheduled time the Telegram listener's scheduler runs
@@ -26,17 +32,17 @@ Google account, so a sheet cell or a Suraj-owned file is not proof that a
 human approved. Only Lupta-owned files are. The fallback, if anything goes
 wrong, is adding Lupta's own Telegram tap.
 
-Runs on the droplet in its own venv (google-auth, requests, Pillow) so the
+Runs on the droplet in its own venv (google-auth, requests, Pillow; ffmpeg for Reels) so the
 listener stays stdlib-only:
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py check  handoff.json
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py submit handoff.json   (or "-" for stdin)
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py publish <log-id>
 
 Hand-off JSON (written by the K&A Social Media session):
-  {"plan_id": "LM-003", "type": "feed_carousel" | "feed_image" | "story",
+  {"plan_id": "LM-003", "type": "feed_carousel" | "feed_image" | "reel" | "story",
    "drive_file_ids": ["...", "..."],            # in slide order
-   "caption": "...",                            # feed only; exact text
-   "alt_text": ["...", "..."],                  # optional, one per image (feed only)
+   "caption": "...",                            # feed and reel; exact text
+   "alt_text": ["...", "..."],                  # optional, one per image (feed images only)
    "scheduled_for": "2026-10-24T19:30:00+05:30",
    "approval": "CONTENT PRODUCER APPROVED – AUTO"}
 """
@@ -47,8 +53,10 @@ import io
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -71,7 +79,12 @@ ALLOWED_OWNERS = {"kirangelupta@gmail.com", "suraj.surana@gmail.com"}
 APPROVAL_MARK = "CONTENT PRODUCER APPROVED – AUTO"
 IG_USER = "17841401625784277"
 GRAPH = "https://graph.facebook.com/v21.0"
-TYPES = ("feed_image", "feed_carousel", "story")
+TYPES = ("feed_image", "feed_carousel", "reel", "story")
+CAPTIONED = ("feed_image", "feed_carousel", "reel")
+IMAGE_MIMES = ("image/png", "image/jpeg")
+VIDEO_MIMES = ("video/quicktime", "video/mp4")
+FEED_MIN_RATIO = 0.74  # down to ~3:4 is trimmed to 4:5 (about 3% off top and bottom); taller stops
+OUT_WIDTH = 1080
 MAX_AHEAD = timedelta(days=14)
 MIN_AHEAD = timedelta(minutes=5)
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -100,12 +113,14 @@ def load_handoff(path):
         problems.append("drive_file_ids missing")
     if h.get("type") == "feed_carousel" and not (2 <= len(ids) <= 10):
         problems.append("a carousel needs 2-10 images")
-    if h.get("type") in ("feed_image", "story") and len(ids) != 1:
-        problems.append(h.get("type") + " takes exactly 1 image")
-    if h.get("type", "").startswith("feed") and not (h.get("caption") or "").strip():
-        problems.append("feed posts need a caption")
+    if h.get("type") in ("feed_image", "reel", "story") and len(ids) != 1:
+        problems.append(h.get("type") + " takes exactly 1 file")
+    if h.get("type") in CAPTIONED and not (h.get("caption") or "").strip():
+        problems.append("feed posts and Reels need a caption")
     alts = h.get("alt_text") or []
-    if alts and len(alts) != len(ids):
+    if alts and h.get("type") == "reel":
+        problems.append("alt_text isn't supported on Reels")
+    elif alts and len(alts) != len(ids):
         problems.append("alt_text must have one entry per image")
     if (h.get("approval") or "").strip() != APPROVAL_MARK:
         problems.append('approval must read exactly "' + APPROVAL_MARK + '"')
@@ -168,7 +183,7 @@ def sheet_status(s, plan_id):
     return str(row[st_col]).strip() if len(row) > st_col else ""
 
 
-def check_drive(s, plan_id, file_ids):
+def check_drive(s, plan_id, file_ids, kind):
     problems, files = [], []
     for fid in file_ids:
         r = s.get("https://www.googleapis.com/drive/v3/files/" + fid, params={
@@ -188,7 +203,9 @@ def check_drive(s, plan_id, file_ids):
         owners = {(o.get("emailAddress") or "").lower() for o in f.get("owners") or []}
         if not owners or not owners <= ALLOWED_OWNERS:
             problems.append(name + " is owned by " + (", ".join(sorted(owners)) or "nobody known"))
-        if f.get("mimeType") not in ("image/png", "image/jpeg"):
+        if kind == "reel" and f.get("mimeType") not in VIDEO_MIMES:
+            problems.append(name + " isn't a MOV/MP4 video")
+        if kind != "reel" and f.get("mimeType") not in IMAGE_MIMES:
             problems.append(name + " isn't a PNG/JPEG image")
         files.append(f)
     try:
@@ -202,30 +219,107 @@ def check_drive(s, plan_id, file_ids):
     return files
 
 
+def download(s, f):
+    r = s.get("https://www.googleapis.com/drive/v3/files/" + f["id"],
+              params={"alt": "media", "supportsAllDrives": "true"}, timeout=300)
+    if r.status_code != 200:
+        raise Stop("couldn't download " + f.get("name", f["id"]))
+    return r.content
+
+
 def load_images(s, files, kind):
     from PIL import Image
     images = []
     for f in files:
-        r = s.get("https://www.googleapis.com/drive/v3/files/" + f["id"],
-                  params={"alt": "media", "supportsAllDrives": "true"}, timeout=180)
-        if r.status_code != 200:
-            raise Stop("couldn't download " + f.get("name", f["id"]))
-        im = Image.open(io.BytesIO(r.content))
+        im = Image.open(io.BytesIO(download(s, f)))
         im.load()
         w, h = im.size
         ratio = w / float(h)
-        if kind.startswith("feed") and not (0.79 <= ratio <= 1.92):
-            raise Stop("{} is {}x{}: feed images must be between 4:5 and 1.91:1".format(f.get("name"), w, h))
+        if kind.startswith("feed") and not (FEED_MIN_RATIO <= ratio <= 1.92):
+            raise Stop("{} is {}x{}: feed images must be between 3:4 and 1.91:1".format(f.get("name"), w, h))
+        if kind.startswith("feed") and ratio < 0.8:
+            # trim evenly top and bottom to exactly 4:5, as the tap route did
+            cut = h - round(w * 5 / 4.0)
+            im = im.crop((0, cut // 2, w, h - (cut - cut // 2)))
+            w, h = im.size
+        if w > OUT_WIDTH:
+            im = im.resize((OUT_WIDTH, round(h * OUT_WIDTH / float(w))), Image.LANCZOS)
         images.append(im)
     if kind == "feed_carousel" and len({round(i.size[0] / float(i.size[1]), 3) for i in images}) > 1:
         raise Stop("carousel slides have different shapes; Instagram would crop them to the first")
     return images
 
 
+def probe(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                        "stream=width,height:format=duration", "-of", "json", path],
+                       capture_output=True, text=True, timeout=120)
+    try:
+        d = json.loads(r.stdout)
+        st = d["streams"][0]
+        return int(st["width"]), int(st["height"]), float(d["format"]["duration"])
+    except (ValueError, KeyError, IndexError):
+        raise Stop("couldn't read the video file")
+
+
+def load_video(s, files, convert=True):
+    """Download the Reel and re-encode it to an Instagram-safe mp4; returns the temp path.
+    convert=False (check/submit) only validates it: the encode takes minutes on the droplet."""
+    f = files[0]
+    tmp = tempfile.mkdtemp(prefix="ka-reel-")
+    src, out = os.path.join(tmp, "src"), os.path.join(tmp, "out.mp4")
+    try:
+        with open(src, "wb") as fh:
+            fh.write(download(s, f))
+        w, h, dur = probe(src)
+        if not (0.55 <= w / float(h) <= 0.57):
+            raise Stop("{} is {}x{}: Reels must be vertical 9:16".format(f.get("name"), w, h))
+        if not (3 <= dur <= 900):
+            raise Stop("{} is {:.1f}s: Reels must be 3 s to 15 min".format(f.get("name"), dur))
+        if not convert:
+            shutil.rmtree(tmp, ignore_errors=True)
+            return None
+        cmd = ["ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", src, "-map", "0:v:0", "-map", "0:a:0?",
+               "-map_metadata", "-1", "-dn", "-c:v", "libx264", "-profile:v", "high", "-level", "4.1",
+               "-pix_fmt", "yuv420p", "-crf", "18", "-maxrate", "12M", "-bufsize", "24M",
+               "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-movflags", "+faststart"]
+        if w > OUT_WIDTH:
+            cmd += ["-vf", "scale={}:-2:flags=lanczos".format(OUT_WIDTH)]
+        run = subprocess.run(cmd + [out], capture_output=True, text=True, timeout=900)
+        if run.returncode != 0 or not os.path.exists(out):
+            raise Stop("couldn't convert the Reel: " + run.stderr[-200:])
+        if os.path.getsize(out) > 300 * 1024 * 1024:
+            raise Stop("the converted Reel is over 300 MB")
+        os.remove(src)
+        return out
+    except BaseException:
+        shutil.rmtree(tmp, ignore_errors=True)
+        raise
+
+
+def load_media(s, files, kind, convert=True):
+    return load_video(s, files, convert) if kind == "reel" else load_images(s, files, kind)
+
+
+def discard(media):
+    if isinstance(media, str):  # a Reel's temp folder
+        shutil.rmtree(os.path.dirname(media), ignore_errors=True)
+
+
 # --- hosting + Instagram --------------------------------------------------
 
 def host(images, log_id):
     os.makedirs(HOST_DIR, exist_ok=True)
+    if isinstance(images, str):  # a Reel: the converted mp4's temp path
+        name = "post-{}_01.mp4".format(re.sub(r"[^A-Za-z0-9_-]", "", log_id))
+        shutil.copyfile(images, os.path.join(HOST_DIR, name))
+        discard(images)
+        url = HOST_URL + name
+        req = urllib.request.Request(url, headers={"Range": "bytes=0-1023"})  # the server answers 501 to HEAD
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            if resp.status not in (200, 206) or "video/mp4" not in resp.headers.get("Content-Type", ""):
+                raise Stop("hosted video didn't load: " + url)
+        return [url]
     urls = []
     for i, im in enumerate(images, 1):
         name = "post-{}_{:02d}.jpg".format(re.sub(r"[^A-Za-z0-9_-]", "", log_id), i)
@@ -243,7 +337,7 @@ def unhost(log_id):
     if not os.path.isdir(HOST_DIR):
         return
     for n in os.listdir(HOST_DIR):
-        if n.startswith(pfx) and n.endswith(".jpg"):
+        if n.startswith(pfx) and n.endswith((".jpg", ".mp4")):
             try:
                 os.remove(os.path.join(HOST_DIR, n))
             except OSError:
@@ -275,8 +369,8 @@ def ig(method, path, params, token):
         raise RuntimeError(msg[:300])
 
 
-def wait_finished(cid, token):
-    for _ in range(18):
+def wait_finished(cid, token, tries=18):
+    for _ in range(tries):
         st = ig("GET", cid, {"fields": "status_code"}, token).get("status_code")
         if st == "FINISHED":
             return
@@ -305,7 +399,7 @@ def caption_hash(text):
 
 def instagram_publish(spec, urls, token):
     kind, caption, alts = spec["type"], spec.get("caption") or "", spec.get("alt_text") or []
-    if kind.startswith("feed"):
+    if kind in CAPTIONED:
         recent = ig("GET", IG_USER + "/media", {"fields": "caption,permalink", "limit": 10}, token).get("data", [])
         for m in recent:
             if caption_hash(m.get("caption")) == caption_hash(caption):
@@ -319,12 +413,15 @@ def instagram_publish(spec, urls, token):
                                               "caption": caption}, token)["id"]
     elif kind == "feed_image":
         cid = image_container(urls[0], alts[0] if alts else "", token, {"caption": caption})
+    elif kind == "reel":
+        cid = ig("POST", IG_USER + "/media", {"media_type": "REELS", "video_url": urls[0], "caption": caption,
+                                              "share_to_feed": "true"}, token)["id"]
     else:
         cid = ig("POST", IG_USER + "/media", {"media_type": "STORIES", "image_url": urls[0]}, token)["id"]
-    wait_finished(cid, token)
+    wait_finished(cid, token, 60 if kind == "reel" else 18)
     media_id = ig("POST", IG_USER + "/media_publish", {"creation_id": cid}, token)["id"]
     m = ig("GET", media_id, {"fields": "permalink,media_type,caption,children{id}"}, token)
-    if kind.startswith("feed") and caption_hash(m.get("caption")) != caption_hash(caption):
+    if kind in CAPTIONED and caption_hash(m.get("caption")) != caption_hash(caption):
         raise RuntimeError("published, but the caption doesn't match exactly: " + m.get("permalink", ""))
     if kind == "feed_carousel" and len((m.get("children") or {}).get("data") or []) != len(urls):
         raise RuntimeError("published, but the slide count doesn't match: " + m.get("permalink", ""))
@@ -347,14 +444,14 @@ def when_text(iso):
 
 def describe(spec):
     return {"feed_carousel": "{}-slide carousel post".format(len(spec["drive_file_ids"])),
-            "feed_image": "single-image feed post", "story": "Story"}[spec["type"]]
+            "feed_image": "single-image feed post", "reel": "Reel", "story": "Story"}[spec["type"]]
 
 
 def cmd_check(path):
     spec = load_handoff(path)
     s = google()
-    files = check_drive(s, spec["plan_id"], spec["drive_file_ids"])
-    load_images(s, files, spec["type"])
+    files = check_drive(s, spec["plan_id"], spec["drive_file_ids"], spec["type"])
+    discard(load_media(s, files, spec["type"], convert=False))
     print("OK: {} passes every check ({}).".format(spec["plan_id"], ", ".join(f["name"] for f in files)))
 
 
@@ -371,8 +468,8 @@ def cmd_submit(path):
     if existing:
         raise Stop("{} is already {} (entry {})".format(pid, L.get_entry(existing).get("status"), existing))
     s = google()
-    files = check_drive(s, pid, spec["drive_file_ids"])
-    load_images(s, files, spec["type"])
+    files = check_drive(s, pid, spec["drive_file_ids"], spec["type"])
+    discard(load_media(s, files, spec["type"], convert=False))
 
     log_id = "KL-ORGANIC-{}-{}".format(pid, datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S"))
     token, chat_id = L.load_telegram_config()
@@ -416,9 +513,9 @@ def cmd_publish(log_id):
     pid = spec["plan_id"]
     try:
         s = google()
-        files = check_drive(s, pid, spec["drive_file_ids"])
-        images = load_images(s, files, spec["type"])
-        urls = host(images, log_id)
+        files = check_drive(s, pid, spec["drive_file_ids"], spec["type"])
+        media = load_media(s, files, spec["type"])
+        urls = host(media, log_id)
         media_id, permalink = instagram_publish(spec, urls, meta_token())
     except Stop as e:
         L.finalize_status(log_id, "stopped", str(e))
