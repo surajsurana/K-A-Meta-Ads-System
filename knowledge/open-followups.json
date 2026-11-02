@@ -468,6 +468,13 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - zero enquiries 2026-10-30 to 11-02 is consistent with, not yet additive to, the existing flat-0%-serious pattern; recheck date is 2026-11-04, not today",
     "follow_up": "2026-11-04: re-pull cost/conv (Gold Sculpted vs Broad Advantage+) and lead quality per the already-stated criteria in KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD. No change before then."
   },
+  "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME": {
+    "id": "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - Metallic Coffee Brown activation gate reframed around the pending Lookalike-overlap fix; KAFL018 Barbie Pink zero-spend anomaly folded into same pool-composition checkpoint; retirement look at Youve Seen the Corsets deferred",
+    "follow_up": "performance-analyst: pull effective_status/issues_info/delivery_info for the KAFL018 Barbie Pink Refresh ad in 6862975169176 now (read-only). ~2026-11-05/11-06 (contingent on the Lookalike-overlap fix executing and showing 2-3 clean recovery days): combined pool-composition review - (1) route Metallic Coffee Brown activation to media-buyer if CPM has recovered, (2) decide the Youve Seen the Corsets retirement question with a fresh look, (3) resolve the Barbie Pink zero-spend anomaly using the diagnostic pulled today."
+  },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
     "date": "2026-11-02",
@@ -481,13 +488,6 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
-  "KL-2026-11-02-PA-DUENOW-9THDEC-CPM": {
-    "id": "KL-2026-11-02-PA-DUENOW-9THDEC-CPM",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) day-3+ CPM read since 10-28 hard-women/Instagram-only targeting change - gates Metallic Coffee Brown activation",
-    "follow_up": "campaign-strategist: CPM still not normalized at day 6; Metallic Coffee Brown activation gate not cleared on a CPM basis. Decide whether the gate should instead wait on the lookalike-exclusion fix landing and recovering, rather than on this ad set's own restart settling."
   },
   "KL-2026-11-02-PA-DUENOW-AUSTRALIA": {
     "id": "KL-2026-11-02-PA-DUENOW-AUSTRALIA",
