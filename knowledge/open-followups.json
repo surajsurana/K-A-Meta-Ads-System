@@ -307,13 +307,6 @@
     "subject": "Odisha (~Rs86/day) and Uttarakhand (~Rs65/day) new zero-order-despite-spend candidates (KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE) - DISPOSITION: MAINTAIN with a tightened standing watch, same treatment the Bihar group originally got, not immediate exclusion",
     "follow_up": "Re-check Odisha and Uttarakhand spend-vs-orders at the very next review, not an extended gap. Escalate to exclusion if the trajectory matches the pattern that just resolved the Bihar group."
   },
-  "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED": {
-    "id": "KL-2026-10-26-ML-CUTOUTREVEAL-PAUSE-EXECUTED",
-    "date": "2026-10-26",
-    "type": "change",
-    "subject": "Executed KL-2026-10-22-142513 - paused ad 52547120422780 First Love | Cut Out to Reveal, Cut to Sculpt. in First Love | Broad Advantage+ | India (ad set 52535906903180)",
-    "follow_up": "Per the plan's own rollback criteria (re-stated in KL-2026-10-22-ML-CUTOUT-ROLLBACK-CHECK and re-confirmed in KL-2026-10-26-CS-CUTOUTREVEAL-VERDICT): re-check 7 full days after this pause (~2026-11-02). Reactivate ad 52547120422780 if, over those 7 days, Broad Advantage+ cost per conversation rises more than 20% vs the pre-pause baseline AND serious-or-better count does not rise, OR Sage Green (52547120457180) 7-day frequency exceeds 3.0. Also close out KL-2026-10-22-093245 (held-plan) as resolved via this entry."
-  },
   "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED": {
     "id": "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED",
     "date": "2026-10-26",
@@ -523,6 +516,13 @@
     "type": "outcome",
     "subject": "Crimson Beaded (adset 52562444646780 / ad 52562444656580) 2-week due-now check vs Broad Advantage+ baseline",
     "follow_up": "campaign-strategist: decide whether to keep running given cheap-but-currently-100%-junk enquiry read; consider another lead-quality pull once more volume/time has passed given small sample."
+  },
+  "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK": {
+    "id": "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "Cut Out to Reveal rollback check (First Love | Broad Advantage+ | India, adset 52535906903180) - due exactly 2026-11-02 (7 full days post-pause)",
+    "follow_up": "campaign-strategist: rollback rule's trigger condition appears to have fired (cost/conv up 40-76% depending on baseline used, AND serious-or-better crashed to 2%) - decide whether to reactivate ad 52547120422780 per the pre-committed rule."
   },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
