@@ -468,12 +468,12 @@
     "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
     "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
   },
-  "KL-2026-11-02-CC-LOOMIERE-BROADADV-SECONDAD-COPY": {
-    "id": "KL-2026-11-02-CC-LOOMIERE-BROADADV-SECONDAD-COPY",
+  "KL-2026-11-02-010814": {
+    "id": "KL-2026-11-02-010814",
     "date": "2026-11-02",
     "type": "decision",
-    "subject": "Loomiere | Broad Advantage+ | WhatsApp | India second ad - copy fit check for reused Lavender Solo Reel (video_id 1591252142179804 / IG 18094748135665342, SKU KA-100826-011) and execution-ready handoff",
-    "follow_up": "media-buyer: build a second ad in the Loomiere | Broad Advantage+ | WhatsApp | India ad set using existing video_id 1591252142179804, the copy above verbatim, no budget change (same ad set, same Rs700/day), build PAUSED, standard checks (generatepreviews, text-field verification, name-collision check), activate per guardrail 3 (one approval covers both) before the 2026-11-10 launch end-date review."
+    "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
+    "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
   },
   "KL-2026-11-02-CS-BUDGETCHECK": {
     "id": "KL-2026-11-02-CS-BUDGETCHECK",
