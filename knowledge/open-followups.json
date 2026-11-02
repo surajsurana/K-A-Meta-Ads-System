@@ -454,13 +454,6 @@
     "subject": "Monday review 2026-11-02 - confirming social-community-manager's framing on the 2 supplementary Loomiere carousels and the BTS sighting; one correction (disposition status is stale, not pending)",
     "follow_up": "2026-11-03: media-buyer to plan the IG Engaged/Followers ad set's AD2 carousel (Burgundy Scalloped + Golden Petal) per the original build plan's pre-stated 7-day gap, still needing the AD3 Diwali-line copy fix before AD3 follows."
   },
-  "KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE": {
-    "id": "KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - PAUSE, pre-committed 2-week stop-rule has fired",
-    "follow_up": "Route to media-buyer: validate a pause plan for ad set 52562444646780 (and/or ad 52562444656580), send via send-telegram-approval.sh type:decision for Surajs approval before any live write."
-  },
   "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD": {
     "id": "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD",
     "date": "2026-11-02",
