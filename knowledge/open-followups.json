@@ -356,13 +356,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-29-CS-NEWADWATCH-LOOMIEREABC-AUSTRALIA": {
-    "id": "KL-2026-10-29-CS-NEWADWATCH-LOOMIEREABC-AUSTRALIA",
-    "date": "2026-10-29",
-    "type": "outcome",
-    "subject": "New-ad watch 2026-10-29 - Loomiere A/B/C (10/20/24 conversions, ~Rs66/Rs29/Rs42 per conv) and First Love | Cold Prospecting | Australia (52562820223580, 1 conv, ~Rs383/conv) - keep all four running, judged on cost/volume only",
-    "follow_up": "Re-read Loomiere A/B/C quality once rules-v3 is live and WATI resumes (2026-11-01) - do not use current serious% for any keep/cut call before that. Australia: continue new-ad watch, re-check once 3+ days live."
-  },
   "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
     "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
     "date": "2026-10-29",
@@ -390,13 +383,6 @@
     "type": "observation",
     "subject": "scripts/send-telegram-approval-repost-choice.sh fails with BUTTON_DATA_INVALID on long descriptive plan ids",
     "follow_up": "Fix scripts/send-telegram-approval-repost-choice.sh (or telegram_approval_listener.py handle_paired_callback_query) to use a short opaque token for the combined Reject/Hold buttons instead of encoding both full plan ids directly, so this does not recur whenever a repost-choice pair happens to use longer descriptive ids."
-  },
-  "KL-2026-10-30-CS-AUSTRALIA-WATCHFLAG": {
-    "id": "KL-2026-10-30-CS-AUSTRALIA-WATCHFLAG",
-    "date": "2026-10-30",
-    "type": "observation",
-    "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - full 3 days live reached; cost/conv Rs450.28 is a real concern but n=1 conversion is too thin to call a clear gap yet - flagging, not pausing",
-    "follow_up": "Recheck at 5-6 days live or on the 2nd conversion, whichever comes first. If cost/conv is still materially above Rs100-150 with no quality signal at that point, get an enquiry-quality read first (standing policy - quality before any keep/kill verdict), then route a pause through media-buyer if warranted."
   },
   "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
     "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
@@ -502,6 +488,13 @@
     "type": "outcome",
     "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) day-3+ CPM read since 10-28 hard-women/Instagram-only targeting change - gates Metallic Coffee Brown activation",
     "follow_up": "campaign-strategist: CPM still not normalized at day 6; Metallic Coffee Brown activation gate not cleared on a CPM basis. Decide whether the gate should instead wait on the lookalike-exclusion fix landing and recovering, rather than on this ad set's own restart settling."
+  },
+  "KL-2026-11-02-PA-DUENOW-AUSTRALIA": {
+    "id": "KL-2026-11-02-PA-DUENOW-AUSTRALIA",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "First Love | Cold Prospecting | Australia (52562820202180) re-check at 6 days live",
+    "follow_up": "campaign-strategist: cost/conversation has doubled since the last check with zero new conversations in 4 days - decide whether this now clears whatever watch-flag bar was set, similar in shape to the UK Geo Test pattern that led to a pause verdict this morning."
   },
   "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED": {
     "id": "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED",
