@@ -398,13 +398,6 @@
     "subject": "Organic Instagram feed carousel LM-009 published - Loomiere Fuchsia Pink Bubble Peplum Corset With Pencil Skirt (7 slides)",
     "follow_up": "Hosted post-LM-009_0*.jpg copies on the droplet may be deleted now that verification passed."
   },
-  "KL-2026-11-01-LM011-NOV02-2030": {
-    "id": "KL-2026-11-01-LM011-NOV02-2030",
-    "date": "2026-11-01",
-    "type": "decision",
-    "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
-    "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
-  },
   "KL-2026-11-02-024235": {
     "id": "KL-2026-11-02-024235",
     "date": "2026-11-02",
@@ -482,12 +475,12 @@
     "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - built and activated second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011)",
     "follow_up": "Daily heartbeat new-ad watch reviews ad 52565923285580 within 7 days of activation per the rollback criteria in KL-2026-11-02-010814: pause-candidate if 0 WhatsApp conversations after Rs1,000 spend attributed to it, or cost per conversation >2x sibling ad 52564598185780 after Rs1,500 combined ad-set spend since activation, or it starves 52564598185780 delivery below a third of its prior share at worse cost per conversation."
   },
-  "KL-2026-11-02-LM012-NOV03-1700": {
-    "id": "KL-2026-11-02-LM012-NOV03-1700",
+  "KL-2026-11-02-LM013-NOV03-1930": {
+    "id": "KL-2026-11-02-LM013-NOV03-1930",
     "date": "2026-11-02",
     "type": "decision",
-    "subject": "Organic Instagram REEL LM-012 - Loomiere Red Velvet Lace Corset With Drape Skirt & Stole, scheduled 5:00 pm IST Tue 3 Nov",
-    "follow_up": "Telegram approval sent to Suraj by social-community-manager. After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-012_01.mp4 may be deleted. If STEP 2 returns ERROR, do not retry; report so a separate plan can address the host. Do not re-send if already executed or handled manually."
+    "subject": "Organic Instagram STORY LM-013 - Loomiere Red Velvet Lace Corset With Drape Skirt & Stole (1 image frame), scheduled 7:30 pm IST Tue 3 Nov",
+    "follow_up": "Telegram approval sent to Suraj by social-community-manager (if the time changes, append a superseding decision entry instead). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-013_01.jpg may be deleted. Do not re-send if already executed or handled manually."
   },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
