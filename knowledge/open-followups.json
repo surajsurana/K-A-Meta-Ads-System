@@ -433,6 +433,13 @@
     "subject": "UK Engaged 365D & Followers | Geo Test | 24th Aug 26 (52564305237780/52564305260180) - validated pause plan per campaign-strategist's PAUSE verdict",
     "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52564305237780), then run the verification GETs above and append a linked type:change entry; route this plan through send-telegram-approval.sh for Suraj's approval before any live write."
   },
+  "KL-2026-11-02-CS-AUSTRALIA-PAUSEVERDICT": {
+    "id": "KL-2026-11-02-CS-AUSTRALIA-PAUSEVERDICT",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - PAUSE, same flat-zero shape as UK Geo Test, own 10-30 stop-rule has fired and quality read is genuinely unobtainable (not withheld)",
+    "follow_up": "Route to media-buyer: validate a pause plan for ad set 52562820202180 (and its ad), send via send-telegram-approval.sh type:decision for Surajs approval before any live write. Rollback criteria to carry into the plan: re-activate only on a genuine new independent Australia demand signal (organic enquiries/follower growth, a proposed retest with new creative/audience, or Surajs direction) - not a reflex flip-back expecting the same stale delivery to recover, same standard as UK."
+  },
   "KL-2026-11-02-CS-BUDGETCHECK": {
     "id": "KL-2026-11-02-CS-BUDGETCHECK",
     "date": "2026-11-02",
@@ -488,13 +495,6 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
-  "KL-2026-11-02-PA-DUENOW-AUSTRALIA": {
-    "id": "KL-2026-11-02-PA-DUENOW-AUSTRALIA",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "First Love | Cold Prospecting | Australia (52562820202180) re-check at 6 days live",
-    "follow_up": "campaign-strategist: cost/conversation has doubled since the last check with zero new conversations in 4 days - decide whether this now clears whatever watch-flag bar was set, similar in shape to the UK Geo Test pattern that led to a pause verdict this morning."
   },
   "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO": {
     "id": "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO",
