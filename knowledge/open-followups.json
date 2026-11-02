@@ -412,6 +412,13 @@
     "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
     "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
   },
+  "KL-2026-11-02-024235": {
+    "id": "KL-2026-11-02-024235",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
+    "follow_up": "re-check 2026-11-05: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
   "KL-2026-11-02-AUSTRALIA-PAUSEPLAN": {
     "id": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
     "date": "2026-11-02",
