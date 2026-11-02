@@ -461,6 +461,13 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
     "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
   },
+  "KL-2026-11-02-CS-LOOMIEREIGENGAGED-OVERLAP-DISPOSITION": {
+    "id": "KL-2026-11-02-CS-LOOMIEREIGENGAGED-OVERLAP-DISPOSITION",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "Loomiere IG Engaged 365D and Followers (52564357579980) shared-custom-audience overlap with India Whatsapp 9th Dec 25, India Insta Engaged, USA/Canada Engaged and UK Geo Test - ADDS a second, unaddressed overlap cause to the 9th Dec CPM diagnosis; no new live change today, extend the existing 11-04 day-7 watch to cover it",
+    "follow_up": "2026-11-04 day-7 watch amended: check India Insta Engaged spend fall over 30 percent (original trigger) AND 9th Dec 25 reach/CPM trend (new trigger added here). About 2026-11-07 to 11-09, aligned with the Lookalike-fix recovery checkpoint: if 9th Dec CPM has not recovered toward Rs66-78 baseline, propose excluding the 2 shared custom audiences (6320824170576, 6320824211776) from 9th Dec 25, not from ad set A, and route to media-buyer. No live change proposed today."
+  },
   "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION": {
     "id": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
     "date": "2026-11-02",
@@ -495,13 +502,6 @@
     "type": "outcome",
     "subject": "India Insta Engaged 365D & Followers budget trim (KL-2026-10-25-075257) - ~1-week rollback checkpoint: frequency eased under the 2.7x bar as hoped, holding at Rs1,750/day with one new confound flagged for context",
     "follow_up": "campaign-strategist: confirm HOLD at Rs1,750/day per the eased-frequency reading, or flag if the absolute reach decline changes that call. See also KL-2026-11-02-PA-LOOMIEREIGENGAGED-AUDIENCE-OVERLAP (same cycle) - a new audience-sharing ad set on the identical custom-audience pool appeared the day after this trim landed and was not part of the original cannibalization check."
-  },
-  "KL-2026-11-02-PA-LOOMIEREIGENGAGED-AUDIENCE-OVERLAP": {
-    "id": "KL-2026-11-02-PA-LOOMIEREIGENGAGED-AUDIENCE-OVERLAP",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "Loomiere | IG Engaged 365D & Followers | WhatsApp | India (52564357579980, launched 2026-10-26/27) shares custom_audiences with India | Whatsapp | 9th Dec 25 AND India Insta Engaged 365D & Followers - growing reach on the identical pool exactly when both siblings had problems in the same window; not yet checked in either open diagnosis",
-    "follow_up": "campaign-strategist: weigh this overlap explicitly before finalizing either the 9th Dec CPM diagnosis or any further India Insta Engaged saturation call. If Loomiere IG Engaged keeps growing reach on this shared pool, expect continued pressure on both siblings cost-per-conversation/CPM independent of any creative or targeting-edit explanation."
   },
   "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
