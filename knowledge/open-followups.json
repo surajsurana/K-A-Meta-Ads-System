@@ -482,6 +482,13 @@
     "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
     "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
   },
+  "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
+    "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "Loomiere asked-to-visit-or-trial mislabeling bug (rules-v3 fix not yet live, feed still reports rules_version rules-v2) now accounts for 100% of all serious-or-better labels account-wide in the 2026-10-30 to 2026-11-02 reporting window, not just the 3 Loomiere ads flagged on 2026-10-29",
+    "follow_up": "Do not read Loomiere ad sets' serious% or cost-per-serious at face value until feed.rules_version shows rules-v3 live; re-check reason_code mix on the 3 Loomiere ads once it does. Campaign-strategist should treat the 7 gender/placement-fix ad sets' quality this window as unresolved - small samples (0-17) outside Loomiere, inflated and unusable within Loomiere."
+  },
   "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR": {
     "id": "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR",
     "date": "2026-11-02",
