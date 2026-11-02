@@ -502,12 +502,5 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (10 items) - thank-yous and 3 price/availability WhatsApp redirects on the 4 own posts since the last batch",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
-  "KL-2026-11-02-ugc-tags": {
-    "id": "KL-2026-11-02-ugc-tags",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "UGC tags sweep (2026-11-02, Monday twice-weekly review) - 5 new tagged items since the 2026-10-28 boundary, 1 strong repost+ad candidate (trisha___shetty, 1026 likes), 1 BTS sighting of unreleased product (abhishekgaikwadphotography), 1 third independent corroboration of the Mouni Roy gown story, 1 low-priority duplicate-subject item, plus a process gap (a 2026-10-20 item never previously surfaced)",
-    "follow_up": "trisha___shetty: repost plan drafted (KL-2026-11-02-trisha-repost-feed / -story) and handed to campaign-strategist for the five-way disposition call (KL-2026-11-02-CS-HANDOFF). abhishekgaikwadphotography BTS: flagged to campaign-strategist as an early sighting of an apparently unreleased product line, not a repost candidate itself. Mouni Roy gown: no new action, corroboration only. niharikabansal14 and the two crazy4mon items: noted, no further action. Next sweep boundary (by timestamp) is 18419038339082305 (2026-10-31T18:03:00); also worth occasionally re-scanning further back given the demonstrated pagination-ordering gap."
   }
 }
