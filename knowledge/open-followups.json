@@ -405,13 +405,6 @@
     "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
     "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
   },
-  "KL-2026-11-02-010814": {
-    "id": "KL-2026-11-02-010814",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
-    "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
-  },
   "KL-2026-11-02-024235": {
     "id": "KL-2026-11-02-024235",
     "date": "2026-11-02",
@@ -481,6 +474,13 @@
     "type": "decision",
     "subject": "@stylebyanissa own-Story repost (file 20261031T184515Z_ig_own_story_4019860679456584776.mp4) - five-way content-routing call: TEST, pending SKU confirmation and Surajs approval",
     "follow_up": "Awaiting Suraj Telegram approval (Approve/Reject/Hold via send-telegram-approval.sh). No stable public Instagram permalink available for this item (ephemeral own-Story repost, original stylebyanissa post URL not captured, K&A-side Story itself has likely already expired) - flagged plainly in the Telegram message rather than fabricating a link; Suraj can view the source file directly via the Media Library dashboard entry. If approved: creative-copywriter confirms SKU and writes copy; media-buyer builds a plan which comes back for its own separate approval before anything goes live."
+  },
+  "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD": {
+    "id": "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD",
+    "date": "2026-11-02",
+    "type": "change",
+    "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - built and activated second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011)",
+    "follow_up": "Daily heartbeat new-ad watch reviews ad 52565923285580 within 7 days of activation per the rollback criteria in KL-2026-11-02-010814: pause-candidate if 0 WhatsApp conversations after Rs1,000 spend attributed to it, or cost per conversation >2x sibling ad 52564598185780 after Rs1,500 combined ad-set spend since activation, or it starves 52564598185780 delivery below a third of its prior share at worse cost per conversation."
   },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
