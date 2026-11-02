@@ -412,6 +412,13 @@
     "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
     "follow_up": "re-check 2026-11-05: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
+  "KL-2026-11-02-025526": {
+    "id": "KL-2026-11-02-025526",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
+    "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
   "KL-2026-11-02-AUSTRALIA-PAUSEPLAN": {
     "id": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
     "date": "2026-11-02",
@@ -467,13 +474,6 @@
     "type": "outcome",
     "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
     "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
-  },
-  "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION": {
-    "id": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "@stylebyanissa own-Story repost (file 20261031T184515Z_ig_own_story_4019860679456584776.mp4) - five-way content-routing call: TEST, pending SKU confirmation and Surajs approval",
-    "follow_up": "Awaiting Suraj Telegram approval (Approve/Reject/Hold via send-telegram-approval.sh). No stable public Instagram permalink available for this item (ephemeral own-Story repost, original stylebyanissa post URL not captured, K&A-side Story itself has likely already expired) - flagged plainly in the Telegram message rather than fabricating a link; Suraj can view the source file directly via the Media Library dashboard entry. If approved: creative-copywriter confirms SKU and writes copy; media-buyer builds a plan which comes back for its own separate approval before anything goes live."
   },
   "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD": {
     "id": "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD",
