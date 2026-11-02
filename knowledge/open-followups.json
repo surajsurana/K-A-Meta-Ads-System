@@ -384,13 +384,6 @@
     "subject": "scripts/send-telegram-approval-repost-choice.sh fails with BUTTON_DATA_INVALID on long descriptive plan ids",
     "follow_up": "Fix scripts/send-telegram-approval-repost-choice.sh (or telegram_approval_listener.py handle_paired_callback_query) to use a short opaque token for the combined Reject/Hold buttons instead of encoding both full plan ids directly, so this does not recur whenever a repost-choice pair happens to use longer descriptive ids."
   },
-  "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH": {
-    "id": "KL-2026-10-30-CS-LAVENDERSOLO-EARLYWATCH",
-    "date": "2026-10-30",
-    "type": "observation",
-    "subject": "Loomiere | Metallic Lavender Solo | Styling Appointment (ad 52565052977180) - under 36h old, early CTR gap vs sibling Launch Reel noted but not actionable yet per new-ad-watch guardrail",
-    "follow_up": "Recheck at the 3-day live mark (around 2026-11-01). If the CTR/conversation gap against Launch Reel persists at that point with real volume behind it, that is the first point a pause call on Lavender Solo would be appropriate - not before."
-  },
   "KL-2026-10-30-PA-AUSTRALIA-DAY3READ": {
     "id": "KL-2026-10-30-PA-AUSTRALIA-DAY3READ",
     "date": "2026-10-30",
@@ -509,6 +502,13 @@
     "type": "outcome",
     "subject": "Cut Out to Reveal rollback check (First Love | Broad Advantage+ | India, adset 52535906903180) - due exactly 2026-11-02 (7 full days post-pause)",
     "follow_up": "campaign-strategist: rollback rule's trigger condition appears to have fired (cost/conv up 40-76% depending on baseline used, AND serious-or-better crashed to 2%) - decide whether to reactivate ad 52547120422780 per the pre-committed rule."
+  },
+  "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO": {
+    "id": "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "Lavender Solo (ad 52565052977180) vs Launch Reel sibling (52564357777380) re-check at ~4 days live, adset 52564357579980",
+    "follow_up": "campaign-strategist: gap has narrowed but not closed at n=1 conversion - decide whether to let it run further for more volume or act now."
   },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
