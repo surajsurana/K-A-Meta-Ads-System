@@ -489,6 +489,13 @@
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
   },
+  "KL-2026-11-02-own-content": {
+    "id": "KL-2026-11-02-own-content",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "K&A own-content ad-sourcing sweep (2026-11-02, Monday twice-weekly review) - 2 new LOOMIERE single-SKU reveals since the 2026-10-28 boundary, supplementary creative to the already-pending NEW CAMPAIGN disposition, not a fresh call; plus LM-008 Reel and LM-009 carousel confirmed live (both already fully known/logged by this system)",
+    "follow_up": "Passed to campaign-strategist as supplementary creative (KL-2026-11-02-CS-HANDOFF) alongside the trisha___shetty UGC find - no fresh disposition call needed for the two new Loomiere SKUs. Next sweep boundary is 18000409845041375 (2026-11-01T12:02:38)."
+  },
   "KL-2026-11-02-ugc-tags": {
     "id": "KL-2026-11-02-ugc-tags",
     "date": "2026-11-02",
