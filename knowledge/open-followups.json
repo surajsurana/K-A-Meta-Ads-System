@@ -419,19 +419,12 @@
     "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
     "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
   },
-  "KL-2026-11-02-011341": {
-    "id": "KL-2026-11-02-011341",
+  "KL-2026-11-02-AUSTRALIA-PAUSEPLAN": {
+    "id": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
     "date": "2026-11-02",
     "type": "decision",
-    "subject": "UK Engaged 365D & Followers | Geo Test | 24th Aug 26 (52564305237780/52564305260180) - validated pause plan per campaign-strategist's PAUSE verdict",
-    "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52564305237780), then run the verification GETs above and append a linked type:change entry; route this plan through send-telegram-approval.sh for Suraj's approval before any live write."
-  },
-  "KL-2026-11-02-CS-AUSTRALIA-PAUSEVERDICT": {
-    "id": "KL-2026-11-02-CS-AUSTRALIA-PAUSEVERDICT",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180) - PAUSE, same flat-zero shape as UK Geo Test, own 10-30 stop-rule has fired and quality read is genuinely unobtainable (not withheld)",
-    "follow_up": "Route to media-buyer: validate a pause plan for ad set 52562820202180 (and its ad), send via send-telegram-approval.sh type:decision for Surajs approval before any live write. Rollback criteria to carry into the plan: re-activate only on a genuine new independent Australia demand signal (organic enquiries/follower growth, a proposed retest with new creative/audience, or Surajs direction) - not a reflex flip-back expecting the same stale delivery to recover, same standard as UK."
+    "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - validated pause plan per campaign-strategist's PAUSE verdict",
+    "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52562820202180), then run the verification GETs above and append a linked type:change entry; this plan is being routed through send-telegram-approval.sh for Suraj's approval before any live write."
   },
   "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST": {
     "id": "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST",
