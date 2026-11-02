@@ -482,13 +482,6 @@
     "subject": "UK Engaged 365D & Followers | Geo Test | 24th Aug 26 (52564305237780/52564305260180) - validated pause plan per campaign-strategist's PAUSE verdict",
     "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52564305237780), then run the verification GETs above and append a linked type:change entry; route this plan through send-telegram-approval.sh for Suraj's approval before any live write."
   },
-  "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX": {
-    "id": "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) CPM anomaly - confirmed Lookalike-audience overlap with Loomiere | Broad Advantage+ | WhatsApp | India (52564598075780); recommend fixing the exclusion gap now, not waiting for the 11-10 launch-end review",
-    "follow_up": "media-buyer: validate and prepare a plan to exclude Lookalike audiences IN 1%/1-2%/2-3% from ad set 52564598075780 (Loomiere | Broad Advantage+ | WhatsApp | India); route via send-telegram-approval.sh for Suraj's approval before the live edit. No change proposed to 6862975169176."
-  },
   "KL-2026-11-02-CS-BUDGETCHECK": {
     "id": "KL-2026-11-02-CS-BUDGETCHECK",
     "date": "2026-11-02",
