@@ -440,13 +440,6 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
-  "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE": {
-    "id": "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE",
-    "date": "2026-10-31",
-    "type": "decision",
-    "subject": "Mouni Roy red/maroon halter gown (5 video items, no usable file) - disposition HOLD for ad use, but escalate sourcing to Suraj as worth actively pursuing",
-    "follow_up": "Send Suraj a plain FYI notification recommending active sourcing (contact @amigos.rizwan / @rishika_devnani / @eshawadhwa_ / @sejal.005 and/or the Johnnie Walker event organizers) for real photos/footage of the Mouni Roy red/maroon halter gown moment; re-review for ad use the moment any of the 5 items gets a fetchable file."
-  },
   "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC": {
     "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC",
     "date": "2026-10-31",
@@ -495,5 +488,12 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
+  },
+  "KL-2026-11-02-ugc-tags": {
+    "id": "KL-2026-11-02-ugc-tags",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "UGC tags sweep (2026-11-02, Monday twice-weekly review) - 5 new tagged items since the 2026-10-28 boundary, 1 strong repost+ad candidate (trisha___shetty, 1026 likes), 1 BTS sighting of unreleased product (abhishekgaikwadphotography), 1 third independent corroboration of the Mouni Roy gown story, 1 low-priority duplicate-subject item, plus a process gap (a 2026-10-20 item never previously surfaced)",
+    "follow_up": "trisha___shetty: repost plan drafted (KL-2026-11-02-trisha-repost-feed / -story) and handed to campaign-strategist for the five-way disposition call (KL-2026-11-02-CS-HANDOFF). abhishekgaikwadphotography BTS: flagged to campaign-strategist as an early sighting of an apparently unreleased product line, not a repost candidate itself. Mouni Roy gown: no new action, corroboration only. niharikabansal14 and the two crazy4mon items: noted, no further action. Next sweep boundary (by timestamp) is 18419038339082305 (2026-10-31T18:03:00); also worth occasionally re-scanning further back given the demonstrated pagination-ordering gap."
   }
 }
