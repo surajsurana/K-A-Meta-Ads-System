@@ -489,13 +489,6 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - zero enquiries 2026-10-30 to 11-02 is consistent with, not yet additive to, the existing flat-0%-serious pattern; recheck date is 2026-11-04, not today",
     "follow_up": "2026-11-04: re-pull cost/conv (Gold Sculpted vs Broad Advantage+) and lead quality per the already-stated criteria in KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD. No change before then."
   },
-  "KL-2026-11-02-CS-TRISHA-DISPOSITION": {
-    "id": "KL-2026-11-02-CS-TRISHA-DISPOSITION",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "@trisha___shetty carousel (instagram.com/p/DfKH7TagITw/, media 17987454984090291) - five-way UGC disposition, my own vision read performed directly",
-    "follow_up": "If APPROVE: (1) social-community-manager executes the feed+story repost plans already drafted (KL-2026-11-02-trisha-repost-feed/-story). (2) creative-copywriter attempts SKU identification against Shopify/Stitchflow, then briefs copy for a test ad in an existing evening/festive-relevant WhatsApp or IG-DM retargeting ad set; media-buyer validates and builds PAUSED, checks, then activates per guardrail 3 - comes back for its own build approval, this APPROVE does not itself spend anything."
-  },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
     "date": "2026-11-02",
@@ -537,5 +530,12 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (10 items) - thank-yous and 3 price/availability WhatsApp redirects on the 4 own posts since the last batch",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
+  },
+  "KL-2026-11-02-media-library": {
+    "id": "KL-2026-11-02-media-library",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "Daily Media Library check (2026-11-02) - 0 new manual uploads, 18 unreviewed instagram_auto items plus 1 re-review (edit-since-review); all triaged and marked reviewed, only 1 genuinely new actionable finding (stylebyanissa video with a real retained file)",
+    "follow_up": "Handing @stylebyanissa (4019860679456584776) to campaign-strategist as a fresh five-way disposition candidate - the one item this cycle not blocked by the no-video-file rule. All other items: no further action, already covered elsewhere."
   }
 }
