@@ -440,13 +440,6 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
-  "KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD": {
-    "id": "KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD",
-    "date": "2026-10-31",
-    "type": "decision",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - 2-week stop-rule checkpoint: NOT pausing today, extending to a confound-free window because the comparison window is genuinely confounded by the 2026-10-28 guardrail-15 targeting edit on BOTH compared ad sets",
-    "follow_up": "2026-11-04/05: re-pull cost/conv for Gold Sculpted vs Broad Advantage+ over the clean 2026-10-29 to 2026-11-04 window (both ad sets post-edit, no further confound in between unless a new one is introduced), plus a fresh lead-quality read for Gold Sculpted (watch for n growing past ~25-30 and whether serious-or-better moves off 0% or an order appears - an order counts for the ad however late it comes). PAUSE (route through media-buyer + Telegram approval) if, over that clean window, Gold Sculpted is still materially worse (~1.4x+) on cost/conv than Broad AND lead quality is still flat 0% serious-or-better with no orders. MAINTAIN/keep running if either cost converges meaningfully or quality shows any real movement (a serious-or-better enquiry or an order). Do not invent a different threshold at that point - use this one as pre-committed now, before seeing the 11-04 data."
-  },
   "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE": {
     "id": "KL-2026-10-31-CS-MOUNIROY-HOLD-ESCALATE",
     "date": "2026-10-31",
@@ -488,5 +481,12 @@
     "type": "decision",
     "subject": "Organic Instagram STORY LM-011 - Loomiere Brown Lace Corset With Drape Saree (1 image frame), scheduled 8:30 pm IST 2 Nov",
     "follow_up": "The top-level session sends the Telegram approval to Suraj (if the time changes, append a superseding decision entry instead of sending this one). After execution, marketing-lead logs type=change with the permalink, then the hosted post-LM-011_01.jpg may be deleted. Do not re-send if already executed or handled manually."
+  },
+  "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR": {
+    "id": "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR",
+    "date": "2026-11-02",
+    "type": "observation",
+    "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
+    "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
   }
 }
