@@ -237,13 +237,6 @@
     "subject": "KAFL027 Maroon Corset With Fishcut Lehenga zero-order-despite-spend finding RESOLVED - real Rs330,000 order landed 2026-10-10, days after the approved creative refresh ad 52559623294780 began staggered activation",
     "follow_up": "Continue standing 60-day tracking for KAFL027. One order is not yet a confirmed trend - if a second real order appears over the next few weeks while the refresh ad continues running, that would be a stronger confirming signal worth a campaign-strategist disposition maintain/scale; if no further orders appear, this remains a single data point, not proof the refresh fixed the pattern."
   },
-  "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC": {
-    "id": "KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE-EXEC",
-    "date": "2026-10-18",
-    "type": "change",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - activated per approved plan KL-2026-10-18-ML-CRIMSONBEADED-ACTIVATE",
-    "follow_up": "Run the 2-week messaging_conversation_started cost comparison against the Broad Advantage+ Rs82.10 baseline around 2026-11-01, per the approved plan rollback criteria. Also confirm ad 52562444656580 clears IN_PROCESS to ACTIVE on a routine check and does not come back DISAPPROVED/WITH_ISSUES."
-  },
   "KL-2026-10-20-SEO-CONVERSION-FINDINGS": {
     "id": "KL-2026-10-20-SEO-CONVERSION-FINDINGS",
     "date": "2026-10-20",
@@ -523,6 +516,13 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
+  },
+  "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED": {
+    "id": "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "Crimson Beaded (adset 52562444646780 / ad 52562444656580) 2-week due-now check vs Broad Advantage+ baseline",
+    "follow_up": "campaign-strategist: decide whether to keep running given cheap-but-currently-100%-junk enquiry read; consider another lead-quality pull once more volume/time has passed given small sample."
   },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
