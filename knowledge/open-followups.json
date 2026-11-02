@@ -475,6 +475,13 @@
     "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
     "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
   },
+  "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX": {
+    "id": "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) CPM anomaly - confirmed Lookalike-audience overlap with Loomiere | Broad Advantage+ | WhatsApp | India (52564598075780); recommend fixing the exclusion gap now, not waiting for the 11-10 launch-end review",
+    "follow_up": "media-buyer: validate and prepare a plan to exclude Lookalike audiences IN 1%/1-2%/2-3% from ad set 52564598075780 (Loomiere | Broad Advantage+ | WhatsApp | India); route via send-telegram-approval.sh for Suraj's approval before the live edit. No change proposed to 6862975169176."
+  },
   "KL-2026-11-02-CS-BUDGETCHECK": {
     "id": "KL-2026-11-02-CS-BUDGETCHECK",
     "date": "2026-11-02",
