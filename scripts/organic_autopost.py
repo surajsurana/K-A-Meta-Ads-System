@@ -29,7 +29,7 @@ Every decision here is made by plain code, never by an LLM:
 
 2026-11-02 (later): Suraj, via K&A Social Media: "lupta approves content and
 our system reads it and posts without me having to do anything". `sync`
-(daily cron, 00:07 IST - Suraj: no need to run every hour) reads the plan sheet itself: every row with Status "Approved"
+(cron 00:07, 13:07 and 18:07 IST - Suraj's choice, not hourly) reads the plan sheet itself: every row with Status "Approved"
 whose planned date/time is within 48 h is checked and scheduled; a changed
 date/time, caption or file set is cancelled and rescheduled; after posting
 the sheet gets Status "Posted" + the link. Anything that doesn't parse or
@@ -48,7 +48,7 @@ listener stays stdlib-only:
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py submit handoff.json   (or "-" for stdin)
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py publish <log-id>
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py cancel  <log-id>   (to move a post: cancel, then submit again)
-  ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py sync    -          (daily 00:07 IST cron; reads the plan sheet)
+  ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py sync    -          (cron 00:07/13:07/18:07 IST; reads the plan sheet)
 
 Hand-off JSON (written by the K&A Social Media session):
   {"plan_id": "LM-003", "type": "feed_carousel" | "feed_image" | "reel" | "story",
