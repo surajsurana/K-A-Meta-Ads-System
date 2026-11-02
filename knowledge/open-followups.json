@@ -475,6 +475,13 @@
     "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - add second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011), Rs0 budget change, build PAUSED then activate per guardrail 3",
     "follow_up": "marketing-lead executes this plan verbatim (build PAUSED, verify, activate in the same run per guardrail 3) once Suraj approves via Telegram. Daily heartbeat's new-ad watch reviews the new ad within 7 days of activation per the rollback criteria above."
   },
+  "KL-2026-11-02-011341": {
+    "id": "KL-2026-11-02-011341",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "UK Engaged 365D & Followers | Geo Test | 24th Aug 26 (52564305237780/52564305260180) - validated pause plan per campaign-strategist's PAUSE verdict",
+    "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52564305237780), then run the verification GETs above and append a linked type:change entry; route this plan through send-telegram-approval.sh for Suraj's approval before any live write."
+  },
   "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX": {
     "id": "KL-2026-11-02-CS-9THDEC-LOOKALIKE-OVERLAP-FIX",
     "date": "2026-11-02",
@@ -509,13 +516,6 @@
     "type": "decision",
     "subject": "@trisha___shetty carousel (instagram.com/p/DfKH7TagITw/, media 17987454984090291) - five-way UGC disposition, my own vision read performed directly",
     "follow_up": "If APPROVE: (1) social-community-manager executes the feed+story repost plans already drafted (KL-2026-11-02-trisha-repost-feed/-story). (2) creative-copywriter attempts SKU identification against Shopify/Stitchflow, then briefs copy for a test ad in an existing evening/festive-relevant WhatsApp or IG-DM retargeting ad set; media-buyer validates and builds PAUSED, checks, then activates per guardrail 3 - comes back for its own build approval, this APPROVE does not itself spend anything."
-  },
-  "KL-2026-11-02-CS-UKGEOTEST-PAUSEVERDICT": {
-    "id": "KL-2026-11-02-CS-UKGEOTEST-PAUSEVERDICT",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "UK Engaged 365D & Followers | Geo Test (52564305237780/52564305260180) - pre-committed 2026-11-02 recheck now resolved with genuine fresh data: PAUSE",
-    "follow_up": "media-buyer: prepare validated pause plan for ad set 52564305237780 (and its ad 52564305260180), route via send-telegram-approval.sh type:decision for Suraj approval before any live change."
   },
   "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
     "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
