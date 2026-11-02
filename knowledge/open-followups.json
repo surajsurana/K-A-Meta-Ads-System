@@ -356,13 +356,6 @@
     "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
     "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
   },
-  "KL-2026-10-29-CS-KAFL010POOL-RESUME": {
-    "id": "KL-2026-10-29-CS-KAFL010POOL-RESUME",
-    "date": "2026-10-29",
-    "type": "decision",
-    "subject": "Ad set 6862975169176 (India | Whatsapp | 9th Dec 25) staggered-activation sequence (KL-2026-10-19-CS-KAFL010POOL-ACTIVATIONSEQUENCE) - explicit RESUME with revised dates, not retired; stall closed",
-    "follow_up": "2026-11-01: confirm the 10-28 targeting change has a clean day-3+ read on this ad set, then route Metallic Coffee Brown activation (ad 52552969628580) to media-buyer for a validated plan, and explicitly re-assess pool composition (retire candidate: 52547120579980). 2026-11-06 (contingent on a clean MCB read): route Burnt Orange activation (ad 52552969630380) to media-buyer."
-  },
   "KL-2026-10-29-CS-NEWADWATCH-LOOMIEREABC-AUSTRALIA": {
     "id": "KL-2026-10-29-CS-NEWADWATCH-LOOMIEREABC-AUSTRALIA",
     "date": "2026-10-29",
@@ -502,6 +495,13 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
+  },
+  "KL-2026-11-02-PA-DUENOW-9THDEC-CPM": {
+    "id": "KL-2026-11-02-PA-DUENOW-9THDEC-CPM",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) day-3+ CPM read since 10-28 hard-women/Instagram-only targeting change - gates Metallic Coffee Brown activation",
+    "follow_up": "campaign-strategist: CPM still not normalized at day 6; Metallic Coffee Brown activation gate not cleared on a CPM basis. Decide whether the gate should instead wait on the lookalike-exclusion fix landing and recovering, rather than on this ad set's own restart settling."
   },
   "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED": {
     "id": "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED",
