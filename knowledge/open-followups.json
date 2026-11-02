@@ -419,12 +419,12 @@
     "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
     "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-11-02-AUSTRALIA-PAUSEPLAN": {
-    "id": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
+  "KL-2026-11-02-025605": {
+    "id": "KL-2026-11-02-025605",
     "date": "2026-11-02",
-    "type": "decision",
-    "subject": "First Love | Cold Prospecting | Australia (52562820202180/52562820223580) - validated pause plan per campaign-strategist's PAUSE verdict",
-    "follow_up": "marketing-lead to execute via POST (status=PAUSED on ad set 52562820202180), then run the verification GETs above and append a linked type:change entry; this plan is being routed through send-telegram-approval.sh for Suraj's approval before any live write."
+    "type": "observation",
+    "subject": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
+    "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-AUSTRALIA-PAUSEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
   "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM": {
     "id": "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM",
