@@ -447,6 +447,13 @@
     "subject": "Monday review 2026-11-02 - confirming social-community-manager's framing on the 2 supplementary Loomiere carousels and the BTS sighting; one correction (disposition status is stale, not pending)",
     "follow_up": "2026-11-03: media-buyer to plan the IG Engaged/Followers ad set's AD2 carousel (Burgundy Scalloped + Golden Petal) per the original build plan's pre-stated 7-day gap, still needing the AD3 Diwali-line copy fix before AD3 follows."
   },
+  "KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE": {
+    "id": "KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - PAUSE, pre-committed 2-week stop-rule has fired",
+    "follow_up": "Route to media-buyer: validate a pause plan for ad set 52562444646780 (and/or ad 52562444656580), send via send-telegram-approval.sh type:decision for Surajs approval before any live write."
+  },
   "KL-2026-11-02-CS-GOLDSCULPTED-WATCH": {
     "id": "KL-2026-11-02-CS-GOLDSCULPTED-WATCH",
     "date": "2026-11-02",
@@ -481,13 +488,6 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (52562820202180) re-check at 6 days live",
     "follow_up": "campaign-strategist: cost/conversation has doubled since the last check with zero new conversations in 4 days - decide whether this now clears whatever watch-flag bar was set, similar in shape to the UK Geo Test pattern that led to a pause verdict this morning."
-  },
-  "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED": {
-    "id": "KL-2026-11-02-PA-DUENOW-CRIMSONBEADED",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "Crimson Beaded (adset 52562444646780 / ad 52562444656580) 2-week due-now check vs Broad Advantage+ baseline",
-    "follow_up": "campaign-strategist: decide whether to keep running given cheap-but-currently-100%-junk enquiry read; consider another lead-quality pull once more volume/time has passed given small sample."
   },
   "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK": {
     "id": "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK",
