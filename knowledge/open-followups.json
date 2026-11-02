@@ -293,13 +293,6 @@
     "subject": "Odisha (~Rs86/day) and Uttarakhand (~Rs65/day) new zero-order-despite-spend candidates (KL-2026-10-26-PA-GEO-ODISHA-UTTARAKHAND-NEWCANDIDATE) - DISPOSITION: MAINTAIN with a tightened standing watch, same treatment the Bihar group originally got, not immediate exclusion",
     "follow_up": "Re-check Odisha and Uttarakhand spend-vs-orders at the very next review, not an extended gap. Escalate to exclusion if the trajectory matches the pattern that just resolved the Bihar group."
   },
-  "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED": {
-    "id": "KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED",
-    "date": "2026-10-26",
-    "type": "change",
-    "subject": "Executed KL-2026-10-26-011252 - excluded Bihar/Jharkhand/Assam/Jammu and Kashmir from 9 ad sets delivering into those states",
-    "follow_up": "Per the plan's own rollback criteria: performance-analyst should re-check at the next weekly review that Meta's region-breakdown insights show spend into these 4 states trending toward zero over the following 1-2 weeks, and that cost-per-conversation on the 9 touched ad sets (especially the 4 small-budget product Test ad sets, which had no prior targeting edit and may see a learning-phase reset) has not meaningfully worsened. Revert by removing only the 4 added regions from each ad set's excluded_geo_locations.regions, restoring each to its exact OLD value stated in the original plan's Step 3, if any rollback trigger fires."
-  },
   "KL-2026-10-26-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-26-PA-BLENDED-WINDOW",
     "date": "2026-10-26",
@@ -488,6 +481,13 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
+  },
+  "KL-2026-11-02-PA-BIHARGROUP-ROLLBACKCHECK": {
+    "id": "KL-2026-11-02-PA-BIHARGROUP-ROLLBACKCHECK",
+    "date": "2026-11-02",
+    "type": "outcome",
+    "subject": "Bihar/Jharkhand/Assam/J&K exclusion (KL-2026-10-26-ML-GEO-BIHARGROUP-EXCLUSION-EXECUTED) - rollback-window check: spend into the 4 states already at zero (pass); cost-per-conversation on 4 of 9 touched ad sets worsened meaningfully, but confounded by concurrent account-wide events in the same window",
+    "follow_up": "campaign-strategist: decide whether the 3 small-budget Test ad sets CPC rise needs its own disposition (separate from the geo exclusion, since the targeting-edit confound is the more likely driver) or should just continue riding the existing STEP1-C/STEP2-B recovery watch. No rollback of the geo exclusion itself is indicated by this data."
   },
   "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
