@@ -447,6 +447,13 @@
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - zero enquiries 2026-10-30 to 11-02 is consistent with, not yet additive to, the existing flat-0%-serious pattern; recheck date is 2026-11-04, not today",
     "follow_up": "2026-11-04: re-pull cost/conv (Gold Sculpted vs Broad Advantage+) and lead quality per the already-stated criteria in KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD. No change before then."
   },
+  "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM": {
+    "id": "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
+    "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
+  },
   "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME": {
     "id": "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME",
     "date": "2026-11-02",
@@ -460,13 +467,6 @@
     "type": "outcome",
     "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
     "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
-  },
-  "KL-2026-11-02-CS-LOOMIEREIGENGAGED-OVERLAP-DISPOSITION": {
-    "id": "KL-2026-11-02-CS-LOOMIEREIGENGAGED-OVERLAP-DISPOSITION",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "Loomiere IG Engaged 365D and Followers (52564357579980) shared-custom-audience overlap with India Whatsapp 9th Dec 25, India Insta Engaged, USA/Canada Engaged and UK Geo Test - ADDS a second, unaddressed overlap cause to the 9th Dec CPM diagnosis; no new live change today, extend the existing 11-04 day-7 watch to cover it",
-    "follow_up": "2026-11-04 day-7 watch amended: check India Insta Engaged spend fall over 30 percent (original trigger) AND 9th Dec 25 reach/CPM trend (new trigger added here). About 2026-11-07 to 11-09, aligned with the Lookalike-fix recovery checkpoint: if 9th Dec CPM has not recovered toward Rs66-78 baseline, propose excluding the 2 shared custom audiences (6320824170576, 6320824211776) from 9th Dec 25, not from ad set A, and route to media-buyer. No live change proposed today."
   },
   "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION": {
     "id": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
@@ -488,13 +488,6 @@
     "type": "observation",
     "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
     "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
-  "KL-2026-11-02-PA-INSTAENGAGED-FREQROLLBACK": {
-    "id": "KL-2026-11-02-PA-INSTAENGAGED-FREQROLLBACK",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "India Insta Engaged 365D & Followers budget trim (KL-2026-10-25-075257) - ~1-week rollback checkpoint: frequency eased under the 2.7x bar as hoped, holding at Rs1,750/day with one new confound flagged for context",
-    "follow_up": "campaign-strategist: confirm HOLD at Rs1,750/day per the eased-frequency reading, or flag if the absolute reach decline changes that call. See also KL-2026-11-02-PA-LOOMIEREIGENGAGED-AUDIENCE-OVERLAP (same cycle) - a new audience-sharing ad set on the identical custom-audience pool appeared the day after this trim landed and was not part of the original cannibalization check."
   },
   "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
