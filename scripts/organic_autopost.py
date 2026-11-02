@@ -27,6 +27,16 @@ Every decision here is made by plain code, never by an LLM:
   - At the scheduled time the Telegram listener's scheduler runs
     `publish <log-id>`; nothing else triggers it.
 
+2026-11-02 (later): Suraj, via K&A Social Media: "lupta approves content and
+our system reads it and posts without me having to do anything". `sync`
+(hourly cron) reads the plan sheet itself: every row with Status "Approved"
+whose planned date/time is within 48 h is checked and scheduled; a changed
+date/time, caption or file set is cancelled and rescheduled; after posting
+the sheet gets Status "Posted" + the link. Anything that doesn't parse or
+fails a check is never guessed at - a short note goes in the producer's
+column L instead. Rows already on Suraj-tapped plans (LM-010..013) are left
+to those plans. A post Suraj cancels by tap is never resubmitted.
+
 Known weakness Suraj accepted (2026-10-23): the agents work through Suraj's
 Google account, so a sheet cell or a Suraj-owned file is not proof that a
 human approved. Only Lupta-owned files are. The fallback, if anything goes
@@ -38,6 +48,7 @@ listener stays stdlib-only:
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py submit handoff.json   (or "-" for stdin)
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py publish <log-id>
   ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py cancel  <log-id>   (to move a post: cancel, then submit again)
+  ~/venvs/ka-autopost/bin/python3 scripts/organic_autopost.py sync    -          (hourly cron; reads the plan sheet)
 
 Hand-off JSON (written by the K&A Social Media session):
   {"plan_id": "LM-003", "type": "feed_carousel" | "feed_image" | "reel" | "story",
@@ -87,6 +98,10 @@ VIDEO_MIMES = ("video/quicktime", "video/mp4")
 FEED_MIN_RATIO = 0.74  # down to ~3:4 is trimmed to 4:5 (about 3% off top and bottom); taller stops
 OUT_WIDTH = 1080
 MAX_AHEAD = timedelta(days=14)
+SYNC_AHEAD = timedelta(hours=48)
+NOTE_TAG = "⚠ Auto-post: "
+FORMATS = {"carousel": "feed_carousel", "reel": "reel", "story": "story"}
+LIVE = ("scheduled", "publishing", "executed")
 MIN_AHEAD = timedelta(minutes=5)
 IST = timezone(timedelta(hours=5, minutes=30))
 
@@ -103,6 +118,10 @@ def load_handoff(path):
     else:
         with open(path, encoding="utf-8") as f:
             h = json.load(f)
+    return validate(h)
+
+
+def validate(h):
     problems = []
     pid = str(h.get("plan_id") or "").strip()
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{1,40}", pid):
@@ -151,7 +170,7 @@ def google():
         raise Stop("Google read access isn't set up yet (no service-account key on the droplet)")
     creds = service_account.Credentials.from_service_account_file(SA_FILE, scopes=[
         "https://www.googleapis.com/auth/drive.readonly",
-        "https://www.googleapis.com/auth/spreadsheets.readonly",
+        "https://www.googleapis.com/auth/spreadsheets",  # writes only Status/Posted link/our note (sync)
     ])
     return AuthorizedSession(creds)
 
@@ -457,7 +476,10 @@ def cmd_check(path):
 
 
 def cmd_submit(path):
-    spec = load_handoff(path)
+    submit_spec(load_handoff(path))
+
+
+def submit_spec(spec):
     pid = spec["plan_id"]
 
     def dup(state):
@@ -543,6 +565,10 @@ def cmd_publish(log_id):
         return
     L.finalize_status(log_id, "executed", permalink)
     try:
+        mark_posted(google(), pid, permalink)
+    except Exception as e:  # the hourly sync retries the write-back
+        L.log("organic_autopost: sheet write-back for {} failed: {}".format(pid, e))
+    try:
         L.tg_api(token_tg, "editMessageText", {"chat_id": chat_id, "message_id": entry.get("message_id"),
                  "text": "✅ Posted: {} {}\n\n{}\n\nPlan ID: {}".format(pid, describe(spec), permalink, log_id)})
     except Exception:
@@ -560,6 +586,10 @@ def cmd_publish(log_id):
 
 def cmd_cancel(log_id):
     """The content producer moved a post's date/time: stop the old schedule (same effect as Suraj's Cancel tap)."""
+    cancel(log_id, "Lupta changed its date/time")
+
+
+def cancel(log_id, why):
     def op(state):
         entry = state.get(log_id)
         if not entry or entry.get("executor") != "organic_autopost":
@@ -567,6 +597,7 @@ def cmd_cancel(log_id):
         if entry.get("status") != "scheduled":
             return None, "already " + str(entry.get("status"))
         entry["status"] = "cancelled"
+        entry["moved"] = True  # not Suraj's tap: sync may schedule this post again
         entry["resolved_at"] = datetime.now(timezone.utc).isoformat()
         state[log_id] = entry
         return state, "cancelled"
@@ -577,26 +608,256 @@ def cmd_cancel(log_id):
     token, chat_id = L.load_telegram_config()
     try:
         L.tg_api(token, "editMessageText", {"chat_id": chat_id, "message_id": entry.get("message_id"), "text":
-                 "↪️ Moved: {} was taken off {} because Lupta changed its date/time. The new slot follows.\n\nPlan ID: {}".format(
-                     entry.get("organic_plan_id"), when_text(entry["scheduled_for"]), log_id)})
+                 "↪️ Taken off {}: {} ({}). Any new slot comes as a new message.\n\nPlan ID: {}".format(
+                     when_text(entry["scheduled_for"]), entry.get("organic_plan_id"), why, log_id)})
     except Exception:
         pass
     append_log({"id": log_id + "-CANCELLED", "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                 "actor": "organic-autopost", "type": "observation",
                 "subject": "Organic Instagram post " + str(entry.get("organic_plan_id")),
-                "summary": "Scheduled organic post cancelled before publishing (content producer changed its date/time); "
-                           "nothing was posted.", "source": "human_told", "confidence": "high", "linked_to": [log_id],
+                "summary": "Scheduled organic post cancelled before publishing ({}); nothing was posted.".format(why),
+                "source": "measured", "confidence": "high", "linked_to": [log_id],
                 "tags": ["organic-post", "auto-publish", "cancelled"]})
     print(json.dumps({"status": "cancelled", "log_id": log_id}))
 
 
+# --- sync: read the plan sheet, schedule / move / write back -------------------
+
+def col_letter(i):
+    return chr(ord("A") + i)
+
+
+def read_plan(s):
+    r = s.get("https://sheets.googleapis.com/v4/spreadsheets/{}/values/{}".format(
+        SHEET_ID, urllib.parse.quote(SHEET_TAB)), timeout=30)
+    if r.status_code != 200:
+        raise Stop("can't read the plan sheet ({})".format(r.status_code))
+    rows = r.json().get("values") or []
+    header = [str(c).strip().lower() for c in (rows[0] if rows else [])]
+
+    def col(prefix):
+        for i, h in enumerate(header):
+            if h.startswith(prefix):
+                return i
+        raise Stop('the plan sheet has no "{}" column'.format(prefix))
+    cols = {"id": col("id"), "date": col("planned date"), "time": col("planned time"), "format": col("format"),
+            "caption": col("caption"), "hashtags": col("hashtags"), "status": col("status"),
+            "notes": col("content producer notes"), "link": col("posted link")}
+    out = []
+    for n, row in enumerate(rows[1:], start=2):
+        cell = {k: (str(row[i]) if i < len(row) else "") for k, i in cols.items()}
+        cell["row"] = n
+        out.append(cell)
+    return cols, out
+
+
+def write_cells(s, updates):
+    """updates: [(A1 range, value)]. Needs the service account to be an editor of the sheet."""
+    if not updates:
+        return
+    body = {"valueInputOption": "RAW", "data": [{"range": "{}!{}".format(SHEET_TAB, a1), "values": [[v]]}
+                                                 for a1, v in updates]}
+    r = s.post("https://sheets.googleapis.com/v4/spreadsheets/{}/values:batchUpdate".format(SHEET_ID),
+               json=body, timeout=30)
+    if r.status_code != 200:
+        raise RuntimeError("sheet write failed ({}): {}".format(r.status_code, r.text[:200]))
+
+
+def mark_posted(s, pid, permalink):
+    cols, rows = read_plan(s)
+    for row in rows:
+        if row["id"].strip() == pid:
+            ups = [] if row["status"].strip().lower() == "posted" else [
+                ("{}{}".format(col_letter(cols["status"]), row["row"]), "Posted")]
+            if row["link"].strip() != permalink:
+                ups.append(("{}{}".format(col_letter(cols["link"]), row["row"]), permalink))
+            n = note_value(row["notes"], "")
+            if n is not None:
+                ups.append(("{}{}".format(col_letter(cols["notes"]), row["row"]), n))
+            write_cells(s, ups)
+            return
+
+
+def safe_mark(s, pid, permalink):
+    try:
+        mark_posted(s, pid, permalink)
+        return True
+    except Exception as e:  # e.g. the service account is still read-only on the sheet
+        L.log("organic_autopost sync: couldn't mark {} Posted: {}".format(pid, e))
+        return False
+
+
+def note_value(current, problem):
+    """Column L belongs to the producer: only our own tagged part is added, changed or removed.
+    Returns the new cell text, or None when nothing needs writing."""
+    current = current or ""
+    i = current.find(NOTE_TAG)
+    theirs = (current[:i] if i >= 0 else current).rstrip(" |")
+    ours = (NOTE_TAG + problem) if problem else ""
+    new = " | ".join(x for x in (theirs, ours) if x)
+    return None if new == current else new
+
+
+def parse_when(date_s, time_s):
+    d = re.fullmatch(r"\s*(\d{1,2})/(\d{1,2})/(\d{4})\s*", date_s or "")
+    t = re.fullmatch(r"\s*(\d{1,2})(?:[.:](\d{2}))?\s*([ap])\.?\s*m\.?\s*", (time_s or "").lower())
+    if not d:
+        raise Stop('planned date "{}" isn\'t like 7/11/2026'.format(date_s))
+    if not t:
+        raise Stop('planned time "{}" isn\'t like 5.30 pm'.format(time_s))
+    hour, minute = int(t.group(1)), int(t.group(2) or 0)
+    if not (1 <= hour <= 12 and minute < 60):
+        raise Stop('planned time "{}" isn\'t a real time'.format(time_s))
+    hour = hour % 12 + (12 if t.group(3) == "p" else 0)
+    try:
+        return datetime(int(d.group(3)), int(d.group(2)), int(d.group(1)), hour, minute, tzinfo=IST)
+    except ValueError:
+        raise Stop('planned date "{}" isn\'t a real date'.format(date_s))
+
+
+def build_spec(row, files_04):
+    pid = row["id"].strip()
+    when = parse_when(row["date"], row["time"])
+    fmt = FORMATS.get(row["format"].strip().lower())
+    if not fmt:
+        raise Stop('format "{}" isn\'t Carousel, Reel or Story'.format(row["format"].strip()))
+    files = sorted((f for f in files_04 if f["name"].startswith(pid + "_")), key=lambda f: f["name"])
+    if not files:
+        raise Stop("no files named {}_01... in 04 Approved".format(pid))
+    if fmt == "feed_carousel" and len(files) == 1:
+        fmt = "feed_image"
+    caption = row["caption"].strip()
+    if row["hashtags"].strip():
+        caption += "\n\n" + row["hashtags"].strip()
+    spec = {"plan_id": pid, "type": fmt, "drive_file_ids": [f["id"] for f in files],
+            "scheduled_for": when.isoformat(), "approval": APPROVAL_MARK}
+    if fmt != "story":
+        spec["caption"] = caption
+    return spec, when
+
+
+def list_04(s):
+    out, token = [], None
+    while True:
+        params = {"q": "'{}' in parents and trashed = false".format(FOLDER_04), "pageSize": 200,
+                  "fields": "nextPageToken,files(id,name)", "supportsAllDrives": "true",
+                  "includeItemsFromAllDrives": "true"}
+        if token:
+            params["pageToken"] = token
+        r = s.get("https://www.googleapis.com/drive/v3/files", params=params, timeout=30)
+        if r.status_code != 200:
+            raise Stop("can't list 04 Approved ({})".format(r.status_code))
+        out += r.json().get("files", [])
+        token = r.json().get("nextPageToken")
+        if not token:
+            return out
+
+
+def tap_route_ids(state):
+    """IDs already on a Suraj-tapped plan (e.g. KL-2026-11-01-LM010-NOV02-1800): left to that plan."""
+    ids = {}
+    for k, e in state.items():
+        m = re.search(r"-LM-?(\d{3})-", k)
+        if m and e.get("executor") != "organic_autopost" and e.get("status") not in ("cancelled", "rejected"):
+            ids["LM-" + m.group(1)] = (k, e)
+    return ids
+
+
+def same_post(entry_spec, spec):
+    keys = ("type", "drive_file_ids", "caption", "scheduled_for")
+    return all(entry_spec.get(k) == spec.get(k) for k in keys)
+
+
+def cmd_sync(_):
+    s = google()
+    cols, rows = read_plan(s)
+    files_04 = list_04(s)
+    state = L.with_state_lock(lambda st: (None, dict(st)))
+    tap = tap_route_ids(state)
+    auto = {}
+    for k, e in sorted(state.items(), key=lambda kv: kv[1].get("sent_at", "")):
+        if e.get("executor") == "organic_autopost":
+            auto.setdefault(e.get("organic_plan_id"), []).append((k, e))
+    now = datetime.now(timezone.utc)
+    notes, done = [], []
+    seen = set()
+    for row in rows:
+        pid = row["id"].strip()
+        if not pid or pid in seen:
+            continue
+        seen.add(pid)
+        status = row["status"].strip().lower()
+        entries = auto.get(pid, [])
+        live = [(k, e) for k, e in entries if e.get("status") in LIVE]
+        problem = ""
+        try:
+            if pid in tap:
+                k, e = tap[pid]
+                url = re.search(r"https://www\.instagram\.com/\S+?/(?=[\s,.)]|$)", e.get("detail") or "")
+                if e.get("status") == "executed" and url and status != "posted":
+                    if safe_mark(s, pid, url.group(0)):
+                        done.append(pid + " (tap plan) marked Posted")
+                continue
+            executed = [(k, e) for k, e in live if e.get("status") == "executed"]
+            if executed:
+                if status != "posted":
+                    if safe_mark(s, pid, executed[-1][1].get("detail", "")):
+                        done.append(pid + " marked Posted")
+                continue
+            scheduled = [(k, e) for k, e in live if e.get("status") == "scheduled"]
+            if status != "approved":
+                for k, _ in scheduled:  # Hold / Changes needed after scheduling: take it off now
+                    cancel(k, 'the sheet now says "{}"'.format(row["status"].strip() or "blank"))
+                    done.append("{} cancelled ({})".format(pid, row["status"].strip() or "blank"))
+                continue
+            if any(e.get("status") == "publishing" for _, e in live):
+                continue
+            if any(e.get("status") in ("failed", "stopped") for _, e in entries[-1:]):
+                problem = "the last try didn't post; check Instagram, then tell Suraj before it's retried"
+                continue
+            if any(e.get("status") == "cancelled" and not e.get("moved") for _, e in entries[-1:]):
+                problem = "Suraj cancelled this post; it won't be scheduled again unless he says so"
+                continue
+            spec, when = build_spec(row, files_04)
+            if scheduled:
+                k, e = scheduled[-1]
+                if same_post(e.get("spec", {}), spec):
+                    continue
+                cancel(k, "Lupta changed it in the sheet")
+                done.append(pid + " moved/updated")
+            if when > now + SYNC_AHEAD:
+                continue
+            if when < now + MIN_AHEAD:
+                problem = "the planned time {} has passed and it wasn't posted; set a new date/time".format(
+                    when.strftime("%d/%m %I.%M %p").lower())
+                continue
+            submit_spec(validate(dict(spec)))
+            done.append("{} scheduled for {}".format(pid, when_text(spec["scheduled_for"])))
+        except Stop as e:
+            problem = str(e)
+        finally:
+            if pid not in tap:
+                n = note_value(row["notes"], problem)
+                if n is not None:
+                    notes.append(("{}{}".format(col_letter(cols["notes"]), row["row"]), n))
+    try:
+        write_cells(s, notes)
+    except Exception as e:
+        L.log("organic_autopost sync: couldn't write notes: {}".format(e))
+    for d in done:
+        L.log("organic_autopost sync: " + d)
+    print(json.dumps({"done": done, "notes": [v for _, v in notes]}, ensure_ascii=False))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=("check", "submit", "publish", "cancel"))
-    ap.add_argument("target", help="hand-off JSON file (check/submit) or log id (publish/cancel)")
+    ap.add_argument("command", choices=("check", "submit", "publish", "cancel", "sync"))
+    ap.add_argument("target", nargs="?", default="-",
+                    help="hand-off JSON file (check/submit) or log id (publish/cancel)")
     a = ap.parse_args()
     try:
-        {"check": cmd_check, "submit": cmd_submit, "publish": cmd_publish, "cancel": cmd_cancel}[a.command](a.target)
+        {"check": cmd_check, "submit": cmd_submit, "publish": cmd_publish, "cancel": cmd_cancel,
+         "sync": cmd_sync}[a.command](a.target)
     except Stop as e:
         print("STOPPED: " + str(e))
         sys.exit(1)
