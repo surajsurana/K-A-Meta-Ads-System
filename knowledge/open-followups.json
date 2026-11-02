@@ -412,13 +412,6 @@
     "subject": "scripts/send-telegram-approval-repost-choice.sh fails with BUTTON_DATA_INVALID on long descriptive plan ids",
     "follow_up": "Fix scripts/send-telegram-approval-repost-choice.sh (or telegram_approval_listener.py handle_paired_callback_query) to use a short opaque token for the combined Reject/Hold buttons instead of encoding both full plan ids directly, so this does not recur whenever a repost-choice pair happens to use longer descriptive ids."
   },
-  "KL-2026-10-30-044054": {
-    "id": "KL-2026-10-30-044054",
-    "date": "2026-10-30",
-    "type": "observation",
-    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
-    "follow_up": "re-check 2026-11-02: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-10-30-CS-AUSTRALIA-WATCHFLAG": {
     "id": "KL-2026-10-30-CS-AUSTRALIA-WATCHFLAG",
     "date": "2026-10-30",
