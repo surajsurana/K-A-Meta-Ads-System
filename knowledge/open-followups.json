@@ -454,6 +454,13 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test | India (ad set 52562444646780, ad 52562444656580) - PAUSE, pre-committed 2-week stop-rule has fired",
     "follow_up": "Route to media-buyer: validate a pause plan for ad set 52562444646780 (and/or ad 52562444656580), send via send-telegram-approval.sh type:decision for Surajs approval before any live write."
   },
+  "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD": {
+    "id": "KL-2026-11-02-CS-CUTOUTREVEAL-ROLLBACK-CONFOUNDED-HOLD",
+    "date": "2026-11-02",
+    "type": "decision",
+    "subject": "Cut Out to Reveal rollback check (ad 52547120422780, First Love | Broad Advantage+ | India, ad set 52535906903180) - do NOT reactivate on todays mechanical rollback read; the comparison is confounded by a known concurrent event on this same ad set",
+    "follow_up": "No live change now (ad stays paused, as it already is - no reactivation sent to media-buyer). Re-run this rollback comparison once First Love | Broad Advantage+s own CPM has demonstrably stabilized post-10-28 restart (watch alongside its sibling recovery, currently Rs350->231 and still moving) - target re-check ~2026-11-06 to 11-09, using a comparison window that starts after the restart has settled rather than one that straddles it."
+  },
   "KL-2026-11-02-CS-GOLDSCULPTED-WATCH": {
     "id": "KL-2026-11-02-CS-GOLDSCULPTED-WATCH",
     "date": "2026-11-02",
@@ -488,13 +495,6 @@
     "type": "outcome",
     "subject": "First Love | Cold Prospecting | Australia (52562820202180) re-check at 6 days live",
     "follow_up": "campaign-strategist: cost/conversation has doubled since the last check with zero new conversations in 4 days - decide whether this now clears whatever watch-flag bar was set, similar in shape to the UK Geo Test pattern that led to a pause verdict this morning."
-  },
-  "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK": {
-    "id": "KL-2026-11-02-PA-DUENOW-CUTOUTROLLBACK",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "Cut Out to Reveal rollback check (First Love | Broad Advantage+ | India, adset 52535906903180) - due exactly 2026-11-02 (7 full days post-pause)",
-    "follow_up": "campaign-strategist: rollback rule's trigger condition appears to have fired (cost/conv up 40-76% depending on baseline used, AND serious-or-better crashed to 2%) - decide whether to reactivate ad 52547120422780 per the pre-committed rule."
   },
   "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO": {
     "id": "KL-2026-11-02-PA-DUENOW-LAVENDERSOLO",
