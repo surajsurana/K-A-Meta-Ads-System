@@ -447,13 +447,6 @@
     "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
     "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
   },
-  "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME": {
-    "id": "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - Metallic Coffee Brown activation gate reframed around the pending Lookalike-overlap fix; KAFL018 Barbie Pink zero-spend anomaly folded into same pool-composition checkpoint; retirement look at Youve Seen the Corsets deferred",
-    "follow_up": "performance-analyst: pull effective_status/issues_info/delivery_info for the KAFL018 Barbie Pink Refresh ad in 6862975169176 now (read-only). ~2026-11-05/11-06 (contingent on the Lookalike-overlap fix executing and showing 2-3 clean recovery days): combined pool-composition review - (1) route Metallic Coffee Brown activation to media-buyer if CPM has recovered, (2) decide the Youve Seen the Corsets retirement question with a fresh look, (3) resolve the Barbie Pink zero-spend anomaly using the diagnostic pulled today."
-  },
   "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH": {
     "id": "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH",
     "date": "2026-11-02",
@@ -488,6 +481,13 @@
     "type": "observation",
     "subject": "staff_replied feed break now 14 calendar days old (since 2026-10-20), predicted WATI self-heal did not occur on second check either - escalating to AISI per KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR follow_up",
     "follow_up": "Notify AI Sales Intelligence session directly that staff_replied has now been broken 14 calendar days (13 confirmed), their own 1 Nov self-heal prediction has failed on two separate post-deadline checks, and this needs a root-cause fix rather than another self-heal wait cycle. Re-run this same check next scheduled pull regardless; stop assuming self-heal until AISI confirms an actual fix shipped. KL-2026-10-25-085556 build-into-script work remains outstanding and un-scheduled - flag again at next pass if still not built."
+  },
+  "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK": {
+    "id": "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK",
+    "date": "2026-11-03",
+    "type": "observation",
+    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, adset 6862975169176) - fresh GET shows status=PAUSED/effective_status=PAUSED, not ACTIVE as the standing follow-up assumed; the ad has in fact been paused continuously since the 2026-10-22 quality revert, not newly stuck",
+    "follow_up": "campaign-strategist: fold this correction into the ~2026-11-05/11-06 combined pool-composition review in place of the original zero-spend-anomaly framing - the real open question for that review is whether/when to reactivate KAFL018 Barbie Pink Refresh (paused since 2026-10-22 on a lead-quality SOS), not a delivery bug to fix."
   },
   "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ": {
     "id": "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ",
