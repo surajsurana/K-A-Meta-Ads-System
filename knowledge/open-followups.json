@@ -370,13 +370,6 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
-  "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC": {
-    "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC",
-    "date": "2026-10-31",
-    "type": "change",
-    "subject": "Executed Instagram-only placement restriction on First Love | Interest Stack (geo only, interests TBD) | India (52535906794980)",
-    "follow_up": "2026-11-03 day-3 check (publisher_platform breakdown, delivery, cost/conversation vs 7d baseline). After 2026-11-07: serious-enquiry check vs pre-edit baseline. Watch 3-4 days before proposing any further gradual-fix step."
-  },
   "KL-2026-10-31-SCM-AMBIGUOUS-5TH": {
     "id": "KL-2026-10-31-SCM-AMBIGUOUS-5TH",
     "date": "2026-10-31",
@@ -495,5 +488,12 @@
     "type": "observation",
     "subject": "staff_replied feed break now 14 calendar days old (since 2026-10-20), predicted WATI self-heal did not occur on second check either - escalating to AISI per KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR follow_up",
     "follow_up": "Notify AI Sales Intelligence session directly that staff_replied has now been broken 14 calendar days (13 confirmed), their own 1 Nov self-heal prediction has failed on two separate post-deadline checks, and this needs a root-cause fix rather than another self-heal wait cycle. Re-run this same check next scheduled pull regardless; stop assuming self-heal until AISI confirms an actual fix shipped. KL-2026-10-25-085556 build-into-script work remains outstanding and un-scheduled - flag again at next pass if still not built."
+  },
+  "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ": {
+    "id": "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ",
+    "date": "2026-11-03",
+    "type": "outcome",
+    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
+    "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
   }
 }
