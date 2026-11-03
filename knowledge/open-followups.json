@@ -482,13 +482,6 @@
     "subject": "Loomiere asked-to-visit-or-trial mislabeling bug (rules-v3 fix not yet live, feed still reports rules_version rules-v2) now accounts for 100% of all serious-or-better labels account-wide in the 2026-10-30 to 2026-11-02 reporting window, not just the 3 Loomiere ads flagged on 2026-10-29",
     "follow_up": "Do not read Loomiere ad sets' serious% or cost-per-serious at face value until feed.rules_version shows rules-v3 live; re-check reason_code mix on the 3 Loomiere ads once it does. Campaign-strategist should treat the 7 gender/placement-fix ad sets' quality this window as unresolved - small samples (0-17) outside Loomiere, inflated and unusable within Loomiere."
   },
-  "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR": {
-    "id": "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
-    "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
   "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
     "date": "2026-11-02",
@@ -502,5 +495,12 @@
     "type": "observation",
     "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 5th consecutive cycle (escalation threshold reached), @social_cravings a 3rd",
     "follow_up": "aesana0710: escalating directly to Suraj this cycle (15 days unreplied, 5th consecutive flag) rather than only re-logging - needs a human with DM access to check whether a genuine prior DM thread exists before any public reply is drafted. social_cravings: continue checking status next cycle (3rd cycle, not yet at the escalation threshold). No plan drafted for either comment."
+  },
+  "KL-2026-11-03-LQ-STAFFREPLIED-ESCALATE-AISI": {
+    "id": "KL-2026-11-03-LQ-STAFFREPLIED-ESCALATE-AISI",
+    "date": "2026-11-03",
+    "type": "observation",
+    "subject": "staff_replied feed break now 14 calendar days old (since 2026-10-20), predicted WATI self-heal did not occur on second check either - escalating to AISI per KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR follow_up",
+    "follow_up": "Notify AI Sales Intelligence session directly that staff_replied has now been broken 14 calendar days (13 confirmed), their own 1 Nov self-heal prediction has failed on two separate post-deadline checks, and this needs a root-cause fix rather than another self-heal wait cycle. Re-run this same check next scheduled pull regardless; stop assuming self-heal until AISI confirms an actual fix shipped. KL-2026-10-25-085556 build-into-script work remains outstanding and un-scheduled - flag again at next pass if still not built."
   }
 }
