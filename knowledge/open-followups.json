@@ -503,13 +503,6 @@
     "subject": "Loomiere launch video check 2026-11-04 - 1 genuinely new solo Reel found, SKU already confirmed but this video_id not yet used in any ad",
     "follow_up": "New finding to hand to the user/pipeline: video 18351181927254071 (reel https://www.instagram.com/reel/DfR2a3lyFmD/, posted 2026-11-03T12:10:06), solo Reel of SKU KA-231026-008 Bottle Green Lace Halter Neck Corset With Drape Skirt & Stole, worn by @prakritikakar, not yet in any ad. Launch budget window runs through 2026-11-10 (KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET) - worth routing to creative-copywriter to brief, then media-buyer to build, then Telegram approval, per the normal pipeline. Next daily check boundary: 18351181927254071 (2026-11-03T12:10:06)."
   },
-  "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION": {
-    "id": "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION",
-    "date": "2026-11-04",
-    "type": "decision",
-    "subject": "Monthly strategic review for November never ran at all — collided with weekly-review's shared run lock on the 2nd (a Monday), failed after the default 300s wait with no retry, no fallback",
-    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/run-monthly-review.sh, syntax-check it (bash -n), commit+push. Once live, the November monthly strategic review still needs to be run manually (next interactive session, or wait for December's scheduled run) since this fix only prevents the collision going forward - it does not retroactively run the missed November review."
-  },
   "KL-2026-11-04-media-library": {
     "id": "KL-2026-11-04-media-library",
     "date": "2026-11-04",
