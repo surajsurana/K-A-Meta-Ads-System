@@ -454,13 +454,6 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
     "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
   },
-  "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
-    "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "Loomiere launch video check 2026-11-02 - no genuinely new video beyond what is already known/handed off",
-    "follow_up": "Next daily check boundary: 18167082763492162 (2026-10-31T14:15:24). No action needed."
-  },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
     "date": "2026-11-02",
@@ -502,6 +495,13 @@
     "type": "outcome",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
+  },
+  "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK": {
+    "id": "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK",
+    "date": "2026-11-04",
+    "type": "observation",
+    "subject": "Loomiere launch video check 2026-11-04 - 1 genuinely new solo Reel found, SKU already confirmed but this video_id not yet used in any ad",
+    "follow_up": "New finding to hand to the user/pipeline: video 18351181927254071 (reel https://www.instagram.com/reel/DfR2a3lyFmD/, posted 2026-11-03T12:10:06), solo Reel of SKU KA-231026-008 Bottle Green Lace Halter Neck Corset With Drape Skirt & Stole, worn by @prakritikakar, not yet in any ad. Launch budget window runs through 2026-11-10 (KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET) - worth routing to creative-copywriter to brief, then media-buyer to build, then Telegram approval, per the normal pipeline. Next daily check boundary: 18351181927254071 (2026-11-03T12:10:06)."
   },
   "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION": {
     "id": "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION",
