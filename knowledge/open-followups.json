@@ -475,12 +475,12 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
   },
-  "KL-2026-11-04-072955": {
-    "id": "KL-2026-11-04-072955",
+  "KL-2026-11-04-EXEC-KAFL007-PAUSED": {
+    "id": "KL-2026-11-04-EXEC-KAFL007-PAUSED",
     "date": "2026-11-04",
-    "type": "decision",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - ad set 52562110311980 ACTIVE->PAUSED execution plan",
-    "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh KL-2026-11-04-072955 (guardrail 13 - this is an unattended/heartbeat-triggered run, no live write without a verified Telegram approval landing in a real conversation). Upon approval, marketing-lead executes verbatim per this plan's exact field changes, runs the stated verification steps, and logs a separate type=change entry linked to this plan id."
+    "type": "change",
+    "subject": "First Love ad set 52562110311980 (Gold Sculpted, KAFL007) and its ad 52562110511780 paused per approved plan",
+    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan built on new independent evidence (a real Stitchflow order for KAFL007 placed since this pause, or a materially different lead-quality signal that did not exist at pause time)."
   },
   "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO": {
     "id": "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO",
