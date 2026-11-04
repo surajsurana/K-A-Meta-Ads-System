@@ -509,5 +509,12 @@
     "type": "decision",
     "subject": "Monthly strategic review for November never ran at all — collided with weekly-review's shared run lock on the 2nd (a Monday), failed after the default 300s wait with no retry, no fallback",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/run-monthly-review.sh, syntax-check it (bash -n), commit+push. Once live, the November monthly strategic review still needs to be run manually (next interactive session, or wait for December's scheduled run) since this fix only prevents the collision going forward - it does not retroactively run the missed November review."
+  },
+  "KL-2026-11-04-media-library": {
+    "id": "KL-2026-11-04-media-library",
+    "date": "2026-11-04",
+    "type": "observation",
+    "subject": "Daily Media Library check (2026-11-04) - 0 unreviewed manual uploads, 0 unreviewed instagram_auto items, 0 re-reviews, but a real gap found: 7 items silently dropped on 2026-11-02/11-03 nightly collector runs due to low disk space, with zero retained record of what they were",
+    "follow_up": "Needs a human/infra decision, not a Media Library triage call: free disk space on the droplet (currently 893MB free, under the 1GB floor the collector needs) so instagram_collect.py stops dropping items. Until that happens, any Story/tag/hashtag content posted on nights the droplet is this full is permanently lost to this pipeline with zero trace of what it was. Reporting to the user directly rather than queuing a repost/ad plan, since there is nothing to triage - the content itself was never captured."
   }
 }
