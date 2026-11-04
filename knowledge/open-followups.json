@@ -461,6 +461,13 @@
     "subject": "Built + activated 1 new ad (Loomière | Bottle Green Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-11-04-020204",
     "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation and propose a pause through the normal approval path per the plan's own rollback criteria (0 conversations after Rs800 spend attributed to it, or cost per conversation >2x the trailing average of the 2 existing ads after Rs1,200 combined ad-set spend, or visibly starving either existing ad's delivery). No other action pending."
   },
+  "KL-2026-11-04-PA-SALESTARGET-2026-12": {
+    "id": "KL-2026-11-04-PA-SALESTARGET-2026-12",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Suggested December 2026 sales target: CONFIRM FY-derived 64 orders / Rs64 lakh, unchanged (confirmation-only, no Meta change)",
+    "follow_up": "Next monthly review: compare Decembers actual against this target once available; re-run this same re-spread check with Novembers final actual added, and revisit the Jan-Mar split if Octobers cushion compounds with further overshoot rather than reverting to normal pace."
+  },
   "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT": {
     "id": "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT",
     "date": "2026-11-04",
