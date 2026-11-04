@@ -97,13 +97,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-02-010900": {
-    "id": "KL-2026-10-02-010900",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
-    "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
-  },
   "KL-2026-10-02-ROLLUPBUG-EXEC": {
     "id": "KL-2026-10-02-ROLLUPBUG-EXEC",
     "date": "2026-10-02",
@@ -453,6 +446,13 @@
     "type": "decision",
     "subject": "Meta platform intelligence - on-device Pixel conversion measurement activates 2026-11-12, switched on by default; attributed website-conversion numbers may rise around that date without any real performance change - flag to performance-analyst as an interpretation caution, not a live-account action",
     "follow_up": "performance-analyst: when reviewing any date range starting on or after 2026-11-12 for website-conversion/retargeting campaigns, note explicitly whether an observed lift coincides with this measurement change before treating it as a real performance signal; campaign-strategist: do not use a post-11-12 ROAS/conversion jump alone to justify a budget increase or to avoid a pending rollback without this caveat stated."
+  },
+  "KL-2026-11-04-043250": {
+    "id": "KL-2026-11-04-043250",
+    "date": "2026-11-04",
+    "type": "observation",
+    "subject": "Meta platform intelligence - Instant Forms qualification features (conditional logic, SMS OTP verification, work-email filter, in-form AI agent, new 'Website and Instant Forms' default) - new context for the still-open Lead Ads proposal KL-2026-08-20-063100, not re-proposed from scratch",
+    "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface conditional-logic/work-email-filter as a concrete answer to open question (b) on qualifying-question design, alongside last cycle's appointment-booking answer to question (a). Question (c) (who monitors/follows up) remains unanswered by any platform feature and still needs a direct decision."
   },
   "KL-2026-11-04-EXEC-KAFL007-PAUSED": {
     "id": "KL-2026-11-04-EXEC-KAFL007-PAUSED",
