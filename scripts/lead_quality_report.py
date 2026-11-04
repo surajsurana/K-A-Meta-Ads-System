@@ -35,7 +35,9 @@ REPO = os.environ.get("KA_REPO") or os.path.dirname(os.path.dirname(os.path.absp
 HOME_DIR = os.path.expanduser("~/ka-meta-ads")
 SECRET_FILE = os.path.join(HOME_DIR, "aisi_feed_secret.txt")
 OUT_DIR = os.path.join(HOME_DIR, "lead-quality")
-FEED_URL = "https://stitchflow.in/api/ai-sales-intelligence/webhooks/ad-lead-quality/ka-internal"
+# AISI's own server since the 1 Nov cutover (switched 2026-11-04): the
+# stitchflow.in copy stopped at 2026-11-01 15:44 UTC and still ran rules-v2.
+FEED_URL = "https://aisi.bluethreadai.in/api/ai-sales-intelligence/webhooks/ad-lead-quality/ka-internal"
 GRAPH = "https://graph.facebook.com/v21.0"
 ACCOUNT = "act_686170454752172"
 LABELS = ("junk", "browsing", "serious", "converted")
