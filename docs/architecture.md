@@ -280,6 +280,35 @@ Suraj: "should we set a sales target and make it an important factor to consider
 - **campaign-strategist** makes the call — extends its existing Budget Policy (§3a) and geographic intelligence (§3c) ownership, not a new responsibility area. Decides each review whether to propose more budget (a ceiling raise, a launch budget, or a new-geo test) using the rules above, and states it like any portfolio allocation call (current total / proposed / resulting total / reasoning).
 - **media-buyer** validates any resulting plan (including its standard independent budget-ceiling re-check, hard rule 6) before it reaches Suraj for approval.
 
+## 3f. Winners, fair-chance pauses and budget size, per country (added 2026-11-04)
+
+Suraj, 2026-11-04: ads were doing well by the system's own numbers, but no review ever proposed scaling an existing ad set, because §3e asks "should the total go up" across the whole account, and one unsettled ad set blocked every other one. This adds a per-ad-set and per-ad check. No new agent.
+
+**Measured nightly** by `scripts/winners_report.py` (cron 00:40 IST, read-only, about a dozen Meta GETs), written to `~/ka-meta-ads/winners/latest.json` and shown in the dashboard's **Winners** card (country switch, Campaigns / Ad sets / Ads, the numbers behind each verdict, each threshold in its column tooltip). Reviews read that file, they don't recompute it.
+
+**Per country.** Every ad, ad set and campaign is compared only with its own country's 90-day normal (India, USA/Canada, others), from WhatsApp-destination ads. A normal built on fewer than 10 serious enquiries is "too thin": no cost test and no pause calls for that country until there are more (USA/Canada on 2026-11-04 had 1). Instagram-DM / Messenger ad sets are "not measurable" until DM leads are added (backlog #6).
+
+**Winner** (last 7 full days; 14 if 7 days had fewer than 5 serious enquiries), all five must pass:
+
+| Test | Pass |
+|---|---|
+| Volume | ≥ 5 serious-or-better enquiries |
+| Cost | cost per serious enquiry ≤ 80% of the country normal |
+| Junk | junk share ≤ the country normal |
+| Saturation | frequency < 2.5 and CPM up ≤ 30% on the week before |
+| Orders | ≥ 1 ad-traced order from enquiries in the last 30 days, or a 90-day serious→order rate ≥ the country normal |
+
+"Promising" = cost and junk pass, volume or orders not yet. **"Check labels"** = serious share ≥ 50% and ≥ 3× the country normal: a labelling problem, never a winner, and those ads are left out of the normals (caught 2026-11-04: Loomière "Styling Appointment" ads, 77 of 81 enquiries labelled serious from the button's own pre-filled text; reported to AISI).
+
+**What a winner gets (campaign-strategist, every twice-weekly review):**
+- **A winning ad set:** propose **+20% of its own budget** (or its campaign's, for a campaign budget). It is not funded by cutting another ad set. If it would go over the ceiling, the same plan raises the ceiling by that amount, so it is **one Telegram tap**. At most one step per ad set every 7 days (Meta resets learning above ~20%). Log the plan and its execution with the tag `winner-raise` so the dashboard shows "raise proposed" / "raised".
+- **A winning ad:** if it takes ≥ 60% of its ad set's spend, raise the ad set as above. Otherwise hold, and let the fair-chance check below deal with its weaker siblings. **Never move a winning ad into its own ad set** (Suraj: that can lose what's already working).
+- §3e still runs: this is per ad set, §3e is the account-level total (behind target, launches, soft months).
+
+**Pausing: only after a fair chance** (ads and ad sets, any kind, including tests). Pause candidate only when **all** hold: active ≥ 7 days, spent ≥ 3× the country normal cost per serious enquiry, and 0–1 serious enquiries or cost per serious ≥ 1.5× normal. Before that it is "fair chance not used": no pause for performance, however poor the first days look (a disapproval or ceiling breach is still paused straight away). Pausing stays a separate call from raising winners, a few ad sets per step (gradual-fixes rule), and never the main source of a country's serious enquiries.
+
+**Fewer, bigger ad sets.** Small ad sets never collect enough results to judge or to leave Meta's learning phase. Each regular ad set should run at no less than its **country minimum**: 5 serious enquiries a week at the country normal (India ₹1,560/day on 2026-11-04). Retargeting and geo tests may sit below it. A geo test is a brand-new country tried on purpose (small, time-boxed, own stop rule); a country that passes moves to regular, and USA/Canada is regular. Get there by pausing small weak ad sets (fair chance first) and raising good ones to the minimum, never by merging (a merge starts a new ad set and loses its learning). The card's **Budget size vs results** table (ad set-weeks by average daily spend, per country) shows where cost per serious enquiry stops improving; campaign-strategist re-reads it monthly and proposes a new minimum when it clearly differs.
+
 ## 4. Persistent memory (preferences & context)
 
 A file-based memory system (`C:\Users\ADMIN\.claude\projects\...\memory\`, indexed by `MEMORY.md`) captures **standing preferences and working-relationship context** — e.g. "always report blended CPO/ROAS," "UGC checks are on-demand, not scheduled," the customer-retention/legacy-data project goal. This is about *how to work with the user*, and is distinct from the learning log below, which is about *business/campaign facts*. If unclear which something belongs in: does it change how to talk to the user, or what to recommend for the business? First is memory, second is the learning log.
@@ -420,7 +449,9 @@ No remaining contradictions found. **This architecture is internally consistent 
 
 Concise, dated entries for decisions that changed the system. Not a diff history — just what changed and why, so past reasoning isn't lost without needing multiple document versions.
 
-**2026-10-28 (latest) — External API limits: guardrail 17 and a Meta usage monitor.** The account hit Meta's hourly request limit. Added `scripts/meta_api_usage.py` (status/probe/alert), a 10-minute cron probe with a Telegram alert at 75%, usage logging and a 50% back-off in the dashboard, the dashboard warming only viewed pages, and a "Meta API used" figure on the Dashboard tab. Files: `docs/architecture.md`, `scripts/meta_api_usage.py`, the Meta-calling agents, `prompts/daily-heartbeat.md`, `prompts/weekly-review.md`, `prompts/lead-quality-sos.md`, dashboard.
+**2026-11-04 (latest) — §3f: winners, fair-chance pauses and budget size, per country.** Suraj noticed ads doing well but never a raise proposed for an existing ad set: §3e only asked about the account total, and any unsettled ad set blocked all of them. Added `scripts/winners_report.py` (nightly 00:40 IST), the dashboard's Winners card, a per-country winner test with a +20% raise in one tap (ceiling included), a fair-chance rule before any performance pause, and a per-country minimum ad set budget, steered by a budget-size table. Built the same day: Loomière "Styling Appointment" labels found inflated by the pre-filled text, held as "check labels" and sent to AISI. Also the November monthly review, missed on 2 Nov (lock collision, fixed by the weekly self-check), was run by hand on 4 Nov.
+
+**2026-10-28 — External API limits: guardrail 17 and a Meta usage monitor.** The account hit Meta's hourly request limit. Added `scripts/meta_api_usage.py` (status/probe/alert), a 10-minute cron probe with a Telegram alert at 75%, usage logging and a 50% back-off in the dashboard, the dashboard warming only viewed pages, and a "Meta API used" figure on the Dashboard tab. Files: `docs/architecture.md`, `scripts/meta_api_usage.py`, the Meta-calling agents, `prompts/daily-heartbeat.md`, `prompts/weekly-review.md`, `prompts/lead-quality-sos.md`, dashboard.
 
 **2026-10-28 — Women only for new-audience reach, Facebook judged by channel analysis, every fix gradual (guardrail 15, revised the same day), and gender/age/channel monitoring (guardrail 16).** The all-at-once Instagram-only plan (KL-2026-10-28-221045-B) was rejected by Suraj in favour of gradual, worst-first steps. Suraj reported enquiry quality had collapsed for 5-6 days. Meta's own breakdown showed every ad set set to women only, but the 9 with Advantage+ audience on were delivering about 68% of WhatsApp conversations to men from 18 Oct (35% in the good period), and Facebook taps went from 29% to 59%. Advantage+ audience was not new (Broad since August, 9th Dec since 1 Sep); Meta's delivery under it shifted. Suraj decided Instagram-only placements and strict women-only targeting for every ad set, and gender/age analysis as a standing check. Files: `docs/architecture.md`, `.claude/agents/media-buyer.md`, `prompts/daily-heartbeat.md`, `prompts/weekly-review.md`, `prompts/lead-quality-sos.md`.
 
