@@ -48,13 +48,6 @@
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
   },
-  "KL-2026-09-14-EXEC-045625": {
-    "id": "KL-2026-09-14-EXEC-045625",
-    "date": "2026-09-14",
-    "type": "change",
-    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - ACTIVE -> PAUSED (dormant container hygiene)",
-    "follow_up": "None meaningful - per the plan's own rollback criteria, if this audience ever needs to run through this specific campaign structure again that would be a fresh build decision, not a revert of this pause."
-  },
   "KL-2026-09-18-014634": {
     "id": "KL-2026-09-18-014634",
     "date": "2026-09-18",
@@ -97,20 +90,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-02-010600": {
-    "id": "KL-2026-10-02-010600",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
-    "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
-  },
-  "KL-2026-10-02-010900": {
-    "id": "KL-2026-10-02-010900",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "Meta platform intelligence - Instant Forms embedded appointment booking (Calendly/HighLevel/HubSpot) reaching global availability ~October 2026 - new, relevant data point for the still-open Lead Ads proposal KL-2026-08-20-063100",
-    "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface this appointment-booking-integration detail as new context for open question (a); if he wants to proceed, also confirm whether K&A already uses Calendly/HighLevel/HubSpot for consult booking (unknown currently) before assuming the integration is usable as described."
-  },
   "KL-2026-10-02-ROLLUPBUG-EXEC": {
     "id": "KL-2026-10-02-ROLLUPBUG-EXEC",
     "date": "2026-10-02",
@@ -139,20 +118,6 @@
     "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
     "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
   },
-  "KL-2026-10-05-EXEC-KAFL004-PAUSED": {
-    "id": "KL-2026-10-05-EXEC-KAFL004-PAUSED",
-    "date": "2026-10-05",
-    "type": "change",
-    "subject": "First Love ad 52547120474380 (Blush Pink Lehenga, KAFL004) paused per approved plan",
-    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL004 showing real conversions since this pause."
-  },
-  "KL-2026-10-05-EXEC-KAFL006-PAUSED": {
-    "id": "KL-2026-10-05-EXEC-KAFL006-PAUSED",
-    "date": "2026-10-05",
-    "type": "change",
-    "subject": "Insta Engaged & Followers Remarketing Insta DM ad 52536048529180 (Maroon Peplum, KAFL006) paused per approved plan",
-    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan with a new independent Stitchflow order-history re-check for KAFL006 showing real conversions since this pause."
-  },
   "KL-2026-10-05-ML-RUBYRED-NEEDSESSION": {
     "id": "KL-2026-10-05-ML-RUBYRED-NEEDSESSION",
     "date": "2026-10-05",
@@ -174,13 +139,6 @@
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
   },
-  "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION": {
-    "id": "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Correction: blended headline numbers window for 2026-10-12 Monday review",
-    "follow_up": "Use these corrected figures (spend Rs21,018.38, orders 3, order value Rs406,500, CPO Rs7,006.13, ROAS 19.34x) for the digest and the performance-summaries.jsonl structured append for this cycle, period 2026-10-09 to 2026-10-12."
-  },
   "KL-2026-10-13-014530": {
     "id": "KL-2026-10-13-014530",
     "date": "2026-10-13",
@@ -194,13 +152,6 @@
     "type": "outcome",
     "subject": "Due-now sweep: KL-2026-10-09-071850 (Profile Visits cost-per-follower confirming read) - already resolved via Ad B pause",
     "follow_up": "None - closed. Next checkpoint already tracked in KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE."
-  },
-  "KL-2026-10-13-WATI-CONFIRMED": {
-    "id": "KL-2026-10-13-WATI-CONFIRMED",
-    "date": "2026-10-13",
-    "type": "outcome",
-    "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
-    "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
   },
   "KL-2026-10-14-014950": {
     "id": "KL-2026-10-14-014950",
@@ -370,13 +321,6 @@
     "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
     "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
   },
-  "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC": {
-    "id": "KL-2026-10-31-MB-INTERESTSTACK-PLACEMENTFIX-EXEC",
-    "date": "2026-10-31",
-    "type": "change",
-    "subject": "Executed Instagram-only placement restriction on First Love | Interest Stack (geo only, interests TBD) | India (52535906794980)",
-    "follow_up": "2026-11-03 day-3 check (publisher_platform breakdown, delivery, cost/conversation vs 7d baseline). After 2026-11-07: serious-enquiry check vs pre-edit baseline. Watch 3-4 days before proposing any further gradual-fix step."
-  },
   "KL-2026-10-31-SCM-AMBIGUOUS-5TH": {
     "id": "KL-2026-10-31-SCM-AMBIGUOUS-5TH",
     "date": "2026-10-31",
@@ -440,26 +384,12 @@
     "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) ceiling verdict + geography disposition - Monday full review 2026-11-02",
     "follow_up": "2026-11-10: Loomiere launch end-date review - decide extend/revert-to-Rs6,500/new ceiling based on the launch's actual results over its full window, per S3e."
   },
-  "KL-2026-11-02-CS-GOLDSCULPTED-WATCH": {
-    "id": "KL-2026-11-02-CS-GOLDSCULPTED-WATCH",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - zero enquiries 2026-10-30 to 11-02 is consistent with, not yet additive to, the existing flat-0%-serious pattern; recheck date is 2026-11-04, not today",
-    "follow_up": "2026-11-04: re-pull cost/conv (Gold Sculpted vs Broad Advantage+) and lead quality per the already-stated criteria in KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD. No change before then."
-  },
   "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM": {
     "id": "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM",
     "date": "2026-11-02",
     "type": "decision",
     "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
     "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
-  },
-  "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME": {
-    "id": "KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - Metallic Coffee Brown activation gate reframed around the pending Lookalike-overlap fix; KAFL018 Barbie Pink zero-spend anomaly folded into same pool-composition checkpoint; retirement look at Youve Seen the Corsets deferred",
-    "follow_up": "performance-analyst: pull effective_status/issues_info/delivery_info for the KAFL018 Barbie Pink Refresh ad in 6862975169176 now (read-only). ~2026-11-05/11-06 (contingent on the Lookalike-overlap fix executing and showing 2-3 clean recovery days): combined pool-composition review - (1) route Metallic Coffee Brown activation to media-buyer if CPM has recovered, (2) decide the Youve Seen the Corsets retirement question with a fresh look, (3) resolve the Barbie Pink zero-spend anomaly using the diagnostic pulled today."
   },
   "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH": {
     "id": "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH",
@@ -468,39 +398,88 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
     "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
   },
-  "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD": {
-    "id": "KL-2026-11-02-EXEC-LOOMIERE-LAVENDER-BROADADV-SECONDAD",
-    "date": "2026-11-02",
-    "type": "change",
-    "subject": "Loomière | Broad Advantage+ | WhatsApp | India (52564598075780) - built and activated second ad reusing video_id 1591252142179804 (Metallic Lavender Solo, SKU KA-100826-011)",
-    "follow_up": "Daily heartbeat new-ad watch reviews ad 52565923285580 within 7 days of activation per the rollback criteria in KL-2026-11-02-010814: pause-candidate if 0 WhatsApp conversations after Rs1,000 spend attributed to it, or cost per conversation >2x sibling ad 52564598185780 after Rs1,500 combined ad-set spend since activation, or it starves 52564598185780 delivery below a third of its prior share at worse cost per conversation."
-  },
-  "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW": {
-    "id": "KL-2026-11-02-LQ-LOOMIERE-PREFILLBUG-DOMINATES-WINDOW",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "Loomiere asked-to-visit-or-trial mislabeling bug (rules-v3 fix not yet live, feed still reports rules_version rules-v2) now accounts for 100% of all serious-or-better labels account-wide in the 2026-10-30 to 2026-11-02 reporting window, not just the 3 Loomiere ads flagged on 2026-10-29",
-    "follow_up": "Do not read Loomiere ad sets' serious% or cost-per-serious at face value until feed.rules_version shows rules-v3 live; re-check reason_code mix on the 3 Loomiere ads once it does. Campaign-strategist should treat the 7 gender/placement-fix ad sets' quality this window as unresolved - small samples (0-17) outside Loomiere, inflated and unusable within Loomiere."
-  },
-  "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR": {
-    "id": "KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "staff_replied feed break (since 2026-10-20) did NOT self-heal by the date AISI predicted - still ~100% None through 2026-11-01, now 13 days old, contradicting KL-2026-10-28-LQ-FEED-LABELS-UNRELIABLE which said the WATI quota reset (1 Nov 00:00 IST) would self-correct 10-20-to-11-01 rows without a backfill",
-    "follow_up": "Re-run this same day-bucketed check next scheduled lead-quality pull; if staff_replied is still near-100% None, escalate to AISI directly as a standalone finding rather than continuing to treat it as a self-healing transient. Also still outstanding: build KL-2026-10-25-085556 into lead_quality_report.py itself per Suraj acceptance on 2026-10-26 - not yet done, this pass used a manual one-off script instead."
-  },
-  "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK": {
-    "id": "KL-2026-11-02-SCM-LOOMIERE-DAILYCHECK",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "Loomiere launch video check 2026-11-02 - no genuinely new video beyond what is already known/handed off",
-    "follow_up": "Next daily check boundary: 18167082763492162 (2026-10-31T14:15:24). No action needed."
-  },
   "KL-2026-11-02-ambiguous-comment": {
     "id": "KL-2026-11-02-ambiguous-comment",
     "date": "2026-11-02",
     "type": "observation",
     "subject": "2 ambiguous 'check your DM'-style comments re-checked, both still open and still unreplied - @aesana0710 now a 5th consecutive cycle (escalation threshold reached), @social_cravings a 3rd",
     "follow_up": "aesana0710: escalating directly to Suraj this cycle (15 days unreplied, 5th consecutive flag) rather than only re-logging - needs a human with DM access to check whether a genuine prior DM thread exists before any public reply is drafted. social_cravings: continue checking status next cycle (3rd cycle, not yet at the escalation threshold). No plan drafted for either comment."
+  },
+  "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK": {
+    "id": "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK",
+    "date": "2026-11-03",
+    "type": "observation",
+    "subject": "7-day quality/delivery check on WhatsApp ads activated since 2026-10-27 (Loomiere launch ads, Lavender Solo, Lavender second ad) - Loomiere prefill bug still unfixed (rules-v2), Lavender second ad too early for any KL-2026-11-02-010814 rollback criterion",
+    "follow_up": "Re-check Lavender second ad (52565923285580) against the same 3 rollback criteria once combined ad-set spend since activation clears Rs1,500 (currently Rs671.39). Do not read any Loomiere ad's serious-or-better% at face value until feed.rules_version shows rules-v3 live - re-check reason_code mix once it does. Correct the standing assumption that ad set 6862975169176 holds two Loomiere ads (A and B); as of 2026-11-03 it holds exactly one (52564598016980)."
+  },
+  "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK": {
+    "id": "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK",
+    "date": "2026-11-03",
+    "type": "observation",
+    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, adset 6862975169176) - fresh GET shows status=PAUSED/effective_status=PAUSED, not ACTIVE as the standing follow-up assumed; the ad has in fact been paused continuously since the 2026-10-22 quality revert, not newly stuck",
+    "follow_up": "campaign-strategist: fold this correction into the ~2026-11-05/11-06 combined pool-composition review in place of the original zero-spend-anomaly framing - the real open question for that review is whether/when to reactivate KAFL018 Barbie Pink Refresh (paused since 2026-10-22 on a lead-quality SOS), not a delivery bug to fix."
+  },
+  "KL-2026-11-03-PA-GATEREFRAME-FOLLOWUP-RESTORE": {
+    "id": "KL-2026-11-03-PA-GATEREFRAME-FOLLOWUP-RESTORE",
+    "date": "2026-11-03",
+    "type": "observation",
+    "subject": "Tooling gap found live: linking my Barbie Pink status-check entry to KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME silently dropped that entry's other two still-open threads (Metallic Coffee Brown activation gate, You've Seen the Corsets retirement look) from knowledge/open-followups.json - restoring them here",
+    "follow_up": "~2026-11-05/11-06 combined pool-composition review (contingent on the Lookalike-overlap fix executing and showing 2-3 clean recovery days): (1) route Metallic Coffee Brown activation (ad 52552969628580 in 6862975169176) to media-buyer if CPM has recovered toward the Rs66-98 baseline, (2) decide the You've Seen the Corsets (ad 52547120579980) retirement question with a fresh look, (3) separately, next interactive session: fix update-open-followups.py (or the authoring convention) so a multi-item follow_up does not get wholly dropped when only one of its items is resolved via linked_to."
+  },
+  "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ": {
+    "id": "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ",
+    "date": "2026-11-03",
+    "type": "outcome",
+    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
+    "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
+  },
+  "KL-2026-11-04-043240": {
+    "id": "KL-2026-11-04-043240",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Meta platform intelligence - on-device Pixel conversion measurement activates 2026-11-12, switched on by default; attributed website-conversion numbers may rise around that date without any real performance change - flag to performance-analyst as an interpretation caution, not a live-account action",
+    "follow_up": "performance-analyst: when reviewing any date range starting on or after 2026-11-12 for website-conversion/retargeting campaigns, note explicitly whether an observed lift coincides with this measurement change before treating it as a real performance signal; campaign-strategist: do not use a post-11-12 ROAS/conversion jump alone to justify a budget increase or to avoid a pending rollback without this caveat stated."
+  },
+  "KL-2026-11-04-043250": {
+    "id": "KL-2026-11-04-043250",
+    "date": "2026-11-04",
+    "type": "observation",
+    "subject": "Meta platform intelligence - Instant Forms qualification features (conditional logic, SMS OTP verification, work-email filter, in-form AI agent, new 'Website and Instant Forms' default) - new context for the still-open Lead Ads proposal KL-2026-08-20-063100, not re-proposed from scratch",
+    "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface conditional-logic/work-email-filter as a concrete answer to open question (b) on qualifying-question design, alongside last cycle's appointment-booking answer to question (a). Question (c) (who monitors/follows up) remains unanswered by any platform feature and still needs a direct decision."
+  },
+  "KL-2026-11-04-EXEC-KAFL007-PAUSED": {
+    "id": "KL-2026-11-04-EXEC-KAFL007-PAUSED",
+    "date": "2026-11-04",
+    "type": "change",
+    "subject": "First Love ad set 52562110311980 (Gold Sculpted, KAFL007) and its ad 52562110511780 paused per approved plan",
+    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan built on new independent evidence (a real Stitchflow order for KAFL007 placed since this pause, or a materially different lead-quality signal that did not exist at pause time)."
+  },
+  "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO": {
+    "id": "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO",
+    "date": "2026-11-04",
+    "type": "change",
+    "subject": "Built + activated 1 new ad (Loomière | Bottle Green Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-11-04-020204",
+    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation and propose a pause through the normal approval path per the plan's own rollback criteria (0 conversations after Rs800 spend attributed to it, or cost per conversation >2x the trailing average of the 2 existing ads after Rs1,200 combined ad-set spend, or visibly starving either existing ad's delivery). No other action pending."
+  },
+  "KL-2026-11-04-PA-SALESTARGET-2026-12": {
+    "id": "KL-2026-11-04-PA-SALESTARGET-2026-12",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Suggested December 2026 sales target: CONFIRM FY-derived 64 orders / Rs64 lakh, unchanged (confirmation-only, no Meta change)",
+    "follow_up": "Next monthly review: compare Decembers actual against this target once available; re-run this same re-spread check with Novembers final actual added, and revisit the Jan-Mar split if Octobers cushion compounds with further overshoot rather than reverting to normal pace."
+  },
+  "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT": {
+    "id": "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
+    "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
+  },
+  "KL-2026-11-04-media-library": {
+    "id": "KL-2026-11-04-media-library",
+    "date": "2026-11-04",
+    "type": "observation",
+    "subject": "Daily Media Library check (2026-11-04) - 0 unreviewed manual uploads, 0 unreviewed instagram_auto items, 0 re-reviews, but a real gap found: 7 items silently dropped on 2026-11-02/11-03 nightly collector runs due to low disk space, with zero retained record of what they were",
+    "follow_up": "Needs a human/infra decision, not a Media Library triage call: free disk space on the droplet (currently 893MB free, under the 1GB floor the collector needs) so instagram_collect.py stops dropping items. Until that happens, any Story/tag/hashtag content posted on nights the droplet is this full is permanently lost to this pipeline with zero trace of what it was. Reporting to the user directly rather than queuing a repost/ad plan, since there is nothing to triage - the content itself was never captured."
   }
 }
