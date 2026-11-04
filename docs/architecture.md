@@ -298,7 +298,7 @@ Suraj, 2026-11-04: ads were doing well by the system's own numbers, but no revie
 | Saturation | frequency < 2.5 and CPM up ≤ 30% on the week before |
 | Orders | ≥ 1 ad-traced order from enquiries in the last 30 days, or a 90-day serious→order rate ≥ the country normal |
 
-"Promising" = cost and junk pass, volume or orders not yet. **"Check labels"** = serious share ≥ 50% and ≥ 3× the country normal: a labelling problem, never a winner, and those ads are left out of the normals (caught 2026-11-04: Loomière "Styling Appointment" ads, 77 of 81 enquiries labelled serious from the button's own pre-filled text; reported to AISI).
+"Promising" = cost and junk pass on at least 3 serious enquiries, volume or orders not yet. **"Check labels"** = serious share ≥ 50% and ≥ 3× the country normal: a labelling problem, never a winner, and those ads are left out of the normals (caught 2026-11-04: Loomière "Styling Appointment" ads, 77 of 81 enquiries labelled serious from the button's own pre-filled text; reported to AISI).
 
 **What a winner gets (campaign-strategist, every twice-weekly review):**
 - **A winning ad set:** propose **+20% of its own budget** (or its campaign's, for a campaign budget). It is not funded by cutting another ad set. If it would go over the ceiling, the same plan raises the ceiling by that amount, so it is **one Telegram tap**. At most one step per ad set every 7 days (Meta resets learning above ~20%). Log the plan and its execution with the tag `winner-raise` so the dashboard shows "raise proposed" / "raised".

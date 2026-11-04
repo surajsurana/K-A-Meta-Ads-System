@@ -19,7 +19,7 @@ enquiries in 7):
   saturation  frequency < 2.5 and CPM up no more than 30% on the week before
   orders      >= 1 ad-traced order from enquiries in the last 30 days, or
               serious->order rate over 90 days at least the country's normal
-Promising = cost and junk pass, volume or orders not yet.
+Promising = cost and junk pass on at least 3 serious enquiries, volume or orders not yet.
 
 Pause candidate (ads and ad sets, any kind): active >= 7 days, spent >= 3x
 the country's normal cost per serious enquiry, and 0-1 serious enquiries or
@@ -50,6 +50,7 @@ LOG_FILE = os.path.join(lq.REPO, "knowledge", "learning-log.jsonl")
 IST = lq.IST
 
 MIN_SERIOUS = 5            # volume test, per window
+MIN_PROMISING = 3          # below this a low cost is one lucky enquiry, not a signal
 COST_RATIO = 0.80          # winner: <= 80% of the country's normal
 FREQ_MAX = 2.5
 CPM_RISE_MAX = 0.30
@@ -282,7 +283,7 @@ def main():
             verdict = "check labels"
         elif all(t["pass"] for t in tests.values()):
             verdict = "winner"
-        elif tests["cost"]["pass"] and tests["junk"]["pass"]:
+        elif tests["cost"]["pass"] and tests["junk"]["pass"] and c["serious"] >= MIN_PROMISING:
             verdict = "promising"
         elif not tests["volume"]["pass"] and not (normal and spend >= normal * MIN_SERIOUS):
             # Too little spent to have reached the volume at a normal cost.
