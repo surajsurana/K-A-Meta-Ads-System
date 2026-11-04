@@ -433,13 +433,6 @@
     "subject": "7-day quality/delivery check on WhatsApp ads activated since 2026-10-27 (Loomiere launch ads, Lavender Solo, Lavender second ad) - Loomiere prefill bug still unfixed (rules-v2), Lavender second ad too early for any KL-2026-11-02-010814 rollback criterion",
     "follow_up": "Re-check Lavender second ad (52565923285580) against the same 3 rollback criteria once combined ad-set spend since activation clears Rs1,500 (currently Rs671.39). Do not read any Loomiere ad's serious-or-better% at face value until feed.rules_version shows rules-v3 live - re-check reason_code mix once it does. Correct the standing assumption that ad set 6862975169176 holds two Loomiere ads (A and B); as of 2026-11-03 it holds exactly one (52564598016980)."
   },
-  "KL-2026-11-03-LQ-STAFFREPLIED-ESCALATE-AISI": {
-    "id": "KL-2026-11-03-LQ-STAFFREPLIED-ESCALATE-AISI",
-    "date": "2026-11-03",
-    "type": "observation",
-    "subject": "staff_replied feed break now 14 calendar days old (since 2026-10-20), predicted WATI self-heal did not occur on second check either - escalating to AISI per KL-2026-11-02-LQ-STAFFREPLIED-SELFHEAL-DIDNOTOCCUR follow_up",
-    "follow_up": "Notify AI Sales Intelligence session directly that staff_replied has now been broken 14 calendar days (13 confirmed), their own 1 Nov self-heal prediction has failed on two separate post-deadline checks, and this needs a root-cause fix rather than another self-heal wait cycle. Re-run this same check next scheduled pull regardless; stop assuming self-heal until AISI confirms an actual fix shipped. KL-2026-10-25-085556 build-into-script work remains outstanding and un-scheduled - flag again at next pass if still not built."
-  },
   "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK": {
     "id": "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK",
     "date": "2026-11-03",
