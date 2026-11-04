@@ -502,5 +502,12 @@
     "type": "outcome",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
+  },
+  "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION": {
+    "id": "KL-2026-11-04-WEEKLYSELFCHECK-MONTHLYLOCKCOLLISION",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Monthly strategic review for November never ran at all — collided with weekly-review's shared run lock on the 2nd (a Monday), failed after the default 300s wait with no retry, no fallback",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/run-monthly-review.sh, syntax-check it (bash -n), commit+push. Once live, the November monthly strategic review still needs to be run manually (next interactive session, or wait for December's scheduled run) since this fix only prevents the collision going forward - it does not retroactively run the missed November review."
   }
 }
