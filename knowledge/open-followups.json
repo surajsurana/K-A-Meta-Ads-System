@@ -48,13 +48,6 @@
     "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
     "follow_up": "none - closed"
   },
-  "KL-2026-09-14-EXEC-045625": {
-    "id": "KL-2026-09-14-EXEC-045625",
-    "date": "2026-09-14",
-    "type": "change",
-    "subject": "Add to Cart Remarketing | Catalog | India (campaign 52542179696580) - ACTIVE -> PAUSED (dormant container hygiene)",
-    "follow_up": "None meaningful - per the plan's own rollback criteria, if this audience ever needs to run through this specific campaign structure again that would be a fresh build decision, not a revert of this pause."
-  },
   "KL-2026-09-18-014634": {
     "id": "KL-2026-09-18-014634",
     "date": "2026-09-18",
