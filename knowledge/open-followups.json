@@ -433,13 +433,6 @@
     "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) ceiling verdict + geography disposition - Monday full review 2026-11-02",
     "follow_up": "2026-11-10: Loomiere launch end-date review - decide extend/revert-to-Rs6,500/new ceiling based on the launch's actual results over its full window, per S3e."
   },
-  "KL-2026-11-02-CS-GOLDSCULPTED-WATCH": {
-    "id": "KL-2026-11-02-CS-GOLDSCULPTED-WATCH",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - zero enquiries 2026-10-30 to 11-02 is consistent with, not yet additive to, the existing flat-0%-serious pattern; recheck date is 2026-11-04, not today",
-    "follow_up": "2026-11-04: re-pull cost/conv (Gold Sculpted vs Broad Advantage+) and lead quality per the already-stated criteria in KL-2026-10-31-CS-GOLDSCULPTED-EXTENDREAD. No change before then."
-  },
   "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM": {
     "id": "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM",
     "date": "2026-11-02",
@@ -495,6 +488,13 @@
     "type": "outcome",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
+  },
+  "KL-2026-11-04-CS-GOLDSCULPTED-PAUSEVERDICT": {
+    "id": "KL-2026-11-04-CS-GOLDSCULPTED-PAUSEVERDICT",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "First Love | Gold Sculpted (KAFL007) Test | India - confound-free recheck due today: PAUSE, both pre-committed trigger conditions met",
+    "follow_up": "Route to media-buyer for a validated ACTIVE->PAUSED plan on First Love | Gold Sculpted (KAFL007) Test | India (ad set 52562110311980). This is a pause of a live running ad set, not a paused-first new build, so media-buyer should validate current state/budget impact before building the plan. Then Telegram approval via scripts/send-telegram-approval.sh (type:decision/plan as appropriate) before any live change - this entry does not itself authorize execution."
   },
   "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK",
