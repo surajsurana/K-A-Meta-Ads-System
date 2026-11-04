@@ -97,13 +97,6 @@
     "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
     "follow_up": "None this cycle."
   },
-  "KL-2026-10-02-010600": {
-    "id": "KL-2026-10-02-010600",
-    "date": "2026-10-02",
-    "type": "observation",
-    "subject": "Competitor intelligence (Meta Ad Library) - tooling gap persists, re-tested this cycle (third month running)",
-    "follow_up": "Same as the last two cycles: before the next monthly review, either confirm a browser/fetch-capable tool can be added for facebook.com/ads/library, or accept this needs a periodic manual-input process instead (user-relayed screenshots, or a dedicated Ad Library API integration). This has now failed identically three months running with no change in root cause - worth raising directly to Suraj as a standing limitation to decide on (accept the gap indefinitely, or invest in a fix), rather than continuing to silently re-attempt the same blocked path every month."
-  },
   "KL-2026-10-02-010900": {
     "id": "KL-2026-10-02-010900",
     "date": "2026-10-02",
@@ -180,13 +173,6 @@
     "type": "outcome",
     "subject": "Due-now sweep: KL-2026-10-09-071850 (Profile Visits cost-per-follower confirming read) - already resolved via Ad B pause",
     "follow_up": "None - closed. Next checkpoint already tracked in KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE."
-  },
-  "KL-2026-10-13-WATI-CONFIRMED": {
-    "id": "KL-2026-10-13-WATI-CONFIRMED",
-    "date": "2026-10-13",
-    "type": "outcome",
-    "subject": "WhatsApp Business service-message billing (KL-2026-09-02-005800, open since 2026-09-02) - routing platform CONFIRMED: Wati",
-    "follow_up": "Confirm with Suraj whether a payment method is actually on file with Wati for service-message billing - this is the one remaining real action, routing is no longer the open question."
   },
   "KL-2026-10-14-014950": {
     "id": "KL-2026-10-14-014950",
