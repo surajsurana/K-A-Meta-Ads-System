@@ -153,13 +153,6 @@
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
   },
-  "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION": {
-    "id": "KL-2026-10-12-PA-BLENDED-WINDOW-CORRECTION",
-    "date": "2026-10-12",
-    "type": "observation",
-    "subject": "Correction: blended headline numbers window for 2026-10-12 Monday review",
-    "follow_up": "Use these corrected figures (spend Rs21,018.38, orders 3, order value Rs406,500, CPO Rs7,006.13, ROAS 19.34x) for the digest and the performance-summaries.jsonl structured append for this cycle, period 2026-10-09 to 2026-10-12."
-  },
   "KL-2026-10-13-014530": {
     "id": "KL-2026-10-13-014530",
     "date": "2026-10-13",
@@ -453,6 +446,13 @@
     "type": "outcome",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
+  },
+  "KL-2026-11-04-043240": {
+    "id": "KL-2026-11-04-043240",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Meta platform intelligence - on-device Pixel conversion measurement activates 2026-11-12, switched on by default; attributed website-conversion numbers may rise around that date without any real performance change - flag to performance-analyst as an interpretation caution, not a live-account action",
+    "follow_up": "performance-analyst: when reviewing any date range starting on or after 2026-11-12 for website-conversion/retargeting campaigns, note explicitly whether an observed lift coincides with this measurement change before treating it as a real performance signal; campaign-strategist: do not use a post-11-12 ROAS/conversion jump alone to justify a budget increase or to avoid a pending rollback without this caveat stated."
   },
   "KL-2026-11-04-EXEC-KAFL007-PAUSED": {
     "id": "KL-2026-11-04-EXEC-KAFL007-PAUSED",
