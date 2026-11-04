@@ -489,19 +489,19 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
     "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
   },
+  "KL-2026-11-04-CC-LOOMIERE-BOTTLEGREEN-SOLO-COPY": {
+    "id": "KL-2026-11-04-CC-LOOMIERE-BOTTLEGREEN-SOLO-COPY",
+    "date": "2026-11-04",
+    "type": "decision",
+    "subject": "Loomiere solo Bottle Green Lace Halter Neck Corset Reel (18351181927254071, instagram.com/reel/DfR2a3lyFmD/, SKU KA-231026-008) - execution-ready copy for a new ad, destination ad set TBD by media-buyer",
+    "follow_up": "media-buyer/campaign-strategist: decide which Loomiere ad set(s) to add this as a new ad in (India | Whatsapp | 9th Dec 25, Loomiere | Broad Advantage+ | WhatsApp | India, and/or the dedicated Loomiere IG Engaged ad set), fetch Reel 18351181927254071 media_url fresh at build time, build PAUSED with the copy above, run standard checks (generatepreviews, text-field verification, name-collision check), activate per guardrail 3, and record the creative-product-map.jsonl entry for this new video_id with SKU KA-231026-008, confidence high, status confirmed (already confirmed elsewhere in the map, this is just a new video_id for the same SKU)."
+  },
   "KL-2026-11-04-CS-GOLDSCULPTED-PAUSEVERDICT": {
     "id": "KL-2026-11-04-CS-GOLDSCULPTED-PAUSEVERDICT",
     "date": "2026-11-04",
     "type": "decision",
     "subject": "First Love | Gold Sculpted (KAFL007) Test | India - confound-free recheck due today: PAUSE, both pre-committed trigger conditions met",
     "follow_up": "Route to media-buyer for a validated ACTIVE->PAUSED plan on First Love | Gold Sculpted (KAFL007) Test | India (ad set 52562110311980). This is a pause of a live running ad set, not a paused-first new build, so media-buyer should validate current state/budget impact before building the plan. Then Telegram approval via scripts/send-telegram-approval.sh (type:decision/plan as appropriate) before any live change - this entry does not itself authorize execution."
-  },
-  "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK": {
-    "id": "KL-2026-11-04-SCM-LOOMIERE-DAILYCHECK",
-    "date": "2026-11-04",
-    "type": "observation",
-    "subject": "Loomiere launch video check 2026-11-04 - 1 genuinely new solo Reel found, SKU already confirmed but this video_id not yet used in any ad",
-    "follow_up": "New finding to hand to the user/pipeline: video 18351181927254071 (reel https://www.instagram.com/reel/DfR2a3lyFmD/, posted 2026-11-03T12:10:06), solo Reel of SKU KA-231026-008 Bottle Green Lace Halter Neck Corset With Drape Skirt & Stole, worn by @prakritikakar, not yet in any ad. Launch budget window runs through 2026-11-10 (KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET) - worth routing to creative-copywriter to brief, then media-buyer to build, then Telegram approval, per the normal pipeline. Next daily check boundary: 18351181927254071 (2026-11-03T12:10:06)."
   },
   "KL-2026-11-04-media-library": {
     "id": "KL-2026-11-04-media-library",
