@@ -384,6 +384,13 @@
     "subject": "Crimson Beaded Test (adset 52562444646780) - WITHDRAW the stalled pause plan (KL-2026-11-02-021115); corrected quality data no longer supports it; MAINTAIN with a fresh, explicitly dated stop-rule",
     "follow_up": "media-buyer/marketing-lead: do not dispatch KL-2026-11-02-021115 for Telegram approval - it is superseded. Next review (2026-11-09): lead-quality-analyst re-pull Crimson Beaded on the corrected feed, campaign-strategist apply the fresh bars stated here."
   },
+  "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
+    "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
+    "date": "2026-11-05",
+    "type": "decision",
+    "subject": "Netherlands - new reverse-geo entrant (1 order, Rs380,000, zero Meta spend) - DISPOSITION: HOLD/watch, same bar already applied to Saudi Arabia/Malaysia/Nigeria, not yet a test case",
+    "follow_up": "Re-examine if a second Netherlands order appears, or if cumulative Netherlands lifetime revenue grows to a level comparable to the UK/USA-Canada cases before they were tested."
+  },
   "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE": {
     "id": "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE",
     "date": "2026-11-05",
