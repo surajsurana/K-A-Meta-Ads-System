@@ -391,6 +391,13 @@
     "subject": "Loomiere | Launch Reel | Styling Appointment | Broad (ad 52564598185780, ad set 52564598075780) - first trustworthy quality read: weak numbers, but fair-chance spend threshold NOT yet met - KEEP RUNNING",
     "follow_up": "Re-check spend vs the Rs6,813 need_spend threshold at the next review (within 1-2 days, not the next full weekly pass) - once crossed, with quality still at 0-1 serious enquiries, this becomes a pause candidate and should be handed to media-buyer for a validated pause plan the same way KL-2026-11-05-010803 was built for the 16th May Awareness ad."
   },
+  "KL-2026-11-05-CS-LOOMIERENEWADS-KEEP": {
+    "id": "KL-2026-11-05-CS-LOOMIERENEWADS-KEEP",
+    "date": "2026-11-05",
+    "type": "outcome",
+    "subject": "Three new Loomiere ads with essentially no data yet - confirmed KEEP RUNNING, no disposition warranted today",
+    "follow_up": "Standard fair-chance re-check once each reaches 7 days active."
+  },
   "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE": {
     "id": "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE",
     "date": "2026-11-05",
