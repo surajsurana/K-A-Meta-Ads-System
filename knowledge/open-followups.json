@@ -370,12 +370,12 @@
     "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
     "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
   },
-  "KL-2026-11-05-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-05-CS-BUDGETCHECK",
+  "KL-2026-11-05-010803": {
+    "id": "KL-2026-11-05-010803",
     "date": "2026-11-05",
     "type": "decision",
-    "subject": "Portfolio budget allocation check + Scale Intelligence (SS3e) ceiling verdict - twice-weekly review 2026-11-05 (Thursday)",
-    "follow_up": "2026-11-10: Loomiere launch end-date review decides extend/revert/new ceiling per SS3e, and should factor in the Rs6,826 vs Rs6,500 forward flag above if the 16th May pause has been approved by then."
+    "subject": "16th May 26 | Awarness (ad 6968778736976, in ad set 6968778736776 '16th May 26 | India', campaign 6968778737176 '16th May 26 | Awareness') - validated PAUSE execution plan for Suraj's Telegram approval",
+    "follow_up": "Route via scripts/send-telegram-approval.sh for Suraj's direct approval. On approval, marketing-lead executes: POST /6968778736976 status=PAUSED only (no other object touched), then runs the 4 verification GETs listed above, then logs a linked type=change entry. If rejected/held, nothing changes - ad stays ACTIVE, status quo. Also flag the resulting-total correction (Rs7,176, not Rs6,826) to campaign-strategist for its 2026-11-10 Loomiere ceiling-reversion review."
   },
   "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
     "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
