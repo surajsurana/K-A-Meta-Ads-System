@@ -6,13 +6,6 @@
     "subject": "Learning log ID scheme - collision found and fixed",
     "follow_up": "ID generation instructions updated in all agent files to use date+time (to the second) instead of a small manually-tracked sequence number, to make collisions structurally unlikely without requiring cross-agent coordination."
   },
-  "KL-2026-08-24-010632": {
-    "id": "KL-2026-08-24-010632",
-    "date": "2026-08-24",
-    "type": "decision",
-    "subject": "Portfolio budget allocation - weekly review 2026-08-24 (media-buyer independent re-verification)",
-    "follow_up": "None - this is a verification record. Each of the 5 underlying plans carries its own execution follow_up."
-  },
   "KL-2026-08-25-015500": {
     "id": "KL-2026-08-25-015500",
     "date": "2026-08-25",
@@ -40,13 +33,6 @@
     "type": "outcome",
     "subject": "Stitchflow 0-2 day order-entry lag re-check (KL-2026-08-31-005500) - 2026-08-24 to 2026-08-30 window",
     "follow_up": "Apply the same 2-day provisional caveat to every future weekly review's most recent 2 days as standing practice - no new dated check needed, this is now a confirmed recurring pattern rather than an open question."
-  },
-  "KL-2026-09-14-003600": {
-    "id": "KL-2026-09-14-003600",
-    "date": "2026-09-14",
-    "type": "outcome",
-    "subject": "Held-plan sweep (weekly review 2026-09-14) - comment-batch hold item already resolved",
-    "follow_up": "none - closed"
   },
   "KL-2026-09-18-014634": {
     "id": "KL-2026-09-18-014634",
@@ -76,34 +62,6 @@
     "subject": "UGC batch (3 items) - independent visual read confirms REJECT/HOLD, agrees with and extends social-community-managers unclear reads",
     "follow_up": "nikatita carousel 18134349844637432: if this recurs on a genuinely promising future UGC item, escalate the tooling gap (Graph API permission/existence error on a tagged-content object) rather than silently holding indefinitely - not urgent this cycle since neither whatpdoes nor vaariedit needed it resolved to reach a confident call."
   },
-  "KL-2026-10-01-CS-CHMK030-CONFIRM": {
-    "id": "KL-2026-10-01-CS-CHMK030-CONFIRM",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "CHMK030 total 60-day cost now known (~Rs83,732, largest zero-order-despite-spend case to date) - DISPOSITION: no new action, already fully resolved via prior pause decisions",
-    "follow_up": "None - closed. Revisit only if a new Maroon-pivot creative becomes available (separate thread) or if a new CHMK030-labeled ad is ever built in future."
-  },
-  "KL-2026-10-01-CS-KAFL002003-MAINTAIN": {
-    "id": "KL-2026-10-01-CS-KAFL002003-MAINTAIN",
-    "date": "2026-10-01",
-    "type": "decision",
-    "subject": "KAFL002 Sage Green (Rs71,842.15/60d spend, 1 order/Rs270,000) and KAFL003 Peach Muted Gold (Rs47,919.38/60d spend, 1 order/Rs380,000) - DISPOSITION: MAINTAIN, consistent with the established 2026-09-14 reasoning",
-    "follow_up": "None this cycle."
-  },
-  "KL-2026-10-02-ROLLUPBUG-EXEC": {
-    "id": "KL-2026-10-02-ROLLUPBUG-EXEC",
-    "date": "2026-10-02",
-    "type": "change",
-    "subject": "Fixed scripts/rollup_performance_summaries.py: weekly->monthly rollup now requires full-month weekly coverage before rolling up",
-    "follow_up": "None required - fix is live on main (commit 64f2a1b). Future monthly reviews will no longer silently roll up an incomplete month; if a month's weekly data is ever genuinely incomplete at review time, the monthly row will simply not be auto-created until the remaining weeks are logged, same as the existing quarterly/half-yearly/yearly tiers already behave."
-  },
-  "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE": {
-    "id": "KL-2026-10-03-CS-GOLDENMUSE-DUPRESURFACE",
-    "date": "2026-10-03",
-    "type": "decision",
-    "subject": "Media Library item 20260922T133501Z_IMG_2735.mp4 (Golden Muse, KAFL020, suraj_rating 9/10) resurfaced for disposition - already fully processed, NOT new content, no new action needed",
-    "follow_up": "None - this closes the loop on the heartbeats resurfaced item with no new action. Activation of the Golden Muse ad set (Ad A 52559143466780, Ad B 52559141356380) remains the genuinely open, separate decision, already tracked via KL-2026-10-02-EXEC-GOLDENMUSE-ADA-UPLOADFIXs follow_up field - not restated here as a new follow_up to avoid creating a duplicate open-item entry."
-  },
   "KL-2026-10-05-070400": {
     "id": "KL-2026-10-05-070400",
     "date": "2026-10-05",
@@ -125,33 +83,12 @@
     "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
     "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
   },
-  "KL-2026-10-08-CS-UGC-PREETT": {
-    "id": "KL-2026-10-08-CS-UGC-PREETT",
-    "date": "2026-10-08",
-    "type": "decision",
-    "subject": "UGC from @preett._ (reel 18021651869943572, instagram.com/reel/DeMaDyohYO0/) - DISPOSITION: REJECT",
-    "follow_up": "None. If @preett._ or any similar account later posts single-subject, clearly-credited content, that is a fresh item to evaluate on its own merits - not implied or pre-judged by this rejection."
-  },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
     "date": "2026-10-12",
     "type": "observation",
     "subject": "Blended headline numbers, 2026-10-08 to 2026-10-12 (4-day Thursday-to-Monday window, twice-weekly strategic review)",
     "follow_up": "Next review (2026-10-15, Thursday) should cover 2026-10-13 to 2026-10-15 only, not re-include these dates, to avoid double counting."
-  },
-  "KL-2026-10-13-014530": {
-    "id": "KL-2026-10-13-014530",
-    "date": "2026-10-13",
-    "type": "outcome",
-    "subject": "Due-now sweep: KL-2026-10-08-034403 (Nikki Mehra headline plan hold re-check) - already resolved, no resend needed",
-    "follow_up": "None - closed."
-  },
-  "KL-2026-10-13-014531": {
-    "id": "KL-2026-10-13-014531",
-    "date": "2026-10-13",
-    "type": "outcome",
-    "subject": "Due-now sweep: KL-2026-10-09-071850 (Profile Visits cost-per-follower confirming read) - already resolved via Ad B pause",
-    "follow_up": "None - closed. Next checkpoint already tracked in KL-2026-10-12-EXEC-PROFILEVISITS-ADBPAUSE."
   },
   "KL-2026-10-14-014950": {
     "id": "KL-2026-10-14-014950",
@@ -166,13 +103,6 @@
     "type": "observation",
     "subject": "Dashboard (live_server.py) product-mapped ad-status verification has been 100% broken since 2026-09-23/28 - a leftover SYNC_TEST_00000 test id poisons every batch Meta call",
     "follow_up": "Next interactive session (not this headless run - live_server.py/template.html are out of this runs fix scope, deployed by hand via scp, not git-tracked): fix load_confirmed_product_map()/get_ads_running_grid_html in live_server.py so an unlink (empty-products confirmed entry) actually removes the prior sku->ad_ids key instead of being silently absorbed, and/or validate candidate ids look like real numeric Meta object ids before batching them into the ids= GET - then clean up or correct the stale SYNC_TEST_00000 lines (47-48) in knowledge/creative-product-map.jsonl so this test probe never reaches a live batch call again. Until fixed, every product-mapped ads live effective_status on the Ads Running tab is running on a cache that has never once successfully populated since 2026-09-28."
-  },
-  "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT": {
-    "id": "KL-2026-10-15-CS-UGC-HOUSEOFMISU-REJECT",
-    "date": "2026-10-15",
-    "type": "decision",
-    "subject": "@houseofmisu Reel instagram.com/reel/DeZBD4YNCYs/ (media 17865666309675229) - DISPOSITION: REJECT, confirmed by my own independent frame review, not just social-community-manager's",
-    "follow_up": "None - closed. No repost, no paid use, no further verification needed."
   },
   "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED": {
     "id": "KL-2026-10-15-PA-KAFL027-ZEROORDERRESOLVED",
@@ -475,12 +405,12 @@
     "subject": "Daily Media Library check (2026-11-04) - 0 unreviewed manual uploads, 0 unreviewed instagram_auto items, 0 re-reviews, but a real gap found: 7 items silently dropped on 2026-11-02/11-03 nightly collector runs due to low disk space, with zero retained record of what they were",
     "follow_up": "Needs a human/infra decision, not a Media Library triage call: free disk space on the droplet (currently 893MB free, under the 1GB floor the collector needs) so instagram_collect.py stops dropping items. Until that happens, any Story/tag/hashtag content posted on nights the droplet is this full is permanently lost to this pipeline with zero trace of what it was. Reporting to the user directly rather than queuing a repost/ad plan, since there is nothing to triage - the content itself was never captured."
   },
-  "KL-2026-11-05-own-content": {
-    "id": "KL-2026-11-05-own-content",
+  "KL-2026-11-05-comment-batch": {
+    "id": "KL-2026-11-05-comment-batch",
     "date": "2026-11-05",
-    "type": "observation",
-    "subject": "Thursday twice-weekly own-content sweep (2026-11-05) - 2 new LOOMIERE single-SKU posts since the 2026-11-01 boundary, both the same SKU (Red Velvet Lace Corset With Drape Skirt & Stole), supplementary to the already-pending NEW CAMPAIGN/USE Loomiere disposition - no fresh five-way call needed; 1 already-known Reel (Bottle Green) confirmed fully actioned, not a new find",
-    "follow_up": "No fresh handoff needed - both new posts are supplementary creative on an already-pending disposition. Next sweep boundary: 18119419228996420 (2026-11-04T13:45:02)."
+    "type": "decision",
+    "subject": "Routine comment-reply batch (3 items) - thank-yous across the 2 newest own LOOMIERE posts and the already-known Bottle Green Reel, since the 2026-11-02 batch",
+    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
   },
   "KL-2026-11-05-ugc-tags": {
     "id": "KL-2026-11-05-ugc-tags",
