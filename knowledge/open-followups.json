@@ -391,6 +391,13 @@
     "subject": "Crimson Beaded (52562444646780) and Rafaey Master (52551343010580) fresh read for the held Frozen Blue proposal - Crimson Beaded's 2026-11-02 pause verdict rested on a stale feed copy and was never executed; corrected live feed now shows a materially different picture",
     "follow_up": "campaign-strategist should re-litigate the Crimson Beaded pause verdict against the corrected live feed before the held Frozen Blue plan is resent unchanged - the quality anchor it cited no longer matches. Separately: confirm with media-buyer/marketing-lead whether the validated 2026-11-02 pause plan is still awaiting Suraj's approval or was simply missed, since the ad set is still ACTIVE and drawing spend five days after a PAUSE verdict was issued."
   },
+  "KL-2026-11-05-PA-CRIMSONBEADED-PAUSEPLAN-STALLED": {
+    "id": "KL-2026-11-05-PA-CRIMSONBEADED-PAUSEPLAN-STALLED",
+    "date": "2026-11-05",
+    "type": "observation",
+    "subject": "Crimson Beaded pause plan (KL-2026-11-02-021115, validates KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE) never sent for/received Telegram approval - ad set 52562444646780 confirmed still ACTIVE at Rs150/day live, 3 days after the PAUSE verdict was reached",
+    "follow_up": "Resend KL-2026-11-02-021115 via scripts/send-telegram-approval.sh at this review alongside the Frozen Blue and Australia holds; re-check 2026-11-09 (next review after this one) whether it has been approved/rejected/held or is still sitting un-sent."
+  },
   "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK": {
     "id": "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK",
     "date": "2026-11-05",
