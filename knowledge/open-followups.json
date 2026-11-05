@@ -405,6 +405,13 @@
     "subject": "Crimson Beaded pause plan (KL-2026-11-02-021115, validates KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE) never sent for/received Telegram approval - ad set 52562444646780 confirmed still ACTIVE at Rs150/day live, 3 days after the PAUSE verdict was reached",
     "follow_up": "Resend KL-2026-11-02-021115 via scripts/send-telegram-approval.sh at this review alongside the Frozen Blue and Australia holds; re-check 2026-11-09 (next review after this one) whether it has been approved/rejected/held or is still sitting un-sent."
   },
+  "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES": {
+    "id": "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES",
+    "date": "2026-11-05",
+    "type": "observation",
+    "subject": "Reverse geo check, trailing 90 days (2026-08-07 to 2026-11-04): Netherlands (1 order/Rs380,000), Malaysia (2/Rs203,820), Saudi Arabia (1/Rs201,422), Nigeria (2/Rs113,000), UAE (2/Rs113,000), Thailand (2/Rs79,500) all show real Stitchflow revenue with Rs0 Meta acquisition spend in-window; Singapore and Pakistan continue the pattern already logged 2026-10-19",
+    "follow_up": "campaign-strategist to weigh whether any of these (individually, Netherlands single large order is the standout) warrant a prospecting test per the eight geography dispositions; none has enough volume alone to justify more than a watch item yet."
+  },
   "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK": {
     "id": "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK",
     "date": "2026-11-05",
