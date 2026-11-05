@@ -293,13 +293,6 @@
     "subject": "Pre-committed budget-swap rule check (Broad Advantage+ India 52535906903180 vs India Whatsapp 9th Dec 25 6862975169176) - HOLD the swap, mature-only data does not clear the threshold yet",
     "follow_up": "Re-pull mature-only cost-per-serious-or-better for both ad sets ~2026-11-16 to 11-23, once the current recent cohort (the one driving the 18->50 serious-count tripling) has had time to mature/validate. If the mature-only ratio has itself climbed to >=1.5x by then, execute the swap (Broad 1,000->860 / India WA 720->860, budget-neutral, total unchanged) without further delay. If still below 1.5x on mature data, close this watch item."
   },
-  "KL-2026-11-02-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-02-CS-BUDGETCHECK",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "Portfolio budget allocation check + Scale Intelligence (S3e) ceiling verdict + geography disposition - Monday full review 2026-11-02",
-    "follow_up": "2026-11-10: Loomiere launch end-date review - decide extend/revert-to-Rs6,500/new ceiling based on the launch's actual results over its full window, per S3e."
-  },
   "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM": {
     "id": "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM",
     "date": "2026-11-02",
@@ -383,6 +376,13 @@
     "type": "decision",
     "subject": "16th May 26 | India (adset 6968778736776, Awareness/REACH objective) - winners-report pause candidate - VERDICT: PAUSE, the awareness-objective parallel to Profile Visits argues FOR pausing here, not against it",
     "follow_up": "media-buyer: validate and prepare a PAUSE execution plan for the 16th May 26 | Awarness ad (and the ad set itself if it is the sole active ad there), tag fair-chance-pause (NOT winner-raise - this is a pause). Route via scripts/send-telegram-approval.sh for Suraj's direct tap before any live write; confirm the Ice Blue KAFL026 ad is unaffected if it shares the ad set."
+  },
+  "KL-2026-11-05-CS-BROADADVPLUS-HOLDRAISE": {
+    "id": "KL-2026-11-05-CS-BROADADVPLUS-HOLDRAISE",
+    "date": "2026-11-05",
+    "type": "decision",
+    "subject": "First Love | Broad Advantage+ | India (52535906903180) - below India country minimum (Rs1,000/day vs Rs1,620/day) but NOT raised this cycle - confound + per-ad-set step-size guardrail both argue for waiting",
+    "follow_up": "Next full review (2026-11-09) or once the post-10-28 CPM confound is confirmed settled (check cost/serious and CPM trend fresh): propose a first Rs1,000 to Rs1,200/day step (20%) toward the Rs1,620 India minimum, continuing in further 20% steps at subsequent reviews rather than one large jump."
   },
   "KL-2026-11-05-CS-CRIMSONBEADED-REVISEDVERDICT": {
     "id": "KL-2026-11-05-CS-CRIMSONBEADED-REVISEDVERDICT",
