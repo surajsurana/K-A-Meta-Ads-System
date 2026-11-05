@@ -474,5 +474,12 @@
     "type": "observation",
     "subject": "Daily Media Library check (2026-11-04) - 0 unreviewed manual uploads, 0 unreviewed instagram_auto items, 0 re-reviews, but a real gap found: 7 items silently dropped on 2026-11-02/11-03 nightly collector runs due to low disk space, with zero retained record of what they were",
     "follow_up": "Needs a human/infra decision, not a Media Library triage call: free disk space on the droplet (currently 893MB free, under the 1GB floor the collector needs) so instagram_collect.py stops dropping items. Until that happens, any Story/tag/hashtag content posted on nights the droplet is this full is permanently lost to this pipeline with zero trace of what it was. Reporting to the user directly rather than queuing a repost/ad plan, since there is nothing to triage - the content itself was never captured."
+  },
+  "KL-2026-11-05-ugc-tags": {
+    "id": "KL-2026-11-05-ugc-tags",
+    "date": "2026-11-05",
+    "type": "observation",
+    "subject": "Thursday twice-weekly UGC-tags sweep (2026-11-05) - no new tagged items since the 2026-11-02 boundary",
+    "follow_up": "Next sweep boundary: nothing newer than DfKv4-iNixg (2026-10-31T18:03:00) found as of 2026-11-05."
   }
 }
