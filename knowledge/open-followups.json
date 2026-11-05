@@ -377,12 +377,12 @@
     "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
     "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
   },
-  "KL-2026-11-05-LQ-CRIMSONBEADED-STALEFEED-RECONCILE": {
-    "id": "KL-2026-11-05-LQ-CRIMSONBEADED-STALEFEED-RECONCILE",
+  "KL-2026-11-05-CS-CRIMSONBEADED-REVISEDVERDICT": {
+    "id": "KL-2026-11-05-CS-CRIMSONBEADED-REVISEDVERDICT",
     "date": "2026-11-05",
-    "type": "observation",
-    "subject": "Crimson Beaded (52562444646780) and Rafaey Master (52551343010580) fresh read for the held Frozen Blue proposal - Crimson Beaded's 2026-11-02 pause verdict rested on a stale feed copy and was never executed; corrected live feed now shows a materially different picture",
-    "follow_up": "campaign-strategist should re-litigate the Crimson Beaded pause verdict against the corrected live feed before the held Frozen Blue plan is resent unchanged - the quality anchor it cited no longer matches. Separately: confirm with media-buyer/marketing-lead whether the validated 2026-11-02 pause plan is still awaiting Suraj's approval or was simply missed, since the ad set is still ACTIVE and drawing spend five days after a PAUSE verdict was issued."
+    "type": "decision",
+    "subject": "Crimson Beaded Test (adset 52562444646780) - WITHDRAW the stalled pause plan (KL-2026-11-02-021115); corrected quality data no longer supports it; MAINTAIN with a fresh, explicitly dated stop-rule",
+    "follow_up": "media-buyer/marketing-lead: do not dispatch KL-2026-11-02-021115 for Telegram approval - it is superseded. Next review (2026-11-09): lead-quality-analyst re-pull Crimson Beaded on the corrected feed, campaign-strategist apply the fresh bars stated here."
   },
   "KL-2026-11-05-PA-16THMAY-PAUSECANDIDATE": {
     "id": "KL-2026-11-05-PA-16THMAY-PAUSECANDIDATE",
@@ -397,13 +397,6 @@
     "type": "observation",
     "subject": "30-day blended ROAS 32.1x (Oct6-Nov4 2026), down from the 39.55x baseline logged 2026-10-29; 90-day 36.4x essentially unchanged (36.24x prior); same 30 days last year approx 46.8x on Rs0.945L spend",
     "follow_up": "Next review: third 30-day reading needed before any ROAS-based cut consideration under SS3e two-reviews-in-a-row rule."
-  },
-  "KL-2026-11-05-PA-CRIMSONBEADED-PAUSEPLAN-STALLED": {
-    "id": "KL-2026-11-05-PA-CRIMSONBEADED-PAUSEPLAN-STALLED",
-    "date": "2026-11-05",
-    "type": "observation",
-    "subject": "Crimson Beaded pause plan (KL-2026-11-02-021115, validates KL-2026-11-02-CS-CRIMSONBEADED-STOPRULE-FIRED-PAUSE) never sent for/received Telegram approval - ad set 52562444646780 confirmed still ACTIVE at Rs150/day live, 3 days after the PAUSE verdict was reached",
-    "follow_up": "Resend KL-2026-11-02-021115 via scripts/send-telegram-approval.sh at this review alongside the Frozen Blue and Australia holds; re-check 2026-11-09 (next review after this one) whether it has been approved/rejected/held or is still sitting un-sent."
   },
   "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES": {
     "id": "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES",
