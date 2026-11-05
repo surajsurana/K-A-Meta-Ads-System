@@ -279,13 +279,6 @@
     "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
     "follow_up": "re-check 2026-11-05: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-11-02-025526": {
-    "id": "KL-2026-11-02-025526",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
-    "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-11-02-025605": {
     "id": "KL-2026-11-02-025605",
     "date": "2026-11-02",
@@ -391,19 +384,19 @@
     "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
     "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
   },
-  "KL-2026-11-04-media-library": {
-    "id": "KL-2026-11-04-media-library",
-    "date": "2026-11-04",
-    "type": "observation",
-    "subject": "Daily Media Library check (2026-11-04) - 0 unreviewed manual uploads, 0 unreviewed instagram_auto items, 0 re-reviews, but a real gap found: 7 items silently dropped on 2026-11-02/11-03 nightly collector runs due to low disk space, with zero retained record of what they were",
-    "follow_up": "Needs a human/infra decision, not a Media Library triage call: free disk space on the droplet (currently 893MB free, under the 1GB floor the collector needs) so instagram_collect.py stops dropping items. Until that happens, any Story/tag/hashtag content posted on nights the droplet is this full is permanently lost to this pipeline with zero trace of what it was. Reporting to the user directly rather than queuing a repost/ad plan, since there is nothing to triage - the content itself was never captured."
-  },
   "KL-2026-11-05-LQ-CRIMSONBEADED-STALEFEED-RECONCILE": {
     "id": "KL-2026-11-05-LQ-CRIMSONBEADED-STALEFEED-RECONCILE",
     "date": "2026-11-05",
     "type": "observation",
     "subject": "Crimson Beaded (52562444646780) and Rafaey Master (52551343010580) fresh read for the held Frozen Blue proposal - Crimson Beaded's 2026-11-02 pause verdict rested on a stale feed copy and was never executed; corrected live feed now shows a materially different picture",
     "follow_up": "campaign-strategist should re-litigate the Crimson Beaded pause verdict against the corrected live feed before the held Frozen Blue plan is resent unchanged - the quality anchor it cited no longer matches. Separately: confirm with media-buyer/marketing-lead whether the validated 2026-11-02 pause plan is still awaiting Suraj's approval or was simply missed, since the ad set is still ACTIVE and drawing spend five days after a PAUSE verdict was issued."
+  },
+  "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK": {
+    "id": "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK",
+    "date": "2026-11-05",
+    "type": "observation",
+    "subject": "Held plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION status check (Thursday review, 2026-11-05) - unchanged since the 2026-11-02 hold, safe to resend as-is",
+    "follow_up": "Reporting to the orchestrating session: unchanged, safe to resend KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION via Telegram as-is. No action taken by this agent on the held plan itself."
   },
   "KL-2026-11-05-ambiguous-comment": {
     "id": "KL-2026-11-05-ambiguous-comment",
