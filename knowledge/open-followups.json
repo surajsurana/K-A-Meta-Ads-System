@@ -412,6 +412,13 @@
     "subject": "Three new Loomiere ads with essentially no data yet - confirmed KEEP RUNNING, no disposition warranted today",
     "follow_up": "Standard fair-chance re-check once each reaches 7 days active."
   },
+  "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC": {
+    "id": "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC",
+    "date": "2026-11-05",
+    "type": "change",
+    "subject": "First Love | Cold Prospecting | Australia (52562820202180) and its ad 52562820223580 - ad set paused per approved plan",
+    "follow_up": "Re-activate only on a genuine new independent Australia demand signal per the plan rollback criteria; any retest starts a fresh stop-rule window, not a resumption of this clock."
+  },
   "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE": {
     "id": "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE",
     "date": "2026-11-05",
