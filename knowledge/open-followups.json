@@ -461,13 +461,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 7th consecutive cycle (18 days), @social_cravings a 4th; system-evolution fix accepted but not yet built, not re-escalating identically",
     "follow_up": "aesana0710: awaiting Suraj action on the 2026-11-02 escalation, or the backlog build landing (whichever first) - do not re-escalate identically next cycle either unless the build has landed and the new standing rule applies. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-05-comment-batch": {
-    "id": "KL-2026-11-05-comment-batch",
-    "date": "2026-11-05",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (3 items) - thank-yous across the 2 newest own LOOMIERE posts and the already-known Bottle Green Reel, since the 2026-11-02 batch",
-    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
   "KL-2026-11-05-ugc-tags": {
     "id": "KL-2026-11-05-ugc-tags",
     "date": "2026-11-05",
