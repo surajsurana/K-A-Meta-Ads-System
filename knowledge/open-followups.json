@@ -412,6 +412,13 @@
     "subject": "Three new Loomiere ads with essentially no data yet - confirmed KEEP RUNNING, no disposition warranted today",
     "follow_up": "Standard fair-chance re-check once each reaches 7 days active."
   },
+  "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC": {
+    "id": "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC",
+    "date": "2026-11-05",
+    "type": "change",
+    "subject": "16th May 26 | Awarness (ad 6968778736976, ad set 6968778736776 '16th May 26 | India', campaign 6968778737176 '16th May 26 | Awareness') - ad paused per approved plan",
+    "follow_up": "This pause stands per the plan's own rollback criteria - do not re-activate informally; reactivation requires a fresh, deliberate awareness-spend decision by Suraj/campaign-strategist, not a reversal of this pause on the same zero-commercial-trace terms. Separately: reconcile the Rs7,076.00/day (15 active ad sets) vs the expected Rs7,176.00/day (16 active ad sets) account-wide budget total - some ad set outside this plan's scope appears to have changed status independently; this should be resolved before the 2026-11-10 ceiling-reversion review campaign-strategist already flagged in KL-2026-11-05-CS-BUDGETCHECK."
+  },
   "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC": {
     "id": "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC",
     "date": "2026-11-05",
