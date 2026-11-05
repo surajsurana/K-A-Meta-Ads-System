@@ -377,6 +377,13 @@
     "subject": "16th May 26 | India (ad set 6968778736776, campaign 6968778737176 '16th May 26 | Awareness') - targeting-only edit to close out the last account-wide 22-55/hard-gender exception",
     "follow_up": "On Suraj's approval, marketing-lead executes the single targeting POST above, then runs all 4 verification steps, then logs a linked type=change entry. If effective_status doesn't clear the transient IN_PROCESS window within about an hour, recheck before assuming a problem. 3-4 day gender/age drift watch after execution, same cadence as STEP1-C/STEP2-B/STEP3. This closes out the full guardrail 15/16 rollout account-wide once executed - no further ad sets are known to need this fix as of today."
   },
+  "KL-2026-11-05-030740": {
+    "id": "KL-2026-11-05-030740",
+    "date": "2026-11-05",
+    "type": "observation",
+    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
+    "follow_up": "re-check 2026-11-09: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
+  },
   "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
     "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
     "date": "2026-11-05",
