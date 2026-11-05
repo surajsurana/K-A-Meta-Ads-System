@@ -384,6 +384,13 @@
     "subject": "Netherlands - new reverse-geo entrant (1 order, Rs380,000, zero Meta spend) - DISPOSITION: HOLD/watch, same bar already applied to Saudi Arabia/Malaysia/Nigeria, not yet a test case",
     "follow_up": "Re-examine if a second Netherlands order appears, or if cumulative Netherlands lifetime revenue grows to a level comparable to the UK/USA-Canada cases before they were tested."
   },
+  "KL-2026-11-05-CS-LOOMIEREAD-FAIRCHANCE-KEEP": {
+    "id": "KL-2026-11-05-CS-LOOMIEREAD-FAIRCHANCE-KEEP",
+    "date": "2026-11-05",
+    "type": "outcome",
+    "subject": "Loomiere | Launch Reel | Styling Appointment | Broad (ad 52564598185780, ad set 52564598075780) - first trustworthy quality read: weak numbers, but fair-chance spend threshold NOT yet met - KEEP RUNNING",
+    "follow_up": "Re-check spend vs the Rs6,813 need_spend threshold at the next review (within 1-2 days, not the next full weekly pass) - once crossed, with quality still at 0-1 serious enquiries, this becomes a pause candidate and should be handed to media-buyer for a validated pause plan the same way KL-2026-11-05-010803 was built for the 16th May Awareness ad."
+  },
   "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE": {
     "id": "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE",
     "date": "2026-11-05",
