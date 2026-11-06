@@ -384,13 +384,6 @@
     "subject": "Loomiere | Launch Reel | Styling Appointment | Broad (ad 52564598185780, ad set 52564598075780) - first trustworthy quality read: weak numbers, but fair-chance spend threshold NOT yet met - KEEP RUNNING",
     "follow_up": "Re-check spend vs the Rs6,813 need_spend threshold at the next review (within 1-2 days, not the next full weekly pass) - once crossed, with quality still at 0-1 serious enquiries, this becomes a pause candidate and should be handed to media-buyer for a validated pause plan the same way KL-2026-11-05-010803 was built for the 16th May Awareness ad."
   },
-  "KL-2026-11-05-CS-LOOMIERENEWADS-KEEP": {
-    "id": "KL-2026-11-05-CS-LOOMIERENEWADS-KEEP",
-    "date": "2026-11-05",
-    "type": "outcome",
-    "subject": "Three new Loomiere ads with essentially no data yet - confirmed KEEP RUNNING, no disposition warranted today",
-    "follow_up": "Standard fair-chance re-check once each reaches 7 days active."
-  },
   "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC": {
     "id": "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC",
     "date": "2026-11-05",
@@ -474,5 +467,12 @@
     "type": "decision",
     "subject": "Account-wide CPM/cost-per-conversation deterioration post-2026-10-28 guardrail-15 edits - this is TWO separable mechanisms, not one transient confound; Bihar/Jharkhand/Assam/J&K geo-exclusion rollback question CONFIRMED CLOSED, independent of either",
     "follow_up": "Re-check ~2026-11-07 to 11-09 (same date as Coffee Brown/Barbie Pink checkpoint): if India Insta Engaged and 9th Dec 25 cost-per-conversation have not improved, bring an exclusion proposal (shared custom audiences off 9th Dec 25 and/or India Insta Engaged, not off Loomiere IG Engaged) to media-buyer, reading enquiry quality alongside cost per the standing rule. Bihar/Jharkhand/Assam/J&K: closed, no further standing review."
+  },
+  "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK": {
+    "id": "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK",
+    "date": "2026-11-06",
+    "type": "outcome",
+    "subject": "Loomiere new-ad watch, daily check: Launch Reel (below fair-chance spend threshold, KEEP per 3f), Lavender Solo Styling Appointment (n=3, still too thin despite days-gate clearing), Bottle Green Solo (KEEP, no flags)",
+    "follow_up": "Standard fair-chance re-check once each ad clears both days-active and spend gates per the nightly winners feed."
   }
 }
