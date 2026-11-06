@@ -279,13 +279,6 @@
     "subject": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
     "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-AUSTRALIA-PAUSEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
   },
-  "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM": {
-    "id": "KL-2026-11-02-CS-BIHARGROUP-ROLLBACKCHECK-CONFIRM",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "Bihar/Jharkhand/Assam/J&K exclusion rollback check - CONFIRM performance-analyst no-action read; the 4 small-budget Test ad sets cost-per-conversation rise rides the existing 2026-10-28 STEP1-C/STEP2-B recovery watch, no separate disposition",
-    "follow_up": "No live change. Re-check these 4 ad sets cost-per-conversation alongside the existing about 2026-11-06 to 11-09 STEP1-C/STEP2-B recovery re-check already scheduled for Cut Out to Reveal; the geo exclusion itself needs no separate rollback review unless a future clean-window read shows the problem persisting after the targeting-edit confound has cleared."
-  },
   "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST": {
     "id": "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST",
     "date": "2026-11-02",
@@ -474,5 +467,12 @@
     "type": "decision",
     "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) - Metallic Coffee Brown activation gate: Rs66-98 CPM baseline is obsolete, replace with a post-STEP2-B comparison; HOLD activation pending the 2026-11-07/09 IG-engaged-overlap checkpoint",
     "follow_up": "Re-check ~2026-11-07 to 11-09 alongside the IG-engaged-overlap checkpoint. If no exclusion fix is needed on 6862975169176, route Metallic Coffee Brown activation to media-buyer using the current ~Rs390-410 CPM as baseline, staggered a few days after Barbie Pink Refresh (see KL-2026-11-06-CS-BARBIEPINK-REVISEDVERDICT) rather than simultaneously."
+  },
+  "KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS": {
+    "id": "KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS",
+    "date": "2026-11-06",
+    "type": "decision",
+    "subject": "Account-wide CPM/cost-per-conversation deterioration post-2026-10-28 guardrail-15 edits - this is TWO separable mechanisms, not one transient confound; Bihar/Jharkhand/Assam/J&K geo-exclusion rollback question CONFIRMED CLOSED, independent of either",
+    "follow_up": "Re-check ~2026-11-07 to 11-09 (same date as Coffee Brown/Barbie Pink checkpoint): if India Insta Engaged and 9th Dec 25 cost-per-conversation have not improved, bring an exclusion proposal (shared custom audiences off 9th Dec 25 and/or India Insta Engaged, not off Loomiere IG Engaged) to media-buyer, reading enquiry quality alongside cost per the standing rule. Bihar/Jharkhand/Assam/J&K: closed, no further standing review."
   }
 }
