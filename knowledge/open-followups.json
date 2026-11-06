@@ -321,13 +321,6 @@
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, adset 6862975169176) - fresh GET shows status=PAUSED/effective_status=PAUSED, not ACTIVE as the standing follow-up assumed; the ad has in fact been paused continuously since the 2026-10-22 quality revert, not newly stuck",
     "follow_up": "campaign-strategist: fold this correction into the ~2026-11-05/11-06 combined pool-composition review in place of the original zero-spend-anomaly framing - the real open question for that review is whether/when to reactivate KAFL018 Barbie Pink Refresh (paused since 2026-10-22 on a lead-quality SOS), not a delivery bug to fix."
   },
-  "KL-2026-11-03-PA-GATEREFRAME-FOLLOWUP-RESTORE": {
-    "id": "KL-2026-11-03-PA-GATEREFRAME-FOLLOWUP-RESTORE",
-    "date": "2026-11-03",
-    "type": "observation",
-    "subject": "Tooling gap found live: linking my Barbie Pink status-check entry to KL-2026-11-02-CS-KAFL010POOL-GATE-REFRAME silently dropped that entry's other two still-open threads (Metallic Coffee Brown activation gate, You've Seen the Corsets retirement look) from knowledge/open-followups.json - restoring them here",
-    "follow_up": "~2026-11-05/11-06 combined pool-composition review (contingent on the Lookalike-overlap fix executing and showing 2-3 clean recovery days): (1) route Metallic Coffee Brown activation (ad 52552969628580 in 6862975169176) to media-buyer if CPM has recovered toward the Rs66-98 baseline, (2) decide the You've Seen the Corsets (ad 52547120579980) retirement question with a fresh look, (3) separately, next interactive session: fix update-open-followups.py (or the authoring convention) so a multi-item follow_up does not get wholly dropped when only one of its items is resolved via linked_to."
-  },
   "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ": {
     "id": "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ",
     "date": "2026-11-03",
@@ -467,5 +460,12 @@
     "type": "observation",
     "subject": "Thursday twice-weekly UGC-tags sweep (2026-11-05) - no new tagged items since the 2026-11-02 boundary",
     "follow_up": "Next sweep boundary: nothing newer than DfKv4-iNixg (2026-10-31T18:03:00) found as of 2026-11-05."
+  },
+  "KL-2026-11-06-CS-COFFEEBROWN-GATE-REBASELINE": {
+    "id": "KL-2026-11-06-CS-COFFEEBROWN-GATE-REBASELINE",
+    "date": "2026-11-06",
+    "type": "decision",
+    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) - Metallic Coffee Brown activation gate: Rs66-98 CPM baseline is obsolete, replace with a post-STEP2-B comparison; HOLD activation pending the 2026-11-07/09 IG-engaged-overlap checkpoint",
+    "follow_up": "Re-check ~2026-11-07 to 11-09 alongside the IG-engaged-overlap checkpoint. If no exclusion fix is needed on 6862975169176, route Metallic Coffee Brown activation to media-buyer using the current ~Rs390-410 CPM as baseline, staggered a few days after Barbie Pink Refresh (see KL-2026-11-06-CS-BARBIEPINK-REVISEDVERDICT) rather than simultaneously."
   }
 }
