@@ -440,6 +440,13 @@
     "subject": "Barbie Pink Refresh (52562108793580) reactivation proceeds now; Metallic Coffee Brown (52552969628580) staggered a few days after - the stacking confound that was gating both is resolved differently than expected",
     "follow_up": "media-buyer: build and validate a plan to reactivate ad 52562108793580 (switch ACTIVE) in ad set 6862975169176 today, for Suraj approval - no budget change. Bring Metallic Coffee Brown (52552969628580) activation 3-4 days after Barbie Pink goes live, using the current ~Rs390-410 CPM as baseline, not Rs66-98."
   },
+  "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH": {
+    "id": "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH",
+    "date": "2026-11-07",
+    "type": "decision",
+    "subject": "First Love | Cold Prospecting | Canada (52558954063980) Facebook share tripling - no fix yet, watch another cycle, the guardrail-16 channel-analysis-by-quality follow-through genuinely cannot be done yet on this ad set (sample too thin)",
+    "follow_up": "Re-check Cold Prospecting Canadas Facebook-tap enquiry count and junk/serious mix at the next weekly review, or sooner if spend keeps climbing; only consider an Instagram-only placement edit once there is actual quality data on the Facebook-tap rows to compare against Instagram-tap."
+  },
   "KL-2026-11-07-CS-LAVENDERBROAD-KEEPCONFIRMED": {
     "id": "KL-2026-11-07-CS-LAVENDERBROAD-KEEPCONFIRMED",
     "date": "2026-11-07",
@@ -460,13 +467,6 @@
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180, ad set 52564357579980) has zero AISI-matched WhatsApp enquiry rows in the lead-quality feed, despite Meta-side spend/conversions",
     "follow_up": "Next lead-quality pull: re-check whether 52566563586180 has acquired any AISI-matched rows as it ages past the 3-day mark. If spend keeps climbing with zero AISI rows while Meta-side conversions keep registering, escalate as a possible WATI referral-matching gap specific to this ad, not a quality read."
-  },
-  "KL-2026-11-07-PA-HEARTBEAT-COLDPROSPECTINGCANADA-FBSHARE": {
-    "id": "KL-2026-11-07-PA-HEARTBEAT-COLDPROSPECTINGCANADA-FBSHARE",
-    "date": "2026-11-07",
-    "type": "observation",
-    "subject": "First Love | Cold Prospecting | Canada (52558954063980) - Facebook placement share nearly tripled (5.7% to 16.5% of spend) over the last week; not part of any guardrail-15 Instagram-only edit",
-    "follow_up": "campaign-strategist: weigh whether Cold Prospecting Canadas rising Facebook share warrants action (e.g. Instagram-only placement like the guardrail-15 set, or just continued watching) - no prior baseline/decision exists for this ad sets own placement mix to check against."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
