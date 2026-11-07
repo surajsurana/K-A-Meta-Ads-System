@@ -426,13 +426,6 @@
     "subject": "Thursday twice-weekly UGC-tags sweep (2026-11-05) - no new tagged items since the 2026-11-02 boundary",
     "follow_up": "Next sweep boundary: nothing newer than DfKv4-iNixg (2026-10-31T18:03:00) found as of 2026-11-05."
   },
-  "KL-2026-11-07-CS-BARBIEPINK-COFFEEBROWN-SEQUENCE": {
-    "id": "KL-2026-11-07-CS-BARBIEPINK-COFFEEBROWN-SEQUENCE",
-    "date": "2026-11-07",
-    "type": "decision",
-    "subject": "Barbie Pink Refresh (52562108793580) reactivation proceeds now; Metallic Coffee Brown (52552969628580) staggered a few days after - the stacking confound that was gating both is resolved differently than expected",
-    "follow_up": "media-buyer: build and validate a plan to reactivate ad 52562108793580 (switch ACTIVE) in ad set 6862975169176 today, for Suraj approval - no budget change. Bring Metallic Coffee Brown (52552969628580) activation 3-4 days after Barbie Pink goes live, using the current ~Rs390-410 CPM as baseline, not Rs66-98."
-  },
   "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH": {
     "id": "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH",
     "date": "2026-11-07",
@@ -474,6 +467,13 @@
     "type": "observation",
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
+  },
+  "KL-2026-11-07-MB-BARBIEPINK-REACTIVATION-PLAN": {
+    "id": "KL-2026-11-07-MB-BARBIEPINK-REACTIVATION-PLAN",
+    "date": "2026-11-07",
+    "type": "decision",
+    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, ad set 6862975169176, India | Whatsapp | 9th Dec 25) - validated reactivation plan, PAUSED -> ACTIVE, no budget change, ready for marketing-lead execution",
+    "follow_up": "marketing-lead: execute POST /52562108793580 status=ACTIVE once Suraj approves via Telegram. After executing, append a linked type:change entry and run the verification GETs listed in summary. Do NOT bundle Metallic Coffee Brown (52552969628580) into this execution - that is staggered 3-4 days later per campaign-strategist's sequencing decision, as a separate plan."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
