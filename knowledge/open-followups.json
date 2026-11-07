@@ -447,6 +447,13 @@
     "subject": "Barbie Pink Refresh (52562108793580) reactivation proceeds now; Metallic Coffee Brown (52552969628580) staggered a few days after - the stacking confound that was gating both is resolved differently than expected",
     "follow_up": "media-buyer: build and validate a plan to reactivate ad 52562108793580 (switch ACTIVE) in ad set 6862975169176 today, for Suraj approval - no budget change. Bring Metallic Coffee Brown (52552969628580) activation 3-4 days after Barbie Pink goes live, using the current ~Rs390-410 CPM as baseline, not Rs66-98."
   },
+  "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED": {
+    "id": "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED",
+    "date": "2026-11-07",
+    "type": "outcome",
+    "subject": "Lavender Solo (52565052977180, ad set 52564357579980) - continue running, both recheck triggers met but direction keeps improving on a still-thin sample; set a firm next checkpoint instead of extending open-ended",
+    "follow_up": "Recheck 2026-11-12, or sooner if Lavender Solo reaches 8 total conversations or Rs1,500 individual spend. No live change today."
+  },
   "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH": {
     "id": "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH",
     "date": "2026-11-07",
@@ -460,13 +467,6 @@
     "type": "observation",
     "subject": "First Love | Cold Prospecting | Canada (52558954063980) - Facebook placement share nearly tripled (5.7% to 16.5% of spend) over the last week; not part of any guardrail-15 Instagram-only edit",
     "follow_up": "campaign-strategist: weigh whether Cold Prospecting Canadas rising Facebook share warrants action (e.g. Instagram-only placement like the guardrail-15 set, or just continued watching) - no prior baseline/decision exists for this ad sets own placement mix to check against."
-  },
-  "KL-2026-11-07-PA-LAVENDERSOLO-TRIGGERMET": {
-    "id": "KL-2026-11-07-PA-LAVENDERSOLO-TRIGGERMET",
-    "date": "2026-11-07",
-    "type": "observation",
-    "subject": "Lavender Solo (ad 52565052977180, ad set 52564357579980) - both recheck triggers now met (9 days live, 4th conversation), cost gap vs sibling has narrowed from ~3x to ~2.1x",
-    "follow_up": "campaign-strategist: decide keep/extend/pause for Lavender Solo now that both pre-set trigger conditions (7 days live, 2nd/3rd conversion) are met."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
