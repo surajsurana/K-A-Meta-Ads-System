@@ -433,19 +433,19 @@
     "subject": "Thursday twice-weekly UGC-tags sweep (2026-11-05) - no new tagged items since the 2026-11-02 boundary",
     "follow_up": "Next sweep boundary: nothing newer than DfKv4-iNixg (2026-10-31T18:03:00) found as of 2026-11-05."
   },
-  "KL-2026-11-07-073512": {
-    "id": "KL-2026-11-07-073512",
-    "date": "2026-11-07",
-    "type": "decision",
-    "subject": "Loomiere | Metallic Lavender Solo | Broad Advantage+ | Styling Appointment (ad 52565923285580, ad set 52564598075780) - HOLD, do NOT pause - fresh data shows the pre-committed rollback criteria from KL-2026-11-02-010814 no longer hold",
-    "follow_up": "Re-check ad 52565923285580 against the same 3 criteria within the remainder of its guardrail-3 7-day new-ad-watch window (activation 2026-11-02, window closes approx 2026-11-09) or at the next daily heartbeat, using fresh same-window insights each time - do not reuse today's or yesterday's spend/conversation figures."
-  },
   "KL-2026-11-07-CS-BARBIEPINK-COFFEEBROWN-SEQUENCE": {
     "id": "KL-2026-11-07-CS-BARBIEPINK-COFFEEBROWN-SEQUENCE",
     "date": "2026-11-07",
     "type": "decision",
     "subject": "Barbie Pink Refresh (52562108793580) reactivation proceeds now; Metallic Coffee Brown (52552969628580) staggered a few days after - the stacking confound that was gating both is resolved differently than expected",
     "follow_up": "media-buyer: build and validate a plan to reactivate ad 52562108793580 (switch ACTIVE) in ad set 6862975169176 today, for Suraj approval - no budget change. Bring Metallic Coffee Brown (52552969628580) activation 3-4 days after Barbie Pink goes live, using the current ~Rs390-410 CPM as baseline, not Rs66-98."
+  },
+  "KL-2026-11-07-CS-LAVENDERBROAD-KEEPCONFIRMED": {
+    "id": "KL-2026-11-07-CS-LAVENDERBROAD-KEEPCONFIRMED",
+    "date": "2026-11-07",
+    "type": "outcome",
+    "subject": "Lavender Broad ad (52565923285580, ad set 52564598075780) - KEEP running, confirming media-buyers 11-07 HOLD; my 11-06 pause call is superseded by overnight conversions",
+    "follow_up": "Re-check against the same 3 criteria once more before the guardrail-3 7-day new-ad-watch window closes (~2026-11-09), using fresh same-window data each time."
   },
   "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED": {
     "id": "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED",
