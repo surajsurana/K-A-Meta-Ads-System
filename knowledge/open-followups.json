@@ -293,13 +293,6 @@
     "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
     "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
   },
-  "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH": {
-    "id": "KL-2026-11-02-CS-LAVENDERSOLO-EXTENDWATCH",
-    "date": "2026-11-02",
-    "type": "outcome",
-    "subject": "Lavender Solo (ad 52565052977180, Loomiere | Metallic Lavender Solo | Styling Appointment ad set 52564357579980) vs sibling Launch Reel - extend watch, no action",
-    "follow_up": "Recheck at 7 days live or on Lavender Solos 2nd/3rd conversion, whichever comes first."
-  },
   "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK": {
     "id": "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK",
     "date": "2026-11-03",
@@ -460,6 +453,13 @@
     "type": "observation",
     "subject": "Barbie Pink Refresh (52562108793580) and Coffee Brown activation gate (6862975169176) - checkpoint data confirms both are clean to proceed on their own terms; the gating overlap question is the only thing still open (see linked overlap entry)",
     "follow_up": "campaign-strategist: both are clear to act on once the overlap question (KL-2026-11-07-PA-HEARTBEAT-OVERLAPCHECKPOINT) is resolved - no separate blocker on either Barbie Pink or Coffee Brown themselves."
+  },
+  "KL-2026-11-07-PA-LAVENDERSOLO-TRIGGERMET": {
+    "id": "KL-2026-11-07-PA-LAVENDERSOLO-TRIGGERMET",
+    "date": "2026-11-07",
+    "type": "observation",
+    "subject": "Lavender Solo (ad 52565052977180, ad set 52564357579980) - both recheck triggers now met (9 days live, 4th conversation), cost gap vs sibling has narrowed from ~3x to ~2.1x",
+    "follow_up": "campaign-strategist: decide keep/extend/pause for Lavender Solo now that both pre-set trigger conditions (7 days live, 2nd/3rd conversion) are met."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
