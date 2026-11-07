@@ -468,19 +468,19 @@
     "subject": "Account-wide CPM/cost-per-conversation deterioration post-2026-10-28 guardrail-15 edits - this is TWO separable mechanisms, not one transient confound; Bihar/Jharkhand/Assam/J&K geo-exclusion rollback question CONFIRMED CLOSED, independent of either",
     "follow_up": "Re-check ~2026-11-07 to 11-09 (same date as Coffee Brown/Barbie Pink checkpoint): if India Insta Engaged and 9th Dec 25 cost-per-conversation have not improved, bring an exclusion proposal (shared custom audiences off 9th Dec 25 and/or India Insta Engaged, not off Loomiere IG Engaged) to media-buyer, reading enquiry quality alongside cost per the standing rule. Bihar/Jharkhand/Assam/J&K: closed, no further standing review."
   },
-  "KL-2026-11-06-CS-LAVENDERBROADAD-ROLLBACK-PAUSE": {
-    "id": "KL-2026-11-06-CS-LAVENDERBROADAD-ROLLBACK-PAUSE",
-    "date": "2026-11-06",
-    "type": "decision",
-    "subject": "Loomiere | Metallic Lavender Solo | Broad Advantage+ | Styling Appointment (ad 52565923285580, ad set 52564598075780) - PAUSE per its own pre-committed rollback criterion from KL-2026-11-02-010814; route to media-buyer for a validated plan",
-    "follow_up": "media-buyer: validate and build a status-only pause plan for ad 52565923285580 (status ACTIVE -> PAUSED), no budget change, per the rollback criteria in KL-2026-11-02-010814; route to Suraj for Telegram approval before execution."
-  },
   "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK": {
     "id": "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK",
     "date": "2026-11-06",
     "type": "outcome",
     "subject": "Loomiere new-ad watch, daily check: Launch Reel (below fair-chance spend threshold, KEEP per 3f), Lavender Solo Styling Appointment (n=3, still too thin despite days-gate clearing), Bottle Green Solo (KEEP, no flags)",
     "follow_up": "Standard fair-chance re-check once each ad clears both days-active and spend gates per the nightly winners feed."
+  },
+  "KL-2026-11-07-073512": {
+    "id": "KL-2026-11-07-073512",
+    "date": "2026-11-07",
+    "type": "decision",
+    "subject": "Loomiere | Metallic Lavender Solo | Broad Advantage+ | Styling Appointment (ad 52565923285580, ad set 52564598075780) - HOLD, do NOT pause - fresh data shows the pre-committed rollback criteria from KL-2026-11-02-010814 no longer hold",
+    "follow_up": "Re-check ad 52565923285580 against the same 3 criteria within the remainder of its guardrail-3 7-day new-ad-watch window (activation 2026-11-02, window closes approx 2026-11-09) or at the next daily heartbeat, using fresh same-window insights each time - do not reuse today's or yesterday's spend/conversation figures."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
