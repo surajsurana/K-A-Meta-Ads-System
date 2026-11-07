@@ -447,20 +447,6 @@
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, ad set 6862975169176) - both grounds for the 2026-10-22 pause no longer hold; propose REACTIVATION, staged after the IG-engaged-overlap checkpoint, ahead of Coffee Brown",
     "follow_up": "media-buyer: no plan yet, this is a HOLD-then-propose, not a live change today. At the ~2026-11-07 to 11-09 checkpoint (same one gating Coffee Brown), if the IG-engaged-overlap question is resolved either way, bring a reactivation plan for 52562108793580 first; activate Coffee Brown a few days after that, not simultaneously."
   },
-  "KL-2026-11-06-CS-COFFEEBROWN-GATE-REBASELINE": {
-    "id": "KL-2026-11-06-CS-COFFEEBROWN-GATE-REBASELINE",
-    "date": "2026-11-06",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (6862975169176) - Metallic Coffee Brown activation gate: Rs66-98 CPM baseline is obsolete, replace with a post-STEP2-B comparison; HOLD activation pending the 2026-11-07/09 IG-engaged-overlap checkpoint",
-    "follow_up": "Re-check ~2026-11-07 to 11-09 alongside the IG-engaged-overlap checkpoint. If no exclusion fix is needed on 6862975169176, route Metallic Coffee Brown activation to media-buyer using the current ~Rs390-410 CPM as baseline, staggered a few days after Barbie Pink Refresh (see KL-2026-11-06-CS-BARBIEPINK-REVISEDVERDICT) rather than simultaneously."
-  },
-  "KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS": {
-    "id": "KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS",
-    "date": "2026-11-06",
-    "type": "decision",
-    "subject": "Account-wide CPM/cost-per-conversation deterioration post-2026-10-28 guardrail-15 edits - this is TWO separable mechanisms, not one transient confound; Bihar/Jharkhand/Assam/J&K geo-exclusion rollback question CONFIRMED CLOSED, independent of either",
-    "follow_up": "Re-check ~2026-11-07 to 11-09 (same date as Coffee Brown/Barbie Pink checkpoint): if India Insta Engaged and 9th Dec 25 cost-per-conversation have not improved, bring an exclusion proposal (shared custom audiences off 9th Dec 25 and/or India Insta Engaged, not off Loomiere IG Engaged) to media-buyer, reading enquiry quality alongside cost per the standing rule. Bihar/Jharkhand/Assam/J&K: closed, no further standing review."
-  },
   "KL-2026-11-07-073512": {
     "id": "KL-2026-11-07-073512",
     "date": "2026-11-07",
@@ -474,6 +460,13 @@
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180, ad set 52564357579980) has zero AISI-matched WhatsApp enquiry rows in the lead-quality feed, despite Meta-side spend/conversions",
     "follow_up": "Next lead-quality pull: re-check whether 52566563586180 has acquired any AISI-matched rows as it ages past the 3-day mark. If spend keeps climbing with zero AISI rows while Meta-side conversions keep registering, escalate as a possible WATI referral-matching gap specific to this ad, not a quality read."
+  },
+  "KL-2026-11-07-PA-HEARTBEAT-OVERLAPCHECKPOINT": {
+    "id": "KL-2026-11-07-PA-HEARTBEAT-OVERLAPCHECKPOINT",
+    "date": "2026-11-07",
+    "type": "observation",
+    "subject": "2026-11-07/09 checkpoint data: IG-engaged custom-audience overlap still fully live (no exclusion fix applied), India Insta Engaged still deteriorating, 9th Dec 25 cost-per-conversation actually flat not worsening",
+    "follow_up": "campaign-strategist: decide the exclusion question now using this checkpoint data - the asymmetry between India Insta Engaged (still worsening on cost-per-result) and 9th Dec 25 (CPM-only, cost-per-result flat) may argue for an asymmetric fix if any fix is made. Barbie Pink Refresh and Coffee Brown activation decisions (same checkpoint) are reported separately."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
