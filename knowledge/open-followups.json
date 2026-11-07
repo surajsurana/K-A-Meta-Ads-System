@@ -481,5 +481,12 @@
     "type": "outcome",
     "subject": "Loomiere new-ad watch, daily check: Launch Reel (below fair-chance spend threshold, KEEP per 3f), Lavender Solo Styling Appointment (n=3, still too thin despite days-gate clearing), Bottle Green Solo (KEEP, no flags)",
     "follow_up": "Standard fair-chance re-check once each ad clears both days-active and spend gates per the nightly winners feed."
+  },
+  "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
+    "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
+    "date": "2026-11-07",
+    "type": "observation",
+    "subject": "Loomiere launch video check 2026-11-07 - 2 genuinely new solo Reels found, visually Loomiere-consistent but neither caption names the collection and exact SKU not confirmed by me",
+    "follow_up": "New findings to hand to the pipeline (not built/briefed by me): (1) video 18119005826098950 (reel https://www.instagram.com/reel/DfXHePpSuPw/, posted 2026-11-05), @mehakk.jain, gold embellished corset + purple Bandhani drape skirt. (2) video 18001243629033616 (reel https://www.instagram.com/reel/DfZ0xD8yccy/, posted 2026-11-06), @natasha.luthra, gold fringe-trim peplum corset + maroon Bandhani drape skirt. Both have real, fetchable media_url (confirmed via fresh GET + download), no licensed-music/withheld-file issue seen. Launch budget window runs through 2026-11-10 (KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET). Before briefing copy or building an ad: confirm exact SKU match against creative-product-map.jsonl's confirmed 16-SKU Loomiere batch (or a fresh Stitchflow lookup) since neither caption names the collection or the SKU by name - do not assume Loomiere membership from visual similarity alone without that check. Next daily check boundary: 18001243629033616 (2026-11-06T14:30:05)."
   }
 }
