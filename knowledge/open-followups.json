@@ -440,6 +440,13 @@
     "subject": "Loomiere | Metallic Lavender Solo | Broad Advantage+ | Styling Appointment (ad 52565923285580, ad set 52564598075780) - HOLD, do NOT pause - fresh data shows the pre-committed rollback criteria from KL-2026-11-02-010814 no longer hold",
     "follow_up": "Re-check ad 52565923285580 against the same 3 criteria within the remainder of its guardrail-3 7-day new-ad-watch window (activation 2026-11-02, window closes approx 2026-11-09) or at the next daily heartbeat, using fresh same-window insights each time - do not reuse today's or yesterday's spend/conversation figures."
   },
+  "KL-2026-11-07-CS-OVERLAP-ASYMMETRICEXCLUSION": {
+    "id": "KL-2026-11-07-CS-OVERLAP-ASYMMETRICEXCLUSION",
+    "date": "2026-11-07",
+    "type": "decision",
+    "subject": "IG-engaged custom-audience overlap (Loomiere IG Engaged 52564357579980 vs 9th Dec 25 6862975169176 and India Insta Engaged 6538717752176) - asymmetric fix: exclude the shared pool from India Insta Engaged only, leave 9th Dec 25 and Loomiere IG Engaged untouched",
+    "follow_up": "media-buyer: build and validate a plan to add excluded_custom_audiences [6320824170576, 6320824211776] to ad set 6538717752176 only, no budget change, for Suraj approval. Re-check India Insta Engaged cost-per-conversation and reach 3-4 days after the exclusion lands to confirm it actually helped."
+  },
   "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH": {
     "id": "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH",
     "date": "2026-11-07",
