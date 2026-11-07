@@ -342,13 +342,6 @@
     "subject": "First Love ad set 52562110311980 (Gold Sculpted, KAFL007) and its ad 52562110511780 paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan built on new independent evidence (a real Stitchflow order for KAFL007 placed since this pause, or a materially different lead-quality signal that did not exist at pause time)."
   },
-  "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO": {
-    "id": "KL-2026-11-04-EXEC-LOOMIERE-BOTTLEGREEN-SOLO",
-    "date": "2026-11-04",
-    "type": "change",
-    "subject": "Built + activated 1 new ad (Loomière | Bottle Green Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-11-04-020204",
-    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation and propose a pause through the normal approval path per the plan's own rollback criteria (0 conversations after Rs800 spend attributed to it, or cost per conversation >2x the trailing average of the 2 existing ads after Rs1,200 combined ad-set spend, or visibly starving either existing ad's delivery). No other action pending."
-  },
   "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT": {
     "id": "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT",
     "date": "2026-11-04",
@@ -468,19 +461,19 @@
     "subject": "Account-wide CPM/cost-per-conversation deterioration post-2026-10-28 guardrail-15 edits - this is TWO separable mechanisms, not one transient confound; Bihar/Jharkhand/Assam/J&K geo-exclusion rollback question CONFIRMED CLOSED, independent of either",
     "follow_up": "Re-check ~2026-11-07 to 11-09 (same date as Coffee Brown/Barbie Pink checkpoint): if India Insta Engaged and 9th Dec 25 cost-per-conversation have not improved, bring an exclusion proposal (shared custom audiences off 9th Dec 25 and/or India Insta Engaged, not off Loomiere IG Engaged) to media-buyer, reading enquiry quality alongside cost per the standing rule. Bihar/Jharkhand/Assam/J&K: closed, no further standing review."
   },
-  "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK": {
-    "id": "KL-2026-11-06-CS-LOOMIERENEWADS-STATUSCHECK",
-    "date": "2026-11-06",
-    "type": "outcome",
-    "subject": "Loomiere new-ad watch, daily check: Launch Reel (below fair-chance spend threshold, KEEP per 3f), Lavender Solo Styling Appointment (n=3, still too thin despite days-gate clearing), Bottle Green Solo (KEEP, no flags)",
-    "follow_up": "Standard fair-chance re-check once each ad clears both days-active and spend gates per the nightly winners feed."
-  },
   "KL-2026-11-07-073512": {
     "id": "KL-2026-11-07-073512",
     "date": "2026-11-07",
     "type": "decision",
     "subject": "Loomiere | Metallic Lavender Solo | Broad Advantage+ | Styling Appointment (ad 52565923285580, ad set 52564598075780) - HOLD, do NOT pause - fresh data shows the pre-committed rollback criteria from KL-2026-11-02-010814 no longer hold",
     "follow_up": "Re-check ad 52565923285580 against the same 3 criteria within the remainder of its guardrail-3 7-day new-ad-watch window (activation 2026-11-02, window closes approx 2026-11-09) or at the next daily heartbeat, using fresh same-window insights each time - do not reuse today's or yesterday's spend/conversation figures."
+  },
+  "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH": {
+    "id": "KL-2026-11-07-LQ-BOTTLEGREENSOLO-ZEROAISIMATCH",
+    "date": "2026-11-07",
+    "type": "observation",
+    "subject": "Loomiere Bottle Green Solo (ad 52566563586180, ad set 52564357579980) has zero AISI-matched WhatsApp enquiry rows in the lead-quality feed, despite Meta-side spend/conversions",
+    "follow_up": "Next lead-quality pull: re-check whether 52566563586180 has acquired any AISI-matched rows as it ages past the 3-day mark. If spend keeps climbing with zero AISI rows while Meta-side conversions keep registering, escalate as a possible WATI referral-matching gap specific to this ad, not a quality read."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
