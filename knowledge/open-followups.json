@@ -307,13 +307,6 @@
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, adset 6862975169176) - fresh GET shows status=PAUSED/effective_status=PAUSED, not ACTIVE as the standing follow-up assumed; the ad has in fact been paused continuously since the 2026-10-22 quality revert, not newly stuck",
     "follow_up": "campaign-strategist: fold this correction into the ~2026-11-05/11-06 combined pool-composition review in place of the original zero-spend-anomaly framing - the real open question for that review is whether/when to reactivate KAFL018 Barbie Pink Refresh (paused since 2026-10-22 on a lead-quality SOS), not a delivery bug to fix."
   },
-  "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ": {
-    "id": "KL-2026-11-03-PA-INTERESTSTACK-DAY3READ",
-    "date": "2026-11-03",
-    "type": "outcome",
-    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - day-3 check on 2026-10-31 Instagram-only placement edit vs 7-day pre-edit baseline - SETTLING CLEANLY",
-    "follow_up": "Per the original plan: after 2026-11-07, run the serious-enquiry check vs the pre-edit baseline (lead-quality-analyst territory) before proposing any further gradual-fix step. No action needed before then based on delivery/cost data alone."
-  },
   "KL-2026-11-04-043240": {
     "id": "KL-2026-11-04-043240",
     "date": "2026-11-04",
@@ -474,6 +467,13 @@
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180, ad set 52564357579980) has zero AISI-matched WhatsApp enquiry rows in the lead-quality feed, despite Meta-side spend/conversions",
     "follow_up": "Next lead-quality pull: re-check whether 52566563586180 has acquired any AISI-matched rows as it ages past the 3-day mark. If spend keeps climbing with zero AISI rows while Meta-side conversions keep registering, escalate as a possible WATI referral-matching gap specific to this ad, not a quality read."
+  },
+  "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION": {
+    "id": "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION",
+    "date": "2026-11-07",
+    "type": "observation",
+    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
+    "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
