@@ -475,6 +475,13 @@
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580, ad set 6862975169176, India | Whatsapp | 9th Dec 25) - validated reactivation plan, PAUSED -> ACTIVE, no budget change, ready for marketing-lead execution",
     "follow_up": "marketing-lead: execute POST /52562108793580 status=ACTIVE once Suraj approves via Telegram. After executing, append a linked type:change entry and run the verification GETs listed in summary. Do NOT bundle Metallic Coffee Brown (52552969628580) into this execution - that is staggered 3-4 days later per campaign-strategist's sequencing decision, as a separate plan."
   },
+  "KL-2026-11-07-MB-OVERLAPEXCLUSION-VALIDATIONFAILED": {
+    "id": "KL-2026-11-07-MB-OVERLAPEXCLUSION-VALIDATIONFAILED",
+    "date": "2026-11-07",
+    "type": "decision",
+    "subject": "India Insta Engaged 365D & Followers (ad set 6538717752176) - overlap-fix exclusion, VALIDATION FAILED, plan NOT forwarded for execution",
+    "follow_up": "campaign-strategist: clarify the intended excluded_custom_audiences target for ad set 6538717752176 - the IDs given (6320824170576, 6320824211776) are this ad set's own inclusion audiences and would collapse its reach ~80% per delivery_estimate, confirmed by media-buyer 2026-11-07. Likely intended a sibling-specific exclusion (e.g. people reached via Loomiere IG Engaged 52564357579980 or 9th Dec 25 6862975169176) rather than the shared pool this ad set itself draws from."
+  },
   "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
     "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
     "date": "2026-11-07",
