@@ -461,25 +461,18 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - validated execution plan: add excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers], no budget change, ready for marketing-lead execution",
     "follow_up": "marketing-lead: execute POST /6862975169176 targeting update (add excluded_custom_audiences only, no other field changes) once Suraj approves via Telegram. Do NOT touch 6538717752176 (India Insta Engaged) or 52564357579980 (Loomiere IG Engaged) in this execution. After executing, append a linked type:change entry and run the verification GETs listed in summary, including confirming the two sibling ad sets were not modified. performance-analyst/lead-quality-analyst: re-check 9th Dec 25's own cost-per-conversation AND enquiry quality (lead_quality_report.py) at the 3-4 day mark, not just reach - per campaign-strategist's caveat, a small MAU change does not guarantee a negligible quality change since engaged/follower audiences typically convert better than cold lookalikes."
   },
-  "KL-2026-11-08-CC-LOOMIERE-GOLD-BANDHANI-DUO-COPY": {
-    "id": "KL-2026-11-08-CC-LOOMIERE-GOLD-BANDHANI-DUO-COPY",
-    "date": "2026-11-08",
-    "type": "decision",
-    "subject": "Loomiere launch - execution-ready copy for 2 new solo Reels (gold sweetheart corset + magenta Bandhani; gold peplum corset + maroon Bandhani), product ID pending Telegram confirmation",
-    "follow_up": "media-buyer: build both as new ads in the Loomiere | IG Engaged 365D & Followers | WhatsApp | India ad set (52564357579980, same precedent as Lavender Solo and Bottle Green Solo), build PAUSED then verify then activate in the same run per guardrail 3, re-fetching each video's media_url fresh at build time (signed URLs expire) and extracting a real cover frame via ffmpeg rather than reusing Instagram's auto-thumbnail. Launch-budget window (temporary Rs7,500/day ceiling) closes 2026-11-10 - 2 days left, so build promptly. Suraj's Telegram replies to PID-20261108-015937 and PID-20261108-015943 should be used to upgrade both creative-product-map.jsonl entries from pending_telegram_confirmation to confirmed (with real SKU) once they land, and to optionally rename the specific product in the ad title/primary text at that point - not required before building, since copy is already complete and non-blank."
-  },
-  "KL-2026-11-08-CS-CEILINGREVERT-DISPOSITION": {
-    "id": "KL-2026-11-08-CS-CEILINGREVERT-DISPOSITION",
-    "date": "2026-11-08",
-    "type": "decision",
-    "subject": "Ceiling-revert overage (KL-2026-11-08-PA-HEARTBEAT-CEILINGREVERT-OVERAGE) - disposition: anchor to the already-scheduled 2026-11-10 Loomiere end-date checkpoint, not a preemptive trim today; independent read says Broad Advantage+ (C) is the likely self-resolving drop",
-    "follow_up": "2026-11-10 (or sooner if C's ad crosses its fair-chance threshold first): run the pre-committed Loomiere end-date check (A/B/C) per KL-2026-10-27-154919's own criteria, with a fresh pull for A specifically (7d frequency and cost per serious for ad set 52564357579980, not yet in hand). Compute the resulting total against Rs6,500 explicitly as part of that checkpoint. If the rule-based outcome still exceeds Rs6,500, bring it to Suraj as an explicit policy ask (temporary extension vs permanent increase) with the standard four-point statement - do not quietly absorb an over-ceiling result. If it lands at or under Rs6,500 (my current best read, via C's likely drop), no further ceiling action needed and this finding closes there. SAFETY NET: if the 2026-11-10 checkpoint is not actually run by end of day 2026-11-10, trim C (Loomiere Broad Advantage+, 52564598075780, Rs700/day) first, before the 2026-11-11 ceiling revert, worst-performer-first per standing practice - trimming C alone already clears the full Rs576/day gap. Route any resulting live change through media-buyer for an exact plan; nothing executes without Suraj's Telegram approval."
-  },
   "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH": {
     "id": "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH",
     "date": "2026-11-08",
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180) zero-AISI-match gap confirmed as a referral-matching issue, not absence of leads: Meta shows conversations started, AISI shows none",
     "follow_up": "Whoever owns the WATI/AISI integration needs to check referral-tagging for this ad's (52566563586180) WhatsApp conversations specifically - Meta's click-to-WhatsApp referral isn't resulting in matched AISI feed rows for this ad id, unlike the rest of the account. This ad's lead-quality read (junk/browsing/serious mix, cost per serious enquiry) stays blocked until matched rows start appearing in the feed; do not treat the zero-row count as '0 enquiries = fine' or as a verdict on the creative."
+  },
+  "KL-2026-11-08-MB-LOOMIERE-GOLDBANDHANI-DUO-BUILD": {
+    "id": "KL-2026-11-08-MB-LOOMIERE-GOLDBANDHANI-DUO-BUILD",
+    "date": "2026-11-08",
+    "type": "decision",
+    "subject": "Loomière launch - validated build plan for 2 new solo-Reel ads (Gold Sweetheart Corset + magenta Bandhani; Gold Peplum Corset + maroon Bandhani) in the existing IG Engaged 365D & Followers ad set, build-pause-verify-activate in one run",
+    "follow_up": "marketing-lead: execute STEPS 0-10 above exactly once Suraj approves via Telegram. No separate activation approval needed per guardrail 3. After execution, log a linked type:change entry. Daily heartbeat's new-ad watch will review both ads' performance within 7 days of activation per the stated rollback criteria."
   }
 }
