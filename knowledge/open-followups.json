@@ -482,6 +482,13 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - validated execution plan: add excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers], no budget change, ready for marketing-lead execution",
     "follow_up": "marketing-lead: execute POST /6862975169176 targeting update (add excluded_custom_audiences only, no other field changes) once Suraj approves via Telegram. Do NOT touch 6538717752176 (India Insta Engaged) or 52564357579980 (Loomiere IG Engaged) in this execution. After executing, append a linked type:change entry and run the verification GETs listed in summary, including confirming the two sibling ad sets were not modified. performance-analyst/lead-quality-analyst: re-check 9th Dec 25's own cost-per-conversation AND enquiry quality (lead_quality_report.py) at the 3-4 day mark, not just reach - per campaign-strategist's caveat, a small MAU change does not guarantee a negligible quality change since engaged/follower audiences typically convert better than cold lookalikes."
   },
+  "KL-2026-11-08-PA-HEARTBEAT-CEILINGREVERT-OVERAGE": {
+    "id": "KL-2026-11-08-PA-HEARTBEAT-CEILINGREVERT-OVERAGE",
+    "date": "2026-11-08",
+    "type": "observation",
+    "subject": "Daily heartbeat anomaly pull 2026-11-08 - current active-adset daily budgets (Rs7,076/day) will exceed the Rs6,500/day ceiling that resumes 2026-11-11 unless trimmed first",
+    "follow_up": "campaign-strategist: before or at the 2026-11-10/11 Loomiere launch checkpoint, decide which ad sets absorb an up-to-Rs576/day trim, or whether to propose keeping the higher ceiling, so total active daily budgets are at or under Rs6,500/day when the standing ceiling resumes 2026-11-11 - do not let this surface only as a live overspend after the fact."
+  },
   "KL-2026-11-08-SCM-DAILYCHECK": {
     "id": "KL-2026-11-08-SCM-DAILYCHECK",
     "date": "2026-11-08",
