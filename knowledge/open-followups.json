@@ -482,11 +482,11 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - validated execution plan: add excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers], no budget change, ready for marketing-lead execution",
     "follow_up": "marketing-lead: execute POST /6862975169176 targeting update (add excluded_custom_audiences only, no other field changes) once Suraj approves via Telegram. Do NOT touch 6538717752176 (India Insta Engaged) or 52564357579980 (Loomiere IG Engaged) in this execution. After executing, append a linked type:change entry and run the verification GETs listed in summary, including confirming the two sibling ad sets were not modified. performance-analyst/lead-quality-analyst: re-check 9th Dec 25's own cost-per-conversation AND enquiry quality (lead_quality_report.py) at the 3-4 day mark, not just reach - per campaign-strategist's caveat, a small MAU change does not guarantee a negligible quality change since engaged/follower audiences typically convert better than cold lookalikes."
   },
-  "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK": {
-    "id": "KL-2026-11-07-SCM-LOOMIERE-DAILYCHECK",
-    "date": "2026-11-07",
+  "KL-2026-11-08-SCM-DAILYCHECK": {
+    "id": "KL-2026-11-08-SCM-DAILYCHECK",
+    "date": "2026-11-08",
     "type": "observation",
-    "subject": "Loomiere launch video check 2026-11-07 - 2 genuinely new solo Reels found, visually Loomiere-consistent but neither caption names the collection and exact SKU not confirmed by me",
-    "follow_up": "New findings to hand to the pipeline (not built/briefed by me): (1) video 18119005826098950 (reel https://www.instagram.com/reel/DfXHePpSuPw/, posted 2026-11-05), @mehakk.jain, gold embellished corset + purple Bandhani drape skirt. (2) video 18001243629033616 (reel https://www.instagram.com/reel/DfZ0xD8yccy/, posted 2026-11-06), @natasha.luthra, gold fringe-trim peplum corset + maroon Bandhani drape skirt. Both have real, fetchable media_url (confirmed via fresh GET + download), no licensed-music/withheld-file issue seen. Launch budget window runs through 2026-11-10 (KL-2026-10-27-CS-LOOMIERE-LAUNCHBUDGET). Before briefing copy or building an ad: confirm exact SKU match against creative-product-map.jsonl's confirmed 16-SKU Loomiere batch (or a fresh Stitchflow lookup) since neither caption names the collection or the SKU by name - do not assume Loomiere membership from visual similarity alone without that check. Next daily check boundary: 18001243629033616 (2026-11-06T14:30:05)."
+    "subject": "Daily heartbeat: Media Library 0 pending (but 6-night collector gap, low disk), Loomiere 2 reels still pending pipeline, no new content",
+    "follow_up": "Infra: disk at 93%/707M free on droplet root volume is causing instagram_collect.py to skip saving new Stories/tagged items (15 skipped on 11-05 alone) - needs disk cleanup/provisioning attention before more content is lost, this is outside social-community-manager scope to fix. Loomiere: 2 pending reels (18119005826098950, 18001243629033616) still need SKU identification + copy + build before 2026-11-10 budget window closes."
   }
 }
