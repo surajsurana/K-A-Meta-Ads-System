@@ -447,19 +447,19 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
+  "KL-2026-11-08-EXEC-LOOMIERE-GOLDBANDHANI-DUO": {
+    "id": "KL-2026-11-08-EXEC-LOOMIERE-GOLDBANDHANI-DUO",
+    "date": "2026-11-08",
+    "type": "change",
+    "subject": "Loomiere launch - executed build of 2 new solo-Reel ads (Gold Sweetheart Corset + magenta Bandhani; Gold Peplum Corset + maroon Bandhani) in the existing IG Engaged 365D & Followers ad set, built-verified-activated in one run",
+    "follow_up": "Daily heartbeat new-ad watch: review both ads performance within 7 days of activation (2026-11-15) per the plans stated rollback criteria (0 conversations after Rs800 spend, or cost per conversation >2x trailing average after Rs1,200 combined ad-set spend, or starving Lavender/Bottle Green Solo delivery, or DISAPPROVED/WITH_ISSUES post-activation). Upgrade creative-product-map.jsonl entries for both video_ids from pending_telegram_confirmation once Suraj replies to PID-20261108-015937 and PID-20261108-015943."
+  },
   "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH": {
     "id": "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH",
     "date": "2026-11-08",
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180) zero-AISI-match gap confirmed as a referral-matching issue, not absence of leads: Meta shows conversations started, AISI shows none",
     "follow_up": "Whoever owns the WATI/AISI integration needs to check referral-tagging for this ad's (52566563586180) WhatsApp conversations specifically - Meta's click-to-WhatsApp referral isn't resulting in matched AISI feed rows for this ad id, unlike the rest of the account. This ad's lead-quality read (junk/browsing/serious mix, cost per serious enquiry) stays blocked until matched rows start appearing in the feed; do not treat the zero-row count as '0 enquiries = fine' or as a verdict on the creative."
-  },
-  "KL-2026-11-08-MB-LOOMIERE-GOLDBANDHANI-DUO-BUILD": {
-    "id": "KL-2026-11-08-MB-LOOMIERE-GOLDBANDHANI-DUO-BUILD",
-    "date": "2026-11-08",
-    "type": "decision",
-    "subject": "Loomière launch - validated build plan for 2 new solo-Reel ads (Gold Sweetheart Corset + magenta Bandhani; Gold Peplum Corset + maroon Bandhani) in the existing IG Engaged 365D & Followers ad set, build-pause-verify-activate in one run",
-    "follow_up": "marketing-lead: execute STEPS 0-10 above exactly once Suraj approves via Telegram. No separate activation approval needed per guardrail 3. After execution, log a linked type:change entry. Daily heartbeat's new-ad watch will review both ads' performance within 7 days of activation per the stated rollback criteria."
   },
   "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED": {
     "id": "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED",
