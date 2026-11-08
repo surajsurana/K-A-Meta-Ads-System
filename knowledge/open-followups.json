@@ -188,13 +188,6 @@
     "subject": "Red Corset blank-title fix (ad 52536048558380) - re-diagnosed follow_up from KL-2026-10-26-EXEC-BLANKTITLE-SELFCHECK-STOP-6, both live hypotheses now disproven by fresh GET evidence - ESCALATING, not proposing a 7th execution attempt.",
     "follow_up": "Awaiting Suraj/engineering decision among the three options above before any further attempt on ad 52536048558380. Do not auto-retry a sparse-key or full-expansion variant again without new information - both already tested and disproven."
   },
-  "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP": {
-    "id": "KL-2026-10-27-HEARTBEAT-COPYWRITER-STITCHFLOW-GAP",
-    "date": "2026-10-27",
-    "type": "observation",
-    "subject": "creative-copywriter is missing mcp__stitchflow__list_products/get_product in its tool grant, despite docs/architecture.md section 3d explicitly requiring it for the product-SKU Stitchflow cross-check",
-    "follow_up": "Next interactive session: add mcp__stitchflow__list_products and mcp__stitchflow__get_product to creative-copywriter.md tools frontmatter line (matching performance-analyst existing working grant), update its Last verified working line, then retry the Loomiere SKU cross-check through creative-copywriter per section 3d documented ownership (this cycle instead routed the actual cross-check to performance-analyst as a one-off workaround, not a precedent for who normally owns this)."
-  },
   "KL-2026-10-27-HEARTBEAT-MB-LOOMIERE-FALSENEGATIVE": {
     "id": "KL-2026-10-27-HEARTBEAT-MB-LOOMIERE-FALSENEGATIVE",
     "date": "2026-10-27",
@@ -468,6 +461,13 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - validated execution plan: add excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers], no budget change, ready for marketing-lead execution",
     "follow_up": "marketing-lead: execute POST /6862975169176 targeting update (add excluded_custom_audiences only, no other field changes) once Suraj approves via Telegram. Do NOT touch 6538717752176 (India Insta Engaged) or 52564357579980 (Loomiere IG Engaged) in this execution. After executing, append a linked type:change entry and run the verification GETs listed in summary, including confirming the two sibling ad sets were not modified. performance-analyst/lead-quality-analyst: re-check 9th Dec 25's own cost-per-conversation AND enquiry quality (lead_quality_report.py) at the 3-4 day mark, not just reach - per campaign-strategist's caveat, a small MAU change does not guarantee a negligible quality change since engaged/follower audiences typically convert better than cold lookalikes."
   },
+  "KL-2026-11-08-CC-LOOMIERE-GOLD-BANDHANI-DUO-COPY": {
+    "id": "KL-2026-11-08-CC-LOOMIERE-GOLD-BANDHANI-DUO-COPY",
+    "date": "2026-11-08",
+    "type": "decision",
+    "subject": "Loomiere launch - execution-ready copy for 2 new solo Reels (gold sweetheart corset + magenta Bandhani; gold peplum corset + maroon Bandhani), product ID pending Telegram confirmation",
+    "follow_up": "media-buyer: build both as new ads in the Loomiere | IG Engaged 365D & Followers | WhatsApp | India ad set (52564357579980, same precedent as Lavender Solo and Bottle Green Solo), build PAUSED then verify then activate in the same run per guardrail 3, re-fetching each video's media_url fresh at build time (signed URLs expire) and extracting a real cover frame via ffmpeg rather than reusing Instagram's auto-thumbnail. Launch-budget window (temporary Rs7,500/day ceiling) closes 2026-11-10 - 2 days left, so build promptly. Suraj's Telegram replies to PID-20261108-015937 and PID-20261108-015943 should be used to upgrade both creative-product-map.jsonl entries from pending_telegram_confirmation to confirmed (with real SKU) once they land, and to optionally rename the specific product in the ad title/primary text at that point - not required before building, since copy is already complete and non-blank."
+  },
   "KL-2026-11-08-CS-CEILINGREVERT-DISPOSITION": {
     "id": "KL-2026-11-08-CS-CEILINGREVERT-DISPOSITION",
     "date": "2026-11-08",
@@ -481,12 +481,5 @@
     "type": "observation",
     "subject": "Loomiere Bottle Green Solo (ad 52566563586180) zero-AISI-match gap confirmed as a referral-matching issue, not absence of leads: Meta shows conversations started, AISI shows none",
     "follow_up": "Whoever owns the WATI/AISI integration needs to check referral-tagging for this ad's (52566563586180) WhatsApp conversations specifically - Meta's click-to-WhatsApp referral isn't resulting in matched AISI feed rows for this ad id, unlike the rest of the account. This ad's lead-quality read (junk/browsing/serious mix, cost per serious enquiry) stays blocked until matched rows start appearing in the feed; do not treat the zero-row count as '0 enquiries = fine' or as a verdict on the creative."
-  },
-  "KL-2026-11-08-SCM-DAILYCHECK": {
-    "id": "KL-2026-11-08-SCM-DAILYCHECK",
-    "date": "2026-11-08",
-    "type": "observation",
-    "subject": "Daily heartbeat: Media Library 0 pending (but 6-night collector gap, low disk), Loomiere 2 reels still pending pipeline, no new content",
-    "follow_up": "Infra: disk at 93%/707M free on droplet root volume is causing instagram_collect.py to skip saving new Stories/tagged items (15 skipped on 11-05 alone) - needs disk cleanup/provisioning attention before more content is lost, this is outside social-community-manager scope to fix. Loomiere: 2 pending reels (18119005826098950, 18001243629033616) still need SKU identification + copy + build before 2026-11-10 budget window closes."
   }
 }
