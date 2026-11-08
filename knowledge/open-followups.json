@@ -447,13 +447,6 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
-  "KL-2026-11-07-MB-OVERLAPEXCLUSION-9THDEC-PLAN": {
-    "id": "KL-2026-11-07-MB-OVERLAPEXCLUSION-9THDEC-PLAN",
-    "date": "2026-11-07",
-    "type": "decision",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - validated execution plan: add excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers], no budget change, ready for marketing-lead execution",
-    "follow_up": "marketing-lead: execute POST /6862975169176 targeting update (add excluded_custom_audiences only, no other field changes) once Suraj approves via Telegram. Do NOT touch 6538717752176 (India Insta Engaged) or 52564357579980 (Loomiere IG Engaged) in this execution. After executing, append a linked type:change entry and run the verification GETs listed in summary, including confirming the two sibling ad sets were not modified. performance-analyst/lead-quality-analyst: re-check 9th Dec 25's own cost-per-conversation AND enquiry quality (lead_quality_report.py) at the 3-4 day mark, not just reach - per campaign-strategist's caveat, a small MAU change does not guarantee a negligible quality change since engaged/follower audiences typically convert better than cold lookalikes."
-  },
   "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH": {
     "id": "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH",
     "date": "2026-11-08",
@@ -474,5 +467,12 @@
     "type": "change",
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) reactivated PAUSED -> ACTIVE per approved plan KL-2026-11-07-MB-BARBIEPINK-REACTIVATION-PLAN",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check this ad at the 3-4 day mark per rollback criteria in the linked plan. Anyone: spot-check effective_status later today to confirm it settled to ACTIVE, not stuck or DISAPPROVED."
+  },
+  "KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED": {
+    "id": "KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED",
+    "date": "2026-11-08",
+    "type": "change",
+    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
+    "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
   }
 }
