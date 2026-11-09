@@ -328,13 +328,6 @@
     "subject": "Reverse geo check, trailing 90 days (2026-08-07 to 2026-11-04): Netherlands (1 order/Rs380,000), Malaysia (2/Rs203,820), Saudi Arabia (1/Rs201,422), Nigeria (2/Rs113,000), UAE (2/Rs113,000), Thailand (2/Rs79,500) all show real Stitchflow revenue with Rs0 Meta acquisition spend in-window; Singapore and Pakistan continue the pattern already logged 2026-10-19",
     "follow_up": "campaign-strategist to weigh whether any of these (individually, Netherlands single large order is the standout) warrant a prospecting test per the eight geography dispositions; none has enough volume alone to justify more than a watch item yet."
   },
-  "KL-2026-11-05-PA-LOOMIERE-BROADADV-CTR-CONFOUND": {
-    "id": "KL-2026-11-05-PA-LOOMIERE-BROADADV-CTR-CONFOUND",
-    "date": "2026-11-05",
-    "type": "observation",
-    "subject": "Loomiere | Broad Advantage+ | WhatsApp | India (52564598075780) CTR drop (2.66%->0.20% over last 3d vs prior 7d baseline) coincides with a new ad added 2026-11-02, not creative fatigue",
-    "follow_up": "If this ad set's CTR or cost is independently reviewed before the new ad has meaningfully accumulated its own data, check the 2026-11-02 ad-addition date before attributing the drop to creative fatigue."
-  },
   "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK": {
     "id": "KL-2026-11-05-STYLEBYANISSA-STATUS-CHECK",
     "date": "2026-11-05",
