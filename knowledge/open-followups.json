@@ -461,6 +461,13 @@
     "subject": "Five-way content disposition - meghnapahwa and meghnasahijwani Diwali carousels: TEST (new single-image UGC test ad each); iamurvashilal confirmed HOLD (no asset)",
     "follow_up": "Pending Suraj approval via send-telegram-approval.sh (type:decision, Approve/Reject/Hold) before creative-copywriter is briefed on either TEST item. iamurvashilal needs no approval ask - plainly unexecutable until a manual Media Library upload exists."
   },
+  "KL-2026-11-09-MB-CURLWRITEATTEMPT-NEARMISS": {
+    "id": "KL-2026-11-09-MB-CURLWRITEATTEMPT-NEARMISS",
+    "date": "2026-11-09",
+    "type": "observation",
+    "subject": "Near-miss: a verification curl call used -d (POST) instead of -G (GET) against a Meta write-capable endpoint during plan validation",
+    "follow_up": "Tighten media-buyer (and any other Bash/curl-calling agent)'s standing practice to always force curl -G explicitly for every Meta Graph API GET call, never relying on curl's default verb behavior based on absence of -d. Worth a repo-wide grep of agent definitions for any curl call lacking an explicit -G to close this gap proactively rather than waiting for a real incident."
+  },
   "KL-2026-11-09-ambiguous-comment": {
     "id": "KL-2026-11-09-ambiguous-comment",
     "date": "2026-11-09",
