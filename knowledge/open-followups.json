@@ -377,13 +377,6 @@
     "subject": "Held plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION status check (Thursday review, 2026-11-05) - unchanged since the 2026-11-02 hold, safe to resend as-is",
     "follow_up": "Reporting to the orchestrating session: unchanged, safe to resend KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION via Telegram as-is. No action taken by this agent on the held plan itself."
   },
-  "KL-2026-11-05-ambiguous-comment": {
-    "id": "KL-2026-11-05-ambiguous-comment",
-    "date": "2026-11-05",
-    "type": "observation",
-    "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 7th consecutive cycle (18 days), @social_cravings a 4th; system-evolution fix accepted but not yet built, not re-escalating identically",
-    "follow_up": "aesana0710: awaiting Suraj action on the 2026-11-02 escalation, or the backlog build landing (whichever first) - do not re-escalate identically next cycle either unless the build has landed and the new standing rule applies. social_cravings: continue checking each cycle, not yet at an escalation threshold."
-  },
   "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH": {
     "id": "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH",
     "date": "2026-11-07",
@@ -439,6 +432,13 @@
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
+  },
+  "KL-2026-11-09-ambiguous-comment": {
+    "id": "KL-2026-11-09-ambiguous-comment",
+    "date": "2026-11-09",
+    "type": "observation",
+    "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now an 8th consecutive cycle (22 days), @social_cravings a 5th (16 days); no new escalation this cycle per standing guidance",
+    "follow_up": "aesana0710: continue awaiting Suraj action or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
   "KL-2026-11-09-comment-batch": {
     "id": "KL-2026-11-09-comment-batch",
