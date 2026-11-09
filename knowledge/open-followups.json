@@ -426,12 +426,12 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
   },
-  "KL-2026-11-09-CS-ADSET-PAUSE-CALLS": {
-    "id": "KL-2026-11-09-CS-ADSET-PAUSE-CALLS",
+  "KL-2026-11-09-CS-BUDGETCHECK": {
+    "id": "KL-2026-11-09-CS-BUDGETCHECK",
     "date": "2026-11-09",
     "type": "decision",
-    "subject": "Twice-weekly review 2026-11-09 - combined ad set/ad calls: Loomiere Launch Reel|Broad ad PAUSE, 16th May 26|India ad set PAUSE, Profile Visits|India KEEP (methodology mismatch), Crimson Beaded Test and Lavender Broad - no action, extend to next review",
-    "follow_up": "media-buyer to validate and prepare: (a) pause plan for ad 52564598185780 only, ad set 52564598075780 stays active; (b) pause plan for ad set 6968778736776 in full. Both route through the normal build-paused-or-pause/verify/approve path; no budget change on (a), -Rs350/day on (b). Crimson Beaded and Lavender Broad: re-check at the next twice-weekly review."
+    "subject": "Portfolio budget allocation check - twice-weekly review 2026-11-09",
+    "follow_up": "Resolve the Rs226/day standing-ceiling overage at the 2026-11-10 Loomiere launch checkpoint (not today)."
   },
   "KL-2026-11-09-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-09-CS-GEO-DISPOSITIONS",
