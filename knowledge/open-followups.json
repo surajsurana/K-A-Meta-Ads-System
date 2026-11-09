@@ -426,12 +426,12 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
   },
-  "KL-2026-11-09-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-09-CS-BUDGETCHECK",
+  "KL-2026-11-09-CS-BUDGETCALL": {
+    "id": "KL-2026-11-09-CS-BUDGETCALL",
     "date": "2026-11-09",
     "type": "decision",
-    "subject": "Portfolio budget allocation check - twice-weekly review 2026-11-09",
-    "follow_up": "Resolve the Rs226/day standing-ceiling overage at the 2026-11-10 Loomiere launch checkpoint (not today)."
+    "subject": "SS3e budget call, twice-weekly review 2026-11-09 - HOLD, both triggers walked explicitly; ROAS safety-check gate not clearly clean, most likely explained by the in-progress Loomiere launch but not yet confirmed",
+    "follow_up": "performance-analyst to compute 30-day blended ROAS EXCLUDING Loomiere campaign spend/revenue at or before the next review, to separate launch-drag from genuine account-wide softening. Revisit this SS3e call at the very next review, after the 2026-11-10 Loomiere checkpoint. Budget: stay at Rs6,726/day (post todays pauses) because the 30-day ROAS safety check is not clearly clean - 3rd consecutive decline (39.55x->32.1x->29.26x), 17.5% below the 90-day level - even though November is behind pace with healthy costs; most likely launch-driven (Loomiere, judged at its own 11-10 end date) but not yet confirmed by a Loomiere-excluded cut. (30-day ROAS 29.26x, normal 35.45x)"
   },
   "KL-2026-11-09-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-09-CS-GEO-DISPOSITIONS",
