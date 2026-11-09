@@ -237,20 +237,6 @@
     "subject": "Organic Instagram feed carousel LM-009 published - Loomiere Fuchsia Pink Bubble Peplum Corset With Pencil Skirt (7 slides)",
     "follow_up": "Hosted post-LM-009_0*.jpg copies on the droplet may be deleted now that verification passed."
   },
-  "KL-2026-11-02-024235": {
-    "id": "KL-2026-11-02-024235",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION",
-    "follow_up": "re-check 2026-11-05: if plan KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
-  "KL-2026-11-02-025605": {
-    "id": "KL-2026-11-02-025605",
-    "date": "2026-11-02",
-    "type": "observation",
-    "subject": "KL-2026-11-02-AUSTRALIA-PAUSEPLAN",
-    "follow_up": "re-check 2026-11-05: if plan KL-2026-11-02-AUSTRALIA-PAUSEPLAN is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST": {
     "id": "KL-2026-11-02-CS-BROADVSINDIAWA-HOLD-MATUREFIRST",
     "date": "2026-11-02",
@@ -327,13 +313,6 @@
     "type": "change",
     "subject": "16th May 26 | India (ad set 6968778736776, campaign 6968778737176) - targeting-only edit executed, closing out account-wide guardrail 15/16 rollout",
     "follow_up": "3-4 day gender/age delivery-breakdown drift watch (GET insights with breakdowns=age,gender) per the plan's own cadence. Recheck effective_status within the hour if it has not cleared IN_PROCESS to ACTIVE on its own. Separately, someone should reconcile why ad 6968778736976 is now PAUSED with no matching logged execution - flag to Suraj if the pending pause plan KL-2026-11-05-010803 was approved verbally/manually rather than through Telegram, so the log stays accurate."
-  },
-  "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC": {
-    "id": "KL-2026-11-05-MKT-AUSTRALIAPAUSE-EXEC",
-    "date": "2026-11-05",
-    "type": "change",
-    "subject": "First Love | Cold Prospecting | Australia (52562820202180) and its ad 52562820223580 - ad set paused per approved plan",
-    "follow_up": "Re-activate only on a genuine new independent Australia demand signal per the plan rollback criteria; any retest starts a fresh stop-rule window, not a resumption of this clock."
   },
   "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE": {
     "id": "KL-2026-11-05-PA-BLENDEDROAS-30D-UPDATE",
