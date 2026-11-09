@@ -426,6 +426,13 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
   },
+  "KL-2026-11-09-010746": {
+    "id": "KL-2026-11-09-010746",
+    "date": "2026-11-09",
+    "type": "decision",
+    "subject": "PAUSE ad Loomiere | Launch Reel | Styling Appointment | Broad (52564598185780) only - ad set stays ACTIVE",
+    "follow_up": "Awaiting Suraj approval via Telegram. Once executed by marketing-lead, performance-analyst re-checks ad-set-level delivery/CPL at the next review per this plans verification step."
+  },
   "KL-2026-11-09-CS-BUDGETCALL": {
     "id": "KL-2026-11-09-CS-BUDGETCALL",
     "date": "2026-11-09",
