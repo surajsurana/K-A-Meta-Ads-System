@@ -426,13 +426,6 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
-  "KL-2026-11-08-EXEC-LOOMIERE-GOLDBANDHANI-DUO": {
-    "id": "KL-2026-11-08-EXEC-LOOMIERE-GOLDBANDHANI-DUO",
-    "date": "2026-11-08",
-    "type": "change",
-    "subject": "Loomiere launch - executed build of 2 new solo-Reel ads (Gold Sweetheart Corset + magenta Bandhani; Gold Peplum Corset + maroon Bandhani) in the existing IG Engaged 365D & Followers ad set, built-verified-activated in one run",
-    "follow_up": "Daily heartbeat new-ad watch: review both ads performance within 7 days of activation (2026-11-15) per the plans stated rollback criteria (0 conversations after Rs800 spend, or cost per conversation >2x trailing average after Rs1,200 combined ad-set spend, or starving Lavender/Bottle Green Solo delivery, or DISAPPROVED/WITH_ISSUES post-activation). Upgrade creative-product-map.jsonl entries for both video_ids from pending_telegram_confirmation once Suraj replies to PID-20261108-015937 and PID-20261108-015943."
-  },
   "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH": {
     "id": "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH",
     "date": "2026-11-08",
@@ -453,5 +446,12 @@
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
+  },
+  "KL-2026-11-09-own-content": {
+    "id": "KL-2026-11-09-own-content",
+    "date": "2026-11-09",
+    "type": "observation",
+    "subject": "Monday twice-weekly own-content sweep (2026-11-09) - 2 new Reels since the 2026-11-04 boundary, both already fully identified/flagged/built into live paid ads on 2026-11-08 - not a new find",
+    "follow_up": "No action - both posts already in production. Next sweep boundary: 18001243629033616 (2026-11-06T14:30:05)."
   }
 }
