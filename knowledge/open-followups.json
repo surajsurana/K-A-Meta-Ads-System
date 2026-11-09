@@ -440,6 +440,13 @@
     "subject": "PAUSE ad set 16th May 26 | India (6968778736776) in full",
     "follow_up": "Awaiting Suraj approval via Telegram. Once executed by marketing-lead: (a) verify per Verification steps above; (b) the Rs226/day standing-ceiling overage remains open and must be addressed at the 2026-11-10 Loomiere launch checkpoint, not assumed resolved by this plan."
   },
+  "KL-2026-11-09-010937": {
+    "id": "KL-2026-11-09-010937",
+    "date": "2026-11-09",
+    "type": "decision",
+    "subject": "Odisha + Uttarakhand geo exclusion - execution plan (9 ad sets) for campaign-strategist's EXCLUSION disposition",
+    "follow_up": "Awaiting Suraj's approval via Telegram. Once approved and executed by marketing-lead, performance-analyst should re-check Odisha/Uttarakhand Meta delivery at the next review to confirm spend trends toward zero, and check the 9 touched ad sets' cost-per-conversation for any adverse shift per this plan's rollback criteria. If the paired 16th May 26 | India pause plan is not approved, 6968778736776 needs a follow-up exclusion of its own."
+  },
   "KL-2026-11-09-CS-BUDGETCALL": {
     "id": "KL-2026-11-09-CS-BUDGETCALL",
     "date": "2026-11-09",
@@ -453,13 +460,6 @@
     "type": "decision",
     "subject": "Five-way content disposition - meghnapahwa and meghnasahijwani Diwali carousels: TEST (new single-image UGC test ad each); iamurvashilal confirmed HOLD (no asset)",
     "follow_up": "Pending Suraj approval via send-telegram-approval.sh (type:decision, Approve/Reject/Hold) before creative-copywriter is briefed on either TEST item. iamurvashilal needs no approval ask - plainly unexecutable until a manual Media Library upload exists."
-  },
-  "KL-2026-11-09-CS-GEO-DISPOSITIONS": {
-    "id": "KL-2026-11-09-CS-GEO-DISPOSITIONS",
-    "date": "2026-11-09",
-    "type": "decision",
-    "subject": "Twice-weekly review 2026-11-09 - geography dispositions: Odisha/Uttarakhand EXCLUSION (3rd consecutive zero-order reading, matches the Bihar groups resolution pattern), Uttar Pradesh re-open-bar crossing acknowledged but held at MAINTAIN+tightened-watch pending ad-set identification, Israel watch-list confirmed",
-    "follow_up": "media-buyer to validate and prepare an Odisha+Uttarakhand exclusion plan across every ad set currently delivering into those states (same shape as the Bihar group execution, KL-2026-10-26-011252). performance-analyst to identify UPs highest-spend serving ad set(s) at the next review so a reduced-targeting plan is ready if the crossing is confirmed again; re-check UP spend-vs-orders at the very next review, not an extended gap."
   },
   "KL-2026-11-09-ambiguous-comment": {
     "id": "KL-2026-11-09-ambiguous-comment",
