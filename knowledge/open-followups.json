@@ -328,13 +328,6 @@
     "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
     "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
   },
-  "KL-2026-11-05-030950": {
-    "id": "KL-2026-11-05-030950",
-    "date": "2026-11-05",
-    "type": "observation",
-    "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION",
-    "follow_up": "re-check 2026-11-09: if plan KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION is still not approved/rejected (no later type:override or type:change linked to it), resend via scripts/send-telegram-approval.sh at that week's review and list it under the digest's Hold items section"
-  },
   "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
     "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
     "date": "2026-11-05",
