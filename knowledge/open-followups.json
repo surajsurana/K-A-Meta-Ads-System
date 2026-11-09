@@ -433,6 +433,13 @@
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
   },
+  "KL-2026-11-09-CS-HANDOFF": {
+    "id": "KL-2026-11-09-CS-HANDOFF",
+    "date": "2026-11-09",
+    "type": "observation",
+    "subject": "Handoff to campaign-strategist (Monday twice-weekly review, 2026-11-09) - 2 new UGC items for the five-way disposition call, 1 UGC Reel flagged unexecutable (no file), own-content already accounted for, Mouni Roy/DM-redirect status notes",
+    "follow_up": "Awaiting campaign-strategist five-way disposition call on meghnapahwa and meghnasahijwani. No action needed on the 2 own-content Reels (already in production) or the iamurvashilal Reel (no executable file) beyond awareness."
+  },
   "KL-2026-11-09-ambiguous-comment": {
     "id": "KL-2026-11-09-ambiguous-comment",
     "date": "2026-11-09",
