@@ -433,19 +433,19 @@
     "subject": "SS3e budget call, twice-weekly review 2026-11-09 - HOLD, both triggers walked explicitly; ROAS safety-check gate not clearly clean, most likely explained by the in-progress Loomiere launch but not yet confirmed",
     "follow_up": "performance-analyst to compute 30-day blended ROAS EXCLUDING Loomiere campaign spend/revenue at or before the next review, to separate launch-drag from genuine account-wide softening. Revisit this SS3e call at the very next review, after the 2026-11-10 Loomiere checkpoint. Budget: stay at Rs6,726/day (post todays pauses) because the 30-day ROAS safety check is not clearly clean - 3rd consecutive decline (39.55x->32.1x->29.26x), 17.5% below the 90-day level - even though November is behind pace with healthy costs; most likely launch-driven (Loomiere, judged at its own 11-10 end date) but not yet confirmed by a Loomiere-excluded cut. (30-day ROAS 29.26x, normal 35.45x)"
   },
+  "KL-2026-11-09-CS-CONTENT-DISPOSITION": {
+    "id": "KL-2026-11-09-CS-CONTENT-DISPOSITION",
+    "date": "2026-11-09",
+    "type": "decision",
+    "subject": "Five-way content disposition - meghnapahwa and meghnasahijwani Diwali carousels: TEST (new single-image UGC test ad each); iamurvashilal confirmed HOLD (no asset)",
+    "follow_up": "Pending Suraj approval via send-telegram-approval.sh (type:decision, Approve/Reject/Hold) before creative-copywriter is briefed on either TEST item. iamurvashilal needs no approval ask - plainly unexecutable until a manual Media Library upload exists."
+  },
   "KL-2026-11-09-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-09-CS-GEO-DISPOSITIONS",
     "date": "2026-11-09",
     "type": "decision",
     "subject": "Twice-weekly review 2026-11-09 - geography dispositions: Odisha/Uttarakhand EXCLUSION (3rd consecutive zero-order reading, matches the Bihar groups resolution pattern), Uttar Pradesh re-open-bar crossing acknowledged but held at MAINTAIN+tightened-watch pending ad-set identification, Israel watch-list confirmed",
     "follow_up": "media-buyer to validate and prepare an Odisha+Uttarakhand exclusion plan across every ad set currently delivering into those states (same shape as the Bihar group execution, KL-2026-10-26-011252). performance-analyst to identify UPs highest-spend serving ad set(s) at the next review so a reduced-targeting plan is ready if the crossing is confirmed again; re-check UP spend-vs-orders at the very next review, not an extended gap."
-  },
-  "KL-2026-11-09-CS-HANDOFF": {
-    "id": "KL-2026-11-09-CS-HANDOFF",
-    "date": "2026-11-09",
-    "type": "observation",
-    "subject": "Handoff to campaign-strategist (Monday twice-weekly review, 2026-11-09) - 2 new UGC items for the five-way disposition call, 1 UGC Reel flagged unexecutable (no file), own-content already accounted for, Mouni Roy/DM-redirect status notes",
-    "follow_up": "Awaiting campaign-strategist five-way disposition call on meghnapahwa and meghnasahijwani. No action needed on the 2 own-content Reels (already in production) or the iamurvashilal Reel (no executable file) beyond awareness."
   },
   "KL-2026-11-09-ambiguous-comment": {
     "id": "KL-2026-11-09-ambiguous-comment",
