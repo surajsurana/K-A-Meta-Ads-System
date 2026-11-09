@@ -453,12 +453,5 @@
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
-  },
-  "KL-2026-11-09-ugc-tags": {
-    "id": "KL-2026-11-09-ugc-tags",
-    "date": "2026-11-09",
-    "type": "observation",
-    "subject": "Monday twice-weekly UGC-tags sweep (2026-11-09) - 4 new tagged items since the 2026-10-31 DfKv4-iNixg boundary, 2 strong repost+ad candidates, 1 Reel unexecutable (no video_url, same tagged-video restriction), 1 likely a reshare of K Codingand A own catalog image not new customer UGC",
-    "follow_up": "meghnapahwa and meghnasahijwani: repost plans drafted (KL-2026-11-09-meghnapahwa-repost-feed/-story, KL-2026-11-09-meghnasahijwani-repost-feed/-story) and handed to campaign-strategist for the five-way disposition call (KL-2026-11-09-CS-HANDOFF). iamurvashilal: flagged as unexecutable (no file) - no plan built, needs a manual Media Library upload if Suraj wants to pursue it. ishikaasingh: noted, no action. Next sweep boundary: 18082545044384031 (2026-11-08T13:42:46)."
   }
 }
