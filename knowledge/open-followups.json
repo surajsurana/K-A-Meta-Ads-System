@@ -244,13 +244,6 @@
     "subject": "@aesana0710 Pls check your DM reaches 5th consecutive cycle unreplied (13 days) - ESCALATING TO SURAJ per the prior entrys own instruction; @social_cravings now 3rd cycle, still unreplied",
     "follow_up": "aesana0710: escalated to Suraj this cycle - awaiting his direct action (DM check or explicit spam/ignore call); if still unresolved next cycle, note that the escalation itself needs a human response, do not re-escalate identically. social_cravings: continue checking each cycle until resolved, no flag threshold reached yet."
   },
-  "KL-2026-10-31-SCM-DMREDIRECT-CLEAN3": {
-    "id": "KL-2026-10-31-SCM-DMREDIRECT-CLEAN3",
-    "date": "2026-10-31",
-    "type": "observation",
-    "subject": "DM-redirect standing watch (per KL-2026-10-15-CS-DMREDIRECT-REESCALATE / KL-2026-10-22-dmredirect-watch-no-recurrence2) - checked again for a 4th post-escalation recurrence, NONE found, 3rd consecutive clean cycle",
-    "follow_up": "Continue checking every cycle for a 4th post-escalation occurrence until the pattern either resolves conclusively (several more clean cycles) or recurs again."
-  },
   "KL-2026-11-01-LM009-EXEC": {
     "id": "KL-2026-11-01-LM009-EXEC",
     "date": "2026-11-01",
@@ -446,6 +439,13 @@
     "type": "change",
     "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - added excluded_custom_audiences [Instagram Engaged 365D, Instagram Followers] per Suraj Telegram approval",
     "follow_up": "performance-analyst/lead-quality-analyst: re-check 9th Dec 25 cost-per-conversation and enquiry quality (lead_quality_report.py) at the 3-4 day mark (around 2026-11-11 to 2026-11-12) per the plan rollback criteria - revert the exclusion if serious-or-better rate/cost worsens materially vs pre-exclusion baseline, or if cost-per-conversation-started rises materially above ~Rs78.6-79.5, or if issues_info appears on the ad set."
+  },
+  "KL-2026-11-09-dmredirect-postescalation-recurrence4": {
+    "id": "KL-2026-11-09-dmredirect-postescalation-recurrence4",
+    "date": "2026-11-09",
+    "type": "observation",
+    "subject": "Staff DM-redirect WhatsApp-only-policy violation - 4th confirmed post-escalation recurrence, breaking the 3-clean-cycle streak (KL-2026-10-31-SCM-DMREDIRECT-CLEAN3)",
+    "follow_up": "Recommend this be surfaced directly to Suraj as a plain FYI (not a tappable approval, since there is nothing to approve - it already happened) with the concrete ask repeated: confirm whether the person(s) replying live on Instagram have the approved WhatsApp-only wording readily accessible, since 4 recurrences after the original direct conversation suggests an operational gap rather than a one-time miscommunication. Continue the standing watch next cycle for a 5th recurrence."
   },
   "KL-2026-11-09-own-content": {
     "id": "KL-2026-11-09-own-content",
