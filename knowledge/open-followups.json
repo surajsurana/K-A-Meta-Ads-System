@@ -188,13 +188,6 @@
     "subject": "Champagne Gold Neutral Text Test (ad 52559623981980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - fresh read against the now-current pool composition since the 2026-10-22 KAFL018 revert: KEEP, no pause - the sustained ~3x cost-per-conversation gap does not hold once weighted by enquiry quality",
     "follow_up": "Re-check with a larger since-10-22 sample (target ~20-30 enquiries per ad in this pool) and once the staff_replied/AISI labelling break clears, to confirm the quality-weighted read holds at larger n; if Champagne's serious-rate advantage reverses with more data, revisit the pause question then."
   },
-  "KL-2026-10-28-CS-LOOMIEREB-KEEPRUNNING": {
-    "id": "KL-2026-10-28-CS-LOOMIEREB-KEEPRUNNING",
-    "date": "2026-10-28",
-    "type": "outcome",
-    "subject": "Loomiere 'B' ad (52564598016980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - keep running, too early for a verdict; early quality signal noted but n=7 too thin to act on",
-    "follow_up": "Re-check once this ad has 20-30+ enquiries or at 3+ days live, whichever comes first, for a real quality-weighted read; also feeds the Loomiere launch end-date review on 2026-11-10."
-  },
   "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
     "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
     "date": "2026-10-29",
@@ -391,13 +384,6 @@
     "subject": "Self-correction: reported two wrong learning-log plan ids in final summary (said KL-2026-11-09-010715 and KL-2026-11-09-010720) - entries were actually written and pushed correctly under different, real ids; NOT a recurrence of KL-2026-08-25-015500 silent-push-failure",
     "follow_up": "Going forward: after every append-learning-log.sh call, read back the actual id from the committed line (e.g. tail -1 knowledge/learning-log.jsonl or git show HEAD) before stating that id anywhere in a report to a user or coordinator, rather than trusting a variable computed in an earlier shell call."
   },
-  "KL-2026-11-09-CS-BUDGETCALL": {
-    "id": "KL-2026-11-09-CS-BUDGETCALL",
-    "date": "2026-11-09",
-    "type": "decision",
-    "subject": "SS3e budget call, twice-weekly review 2026-11-09 - HOLD, both triggers walked explicitly; ROAS safety-check gate not clearly clean, most likely explained by the in-progress Loomiere launch but not yet confirmed",
-    "follow_up": "performance-analyst to compute 30-day blended ROAS EXCLUDING Loomiere campaign spend/revenue at or before the next review, to separate launch-drag from genuine account-wide softening. Revisit this SS3e call at the very next review, after the 2026-11-10 Loomiere checkpoint. Budget: stay at Rs6,726/day (post todays pauses) because the 30-day ROAS safety check is not clearly clean - 3rd consecutive decline (39.55x->32.1x->29.26x), 17.5% below the 90-day level - even though November is behind pace with healthy costs; most likely launch-driven (Loomiere, judged at its own 11-10 end date) but not yet confirmed by a Loomiere-excluded cut. (30-day ROAS 29.26x, normal 35.45x)"
-  },
   "KL-2026-11-09-CS-CONTENT-DISPOSITION": {
     "id": "KL-2026-11-09-CS-CONTENT-DISPOSITION",
     "date": "2026-11-09",
@@ -433,12 +419,12 @@
     "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
     "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
   },
-  "KL-2026-11-10-PA-HEARTBEAT-LOOMIERE-ENDDATE-FINDINGS": {
-    "id": "KL-2026-11-10-PA-HEARTBEAT-LOOMIERE-ENDDATE-FINDINGS",
+  "KL-2026-11-10-CS-LOOMIERE-ENDDATE-VERDICT": {
+    "id": "KL-2026-11-10-CS-LOOMIERE-ENDDATE-VERDICT",
     "date": "2026-11-10",
-    "type": "observation",
-    "subject": "Loomiere launch ceiling-reversion end-date data (today) - Bottle Green Solo underperforming its own pool; Broad Advantage+ running ~2-3x higher cost/conversation than IG Engaged pool",
-    "follow_up": "campaign-strategist: use this for todays Loomiere ceiling-reversion/budget-split review (temporary Rs7,500/day ends today, Rs6,500 resumes tomorrow unless Suraj says otherwise; current active total Rs7,076/day is already above Rs6,500). Separately decide whether Bottle Green Solos materially worse cost/conversation (Rs276.52 vs Rs52-91 pool range, 6 days of data) warrants pause/replace/hold."
+    "type": "decision",
+    "subject": "Loomiere launch end-date checkpoint (2026-10-27 to 2026-11-10) - targeted move: pause Broad Advantage+ ad set, drop IG Engaged/retargeting ad set back to Rs200, keep the Reel inside 9th Dec as-is; standing ceiling reverts to Rs6,500 on schedule with no extension needed",
+    "follow_up": "media-buyer: validate and build (1) pause ad set 52564598075780 in full, (2) set daily_budget on 52564357579980 from 40000 to 20000 (Rs400->Rs200). No change needed to 6862975169176 or ad 52564598016980. performance-analyst: still owes the Loomiere-excluded 30-day blended ROAS decomposition committed in KL-2026-11-09-CS-BUDGETCALL - do it at the next review now that Loomiere's problem piece (C) is being pruned, to cleanly separate launch-drag from any genuine account-wide softening. Re-check Bottle Green Solo (52566563586180, inside 52564357579980) separately per KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD - dropping this ad set's budget today also naturally throttles that ad's spend in the meantime."
   },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
