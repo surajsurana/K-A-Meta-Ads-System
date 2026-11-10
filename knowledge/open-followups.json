@@ -286,13 +286,6 @@
     "subject": "First Love ad set 52562110311980 (Gold Sculpted, KAFL007) and its ad 52562110511780 paused per approved plan",
     "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan built on new independent evidence (a real Stitchflow order for KAFL007 placed since this pause, or a materially different lead-quality signal that did not exist at pause time)."
   },
-  "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT": {
-    "id": "KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT",
-    "date": "2026-11-04",
-    "type": "decision",
-    "subject": "System self-audit finding: performance-analyst.md never got the standing gender/age/channel breakdown monitoring duty that docs/architecture.md guardrail 16 (added 2026-10-28) already assigns to it",
-    "follow_up": "Awaiting Suraj Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py system-fix path - apply the exact edit below to .claude/agents/performance-analyst.md (insert as a new bullet immediately after the existing Scale-readiness signals bullet, currently ending ...that call belongs to campaign-strategist. and before the Any finding that implies a next move bullet), commit and push. Documentation-only fix: does not change any already-running behavior, since the daily heartbeat and weekly review prompts already carry the instruction explicitly today. EXACT TEXT TO INSERT (as its own new bullet, verbatim): - **Gender, age and channel monitoring, every weekly review and in the daily heartbeats anomaly pull (added 2026-10-28, docs/architecture.md guardrail 16) - already running via the prompts, added here so this files own checklist matches.** Pull Metas breakdowns=gender and breakdowns=age (spend, impressions, conversations) for every active ad set - the daily heartbeat uses the last 3 days, the weekly review the review window plus a 30-day comparison. Flag any ad set with more than 5 percent of spend or conversations to men, or delivery/targeting outside ages 22-55. Report gender, age and channel (the existing Instagram vs Facebook vs WhatsApp Status split above) as three separate reads, never folded into one number. Metas own delivery data only, never anyone's name. Any ad set crossing these thresholds is a standing finding for campaign-strategist, same routing as every other finding above; fixes follow guardrail 15 (gradual, worst-first, never all at once)."
-  },
   "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
     "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
     "date": "2026-11-05",
@@ -432,5 +425,12 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (8 items) - 6 thank-yous and 2 price/availability WhatsApp redirects on the 3 newest own posts since the 2026-11-05 batch",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
+  },
+  "KL-2026-11-10-014557": {
+    "id": "KL-2026-11-10-014557",
+    "date": "2026-11-10",
+    "type": "observation",
+    "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
+    "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
   }
 }
