@@ -432,5 +432,12 @@
     "type": "observation",
     "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
     "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
+  },
+  "KL-2026-11-10-SCM-DAILYCHECK": {
+    "id": "KL-2026-11-10-SCM-DAILYCHECK",
+    "date": "2026-11-10",
+    "type": "observation",
+    "subject": "Daily heartbeat: Media Library 0 pending (manual and instagram_auto both), Loomiere no new video since 2026-11-06 boundary - nothing new to flag either task",
+    "follow_up": "Infra: disk still at 94%/607M free on droplet root volume, still causing instagram_collect.py to skip items some nights - needs disk cleanup/provisioning attention, outside social-community-manager scope. Loomiere: launch-budget window closes today (2026-11-10) - no new video content to feed the pipeline before the keep/drop checkpoint; next check should reconfirm whether the window extended or closed."
   }
 }
