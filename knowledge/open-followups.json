@@ -412,12 +412,12 @@
     "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
     "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
   },
-  "KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD": {
-    "id": "KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD",
+  "KL-2026-11-10-073140": {
+    "id": "KL-2026-11-10-073140",
     "date": "2026-11-10",
     "type": "decision",
-    "subject": "Loomiere Bottle Green Solo (ad 52566563586180) - HOLD, do not pause: fair-chance day-7 threshold not yet formally crossed, AND the ad has no valid quality read at all (AISI referral-matching gap), so a cost-only pause verdict would be premature on two independent grounds",
-    "follow_up": "Re-check at the next twice-weekly review (or next winners/latest.json regeneration) once this ad shows days_active >= 7 and chance_used reflects accurate spend. If the AISI/WATI referral-matching gap for this ad (52566563586180) is still unresolved by then, say so explicitly again rather than defaulting to a cost-only verdict. Whoever owns the WATI/AISI integration should prioritize the referral-tagging fix flagged in KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH - it's now blocking a real pause-or-keep decision, not just a reporting nuisance."
+    "subject": "Loomiere launch end-date execution plan - PAUSE Broad Advantage+ ad set (52564598075780, -Rs700/day) + DROP IG Engaged/retargeting ad set budget 400->200 (52564357579980, -Rs200/day); no change to 9th Dec pool or Reel",
+    "follow_up": "marketing-lead: execute the 7 steps in this plan once Suraj approves via Telegram, in order, stopping at any step whose pre-check doesn't match. The unexecuted 2026-11-09 ad-level pause (KL-2026-11-09-010746, ad 52564598185780) becomes moot once this ad-set-level pause takes effect - no separate action needed, but worth noting that earlier decision was apparently never logged as executed."
   },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
