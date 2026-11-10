@@ -356,13 +356,6 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
-  "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH": {
-    "id": "KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH",
-    "date": "2026-11-08",
-    "type": "observation",
-    "subject": "Loomiere Bottle Green Solo (ad 52566563586180) zero-AISI-match gap confirmed as a referral-matching issue, not absence of leads: Meta shows conversations started, AISI shows none",
-    "follow_up": "Whoever owns the WATI/AISI integration needs to check referral-tagging for this ad's (52566563586180) WhatsApp conversations specifically - Meta's click-to-WhatsApp referral isn't resulting in matched AISI feed rows for this ad id, unlike the rest of the account. This ad's lead-quality read (junk/browsing/serious mix, cost per serious enquiry) stays blocked until matched rows start appearing in the feed; do not treat the zero-row count as '0 enquiries = fine' or as a verdict on the creative."
-  },
   "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED": {
     "id": "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED",
     "date": "2026-11-08",
@@ -419,12 +412,12 @@
     "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
     "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
   },
-  "KL-2026-11-10-CS-LOOMIERE-ENDDATE-VERDICT": {
-    "id": "KL-2026-11-10-CS-LOOMIERE-ENDDATE-VERDICT",
+  "KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD": {
+    "id": "KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD",
     "date": "2026-11-10",
     "type": "decision",
-    "subject": "Loomiere launch end-date checkpoint (2026-10-27 to 2026-11-10) - targeted move: pause Broad Advantage+ ad set, drop IG Engaged/retargeting ad set back to Rs200, keep the Reel inside 9th Dec as-is; standing ceiling reverts to Rs6,500 on schedule with no extension needed",
-    "follow_up": "media-buyer: validate and build (1) pause ad set 52564598075780 in full, (2) set daily_budget on 52564357579980 from 40000 to 20000 (Rs400->Rs200). No change needed to 6862975169176 or ad 52564598016980. performance-analyst: still owes the Loomiere-excluded 30-day blended ROAS decomposition committed in KL-2026-11-09-CS-BUDGETCALL - do it at the next review now that Loomiere's problem piece (C) is being pruned, to cleanly separate launch-drag from any genuine account-wide softening. Re-check Bottle Green Solo (52566563586180, inside 52564357579980) separately per KL-2026-11-10-CS-BOTTLEGREENSOLO-HOLD - dropping this ad set's budget today also naturally throttles that ad's spend in the meantime."
+    "subject": "Loomiere Bottle Green Solo (ad 52566563586180) - HOLD, do not pause: fair-chance day-7 threshold not yet formally crossed, AND the ad has no valid quality read at all (AISI referral-matching gap), so a cost-only pause verdict would be premature on two independent grounds",
+    "follow_up": "Re-check at the next twice-weekly review (or next winners/latest.json regeneration) once this ad shows days_active >= 7 and chance_used reflects accurate spend. If the AISI/WATI referral-matching gap for this ad (52566563586180) is still unresolved by then, say so explicitly again rather than defaulting to a cost-only verdict. Whoever owns the WATI/AISI integration should prioritize the referral-tagging fix flagged in KL-2026-11-08-LQ-BOTTLEGREENSOLO-METAVSAISI-MISMATCH - it's now blocking a real pause-or-keep decision, not just a reporting nuisance."
   },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
