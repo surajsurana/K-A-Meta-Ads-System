@@ -433,6 +433,13 @@
     "subject": "Second failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first attempt",
     "follow_up": "Needs an interactive (non-headless) session, or a heartbeat environment with Edit/Write permission granted, to actually apply the one-bullet insertion. Until then this will keep resurfacing on the due-now sweep - worth telling Suraj directly that this specific approved fix cannot be applied by any unattended run as currently configured, so he can decide whether to grant the permission or apply it himself."
   },
+  "KL-2026-11-10-PA-HEARTBEAT-LOOMIERE-ENDDATE-FINDINGS": {
+    "id": "KL-2026-11-10-PA-HEARTBEAT-LOOMIERE-ENDDATE-FINDINGS",
+    "date": "2026-11-10",
+    "type": "observation",
+    "subject": "Loomiere launch ceiling-reversion end-date data (today) - Bottle Green Solo underperforming its own pool; Broad Advantage+ running ~2-3x higher cost/conversation than IG Engaged pool",
+    "follow_up": "campaign-strategist: use this for todays Loomiere ceiling-reversion/budget-split review (temporary Rs7,500/day ends today, Rs6,500 resumes tomorrow unless Suraj says otherwise; current active total Rs7,076/day is already above Rs6,500). Separately decide whether Bottle Green Solos materially worse cost/conversation (Rs276.52 vs Rs52-91 pool range, 6 days of data) warrants pause/replace/hold."
+  },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
     "date": "2026-11-10",
