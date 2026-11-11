@@ -244,13 +244,6 @@
     "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
     "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
   },
-  "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK": {
-    "id": "KL-2026-11-03-LQ-RECENTADS-7DAY-CHECK",
-    "date": "2026-11-03",
-    "type": "observation",
-    "subject": "7-day quality/delivery check on WhatsApp ads activated since 2026-10-27 (Loomiere launch ads, Lavender Solo, Lavender second ad) - Loomiere prefill bug still unfixed (rules-v2), Lavender second ad too early for any KL-2026-11-02-010814 rollback criterion",
-    "follow_up": "Re-check Lavender second ad (52565923285580) against the same 3 rollback criteria once combined ad-set spend since activation clears Rs1,500 (currently Rs671.39). Do not read any Loomiere ad's serious-or-better% at face value until feed.rules_version shows rules-v3 live - re-check reason_code mix once it does. Correct the standing assumption that ad set 6862975169176 holds two Loomiere ads (A and B); as of 2026-11-03 it holds exactly one (52564598016980)."
-  },
   "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK": {
     "id": "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK",
     "date": "2026-11-03",
@@ -404,13 +397,6 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (8 items) - 6 thank-yous and 2 price/availability WhatsApp redirects on the 3 newest own posts since the 2026-11-05 batch",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
-  "KL-2026-11-10-073140": {
-    "id": "KL-2026-11-10-073140",
-    "date": "2026-11-10",
-    "type": "decision",
-    "subject": "Loomiere launch end-date execution plan - PAUSE Broad Advantage+ ad set (52564598075780, -Rs700/day) + DROP IG Engaged/retargeting ad set budget 400->200 (52564357579980, -Rs200/day); no change to 9th Dec pool or Reel",
-    "follow_up": "marketing-lead: execute the 7 steps in this plan once Suraj approves via Telegram, in order, stopping at any step whose pre-check doesn't match. The unexecuted 2026-11-09 ad-level pause (KL-2026-11-09-010746, ad 52564598185780) becomes moot once this ad-set-level pause takes effect - no separate action needed, but worth noting that earlier decision was apparently never logged as executed."
   },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
