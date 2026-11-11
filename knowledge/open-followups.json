@@ -335,13 +335,6 @@
     "subject": "Lavender Broad ad (52565923285580, ad set 52564598075780) - KEEP running, confirming media-buyers 11-07 HOLD; my 11-06 pause call is superseded by overnight conversions",
     "follow_up": "Re-check against the same 3 criteria once more before the guardrail-3 7-day new-ad-watch window closes (~2026-11-09), using fresh same-window data each time."
   },
-  "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED": {
-    "id": "KL-2026-11-07-CS-LAVENDERSOLO-CONTINUE-TIGHTENED",
-    "date": "2026-11-07",
-    "type": "outcome",
-    "subject": "Lavender Solo (52565052977180, ad set 52564357579980) - continue running, both recheck triggers met but direction keeps improving on a still-thin sample; set a firm next checkpoint instead of extending open-ended",
-    "follow_up": "Recheck 2026-11-12, or sooner if Lavender Solo reaches 8 total conversations or Rs1,500 individual spend. No live change today."
-  },
   "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION": {
     "id": "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION",
     "date": "2026-11-07",
@@ -411,6 +404,13 @@
     "type": "observation",
     "subject": "Third failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first two attempts",
     "follow_up": "Same as KL-2026-11-10-014557: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
+  },
+  "KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH": {
+    "id": "KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH",
+    "date": "2026-11-11",
+    "type": "observation",
+    "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged ad set) - Metas own messaging_conversation_started_7d count (7 lifetime) is notably higher than winners/latest.jsons AISI-matched enquiries count (4) for the same ad - a possible second instance of the Bottle Green Solo-style AISI referral-matching gap, not yet confirmed as that mechanism",
+    "follow_up": "At the 2026-11-12 Lavender Solo checkpoint (or sooner if trigger hit), have lead-quality-analyst check the AISI feed directly for this ad id (52565052977180) alongside the Meta-side conversation count, same as was done for Bottle Green Solo, before issuing a verdict on cost-per-conversation alone."
   },
   "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING": {
     "id": "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING",
