@@ -425,5 +425,12 @@
     "type": "observation",
     "subject": "Daily heartbeat: Media Library 0 pending (manual and instagram_auto both), Loomiere no new video since 2026-11-06 boundary - nothing new to flag either task",
     "follow_up": "Infra: disk still at 94%/607M free on droplet root volume, still causing instagram_collect.py to skip items some nights - needs disk cleanup/provisioning attention, outside social-community-manager scope. Loomiere: launch-budget window closes today (2026-11-10) - no new video content to feed the pipeline before the keep/drop checkpoint; next check should reconfirm whether the window extended or closed."
+  },
+  "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING": {
+    "id": "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING",
+    "date": "2026-11-11",
+    "type": "decision",
+    "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
+    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   }
 }
