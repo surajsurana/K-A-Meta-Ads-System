@@ -412,6 +412,13 @@
     "subject": "Uttar Pradesh - severe spend-without-orders, fresh quantification (continues the standing UP/Rajasthan/MP pattern named in docs/architecture.md SS3c)",
     "follow_up": "campaign-strategist: weigh a UP-specific disposition (one of the eight SS3c dispositions - likely exclusion or reduced targeting given the scale of the mismatch) alongside the Rajasthan/MP milder versions and the Canada reverse-direction missed-opportunity signal. Not a decision performance-analyst makes."
   },
+  "KL-2026-11-12-PA-ROAS-4TH-DECLINE": {
+    "id": "KL-2026-11-12-PA-ROAS-4TH-DECLINE",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "30-day blended ROAS - 4th consecutive decline (39.55x 10-29 -> 32.1x 11-05 -> 29.26x 11-09 -> 26.53x 11-12), now 22.8% below its own 90-day level",
+    "follow_up": "campaign-strategist: this is the 4th consecutive decline, not a one-off - the Loomiere-launch-lag explanation floated 2026-11-09 needs either confirming (via a Loomiere-excluded 30-day ROAS decomposition, not yet run) or retiring as the account moves further past the launch window."
+  },
   "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH": {
     "id": "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH",
     "date": "2026-11-12",
