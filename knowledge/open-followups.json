@@ -411,5 +411,12 @@
     "type": "decision",
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
+  },
+  "KL-2026-11-12-ugc-tags": {
+    "id": "KL-2026-11-12-ugc-tags",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Thursday twice-weekly UGC-tags sweep (2026-11-12) - 6 new tagged items since the 2026-11-08 18082545044384031 boundary, including a key corroborating Mouni Roy image and 2 new stylebyanissa carousels",
+    "follow_up": "eshawadhwa_ Mouni Roy image and meghnapahwa wrap photo: handed to campaign-strategist (KL-2026-11-12-CS-HANDOFF) plus repost plans drafted. 2 stylebyanissa carousels: flagged HOLD pending SKU/garment confirmation, not reposted or handed off as ad candidates yet. akoirah_jewellery: no action, awareness only. mehakk.jain: no action, no usable file. Next sweep boundary: 17957788980275500 (2026-11-11T12:51:24)."
   }
 }
