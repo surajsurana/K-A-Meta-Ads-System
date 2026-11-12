@@ -391,12 +391,12 @@
     "subject": "Twice-weekly review 2026-11-12 - combined performance+quality calls: Broad Advantage+ India (hold swap, hold below-minimum step on quality grounds), 9th Dec (no change), Interest Stack (no change, junk% misleading reaffirmed), Loomiere pause/cut plan (AGREE, confirm resend), 16th May (RESOLVED, not a stalled pause), winners/fair-chance (confirmed nothing to propose)",
     "follow_up": "Re-pull Broad-vs-9th-Dec mature-only cost-per-serious-or-better 2026-11-16 to 11-23 per the original stop-rule. Revisit Broad Advantage+ below-minimum budget step once both the CPM-confound-settled check and a quality-convergence read are available - do not step it up on performance grounds alone. Resend KL-2026-11-10-073140 for Surajs tap (handled via the budget-check entry)."
   },
-  "KL-2026-11-12-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-12-CS-BUDGETCHECK",
+  "KL-2026-11-12-CS-BUDGETCALL": {
+    "id": "KL-2026-11-12-CS-BUDGETCALL",
     "date": "2026-11-12",
     "type": "decision",
-    "subject": "Portfolio budget allocation check, twice-weekly review 2026-11-12 - account currently Rs576/day OVER the reverted Rs6,500 ceiling solely because the already-validated Loomiere end-date pause plan (KL-2026-11-10-073140) remains un-tapped; recommend resending it as-is, not re-designing it. Frozen Blue (KAFL017) held-plan re-verdict: HOLD, not dropped, sequenced behind the Loomiere fix",
-    "follow_up": "Resend KL-2026-11-10-073140 (message_id 505) for Surajs tap - no redesign needed. Once executed, re-issue Frozen Blues ceiling math fresh (should land near Rs1,176/day over ceiling) as its own clean ceiling-raise ask, rather than resending todays worse Rs2,076/day figure."
+    "subject": "SS3e budget call, twice-weekly review 2026-11-12 - HOLD; 30-day ROAS 4th consecutive decline blocks a new increase under the mandatory safety-check gate, but the companion cut condition (worse cost/order or enquiry quality) is not met either, so neither direction clears its bar; Loomiere-excluded ROAS decomposition is now overdue and should actually be run before the next review",
+    "follow_up": "Budget: stay at Rs6,176/day once the Loomiere pause/cut executes (currently Rs7,076/day, over-ceiling for reasons unrelated to this call - see KL-2026-11-12-CS-BUDGETCHECK) because the 30-day ROAS safety check is not clean (4th consecutive decline, 22.8% below 90-day normal) even though November is behind pace with healthy costs; the cut bar is also not met because cost per order/enquiry quality is not worsening. (30-day ROAS 26.53x, normal 34.35x). performance-analyst: run the Loomiere-excluded 30-day ROAS decomposition before the next review - this is now overdue, not optional, and the launchs own ROAS should be judged at its 11-10 end date per SS3e."
   },
   "KL-2026-11-12-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-12-CS-GEO-DISPOSITIONS",
@@ -411,13 +411,6 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist (Thursday twice-weekly review, 2026-11-12) - revised StyleByAnissa disposition needed (SKU now confirmed), 1 new strong Mouni Roy ad candidate, 2 SKU-unconfirmed stylebyanissa carousels, meghnapahwa repost-only",
     "follow_up": "Awaiting campaign-strategist's revised StyleByAnissa disposition and a five-way call on the Mouni Roy image. No action needed on the 2 stylebyanissa carousels or meghnapahwa beyond awareness until SKU/garment confirmed or you decide otherwise."
-  },
-  "KL-2026-11-12-PA-ROAS-4TH-DECLINE": {
-    "id": "KL-2026-11-12-PA-ROAS-4TH-DECLINE",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "30-day blended ROAS - 4th consecutive decline (39.55x 10-29 -> 32.1x 11-05 -> 29.26x 11-09 -> 26.53x 11-12), now 22.8% below its own 90-day level",
-    "follow_up": "campaign-strategist: this is the 4th consecutive decline, not a one-off - the Loomiere-launch-lag explanation floated 2026-11-09 needs either confirming (via a Loomiere-excluded 30-day ROAS decomposition, not yet run) or retiring as the account moves further past the launch window."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
