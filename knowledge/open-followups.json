@@ -412,6 +412,13 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
+  "KL-2026-11-12-PA-DAILYHEARTBEAT-20261112-015617-OVERLAPRECHECK": {
+    "id": "KL-2026-11-12-PA-DAILYHEARTBEAT-20261112-015617-OVERLAPRECHECK",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) overlap-exclusion 3-4 day recheck (KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED) - Meta-side cost-per-conversation piece only, partial recheck, follow-up left open pending lead-quality-analyst's enquiry-quality piece",
+    "follow_up": "Still open pending lead-quality-analyst's serious-or-better enquiry-quality recheck on the same ad set/window; combine with this Meta-side cost data before the revert-or-hold decision."
+  },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
     "date": "2026-11-12",
