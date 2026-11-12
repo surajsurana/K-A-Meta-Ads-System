@@ -265,13 +265,6 @@
     "subject": "Netherlands - new reverse-geo entrant (1 order, Rs380,000, zero Meta spend) - DISPOSITION: HOLD/watch, same bar already applied to Saudi Arabia/Malaysia/Nigeria, not yet a test case",
     "follow_up": "Re-examine if a second Netherlands order appears, or if cumulative Netherlands lifetime revenue grows to a level comparable to the UK/USA-Canada cases before they were tested."
   },
-  "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC": {
-    "id": "KL-2026-11-05-MKT-16THMAYPAUSE-EXEC",
-    "date": "2026-11-05",
-    "type": "change",
-    "subject": "16th May 26 | Awarness (ad 6968778736976, ad set 6968778736776 '16th May 26 | India', campaign 6968778737176 '16th May 26 | Awareness') - ad paused per approved plan",
-    "follow_up": "This pause stands per the plan's own rollback criteria - do not re-activate informally; reactivation requires a fresh, deliberate awareness-spend decision by Suraj/campaign-strategist, not a reversal of this pause on the same zero-commercial-trace terms. Separately: reconcile the Rs7,076.00/day (15 active ad sets) vs the expected Rs7,176.00/day (16 active ad sets) account-wide budget total - some ad set outside this plan's scope appears to have changed status independently; this should be resolved before the 2026-11-10 ceiling-reversion review campaign-strategist already flagged in KL-2026-11-05-CS-BUDGETCHECK."
-  },
   "KL-2026-11-05-MKT-16THMAYTARGETINGFIX-EXEC": {
     "id": "KL-2026-11-05-MKT-16THMAYTARGETINGFIX-EXEC",
     "date": "2026-11-05",
@@ -390,6 +383,13 @@
     "type": "decision",
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
+  },
+  "KL-2026-11-12-CS-ADSETREVIEW": {
+    "id": "KL-2026-11-12-CS-ADSETREVIEW",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "Twice-weekly review 2026-11-12 - combined performance+quality calls: Broad Advantage+ India (hold swap, hold below-minimum step on quality grounds), 9th Dec (no change), Interest Stack (no change, junk% misleading reaffirmed), Loomiere pause/cut plan (AGREE, confirm resend), 16th May (RESOLVED, not a stalled pause), winners/fair-chance (confirmed nothing to propose)",
+    "follow_up": "Re-pull Broad-vs-9th-Dec mature-only cost-per-serious-or-better 2026-11-16 to 11-23 per the original stop-rule. Revisit Broad Advantage+ below-minimum budget step once both the CPM-confound-settled check and a quality-convergence read are available - do not step it up on performance grounds alone. Resend KL-2026-11-10-073140 for Surajs tap (handled via the budget-check entry)."
   },
   "KL-2026-11-12-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-12-CS-GEO-DISPOSITIONS",
