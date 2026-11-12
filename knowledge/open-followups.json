@@ -118,13 +118,6 @@
     "subject": "telegram_approvals_state.json carries stale not_executed status for plans actually executed through other paths",
     "follow_up": "Next interactive session: investigate why telegram_approvals_state.json status field is not updated to executed/resolved for plans built+activated through later separate EXEC entries rather than a single direct listener dispatch. Not urgent, no live/money impact, pure state-file hygiene - no dated re-check needed."
   },
-  "KL-2026-10-22-CS-DOBCOVERAGE-ACK": {
-    "id": "KL-2026-10-22-CS-DOBCOVERAGE-ACK",
-    "date": "2026-10-22",
-    "type": "decision",
-    "subject": "DOB coverage 7.40% (50/676), mean age 32.9, 25-34 bracket dominant in both known-DOB (64.0%) and Meta delivery (61.1% of spend) - ACKNOWLEDGED, convergence pattern continues to hold across readings, still no targeting change this cycle",
-    "follow_up": "Continue tracking weekly/twice-weekly. Re-assess whether the convergence pattern is strong/large enough to inform an actual targeting or creative-messaging decision once coverage reaches a level that feels genuinely representative - no fixed percentage gate, judged by consistency and stakes as usual, same standing posture as every prior ACK in this chain."
-  },
   "KL-2026-10-22-CS-LEADQUALITY-STANDINGCHECKS": {
     "id": "KL-2026-10-22-CS-LEADQUALITY-STANDINGCHECKS",
     "date": "2026-10-22",
