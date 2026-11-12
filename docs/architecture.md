@@ -300,7 +300,7 @@ Suraj, 2026-11-04: ads were doing well by the system's own numbers, but no revie
 
 "Promising" = cost and junk pass on at least 3 serious enquiries, volume or orders not yet. **"Check labels"** = serious share ≥ 50% and ≥ 3× the country normal: a labelling problem, never a winner, and those ads are left out of the normals (caught 2026-11-04: Loomière "Styling Appointment" ads, 77 of 81 enquiries labelled serious from the button's own pre-filled text; reported to AISI).
 
-**What a winner gets (campaign-strategist, every twice-weekly review):**
+**What a winner gets (campaign-strategist, every weekly review):**
 - **A winning ad set:** propose **+20% of its own budget** (or its campaign's, for a campaign budget). It is not funded by cutting another ad set. If it would go over the ceiling, the same plan raises the ceiling by that amount, so it is **one Telegram tap**. At most one step per ad set every 7 days (Meta resets learning above ~20%). Log the plan and its execution with the tag `winner-raise` so the dashboard shows "raise proposed" / "raised".
 - **A winning ad:** if it takes ≥ 60% of its ad set's spend, raise the ad set as above. Otherwise hold, and let the fair-chance check below deal with its weaker siblings. **Never move a winning ad into its own ad set** (Suraj: that can lose what's already working).
 - §3e still runs: this is per ad set, §3e is the account-level total (behind target, launches, soft months).

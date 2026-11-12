@@ -144,9 +144,10 @@ def log(msg):
 
 
 def next_review_date(from_dt):
-    """Next weekly-review day (Monday or Thursday, matching the cron
-    schedule - docs/proactive-operations.md SS8) strictly after from_dt's
-    IST calendar date. Real bug fixed 2026-10-01: a held plan's follow_up
+    """Next weekly-review day (Monday, matching the cron schedule -
+    docs/proactive-operations.md SS8) strictly after from_dt's IST calendar
+    date. Reviews went back to Monday-only on 2026-11-12 (they were Monday +
+    Thursday from 2026-09-28). Real bug fixed 2026-10-01: a held plan's follow_up
     used to hardcode +7 days, assuming a once-a-week review cadence. After
     the 2026-09-28 switch to twice-weekly (Monday+Thursday) reviews, a
     plan held on a Monday got scheduled 7 days out (the NEXT Monday),
@@ -157,9 +158,9 @@ def next_review_date(from_dt):
     d = from_dt.astimezone(ist).date()
     for offset in range(1, 8):
         candidate = d + timedelta(days=offset)
-        if candidate.weekday() in (0, 3):  # Monday=0, Thursday=3
+        if candidate.weekday() == 0:  # Monday
             return candidate.strftime("%Y-%m-%d")
-    return (d + timedelta(days=7)).strftime("%Y-%m-%d")  # unreachable: 1..7 always spans both weekdays
+    return (d + timedelta(days=7)).strftime("%Y-%m-%d")  # unreachable: 1..7 always includes a Monday
 
 
 def _read_config_dict():
@@ -881,7 +882,7 @@ def handle_callback_query(token, cq):
         # the due-now sweep's own two-step check (is there a LATER
         # override/change entry for this plan_id?) is what recognizes an
         # approve/reject as the thing that finally stops the cycle. Uses
-        # the NEXT actual review day (Monday or Thursday), not a flat +7
+        # the NEXT actual review day (Monday), not a flat +7
         # days - see next_review_date()'s docstring for the real bug this
         # fixes.
         follow_up_date = next_review_date(datetime.now(timezone.utc))

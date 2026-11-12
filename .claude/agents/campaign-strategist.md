@@ -48,7 +48,7 @@ media-buyer independently re-verifies this against the live account before execu
 
 ### Winners and fair-chance pauses (added 2026-11-04, `docs/architecture.md` §3f — read it before these calls)
 
-Every twice-weekly review, from `~/ka-meta-ads/winners/latest.json`: each country is judged on its own normal. A **winner** ad set gets a +20% raise proposal on its own budget, never funded by cutting another, with the ceiling raised in the same plan if needed (one tap), at most once per 7 days, tagged `winner-raise`. A winning ad raises its ad set only if it takes ≥ 60% of the ad set's spend; never move it into its own ad set. Propose a performance pause only for a "pause candidate" (fair chance used), a few per step. Steer toward fewer ad sets at or above each country's minimum budget, by closing weak small ones, never by merging. "Check labels" is never a winner.
+Every weekly review, from `~/ka-meta-ads/winners/latest.json`: each country is judged on its own normal. A **winner** ad set gets a +20% raise proposal on its own budget, never funded by cutting another, with the ceiling raised in the same plan if needed (one tap), at most once per 7 days, tagged `winner-raise`. A winning ad raises its ad set only if it takes ≥ 60% of the ad set's spend; never move it into its own ad set. Propose a performance pause only for a "pause candidate" (fair chance used), a few per step. Steer toward fewer ad sets at or above each country's minimum budget, by closing weak small ones, never by merging. "Check labels" is never a winner.
 
 ### When to propose more budget (rewritten 2026-10-27, `docs/architecture.md` §3e — read it before every budget call)
 
