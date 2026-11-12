@@ -363,6 +363,13 @@
     "subject": "Resent stalled Loomiere end-date pause/cut plan (KL-2026-11-10-073140) via Telegram - had sat unexecuted since 2026-11-10 (message_id 505, never tapped), leaving the account Rs576/day over its own Rs6,500 ceiling in the meantime",
     "follow_up": "Awaiting Suraj tap on message_id 517. If still untapped at tomorrow heartbeat, resend again - this plan does not need re-validation, only execution."
   },
+  "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP": {
+    "id": "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP",
+    "date": "2026-11-12",
+    "type": "outcome",
+    "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) overlap-exclusion (KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED) - KEEP the exclusion, do not revert, judged against the plan's own three stated stop-rule conditions, none of which are decisively met",
+    "follow_up": "Re-check again once post-exclusion n reaches roughly 60-80 enquiries (another week at current pace), per lead-quality-analyst's own suggestion, before treating either the junk% improvement or the cost figure as settled. If a future daily cost-per-conversation print shows two or more consecutive days above the Rs78.6-79.5 line (not just one spike day), treat that as the condition-3 breach this check did not find today."
+  },
   "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED": {
     "id": "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED",
     "date": "2026-11-12",
@@ -391,13 +398,6 @@
     "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - disposition DROPPED: retained video asset is unusable, no clean alternative available",
     "follow_up": "No further build action on this video. If Suraj separately wants to request a fresh, chrome-free capture from @stylebyanissa for this garment, that is a new ask to raise with him directly, not something to chase automatically. No Telegram send needed - nothing is pending approval, this simply closes out an already-halted build."
   },
-  "KL-2026-11-12-LQ-9THDEC-POSTEXCLUSION-QUALITY": {
-    "id": "KL-2026-11-12-LQ-9THDEC-POSTEXCLUSION-QUALITY",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "India | Whatsapp | 9th Dec 25 (ad set 6862975169176) - enquiry quality since the 2026-11-08 excluded_custom_audiences change (IG Engaged 365D/Followers excluded): junk % down, serious-or-better % down too, both on thin 4-day samples either side",
-    "follow_up": "Re-check at a larger n (another week of post-exclusion data) before treating either the junk% improvement or the serious-rate dip as settled - both numbers are still inside normal day-to-day noise range for this ad set's volume."
-  },
   "KL-2026-11-12-LQ-BARBIEPINK-ROLLBACKCHECKPOINT": {
     "id": "KL-2026-11-12-LQ-BARBIEPINK-ROLLBACKCHECKPOINT",
     "date": "2026-11-12",
@@ -411,13 +411,6 @@
     "type": "observation",
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
-  },
-  "KL-2026-11-12-PA-DAILYHEARTBEAT-20261112-015617-OVERLAPRECHECK": {
-    "id": "KL-2026-11-12-PA-DAILYHEARTBEAT-20261112-015617-OVERLAPRECHECK",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) overlap-exclusion 3-4 day recheck (KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED) - Meta-side cost-per-conversation piece only, partial recheck, follow-up left open pending lead-quality-analyst's enquiry-quality piece",
-    "follow_up": "Still open pending lead-quality-analyst's serious-or-better enquiry-quality recheck on the same ad set/window; combine with this Meta-side cost data before the revert-or-hold decision."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
