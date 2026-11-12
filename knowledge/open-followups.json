@@ -412,6 +412,13 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
+  "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH": {
+    "id": "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Meta Graph API ad creative field creative.video_id (top-level) does not match the actually-serving video - use object_story_spec.video_data.video_id / asset_feed_spec.videos[].video_id instead",
+    "follow_up": "Any future pull of an ad's underlying video (age check, duplicate-creative check, product-mapping) should read object_story_spec.video_data.video_id / link_data.video_id / asset_feed_spec.videos[].video_id, never the top-level creative.video_id field."
+  },
   "KL-2026-11-12-ugc-tags": {
     "id": "KL-2026-11-12-ugc-tags",
     "date": "2026-11-12",
