@@ -391,6 +391,13 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
+  "KL-2026-11-12-CS-GEO-DISPOSITIONS": {
+    "id": "KL-2026-11-12-CS-GEO-DISPOSITIONS",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "Twice-weekly review 2026-11-12 - geography dispositions: Uttar Pradesh ESCALATED to REDUCED TARGETING (bar cleared 2nd consecutive cycle, ad-set identification still owed by performance-analyst before a plan can be built); Rajasthan/MP MAINTAIN unchanged; Canada reverse-signal MAINTAIN the already-running test, logged as corroboration",
+    "follow_up": "performance-analyst: identify the specific ad set(s) carrying Uttar Pradeshs Rs25,837/30d spend and reconcile the 2-vs-1 FY-order discrepancy before the next review, so media-buyer can be briefed on a REDUCED TARGETING (geo-exclusion) plan. Also begin a BC/Langley-specific breakout for Canada once the Cold Prospecting test clears the thin-sample bar."
+  },
   "KL-2026-11-12-CS-HANDOFF": {
     "id": "KL-2026-11-12-CS-HANDOFF",
     "date": "2026-11-12",
@@ -404,13 +411,6 @@
     "type": "observation",
     "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION - held-plan re-check, ceiling math now WORSE than 2026-11-09 because the Loomiere end-date pause plan (KL-2026-11-10-073140) still has not executed and the temporary ceiling has now expired",
     "follow_up": "marketing-lead/campaign-strategist: the account is currently non-compliant with its own reverted Rs6,500/day standing ceiling (Rs576/day over) purely because an already-approved-in-principle pause plan (KL-2026-11-10-073140) has not been executed - this should be resolved (get that plan tapped) before or independent of any Frozen Blue decision, since Frozen Blue would only make the overage worse either way."
-  },
-  "KL-2026-11-12-PA-GEO-UP-ZEROORDER-REFRESH": {
-    "id": "KL-2026-11-12-PA-GEO-UP-ZEROORDER-REFRESH",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "Uttar Pradesh - severe spend-without-orders, fresh quantification (continues the standing UP/Rajasthan/MP pattern named in docs/architecture.md SS3c)",
-    "follow_up": "campaign-strategist: weigh a UP-specific disposition (one of the eight SS3c dispositions - likely exclusion or reduced targeting given the scale of the mismatch) alongside the Rajasthan/MP milder versions and the Canada reverse-direction missed-opportunity signal. Not a decision performance-analyst makes."
   },
   "KL-2026-11-12-PA-ROAS-4TH-DECLINE": {
     "id": "KL-2026-11-12-PA-ROAS-4TH-DECLINE",
