@@ -363,13 +363,6 @@
     "subject": "Third failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first two attempts",
     "follow_up": "Same as KL-2026-11-10-014557: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
   },
-  "KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH": {
-    "id": "KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH",
-    "date": "2026-11-11",
-    "type": "observation",
-    "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged ad set) - Metas own messaging_conversation_started_7d count (7 lifetime) is notably higher than winners/latest.jsons AISI-matched enquiries count (4) for the same ad - a possible second instance of the Bottle Green Solo-style AISI referral-matching gap, not yet confirmed as that mechanism",
-    "follow_up": "At the 2026-11-12 Lavender Solo checkpoint (or sooner if trigger hit), have lead-quality-analyst check the AISI feed directly for this ad id (52565052977180) alongside the Meta-side conversation count, same as was done for Bottle Green Solo, before issuing a verdict on cost-per-conversation alone."
-  },
   "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING": {
     "id": "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING",
     "date": "2026-11-11",
@@ -411,6 +404,13 @@
     "type": "decision",
     "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - disposition DROPPED: retained video asset is unusable, no clean alternative available",
     "follow_up": "No further build action on this video. If Suraj separately wants to request a fresh, chrome-free capture from @stylebyanissa for this garment, that is a new ask to raise with him directly, not something to chase automatically. No Telegram send needed - nothing is pending approval, this simply closes out an already-halted build."
+  },
+  "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED": {
+    "id": "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
+    "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
