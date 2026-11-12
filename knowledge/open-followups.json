@@ -342,13 +342,6 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-012343": {
-    "id": "KL-2026-11-12-012343",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "Uttar Pradesh geo-exclusion execution plan - add Uttar Pradesh (region 1754) to excluded_geo_locations on 5 ad sets (6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776), Rs0 budget impact",
-    "follow_up": "Awaiting Suraj's approval via Telegram. Once approved, marketing-lead executes per the 5 per-ad-set write steps above, with the conditional pre-check on ad set (4) (52564598075780) and the fresh-GET-at-execution-time discipline on all 4 ad sets shared with the pending Odisha/Uttarakhand plan (KL-2026-11-09-010937). performance-analyst to re-check UP delivery trend at the next review per the verification/revisit-trigger above. campaign-strategist/marketing-lead should also separately resolve whether KL-2026-11-09-010828 (message 503) should be withdrawn as superseded."
-  },
   "KL-2026-11-12-014808": {
     "id": "KL-2026-11-12-014808",
     "date": "2026-11-12",
@@ -411,6 +404,13 @@
     "type": "observation",
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
+  },
+  "KL-2026-11-12-MKT-GEO-UP-EXCLUSION-EXEC": {
+    "id": "KL-2026-11-12-MKT-GEO-UP-EXCLUSION-EXEC",
+    "date": "2026-11-12",
+    "type": "change",
+    "subject": "Executed Uttar Pradesh geo-exclusion on 4 of 5 planned ad sets (52564598075780 skipped, already PAUSED)",
+    "follow_up": "performance-analyst to re-check UP delivery trend at the next review per the plan's verification/revisit-trigger. If 52564598075780 is reactivated by any future plan, that plan must carry forward the Uttar Pradesh exclusion as part of restoring full targeting, per this plan's own note."
   },
   "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC": {
     "id": "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC",
