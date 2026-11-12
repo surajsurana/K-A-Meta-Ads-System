@@ -377,13 +377,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now an 8th consecutive cycle (22 days), @social_cravings a 5th (16 days); no new escalation this cycle per standing guidance",
     "follow_up": "aesana0710: continue awaiting Suraj action or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-09-comment-batch": {
-    "id": "KL-2026-11-09-comment-batch",
-    "date": "2026-11-09",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (8 items) - 6 thank-yous and 2 price/availability WhatsApp redirects on the 3 newest own posts since the 2026-11-05 batch",
-    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
     "date": "2026-11-10",
@@ -425,5 +418,12 @@
     "type": "observation",
     "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION held-plan re-verification (Thursday review, 2026-11-12) - MATERIALLY CHANGED since 2026-11-09, SKU gap now resolved",
     "follow_up": "Recommend campaign-strategist issue a revised disposition for this item (not a verbatim resend) reflecting the now-confirmed SKU KA-231026-009 and its existing live-ad status - my own non-binding read: given the SKU is proven and already running, and this is clean, usable solo-subject footage of a recurring on-brand creator (not just a thumbnail), this looks ready to move from 'TEST pending SKU' to a straightforward TEST/proceed call without further hold, but that call belongs to campaign-strategist, not me."
+  },
+  "KL-2026-11-12-comment-batch": {
+    "id": "KL-2026-11-12-comment-batch",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "Routine comment-reply batch (1 item) - price/availability WhatsApp redirect on the new Silver Starlight Corset post",
+    "follow_up": "Ready for marketing-lead to send via Telegram for approval."
   }
 }
