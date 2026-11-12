@@ -391,6 +391,13 @@
     "subject": "Twice-weekly review 2026-11-12 - combined performance+quality calls: Broad Advantage+ India (hold swap, hold below-minimum step on quality grounds), 9th Dec (no change), Interest Stack (no change, junk% misleading reaffirmed), Loomiere pause/cut plan (AGREE, confirm resend), 16th May (RESOLVED, not a stalled pause), winners/fair-chance (confirmed nothing to propose)",
     "follow_up": "Re-pull Broad-vs-9th-Dec mature-only cost-per-serious-or-better 2026-11-16 to 11-23 per the original stop-rule. Revisit Broad Advantage+ below-minimum budget step once both the CPM-confound-settled check and a quality-convergence read are available - do not step it up on performance grounds alone. Resend KL-2026-11-10-073140 for Surajs tap (handled via the budget-check entry)."
   },
+  "KL-2026-11-12-CS-BUDGETCHECK": {
+    "id": "KL-2026-11-12-CS-BUDGETCHECK",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "Portfolio budget allocation check, twice-weekly review 2026-11-12 - account currently Rs576/day OVER the reverted Rs6,500 ceiling solely because the already-validated Loomiere end-date pause plan (KL-2026-11-10-073140) remains un-tapped; recommend resending it as-is, not re-designing it. Frozen Blue (KAFL017) held-plan re-verdict: HOLD, not dropped, sequenced behind the Loomiere fix",
+    "follow_up": "Resend KL-2026-11-10-073140 (message_id 505) for Surajs tap - no redesign needed. Once executed, re-issue Frozen Blues ceiling math fresh (should land near Rs1,176/day over ceiling) as its own clean ceiling-raise ask, rather than resending todays worse Rs2,076/day figure."
+  },
   "KL-2026-11-12-CS-GEO-DISPOSITIONS": {
     "id": "KL-2026-11-12-CS-GEO-DISPOSITIONS",
     "date": "2026-11-12",
@@ -404,13 +411,6 @@
     "type": "observation",
     "subject": "Handoff to campaign-strategist (Thursday twice-weekly review, 2026-11-12) - revised StyleByAnissa disposition needed (SKU now confirmed), 1 new strong Mouni Roy ad candidate, 2 SKU-unconfirmed stylebyanissa carousels, meghnapahwa repost-only",
     "follow_up": "Awaiting campaign-strategist's revised StyleByAnissa disposition and a five-way call on the Mouni Roy image. No action needed on the 2 stylebyanissa carousels or meghnapahwa beyond awareness until SKU/garment confirmed or you decide otherwise."
-  },
-  "KL-2026-11-12-PA-FROZENBLUE-HOLDRECHECK": {
-    "id": "KL-2026-11-12-PA-FROZENBLUE-HOLDRECHECK",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION - held-plan re-check, ceiling math now WORSE than 2026-11-09 because the Loomiere end-date pause plan (KL-2026-11-10-073140) still has not executed and the temporary ceiling has now expired",
-    "follow_up": "marketing-lead/campaign-strategist: the account is currently non-compliant with its own reverted Rs6,500/day standing ceiling (Rs576/day over) purely because an already-approved-in-principle pause plan (KL-2026-11-10-073140) has not been executed - this should be resolved (get that plan tapped) before or independent of any Frozen Blue decision, since Frozen Blue would only make the overage worse either way."
   },
   "KL-2026-11-12-PA-ROAS-4TH-DECLINE": {
     "id": "KL-2026-11-12-PA-ROAS-4TH-DECLINE",
