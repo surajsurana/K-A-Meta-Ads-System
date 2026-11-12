@@ -321,13 +321,6 @@
     "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
     "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
   },
-  "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED": {
-    "id": "KL-2026-11-08-ML-BARBIEPINK-REACTIVATION-EXECUTED",
-    "date": "2026-11-08",
-    "type": "change",
-    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) reactivated PAUSED -> ACTIVE per approved plan KL-2026-11-07-MB-BARBIEPINK-REACTIVATION-PLAN",
-    "follow_up": "performance-analyst/lead-quality-analyst: re-check this ad at the 3-4 day mark per rollback criteria in the linked plan. Anyone: spot-check effective_status later today to confirm it settled to ACTIVE, not stuck or DISAPPROVED."
-  },
   "KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED": {
     "id": "KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED",
     "date": "2026-11-08",
@@ -404,6 +397,13 @@
     "type": "decision",
     "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - disposition DROPPED: retained video asset is unusable, no clean alternative available",
     "follow_up": "No further build action on this video. If Suraj separately wants to request a fresh, chrome-free capture from @stylebyanissa for this garment, that is a new ask to raise with him directly, not something to chase automatically. No Telegram send needed - nothing is pending approval, this simply closes out an already-halted build."
+  },
+  "KL-2026-11-12-LQ-BARBIEPINK-ROLLBACKCHECKPOINT": {
+    "id": "KL-2026-11-12-LQ-BARBIEPINK-ROLLBACKCHECKPOINT",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) - 3-4 day rollback checkpoint since 2026-11-08 reactivation: serious-or-better 0% (n=4), below the ~3.5-3.6% India WhatsApp normal but on a sample too thin to call",
+    "follow_up": "campaign-strategist to make the keep/rollback call against this number. If kept running, re-check again once the ad clears roughly n=20-30 enquiries post-reactivation (another 1-2 weeks at current pace) for a sample-size-adequate serious-or-better read rather than relying on this 4-day/n=4 checkpoint alone."
   },
   "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED": {
     "id": "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED",
