@@ -384,13 +384,6 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-065214": {
-    "id": "KL-2026-11-12-065214",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - BUILD HALTED at validation, not produced: the retained file has stylebyanissa's handle and a visible countdown timer burned into every frame for its full 24.3s duration, contradicting the factual premise both campaign-strategist (KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION) and creative-copywriter (KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY) built on",
-    "follow_up": "Route back to campaign-strategist/social-community-manager: confirm there is genuinely no clean source for this content (check whether @stylebyanissa's own account still has the original post live, which would allow a fresh, chrome-free re-fetch the same way the Lavender Reel was re-fetched at its own build time) before deciding whether to retry this disposition or drop it. Do not resend KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE's placement/copy work as still build-ready - it is sound on its own terms but was never evaluated against this video defect. No Telegram approval sent; nothing is pending execution from this entry."
-  },
   "KL-2026-11-12-CS-ADSETREVIEW": {
     "id": "KL-2026-11-12-CS-ADSETREVIEW",
     "date": "2026-11-12",
@@ -418,6 +411,13 @@
     "type": "decision",
     "subject": "@eshawadhwa_ carousel (instagram.com/p/DfmhdQmH3U2/) - first usable image of the Mouni Roy red/maroon gown - MY READ: strong aesthetic fit, USE for organic repost (agree with social-community-manager); PAID ad use explicitly HELD pending Surajs direct sign-off on the celebrity/publicity-rights question, which is a different question from the standard five-way call",
     "follow_up": "Organic repost proceeds via social-community-managers already-drafted repost plans (KL-2026-11-12-eshawadhwa-mouniroy-repost-feed/-story) through the normal post-approval path. Paid-ad use stays HELD until Suraj answers the celebrity-rights question specifically, via a tappable Telegram question with the permalink (not a plain notification) - do not fold this into a routine content-routing resend."
+  },
+  "KL-2026-11-12-CS-STYLEBYANISSA-DROP": {
+    "id": "KL-2026-11-12-CS-STYLEBYANISSA-DROP",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - disposition DROPPED: retained video asset is unusable, no clean alternative available",
+    "follow_up": "No further build action on this video. If Suraj separately wants to request a fresh, chrome-free capture from @stylebyanissa for this garment, that is a new ask to raise with him directly, not something to chase automatically. No Telegram send needed - nothing is pending approval, this simply closes out an already-halted build."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
