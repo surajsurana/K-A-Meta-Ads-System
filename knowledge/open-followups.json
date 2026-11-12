@@ -384,12 +384,12 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY": {
-    "id": "KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY",
+  "KL-2026-11-12-065214": {
+    "id": "KL-2026-11-12-065214",
     "date": "2026-11-12",
     "type": "decision",
-    "subject": "@stylebyanissa Brown Lace Corset solo-creator Reel (SKU KA-231026-009) - execution-ready copy, adapted from proven Loomiere montage/solo-ad copy per campaign-strategist KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE",
-    "follow_up": "media-buyer: build a PAUSED test ad using this copy once the real video_id exists (upload the @stylebyanissa file, never a thumbnail for a video). After build, append the creative-product-map.jsonl line for the new video_id with SKU KA-231026-009 (status confirmed, matched_by note: already Stitchflow-confirmed via the existing KA-231026-009 entry, Suraj-level product ID already satisfied per architecture.md section 3d exception - no fresh Shopify/Stitchflow lookup needed for this video_id, just carry the confirmed SKU over). Placement per campaign-strategist's lean (9th Dec 25 pool) pending media-buyer's own validation. Needs Suraj's direct build approval per the superseded dispositions' standing requirement."
+    "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - BUILD HALTED at validation, not produced: the retained file has stylebyanissa's handle and a visible countdown timer burned into every frame for its full 24.3s duration, contradicting the factual premise both campaign-strategist (KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION) and creative-copywriter (KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY) built on",
+    "follow_up": "Route back to campaign-strategist/social-community-manager: confirm there is genuinely no clean source for this content (check whether @stylebyanissa's own account still has the original post live, which would allow a fresh, chrome-free re-fetch the same way the Lavender Reel was re-fetched at its own build time) before deciding whether to retry this disposition or drop it. Do not resend KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE's placement/copy work as still build-ready - it is sound on its own terms but was never evaluated against this video defect. No Telegram approval sent; nothing is pending execution from this entry."
   },
   "KL-2026-11-12-CS-ADSETREVIEW": {
     "id": "KL-2026-11-12-CS-ADSETREVIEW",
