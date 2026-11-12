@@ -223,13 +223,6 @@
     "subject": "Organic Instagram feed carousel LM-009 published - Loomiere Fuchsia Pink Bubble Peplum Corset With Pencil Skirt (7 slides)",
     "follow_up": "Hosted post-LM-009_0*.jpg copies on the droplet may be deleted now that verification passed."
   },
-  "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM": {
-    "id": "KL-2026-11-02-CS-INSTAENGAGED-FREQROLLBACK-HOLD-CONFIRM",
-    "date": "2026-11-02",
-    "type": "decision",
-    "subject": "India Insta Engaged 365D and Followers budget trim rollback checkpoint - CONFIRM HOLD at Rs1,750/day; overlap finding adds a second contributing factor to watch but does not overturn the met primary criterion",
-    "follow_up": "No live change; stays at Rs1,750/day. Re-assess only if the amended 2026-11-04/11-07-09 overlap watch shows this ad set own spend/reach being squeezed materially beyond the trim own expected effect."
-  },
   "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK": {
     "id": "KL-2026-11-03-PA-BARBIEPINK-STATUSCHECK",
     "date": "2026-11-03",
@@ -376,6 +369,13 @@
     "type": "decision",
     "subject": "Budget HOLD confirmed unchanged after Loomiere-ROAS decomposition largely refuted it as primary driver; next-review Meta pull specified to actually find the real driver behind the 39.55x->32.1x leg",
     "follow_up": "performance-analyst: run the four pulls above before the next review - account-wide daily CPM/spend (all campaigns, 10-20 to 11-11), any non-Loomiere spend/creative changes in the 10-27 to 11-05 window, Stitchflow order-count/AOV bucketed to match the 4 ROAS review windows, and a same-calendar-window prior-year seasonality check. Report back with an actual candidate driver, not a restated watch further."
+  },
+  "KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE": {
+    "id": "KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE",
+    "date": "2026-11-12",
+    "type": "outcome",
+    "subject": "India Insta Engaged 365D and Followers (adset 6538717752176) - frequency resurged to 3.33 (above both the account 2.5 line and this ad set's own pass-threshold of about 2.7x set on 2026-10-25), re-opening the pre-committed escalation clause from the 10-25 trim decision; KEEP at Rs1,750/day, no further cut, reopen cause question instead of cutting blindly",
+    "follow_up": "performance-analyst: at the next review, pull CTR for this ad set over the same two comparison weeks (2026-10-29 to 11-04 vs 11-05 to 11-11) alongside frequency/CPM. If CTR has also softened materially (creative-fatigue signature, as seen in this ad set's Aug/Sep episodes), that points to a creative refresh via creative-copywriter. If CTR is flat/healthy, that confirms pure pool attrition and points to an audience-expansion test (e.g. a seeded lookalike off this ad set's own custom audiences) rather than more budget cuts. Re-assess the Rs1,750/day level once that diagnostic is in, not before."
   },
   "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION": {
     "id": "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION",
