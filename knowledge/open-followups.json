@@ -405,19 +405,19 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
+  "KL-2026-11-12-CS-HANDOFF": {
+    "id": "KL-2026-11-12-CS-HANDOFF",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Handoff to campaign-strategist (Thursday twice-weekly review, 2026-11-12) - revised StyleByAnissa disposition needed (SKU now confirmed), 1 new strong Mouni Roy ad candidate, 2 SKU-unconfirmed stylebyanissa carousels, meghnapahwa repost-only",
+    "follow_up": "Awaiting campaign-strategist's revised StyleByAnissa disposition and a five-way call on the Mouni Roy image. No action needed on the 2 stylebyanissa carousels or meghnapahwa beyond awareness until SKU/garment confirmed or you decide otherwise."
+  },
   "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH": {
     "id": "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH",
     "date": "2026-11-12",
     "type": "observation",
     "subject": "Meta Graph API ad creative field creative.video_id (top-level) does not match the actually-serving video - use object_story_spec.video_data.video_id / asset_feed_spec.videos[].video_id instead",
     "follow_up": "Any future pull of an ad's underlying video (age check, duplicate-creative check, product-mapping) should read object_story_spec.video_data.video_id / link_data.video_id / asset_feed_spec.videos[].video_id, never the top-level creative.video_id field."
-  },
-  "KL-2026-11-12-SCM-STYLEBYANISSA-STATUSCHECK": {
-    "id": "KL-2026-11-12-SCM-STYLEBYANISSA-STATUSCHECK",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION held-plan re-verification (Thursday review, 2026-11-12) - MATERIALLY CHANGED since 2026-11-09, SKU gap now resolved",
-    "follow_up": "Recommend campaign-strategist issue a revised disposition for this item (not a verbatim resend) reflecting the now-confirmed SKU KA-231026-009 and its existing live-ad status - my own non-binding read: given the SKU is proven and already running, and this is clean, usable solo-subject footage of a recurring on-brand creator (not just a thumbnail), this looks ready to move from 'TEST pending SKU' to a straightforward TEST/proceed call without further hold, but that call belongs to campaign-strategist, not me."
   },
   "KL-2026-11-12-comment-batch": {
     "id": "KL-2026-11-12-comment-batch",
