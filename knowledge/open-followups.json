@@ -391,6 +391,13 @@
     "subject": "Uttar Pradesh geo-exclusion execution plan - add Uttar Pradesh (region 1754) to excluded_geo_locations on 5 ad sets (6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776), Rs0 budget impact",
     "follow_up": "Awaiting Suraj's approval via Telegram. Once approved, marketing-lead executes per the 5 per-ad-set write steps above, with the conditional pre-check on ad set (4) (52564598075780) and the fresh-GET-at-execution-time discipline on all 4 ad sets shared with the pending Odisha/Uttarakhand plan (KL-2026-11-09-010937). performance-analyst to re-check UP delivery trend at the next review per the verification/revisit-trigger above. campaign-strategist/marketing-lead should also separately resolve whether KL-2026-11-09-010828 (message 503) should be withdrawn as superseded."
   },
+  "KL-2026-11-12-014808": {
+    "id": "KL-2026-11-12-014808",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Resent stalled Loomiere end-date pause/cut plan (KL-2026-11-10-073140) via Telegram - had sat unexecuted since 2026-11-10 (message_id 505, never tapped), leaving the account Rs576/day over its own Rs6,500 ceiling in the meantime",
+    "follow_up": "Awaiting Suraj tap on message_id 517. If still untapped at tomorrow heartbeat, resend again - this plan does not need re-validation, only execution."
+  },
   "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED": {
     "id": "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED",
     "date": "2026-11-12",
