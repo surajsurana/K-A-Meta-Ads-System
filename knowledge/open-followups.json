@@ -405,19 +405,19 @@
     "subject": "SS3e budget call, twice-weekly review 2026-11-12 - HOLD; 30-day ROAS 4th consecutive decline blocks a new increase under the mandatory safety-check gate, but the companion cut condition (worse cost/order or enquiry quality) is not met either, so neither direction clears its bar; Loomiere-excluded ROAS decomposition is now overdue and should actually be run before the next review",
     "follow_up": "Budget: stay at Rs6,176/day once the Loomiere pause/cut executes (currently Rs7,076/day, over-ceiling for reasons unrelated to this call - see KL-2026-11-12-CS-BUDGETCHECK) because the 30-day ROAS safety check is not clean (4th consecutive decline, 22.8% below 90-day normal) even though November is behind pace with healthy costs; the cut bar is also not met because cost per order/enquiry quality is not worsening. (30-day ROAS 26.53x, normal 34.35x). performance-analyst: run the Loomiere-excluded 30-day ROAS decomposition before the next review - this is now overdue, not optional, and the launchs own ROAS should be judged at its 11-10 end date per SS3e."
   },
-  "KL-2026-11-12-CS-GEO-DISPOSITIONS": {
-    "id": "KL-2026-11-12-CS-GEO-DISPOSITIONS",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "Twice-weekly review 2026-11-12 - geography dispositions: Uttar Pradesh ESCALATED to REDUCED TARGETING (bar cleared 2nd consecutive cycle, ad-set identification still owed by performance-analyst before a plan can be built); Rajasthan/MP MAINTAIN unchanged; Canada reverse-signal MAINTAIN the already-running test, logged as corroboration",
-    "follow_up": "performance-analyst: identify the specific ad set(s) carrying Uttar Pradeshs Rs25,837/30d spend and reconcile the 2-vs-1 FY-order discrepancy before the next review, so media-buyer can be briefed on a REDUCED TARGETING (geo-exclusion) plan. Also begin a BC/Langley-specific breakout for Canada once the Cold Prospecting test clears the thin-sample bar."
-  },
   "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION": {
     "id": "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION",
     "date": "2026-11-12",
     "type": "decision",
     "subject": "@eshawadhwa_ carousel (instagram.com/p/DfmhdQmH3U2/) - first usable image of the Mouni Roy red/maroon gown - MY READ: strong aesthetic fit, USE for organic repost (agree with social-community-manager); PAID ad use explicitly HELD pending Surajs direct sign-off on the celebrity/publicity-rights question, which is a different question from the standard five-way call",
     "follow_up": "Organic repost proceeds via social-community-managers already-drafted repost plans (KL-2026-11-12-eshawadhwa-mouniroy-repost-feed/-story) through the normal post-approval path. Paid-ad use stays HELD until Suraj answers the celebrity-rights question specifically, via a tappable Telegram question with the permalink (not a plain notification) - do not fold this into a routine content-routing resend."
+  },
+  "KL-2026-11-12-PA-GEO-UP-ADSET-IDENTIFICATION": {
+    "id": "KL-2026-11-12-PA-GEO-UP-ADSET-IDENTIFICATION",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Uttar Pradesh reduced-targeting plan prep - ad set identification (follow-up owed since 2026-11-09)",
+    "follow_up": "media-buyer/campaign-strategist: size a REDUCED TARGETING plan knowing UP spend spans 12 ad sets, not 1-2 - decide whether to exclude UP across the top 5 (~80% coverage: 6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776) or account-wide across all 12. The 2-vs-1 FY order discrepancy flagged 2026-11-09 still has not been reconciled - separate from this ad-set identification task."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
