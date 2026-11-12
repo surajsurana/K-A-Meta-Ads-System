@@ -335,13 +335,6 @@
     "subject": "Near-miss: a verification curl call used -d (POST) instead of -G (GET) against a Meta write-capable endpoint during plan validation",
     "follow_up": "Tighten media-buyer (and any other Bash/curl-calling agent)'s standing practice to always force curl -G explicitly for every Meta Graph API GET call, never relying on curl's default verb behavior based on absence of -d. Worth a repo-wide grep of agent definitions for any curl call lacking an explicit -G to close this gap proactively rather than waiting for a real incident."
   },
-  "KL-2026-11-11-014429": {
-    "id": "KL-2026-11-11-014429",
-    "date": "2026-11-11",
-    "type": "observation",
-    "subject": "Third failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first two attempts",
-    "follow_up": "Same as KL-2026-11-10-014557: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
-  },
   "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING": {
     "id": "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING",
     "date": "2026-11-11",
@@ -362,6 +355,13 @@
     "type": "observation",
     "subject": "Resent stalled Loomiere end-date pause/cut plan (KL-2026-11-10-073140) via Telegram - had sat unexecuted since 2026-11-10 (message_id 505, never tapped), leaving the account Rs576/day over its own Rs6,500 ceiling in the meantime",
     "follow_up": "Awaiting Suraj tap on message_id 517. If still untapped at tomorrow heartbeat, resend again - this plan does not need re-validation, only execution."
+  },
+  "KL-2026-11-12-020420": {
+    "id": "KL-2026-11-12-020420",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "Fourth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first three attempts",
+    "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
   },
   "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP": {
     "id": "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP",
