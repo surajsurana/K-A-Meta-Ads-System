@@ -419,12 +419,12 @@
     "subject": "Meta Graph API ad creative field creative.video_id (top-level) does not match the actually-serving video - use object_story_spec.video_data.video_id / asset_feed_spec.videos[].video_id instead",
     "follow_up": "Any future pull of an ad's underlying video (age check, duplicate-creative check, product-mapping) should read object_story_spec.video_data.video_id / link_data.video_id / asset_feed_spec.videos[].video_id, never the top-level creative.video_id field."
   },
-  "KL-2026-11-12-own-content": {
-    "id": "KL-2026-11-12-own-content",
+  "KL-2026-11-12-SCM-STYLEBYANISSA-STATUSCHECK": {
+    "id": "KL-2026-11-12-SCM-STYLEBYANISSA-STATUSCHECK",
     "date": "2026-11-12",
     "type": "observation",
-    "subject": "Thursday twice-weekly own-content sweep (2026-11-12) - 3 new own posts since the 2026-11-06 boundary; one of them (the stylebyanissa Brown Lace Corset credit post) materially changes the held KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION plan",
-    "follow_up": "See KL-2026-11-12-SCM-STYLEBYANISSA-STATUSCHECK for the held-plan re-verification this enables. No separate handoff needed for item (2) (trisha___shetty, already executed). Next sweep boundary: 18002377284041903 (2026-11-11T14:26:57)."
+    "subject": "KL-2026-11-02-CS-STYLEBYANISSA-DISPOSITION held-plan re-verification (Thursday review, 2026-11-12) - MATERIALLY CHANGED since 2026-11-09, SKU gap now resolved",
+    "follow_up": "Recommend campaign-strategist issue a revised disposition for this item (not a verbatim resend) reflecting the now-confirmed SKU KA-231026-009 and its existing live-ad status - my own non-binding read: given the SKU is proven and already running, and this is clean, usable solo-subject footage of a recurring on-brand creator (not just a thumbnail), this looks ready to move from 'TEST pending SKU' to a straightforward TEST/proceed call without further hold, but that call belongs to campaign-strategist, not me."
   },
   "KL-2026-11-12-ugc-tags": {
     "id": "KL-2026-11-12-ugc-tags",
