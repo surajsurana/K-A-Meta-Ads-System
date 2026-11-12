@@ -391,6 +391,13 @@
     "subject": "India Insta Engaged 365D and Followers (adset 6538717752176) - frequency resurged to 3.33 (above both the account 2.5 line and this ad set's own pass-threshold of about 2.7x set on 2026-10-25), re-opening the pre-committed escalation clause from the 10-25 trim decision; KEEP at Rs1,750/day, no further cut, reopen cause question instead of cutting blindly",
     "follow_up": "performance-analyst: at the next review, pull CTR for this ad set over the same two comparison weeks (2026-10-29 to 11-04 vs 11-05 to 11-11) alongside frequency/CPM. If CTR has also softened materially (creative-fatigue signature, as seen in this ad set's Aug/Sep episodes), that points to a creative refresh via creative-copywriter. If CTR is flat/healthy, that confirms pure pool attrition and points to an audience-expansion test (e.g. a seeded lookalike off this ad set's own custom audiences) rather than more budget cuts. Re-assess the Rs1,750/day level once that diagnostic is in, not before."
   },
+  "KL-2026-11-12-CS-GOLDBANDHANI-SQUEEZE-NOACTION": {
+    "id": "KL-2026-11-12-CS-GOLDBANDHANI-SQUEEZE-NOACTION",
+    "date": "2026-11-12",
+    "type": "outcome",
+    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Gold Bandhani duo delivery squeeze on Launch Reel/Bottle Green Solo - NO ACTION; confirm Bottle Green Solo HOLD stands unchanged; Launch Reel is a watch item, not a verdict; squeeze will be largely mooted by the pending Rs400->Rs200 cut once Suraj taps",
+    "follow_up": "Once the pending Rs400->Rs200/day cut executes, re-check delivery share within this ad set at the next review - if Launch Reel and Bottle Green Solo are still getting meaningfully squeezed at the lower budget level, and Bottle Green Solo has by then crossed its fair-chance threshold with a resolved AISI quality read, make a fresh ad-level call then. Nothing to resend to Suraj beyond the already-pending KL-2026-11-10-073140 tap."
+  },
   "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION": {
     "id": "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION",
     "date": "2026-11-12",
