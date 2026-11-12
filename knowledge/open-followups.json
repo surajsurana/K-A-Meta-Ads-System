@@ -384,6 +384,13 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
+  "KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY": {
+    "id": "KL-2026-11-12-CC-STYLEBYANISSA-SOLO-COPY",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "@stylebyanissa Brown Lace Corset solo-creator Reel (SKU KA-231026-009) - execution-ready copy, adapted from proven Loomiere montage/solo-ad copy per campaign-strategist KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE",
+    "follow_up": "media-buyer: build a PAUSED test ad using this copy once the real video_id exists (upload the @stylebyanissa file, never a thumbnail for a video). After build, append the creative-product-map.jsonl line for the new video_id with SKU KA-231026-009 (status confirmed, matched_by note: already Stitchflow-confirmed via the existing KA-231026-009 entry, Suraj-level product ID already satisfied per architecture.md section 3d exception - no fresh Shopify/Stitchflow lookup needed for this video_id, just carry the confirmed SKU over). Placement per campaign-strategist's lean (9th Dec 25 pool) pending media-buyer's own validation. Needs Suraj's direct build approval per the superseded dispositions' standing requirement."
+  },
   "KL-2026-11-12-CS-ADSETREVIEW": {
     "id": "KL-2026-11-12-CS-ADSETREVIEW",
     "date": "2026-11-12",
@@ -411,13 +418,6 @@
     "type": "decision",
     "subject": "@eshawadhwa_ carousel (instagram.com/p/DfmhdQmH3U2/) - first usable image of the Mouni Roy red/maroon gown - MY READ: strong aesthetic fit, USE for organic repost (agree with social-community-manager); PAID ad use explicitly HELD pending Surajs direct sign-off on the celebrity/publicity-rights question, which is a different question from the standard five-way call",
     "follow_up": "Organic repost proceeds via social-community-managers already-drafted repost plans (KL-2026-11-12-eshawadhwa-mouniroy-repost-feed/-story) through the normal post-approval path. Paid-ad use stays HELD until Suraj answers the celebrity-rights question specifically, via a tappable Telegram question with the permalink (not a plain notification) - do not fold this into a routine content-routing resend."
-  },
-  "KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE": {
-    "id": "KL-2026-11-12-CS-STYLEBYANISSA-SUPERSEDE",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "@stylebyanissa own-Story repost (file 20261031T184515Z_ig_own_story_4019860679456584776.mp4) - REVISED five-way content-routing call: TEST, SKU gap now closed, proceeding past the prior pending-SKU hold",
-    "follow_up": "Route to creative-copywriter: narrow copy-adaptation task (confirm/adapt existing KA-231026-009 copy for a solo creator-styled asset, UGC-credit hook). Then media-buyer: build a PAUSED test ad plan, placement recommendation 9th Dec 25 pending its own independent check. Needs Surajs direct approval before any build - withdraw/replace stale Telegram message_id 499."
   },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
