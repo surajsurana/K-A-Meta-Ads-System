@@ -412,6 +412,13 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
+  "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC": {
+    "id": "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC",
+    "date": "2026-11-12",
+    "type": "change",
+    "subject": "EXECUTED KL-2026-11-10-073140 - paused Loomiere Broad Advantage+ ad set (52564598075780, -Rs700/day) and cut Loomiere IG Engaged 365D & Followers ad set budget 400->200 (52564357579980, -Rs200/day)",
+    "follow_up": "Account is now Rs324/day under the standing Rs6,500/day ceiling. Per KL-2026-11-12-CS-BUDGETCHECK, Frozen Blue (KAFL017) ceiling-raise ask can now be re-issued fresh against this new Rs6,176/day base (would land near Rs1,176/day over ceiling) as its own isolated decision."
+  },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
     "date": "2026-11-12",
