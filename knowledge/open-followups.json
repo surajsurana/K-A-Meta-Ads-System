@@ -384,12 +384,12 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-CS-ADSETREVIEW": {
-    "id": "KL-2026-11-12-CS-ADSETREVIEW",
+  "KL-2026-11-12-012343": {
+    "id": "KL-2026-11-12-012343",
     "date": "2026-11-12",
     "type": "decision",
-    "subject": "Twice-weekly review 2026-11-12 - combined performance+quality calls: Broad Advantage+ India (hold swap, hold below-minimum step on quality grounds), 9th Dec (no change), Interest Stack (no change, junk% misleading reaffirmed), Loomiere pause/cut plan (AGREE, confirm resend), 16th May (RESOLVED, not a stalled pause), winners/fair-chance (confirmed nothing to propose)",
-    "follow_up": "Re-pull Broad-vs-9th-Dec mature-only cost-per-serious-or-better 2026-11-16 to 11-23 per the original stop-rule. Revisit Broad Advantage+ below-minimum budget step once both the CPM-confound-settled check and a quality-convergence read are available - do not step it up on performance grounds alone. Resend KL-2026-11-10-073140 for Surajs tap (handled via the budget-check entry)."
+    "subject": "Uttar Pradesh geo-exclusion execution plan - add Uttar Pradesh (region 1754) to excluded_geo_locations on 5 ad sets (6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776), Rs0 budget impact",
+    "follow_up": "Awaiting Suraj's approval via Telegram. Once approved, marketing-lead executes per the 5 per-ad-set write steps above, with the conditional pre-check on ad set (4) (52564598075780) and the fresh-GET-at-execution-time discipline on all 4 ad sets shared with the pending Odisha/Uttarakhand plan (KL-2026-11-09-010937). performance-analyst to re-check UP delivery trend at the next review per the verification/revisit-trigger above. campaign-strategist/marketing-lead should also separately resolve whether KL-2026-11-09-010828 (message 503) should be withdrawn as superseded."
   },
   "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED": {
     "id": "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED",
@@ -397,13 +397,6 @@
     "type": "decision",
     "subject": "Budget HOLD confirmed unchanged after Loomiere-ROAS decomposition largely refuted it as primary driver; next-review Meta pull specified to actually find the real driver behind the 39.55x->32.1x leg",
     "follow_up": "performance-analyst: run the four pulls above before the next review - account-wide daily CPM/spend (all campaigns, 10-20 to 11-11), any non-Loomiere spend/creative changes in the 10-27 to 11-05 window, Stitchflow order-count/AOV bucketed to match the 4 ROAS review windows, and a same-calendar-window prior-year seasonality check. Report back with an actual candidate driver, not a restated watch further."
-  },
-  "KL-2026-11-12-CS-GEO-UP-EXCLUSION-REVISED": {
-    "id": "KL-2026-11-12-CS-GEO-UP-EXCLUSION-REVISED",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "Uttar Pradesh disposition revised from REDUCED TARGETING to EXCLUSION, scoped to top 5 ad sets (~80% of UP spend) - population-proportionate delivery pattern confirms a demand-side problem, not a targeting anomaly",
-    "follow_up": "media-buyer: build and validate an EXCLUSION plan (add Uttar Pradesh to excluded_geo_locations) on exactly these 5 ad set IDs: 6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776. Confirm learning-phase-reset risk for each before executing, and route for Suraj approval same as any other live targeting change. performance-analyst: at the next relevant review, re-check whether any of the remaining 7 ad sets UP share has grown into the 15-21% proportional band - if so, bring that back as a revisit, not a fresh escalation. Also still owed: reconcile the 2-vs-1 FY order discrepancy flagged 2026-11-09, independent of this ad-set scoping question."
   },
   "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION": {
     "id": "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION",
