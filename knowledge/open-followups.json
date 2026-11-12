@@ -398,19 +398,19 @@
     "subject": "Twice-weekly review 2026-11-12 - combined performance+quality calls: Broad Advantage+ India (hold swap, hold below-minimum step on quality grounds), 9th Dec (no change), Interest Stack (no change, junk% misleading reaffirmed), Loomiere pause/cut plan (AGREE, confirm resend), 16th May (RESOLVED, not a stalled pause), winners/fair-chance (confirmed nothing to propose)",
     "follow_up": "Re-pull Broad-vs-9th-Dec mature-only cost-per-serious-or-better 2026-11-16 to 11-23 per the original stop-rule. Revisit Broad Advantage+ below-minimum budget step once both the CPM-confound-settled check and a quality-convergence read are available - do not step it up on performance grounds alone. Resend KL-2026-11-10-073140 for Surajs tap (handled via the budget-check entry)."
   },
+  "KL-2026-11-12-CS-GEO-UP-EXCLUSION-REVISED": {
+    "id": "KL-2026-11-12-CS-GEO-UP-EXCLUSION-REVISED",
+    "date": "2026-11-12",
+    "type": "decision",
+    "subject": "Uttar Pradesh disposition revised from REDUCED TARGETING to EXCLUSION, scoped to top 5 ad sets (~80% of UP spend) - population-proportionate delivery pattern confirms a demand-side problem, not a targeting anomaly",
+    "follow_up": "media-buyer: build and validate an EXCLUSION plan (add Uttar Pradesh to excluded_geo_locations) on exactly these 5 ad set IDs: 6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776. Confirm learning-phase-reset risk for each before executing, and route for Suraj approval same as any other live targeting change. performance-analyst: at the next relevant review, re-check whether any of the remaining 7 ad sets UP share has grown into the 15-21% proportional band - if so, bring that back as a revisit, not a fresh escalation. Also still owed: reconcile the 2-vs-1 FY order discrepancy flagged 2026-11-09, independent of this ad-set scoping question."
+  },
   "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION": {
     "id": "KL-2026-11-12-CS-MOUNIROY-ESHAWADHWA-DISPOSITION",
     "date": "2026-11-12",
     "type": "decision",
     "subject": "@eshawadhwa_ carousel (instagram.com/p/DfmhdQmH3U2/) - first usable image of the Mouni Roy red/maroon gown - MY READ: strong aesthetic fit, USE for organic repost (agree with social-community-manager); PAID ad use explicitly HELD pending Surajs direct sign-off on the celebrity/publicity-rights question, which is a different question from the standard five-way call",
     "follow_up": "Organic repost proceeds via social-community-managers already-drafted repost plans (KL-2026-11-12-eshawadhwa-mouniroy-repost-feed/-story) through the normal post-approval path. Paid-ad use stays HELD until Suraj answers the celebrity-rights question specifically, via a tappable Telegram question with the permalink (not a plain notification) - do not fold this into a routine content-routing resend."
-  },
-  "KL-2026-11-12-PA-GEO-UP-ADSET-IDENTIFICATION": {
-    "id": "KL-2026-11-12-PA-GEO-UP-ADSET-IDENTIFICATION",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "Uttar Pradesh reduced-targeting plan prep - ad set identification (follow-up owed since 2026-11-09)",
-    "follow_up": "media-buyer/campaign-strategist: size a REDUCED TARGETING plan knowing UP spend spans 12 ad sets, not 1-2 - decide whether to exclude UP across the top 5 (~80% coverage: 6538717752176, 52535906903180, 52535906794980, 52564598075780, 6968778736776) or account-wide across all 12. The 2-vs-1 FY order discrepancy flagged 2026-11-09 still has not been reconciled - separate from this ad-set identification task."
   },
   "KL-2026-11-12-PA-LOOMIERE-ROAS-DECOMPOSITION": {
     "id": "KL-2026-11-12-PA-LOOMIERE-ROAS-DECOMPOSITION",
