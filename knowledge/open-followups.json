@@ -370,13 +370,6 @@
     "subject": "Near-miss: a verification curl call used -d (POST) instead of -G (GET) against a Meta write-capable endpoint during plan validation",
     "follow_up": "Tighten media-buyer (and any other Bash/curl-calling agent)'s standing practice to always force curl -G explicitly for every Meta Graph API GET call, never relying on curl's default verb behavior based on absence of -d. Worth a repo-wide grep of agent definitions for any curl call lacking an explicit -G to close this gap proactively rather than waiting for a real incident."
   },
-  "KL-2026-11-09-ambiguous-comment": {
-    "id": "KL-2026-11-09-ambiguous-comment",
-    "date": "2026-11-09",
-    "type": "observation",
-    "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now an 8th consecutive cycle (22 days), @social_cravings a 5th (16 days); no new escalation this cycle per standing guidance",
-    "follow_up": "aesana0710: continue awaiting Suraj action or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
-  },
   "KL-2026-11-10-SCM-DAILYCHECK": {
     "id": "KL-2026-11-10-SCM-DAILYCHECK",
     "date": "2026-11-10",
@@ -418,6 +411,13 @@
     "type": "observation",
     "subject": "Meta Graph API ad creative field creative.video_id (top-level) does not match the actually-serving video - use object_story_spec.video_data.video_id / asset_feed_spec.videos[].video_id instead",
     "follow_up": "Any future pull of an ad's underlying video (age check, duplicate-creative check, product-mapping) should read object_story_spec.video_data.video_id / link_data.video_id / asset_feed_spec.videos[].video_id, never the top-level creative.video_id field."
+  },
+  "KL-2026-11-12-ambiguous-comment": {
+    "id": "KL-2026-11-12-ambiguous-comment",
+    "date": "2026-11-12",
+    "type": "observation",
+    "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
+    "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
   "KL-2026-11-12-comment-batch": {
     "id": "KL-2026-11-12-comment-batch",
