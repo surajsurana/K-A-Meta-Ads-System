@@ -419,12 +419,12 @@
     "subject": "30-day blended ROAS - 4th consecutive decline (39.55x 10-29 -> 32.1x 11-05 -> 29.26x 11-09 -> 26.53x 11-12), now 22.8% below its own 90-day level",
     "follow_up": "campaign-strategist: this is the 4th consecutive decline, not a one-off - the Loomiere-launch-lag explanation floated 2026-11-09 needs either confirming (via a Loomiere-excluded 30-day ROAS decomposition, not yet run) or retiring as the account moves further past the launch window."
   },
-  "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH": {
-    "id": "KL-2026-11-12-PA-VIDEOID-FIELD-MISMATCH",
+  "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
+    "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
     "date": "2026-11-12",
     "type": "observation",
-    "subject": "Meta Graph API ad creative field creative.video_id (top-level) does not match the actually-serving video - use object_story_spec.video_data.video_id / asset_feed_spec.videos[].video_id instead",
-    "follow_up": "Any future pull of an ad's underlying video (age check, duplicate-creative check, product-mapping) should read object_story_spec.video_data.video_id / link_data.video_id / asset_feed_spec.videos[].video_id, never the top-level creative.video_id field."
+    "subject": "WhatsApp-destination creative-currency sweep - no collection-mismatch found, but 5 of 10 ads in First Love Broad Advantage+ are the oldest active creative in the account (101-115 days); 2 Canada DCO ads carry a blank headline slot",
+    "follow_up": "campaign-strategist: weigh refreshing the 5 oldest First Love Broad Advantage+ ads (115d/101d cluster) given newer First Love test creative already exists elsewhere in the account; creative-copywriter to remove/replace the blank first title variant on the 2 Fatigue Refresh v3 Canada ads - low severity, cheap fix."
   },
   "KL-2026-11-12-ambiguous-comment": {
     "id": "KL-2026-11-12-ambiguous-comment",
