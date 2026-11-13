@@ -419,12 +419,12 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-13-PA-DAILYHEARTBEAT-GOLDBANDHANI-SQUEEZE-PERSISTS": {
-    "id": "KL-2026-11-13-PA-DAILYHEARTBEAT-GOLDBANDHANI-SQUEEZE-PERSISTS",
+  "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE": {
+    "id": "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE",
     "date": "2026-11-13",
-    "type": "outcome",
-    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Gold Bandhani duo delivery squeeze did NOT moot after the Rs400->Rs200/day cut landed (2026-11-12); squeeze share essentially unchanged, but no fresh ad-level call triggered yet since Bottle Green Solo still hasn't crossed its fair-chance spend threshold",
-    "follow_up": "campaign-strategist: squeeze has NOT resolved itself via the budget cut as hoped - worth a fresh look at whether Meta's own delivery-optimization reallocation toward the two new ads is something to let continue (they are genuinely the best cost-per-conversation performers) or something to counter (e.g. ad-level spend caps) so Bottle Green Solo can ever accumulate enough spend to get a real quality read. Re-check again once Bottle Green Solo either crosses the Rs7,245 fair-chance spend bar or has been squeezed long enough that it clearly never will at current delivery dynamics."
+    "type": "decision",
+    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Bottle Green Solo (52566563586180) structurally cannot reach the fair-chance spend threshold; HOLD stands, no spend floor, no pause, with a dated exception window set now",
+    "follow_up": "Revisit on or before 2026-11-27 (two weeks from today). If by then the AISI/WATI referral-matching gap for this ad is still unresolved AND the squeeze still prevents Bottle Green Solo from meaningfully accumulating spend toward the Rs7,245 gate, make the explicitly-caveated exception call named above (likely pause on cost-per-conversation plus elapsed time, openly flagged as not a quality-resolved verdict) rather than deferring again with no new criterion. No change needed before then unless the AISI gap is fixed or Bottle Green Solo crosses the spend gate on its own. No media-buyer/Telegram action needed today - no live Meta change proposed."
   },
   "KL-2026-11-13-SCM-DAILYCHECK": {
     "id": "KL-2026-11-13-SCM-DAILYCHECK",
