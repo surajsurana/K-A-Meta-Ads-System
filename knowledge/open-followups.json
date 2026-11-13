@@ -426,18 +426,18 @@
     "subject": "WhatsApp-destination creative-currency sweep - no collection-mismatch found, but 5 of 10 ads in First Love Broad Advantage+ are the oldest active creative in the account (101-115 days); 2 Canada DCO ads carry a blank headline slot",
     "follow_up": "campaign-strategist: weigh refreshing the 5 oldest First Love Broad Advantage+ ads (115d/101d cluster) given newer First Love test creative already exists elsewhere in the account; creative-copywriter to remove/replace the blank first title variant on the 2 Fatigue Refresh v3 Canada ads - low severity, cheap fix."
   },
-  "KL-2026-11-12-SCM-DAILYCHECK": {
-    "id": "KL-2026-11-12-SCM-DAILYCHECK",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "Daily heartbeat: Media Library 0 pending (manual and instagram_auto both), but overnight collector has now saved zero new items for 10 straight nights and disk free space keeps dropping - escalating from intermittent to total",
-    "follow_up": "Infra: root disk now 95%/474M free, 10 consecutive nights (2026-11-02 to 2026-11-11) of 0 items saved by instagram_collect.py due to low-disk skips - needs disk cleanup/provisioning attention outside social-community-manager scope; this is no longer intermittent, it is a sustained total blackout of new Story/tagged collection. Next daily check should reconfirm whether disk was freed and whether any of the skipped items are still recoverable (tagged/hashtag posts persist on IG, Stories do not past 24h)."
-  },
   "KL-2026-11-12-ambiguous-comment": {
     "id": "KL-2026-11-12-ambiguous-comment",
     "date": "2026-11-12",
     "type": "observation",
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
+  },
+  "KL-2026-11-13-SCM-DAILYCHECK": {
+    "id": "KL-2026-11-13-SCM-DAILYCHECK",
+    "date": "2026-11-13",
+    "type": "observation",
+    "subject": "Daily heartbeat: Media Library 0 pending (manual and instagram_auto both); overnight collector now at 11 straight nights of zero new items and disk free space still falling, not freed",
+    "follow_up": "Infra: root disk now 96%/430M free, 11 consecutive nights (2026-11-02 to 2026-11-12) of 0 items saved by instagram_collect.py due to low-disk skips, and the trend is still worsening rather than stabilizing - needs disk cleanup/provisioning attention outside social-community-manager scope. Any Stories offered and skipped during this window are permanently unrecoverable past Instagram's 24h window; tagged/hashtag posts may still be recoverable once disk is freed since those persist on IG. Next daily check should reconfirm disk status again."
   }
 }
