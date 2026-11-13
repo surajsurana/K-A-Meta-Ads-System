@@ -342,13 +342,6 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-020420": {
-    "id": "KL-2026-11-12-020420",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "Fourth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as the first three attempts",
-    "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
-  },
   "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP": {
     "id": "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP",
     "date": "2026-11-12",
@@ -411,6 +404,13 @@
     "type": "observation",
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
+  },
+  "KL-2026-11-13-014230": {
+    "id": "KL-2026-11-13-014230",
+    "date": "2026-11-13",
+    "type": "observation",
+    "subject": "Fifth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as all four prior attempts",
+    "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
   },
   "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE": {
     "id": "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE",
