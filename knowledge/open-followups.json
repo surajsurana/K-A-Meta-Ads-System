@@ -342,13 +342,6 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-014808": {
-    "id": "KL-2026-11-12-014808",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "Resent stalled Loomiere end-date pause/cut plan (KL-2026-11-10-073140) via Telegram - had sat unexecuted since 2026-11-10 (message_id 505, never tapped), leaving the account Rs576/day over its own Rs6,500 ceiling in the meantime",
-    "follow_up": "Awaiting Suraj tap on message_id 517. If still untapped at tomorrow heartbeat, resend again - this plan does not need re-validation, only execution."
-  },
   "KL-2026-11-12-020420": {
     "id": "KL-2026-11-12-020420",
     "date": "2026-11-12",
