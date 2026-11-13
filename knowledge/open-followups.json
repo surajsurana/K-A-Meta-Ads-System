@@ -384,13 +384,6 @@
     "subject": "India Insta Engaged 365D and Followers (adset 6538717752176) - frequency resurged to 3.33 (above both the account 2.5 line and this ad set's own pass-threshold of about 2.7x set on 2026-10-25), re-opening the pre-committed escalation clause from the 10-25 trim decision; KEEP at Rs1,750/day, no further cut, reopen cause question instead of cutting blindly",
     "follow_up": "performance-analyst: at the next review, pull CTR for this ad set over the same two comparison weeks (2026-10-29 to 11-04 vs 11-05 to 11-11) alongside frequency/CPM. If CTR has also softened materially (creative-fatigue signature, as seen in this ad set's Aug/Sep episodes), that points to a creative refresh via creative-copywriter. If CTR is flat/healthy, that confirms pure pool attrition and points to an audience-expansion test (e.g. a seeded lookalike off this ad set's own custom audiences) rather than more budget cuts. Re-assess the Rs1,750/day level once that diagnostic is in, not before."
   },
-  "KL-2026-11-12-CS-GOLDBANDHANI-SQUEEZE-NOACTION": {
-    "id": "KL-2026-11-12-CS-GOLDBANDHANI-SQUEEZE-NOACTION",
-    "date": "2026-11-12",
-    "type": "outcome",
-    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Gold Bandhani duo delivery squeeze on Launch Reel/Bottle Green Solo - NO ACTION; confirm Bottle Green Solo HOLD stands unchanged; Launch Reel is a watch item, not a verdict; squeeze will be largely mooted by the pending Rs400->Rs200 cut once Suraj taps",
-    "follow_up": "Once the pending Rs400->Rs200/day cut executes, re-check delivery share within this ad set at the next review - if Launch Reel and Bottle Green Solo are still getting meaningfully squeezed at the lower budget level, and Bottle Green Solo has by then crossed its fair-chance threshold with a resolved AISI quality read, make a fresh ad-level call then. Nothing to resend to Suraj beyond the already-pending KL-2026-11-10-073140 tap."
-  },
   "KL-2026-11-12-CS-STYLEBYANISSA-DROP": {
     "id": "KL-2026-11-12-CS-STYLEBYANISSA-DROP",
     "date": "2026-11-12",
@@ -412,13 +405,6 @@
     "subject": "Executed Uttar Pradesh geo-exclusion on 4 of 5 planned ad sets (52564598075780 skipped, already PAUSED)",
     "follow_up": "performance-analyst to re-check UP delivery trend at the next review per the plan's verification/revisit-trigger. If 52564598075780 is reactivated by any future plan, that plan must carry forward the Uttar Pradesh exclusion as part of restoring full targeting, per this plan's own note."
   },
-  "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC": {
-    "id": "KL-2026-11-12-MKT-LOOMIEREENDDATE-EXEC",
-    "date": "2026-11-12",
-    "type": "change",
-    "subject": "EXECUTED KL-2026-11-10-073140 - paused Loomiere Broad Advantage+ ad set (52564598075780, -Rs700/day) and cut Loomiere IG Engaged 365D & Followers ad set budget 400->200 (52564357579980, -Rs200/day)",
-    "follow_up": "Account is now Rs324/day under the standing Rs6,500/day ceiling. Per KL-2026-11-12-CS-BUDGETCHECK, Frozen Blue (KAFL017) ceiling-raise ask can now be re-issued fresh against this new Rs6,176/day base (would land near Rs1,176/day over ceiling) as its own isolated decision."
-  },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
     "date": "2026-11-12",
@@ -432,6 +418,13 @@
     "type": "observation",
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
+  },
+  "KL-2026-11-13-PA-DAILYHEARTBEAT-GOLDBANDHANI-SQUEEZE-PERSISTS": {
+    "id": "KL-2026-11-13-PA-DAILYHEARTBEAT-GOLDBANDHANI-SQUEEZE-PERSISTS",
+    "date": "2026-11-13",
+    "type": "outcome",
+    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Gold Bandhani duo delivery squeeze did NOT moot after the Rs400->Rs200/day cut landed (2026-11-12); squeeze share essentially unchanged, but no fresh ad-level call triggered yet since Bottle Green Solo still hasn't crossed its fair-chance spend threshold",
+    "follow_up": "campaign-strategist: squeeze has NOT resolved itself via the budget cut as hoped - worth a fresh look at whether Meta's own delivery-optimization reallocation toward the two new ads is something to let continue (they are genuinely the best cost-per-conversation performers) or something to counter (e.g. ad-level spend caps) so Bottle Green Solo can ever accumulate enough spend to get a real quality read. Re-check again once Bottle Green Solo either crosses the Rs7,245 fair-chance spend bar or has been squeezed long enough that it clearly never will at current delivery dynamics."
   },
   "KL-2026-11-13-SCM-DAILYCHECK": {
     "id": "KL-2026-11-13-SCM-DAILYCHECK",
