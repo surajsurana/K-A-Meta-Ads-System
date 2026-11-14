@@ -391,6 +391,13 @@
     "subject": "India Insta Engaged 365D and Followers (adset 6538717752176) - the CTR diagnostic requested in KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE is now confounded by the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD); HOLD on both the creative-refresh and audience-expansion options, no action this cycle",
     "follow_up": "performance-analyst: once the placement-level CTR breakdown requested in KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD is run, also compute this ad set's CTR change normalized against (net of) the account-wide CTR change over the identical 10-29/11-05/11-12 windows, to isolate any genuine excess/idiosyncratic decline specific to this ad set's creative. Only then decide between creative-copywriter refresh vs an audience-expansion/seeded-lookalike test. HOLD at Rs1,750/day until that read is in."
   },
+  "KL-2026-11-14-CS-REDFISHCUT-WATCHITEM": {
+    "id": "KL-2026-11-14-CS-REDFISHCUT-WATCHITEM",
+    "date": "2026-11-14",
+    "type": "decision",
+    "subject": "First Love | Red Fishcut Corset ad (52541313104580), inside First Love | Broad Advantage+ | India (52535906903180) - this week's weak quality read is a watch item reinforcing the already-logged ad-set weakness, not yet a standalone pause this cycle; explicit ad-level comparison added to the 11-16/11-23 recheck window",
+    "follow_up": "lead-quality-analyst/performance-analyst: at or before the 2026-11-16 to 11-23 recheck, pull ad 52541313104580's cumulative-since-2026-08-07 (or trailing 30-day) cost-per-serious-or-better and junk% against its Broad Advantage+ siblings, same comparison structure used for the Cut Out to Reveal pause (KL-2026-10-22-142513). If it's materially worse than the ad set average with no quality offset, that supports an independent ad-level pause; if not, this week's n=14 was noise or part of the account-wide CTR softening, not an ad-specific problem."
+  },
   "KL-2026-11-14-SCM-DAILYCHECK": {
     "id": "KL-2026-11-14-SCM-DAILYCHECK",
     "date": "2026-11-14",
