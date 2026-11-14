@@ -328,13 +328,6 @@
     "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) - 3-4 day reactivation rollback checkpoint - KEEP running, n=4 is too thin to justify a rollback verdict either way",
     "follow_up": "Re-check once this ad clears roughly n=20-30 post-reactivation enquiries (lead-quality-analyst's own estimate, about another 1-2 weeks at current pace) for a sample-size-adequate serious-or-better read. Also worth cross-checking against this ad's cumulative spend vs the account's own fair-chance spend gate (~Rs7,134 per winners/latest.json convention) once it approaches that level, for a second, convergent signal rather than enquiry-count alone."
   },
-  "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED": {
-    "id": "KL-2026-11-12-CS-BUDGETCALL-CONFIRMED",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "Budget HOLD confirmed unchanged after Loomiere-ROAS decomposition largely refuted it as primary driver; next-review Meta pull specified to actually find the real driver behind the 39.55x->32.1x leg",
-    "follow_up": "performance-analyst: run the four pulls above before the next review - account-wide daily CPM/spend (all campaigns, 10-20 to 11-11), any non-Loomiere spend/creative changes in the 10-27 to 11-05 window, Stitchflow order-count/AOV bucketed to match the 4 ROAS review windows, and a same-calendar-window prior-year seasonality check. Report back with an actual candidate driver, not a restated watch further."
-  },
   "KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE": {
     "id": "KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE",
     "date": "2026-11-12",
@@ -397,6 +390,13 @@
     "type": "observation",
     "subject": "Sixth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as all five prior attempts",
     "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
+  },
+  "KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD": {
+    "id": "KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD",
+    "date": "2026-11-14",
+    "type": "decision",
+    "subject": "Account-wide daily CTR decline (0.6-0.8% late Oct -> 0.14-0.22% since 11-05) - partial answer to the four-pull ask in KL-2026-11-12-CS-BUDGETCALL-CONFIRMED; does NOT change the standing SS3e budget HOLD, and the magnitude comparison against India Insta Engaged (see companion entry) argues this is a real account-wide effect, not per-ad-set creative fatigue",
+    "follow_up": "performance-analyst: at the next full weekly review, run the originally-specified 4 pulls plus the placement-level CTR/spend breakdown (10-20 to 11-13) added here, and report whether the placement-mix-shift hypothesis holds up. No Meta action needed before then."
   },
   "KL-2026-11-14-SCM-DAILYCHECK": {
     "id": "KL-2026-11-14-SCM-DAILYCHECK",
