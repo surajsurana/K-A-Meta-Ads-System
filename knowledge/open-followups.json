@@ -69,13 +69,6 @@
     "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
     "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
   },
-  "KL-2026-10-05-ML-RUBYRED-NEEDSESSION": {
-    "id": "KL-2026-10-05-ML-RUBYRED-NEEDSESSION",
-    "date": "2026-10-05",
-    "type": "observation",
-    "subject": "KL-2026-10-05-CS-RUBYRED-OWNCONTENT approved by Suraj via Telegram - execution stopped, product/SKU not yet identified",
-    "follow_up": "When a session with Shopify product-search tooling is available, identify/confirm the real SKU for the Ruby Red corset in post 18119098733004826 (caption credits @palak.purswani), record it via scripts/append-product-map.sh, then re-run this plan's creative-copywriter/media-buyer build steps."
-  },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
     "date": "2026-10-12",
@@ -180,13 +173,6 @@
     "type": "decision",
     "subject": "Champagne Gold Neutral Text Test (ad 52559623981980) in 'India | Whatsapp | 9th Dec 25' pool (6862975169176) - fresh read against the now-current pool composition since the 2026-10-22 KAFL018 revert: KEEP, no pause - the sustained ~3x cost-per-conversation gap does not hold once weighted by enquiry quality",
     "follow_up": "Re-check with a larger since-10-22 sample (target ~20-30 enquiries per ad in this pool) and once the staff_replied/AISI labelling break clears, to confirm the quality-weighted read holds at larger n; if Champagne's serious-rate advantage reverses with more data, revisit the pause question then."
-  },
-  "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU": {
-    "id": "KL-2026-10-29-ML-KAJOLRPASWWANTEAM-NEEDS-SKU",
-    "date": "2026-10-29",
-    "type": "observation",
-    "subject": "KL-2026-10-29-CS-KAJOLRPASWWANTEAM-DISPOSITION approved by Suraj via Telegram - execution stopped, no Stitchflow SKU linked yet",
-    "follow_up": "Needs an interactive session with Shopify tool access to identify the maroon lace halter gown's SKU before creative-copywriter/media-buyer can proceed."
   },
   "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK": {
     "id": "KL-2026-10-29-PA-SALESTARGET-2026-10-RECHECK",
@@ -425,5 +411,12 @@
     "type": "observation",
     "subject": "Sixth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as all five prior attempts",
     "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
+  },
+  "KL-2026-11-14-SCM-DAILYCHECK": {
+    "id": "KL-2026-11-14-SCM-DAILYCHECK",
+    "date": "2026-11-14",
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-14) - Media Library check: 0 manual + 0 instagram_auto unreviewed; stalled content-decision sweep: all 4 needs_session items reconfirmed still blocked, no product/SKU linked on any",
+    "follow_up": "No live action taken. All 4 stalled items still need either Suraj to name the product directly or an interactive session with Shopify tooling before creative-copywriter/media-buyer can proceed. Worth a separate technical check on why instagram_collect.py has not added anything since 2026-11-01."
   }
 }
