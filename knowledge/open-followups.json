@@ -307,13 +307,6 @@
     "subject": "Near-miss: a verification curl call used -d (POST) instead of -G (GET) against a Meta write-capable endpoint during plan validation",
     "follow_up": "Tighten media-buyer (and any other Bash/curl-calling agent)'s standing practice to always force curl -G explicitly for every Meta Graph API GET call, never relying on curl's default verb behavior based on absence of -d. Worth a repo-wide grep of agent definitions for any curl call lacking an explicit -G to close this gap proactively rather than waiting for a real incident."
   },
-  "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING": {
-    "id": "KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING",
-    "date": "2026-11-11",
-    "type": "decision",
-    "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
-    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
-  },
   "KL-2026-11-12-CS-STYLEBYANISSA-DROP": {
     "id": "KL-2026-11-12-CS-STYLEBYANISSA-DROP",
     "date": "2026-11-12",
@@ -349,18 +342,18 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-15-014500": {
-    "id": "KL-2026-11-15-014500",
-    "date": "2026-11-15",
-    "type": "observation",
-    "subject": "Seventh failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as all six prior attempts",
-    "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
-  },
   "KL-2026-11-15-HEARTBEAT-DAILYCHECK": {
     "id": "KL-2026-11-15-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-15",
     "type": "observation",
     "subject": "Daily heartbeat (2026-11-15) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; 4 stalled content items still blocked (no new SKU); Gold Bandhani/Barbie Pink watch items continuing, no threshold crossed",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Gold Bandhani/Bottle Green Solo exception window (2026-11-27), Barbie Pink/9th Dec sample-size thresholds, or Red Fishcut Corset recheck window (2026-11-16 to 11-23)."
+  },
+  "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING": {
+    "id": "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING",
+    "date": "2026-11-15",
+    "type": "observation",
+    "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
+    "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   }
 }
