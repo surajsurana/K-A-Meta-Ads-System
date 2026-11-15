@@ -314,20 +314,6 @@
     "subject": "Daily heartbeat was cut off mid-task on 2026-11-06 by its own 10-min background-task wait ceiling - 4 real campaign-strategist decisions that day never got a Telegram approval request sent",
     "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push. This fix only prevents the gap going forward; the 2026-11-06 items already resurfaced naturally the next day and need no separate recovery action."
   },
-  "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP": {
-    "id": "KL-2026-11-12-CS-9THDEC-OVERLAPEXCLUSION-KEEP",
-    "date": "2026-11-12",
-    "type": "outcome",
-    "subject": "India | Whatsapp | 9th Dec 25 (adset 6862975169176) overlap-exclusion (KL-2026-11-08-ML-OVERLAPEXCLUSION-9THDEC-EXECUTED) - KEEP the exclusion, do not revert, judged against the plan's own three stated stop-rule conditions, none of which are decisively met",
-    "follow_up": "Re-check again once post-exclusion n reaches roughly 60-80 enquiries (another week at current pace), per lead-quality-analyst's own suggestion, before treating either the junk% improvement or the cost figure as settled. If a future daily cost-per-conversation print shows two or more consecutive days above the Rs78.6-79.5 line (not just one spike day), treat that as the condition-3 breach this check did not find today."
-  },
-  "KL-2026-11-12-CS-BARBIEPINK-ROLLBACKCHECKPOINT-KEEP": {
-    "id": "KL-2026-11-12-CS-BARBIEPINK-ROLLBACKCHECKPOINT-KEEP",
-    "date": "2026-11-12",
-    "type": "outcome",
-    "subject": "WhatsApp India | KAFL018 Barbie Pink Refresh (ad 52562108793580) - 3-4 day reactivation rollback checkpoint - KEEP running, n=4 is too thin to justify a rollback verdict either way",
-    "follow_up": "Re-check once this ad clears roughly n=20-30 post-reactivation enquiries (lead-quality-analyst's own estimate, about another 1-2 weeks at current pace) for a sample-size-adequate serious-or-better read. Also worth cross-checking against this ad's cumulative spend vs the account's own fair-chance spend gate (~Rs7,134 per winners/latest.json convention) once it approaches that level, for a second, convergent signal rather than enquiry-count alone."
-  },
   "KL-2026-11-12-CS-STYLEBYANISSA-DROP": {
     "id": "KL-2026-11-12-CS-STYLEBYANISSA-DROP",
     "date": "2026-11-12",
@@ -363,20 +349,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE": {
-    "id": "KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE",
-    "date": "2026-11-13",
-    "type": "decision",
-    "subject": "Loomiere IG Engaged 365D and Followers adset (52564357579980) - Bottle Green Solo (52566563586180) structurally cannot reach the fair-chance spend threshold; HOLD stands, no spend floor, no pause, with a dated exception window set now",
-    "follow_up": "Revisit on or before 2026-11-27 (two weeks from today). If by then the AISI/WATI referral-matching gap for this ad is still unresolved AND the squeeze still prevents Bottle Green Solo from meaningfully accumulating spend toward the Rs7,245 gate, make the explicitly-caveated exception call named above (likely pause on cost-per-conversation plus elapsed time, openly flagged as not a quality-resolved verdict) rather than deferring again with no new criterion. No change needed before then unless the AISI gap is fixed or Bottle Green Solo crosses the spend gate on its own. No media-buyer/Telegram action needed today - no live Meta change proposed."
-  },
-  "KL-2026-11-13-SCM-DAILYCHECK": {
-    "id": "KL-2026-11-13-SCM-DAILYCHECK",
-    "date": "2026-11-13",
-    "type": "observation",
-    "subject": "Daily heartbeat: Media Library 0 pending (manual and instagram_auto both); overnight collector now at 11 straight nights of zero new items and disk free space still falling, not freed",
-    "follow_up": "Infra: root disk now 96%/430M free, 11 consecutive nights (2026-11-02 to 2026-11-12) of 0 items saved by instagram_collect.py due to low-disk skips, and the trend is still worsening rather than stabilizing - needs disk cleanup/provisioning attention outside social-community-manager scope. Any Stories offered and skipped during this window are permanently unrecoverable past Instagram's 24h window; tagged/hashtag posts may still be recoverable once disk is freed since those persist on IG. Next daily check should reconfirm disk status again."
-  },
   "KL-2026-11-14-014500": {
     "id": "KL-2026-11-14-014500",
     "date": "2026-11-14",
@@ -384,25 +356,11 @@
     "subject": "Sixth failed attempt to apply approved documentation-only fix KL-2026-11-04-SELFAUDIT-PAGENDERDRIFT (performance-analyst.md gender/age/channel bullet) - same permission restriction as all five prior attempts",
     "follow_up": "Same as prior attempts: needs an interactive session or a heartbeat environment with Edit/Write permission granted. This will keep resurfacing on the due-now sweep until Suraj either grants the permission to an unattended run or applies the one-bullet insertion himself."
   },
-  "KL-2026-11-14-CS-INSTAENGAGED-CTRCONFOUND-HOLD": {
-    "id": "KL-2026-11-14-CS-INSTAENGAGED-CTRCONFOUND-HOLD",
-    "date": "2026-11-14",
-    "type": "decision",
-    "subject": "India Insta Engaged 365D and Followers (adset 6538717752176) - the CTR diagnostic requested in KL-2026-11-12-CS-DAILYHEARTBEAT-INSTAENGAGED-FREQRESURGE is now confounded by the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD); HOLD on both the creative-refresh and audience-expansion options, no action this cycle",
-    "follow_up": "performance-analyst: once the placement-level CTR breakdown requested in KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD is run, also compute this ad set's CTR change normalized against (net of) the account-wide CTR change over the identical 10-29/11-05/11-12 windows, to isolate any genuine excess/idiosyncratic decline specific to this ad set's creative. Only then decide between creative-copywriter refresh vs an audience-expansion/seeded-lookalike test. HOLD at Rs1,750/day until that read is in."
-  },
-  "KL-2026-11-14-CS-REDFISHCUT-WATCHITEM": {
-    "id": "KL-2026-11-14-CS-REDFISHCUT-WATCHITEM",
-    "date": "2026-11-14",
-    "type": "decision",
-    "subject": "First Love | Red Fishcut Corset ad (52541313104580), inside First Love | Broad Advantage+ | India (52535906903180) - this week's weak quality read is a watch item reinforcing the already-logged ad-set weakness, not yet a standalone pause this cycle; explicit ad-level comparison added to the 11-16/11-23 recheck window",
-    "follow_up": "lead-quality-analyst/performance-analyst: at or before the 2026-11-16 to 11-23 recheck, pull ad 52541313104580's cumulative-since-2026-08-07 (or trailing 30-day) cost-per-serious-or-better and junk% against its Broad Advantage+ siblings, same comparison structure used for the Cut Out to Reveal pause (KL-2026-10-22-142513). If it's materially worse than the ad set average with no quality offset, that supports an independent ad-level pause; if not, this week's n=14 was noise or part of the account-wide CTR softening, not an ad-specific problem."
-  },
-  "KL-2026-11-14-SCM-DAILYCHECK": {
-    "id": "KL-2026-11-14-SCM-DAILYCHECK",
-    "date": "2026-11-14",
+  "KL-2026-11-15-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-15-HEARTBEAT-DAILYCHECK",
+    "date": "2026-11-15",
     "type": "observation",
-    "subject": "Daily heartbeat (2026-11-14) - Media Library check: 0 manual + 0 instagram_auto unreviewed; stalled content-decision sweep: all 4 needs_session items reconfirmed still blocked, no product/SKU linked on any",
-    "follow_up": "No live action taken. All 4 stalled items still need either Suraj to name the product directly or an interactive session with Shopify tooling before creative-copywriter/media-buyer can proceed. Worth a separate technical check on why instagram_collect.py has not added anything since 2026-11-01."
+    "subject": "Daily heartbeat (2026-11-15) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; 4 stalled content items still blocked (no new SKU); Gold Bandhani/Barbie Pink watch items continuing, no threshold crossed",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Gold Bandhani/Bottle Green Solo exception window (2026-11-27), Barbie Pink/9th Dec sample-size thresholds, or Red Fishcut Corset recheck window (2026-11-16 to 11-23)."
   }
 }
