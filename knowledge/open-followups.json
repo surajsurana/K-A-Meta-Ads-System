@@ -377,6 +377,13 @@
     "subject": "Profile Visits | India (ad set 52538161512180) - MAINTAIN, NOT a pause candidate (winners framework flagged it on the wrong metric); second creative variant DEFERRED pending a frequency/CPM headroom check, not approved on follower-growth volume alone",
     "follow_up": "performance-analyst: pull Profile Visits | India's (52538161512180) own frequency and CPM trend over the last 2-3 weeks at the next review. If flat frequency/stable CPM (same bar as 16th May's 2nd-ad justification), campaign-strategist will approve briefing a 2nd creative variant then."
   },
+  "KL-2026-11-16-CS-STYLEBYANISSA-REOPEN": {
+    "id": "KL-2026-11-16-CS-STYLEBYANISSA-REOPEN",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - REOPENS the 2026-11-12 DROP: K&A's own 2026-11-11 Feed post has a clean carousel-video asset of the same footage, with no chrome defect - my read is TEST, pending Suraj's direct confirmation via Telegram before any build resumes",
+    "follow_up": "On APPROVE: media-buyer independently validates media id 18421372096153894 (technical check for any remaining defect, fresh ceiling/budget check, SKU map update) and prepares a PAUSED build plan for a further, separate Telegram approval before anything goes live. On REJECT: stays dropped, no further action. On HOLD: revisit at next review."
+  },
   "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-16",
