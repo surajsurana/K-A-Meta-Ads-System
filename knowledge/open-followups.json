@@ -356,6 +356,13 @@
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test (ad set 52562444646780, single ad 52562444656580) - updated quality read answers campaign-strategist's 2026-11-09 deferral (\"no action, extend to next review\"): still 0 orders, serious rate flat near 1%, cost/serious-or-better climbing on added spend with no new serious enquiries",
     "follow_up": "campaign-strategist: decide whether 11 more days of 0 new serious enquiries and 0 orders (now n=96, cost/serious-or-better Rs4,334) is enough to re-fire a disposition, or whether to extend once more until the ad set crosses the 30-day maturity gate (2026-11-17) so orders can be judged too, not just quality."
   },
+  "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED": {
+    "id": "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED",
+    "date": "2026-11-16",
+    "type": "outcome",
+    "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
+    "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
+  },
   "KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE": {
     "id": "KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE",
     "date": "2026-11-16",
