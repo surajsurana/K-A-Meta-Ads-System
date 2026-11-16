@@ -355,5 +355,12 @@
     "type": "observation",
     "subject": "First Love | Crimson Beaded (KA-270826-002) Test (ad set 52562444646780, single ad 52562444656580) - updated quality read answers campaign-strategist's 2026-11-09 deferral (\"no action, extend to next review\"): still 0 orders, serious rate flat near 1%, cost/serious-or-better climbing on added spend with no new serious enquiries",
     "follow_up": "campaign-strategist: decide whether 11 more days of 0 new serious enquiries and 0 orders (now n=96, cost/serious-or-better Rs4,334) is enough to re-fire a disposition, or whether to extend once more until the ad set crosses the 30-day maturity gate (2026-11-17) so orders can be judged too, not just quality."
+  },
+  "KL-2026-11-16-PA-FROZENBLUE-HOLDRECHECK": {
+    "id": "KL-2026-11-16-PA-FROZENBLUE-HOLDRECHECK",
+    "date": "2026-11-16",
+    "type": "observation",
+    "subject": "KL-2026-10-30-CS-FROZENBLUE-PROCEED-DECISION - held-plan re-check, situation has IMPROVED materially since the 2026-11-12 recheck: the previously-stalled Loomiere pause/cut plan (KL-2026-11-10-073140) executed on 2026-11-12, resolving the account over-ceiling problem, but a NEW, separate blocker (30-day ROAS safety-check gate) has emerged that the ceiling math alone would not reveal",
+    "follow_up": "campaign-strategist: Frozen Blue still cannot be added within the Rs6,500/day standing ceiling without Suraj explicitly raising the ceiling (would land at Rs7,676/day, Rs1,176 over) AND the section 3e ROAS safety-check gate independently argues against any new budget increase right now regardless of the ceiling question. Re-check again next review; do not treat the ceiling-headroom improvement alone as grounds to proceed."
   }
 }
