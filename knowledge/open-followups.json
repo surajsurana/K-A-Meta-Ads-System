@@ -369,5 +369,12 @@
     "type": "observation",
     "subject": "30-day blended ROAS - 5th consecutive decline (26.53x at 11-12 -> 19.13x today), now about 42 percent below its own 90-day level; widening, not stabilising",
     "follow_up": "campaign-strategist: re-walk the SS3e budget call this cycle with this reading - the decline has widened for a 5th straight review and the latest step is the steepest yet, which argues the HOLD should continue, and probably warrants asking whether the cause (CPM/CTR softening already flagged 2026-11-14, or a genuine revenue-side slowdown per the behind-target MTD figures this same review) needs to move from passive monitoring to an active diagnostic."
+  },
+  "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE": {
+    "id": "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE",
+    "date": "2026-11-16",
+    "type": "observation",
+    "subject": "November 2026 sales tracking update - MTD well behind pace on both orders and value, continuing the trend already flagged 2026-11-12, with a real order-entry lag caveat on the most recent 2-3 days",
+    "follow_up": "Re-check at the next review once the 11-14/11-15 entry lag clears, for a cleaner read on whether November is tracking toward the low end of the 62-74 order forecast range or genuinely below it."
   }
 }
