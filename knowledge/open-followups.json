@@ -349,20 +349,6 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
-  "KL-2026-11-16-011536": {
-    "id": "KL-2026-11-16-011536",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "PAUSE ad set First Love | Crimson Beaded (KA-270826-002) Test | India (52562444646780) in full",
-    "follow_up": "Awaiting Suraj approval via Telegram. Once executed by marketing-lead: verify per Verification steps above."
-  },
-  "KL-2026-11-16-011627": {
-    "id": "KL-2026-11-16-011627",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "16th May 26 | India (ad set 6968778736776) - DECLINED to resend/revalidate KL-2026-11-09-010828 (full ad-set pause) as instructed; this cycle's resend request (KL-2026-11-16-CS-16THMAY-RESEND) conflicts with campaign-strategist's own more recent, more careful resolution of this exact case 4 days earlier",
-    "follow_up": "campaign-strategist to reconcile this cycle's resend call against KL-2026-11-12-CS-ADSETREVIEW and either withdraw the resend or issue a fresh, correctly-scoped disposition for ad 52562107907380 (Ice Blue KAFL026) specifically, informed by lead-quality-analyst's read of its 39 messaging conversation starts. If KL-2026-11-09-010828 (message_id 503) is still an untapped Telegram message, it should be withdrawn as stale rather than left live for an approval tap."
-  },
   "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY": {
     "id": "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY",
     "date": "2026-11-16",
@@ -383,6 +369,13 @@
     "type": "decision",
     "subject": "Profile Visits | India (ad set 52538161512180) - MAINTAIN, NOT a pause candidate (winners framework flagged it on the wrong metric); second creative variant DEFERRED pending a frequency/CPM headroom check, not approved on follower-growth volume alone",
     "follow_up": "performance-analyst: pull Profile Visits | India's (52538161512180) own frequency and CPM trend over the last 2-3 weeks at the next review. If flat frequency/stable CPM (same bar as 16th May's 2nd-ad justification), campaign-strategist will approve briefing a 2nd creative variant then."
+  },
+  "KL-2026-11-16-CS-RECONCILE-16THMAY": {
+    "id": "KL-2026-11-16-CS-RECONCILE-16THMAY",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "Correction: KL-2026-11-16-CS-16THMAY-RESEND retracted (stale info, omitted linked_to); Ice Blue KAFL026 left undecided pending its own enquiry-quality read; corrected portfolio total for this cycle restated",
+    "follow_up": "Next review: lead-quality-analyst to run a targeted enquiry-quality read on Ice Blue KAFL026 (52562107907380) specifically, not just ad-set/account aggregates, before any pause/keep verdict on it. Weekly digest for this cycle should show only the Crimson Beaded pause as a pending Telegram ask; 16th May shows no open action."
   },
   "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD": {
     "id": "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD",
