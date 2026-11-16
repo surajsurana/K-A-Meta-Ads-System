@@ -356,6 +356,13 @@
     "subject": "PAUSE ad set First Love | Crimson Beaded (KA-270826-002) Test | India (52562444646780) in full",
     "follow_up": "Awaiting Suraj approval via Telegram. Once executed by marketing-lead: verify per Verification steps above."
   },
+  "KL-2026-11-16-011627": {
+    "id": "KL-2026-11-16-011627",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "16th May 26 | India (ad set 6968778736776) - DECLINED to resend/revalidate KL-2026-11-09-010828 (full ad-set pause) as instructed; this cycle's resend request (KL-2026-11-16-CS-16THMAY-RESEND) conflicts with campaign-strategist's own more recent, more careful resolution of this exact case 4 days earlier",
+    "follow_up": "campaign-strategist to reconcile this cycle's resend call against KL-2026-11-12-CS-ADSETREVIEW and either withdraw the resend or issue a fresh, correctly-scoped disposition for ad 52562107907380 (Ice Blue KAFL026) specifically, informed by lead-quality-analyst's read of its 39 messaging conversation starts. If KL-2026-11-09-010828 (message_id 503) is still an untapped Telegram message, it should be withdrawn as stale rather than left live for an approval tap."
+  },
   "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY": {
     "id": "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY",
     "date": "2026-11-16",
