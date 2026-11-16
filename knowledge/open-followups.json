@@ -391,20 +391,6 @@
     "subject": "4 new UGC tags (per KL-2026-11-16-ugc-tags): @lifeofjsway reception look - HOLD (no retrievable file); 2x @akoirah_jewellery cross-tags - REJECT for ads; @simrannnn_d candid piece - REJECT for ads",
     "follow_up": "No live action needed on items 2/3. Item 1: if Suraj wants this pursued, it needs a manual screen-record/download + Media Library upload before any disposition beyond HOLD is possible - not something this system can do on its own."
   },
-  "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET": {
-    "id": "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET",
-    "date": "2026-11-16",
-    "type": "observation",
-    "subject": "DOB coverage continues its uninterrupted growth streak - 9.7 percent (70/718), up from 9.1 percent (65/714) on 2026-11-12",
-    "follow_up": "Continue tracking at each weekly/monthly review; re-evaluate whether the known-DOB sample is large enough to weight more heavily in targeting decisions as coverage keeps climbing."
-  },
-  "KL-2026-11-16-PA-GENDERAGE-WHATSAPP-FULLCOMPLIANCE": {
-    "id": "KL-2026-11-16-PA-GENDERAGE-WHATSAPP-FULLCOMPLIANCE",
-    "date": "2026-11-16",
-    "type": "outcome",
-    "subject": "All 9 active WhatsApp-destination ad sets now show 0 percent spend and 0 percent conversations to men this review window, up from the 10.5 percent trailing-30-day aggregate logged 2026-11-12 - the gradual gender fix (guardrail 15/16) appears to have fully taken hold for this ad-set group",
-    "follow_up": "No action needed. Continue watching for any regression if Advantage+ audience settings or any ad set targeting is edited again."
-  },
   "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED": {
     "id": "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED",
     "date": "2026-11-16",
