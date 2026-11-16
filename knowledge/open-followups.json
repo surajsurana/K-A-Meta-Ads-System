@@ -391,6 +391,13 @@
     "subject": "Daily heartbeat (2026-11-16) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch empty (Gold Bandhani duo aged out of 7-day window, already cleared); stalled-content and rollback-window sweeps turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Gold Bandhani/Bottle Green Solo exception window (2026-11-27), Barbie Pink/9th Dec sample-size thresholds, or Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open)."
   },
+  "KL-2026-11-16-MKT-CRIMSONBEADED-PAUSEEXEC": {
+    "id": "KL-2026-11-16-MKT-CRIMSONBEADED-PAUSEEXEC",
+    "date": "2026-11-16",
+    "type": "change",
+    "subject": "EXECUTED: PAUSE ad set First Love | Crimson Beaded (KA-270826-002) Test | India (52562444646780)",
+    "follow_up": "Per plan rollback criteria: revert to ACTIVE (daily_budget=15000) only if Suraj directs reactivation, or if a later full accounting of days 29-30 surfaces a missed serious enquiry/order that changes the flat-trend read."
+  },
   "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED": {
     "id": "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED",
     "date": "2026-11-16",
