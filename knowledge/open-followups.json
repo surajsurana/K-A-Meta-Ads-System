@@ -349,12 +349,12 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
-  "KL-2026-11-16-CS-16THMAY-RESEND": {
-    "id": "KL-2026-11-16-CS-16THMAY-RESEND",
+  "KL-2026-11-16-CS-BUDGETCHECK": {
+    "id": "KL-2026-11-16-CS-BUDGETCHECK",
     "date": "2026-11-16",
     "type": "decision",
-    "subject": "16th May 26 | India (ad set 6968778736776) - PAUSE case reaffirmed, UNCHANGED; the already-validated plan (KL-2026-11-09-010828) has sat pending Suraj's Telegram tap for one week with no resolution - RESEND, do not re-build a new plan",
-    "follow_up": "Resend KL-2026-11-09-010828 via send-telegram-approval.sh now. If it's still unresolved at the next review, escalate the staleness itself (a week-old unresolved pause ask) as its own flag, not just a silent third resend."
+    "subject": "Portfolio allocation (SS3a/guardrail 10, four-part disclosure) - two pauses proposed this cycle (Crimson Beaded, 16th May resend), no new spend added, resulting total comfortably within ceiling",
+    "follow_up": "media-buyer validates both pause plans independently against the live account before either reaches Suraj; re-sum the total fresh at next review once both resolve."
   },
   "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST": {
     "id": "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST",
@@ -362,20 +362,6 @@
     "type": "decision",
     "subject": "New solo Reel of KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt) - TEST: brief a new standalone solo ad, same established pattern as the live Metallic Lavender Solo / Bottle Green Solo ads",
     "follow_up": "creative-copywriter: brief solo-ad copy for KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt), same tone/structure as the Lavender/Bottle Green solo briefs. media-buyer: validate build in Loomiere IG Engaged 365D & Followers ad set, PAUSED first, standard approval."
-  },
-  "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT": {
-    "id": "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "First Love | Crimson Beaded (KA-270826-002) Test (ad set 52562444646780, ad 52562444656580) - PAUSE, judgment call slightly ahead of my own stated n>=110 volume gate, with the reasons stated explicitly",
-    "follow_up": "media-buyer: validate and prepare a PAUSE execution plan for ad set 52562444646780 (First Love | Crimson Beaded Test) and its single ad 52562444656580, tag fair-chance-pause. Route via send-telegram-approval.sh. Frees Rs150/day."
-  },
-  "KL-2026-11-16-CS-FROZENBLUE-SUPERSEDE-HOLD": {
-    "id": "KL-2026-11-16-CS-FROZENBLUE-SUPERSEDE-HOLD",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "Frozen Blue (KAFL017) test - SUPERSEDES the 2026-10-30 PROCEED-DECISION: not dropped, moved to HOLD with an explicit re-trigger condition (30-day ROAS gate, independent of ceiling math)",
-    "follow_up": "Next review: check whether the 30-day blended ROAS decline streak has broken (stabilized or improved vs its 90-day level). If yes, and ceiling headroom exists or Suraj approves a raise, re-propose Frozen Blue as a fresh ask. If the decline continues, this HOLD simply continues without a fresh Telegram ask each time."
   },
   "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
     "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
