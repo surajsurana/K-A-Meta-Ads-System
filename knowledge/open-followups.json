@@ -342,13 +342,6 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
-  "KL-2026-11-16-065107": {
-    "id": "KL-2026-11-16-065107",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "New ad 'Loomiere | Burgundy Scalloped Solo | Styling Appointment' (SKU KA-100826-014) in ad set Loomiere | IG Engaged 365D & Followers | WhatsApp | India (52564357579980)",
-    "follow_up": "Awaiting Suraj's direct Telegram approval. Once executed by marketing-lead: run the Verification steps above, and confirm the creative-product-map.jsonl entry was written with the real Meta-ads video_id (not the Instagram reel id 17994251355119396)."
-  },
   "KL-2026-11-16-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-16-CS-BUDGETCALL-HOLD",
     "date": "2026-11-16",
@@ -383,6 +376,13 @@
     "type": "decision",
     "subject": "4 new UGC tags (per KL-2026-11-16-ugc-tags): @lifeofjsway reception look - HOLD (no retrievable file); 2x @akoirah_jewellery cross-tags - REJECT for ads; @simrannnn_d candid piece - REJECT for ads",
     "follow_up": "No live action needed on items 2/3. Item 1: if Suraj wants this pursued, it needs a manual screen-record/download + Media Library upload before any disposition beyond HOLD is possible - not something this system can do on its own."
+  },
+  "KL-2026-11-16-EXEC-LOOMIERE-BURGUNDYSCALLOPED-SOLO": {
+    "id": "KL-2026-11-16-EXEC-LOOMIERE-BURGUNDYSCALLOPED-SOLO",
+    "date": "2026-11-16",
+    "type": "change",
+    "subject": "Built + activated 1 new ad (Loomière | Burgundy Scalloped Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-11-16-065107",
+    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation (by 2026-11-23) and propose a pause through the normal approval path per the plan's stated rollback criteria (policy/disapproval issue, materially broken delivery, Suraj withdraws approval, or product/copy mismatch later found). No other action pending."
   },
   "KL-2026-11-16-HEARTBEAT-DAILYCHECK": {
     "id": "KL-2026-11-16-HEARTBEAT-DAILYCHECK",
