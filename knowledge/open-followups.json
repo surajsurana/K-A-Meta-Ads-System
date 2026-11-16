@@ -349,19 +349,19 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
+  "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY": {
+    "id": "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "Loomiere solo Burgundy Scalloped Corset Reel (17994251355119396, instagram.com/reel/DfxF1foxUMk/, SKU KA-100826-014) - execution-ready copy for a new ad, destination ad set per campaign-strategist lean",
+    "follow_up": "media-buyer: build as a new ad in the live ad set 52564357579980 (Loomiere | IG Engaged 365D & Followers | WhatsApp | India), PAUSED first per standard approval, fetch Reel 17994251355119396 media_url fresh at build time (signed, expiring CDN URL), run standard checks (generatepreviews, text-field verification, name-collision check), activate per guardrail 3 once approved, and record the creative-product-map.jsonl entry for this new video_id with SKU KA-100826-014, confidence high, status confirmed (already confirmed elsewhere in the map for this SKU, this is just a new video_id for the same SKU)."
+  },
   "KL-2026-11-16-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-16-CS-BUDGETCALL-HOLD",
     "date": "2026-11-16",
     "type": "decision",
     "subject": "SS3e scale-intelligence budget call - HOLD confirmed, for a 2nd straight review; ROAS gate blocks any increase, cut bar still not independently corroborated by worsening cost-per-order/enquiry quality",
     "follow_up": "Next review: check whether the account-wide CTR/auction softening is stabilizing (seasonal) or still widening (structural). Re-ask the full SS3e call fresh each review - do not assume this HOLD carries forward without re-checking the ROAS trend and quality data again."
-  },
-  "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST": {
-    "id": "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "New solo Reel of KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt) - TEST: brief a new standalone solo ad, same established pattern as the live Metallic Lavender Solo / Bottle Green Solo ads",
-    "follow_up": "creative-copywriter: brief solo-ad copy for KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt), same tone/structure as the Lavender/Bottle Green solo briefs. media-buyer: validate build in Loomiere IG Engaged 365D & Followers ad set, PAUSED first, standard approval."
   },
   "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
     "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
