@@ -307,13 +307,6 @@
     "subject": "Near-miss: a verification curl call used -d (POST) instead of -G (GET) against a Meta write-capable endpoint during plan validation",
     "follow_up": "Tighten media-buyer (and any other Bash/curl-calling agent)'s standing practice to always force curl -G explicitly for every Meta Graph API GET call, never relying on curl's default verb behavior based on absence of -d. Worth a repo-wide grep of agent definitions for any curl call lacking an explicit -G to close this gap proactively rather than waiting for a real incident."
   },
-  "KL-2026-11-12-CS-STYLEBYANISSA-DROP": {
-    "id": "KL-2026-11-12-CS-STYLEBYANISSA-DROP",
-    "date": "2026-11-12",
-    "type": "decision",
-    "subject": "@stylebyanissa Brown Lace Corset solo ad (SKU KA-231026-009) - disposition DROPPED: retained video asset is unusable, no clean alternative available",
-    "follow_up": "No further build action on this video. If Suraj separately wants to request a fresh, chrome-free capture from @stylebyanissa for this garment, that is a new ask to raise with him directly, not something to chase automatically. No Telegram send needed - nothing is pending approval, this simply closes out an already-halted build."
-  },
   "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED": {
     "id": "KL-2026-11-12-LQ-LAVSOLO-AISIMISMATCH-RESOLVED",
     "date": "2026-11-12",
