@@ -335,13 +335,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-15-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-15-HEARTBEAT-DAILYCHECK",
-    "date": "2026-11-15",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-15) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; 4 stalled content items still blocked (no new SKU); Gold Bandhani/Barbie Pink watch items continuing, no threshold crossed",
-    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Gold Bandhani/Bottle Green Solo exception window (2026-11-27), Barbie Pink/9th Dec sample-size thresholds, or Red Fishcut Corset recheck window (2026-11-16 to 11-23)."
-  },
   "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING": {
     "id": "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING",
     "date": "2026-11-15",
@@ -397,5 +390,12 @@
     "type": "outcome",
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
+  },
+  "KL-2026-11-16-SCM-DAILYCHECK": {
+    "id": "KL-2026-11-16-SCM-DAILYCHECK",
+    "date": "2026-11-16",
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-16) - Media Library check only: 0 manual + 0 instagram_auto unreviewed, nothing new to triage",
+    "follow_up": "No live action. Media Library remains quiet. Disk-space/instagram-collect stall remains an open, already-escalated infra issue outside this role's scope to fix (now 97% full, 308M free, 14 consecutive nights of 0 new collector items) - next daily check should reconfirm again; re-escalate only if it resumes collecting or fails in a new way (e.g. disk fully exhausted, a different error signature)."
   }
 }
