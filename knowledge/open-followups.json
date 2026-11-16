@@ -370,6 +370,13 @@
     "subject": "Frozen Blue (KAFL017) test - SUPERSEDES the 2026-10-30 PROCEED-DECISION: not dropped, moved to HOLD with an explicit re-trigger condition (30-day ROAS gate, independent of ceiling math)",
     "follow_up": "Next review: check whether the 30-day blended ROAS decline streak has broken (stabilized or improved vs its 90-day level). If yes, and ceiling headroom exists or Suraj approves a raise, re-propose Frozen Blue as a fresh ask. If the decline continues, this HOLD simply continues without a fresh Telegram ask each time."
   },
+  "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
+    "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "Profile Visits | India (ad set 52538161512180) - MAINTAIN, NOT a pause candidate (winners framework flagged it on the wrong metric); second creative variant DEFERRED pending a frequency/CPM headroom check, not approved on follower-growth volume alone",
+    "follow_up": "performance-analyst: pull Profile Visits | India's (52538161512180) own frequency and CPM trend over the last 2-3 weeks at the next review. If flat frequency/stable CPM (same bar as 16th May's 2nd-ad justification), campaign-strategist will approve briefing a 2nd creative variant then."
+  },
   "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-16-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-16",
