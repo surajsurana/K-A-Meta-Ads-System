@@ -349,6 +349,13 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
+  "KL-2026-11-16-011536": {
+    "id": "KL-2026-11-16-011536",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "PAUSE ad set First Love | Crimson Beaded (KA-270826-002) Test | India (52562444646780) in full",
+    "follow_up": "Awaiting Suraj approval via Telegram. Once executed by marketing-lead: verify per Verification steps above."
+  },
   "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY": {
     "id": "KL-2026-11-16-CC-BURGUNDYSCALLOPED-SOLO-COPY",
     "date": "2026-11-16",
