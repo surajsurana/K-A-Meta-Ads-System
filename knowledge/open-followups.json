@@ -349,12 +349,12 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
-  "KL-2026-11-16-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-16-CS-BUDGETCHECK",
+  "KL-2026-11-16-CS-BUDGETCALL-HOLD": {
+    "id": "KL-2026-11-16-CS-BUDGETCALL-HOLD",
     "date": "2026-11-16",
     "type": "decision",
-    "subject": "Portfolio allocation (SS3a/guardrail 10, four-part disclosure) - two pauses proposed this cycle (Crimson Beaded, 16th May resend), no new spend added, resulting total comfortably within ceiling",
-    "follow_up": "media-buyer validates both pause plans independently against the live account before either reaches Suraj; re-sum the total fresh at next review once both resolve."
+    "subject": "SS3e scale-intelligence budget call - HOLD confirmed, for a 2nd straight review; ROAS gate blocks any increase, cut bar still not independently corroborated by worsening cost-per-order/enquiry quality",
+    "follow_up": "Next review: check whether the account-wide CTR/auction softening is stabilizing (seasonal) or still widening (structural). Re-ask the full SS3e call fresh each review - do not assume this HOLD carries forward without re-checking the ROAS trend and quality data again."
   },
   "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST": {
     "id": "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST",
@@ -411,12 +411,5 @@
     "type": "outcome",
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
-  },
-  "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE": {
-    "id": "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE",
-    "date": "2026-11-16",
-    "type": "observation",
-    "subject": "November 2026 sales tracking update - MTD well behind pace on both orders and value, continuing the trend already flagged 2026-11-12, with a real order-entry lag caveat on the most recent 2-3 days",
-    "follow_up": "Re-check at the next review once the 11-14/11-15 entry lag clears, for a cleaner read on whether November is tracking toward the low end of the 62-74 order forecast range or genuinely below it."
   }
 }
