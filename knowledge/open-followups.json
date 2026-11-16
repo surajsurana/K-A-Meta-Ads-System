@@ -349,6 +349,13 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
+  "KL-2026-11-16-CS-16THMAY-RESEND": {
+    "id": "KL-2026-11-16-CS-16THMAY-RESEND",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "16th May 26 | India (ad set 6968778736776) - PAUSE case reaffirmed, UNCHANGED; the already-validated plan (KL-2026-11-09-010828) has sat pending Suraj's Telegram tap for one week with no resolution - RESEND, do not re-build a new plan",
+    "follow_up": "Resend KL-2026-11-09-010828 via send-telegram-approval.sh now. If it's still unresolved at the next review, escalate the staleness itself (a week-old unresolved pause ask) as its own flag, not just a silent third resend."
+  },
   "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT": {
     "id": "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT",
     "date": "2026-11-16",
