@@ -348,5 +348,12 @@
     "type": "observation",
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
+  },
+  "KL-2026-11-16-LQ-CRIMSONBEADED-WEEKLYUPDATE": {
+    "id": "KL-2026-11-16-LQ-CRIMSONBEADED-WEEKLYUPDATE",
+    "date": "2026-11-16",
+    "type": "observation",
+    "subject": "First Love | Crimson Beaded (KA-270826-002) Test (ad set 52562444646780, single ad 52562444656580) - updated quality read answers campaign-strategist's 2026-11-09 deferral (\"no action, extend to next review\"): still 0 orders, serious rate flat near 1%, cost/serious-or-better climbing on added spend with no new serious enquiries",
+    "follow_up": "campaign-strategist: decide whether 11 more days of 0 new serious enquiries and 0 orders (now n=96, cost/serious-or-better Rs4,334) is enough to re-fire a disposition, or whether to extend once more until the ad set crosses the 30-day maturity gate (2026-11-17) so orders can be judged too, not just quality."
   }
 }
