@@ -356,6 +356,13 @@
     "subject": "16th May 26 | India (ad set 6968778736776) - PAUSE case reaffirmed, UNCHANGED; the already-validated plan (KL-2026-11-09-010828) has sat pending Suraj's Telegram tap for one week with no resolution - RESEND, do not re-build a new plan",
     "follow_up": "Resend KL-2026-11-09-010828 via send-telegram-approval.sh now. If it's still unresolved at the next review, escalate the staleness itself (a week-old unresolved pause ask) as its own flag, not just a silent third resend."
   },
+  "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST": {
+    "id": "KL-2026-11-16-CS-BURGUNDYSCALLOPED-TEST",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "New solo Reel of KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt) - TEST: brief a new standalone solo ad, same established pattern as the live Metallic Lavender Solo / Bottle Green Solo ads",
+    "follow_up": "creative-copywriter: brief solo-ad copy for KA-100826-014 (Burgundy Scalloped Corset With Drape Skirt), same tone/structure as the Lavender/Bottle Green solo briefs. media-buyer: validate build in Loomiere IG Engaged 365D & Followers ad set, PAUSED first, standard approval."
+  },
   "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT": {
     "id": "KL-2026-11-16-CS-CRIMSONBEADED-PAUSEVERDICT",
     "date": "2026-11-16",
