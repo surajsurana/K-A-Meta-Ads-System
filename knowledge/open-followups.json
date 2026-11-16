@@ -349,6 +349,13 @@
     "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
     "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
   },
+  "KL-2026-11-16-CS-FROZENBLUE-SUPERSEDE-HOLD": {
+    "id": "KL-2026-11-16-CS-FROZENBLUE-SUPERSEDE-HOLD",
+    "date": "2026-11-16",
+    "type": "decision",
+    "subject": "Frozen Blue (KAFL017) test - SUPERSEDES the 2026-10-30 PROCEED-DECISION: not dropped, moved to HOLD with an explicit re-trigger condition (30-day ROAS gate, independent of ceiling math)",
+    "follow_up": "Next review: check whether the 30-day blended ROAS decline streak has broken (stabilized or improved vs its 90-day level). If yes, and ceiling headroom exists or Suraj approves a raise, re-propose Frozen Blue as a fresh ask. If the decline continues, this HOLD simply continues without a fresh Telegram ask each time."
+  },
   "KL-2026-11-16-LQ-CRIMSONBEADED-WEEKLYUPDATE": {
     "id": "KL-2026-11-16-LQ-CRIMSONBEADED-WEEKLYUPDATE",
     "date": "2026-11-16",
@@ -376,13 +383,6 @@
     "type": "outcome",
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
-  },
-  "KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE": {
-    "id": "KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE",
-    "date": "2026-11-16",
-    "type": "observation",
-    "subject": "30-day blended ROAS - 5th consecutive decline (26.53x at 11-12 -> 19.13x today), now about 42 percent below its own 90-day level; widening, not stabilising",
-    "follow_up": "campaign-strategist: re-walk the SS3e budget call this cycle with this reading - the decline has widened for a 5th straight review and the latest step is the steepest yet, which argues the HOLD should continue, and probably warrants asking whether the cause (CPM/CTR softening already flagged 2026-11-14, or a genuine revenue-side slowdown per the behind-target MTD figures this same review) needs to move from passive monitoring to an active diagnostic."
   },
   "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE": {
     "id": "KL-2026-11-16-PA-SALESFORECAST-2026-11-UPDATE",
