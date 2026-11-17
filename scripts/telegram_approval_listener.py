@@ -34,6 +34,8 @@ import urllib.error
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 
+import desk_inbox  # sibling module in scripts/
+
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_DIR = os.path.expanduser("~/ka-meta-ads")  # sibling to the repo, never inside it - runtime state, not project code
 STATE_FILE = os.path.join(STATE_DIR, "telegram_approvals_state.json")
@@ -1195,31 +1197,49 @@ def handle_sos_callback(token, cq):
     log(f"SOS button pressed: {st}")
 
 
+def save_to_desk_inbox(token, message, text, reply_to):
+    """Any other typed message from Suraj goes to the desk inbox (added
+    2026-11-17 - typed messages used to be dropped silently). Saved and
+    acknowledged only; a Meta Ads Claude session reads and answers them later
+    (scripts/desk_inbox.py). Nothing typed here ever changes the ad account."""
+    if text.startswith("/"):
+        return  # bot commands like /start - nothing to answer
+    item_id = desk_inbox.add(message["chat"]["id"], message.get("message_id"), text,
+                             (reply_to.get("text") or reply_to.get("caption") or "")[:500] or None)
+    log(f"desk inbox: saved message {item_id}")
+    try:
+        tg_api(token, "sendMessage", {
+            "chat_id": message["chat"]["id"],
+            "reply_to_message_id": message.get("message_id"),
+            "text": "\U0001F4E5 Got it - I'll pick this up in the Meta Ads session and reply here.",
+        })
+    except Exception as e:
+        log(f"non-fatal: failed to ack desk inbox message {item_id}: {e}")
+
+
 def handle_text_reply(token, message):
-    """Handles a plain-text message that's a Telegram reply to a pending
-    product-check question - the only kind of free-text input this listener
-    ever interprets as meaningful (added 2026-09-04). Everything else about
-    this listener is still button-only; this is a narrow, specific exception
-    scoped to exactly one use case, not a general "parse arbitrary text"
-    capability - see docs/architecture.md SS3d for why this is safe (no
-    Meta/Instagram/Shopify write ever results from it, only a product-map
-    entry)."""
+    """Handles every plain-text message. A Telegram reply to a pending
+    product-check question saves that product name (added 2026-09-04, see
+    docs/architecture.md SS3d - only ever a product-map entry, never a
+    Meta/Instagram/Shopify write). Anything else goes to the desk inbox
+    (save_to_desk_inbox)."""
     chat_id = message.get("chat", {}).get("id")
     from_id = message.get("from", {}).get("id")
     text = (message.get("text") or "").strip()
     reply_to = message.get("reply_to_message", {})
     reply_to_id = reply_to.get("message_id")
 
-    if not text or reply_to_id is None:
-        return  # not a reply to anything - not our concern, ignore silently
+    if not text:
+        return
 
     _, configured_chat_id = load_telegram_config()
     if str(from_id) != str(configured_chat_id) or str(chat_id) != str(configured_chat_id):
         return  # silently ignore - same authorization boundary as callbacks, no need to announce it to a stranger
 
-    found = find_pending_correction_by_message(chat_id, reply_to_id)
+    found = find_pending_correction_by_message(chat_id, reply_to_id) if reply_to_id is not None else None
     if found is None:
-        return  # a reply to some other message - not a pending product check, ignore
+        save_to_desk_inbox(token, message, text, reply_to)
+        return
 
     check_id, entry = found
     resolved = [{"sku": None, "name": text, "confidence": "telegram_user_corrected_freetext"}]
