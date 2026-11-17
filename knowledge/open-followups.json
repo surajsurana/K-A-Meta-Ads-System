@@ -335,13 +335,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING": {
-    "id": "KL-2026-11-15-HEARTBEAT-STALLEDFIX-BGCEILING",
-    "date": "2026-11-15",
-    "type": "observation",
-    "subject": "Approved system-fix KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING was claimed_approve on 2026-11-12 via Telegram but never actually applied - scripts/_run-common.sh unchanged, no type:change entry, this run's own retry also denied",
-    "follow_up": "Needs Suraj or an interactive session to: (1) apply the one-line edit directly (scripts/_run-common.sh line ~178, BG_WAIT_CEILING_MS=600000 -> 1200000, see KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING for the exact approved text) or grant Edit/Write permission to headless runs; (2) separately check whether telegram_approval_listener.py's system-fix dispatch path is silently failing on every approved system/doc fix, not just this one - if so, every future Telegram-approved system-fix tap may need manual verification until that path is fixed, since nothing currently alerts when it fails. Escalated to Suraj via plain Telegram notification this cycle, not a new approval request (nothing left to approve)."
-  },
   "KL-2026-11-16-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-16-CS-BUDGETCALL-HOLD",
     "date": "2026-11-16",
@@ -391,11 +384,11 @@
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
   },
-  "KL-2026-11-17-PA-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-17-PA-HEARTBEAT-DAILYCHECK",
+  "KL-2026-11-17-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-17-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-17",
     "type": "observation",
-    "subject": "Daily heartbeat (2026-11-17) - account clean overall (status healthy, within budget ceiling, zero disapprovals, gender/age/platform compliant); one real new data point - new ad Burgundy Scalloped Solo (52569933426380) is today taking meaningful delivery share in the Loomiere IG Engaged ad set while sibling Bottle Green Solo (52566563586180) drops to near-zero, worsening the already-tracked structural starvation watch (KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE); also a new, trivial nonzero WhatsApp Status placement share appeared on the same ad set",
-    "follow_up": "campaign-strategist to weigh whether the new Burgundy Scalloped ad's delivery share is a reason to revisit the Bottle Green Solo starvation HOLD (KL-2026-11-13) sooner than its existing 2026-11-27 exception window; performance-analyst to re-check WhatsApp Status share in tomorrow's heartbeat to see if it was a one-off or is growing."
+    "subject": "Daily heartbeat (2026-11-17) - account clean, no disapprovals/budget breach/gender-age-platform breach beyond a trivial new WhatsApp Status sliver; Media Library 0+0 unreviewed; new-ad watch shows Burgundy Scalloped Solo healthy but adding to Bottle Green Solo starvation; stalled-content, rollback-window and new-launch-content sweeps turn up nothing new",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: WhatsApp Status share on Loomiere ad set if it keeps rising (recheck tomorrow), Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open), Gold Bandhani/Bottle Green Solo exception window (2026-11-27), or Barbie Pink/9th Dec sample-size thresholds."
   }
 }
