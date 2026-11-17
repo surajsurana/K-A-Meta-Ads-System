@@ -377,20 +377,6 @@
     "subject": "4 new UGC tags (per KL-2026-11-16-ugc-tags): @lifeofjsway reception look - HOLD (no retrievable file); 2x @akoirah_jewellery cross-tags - REJECT for ads; @simrannnn_d candid piece - REJECT for ads",
     "follow_up": "No live action needed on items 2/3. Item 1: if Suraj wants this pursued, it needs a manual screen-record/download + Media Library upload before any disposition beyond HOLD is possible - not something this system can do on its own."
   },
-  "KL-2026-11-16-EXEC-LOOMIERE-BURGUNDYSCALLOPED-SOLO": {
-    "id": "KL-2026-11-16-EXEC-LOOMIERE-BURGUNDYSCALLOPED-SOLO",
-    "date": "2026-11-16",
-    "type": "change",
-    "subject": "Built + activated 1 new ad (Loomière | Burgundy Scalloped Solo | Styling Appointment) in the existing Loomière IG Engaged 365D & Followers ad set, per approved plan KL-2026-11-16-065107",
-    "follow_up": "Daily heartbeat's new-ad watch (prompts/daily-heartbeat.md step 5) will review this ad's performance within 7 days of activation (by 2026-11-23) and propose a pause through the normal approval path per the plan's stated rollback criteria (policy/disapproval issue, materially broken delivery, Suraj withdraws approval, or product/copy mismatch later found). No other action pending."
-  },
-  "KL-2026-11-16-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-16-HEARTBEAT-DAILYCHECK",
-    "date": "2026-11-16",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-16) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch empty (Gold Bandhani duo aged out of 7-day window, already cleared); stalled-content and rollback-window sweeps turn up nothing new",
-    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Gold Bandhani/Bottle Green Solo exception window (2026-11-27), Barbie Pink/9th Dec sample-size thresholds, or Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open)."
-  },
   "KL-2026-11-16-MKT-CRIMSONBEADED-PAUSEEXEC": {
     "id": "KL-2026-11-16-MKT-CRIMSONBEADED-PAUSEEXEC",
     "date": "2026-11-16",
@@ -404,5 +390,12 @@
     "type": "outcome",
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
+  },
+  "KL-2026-11-17-PA-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-17-PA-HEARTBEAT-DAILYCHECK",
+    "date": "2026-11-17",
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-17) - account clean overall (status healthy, within budget ceiling, zero disapprovals, gender/age/platform compliant); one real new data point - new ad Burgundy Scalloped Solo (52569933426380) is today taking meaningful delivery share in the Loomiere IG Engaged ad set while sibling Bottle Green Solo (52566563586180) drops to near-zero, worsening the already-tracked structural starvation watch (KL-2026-11-13-CS-BOTTLEGREENSOLO-STRUCTURAL-STARVE); also a new, trivial nonzero WhatsApp Status placement share appeared on the same ad set",
+    "follow_up": "campaign-strategist to weigh whether the new Burgundy Scalloped ad's delivery share is a reason to revisit the Bottle Green Solo starvation HOLD (KL-2026-11-13) sooner than its existing 2026-11-27 exception window; performance-analyst to re-check WhatsApp Status share in tomorrow's heartbeat to see if it was a one-off or is growing."
   }
 }
