@@ -377,11 +377,11 @@
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
   },
-  "KL-2026-11-17-122834": {
-    "id": "KL-2026-11-17-122834",
+  "KL-2026-11-17-MKT-FIRSTLOVEOVERLOOMIERE-EXEC": {
+    "id": "KL-2026-11-17-MKT-FIRSTLOVEOVERLOOMIERE-EXEC",
     "date": "2026-11-17",
-    "type": "decision",
-    "subject": "VALIDATED execution plan for KL-2026-11-17-CS-FIRSTLOVE-OVER-LOOMIERE: pause Loomiere Launch Reel ad in 9th Dec pool; Golden Muse KAFL020 Test Rs150->180; Interest Stack Rs350->420; account Rs6,026 -> Rs6,126/day within Rs6,500",
-    "follow_up": "marketing-lead executes steps 1-3 verbatim on Suraj's approval, then appends a linked type: change entry with the verification GET results. campaign-strategist reviews on 2026-11-21."
+    "type": "change",
+    "subject": "EXECUTED KL-2026-11-17-122834 - paused Loomiere Launch Reel ad in 9th Dec pool; Golden Muse 150->180; Interest Stack 350->420; account 6,026->6,126/day",
+    "follow_up": "campaign-strategist reviews on 2026-11-21 per the plan's rollback criteria: Golden Muse 18000->15000 if 4-day cost per conversation > Rs100 or 0 serious-or-better on 15+ enquiries; Interest Stack 42000->35000 if 7-day frequency > 2.5 or cost per serious-or-better > Rs3,000 with no new order; Reel ad back to ACTIVE if 9th Dec cost per conversation > Rs160 AND 0 serious-or-better over the 4 days."
   }
 }
