@@ -383,5 +383,12 @@
     "type": "change",
     "subject": "EXECUTED KL-2026-11-17-122834 - paused Loomiere Launch Reel ad in 9th Dec pool; Golden Muse 150->180; Interest Stack 350->420; account 6,026->6,126/day",
     "follow_up": "campaign-strategist reviews on 2026-11-21 per the plan's rollback criteria: Golden Muse 18000->15000 if 4-day cost per conversation > Rs100 or 0 serious-or-better on 15+ enquiries; Interest Stack 42000->35000 if 7-day frequency > 2.5 or cost per serious-or-better > Rs3,000 with no new order; Reel ad back to ACTIVE if 9th Dec cost per conversation > Rs160 AND 0 serious-or-better over the 4 days."
+  },
+  "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION": {
+    "id": "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION",
+    "date": "2026-11-17",
+    "type": "observation",
+    "subject": "Are ads driving sales that arrive as 'direct' WhatsApp? Verdict: both, split unproven - the AISI feed cannot see ~40-49% of ad spend (Instagram-DM ads) or view-through chats, so 'almost no orders from ads' is a floor, not the truth; WhatsApp-tap ads on their own do look like mostly browsers",
+    "follow_up": "For campaign-strategist: (1) report ad-credited orders as a range (floor = CTWA-tagged; never read direct-WhatsApp as 'not ads') and keep budget judgements on blended Stitchflow orders; (2) close the biggest blind spot - Instagram-DM ad leads into the feed (backlog #6) and a tagged WhatsApp hand-off link/code staff use for IG-DM leads; (3) add an 'Instagram/Facebook ad' option to Stitchflow's reference question (7/11 ad-tagged buyers were logged 'Word of Mouth'); (4) only a deliberate test (gradual spend pulse or geo holdout, 2-3 weeks) can separate (a) from (b); (5) separately weigh the 0.3% conversion of WhatsApp-tap ads."
   }
 }
