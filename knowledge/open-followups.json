@@ -335,13 +335,6 @@
     "subject": "2 ambiguous check your DM comments re-checked, both still open and still unreplied - @aesana0710 now a 9th consecutive cycle (25 days), @social_cravings a 6th (19 days); fix still accepted-but-not-built, no new escalation",
     "follow_up": "aesana0710: continue awaiting Suraj action on the 2026-11-02 escalation or the backlog build landing, do not re-escalate identically. social_cravings: continue checking each cycle, not yet at an escalation threshold."
   },
-  "KL-2026-11-16-CS-BUDGETCALL-HOLD": {
-    "id": "KL-2026-11-16-CS-BUDGETCALL-HOLD",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "SS3e scale-intelligence budget call - HOLD confirmed, for a 2nd straight review; ROAS gate blocks any increase, cut bar still not independently corroborated by worsening cost-per-order/enquiry quality",
-    "follow_up": "Next review: check whether the account-wide CTR/auction softening is stabilizing (seasonal) or still widening (structural). Re-ask the full SS3e call fresh each review - do not assume this HOLD carries forward without re-checking the ROAS trend and quality data again."
-  },
   "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
     "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
     "date": "2026-11-16",
@@ -384,11 +377,11 @@
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
   },
-  "KL-2026-11-17-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-17-HEARTBEAT-DAILYCHECK",
+  "KL-2026-11-17-CS-FIRSTLOVE-OVER-LOOMIERE": {
+    "id": "KL-2026-11-17-CS-FIRSTLOVE-OVER-LOOMIERE",
     "date": "2026-11-17",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-17) - account clean, no disapprovals/budget breach/gender-age-platform breach beyond a trivial new WhatsApp Status sliver; Media Library 0+0 unreviewed; new-ad watch shows Burgundy Scalloped Solo healthy but adding to Bottle Green Solo starvation; stalled-content, rollback-window and new-launch-content sweeps turn up nothing new",
-    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: WhatsApp Status share on Loomiere ad set if it keeps rising (recheck tomorrow), Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open), Gold Bandhani/Bottle Green Solo exception window (2026-11-27), or Barbie Pink/9th Dec sample-size thresholds."
+    "type": "decision",
+    "subject": "Push First Love over Loomiere (Suraj, Telegram 17 Nov: festive over, Loomiere order values lower, bridal season) - step 1: pause the Loomiere Reel inside 9th Dec pool, +20% on Golden Muse (150->180) and Interest Stack (350->420); NOT into First Love Broad Advantage+; Loomiere IG Engaged stays at Rs200; account Rs6,026 -> Rs6,126 within Rs6,500",
+    "follow_up": "media-buyer: validate against live (re-verify current total and the three objects), then build (1) pause ad 52564598016980 only, ad set 6862975169176 unchanged at daily_budget 86400; (2) 52559141092980 daily_budget 15000 -> 18000; (3) 52535906794980 daily_budget 35000 -> 42000; send for Suraj's one tap. campaign-strategist on 2026-11-21: apply rollback criteria; if both raised ad sets hold, step 2 = another +20% each (Golden Muse 180->216, Interest Stack 420->504) and consider 9th Dec 864->1,036 now that it is an all-First-Love pool. First Love Broad Advantage+ swap watch stays on its own 11-16 to 11-23 window."
   }
 }
