@@ -1558,6 +1558,22 @@ def main_loop():
     threading.Thread(target=dispatch_worker_loop, daemon=True, name="dispatch-worker").start()
     threading.Thread(target=scheduler_loop, args=(token,), daemon=True, name="scheduler").start()
     log(f"listener started, pid={os.getpid()}")
+
+    # Re-queue any plan left in "claimed_approve" by a crash/restart between
+    # the claim and the dispatch worker picking it up off DISPATCH_QUEUE -
+    # found live 2026-11-12 (KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING
+    # was claimed_approve at 06:30:12Z, the listener restarted at 06:35:03Z,
+    # and nothing ever re-dispatched it since DISPATCH_QUEUE is in-memory
+    # only). Mirrors the same "recover what might have been queued while
+    # down" intent as the product-check line directly below, applied to the
+    # execution-plan queue.
+    def _find_stuck_claims(state):
+        return state, [(pid, e["chat_id"], e["message_id"]) for pid, e in state.items()
+                        if e.get("status") == "claimed_approve"]
+    for pid, chat_id, message_id in with_state_lock(_find_stuck_claims):
+        log(f"requeuing stuck claimed_approve plan from before restart: {pid}")
+        DISPATCH_QUEUE.put((token, pid, chat_id, message_id))
+
     maybe_send_next_queued_check(token)  # in case something was queued while the listener was down/restarting
     offset = None
     while True:
