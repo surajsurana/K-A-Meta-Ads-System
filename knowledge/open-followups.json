@@ -398,11 +398,11 @@
     "subject": "Daily heartbeat (2026-11-18) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch surfaced a real, deepening Bottle Green Solo starvation trend - campaign-strategist independently called WAIT for the scheduled 2026-11-27 checkpoint, no action today; stalled-content, rollback-window and new-launch-content sweeps turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27, now carrying a third input - Burgundy's own by-then performance/quality read), Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open), or First-Love-over-Loomiere rollback check (2026-11-21)."
   },
-  "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE": {
-    "id": "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE",
+  "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC": {
+    "id": "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC",
     "date": "2026-11-18",
-    "type": "decision",
-    "subject": "Telegram-approved execution plans can get silently lost forever at status \"claimed_approve\" if the listener restarts in the gap between the claim and the dispatch worker's turn - root cause of the still-unapplied KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix",
-    "follow_up": "Awaiting Suraj's Telegram approval. If APPROVED: dispatch per telegram_approval_listener.py's system-fix path - apply the exact edit to scripts/telegram_approval_listener.py (inside main_loop()), syntax-check it (python3 -m py_compile), commit+push, then note that the listener process on the droplet still needs an actual restart to pick this up (same as every prior change to this file) - the restart itself is what will also re-queue and finally apply the still-pending KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix."
+    "type": "change",
+    "subject": "EXECUTED KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE - added startup re-queue of stuck claimed_approve plans to scripts/telegram_approval_listener.py",
+    "follow_up": "The running telegram_approval_listener.py process on the droplet needs an actual restart to pick up this change - the watchdog will restart it automatically within about a minute of the process stopping, but nothing in this dispatch restarts it itself. That restart will also automatically re-queue and finally apply the still-pending KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix."
   }
 }
