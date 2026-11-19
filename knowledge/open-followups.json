@@ -404,5 +404,12 @@
     "type": "change",
     "subject": "EXECUTED KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE - added startup re-queue of stuck claimed_approve plans to scripts/telegram_approval_listener.py",
     "follow_up": "The running telegram_approval_listener.py process on the droplet needs an actual restart to pick up this change - the watchdog will restart it automatically within about a minute of the process stopping, but nothing in this dispatch restarts it itself. That restart will also automatically re-queue and finally apply the still-pending KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix."
+  },
+  "KL-2026-11-19-CS-BURGUNDYSOLO-KEEP": {
+    "id": "KL-2026-11-19-CS-BURGUNDYSOLO-KEEP",
+    "date": "2026-11-19",
+    "type": "outcome",
+    "subject": "Loomiere | Burgundy Scalloped Solo (52569933426380) in ad set Loomiere | IG Engaged 365D & Followers | WhatsApp | India (52564357579980) - daily heartbeat new-ad watch, KEEP RUNNING, no pause",
+    "follow_up": "Re-check at next fair-chance crossing (either 7 days active or Rs7,314 cumulative spend, whichever comes first) for a real verdict."
   }
 }
