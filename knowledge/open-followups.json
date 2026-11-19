@@ -314,13 +314,6 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
-  "KL-2026-11-12-MKT-GEO-UP-EXCLUSION-EXEC": {
-    "id": "KL-2026-11-12-MKT-GEO-UP-EXCLUSION-EXEC",
-    "date": "2026-11-12",
-    "type": "change",
-    "subject": "Executed Uttar Pradesh geo-exclusion on 4 of 5 planned ad sets (52564598075780 skipped, already PAUSED)",
-    "follow_up": "performance-analyst to re-check UP delivery trend at the next review per the plan's verification/revisit-trigger. If 52564598075780 is reactivated by any future plan, that plan must carry forward the Uttar Pradesh exclusion as part of restoring full targeting, per this plan's own note."
-  },
   "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
     "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
     "date": "2026-11-12",
@@ -391,13 +384,6 @@
     "subject": "Are ads driving sales that arrive as 'direct' WhatsApp? Verdict: both, split unproven - the AISI feed cannot see ~40-49% of ad spend (Instagram-DM ads) or view-through chats, so 'almost no orders from ads' is a floor, not the truth; WhatsApp-tap ads on their own do look like mostly browsers",
     "follow_up": "For campaign-strategist: (1) report ad-credited orders as a range (floor = CTWA-tagged; never read direct-WhatsApp as 'not ads') and keep budget judgements on blended Stitchflow orders; (2) close the biggest blind spot - Instagram-DM ad leads into the feed (backlog #6) and a tagged WhatsApp hand-off link/code staff use for IG-DM leads; (3) add an 'Instagram/Facebook ad' option to Stitchflow's reference question (7/11 ad-tagged buyers were logged 'Word of Mouth'); (4) only a deliberate test (gradual spend pulse or geo holdout, 2-3 weeks) can separate (a) from (b); (5) separately weigh the 0.3% conversion of WhatsApp-tap ads."
   },
-  "KL-2026-11-18-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-18-HEARTBEAT-DAILYCHECK",
-    "date": "2026-11-18",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-18) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch surfaced a real, deepening Bottle Green Solo starvation trend - campaign-strategist independently called WAIT for the scheduled 2026-11-27 checkpoint, no action today; stalled-content, rollback-window and new-launch-content sweeps turn up nothing new",
-    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27, now carrying a third input - Burgundy's own by-then performance/quality read), Red Fishcut Corset recheck window (2026-11-16 to 11-23, now open), or First-Love-over-Loomiere rollback check (2026-11-21)."
-  },
   "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC": {
     "id": "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC",
     "date": "2026-11-18",
@@ -405,18 +391,11 @@
     "subject": "EXECUTED KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE - added startup re-queue of stuck claimed_approve plans to scripts/telegram_approval_listener.py",
     "follow_up": "The running telegram_approval_listener.py process on the droplet needs an actual restart to pick up this change - the watchdog will restart it automatically within about a minute of the process stopping, but nothing in this dispatch restarts it itself. That restart will also automatically re-queue and finally apply the still-pending KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix."
   },
-  "KL-2026-11-19-CS-BURGUNDYSOLO-KEEP": {
-    "id": "KL-2026-11-19-CS-BURGUNDYSOLO-KEEP",
+  "KL-2026-11-19-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-19-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-19",
-    "type": "outcome",
-    "subject": "Loomiere | Burgundy Scalloped Solo (52569933426380) in ad set Loomiere | IG Engaged 365D & Followers | WhatsApp | India (52564357579980) - daily heartbeat new-ad watch, KEEP RUNNING, no pause",
-    "follow_up": "Re-check at next fair-chance crossing (either 7 days active or Rs7,314 cumulative spend, whichever comes first) for a real verdict."
-  },
-  "KL-2026-11-19-CS-LAVENDER-GOLDPEPLUM-KEEP": {
-    "id": "KL-2026-11-19-CS-LAVENDER-GOLDPEPLUM-KEEP",
-    "date": "2026-11-19",
-    "type": "outcome",
-    "subject": "Loomiere | Metallic Lavender Solo (52565052977180, 21d old) and Gold Peplum Bandhani Solo (52567658735180, 11d old), both in ad set 52564357579980 - zero conversions over last 3 days flagged as side-finding, KEEP RUNNING both, no pause",
-    "follow_up": "If either ad still has not crossed its Rs7,314 fair-chance spend bar after another 1-2 weeks because of persistent delivery squeeze toward Burgundy Scalloped Solo, that becomes the actual decision point - whether to let the natural delivery dynamics continue (selecting a genuinely stronger performer) or intervene with an ad-level spend floor so these two can ever get a resolved quality read, same open question already flagged for the Gold Bandhani pair."
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-19) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo is healthy (best cost/conversation in its ad set) with campaign-strategist confirming KEEP on it plus two older siblings with zero 3-day conversions; stalled-content and rollback-window sweeps turn up nothing new",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), Red Fishcut Corset recheck window (2026-11-16 to 11-23, still open), Uttar Pradesh geo-exclusion rollback window close (2026-11-26), or First-Love-over-Loomiere rollback check (2026-11-21)."
   }
 }
