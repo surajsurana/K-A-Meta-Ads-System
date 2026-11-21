@@ -279,13 +279,6 @@
     "subject": "First Love | Cold Prospecting | Canada (52558954063980) Facebook share tripling - no fix yet, watch another cycle, the guardrail-16 channel-analysis-by-quality follow-through genuinely cannot be done yet on this ad set (sample too thin)",
     "follow_up": "Re-check Cold Prospecting Canadas Facebook-tap enquiry count and junk/serious mix at the next weekly review, or sooner if spend keeps climbing; only consider an Instagram-only placement edit once there is actual quality data on the Facebook-tap rows to compare against Instagram-tap."
   },
-  "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION": {
-    "id": "KL-2026-11-07-LQ-INTERESTSTACK-SERIOUSCHECK-THINSAMPLE-NOACTION",
-    "date": "2026-11-07",
-    "type": "observation",
-    "subject": "First Love | Interest Stack (geo only, interests TBD) | India (52535906794980) - days 7-10 serious-enquiry check vs pre-edit baseline on the 2026-10-31 Instagram-only placement fix - sample too thin to call a quality verdict either way; cost rise already explained by account-wide Mechanism A",
-    "follow_up": "Not a clear verdict either way - too thin (n=13 post-edit) to say the Instagram-only fix helped or hurt lead quality; 0/13 serious is within normal noise of the ~8% pre-edit Instagram-only base rate. No further gradual-fix step (e.g. rollback) is supported by this check - campaign-strategist does not need to make a disposition call off this read alone. Re-run this same comparison once post-edit n is meaningfully larger (suggest after another 1-2 weeks, aiming for at least 30-40 post-edit enquiries before treating a 0% or low% read as real). The cost-per-enquiry rise on this ad set is already explained by Mechanism A (KL-2026-11-06-CS-CPMDETERIORATION-TWOMECHANISMS) - no separate action needed on that account."
-  },
   "KL-2026-11-09-011429": {
     "id": "KL-2026-11-09-011429",
     "date": "2026-11-09",
@@ -370,13 +363,6 @@
     "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
     "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
   },
-  "KL-2026-11-17-MKT-FIRSTLOVEOVERLOOMIERE-EXEC": {
-    "id": "KL-2026-11-17-MKT-FIRSTLOVEOVERLOOMIERE-EXEC",
-    "date": "2026-11-17",
-    "type": "change",
-    "subject": "EXECUTED KL-2026-11-17-122834 - paused Loomiere Launch Reel ad in 9th Dec pool; Golden Muse 150->180; Interest Stack 350->420; account 6,026->6,126/day",
-    "follow_up": "campaign-strategist reviews on 2026-11-21 per the plan's rollback criteria: Golden Muse 18000->15000 if 4-day cost per conversation > Rs100 or 0 serious-or-better on 15+ enquiries; Interest Stack 42000->35000 if 7-day frequency > 2.5 or cost per serious-or-better > Rs3,000 with no new order; Reel ad back to ACTIVE if 9th Dec cost per conversation > Rs160 AND 0 serious-or-better over the 4 days."
-  },
   "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION": {
     "id": "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION",
     "date": "2026-11-17",
@@ -397,5 +383,12 @@
     "type": "observation",
     "subject": "Daily heartbeat (2026-11-20) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (best cost/conversation in its ad set, WhatsApp-destination confirmed) with no new side-finding; stalled-content, catch-up, and rollback-window sweeps turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: First-Love-over-Loomiere rollback check (2026-11-21), Red Fishcut Corset recheck window (2026-11-16 to 11-23, still open), Uttar Pradesh geo-exclusion rollback window close (2026-11-26), or Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27)."
+  },
+  "KL-2026-11-21-CS-FIRSTLOVEOVERLOOMIERE-ROLLBACKREVIEW": {
+    "id": "KL-2026-11-21-CS-FIRSTLOVEOVERLOOMIERE-ROLLBACKREVIEW",
+    "date": "2026-11-21",
+    "type": "decision",
+    "subject": "4-day rollback review of KL-2026-11-17-CS-FIRSTLOVE-OVER-LOOMIERE/KL-2026-11-17-MKT-FIRSTLOVEOVERLOOMIERE-EXEC - all three criteria checked, none fires; KEEP Golden Muse at Rs180, KEEP Interest Stack at Rs420, 9th Dec Reel stays PAUSED",
+    "follow_up": "performance-analyst: check whether ad 52559143466780 (Structure First, Shine Second) is still receiving delivery share or whether this is an AISI-matching gap like Bottle Green Solos - diagnostic only, no budget implication. campaign-strategist: re-check Interest Stack serious-or-better rate at next review once cumulative post-raise n is meaningfully larger (25-30+); do not re-fire this rollback trigger off another small-n window without that larger sample."
   }
 }
