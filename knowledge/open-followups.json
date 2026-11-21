@@ -356,13 +356,6 @@
     "subject": "EXECUTED: PAUSE ad set First Love | Crimson Beaded (KA-270826-002) Test | India (52562444646780)",
     "follow_up": "Per plan rollback criteria: revert to ACTIVE (daily_budget=15000) only if Suraj directs reactivation, or if a later full accounting of days 29-30 surfaces a missed serious enquiry/order that changes the flat-trend read."
   },
-  "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED": {
-    "id": "KL-2026-11-16-PA-PLACEMENTMIX-REFUTED",
-    "date": "2026-11-16",
-    "type": "outcome",
-    "subject": "Placement-mix-shift hypothesis for the account-wide CTR decline (KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD) - REFUTED by the requested placement-level breakdown; spend mix on Instagram stayed essentially flat while CTR fell within every single placement",
-    "follow_up": "campaign-strategist: the placement-mix-shift explanation for the CTR decline is ruled out. Worth considering alongside the ROAS decline (KL-2026-11-16-PA-ROAS-5THDECLINE-UPDATE) whether this is a single underlying engagement-environment shift (post-Diwali auction normalisation) rather than two separate problems - no action proposed by this agent, just flagging the connection."
-  },
   "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION": {
     "id": "KL-2026-11-17-PA-ADS-VS-DIRECT-ATTRIBUTION",
     "date": "2026-11-17",
@@ -390,6 +383,13 @@
     "type": "outcome",
     "subject": "Loomiere | Burgundy Scalloped Solo (52569933426380), ad set 52564357579980 - daily heartbeat new-ad watch, 5 days old, KEEP RUNNING, no pause",
     "follow_up": "Re-check at next fair-chance crossing (7 days active or Rs7,155 cumulative spend, whichever comes first) for a real pause-candidate verdict."
+  },
+  "KL-2026-11-21-CS-CTRREVERSAL-OBSERVATION": {
+    "id": "KL-2026-11-21-CS-CTRREVERSAL-OBSERVATION",
+    "date": "2026-11-21",
+    "type": "observation",
+    "subject": "Account-wide CTR spike 3-day (11-18 to 11-20) vs 11-day baseline (11-07 to 11-17), sharply up across nearly all 13 active ad sets by 5-10x - a reversal of the direction of KL-2026-11-14-CS-CTRDECLINE-ACCOUNTWIDE-HOLD, does NOT itself change that HOLD or the SS3e ROAS budget gate; flagged as the key leading indicator to cross-check against 30-day ROAS at the next full weekly review",
+    "follow_up": "performance-analyst at the next full weekly review: re-pull 30-day ROAS alongside this CTR reversal over the same comparison windows, and report whether they move together (supporting the shared post-Diwali-auction-normalisation mechanism) or diverge. campaign-strategist: re-ask the SS3e budget call fresh at that point using both readings together, not this CTR finding alone."
   },
   "KL-2026-11-21-CS-FIRSTLOVEOVERLOOMIERE-ROLLBACKREVIEW": {
     "id": "KL-2026-11-21-CS-FIRSTLOVEOVERLOOMIERE-ROLLBACKREVIEW",
