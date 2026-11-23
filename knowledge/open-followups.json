@@ -272,13 +272,6 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
-  "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD": {
-    "id": "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "Three new own-content pieces (Metallic Copper Brocade Corset carousel 18026488640927847; 'deep olive' pleated peplum corset Reel 17959799856256377; @lisamishramusic 'Deep Moss Green Velvet Lace Set' carousel 17981219394139824) - HOLD, pending SKU identification",
-    "follow_up": "Next interactive session: creative-copywriter identifies the real SKU for each of these three (Shopify search cross-checked against Stitchflow) before any disposition beyond HOLD is possible."
-  },
   "KL-2026-11-16-CS-UGC-DISPOSITIONS": {
     "id": "KL-2026-11-16-CS-UGC-DISPOSITIONS",
     "date": "2026-11-16",
@@ -349,19 +342,19 @@
     "subject": "Gold Sculpted | Fatigue Refresh v3 ad (52536048560580, KAFL007) inside Canada Engaged 365D & Followers ad set (6737602550176) - AD-LEVEL PAUSE PLAN, validated and ready for execution",
     "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry."
   },
+  "KL-2026-11-23-013257": {
+    "id": "KL-2026-11-23-013257",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Loomiere duo ad (Bronze Muse / Deep Purple) - new PAUSED ad build+activate plan in existing ad set 52564357579980, plus a critical video_id correction found during validation",
+    "follow_up": "marketing-lead: execute per the 10 steps above once Suraj approves via Telegram. After 3-4 days active, performance-analyst/lead-quality-analyst to check this ad's cost-per-conversation and lead quality against the ad set average per the rollback criteria."
+  },
   "KL-2026-11-23-CC-CANADA-REPLACEMENT-DIRECTIONAL": {
     "id": "KL-2026-11-23-CC-CANADA-REPLACEMENT-DIRECTIONAL",
     "date": "2026-11-23",
     "type": "decision",
     "subject": "Canada Engaged 365D & Followers - directional replacement note for the gap left by the Bloom Soiree pause (KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS), lower priority, partial treatment only this cycle",
     "follow_up": "media-buyer or next interactive creative-copywriter session: confirm the live object_story_spec/CTA mechanics actually available for the Canada Engaged 365D & Followers (INSTAGRAM_DIRECT) ad set, then adapt the Bottle Green or Lavender solo copy's garment-description sentence to whatever CTA/greeting pattern that destination actually supports; build as a new PAUSED ad replacing the gap left by the Bloom Soiree pause, Suraj build-tap before activating."
-  },
-  "KL-2026-11-23-CC-LOOMIERE-DUO-BRONZEDEEPPURPLE-COPY": {
-    "id": "KL-2026-11-23-CC-LOOMIERE-DUO-BRONZEDEEPPURPLE-COPY",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Loomiere duo Reel (instagram.com/reel/Df2QtIIREcb/, 17959799856256377, KA-100826-010 Bronze Muse + KA-231026-007 Deep Purple) - execution-ready copy for a new dedicated duo TEST ad, narrow-adapted from the existing Lavender/Bottle Green solo copy pattern per campaign-strategist's instruction",
-    "follow_up": "media-buyer: build as a new PAUSED ad in a Loomiere WhatsApp ad set (dedicated Loomiere IG Engaged 365D & Followers ad set, consistent with where the solo ads live), fetch the Reel's media_url fresh at build time, use the copy above, run standard text-field/name-collision checks, Suraj build-tap before activating. The creative-product-map.jsonl entry already exists for video_id 17959799856256377 (pre-build placeholder) - update/replace with the real Meta-assigned video_id once uploaded via POST advideos, per the same correction already applied for Burgundy Scalloped (2026-11-16)."
   },
   "KL-2026-11-23-CC-OWNCONTENT5-DEFERRED": {
     "id": "KL-2026-11-23-CC-OWNCONTENT5-DEFERRED",
