@@ -321,6 +321,13 @@
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
   },
+  "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT": {
+    "id": "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Two genuine fair-chance pause candidates (KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE) - PAUSE Metallic Blue Test now (clearest), HOLD Gun Metal Grey one more cycle (gradual, not all at once per section 3f)",
+    "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 52559142430580 (First Love | Metallic Blue (KAFL014) Test), Rs150/day freed. Route for Suraj approval. performance-analyst/lead-quality-analyst: re-check Gun Metal Greys cost/serious next review - if still >=1.5x normal with no improvement, bring back as a pause candidate."
+  },
   "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES": {
     "id": "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES",
     "date": "2026-11-23",
