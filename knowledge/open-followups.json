@@ -328,6 +328,13 @@
     "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) - PAUSE PLAN, validated and ready for execution",
     "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry. Do not re-activate informally per rollback criteria."
   },
+  "KL-2026-11-23-012048": {
+    "id": "KL-2026-11-23-012048",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "First Love | Metallic Blue (KAFL014) Test | India ad set (52559142430580) - PAUSE PLAN, validated and ready for execution",
+    "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry. Gun Metal Grey remains a separate, held decision - not part of this plan."
+  },
   "KL-2026-11-23-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-23-CS-BUDGETCALL-HOLD",
     "date": "2026-11-23",
