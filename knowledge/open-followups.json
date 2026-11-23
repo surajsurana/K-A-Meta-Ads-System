@@ -356,6 +356,13 @@
     "subject": "Loomiere duo Reel (instagram.com/reel/Df2QtIIREcb/, 17959799856256377, KA-100826-010 Bronze Muse + KA-231026-007 Deep Purple) - execution-ready copy for a new dedicated duo TEST ad, narrow-adapted from the existing Lavender/Bottle Green solo copy pattern per campaign-strategist's instruction",
     "follow_up": "media-buyer: build as a new PAUSED ad in a Loomiere WhatsApp ad set (dedicated Loomiere IG Engaged 365D & Followers ad set, consistent with where the solo ads live), fetch the Reel's media_url fresh at build time, use the copy above, run standard text-field/name-collision checks, Suraj build-tap before activating. The creative-product-map.jsonl entry already exists for video_id 17959799856256377 (pre-build placeholder) - update/replace with the real Meta-assigned video_id once uploaded via POST advideos, per the same correction already applied for Burgundy Scalloped (2026-11-16)."
   },
+  "KL-2026-11-23-CC-OWNCONTENT5-DEFERRED": {
+    "id": "KL-2026-11-23-CC-OWNCONTENT5-DEFERRED",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "5 remaining own-content pieces from KL-2026-11-23-CS-CONTENT-DISPOSITIONS (Rose Pink Banarasi Corset, White fringed-peplum Reel, Rust Orange brocade corset, Red quilted shawl-collar corset, Pink cage corset) - EXPLICITLY DEFERRED to next interactive session, no copy written this cycle",
+    "follow_up": "Next interactive session (creative-copywriter): review the actual source content for all 5 pieces (video/image), run Shopify search_products/get-product + Stitchflow cross-check per section 3d, write TEST copy briefs once identified (default path per campaign-strategist is TEST, not a fresh judgment call each time, since these are owned IP with no rights question and already SCM-rated strong on first look)."
+  },
   "KL-2026-11-23-CC-PROFILEVISITS-2NDCREATIVE-BRIEF": {
     "id": "KL-2026-11-23-CC-PROFILEVISITS-2NDCREATIVE-BRIEF",
     "date": "2026-11-23",
