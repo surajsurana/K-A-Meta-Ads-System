@@ -321,6 +321,13 @@
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
   },
+  "KL-2026-11-23-CS-CONTENT-DISPOSITIONS": {
+    "id": "KL-2026-11-23-CS-CONTENT-DISPOSITIONS",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Content routing - 5 UGC items and 6 own-content items from social-community-managers weekly sweep (KL-2026-11-23-CS-HANDOFF) - independent five-way dispositions, no suraj_rating present on any item (Instagram tags/own posts, not Media Library uploads, so that field does not apply here)",
+    "follow_up": "creative-copywriter: (1) identify/confirm SKU for UGC items (a) and (b), brief TEST ads for (a),(b),(c),(e) per the themes above (prioritize (c) and (e) first - strongest brand match and bridal-funnel gap respectively); (2) adapt proven Loomiere copy for the duo Reel (KA-100826-010/KA-231026-007); (3) run product-ID on the 5 unconfirmed own-content pieces and brief TEST ads once identified. media-buyer: build all as PAUSED ads for Suraj build-tap once copy is ready, per standard process. Item (d) stays HOLD, no copy brief yet."
+  },
   "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT": {
     "id": "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT",
     "date": "2026-11-23",
