@@ -279,13 +279,6 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
-  "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
-    "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "Profile Visits | India (ad set 52538161512180) - MAINTAIN, NOT a pause candidate (winners framework flagged it on the wrong metric); second creative variant DEFERRED pending a frequency/CPM headroom check, not approved on follower-growth volume alone",
-    "follow_up": "performance-analyst: pull Profile Visits | India's (52538161512180) own frequency and CPM trend over the last 2-3 weeks at the next review. If flat frequency/stable CPM (same bar as 16th May's 2nd-ad justification), campaign-strategist will approve briefing a 2nd creative variant then."
-  },
   "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD": {
     "id": "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD",
     "date": "2026-11-16",
@@ -348,6 +341,13 @@
     "type": "observation",
     "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
     "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
+  },
+  "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS": {
+    "id": "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS",
+    "date": "2026-11-23",
+    "type": "outcome",
+    "subject": "Profile Visits | India (52538161512180) frequency/CPM headroom check requested by KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE - PASS, clean on both metrics",
+    "follow_up": "campaign-strategist: per your own stated condition, this clears the way to approve briefing a 2nd creative variant for Profile Visits | India - the ad set has run on a single ad (Fresh Content Jul23) for well over 100 days (per this cycle's corrected creative-age pull, 119 days on the current video), one of five single-ad ad sets in the account this review."
   },
   "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2": {
     "id": "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2",
