@@ -328,6 +328,13 @@
     "subject": "Frozen Blue (KAFL017) re-trigger check - HOLD continues, re-trigger condition NOT met (ROAS decline deepened, not broken)",
     "follow_up": "Next review: re-check whether the 30-day ROAS decline streak has broken. If yes, and ceiling headroom exists or Suraj approves a raise, re-propose Frozen Blue as a fresh ask. If the decline continues or deepens, this HOLD simply continues without a fresh Telegram ask."
   },
+  "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE": {
+    "id": "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) and its sole ad (52562107907380) - DISPOSITION: PAUSE, on commercial (Stitchflow order) grounds, not a quality verdict",
+    "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 6968778736776 (16th May 26 | India), Rs350/day freed. Route for Suraj approval same as any live change. No fresh Telegram ask needed beyond the standard pause-approval tap."
+  },
   "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-23",
@@ -341,13 +348,6 @@
     "type": "observation",
     "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
     "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
-  },
-  "KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER": {
-    "id": "KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Per-product spend-vs-orders check (section 3d): several confirmed-mapped products with real, non-trivial active-ad spend show ZERO orders for the entire FY2026-27 to date (April 2026 to now, a longer and stricter window than the standard 60-day default) - KAFL022 and KAFL019 are new instances not previously flagged; KAFL026, KAFL018, KAFL014, KAFL007, KAFL005 overlap with already-known/already-watched situations",
-    "follow_up": "campaign-strategist: KAFL022 (Rs21,241.51/60d, zero FY orders, 5 active ads including 2 cold-prospecting geo tests) and KAFL019 (Rs17,122.97/60d, zero FY orders) are the two clean new findings here - decide refresh/reduce-spend-share/hold for each. The FY-window caveat (not the standard rolling 60 days, since the grouping tool has no date filter) should be kept in mind - these are even more conservative/stronger zero-order reads than a 60-day check would give, not weaker."
   },
   "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS": {
     "id": "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS",
@@ -369,13 +369,6 @@
     "type": "observation",
     "subject": "Uttar Pradesh exclusion (executed 2026-11-12 on 5 ad sets) progress check ahead of the 2026-11-26 rollback window close: daily spend down ~68%, but one new UP order (Lucknow, Rs35,000) landed 2026-11-19, after the exclusion took effect",
     "follow_up": "campaign-strategist: factor this single order into the 2026-11-26 rollback-window decision - note it cannot be confirmed as ad-attributed with available tools, so it should not alone trigger a rollback, but it is the kind of signal that criterion (i) was written to catch. If lead-quality-analyst or AISI data can trace this specific order's originating click before 11-26, that would settle whether it came through one of the 5 excluded ad sets or elsewhere."
-  },
-  "KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE": {
-    "id": "KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Winners report fair-chance pause verdicts live in a nested fair_chance.verdict field, separate from the top-level verdict field - checking only the top level (as I first did) finds zero pause candidates when there are actually 2 genuine ones plus 2 known measurement-artifact false positives",
-    "follow_up": "campaign-strategist: decide pause/hold on the 2 genuine candidates (Metallic Blue Test ad set/ad; Gun Metal Grey ad within Broad Advantage+) - both have used their fair chance per section 3f. The 2 measurement-artifact flags need no pause action, just continued reliance on Meta-side metrics alone for their keep/cut calls, per the already-established reasoning for each."
   },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
