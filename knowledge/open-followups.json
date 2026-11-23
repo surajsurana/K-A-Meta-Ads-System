@@ -321,12 +321,12 @@
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
   },
-  "KL-2026-11-23-CS-BUDGETCHECK": {
-    "id": "KL-2026-11-23-CS-BUDGETCHECK",
+  "KL-2026-11-23-CS-BUDGETCALL-HOLD": {
+    "id": "KL-2026-11-23-CS-BUDGETCALL-HOLD",
     "date": "2026-11-23",
     "type": "decision",
-    "subject": "Portfolio allocation check (section 3a/guardrail 10, four-part disclosure) - two ad-set pauses this cycle (16th May 26/Ice Blue, Metallic Blue Test), several ad-level-only pauses with no ad-set budget impact, no new spend proposed anywhere",
-    "follow_up": "media-buyer independently re-verifies the total fresh against the live account before finalizing any of this cycles pause plans. Re-sum at next review once all resolve, and size the KAFL022/KAFL019 cuts once ad-level identification is available."
+    "subject": "SS3e budget verdict - HOLD, 3rd consecutive review reaching the same mechanical outcome: behind-target-with-healthy-costs would normally justify an increase, but the ROAS safety check is conjunctive and overrides",
+    "follow_up": "Digest Budget line: Budget: stay at Rs6,126/day (Rs5,626/day after this cycles two pauses) - behind November target with healthy costs would normally justify more budget, but the 30-day ROAS safety check is conjunctive and overrides: 6th consecutive decline, 56% below its 90-day level and still deepening, so no increase; cost per serious enquiry/order are not worse, so no cut either - HOLD. (30-day ROAS 13.40x, normal 30.65x). Next review: re-check whether the ROAS decline streak has broken before revisiting either an increase or Frozen Blue/Australia re-tests; re-check whether the CTR recovery shows up in ROAS with the expected lag."
   },
   "KL-2026-11-23-CS-CONTENT-DISPOSITIONS": {
     "id": "KL-2026-11-23-CS-CONTENT-DISPOSITIONS",
@@ -369,13 +369,6 @@
     "type": "observation",
     "subject": "DOB coverage continues its unbroken growth streak - 10.2% (75/734), up from 9.7%/70/718 on 2026-11-16; known-DOB age profile and Meta's own age-bracket delivery continue to converge",
     "follow_up": "No action needed - continue the standing weekly re-check. Coverage growth remains too small/recent to shift weight meaningfully toward actual-age analysis over Meta's own bracket data; re-assess if/when coverage clears a higher share."
-  },
-  "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2": {
-    "id": "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "November 2026 sales tracking - still well behind pace on both orders and value, gap not closing as the month runs out of days",
-    "follow_up": "campaign-strategist: the behind-target case continues and the ROAS gate (companion entry this cycle) also continues to block an increase - same mechanical HOLD logic as 2026-11-16, now a 3rd consecutive review reaching it. Re-check at month close for the final MTD figure against both the 69-order/Rs53L target and the 62-74/Rs48-62L forecast range."
   },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
