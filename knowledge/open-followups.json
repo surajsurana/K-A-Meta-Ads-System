@@ -342,6 +342,13 @@
     "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) and its sole ad (52562107907380) - DISPOSITION: PAUSE, on commercial (Stitchflow order) grounds, not a quality verdict",
     "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 6968778736776 (16th May 26 | India), Rs350/day freed. Route for Suraj approval same as any live change. No fresh Telegram ask needed beyond the standard pause-approval tap."
   },
+  "KL-2026-11-23-CS-KAFL022-KAFL019-DISPOSITION": {
+    "id": "KL-2026-11-23-CS-KAFL022-KAFL019-DISPOSITION",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "KAFL022 (Ruby Pencil Skirt) and KAFL019 zero-FY-order new findings (KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER) - DISPOSITION: cut spend share on KAFL022s cold-prospecting geo-test ads specifically; reduce spend share on KAFL019 pending ad-level identification",
+    "follow_up": "performance-analyst: identify the specific 2 cold-prospecting geo-test ad IDs/ad sets for KAFL022 and the 2 ad IDs/ad set(s) for KAFL019 (with current daily budgets) next cycle, so media-buyer can build precise cut/pause plans. media-buyer: once identified, build plans sized per this disposition (cut KAFL022 cold-prospecting ads; reduce KAFL019 spend share up to 20%)."
+  },
   "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS": {
     "id": "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS",
     "date": "2026-11-23",
