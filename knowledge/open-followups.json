@@ -349,19 +349,19 @@
     "subject": "Gold Sculpted | Fatigue Refresh v3 ad (52536048560580, KAFL007) inside Canada Engaged 365D & Followers ad set (6737602550176) - AD-LEVEL PAUSE PLAN, validated and ready for execution",
     "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry."
   },
+  "KL-2026-11-23-CC-LOOMIERE-DUO-BRONZEDEEPPURPLE-COPY": {
+    "id": "KL-2026-11-23-CC-LOOMIERE-DUO-BRONZEDEEPPURPLE-COPY",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Loomiere duo Reel (instagram.com/reel/Df2QtIIREcb/, 17959799856256377, KA-100826-010 Bronze Muse + KA-231026-007 Deep Purple) - execution-ready copy for a new dedicated duo TEST ad, narrow-adapted from the existing Lavender/Bottle Green solo copy pattern per campaign-strategist's instruction",
+    "follow_up": "media-buyer: build as a new PAUSED ad in a Loomiere WhatsApp ad set (dedicated Loomiere IG Engaged 365D & Followers ad set, consistent with where the solo ads live), fetch the Reel's media_url fresh at build time, use the copy above, run standard text-field/name-collision checks, Suraj build-tap before activating. The creative-product-map.jsonl entry already exists for video_id 17959799856256377 (pre-build placeholder) - update/replace with the real Meta-assigned video_id once uploaded via POST advideos, per the same correction already applied for Burgundy Scalloped (2026-11-16)."
+  },
   "KL-2026-11-23-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-23-CS-BUDGETCALL-HOLD",
     "date": "2026-11-23",
     "type": "decision",
     "subject": "SS3e budget verdict - HOLD, 3rd consecutive review reaching the same mechanical outcome: behind-target-with-healthy-costs would normally justify an increase, but the ROAS safety check is conjunctive and overrides",
     "follow_up": "Digest Budget line: Budget: stay at Rs6,126/day (Rs5,626/day after this cycles two pauses) - behind November target with healthy costs would normally justify more budget, but the 30-day ROAS safety check is conjunctive and overrides: 6th consecutive decline, 56% below its 90-day level and still deepening, so no increase; cost per serious enquiry/order are not worse, so no cut either - HOLD. (30-day ROAS 13.40x, normal 30.65x). Next review: re-check whether the ROAS decline streak has broken before revisiting either an increase or Frozen Blue/Australia re-tests; re-check whether the CTR recovery shows up in ROAS with the expected lag."
-  },
-  "KL-2026-11-23-CS-CONTENT-DISPOSITIONS": {
-    "id": "KL-2026-11-23-CS-CONTENT-DISPOSITIONS",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Content routing - 5 UGC items and 6 own-content items from social-community-managers weekly sweep (KL-2026-11-23-CS-HANDOFF) - independent five-way dispositions, no suraj_rating present on any item (Instagram tags/own posts, not Media Library uploads, so that field does not apply here)",
-    "follow_up": "creative-copywriter: (1) identify/confirm SKU for UGC items (a) and (b), brief TEST ads for (a),(b),(c),(e) per the themes above (prioritize (c) and (e) first - strongest brand match and bridal-funnel gap respectively); (2) adapt proven Loomiere copy for the duo Reel (KA-100826-010/KA-231026-007); (3) run product-ID on the 5 unconfirmed own-content pieces and brief TEST ads once identified. media-buyer: build all as PAUSED ads for Suraj build-tap once copy is ready, per standard process. Item (d) stays HOLD, no copy brief yet."
   },
   "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES": {
     "id": "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES",
