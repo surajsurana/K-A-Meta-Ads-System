@@ -307,13 +307,6 @@
     "subject": "Daily heartbeat (2026-11-20) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (best cost/conversation in its ad set, WhatsApp-destination confirmed) with no new side-finding; stalled-content, catch-up, and rollback-window sweeps turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: First-Love-over-Loomiere rollback check (2026-11-21), Red Fishcut Corset recheck window (2026-11-16 to 11-23, still open), Uttar Pradesh geo-exclusion rollback window close (2026-11-26), or Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27)."
   },
-  "KL-2026-11-22-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-22-HEARTBEAT-DAILYCHECK",
-    "date": "2026-11-22",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
-    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
-  },
   "KL-2026-11-23-012023": {
     "id": "KL-2026-11-23-012023",
     "date": "2026-11-23",
@@ -404,6 +397,13 @@
     "type": "decision",
     "subject": "UP exclusion progress check (KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER) - the single post-exclusion Lucknow order does NOT trigger reconsideration; let the 2026-11-26 rollback window close on schedule, exclusion stays",
     "follow_up": "No action needed before 2026-11-26. If AISI/lead-quality-analyst can trace the Lucknow orders originating click before then, log it as a resolving data point either way. At window close, log the final read (spend-down confirmed, order count over the window) as the formal close-out of this disposition."
+  },
+  "KL-2026-11-23-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-23-HEARTBEAT-DAILYCHECK",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-23) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; due-today Red Fishcut Corset recheck window resolved CLEAN (no pause) on both cost and quality sides; one side-finding (Cut Out to Reveal apparent post-pause spend) investigated and confirmed false alarm; stalled-content, rollback-window, and new-launch-content sweeps turn up nothing new",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Uttar Pradesh geo-exclusion rollback window close (2026-11-26), Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), or Burgundy Scalloped Solo's own fair-chance spend gate being cleared (currently Rs211 of Rs7,029 needed)."
   },
   "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
