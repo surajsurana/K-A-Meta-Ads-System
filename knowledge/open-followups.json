@@ -188,13 +188,6 @@
     "subject": "scripts/send-telegram-approval-repost-choice.sh fails with BUTTON_DATA_INVALID on long descriptive plan ids",
     "follow_up": "Fix scripts/send-telegram-approval-repost-choice.sh (or telegram_approval_listener.py handle_paired_callback_query) to use a short opaque token for the combined Reject/Hold buttons instead of encoding both full plan ids directly, so this does not recur whenever a repost-choice pair happens to use longer descriptive ids."
   },
-  "KL-2026-10-30-PA-AUSTRALIA-DAY3READ": {
-    "id": "KL-2026-10-30-PA-AUSTRALIA-DAY3READ",
-    "date": "2026-10-30",
-    "type": "outcome",
-    "subject": "First Love | Cold Prospecting | Australia (ad set 52562820202180, ad 52562820223580) - day-3+ cost/CTR read",
-    "follow_up": "If still ~1 conversation after another 3-4 days (small total spend), sample will remain too thin for CTR/cost conclusions - consider whether a fixed spend/day threshold rather than day-count is more useful for this low-volume geo test."
-  },
   "KL-2026-10-31-SCM-AMBIGUOUS-5TH": {
     "id": "KL-2026-10-31-SCM-AMBIGUOUS-5TH",
     "date": "2026-10-31",
@@ -250,13 +243,6 @@
     "type": "observation",
     "subject": "30-day blended ROAS 32.1x (Oct6-Nov4 2026), down from the 39.55x baseline logged 2026-10-29; 90-day 36.4x essentially unchanged (36.24x prior); same 30 days last year approx 46.8x on Rs0.945L spend",
     "follow_up": "Next review: third 30-day reading needed before any ROAS-based cut consideration under SS3e two-reviews-in-a-row rule."
-  },
-  "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES": {
-    "id": "KL-2026-11-05-PA-GEO-REVERSE-NEWCOUNTRIES",
-    "date": "2026-11-05",
-    "type": "observation",
-    "subject": "Reverse geo check, trailing 90 days (2026-08-07 to 2026-11-04): Netherlands (1 order/Rs380,000), Malaysia (2/Rs203,820), Saudi Arabia (1/Rs201,422), Nigeria (2/Rs113,000), UAE (2/Rs113,000), Thailand (2/Rs79,500) all show real Stitchflow revenue with Rs0 Meta acquisition spend in-window; Singapore and Pakistan continue the pattern already logged 2026-10-19",
-    "follow_up": "campaign-strategist to weigh whether any of these (individually, Netherlands single large order is the standout) warrant a prospecting test per the eight geography dispositions; none has enough volume alone to justify more than a watch item yet."
   },
   "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH": {
     "id": "KL-2026-11-07-CS-COLDPROSPECTINGCANADA-WATCH",
@@ -355,6 +341,13 @@
     "type": "observation",
     "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
     "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
+  },
+  "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK": {
+    "id": "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
+    "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
   },
   "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE": {
     "id": "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE",
