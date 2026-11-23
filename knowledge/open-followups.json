@@ -349,12 +349,12 @@
     "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
     "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
   },
-  "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE": {
-    "id": "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE",
+  "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2": {
+    "id": "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2",
     "date": "2026-11-23",
     "type": "observation",
-    "subject": "30-day blended ROAS - 6th consecutive decline, now 13.40x vs its own 90-day level of 30.65x (56% below) - the decline has NOT broken, it has deepened sharply; the CTR recovery flagged 2026-11-21 did not carry through to ROAS, resolving that entry's own open question",
-    "follow_up": "campaign-strategist: re-walk the SS3e budget call and the Frozen Blue re-trigger condition with this reading - both mechanically stay HOLD given the 90-day baseline itself is now also falling, not just the 30-day figure. Worth considering directly why CTR recovered but ROAS did not - a real candidate is lagged conversion (bridal orders close weeks after an enquiry, so this week's order value still reflects the weak-CTR period, not the recovering one) rather than a failure of the recovery theory; if so, a ROAS recovery would be expected with a delay of several more weeks, not immediately. Re-check next review whether 90-day ROAS stabilizes or keeps falling - that would distinguish a temporary dip from a structural decline."
+    "subject": "November 2026 sales tracking - still well behind pace on both orders and value, gap not closing as the month runs out of days",
+    "follow_up": "campaign-strategist: the behind-target case continues and the ROAS gate (companion entry this cycle) also continues to block an increase - same mechanical HOLD logic as 2026-11-16, now a 3rd consecutive review reaching it. Re-check at month close for the final MTD figure against both the 69-order/Rs53L target and the 62-74/Rs48-62L forecast range."
   },
   "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER": {
     "id": "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER",
