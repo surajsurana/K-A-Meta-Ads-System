@@ -349,6 +349,13 @@
     "subject": "KAFL022 (Ruby Pencil Skirt) and KAFL019 zero-FY-order new findings (KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER) - DISPOSITION: cut spend share on KAFL022s cold-prospecting geo-test ads specifically; reduce spend share on KAFL019 pending ad-level identification",
     "follow_up": "performance-analyst: identify the specific 2 cold-prospecting geo-test ad IDs/ad sets for KAFL022 and the 2 ad IDs/ad set(s) for KAFL019 (with current daily budgets) next cycle, so media-buyer can build precise cut/pause plans. media-buyer: once identified, build plans sized per this disposition (cut KAFL022 cold-prospecting ads; reduce KAFL019 spend share up to 20%)."
   },
+  "KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE": {
+    "id": "KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Profile Visits | India (52538161512180) headroom check PASSED (KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS) - APPROVE briefing a 2nd creative variant, my own stated condition from KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE is now satisfied",
+    "follow_up": "creative-copywriter: brief a 2nd creative variant for Profile Visits | India (ad set 52538161512180), follower-growth objective, same brand/visual direction as Fresh Content Jul23 but genuinely distinct footage/angle so it is a real test, not a near-duplicate. media-buyer: build as a PAUSED new ad in the existing ad set once copy/creative is ready; no budget change, Suraj build-tap required as usual."
+  },
   "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS": {
     "id": "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS",
     "date": "2026-11-23",
@@ -369,13 +376,6 @@
     "type": "observation",
     "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
     "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
-  },
-  "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS": {
-    "id": "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS",
-    "date": "2026-11-23",
-    "type": "outcome",
-    "subject": "Profile Visits | India (52538161512180) frequency/CPM headroom check requested by KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE - PASS, clean on both metrics",
-    "follow_up": "campaign-strategist: per your own stated condition, this clears the way to approve briefing a 2nd creative variant for Profile Visits | India - the ad set has run on a single ad (Fresh Content Jul23) for well over 100 days (per this cycle's corrected creative-age pull, 119 days on the current video), one of five single-ad ad sets in the account this review."
   },
   "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2": {
     "id": "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2",
