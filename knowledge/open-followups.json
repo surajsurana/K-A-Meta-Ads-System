@@ -321,13 +321,6 @@
     "subject": "Profile Visits | India (ad set 52538161512180) - MAINTAIN, NOT a pause candidate (winners framework flagged it on the wrong metric); second creative variant DEFERRED pending a frequency/CPM headroom check, not approved on follower-growth volume alone",
     "follow_up": "performance-analyst: pull Profile Visits | India's (52538161512180) own frequency and CPM trend over the last 2-3 weeks at the next review. If flat frequency/stable CPM (same bar as 16th May's 2nd-ad justification), campaign-strategist will approve briefing a 2nd creative variant then."
   },
-  "KL-2026-11-16-CS-RECONCILE-16THMAY": {
-    "id": "KL-2026-11-16-CS-RECONCILE-16THMAY",
-    "date": "2026-11-16",
-    "type": "decision",
-    "subject": "Correction: KL-2026-11-16-CS-16THMAY-RESEND retracted (stale info, omitted linked_to); Ice Blue KAFL026 left undecided pending its own enquiry-quality read; corrected portfolio total for this cycle restated",
-    "follow_up": "Next review: lead-quality-analyst to run a targeted enquiry-quality read on Ice Blue KAFL026 (52562107907380) specifically, not just ad-set/account aggregates, before any pause/keep verdict on it. Weekly digest for this cycle should show only the Crimson Beaded pause as a pending Telegram ask; 16th May shows no open action."
-  },
   "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD": {
     "id": "KL-2026-11-16-CS-SKUUNCONFIRMED-HOLD",
     "date": "2026-11-16",
@@ -376,5 +369,12 @@
     "type": "observation",
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
+  },
+  "KL-2026-11-23-LQ-ICEBLUEKAFL026-INSTADM-RESOLVED": {
+    "id": "KL-2026-11-23-LQ-ICEBLUEKAFL026-INSTADM-RESOLVED",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
+    "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
   }
 }
