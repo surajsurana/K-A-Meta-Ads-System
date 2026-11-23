@@ -370,6 +370,13 @@
     "subject": "Stale creative cluster (KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE) - per-ad dispositions: PAUSE the 495-day Bloom Soiree ad and the KAFL007 sibling; MAINTAIN the 292-day Nikki Mehra ad (still converting); MAINTAIN/schedule-refresh the 122-126-day generic-retargeting cluster; recommend broadening the standing creative-currency sweep",
     "follow_up": "media-buyer: build and validate two PAUSE plans - (a) ad 6970869037976 (18th May 26 | Can | Multi Ads, Bloom Soiree), (b) ad 52536048560580 (Gold Sculpted | Fatigue Refresh v3, KAFL007 sibling). Both are ad-level pauses within multi-ad ad sets - no ad-set daily_budget change, Meta reallocates each ad sets freed share to its remaining siblings. creative-copywriter: when capacity allows, brief a current-collection replacement for Canada Engaged remarketing to fill the gap the Bloom Soiree pause leaves. Whoever maintains docs/architecture.md: consider broadening section 3cs standing WhatsApp-only creative-currency sweep to include INSTAGRAM_DIRECT remarketing ad sets, per the process recommendation above - this is a recommendation for Suraj/the maintaining session, not something I am changing myself."
   },
+  "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ": {
+    "id": "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "UP exclusion progress check (KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER) - the single post-exclusion Lucknow order does NOT trigger reconsideration; let the 2026-11-26 rollback window close on schedule, exclusion stays",
+    "follow_up": "No action needed before 2026-11-26. If AISI/lead-quality-analyst can trace the Lucknow orders originating click before then, log it as a resolving data point either way. At window close, log the final read (spend-down confirmed, order count over the window) as the formal close-out of this disposition."
+  },
   "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-23",
@@ -383,13 +390,6 @@
     "type": "observation",
     "subject": "November 2026 sales tracking - still well behind pace on both orders and value, gap not closing as the month runs out of days",
     "follow_up": "campaign-strategist: the behind-target case continues and the ROAS gate (companion entry this cycle) also continues to block an increase - same mechanical HOLD logic as 2026-11-16, now a 3rd consecutive review reaching it. Re-check at month close for the final MTD figure against both the 69-order/Rs53L target and the 62-74/Rs48-62L forecast range."
-  },
-  "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER": {
-    "id": "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Uttar Pradesh exclusion (executed 2026-11-12 on 5 ad sets) progress check ahead of the 2026-11-26 rollback window close: daily spend down ~68%, but one new UP order (Lucknow, Rs35,000) landed 2026-11-19, after the exclusion took effect",
-    "follow_up": "campaign-strategist: factor this single order into the 2026-11-26 rollback-window decision - note it cannot be confirmed as ad-attributed with available tools, so it should not alone trigger a rollback, but it is the kind of signal that criterion (i) was written to catch. If lead-quality-analyst or AISI data can trace this specific order's originating click before 11-26, that would settle whether it came through one of the 5 excluded ad sets or elsewhere."
   },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
