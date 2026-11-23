@@ -342,6 +342,13 @@
     "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) and its sole ad (52562107907380) - DISPOSITION: PAUSE, on commercial (Stitchflow order) grounds, not a quality verdict",
     "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 6968778736776 (16th May 26 | India), Rs350/day freed. Route for Suraj approval same as any live change. No fresh Telegram ask needed beyond the standard pause-approval tap."
   },
+  "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS": {
+    "id": "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Stale creative cluster (KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE) - per-ad dispositions: PAUSE the 495-day Bloom Soiree ad and the KAFL007 sibling; MAINTAIN the 292-day Nikki Mehra ad (still converting); MAINTAIN/schedule-refresh the 122-126-day generic-retargeting cluster; recommend broadening the standing creative-currency sweep",
+    "follow_up": "media-buyer: build and validate two PAUSE plans - (a) ad 6970869037976 (18th May 26 | Can | Multi Ads, Bloom Soiree), (b) ad 52536048560580 (Gold Sculpted | Fatigue Refresh v3, KAFL007 sibling). Both are ad-level pauses within multi-ad ad sets - no ad-set daily_budget change, Meta reallocates each ad sets freed share to its remaining siblings. creative-copywriter: when capacity allows, brief a current-collection replacement for Canada Engaged remarketing to fill the gap the Bloom Soiree pause leaves. Whoever maintains docs/architecture.md: consider broadening section 3cs standing WhatsApp-only creative-currency sweep to include INSTAGRAM_DIRECT remarketing ad sets, per the process recommendation above - this is a recommendation for Suraj/the maintaining session, not something I am changing myself."
+  },
   "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-23",
