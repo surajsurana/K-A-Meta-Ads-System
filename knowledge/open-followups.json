@@ -230,13 +230,6 @@
     "subject": "Meta platform intelligence - Instant Forms qualification features (conditional logic, SMS OTP verification, work-email filter, in-form AI agent, new 'Website and Instant Forms' default) - new context for the still-open Lead Ads proposal KL-2026-08-20-063100, not re-proposed from scratch",
     "follow_up": "When KL-2026-08-20-063100 is next revisited with Suraj, surface conditional-logic/work-email-filter as a concrete answer to open question (b) on qualifying-question design, alongside last cycle's appointment-booking answer to question (a). Question (c) (who monitors/follows up) remains unanswered by any platform feature and still needs a direct decision."
   },
-  "KL-2026-11-04-EXEC-KAFL007-PAUSED": {
-    "id": "KL-2026-11-04-EXEC-KAFL007-PAUSED",
-    "date": "2026-11-04",
-    "type": "change",
-    "subject": "First Love ad set 52562110311980 (Gold Sculpted, KAFL007) and its ad 52562110511780 paused per approved plan",
-    "follow_up": "This pause stands indefinitely per the plan own rollback criteria - do not re-activate informally; re-activating requires a fresh dated plan built on new independent evidence (a real Stitchflow order for KAFL007 placed since this pause, or a materially different lead-quality signal that did not exist at pause time)."
-  },
   "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH": {
     "id": "KL-2026-11-05-CS-GEO-NETHERLANDS-WATCH",
     "date": "2026-11-05",
@@ -300,13 +293,6 @@
     "subject": "Lavender Solo (ad 52565052977180, Loomiere IG Engaged) Meta-vs-AISI mismatch - resolves KL-2026-11-11-PA-HEARTBEAT-LAVSOLO-AISIMETAMISMATCH as likely normal attrition, NOT a confirmed second Bottle-Green-Solo-style referral-matching gap",
     "follow_up": "No further action needed to confirm/deny a referral-matching mechanism unless the gap widens (e.g. match rate drops toward 0 as spend continues) - if it does, escalate the same way Bottle Green Solo was. Otherwise treat the 4 AISI-matched enquiries (0 junk, 0 serious so far, n=4) as this ad's real quality read going forward, cost-per-conversation and cost-per-serious-enquiry verdicts both still blocked by sample size alone (n=4), not by a data gap."
   },
-  "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP": {
-    "id": "KL-2026-11-12-PA-WHATSAPP-CREATIVECURRENCY-SWEEP",
-    "date": "2026-11-12",
-    "type": "observation",
-    "subject": "WhatsApp-destination creative-currency sweep - no collection-mismatch found, but 5 of 10 ads in First Love Broad Advantage+ are the oldest active creative in the account (101-115 days); 2 Canada DCO ads carry a blank headline slot",
-    "follow_up": "campaign-strategist: weigh refreshing the 5 oldest First Love Broad Advantage+ ads (115d/101d cluster) given newer First Love test creative already exists elsewhere in the account; creative-copywriter to remove/replace the blank first title variant on the 2 Fatigue Refresh v3 Canada ads - low severity, cheap fix."
-  },
   "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE": {
     "id": "KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE",
     "date": "2026-11-16",
@@ -369,6 +355,13 @@
     "type": "observation",
     "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
     "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
+  },
+  "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE": {
+    "id": "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Creative-age pull methodology corrected - AdCreative top-level video_id field is NOT the serving video; must use object_story_spec.video_data.video_id (or asset_feed_spec.videos for DCO). Correction surfaces much older stale creative than any prior sweep found, including a 495-day-old ad already flagged once before and never fixed.",
+    "follow_up": "campaign-strategist: decide disposition on the 495-day and 292-day ads specifically (refresh, pause, or accept) - both are confirmed-mapped (one explicitly off-collection-tagline, one a legitimate but very old custom piece) and both are still spending real money every day. Also decide whether the KAFL007 pause verdict should extend to the Fatigue Refresh v3 sibling ad (52536048560580). Also worth a standing decision on whether the WhatsApp-only creative-currency sweep should be broadened to cover INSTAGRAM_DIRECT remarketing ad sets going forward, since this review only caught it via a one-off broadened pull, not the standing check."
   },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
