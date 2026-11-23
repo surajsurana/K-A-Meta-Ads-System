@@ -363,6 +363,13 @@
     "subject": "Profile Visits | India (ad set 52538161512180) - copy/creative brief for a 2nd creative variant, approved per KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE",
     "follow_up": "media-buyer: before building, pull Fresh Content Jul23's actual creative/copy (Meta tool access this session did not have) and confirm this brief is a real test, not a near-duplicate, per campaign-strategist's condition; source real B-roll footage matching the direction above (Media Library or existing unused footage, not stock); confirm the exact CTA type available for this objective/placement before finalizing copy; build as a new PAUSED ad within the existing ad set (52538161512180), no budget change, standard Suraj build-tap before going live."
   },
+  "KL-2026-11-23-CC-UGC-BATCH-COPY": {
+    "id": "KL-2026-11-23-CC-UGC-BATCH-COPY",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "UGC batch (a,b,c,e) from KL-2026-11-23-CS-CONTENT-DISPOSITIONS - TEST copy briefs, descriptive-only (no SKU named), product-ID deferred to next interactive session",
+    "follow_up": "Next interactive session (creative-copywriter): run Shopify search_products/get-product + Stitchflow cross-check for all 4 items (c and e first per priority), or send the Telegram photo-confirmation check (scripts/send-product-id-check.sh) if uncertain - this needs Meta/Instagram Graph API access to pull the real source photo too, which this dispatch also lacked. media-buyer: build all 4 as PAUSED TEST ads using the copy above once creative assets are sourced; do not block the build on product-ID per standing policy, but do not record a creative-product-map entry with a guessed SKU - leave products: [] until a real identification exists, same pattern as the 2026-11-08 Loomiere gold-peplum/gold-sweetheart entries."
+  },
   "KL-2026-11-23-CS-BUDGETCALL-HOLD": {
     "id": "KL-2026-11-23-CS-BUDGETCALL-HOLD",
     "date": "2026-11-23",
