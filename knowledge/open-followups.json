@@ -356,6 +356,13 @@
     "subject": "30-day blended ROAS - 6th consecutive decline, now 13.40x vs its own 90-day level of 30.65x (56% below) - the decline has NOT broken, it has deepened sharply; the CTR recovery flagged 2026-11-21 did not carry through to ROAS, resolving that entry's own open question",
     "follow_up": "campaign-strategist: re-walk the SS3e budget call and the Frozen Blue re-trigger condition with this reading - both mechanically stay HOLD given the 90-day baseline itself is now also falling, not just the 30-day figure. Worth considering directly why CTR recovered but ROAS did not - a real candidate is lagged conversion (bridal orders close weeks after an enquiry, so this week's order value still reflects the weak-CTR period, not the recovering one) rather than a failure of the recovery theory; if so, a ROAS recovery would be expected with a delay of several more weeks, not immediately. Re-check next review whether 90-day ROAS stabilizes or keeps falling - that would distinguish a temporary dip from a structural decline."
   },
+  "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER": {
+    "id": "KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Uttar Pradesh exclusion (executed 2026-11-12 on 5 ad sets) progress check ahead of the 2026-11-26 rollback window close: daily spend down ~68%, but one new UP order (Lucknow, Rs35,000) landed 2026-11-19, after the exclusion took effect",
+    "follow_up": "campaign-strategist: factor this single order into the 2026-11-26 rollback-window decision - note it cannot be confirmed as ad-attributed with available tools, so it should not alone trigger a rollback, but it is the kind of signal that criterion (i) was written to catch. If lead-quality-analyst or AISI data can trace this specific order's originating click before 11-26, that would settle whether it came through one of the 5 excluded ad sets or elsewhere."
+  },
   "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE": {
     "id": "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE",
     "date": "2026-11-23",
