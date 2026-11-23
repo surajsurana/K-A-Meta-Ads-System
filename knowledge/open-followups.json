@@ -363,6 +363,13 @@
     "subject": "Uttar Pradesh exclusion (executed 2026-11-12 on 5 ad sets) progress check ahead of the 2026-11-26 rollback window close: daily spend down ~68%, but one new UP order (Lucknow, Rs35,000) landed 2026-11-19, after the exclusion took effect",
     "follow_up": "campaign-strategist: factor this single order into the 2026-11-26 rollback-window decision - note it cannot be confirmed as ad-attributed with available tools, so it should not alone trigger a rollback, but it is the kind of signal that criterion (i) was written to catch. If lead-quality-analyst or AISI data can trace this specific order's originating click before 11-26, that would settle whether it came through one of the 5 excluded ad sets or elsewhere."
   },
+  "KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE": {
+    "id": "KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Winners report fair-chance pause verdicts live in a nested fair_chance.verdict field, separate from the top-level verdict field - checking only the top level (as I first did) finds zero pause candidates when there are actually 2 genuine ones plus 2 known measurement-artifact false positives",
+    "follow_up": "campaign-strategist: decide pause/hold on the 2 genuine candidates (Metallic Blue Test ad set/ad; Gun Metal Grey ad within Broad Advantage+) - both have used their fair chance per section 3f. The 2 measurement-artifact flags need no pause action, just continued reliance on Meta-side metrics alone for their keep/cut calls, per the already-established reasoning for each."
+  },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
     "date": "2026-11-23",
