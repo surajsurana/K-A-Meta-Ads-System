@@ -62,13 +62,6 @@
     "subject": "First Love | A Glass Neckline, Fully Hand Embroidered. | Interest Stack (ad 52556519208180) criterion (c) recheck - trend CONTINUED through last complete day, PASS",
     "follow_up": "No live action. If a future review wants a genuinely clean 10-05 reading, re-pull later in the day once it is no longer partial - not required this cycle since the 4-day trend already resolved the standing criterion (c) question."
   },
-  "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG": {
-    "id": "KL-2026-10-05-CS-CUSTOMISEBUCKET-FLAG",
-    "date": "2026-10-05",
-    "type": "decision",
-    "subject": "Stitchflow generic 'Customise Outfit' catch-all SKU (KA-270326-01, 66 orders in trailing 60 days per KL-2026-10-05-070200) - recommend flagging to Suraj as an ops/data-entry conversation, not an ads action",
-    "follow_up": "No ads action. Awaiting Suraj's read on whether this is worth raising with the Stitchflow team."
-  },
   "KL-2026-10-12-PA-BLENDED-WINDOW": {
     "id": "KL-2026-10-12-PA-BLENDED-WINDOW",
     "date": "2026-10-12",
@@ -328,13 +321,6 @@
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
   },
-  "KL-2026-11-23-LQ-ICEBLUEKAFL026-INSTADM-RESOLVED": {
-    "id": "KL-2026-11-23-LQ-ICEBLUEKAFL026-INSTADM-RESOLVED",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
-    "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
-  },
   "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
     "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
     "date": "2026-11-23",
@@ -348,6 +334,13 @@
     "type": "observation",
     "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
     "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
+  },
+  "KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER": {
+    "id": "KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "Per-product spend-vs-orders check (section 3d): several confirmed-mapped products with real, non-trivial active-ad spend show ZERO orders for the entire FY2026-27 to date (April 2026 to now, a longer and stricter window than the standard 60-day default) - KAFL022 and KAFL019 are new instances not previously flagged; KAFL026, KAFL018, KAFL014, KAFL007, KAFL005 overlap with already-known/already-watched situations",
+    "follow_up": "campaign-strategist: KAFL022 (Rs21,241.51/60d, zero FY orders, 5 active ads including 2 cold-prospecting geo tests) and KAFL019 (Rs17,122.97/60d, zero FY orders) are the two clean new findings here - decide refresh/reduce-spend-share/hold for each. The FY-window caveat (not the standard rolling 60 days, since the grouping tool has no date filter) should be kept in mind - these are even more conservative/stronger zero-order reads than a 60-day check would give, not weaker."
   },
   "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS": {
     "id": "KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS",
@@ -369,13 +362,6 @@
     "type": "observation",
     "subject": "Uttar Pradesh exclusion (executed 2026-11-12 on 5 ad sets) progress check ahead of the 2026-11-26 rollback window close: daily spend down ~68%, but one new UP order (Lucknow, Rs35,000) landed 2026-11-19, after the exclusion took effect",
     "follow_up": "campaign-strategist: factor this single order into the 2026-11-26 rollback-window decision - note it cannot be confirmed as ad-attributed with available tools, so it should not alone trigger a rollback, but it is the kind of signal that criterion (i) was written to catch. If lead-quality-analyst or AISI data can trace this specific order's originating click before 11-26, that would settle whether it came through one of the 5 excluded ad sets or elsewhere."
-  },
-  "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE": {
-    "id": "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Creative-age pull methodology corrected - AdCreative top-level video_id field is NOT the serving video; must use object_story_spec.video_data.video_id (or asset_feed_spec.videos for DCO). Correction surfaces much older stale creative than any prior sweep found, including a 495-day-old ad already flagged once before and never fixed.",
-    "follow_up": "campaign-strategist: decide disposition on the 495-day and 292-day ads specifically (refresh, pause, or accept) - both are confirmed-mapped (one explicitly off-collection-tagline, one a legitimate but very old custom piece) and both are still spending real money every day. Also decide whether the KAFL007 pause verdict should extend to the Fatigue Refresh v3 sibling ad (52536048560580). Also worth a standing decision on whether the WhatsApp-only creative-currency sweep should be broadened to cover INSTAGRAM_DIRECT remarketing ad sets going forward, since this review only caught it via a one-off broadened pull, not the standing check."
   },
   "KL-2026-11-23-ambiguous-comment": {
     "id": "KL-2026-11-23-ambiguous-comment",
