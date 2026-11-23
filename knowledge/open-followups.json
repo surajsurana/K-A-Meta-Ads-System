@@ -356,6 +356,13 @@
     "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
     "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
   },
+  "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE": {
+    "id": "KL-2026-11-23-PA-ROAS-6THDECLINE-CTRDIVERGENCE",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "30-day blended ROAS - 6th consecutive decline, now 13.40x vs its own 90-day level of 30.65x (56% below) - the decline has NOT broken, it has deepened sharply; the CTR recovery flagged 2026-11-21 did not carry through to ROAS, resolving that entry's own open question",
+    "follow_up": "campaign-strategist: re-walk the SS3e budget call and the Frozen Blue re-trigger condition with this reading - both mechanically stay HOLD given the 90-day baseline itself is now also falling, not just the 30-day figure. Worth considering directly why CTR recovered but ROAS did not - a real candidate is lagged conversion (bridal orders close weeks after an enquiry, so this week's order value still reflects the weak-CTR period, not the recovering one) rather than a failure of the recovery theory; if so, a ROAS recovery would be expected with a delay of several more weeks, not immediately. Re-check next review whether 90-day ROAS stabilizes or keeps falling - that would distinguish a temporary dip from a structural decline."
+  },
   "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE": {
     "id": "KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE",
     "date": "2026-11-23",
