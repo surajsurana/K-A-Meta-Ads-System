@@ -321,19 +321,19 @@
     "subject": "Daily heartbeat (2026-11-22) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (6 days old, second-best cost/conversation in its ad set, fair chance not yet reached); due-now sweep, stalled-content, and rollback-window sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Red Fishcut Corset recheck window closing 2026-11-23, Uttar Pradesh geo-exclusion rollback window close 2026-11-26, Bottle Green Solo/Burgundy Scalloped exception window 2026-11-27, or Burgundy Scalloped Solo own fair-chance crossing (7 days active / Rs7,047 cumulative spend per today winners/latest.json)."
   },
+  "KL-2026-11-23-CS-BUDGETCHECK": {
+    "id": "KL-2026-11-23-CS-BUDGETCHECK",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Portfolio allocation check (section 3a/guardrail 10, four-part disclosure) - two ad-set pauses this cycle (16th May 26/Ice Blue, Metallic Blue Test), several ad-level-only pauses with no ad-set budget impact, no new spend proposed anywhere",
+    "follow_up": "media-buyer independently re-verifies the total fresh against the live account before finalizing any of this cycles pause plans. Re-sum at next review once all resolve, and size the KAFL022/KAFL019 cuts once ad-level identification is available."
+  },
   "KL-2026-11-23-CS-CONTENT-DISPOSITIONS": {
     "id": "KL-2026-11-23-CS-CONTENT-DISPOSITIONS",
     "date": "2026-11-23",
     "type": "decision",
     "subject": "Content routing - 5 UGC items and 6 own-content items from social-community-managers weekly sweep (KL-2026-11-23-CS-HANDOFF) - independent five-way dispositions, no suraj_rating present on any item (Instagram tags/own posts, not Media Library uploads, so that field does not apply here)",
     "follow_up": "creative-copywriter: (1) identify/confirm SKU for UGC items (a) and (b), brief TEST ads for (a),(b),(c),(e) per the themes above (prioritize (c) and (e) first - strongest brand match and bridal-funnel gap respectively); (2) adapt proven Loomiere copy for the duo Reel (KA-100826-010/KA-231026-007); (3) run product-ID on the 5 unconfirmed own-content pieces and brief TEST ads once identified. media-buyer: build all as PAUSED ads for Suraj build-tap once copy is ready, per standard process. Item (d) stays HOLD, no copy brief yet."
-  },
-  "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT": {
-    "id": "KL-2026-11-23-CS-FAIRCHANCE-PAUSEVERDICT",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Two genuine fair-chance pause candidates (KL-2026-11-23-PA-WINNERS-PAUSECANDIDATES-FAIRCHANCE) - PAUSE Metallic Blue Test now (clearest), HOLD Gun Metal Grey one more cycle (gradual, not all at once per section 3f)",
-    "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 52559142430580 (First Love | Metallic Blue (KAFL014) Test), Rs150/day freed. Route for Suraj approval. performance-analyst/lead-quality-analyst: re-check Gun Metal Greys cost/serious next review - if still >=1.5x normal with no improvement, bring back as a pause candidate."
   },
   "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES": {
     "id": "KL-2026-11-23-CS-FROZENBLUE-HOLD-CONTINUES",
@@ -349,33 +349,12 @@
     "subject": "Australia and UK reverse-geo finding (KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK) - DISPOSITION: both MAINTAIN/no new spend this cycle, but for different reasons; Australia gets the same HOLD-with-re-trigger treatment as Frozen Blue, not a flat no",
     "follow_up": "Re-propose a longer, genuinely time-boxed Australia geo-test once the 30-day ROAS decline streak breaks (same re-trigger as Frozen Blue) - no fresh Telegram ask until then. UK: continue monitoring for revenue accumulation without active spend at each review; re-weigh only if that trend becomes clear over several reviews, not on a single reading."
   },
-  "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE": {
-    "id": "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) and its sole ad (52562107907380) - DISPOSITION: PAUSE, on commercial (Stitchflow order) grounds, not a quality verdict",
-    "follow_up": "media-buyer: build and validate a PAUSE plan for ad set 6968778736776 (16th May 26 | India), Rs350/day freed. Route for Suraj approval same as any live change. No fresh Telegram ask needed beyond the standard pause-approval tap."
-  },
-  "KL-2026-11-23-CS-KAFL022-KAFL019-DISPOSITION": {
-    "id": "KL-2026-11-23-CS-KAFL022-KAFL019-DISPOSITION",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "KAFL022 (Ruby Pencil Skirt) and KAFL019 zero-FY-order new findings (KL-2026-11-23-PA-PERPRODUCT-ZEROFYORDER-CLUSTER) - DISPOSITION: cut spend share on KAFL022s cold-prospecting geo-test ads specifically; reduce spend share on KAFL019 pending ad-level identification",
-    "follow_up": "performance-analyst: identify the specific 2 cold-prospecting geo-test ad IDs/ad sets for KAFL022 and the 2 ad IDs/ad set(s) for KAFL019 (with current daily budgets) next cycle, so media-buyer can build precise cut/pause plans. media-buyer: once identified, build plans sized per this disposition (cut KAFL022 cold-prospecting ads; reduce KAFL019 spend share up to 20%)."
-  },
   "KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE": {
     "id": "KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE",
     "date": "2026-11-23",
     "type": "decision",
     "subject": "Profile Visits | India (52538161512180) headroom check PASSED (KL-2026-11-23-PA-PROFILEVISITS-HEADROOM-PASS) - APPROVE briefing a 2nd creative variant, my own stated condition from KL-2026-11-16-CS-PROFILEVISITS-MAINTAIN-DEFERCREATIVE is now satisfied",
     "follow_up": "creative-copywriter: brief a 2nd creative variant for Profile Visits | India (ad set 52538161512180), follower-growth objective, same brand/visual direction as Fresh Content Jul23 but genuinely distinct footage/angle so it is a real test, not a near-duplicate. media-buyer: build as a PAUSED new ad in the existing ad set once copy/creative is ready; no budget change, Suraj build-tap required as usual."
-  },
-  "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS": {
-    "id": "KL-2026-11-23-CS-STALECREATIVE-DISPOSITIONS",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Stale creative cluster (KL-2026-11-23-PA-VIDEOID-METHODCORRECTION-STALECREATIVE) - per-ad dispositions: PAUSE the 495-day Bloom Soiree ad and the KAFL007 sibling; MAINTAIN the 292-day Nikki Mehra ad (still converting); MAINTAIN/schedule-refresh the 122-126-day generic-retargeting cluster; recommend broadening the standing creative-currency sweep",
-    "follow_up": "media-buyer: build and validate two PAUSE plans - (a) ad 6970869037976 (18th May 26 | Can | Multi Ads, Bloom Soiree), (b) ad 52536048560580 (Gold Sculpted | Fatigue Refresh v3, KAFL007 sibling). Both are ad-level pauses within multi-ad ad sets - no ad-set daily_budget change, Meta reallocates each ad sets freed share to its remaining siblings. creative-copywriter: when capacity allows, brief a current-collection replacement for Canada Engaged remarketing to fill the gap the Bloom Soiree pause leaves. Whoever maintains docs/architecture.md: consider broadening section 3cs standing WhatsApp-only creative-currency sweep to include INSTAGRAM_DIRECT remarketing ad sets, per the process recommendation above - this is a recommendation for Suraj/the maintaining session, not something I am changing myself."
   },
   "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ": {
     "id": "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ",
