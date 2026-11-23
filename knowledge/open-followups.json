@@ -335,6 +335,13 @@
     "subject": "Frozen Blue (KAFL017) re-trigger check - HOLD continues, re-trigger condition NOT met (ROAS decline deepened, not broken)",
     "follow_up": "Next review: re-check whether the 30-day ROAS decline streak has broken. If yes, and ceiling headroom exists or Suraj approves a raise, re-propose Frozen Blue as a fresh ask. If the decline continues or deepens, this HOLD simply continues without a fresh Telegram ask."
   },
+  "KL-2026-11-23-CS-GEO-AUSTRALIA-UK-DISPOSITION": {
+    "id": "KL-2026-11-23-CS-GEO-AUSTRALIA-UK-DISPOSITION",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Australia and UK reverse-geo finding (KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK) - DISPOSITION: both MAINTAIN/no new spend this cycle, but for different reasons; Australia gets the same HOLD-with-re-trigger treatment as Frozen Blue, not a flat no",
+    "follow_up": "Re-propose a longer, genuinely time-boxed Australia geo-test once the 30-day ROAS decline streak breaks (same re-trigger as Frozen Blue) - no fresh Telegram ask until then. UK: continue monitoring for revenue accumulation without active spend at each review; re-weigh only if that trend becomes clear over several reviews, not on a single reading."
+  },
   "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE": {
     "id": "KL-2026-11-23-CS-ICEBLUEKAFL026-PAUSE",
     "date": "2026-11-23",
@@ -369,13 +376,6 @@
     "type": "observation",
     "subject": "DOB coverage continues its unbroken growth streak - 10.2% (75/734), up from 9.7%/70/718 on 2026-11-16; known-DOB age profile and Meta's own age-bracket delivery continue to converge",
     "follow_up": "No action needed - continue the standing weekly re-check. Coverage growth remains too small/recent to shift weight meaningfully toward actual-age analysis over Meta's own bracket data; re-assess if/when coverage clears a higher share."
-  },
-  "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK": {
-    "id": "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK",
-    "date": "2026-11-23",
-    "type": "observation",
-    "subject": "Reverse-geo check (real revenue vs near-zero acquisition spend, both directions per standing instruction): Australia and UK both show real, individual-customer revenue with their dedicated prospecting tests now paused/near-zero spend",
-    "follow_up": "campaign-strategist: weigh whether Australia (3 orders/Rs252,000 on a test that ran only a few days before pausing) deserves a second, longer-running prospecting attempt rather than treating the brief October test as a concluded read - the order volume here is higher than the test itself ever got to observe. UK already had a full test and paused for cause; re-weigh only if UK revenue continues to accumulate without any active spend."
   },
   "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2": {
     "id": "KL-2026-11-23-PA-SALESFORECAST-2026-11-UPDATE2",
