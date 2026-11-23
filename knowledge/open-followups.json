@@ -335,6 +335,13 @@
     "subject": "Ice Blue KAFL026 (ad 52562107907380, ad set 16th May 26 | India / 6968778736776) - resolves KL-2026-11-16-CS-RECONCILE-16THMAY follow-up: this ad is itself an Instagram-DM destination ad (call_to_action.type=INSTAGRAM_MESSAGE/app_destination=INSTAGRAM_DIRECT), so AISI (WhatsApp-only) has ZERO matched enquiry rows for it despite Rs10,344 spend and 53 Meta messaging_conversation_started_7d actions - it cannot be lead-quality judged by this feed at all, same structural gap as the explicitly-excluded Instagram-DM ad sets, not a referral-matching bug",
     "follow_up": "campaign-strategist: Ice Blue KAFL026 cannot get a pause/keep verdict from lead-quality-analyst ever, on this feed - it is an Instagram-DM ad like the two already-excluded ad sets, blocked on backlog #6 (Instagram DM leads), not on sample size or a matching bug. Any keep/cut call on it has to be made on Meta-side metrics (cost per conversation, frequency) alone, the same basis already used for the other two excluded ad sets, with the same caveat that quality is unknown."
   },
+  "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET": {
+    "id": "KL-2026-11-23-PA-DOBCOVERAGE-AGEBRACKET",
+    "date": "2026-11-23",
+    "type": "observation",
+    "subject": "DOB coverage continues its unbroken growth streak - 10.2% (75/734), up from 9.7%/70/718 on 2026-11-16; known-DOB age profile and Meta's own age-bracket delivery continue to converge",
+    "follow_up": "No action needed - continue the standing weekly re-check. Coverage growth remains too small/recent to shift weight meaningfully toward actual-age analysis over Meta's own bracket data; re-assess if/when coverage clears a higher share."
+  },
   "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK": {
     "id": "KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK",
     "date": "2026-11-23",
