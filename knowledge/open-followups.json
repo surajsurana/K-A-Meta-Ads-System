@@ -349,6 +349,13 @@
     "subject": "Loomiere duo ad (Bronze Muse / Deep Purple) - new PAUSED ad build+activate plan in existing ad set 52564357579980, plus a critical video_id correction found during validation",
     "follow_up": "marketing-lead: execute per the 10 steps above once Suraj approves via Telegram. After 3-4 days active, performance-analyst/lead-quality-analyst to check this ad's cost-per-conversation and lead quality against the ad set average per the rollback criteria."
   },
+  "KL-2026-11-23-013455": {
+    "id": "KL-2026-11-23-013455",
+    "date": "2026-11-23",
+    "type": "decision",
+    "subject": "Profile Visits | India (52538161512180) 2nd creative - angle confirmed genuinely distinct, but HOLD: no real video asset identified for the brief, not buildable yet",
+    "follow_up": "social-community-manager/creative-copywriter: source or film a real atelier/embellishment-in-progress video clip (hands on fabric, zari/cutdana work, worktable) before this brief can be built - no such asset currently exists in the Media Library, Instagram feed, or Stories as checked this cycle. Once a real clip exists, the copy/CTA/angle work above is already validated and ready to build against it (VIEW_INSTAGRAM_PROFILE CTA, video_data format with no link_description field, new ad inside existing ad set 52538161512180, no budget change)."
+  },
   "KL-2026-11-23-CC-CANADA-REPLACEMENT-DIRECTIONAL": {
     "id": "KL-2026-11-23-CC-CANADA-REPLACEMENT-DIRECTIONAL",
     "date": "2026-11-23",
@@ -362,13 +369,6 @@
     "type": "decision",
     "subject": "5 remaining own-content pieces from KL-2026-11-23-CS-CONTENT-DISPOSITIONS (Rose Pink Banarasi Corset, White fringed-peplum Reel, Rust Orange brocade corset, Red quilted shawl-collar corset, Pink cage corset) - EXPLICITLY DEFERRED to next interactive session, no copy written this cycle",
     "follow_up": "Next interactive session (creative-copywriter): review the actual source content for all 5 pieces (video/image), run Shopify search_products/get-product + Stitchflow cross-check per section 3d, write TEST copy briefs once identified (default path per campaign-strategist is TEST, not a fresh judgment call each time, since these are owned IP with no rights question and already SCM-rated strong on first look)."
-  },
-  "KL-2026-11-23-CC-PROFILEVISITS-2NDCREATIVE-BRIEF": {
-    "id": "KL-2026-11-23-CC-PROFILEVISITS-2NDCREATIVE-BRIEF",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Profile Visits | India (ad set 52538161512180) - copy/creative brief for a 2nd creative variant, approved per KL-2026-11-23-CS-PROFILEVISITS-APPROVE-2NDCREATIVE",
-    "follow_up": "media-buyer: before building, pull Fresh Content Jul23's actual creative/copy (Meta tool access this session did not have) and confirm this brief is a real test, not a near-duplicate, per campaign-strategist's condition; source real B-roll footage matching the direction above (Media Library or existing unused footage, not stock); confirm the exact CTA type available for this objective/placement before finalizing copy; build as a new PAUSED ad within the existing ad set (52538161512180), no budget change, standard Suraj build-tap before going live."
   },
   "KL-2026-11-23-CC-UGC-BATCH-COPY": {
     "id": "KL-2026-11-23-CC-UGC-BATCH-COPY",
