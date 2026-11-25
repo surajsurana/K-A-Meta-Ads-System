@@ -405,19 +405,12 @@
     "subject": "Routine comment-reply batch (9 items) - 4 thank-yous and 5 price/availability WhatsApp redirects across the 4 own posts with comments since the 2026-11-02 batch window extended to today",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
   },
-  "KL-2026-11-25-CS-THINSAMPLE-CTRDIP-WATCH": {
-    "id": "KL-2026-11-25-CS-THINSAMPLE-CTRDIP-WATCH",
-    "date": "2026-11-25",
-    "type": "decision",
-    "subject": "Three low-volume ad sets (Golden Muse Test, Loomiere IG Engaged WhatsApp, Metallic Blue Test) show a directionally consistent CTR drop 11-20/22 vs 11-23/25 on thin samples (1,000-1,900 impressions/3d each) - independent read: WATCH only, no live action, best explained as the tail of an already-tracked account-wide CTR spike/reversion plus two of the three already being handled by separate, stronger decisions",
-    "follow_up": "At the next full weekly review (~2026-11-30), re-check these three ad sets CTR alongside the already-scheduled account-wide CTR/ROAS cross-check (per KL-2026-11-23-CS-BUDGETCALL-HOLD follow_up). If by then the account-wide CTR has stabilised/recovered but these three specifically remain depressed (decoupled from the broader pattern), treat that as a genuine per-ad-set signal worth a real disposition at that point - not before. Metallic Blue is superseded by its own pause decision regardless of this watch items outcome; if the pause plan has not been approved/executed by the next review, re-surface it rather than letting it go stale."
-  },
-  "KL-2026-11-25-HEARTBEAT-DISKSPACE": {
-    "id": "KL-2026-11-25-HEARTBEAT-DISKSPACE",
+  "KL-2026-11-25-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-25-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-25",
     "type": "observation",
-    "subject": "Droplet root disk at 96% full (412MB free) has caused instagram_collect.py to silently skip 4-15 new Instagram items every night since ~2026-11-04, under the 1.0GB MIN_FREE_GB threshold - Story-sourced items among those are permanently lost after 24h",
-    "follow_up": "Needs the droplet's root disk freed (prune old ad-video files or stale Media Library video files) before instagram_collect.py stops silently skipping new items. Not something this run does unilaterally - escalated to Suraj via plain FYI. Next daily heartbeat: re-check df -h /dev/vda1 and the cron log for continued 'skipped for low disk' entries; if still occurring, re-escalate rather than silently repeating the same finding without action."
+    "subject": "Daily heartbeat (2026-11-25) - account clean (account_status ACTIVE, no disapprovals, 100% female/22-55/Instagram-dominant delivery on all 13 active ad sets); Media Library 0+0 unreviewed but found a real infra gap (droplet disk space silently dropping Instagram-collector items since ~11-04); one thin-sample three-ad-set CTR dip independently read by campaign-strategist as post-Diwali reversion noise, WATCH only; stalled-content, new-ad-watch catch-up, rollback-window, and new-launch-content sweeps all turn up nothing new",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Uttar Pradesh geo-exclusion rollback window close (2026-11-26), Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has actually been cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate if 'skipped for low disk' entries are still appearing)."
   },
   "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL": {
     "id": "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL",
