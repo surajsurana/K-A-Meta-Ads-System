@@ -419,6 +419,13 @@
     "subject": "Routine comment-reply batch (9 items) - 4 thank-yous and 5 price/availability WhatsApp redirects across the 4 own posts with comments since the 2026-11-02 batch window extended to today",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
   },
+  "KL-2026-11-25-HEARTBEAT-DISKSPACE": {
+    "id": "KL-2026-11-25-HEARTBEAT-DISKSPACE",
+    "date": "2026-11-25",
+    "type": "observation",
+    "subject": "Droplet root disk at 96% full (412MB free) has caused instagram_collect.py to silently skip 4-15 new Instagram items every night since ~2026-11-04, under the 1.0GB MIN_FREE_GB threshold - Story-sourced items among those are permanently lost after 24h",
+    "follow_up": "Needs the droplet's root disk freed (prune old ad-video files or stale Media Library video files) before instagram_collect.py stops silently skipping new items. Not something this run does unilaterally - escalated to Suraj via plain FYI. Next daily heartbeat: re-check df -h /dev/vda1 and the cron log for continued 'skipped for low disk' entries; if still occurring, re-escalate rather than silently repeating the same finding without action."
+  },
   "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL": {
     "id": "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL",
     "date": "2026-11-25",
