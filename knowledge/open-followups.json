@@ -293,13 +293,6 @@
     "subject": "Are ads driving sales that arrive as 'direct' WhatsApp? Verdict: both, split unproven - the AISI feed cannot see ~40-49% of ad spend (Instagram-DM ads) or view-through chats, so 'almost no orders from ads' is a floor, not the truth; WhatsApp-tap ads on their own do look like mostly browsers",
     "follow_up": "For campaign-strategist: (1) report ad-credited orders as a range (floor = CTWA-tagged; never read direct-WhatsApp as 'not ads') and keep budget judgements on blended Stitchflow orders; (2) close the biggest blind spot - Instagram-DM ad leads into the feed (backlog #6) and a tagged WhatsApp hand-off link/code staff use for IG-DM leads; (3) add an 'Instagram/Facebook ad' option to Stitchflow's reference question (7/11 ad-tagged buyers were logged 'Word of Mouth'); (4) only a deliberate test (gradual spend pulse or geo holdout, 2-3 weeks) can separate (a) from (b); (5) separately weigh the 0.3% conversion of WhatsApp-tap ads."
   },
-  "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC": {
-    "id": "KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE-EXEC",
-    "date": "2026-11-18",
-    "type": "change",
-    "subject": "EXECUTED KL-2026-11-18-WEEKLYSELFCHECK-STUCKCLAIMREQUEUE - added startup re-queue of stuck claimed_approve plans to scripts/telegram_approval_listener.py",
-    "follow_up": "The running telegram_approval_listener.py process on the droplet needs an actual restart to pick up this change - the watchdog will restart it automatically within about a minute of the process stopping, but nothing in this dispatch restarts it itself. That restart will also automatically re-queue and finally apply the still-pending KL-2026-11-11-WEEKLYSELFCHECK-HEARTBEATBGCEILING fix."
-  },
   "KL-2026-11-20-HEARTBEAT-DAILYCHECK": {
     "id": "KL-2026-11-20-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-20",
@@ -432,5 +425,12 @@
     "type": "decision",
     "subject": "scripts/_run-common.sh git-sync failure check only verifies a cached origin/main ref exists, not that todays git fetch actually succeeded - a real SSH publickey auth failure during this very runs own sync went undetected and unalerted",
     "follow_up": "Awaiting Surajs Telegram approval. If APPROVED: dispatch per telegram_approval_listener.pys system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push."
+  },
+  "KL-2026-11-25-WEEKLYSELFCHECK-LISTENERNOTRESTARTED": {
+    "id": "KL-2026-11-25-WEEKLYSELFCHECK-LISTENERNOTRESTARTED",
+    "date": "2026-11-25",
+    "type": "observation",
+    "subject": "Both the Nov-11 approved heartbeat-timeout fix and the Nov-18 approved stuck-claim-requeue fix are still not live 13 and 7 days later respectively - the running telegram_approval_listener.py process has not restarted since before either commit, and nobody has been told since Nov 18",
+    "follow_up": "Needs a manual restart of telegram_approval_listener.py on the droplet (or any other event that causes the watchdog to restart it) to pick up the already-committed Nov-18 fix - that restart will then automatically re-queue and finally apply the still-pending Nov-11 heartbeat-timeout fix too. No new Telegram approval needed for either; escalated to Suraj via plain FYI this cycle. Separately worth raising at the next monthly self-audit: should a deploy to telegram_approval_listener.py auto-trigger its own restart, given this is now the second time a real approved fix has sat invisibly undeployed for a week-plus."
   }
 }
