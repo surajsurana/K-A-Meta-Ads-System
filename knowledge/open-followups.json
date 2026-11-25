@@ -425,5 +425,12 @@
     "type": "decision",
     "subject": "Routine comment-reply batch (9 items) - 4 thank-yous and 5 price/availability WhatsApp redirects across the 4 own posts with comments since the 2026-11-02 batch window extended to today",
     "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
+  },
+  "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL": {
+    "id": "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL",
+    "date": "2026-11-25",
+    "type": "decision",
+    "subject": "scripts/_run-common.sh git-sync failure check only verifies a cached origin/main ref exists, not that todays git fetch actually succeeded - a real SSH publickey auth failure during this very runs own sync went undetected and unalerted",
+    "follow_up": "Awaiting Surajs Telegram approval. If APPROVED: dispatch per telegram_approval_listener.pys system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push."
   }
 }
