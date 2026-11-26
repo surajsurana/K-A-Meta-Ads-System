@@ -419,6 +419,13 @@
     "subject": "Both the Nov-11 approved heartbeat-timeout fix and the Nov-18 approved stuck-claim-requeue fix are still not live 13 and 7 days later respectively - the running telegram_approval_listener.py process has not restarted since before either commit, and nobody has been told since Nov 18",
     "follow_up": "Needs a manual restart of telegram_approval_listener.py on the droplet (or any other event that causes the watchdog to restart it) to pick up the already-committed Nov-18 fix - that restart will then automatically re-queue and finally apply the still-pending Nov-11 heartbeat-timeout fix too. No new Telegram approval needed for either; escalated to Suraj via plain FYI this cycle. Separately worth raising at the next monthly self-audit: should a deploy to telegram_approval_listener.py auto-trigger its own restart, given this is now the second time a real approved fix has sat invisibly undeployed for a week-plus."
   },
+  "KL-2026-11-26-HEARTBEAT-DISKSPACE-RECHECK": {
+    "id": "KL-2026-11-26-HEARTBEAT-DISKSPACE-RECHECK",
+    "date": "2026-11-26",
+    "type": "observation",
+    "subject": "Droplet disk-space issue (KL-2026-11-25-HEARTBEAT-DISKSPACE) STILL OCCURRING - re-escalating per that entrys own instruction",
+    "follow_up": "Still needs the droplets root disk freed before instagram_collect.py stops silently skipping new items. Re-escalated via Telegram FYI this cycle. Next daily heartbeat: re-check df -h and the cron log again; if still occurring, re-escalate again rather than silently repeating the same finding without action."
+  },
   "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT": {
     "id": "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT",
     "date": "2026-11-26",
