@@ -419,18 +419,11 @@
     "subject": "Both the Nov-11 approved heartbeat-timeout fix and the Nov-18 approved stuck-claim-requeue fix are still not live 13 and 7 days later respectively - the running telegram_approval_listener.py process has not restarted since before either commit, and nobody has been told since Nov 18",
     "follow_up": "Needs a manual restart of telegram_approval_listener.py on the droplet (or any other event that causes the watchdog to restart it) to pick up the already-committed Nov-18 fix - that restart will then automatically re-queue and finally apply the still-pending Nov-11 heartbeat-timeout fix too. No new Telegram approval needed for either; escalated to Suraj via plain FYI this cycle. Separately worth raising at the next monthly self-audit: should a deploy to telegram_approval_listener.py auto-trigger its own restart, given this is now the second time a real approved fix has sat invisibly undeployed for a week-plus."
   },
-  "KL-2026-11-26-HEARTBEAT-DISKSPACE-RECHECK": {
-    "id": "KL-2026-11-26-HEARTBEAT-DISKSPACE-RECHECK",
+  "KL-2026-11-26-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-26-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-26",
     "type": "observation",
-    "subject": "Droplet disk-space issue (KL-2026-11-25-HEARTBEAT-DISKSPACE) STILL OCCURRING - re-escalating per that entrys own instruction",
-    "follow_up": "Still needs the droplets root disk freed before instagram_collect.py stops silently skipping new items. Re-escalated via Telegram FYI this cycle. Next daily heartbeat: re-check df -h and the cron log again; if still occurring, re-escalate again rather than silently repeating the same finding without action."
-  },
-  "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT": {
-    "id": "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT",
-    "date": "2026-11-26",
-    "type": "outcome",
-    "subject": "Uttar Pradesh geo-exclusion (5 ad sets, executed 2026-11-12) rollback window closed 2026-11-26 - EXCLUSION STAYS, formal close-out",
-    "follow_up": "No action needed. The Uttar Pradesh exclusion on these 5 ad sets stands as a standing policy with no further dated recheck - any future reconsideration needs a fresh trigger (a real new UP order pattern or ad-traceable evidence), not a scheduled date."
+    "subject": "Daily heartbeat (2026-11-26) - account clean (account_status ACTIVE, no disapprovals, 0% male/22-55-compliant/Instagram-dominant delivery on all 13 active ad sets); Uttar Pradesh geo-exclusion rollback window closed cleanly today, exclusion stays; disk-space issue still occurring, re-escalated via Telegram; Media Library 0+0 unreviewed (same likely disk-space artifact as yesterday, not re-escalated separately); new-ad watch, stalled-content, rollback-window, and new-launch-content sweeps all turn up nothing new",
+    "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has finally cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate again if skipped for low disk entries are still appearing)."
   }
 }
