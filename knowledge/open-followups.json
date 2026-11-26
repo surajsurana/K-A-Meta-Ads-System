@@ -370,13 +370,6 @@
     "subject": "Australia and UK reverse-geo finding (KL-2026-11-23-PA-GEO-REVERSE-AUSTRALIA-UK) - DISPOSITION: both MAINTAIN/no new spend this cycle, but for different reasons; Australia gets the same HOLD-with-re-trigger treatment as Frozen Blue, not a flat no",
     "follow_up": "Re-propose a longer, genuinely time-boxed Australia geo-test once the 30-day ROAS decline streak breaks (same re-trigger as Frozen Blue) - no fresh Telegram ask until then. UK: continue monitoring for revenue accumulation without active spend at each review; re-weigh only if that trend becomes clear over several reviews, not on a single reading."
   },
-  "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ": {
-    "id": "KL-2026-11-23-CS-UP-EXCLUSION-WINDOW-READ",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "UP exclusion progress check (KL-2026-11-23-PA-UP-EXCLUSION-PROGRESS-LUCKNOWORDER) - the single post-exclusion Lucknow order does NOT trigger reconsideration; let the 2026-11-26 rollback window close on schedule, exclusion stays",
-    "follow_up": "No action needed before 2026-11-26. If AISI/lead-quality-analyst can trace the Lucknow orders originating click before then, log it as a resolving data point either way. At window close, log the final read (spend-down confirmed, order count over the window) as the formal close-out of this disposition."
-  },
   "KL-2026-11-23-HEARTBEAT-DAILYCHECK": {
     "id": "KL-2026-11-23-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-23",
@@ -425,5 +418,12 @@
     "type": "observation",
     "subject": "Both the Nov-11 approved heartbeat-timeout fix and the Nov-18 approved stuck-claim-requeue fix are still not live 13 and 7 days later respectively - the running telegram_approval_listener.py process has not restarted since before either commit, and nobody has been told since Nov 18",
     "follow_up": "Needs a manual restart of telegram_approval_listener.py on the droplet (or any other event that causes the watchdog to restart it) to pick up the already-committed Nov-18 fix - that restart will then automatically re-queue and finally apply the still-pending Nov-11 heartbeat-timeout fix too. No new Telegram approval needed for either; escalated to Suraj via plain FYI this cycle. Separately worth raising at the next monthly self-audit: should a deploy to telegram_approval_listener.py auto-trigger its own restart, given this is now the second time a real approved fix has sat invisibly undeployed for a week-plus."
+  },
+  "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT": {
+    "id": "KL-2026-11-26-PA-UP-EXCLUSION-CLOSEOUT",
+    "date": "2026-11-26",
+    "type": "outcome",
+    "subject": "Uttar Pradesh geo-exclusion (5 ad sets, executed 2026-11-12) rollback window closed 2026-11-26 - EXCLUSION STAYS, formal close-out",
+    "follow_up": "No action needed. The Uttar Pradesh exclusion on these 5 ad sets stands as a standing policy with no further dated recheck - any future reconsideration needs a fresh trigger (a real new UP order pattern or ad-traceable evidence), not a scheduled date."
   }
 }
