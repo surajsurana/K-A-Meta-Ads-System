@@ -425,5 +425,12 @@
     "type": "decision",
     "subject": "Daily heartbeat (2026-11-27) - account clean (account_status ACTIVE, no disapprovals, 0% male/22-55-compliant/Instagram-dominant delivery on all 13 active ad sets, Rs6,126/6,500 ceiling); due-today Bottle Green Solo/Burgundy Scalloped exception window resolved - PAUSE Bottle Green Solo (cost-per-conversation + elapsed-time exception, AISI/WATI gap still unresolved, explicitly not a quality-resolved verdict), plan validated and sent for Telegram approval; Media Library 0+0 unreviewed (known disk-space cause, not re-escalated); stalled-content, rollback-window, and new-launch-content sweeps all turn up nothing new",
     "follow_up": "No live action pending beyond awaiting Suraj Telegram approval on plan KL-2026-11-27-072314 (Bottle Green Solo pause). Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has finally cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate again only if it worsens materially or a new error signature appears, not identically)."
+  },
+  "KL-2026-11-27-MKT-BOTTLEGREENSOLO-EXEC": {
+    "id": "KL-2026-11-27-MKT-BOTTLEGREENSOLO-EXEC",
+    "date": "2026-11-27",
+    "type": "change",
+    "subject": "Loomiere Bottle Green Solo ad (52566563586180) paused per approved plan",
+    "follow_up": "This pause does not auto-expire per the plan rollback criteria - re-activation requires a fresh decision built on new independent evidence (AISI/WATI referral-matching gap fixed and producing real quality data, or a new criterion identified by campaign-strategist/lead-quality-analyst), never a silent revert of this pause."
   }
 }
