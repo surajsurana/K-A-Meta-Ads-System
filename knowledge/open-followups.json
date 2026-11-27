@@ -426,11 +426,11 @@
     "subject": "Daily heartbeat (2026-11-26) - account clean (account_status ACTIVE, no disapprovals, 0% male/22-55-compliant/Instagram-dominant delivery on all 13 active ad sets); Uttar Pradesh geo-exclusion rollback window closed cleanly today, exclusion stays; disk-space issue still occurring, re-escalated via Telegram; Media Library 0+0 unreviewed (same likely disk-space artifact as yesterday, not re-escalated separately); new-ad watch, stalled-content, rollback-window, and new-launch-content sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has finally cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate again if skipped for low disk entries are still appearing)."
   },
-  "KL-2026-11-27-PA-HEARTBEAT-BOTTLEGREENSOLO-EXCEPTIONWINDOW-DATA": {
-    "id": "KL-2026-11-27-PA-HEARTBEAT-BOTTLEGREENSOLO-EXCEPTIONWINDOW-DATA",
+  "KL-2026-11-27-CS-BOTTLEGREENSOLO-EXCEPTIONCALL-PAUSE": {
+    "id": "KL-2026-11-27-CS-BOTTLEGREENSOLO-EXCEPTIONCALL-PAUSE",
     "date": "2026-11-27",
-    "type": "observation",
-    "subject": "Daily heartbeat (2026-11-27) targeted pull: account clean; Bottle Green Solo 2026-11-27 exception-window checkpoint data (inputs b and c) delivered live, decision left to campaign-strategist",
-    "follow_up": "campaign-strategist to make the 2026-11-27 exception-window call using inputs (b) and (c) above plus lead-quality-analysts AISI/WATI status read (a) - not resolved by this entry."
+    "type": "decision",
+    "subject": "Loomiere Bottle Green Solo (ad 52566563586180) - executing the pre-committed 2026-11-27 exception call: PAUSE on cost-per-conversation plus elapsed time, explicitly NOT a quality-resolved verdict",
+    "follow_up": "media-buyer to prepare the exact pause execution plan for ad 52566563586180 (Bottle Green Solo) within ad set 52564357579980, for Telegram type:decision/approval per docs/proactive-operations.md section 8b. If the AISI/WATI referral-matching gap is ever fixed later, this pause should be revisited as a fresh decision with real quality data, not treated as permanently settled on the current cost-only basis - note that explicitly to whoever picks this back up."
   }
 }
