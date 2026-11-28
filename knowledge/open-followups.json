@@ -300,34 +300,6 @@
     "subject": "Daily heartbeat (2026-11-20) - account clean, no disapprovals/budget breach/gender-age-platform breach; Media Library 0+0 unreviewed; new-ad watch on Burgundy Scalloped Solo remains healthy (best cost/conversation in its ad set, WhatsApp-destination confirmed) with no new side-finding; stalled-content, catch-up, and rollback-window sweeps turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: First-Love-over-Loomiere rollback check (2026-11-21), Red Fishcut Corset recheck window (2026-11-16 to 11-23, still open), Uttar Pradesh geo-exclusion rollback window close (2026-11-26), or Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27)."
   },
-  "KL-2026-11-23-012023": {
-    "id": "KL-2026-11-23-012023",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Ice Blue KAFL026 / 16th May 26 | India ad set (6968778736776) - PAUSE PLAN, validated and ready for execution",
-    "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry. Do not re-activate informally per rollback criteria."
-  },
-  "KL-2026-11-23-012116": {
-    "id": "KL-2026-11-23-012116",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "18th May 26 | Can | Multi Ads ad (6970869037976, Bloom Soiree) inside Canada Engaged 365D & Followers ad set (6737602550176) - AD-LEVEL PAUSE PLAN, validated and ready for execution",
-    "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry. creative-copywriter follow-up for a current-collection replacement remains open per the source decision."
-  },
-  "KL-2026-11-23-012142": {
-    "id": "KL-2026-11-23-012142",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Gold Sculpted | Fatigue Refresh v3 ad (52536048560580, KAFL007) inside Canada Engaged 365D & Followers ad set (6737602550176) - AD-LEVEL PAUSE PLAN, validated and ready for execution",
-    "follow_up": "Send for Telegram approval via scripts/send-telegram-approval.sh. Once approved, marketing-lead executes verbatim per the execution steps above and appends a linked type:change entry."
-  },
-  "KL-2026-11-23-013257": {
-    "id": "KL-2026-11-23-013257",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Loomiere duo ad (Bronze Muse / Deep Purple) - new PAUSED ad build+activate plan in existing ad set 52564357579980, plus a critical video_id correction found during validation",
-    "follow_up": "marketing-lead: execute per the 10 steps above once Suraj approves via Telegram. After 3-4 days active, performance-analyst/lead-quality-analyst to check this ad's cost-per-conversation and lead quality against the ad set average per the rollback criteria."
-  },
   "KL-2026-11-23-013455": {
     "id": "KL-2026-11-23-013455",
     "date": "2026-11-23",
@@ -391,26 +363,12 @@
     "subject": "2 standing ambiguous check your DM comments re-checked, both still open and unreplied - @aesana0710 and @social_cravings; PLUS a genuinely NEW third occurrence of the same aesana0710 Pls check dm pattern on an entirely different post, found this cycle",
     "follow_up": "aesana0710: now 3 separate unresolved instances across 3 posts (2026-10-18, and a new one 2026-11-21) plus the original escalation from 2026-11-02 still awaiting Suraj action; recommend surfacing this directly to Suraj given the pattern is now spreading across posts, not static. social_cravings: continue checking each cycle, 30 days open. Both: re-check whether the accepted-but-unbuilt system-evolution fix (forced Telegram confirmation after 5 cycles) has landed; if so, apply the new standing rule going forward."
   },
-  "KL-2026-11-23-comment-batch": {
-    "id": "KL-2026-11-23-comment-batch",
-    "date": "2026-11-23",
-    "type": "decision",
-    "subject": "Routine comment-reply batch (9 items) - 4 thank-yous and 5 price/availability WhatsApp redirects across the 4 own posts with comments since the 2026-11-02 batch window extended to today",
-    "follow_up": "Ready for marketing-lead to send via Telegram for approval (scripts/send-telegram-approval.sh)."
-  },
   "KL-2026-11-25-HEARTBEAT-DAILYCHECK": {
     "id": "KL-2026-11-25-HEARTBEAT-DAILYCHECK",
     "date": "2026-11-25",
     "type": "observation",
     "subject": "Daily heartbeat (2026-11-25) - account clean (account_status ACTIVE, no disapprovals, 100% female/22-55/Instagram-dominant delivery on all 13 active ad sets); Media Library 0+0 unreviewed but found a real infra gap (droplet disk space silently dropping Instagram-collector items since ~11-04); one thin-sample three-ad-set CTR dip independently read by campaign-strategist as post-Diwali reversion noise, WATCH only; stalled-content, new-ad-watch catch-up, rollback-window, and new-launch-content sweeps all turn up nothing new",
     "follow_up": "No live action pending. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: Uttar Pradesh geo-exclusion rollback window close (2026-11-26), Bottle Green Solo/Burgundy Scalloped exception window (2026-11-27), the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has actually been cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate if 'skipped for low disk' entries are still appearing)."
-  },
-  "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL": {
-    "id": "KL-2026-11-25-WEEKLYSELFCHECK-GITFETCHSILENTFAIL",
-    "date": "2026-11-25",
-    "type": "decision",
-    "subject": "scripts/_run-common.sh git-sync failure check only verifies a cached origin/main ref exists, not that todays git fetch actually succeeded - a real SSH publickey auth failure during this very runs own sync went undetected and unalerted",
-    "follow_up": "Awaiting Surajs Telegram approval. If APPROVED: dispatch per telegram_approval_listener.pys system-fix path - apply the exact edit to scripts/_run-common.sh, syntax-check it (bash -n), commit+push."
   },
   "KL-2026-11-25-WEEKLYSELFCHECK-LISTENERNOTRESTARTED": {
     "id": "KL-2026-11-25-WEEKLYSELFCHECK-LISTENERNOTRESTARTED",
@@ -419,18 +377,11 @@
     "subject": "Both the Nov-11 approved heartbeat-timeout fix and the Nov-18 approved stuck-claim-requeue fix are still not live 13 and 7 days later respectively - the running telegram_approval_listener.py process has not restarted since before either commit, and nobody has been told since Nov 18",
     "follow_up": "Needs a manual restart of telegram_approval_listener.py on the droplet (or any other event that causes the watchdog to restart it) to pick up the already-committed Nov-18 fix - that restart will then automatically re-queue and finally apply the still-pending Nov-11 heartbeat-timeout fix too. No new Telegram approval needed for either; escalated to Suraj via plain FYI this cycle. Separately worth raising at the next monthly self-audit: should a deploy to telegram_approval_listener.py auto-trigger its own restart, given this is now the second time a real approved fix has sat invisibly undeployed for a week-plus."
   },
-  "KL-2026-11-27-HEARTBEAT-DAILYCHECK": {
-    "id": "KL-2026-11-27-HEARTBEAT-DAILYCHECK",
-    "date": "2026-11-27",
-    "type": "decision",
-    "subject": "Daily heartbeat (2026-11-27) - account clean (account_status ACTIVE, no disapprovals, 0% male/22-55-compliant/Instagram-dominant delivery on all 13 active ad sets, Rs6,126/6,500 ceiling); due-today Bottle Green Solo/Burgundy Scalloped exception window resolved - PAUSE Bottle Green Solo (cost-per-conversation + elapsed-time exception, AISI/WATI gap still unresolved, explicitly not a quality-resolved verdict), plan validated and sent for Telegram approval; Media Library 0+0 unreviewed (known disk-space cause, not re-escalated); stalled-content, rollback-window, and new-launch-content sweeps all turn up nothing new",
-    "follow_up": "No live action pending beyond awaiting Suraj Telegram approval on plan KL-2026-11-27-072314 (Bottle Green Solo pause). Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation that the droplet disk-space issue has finally cleared (re-check df -h and the instagram-collect-cron.log next cycle; re-escalate again only if it worsens materially or a new error signature appears, not identically)."
-  },
-  "KL-2026-11-27-MKT-BOTTLEGREENSOLO-EXEC": {
-    "id": "KL-2026-11-27-MKT-BOTTLEGREENSOLO-EXEC",
-    "date": "2026-11-27",
-    "type": "change",
-    "subject": "Loomiere Bottle Green Solo ad (52566563586180) paused per approved plan",
-    "follow_up": "This pause does not auto-expire per the plan rollback criteria - re-activation requires a fresh decision built on new independent evidence (AISI/WATI referral-matching gap fixed and producing real quality data, or a new criterion identified by campaign-strategist/lead-quality-analyst), never a silent revert of this pause."
+  "KL-2026-11-28-HEARTBEAT-DAILYCHECK": {
+    "id": "KL-2026-11-28-HEARTBEAT-DAILYCHECK",
+    "date": "2026-11-28",
+    "type": "observation",
+    "subject": "Daily heartbeat (2026-11-28) - account clean across every targeted check; Bottle Green Solo pause confirmed holding; Media Library 0+0 unreviewed; stalled-content/rollback-window/new-launch sweeps turn up nothing new; real finding - 6 Telegram approval requests from 2026-11-23/25 expired unresolved (never executed), now dead even if tapped",
+    "follow_up": "Notify Suraj plainly via Telegram that 6 approval requests from 2026-11-23/25 expired unanswered and are now dead (won't execute on a late tap) - list the 6 ids/subjects and ask whether he wants any freshly re-validated and resent, or dropped. No live action pending otherwise. Continue each named watch item on its own already-stated recheck condition/date - next genuinely new decision point is whichever comes first: the thin-sample CTR-dip recheck folded into the 2026-11-30 weekly review, or confirmation the droplet disk-space issue has cleared."
   }
 }
